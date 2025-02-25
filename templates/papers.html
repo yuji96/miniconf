@@ -26,8 +26,9 @@
 
 {% endblock %}
 
+{#
 {% block heading %}
-   {{ components.section("Papers") }}
+  {{ components.section("Papers") }}
   <div class="text-muted text-center">
   The <a href="schedule.html" target="_blank">Schedule</a> page shows the timing of paper sessions.
     <br>
@@ -40,6 +41,7 @@
 
   </div>
 {% endblock %}
+#}
 
 {% block tabs %}
 
@@ -47,12 +49,14 @@
   <li class="nav-item">
     <a class="nav-link active" href="#" id="tabBrowse" >Browse</a>
   </li>
+  {#
   <li class="nav-item">
     <a class="nav-link" href="papers_vis.html">Visualization</a>
   </li>
   <li class="nav-item">
     <a class="nav-link" href="papers_keyword_vis.html">Browse Keywords</a>
   </li>
+  #}
   <li class="nav-item">
     <a class="nav-link" href="#" id="tabFavs"><i class="fas fa-star"></i> Favorites</a>
   </li>
