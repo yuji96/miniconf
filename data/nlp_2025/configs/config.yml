@@ -1,0 +1,43 @@
+name: NLP2025
+display_name: NLP2025
+tagline: 
+date: 
+proceedings_title: 
+citation_date: 
+analytics: 
+site_url: TBD
+logo:
+  image: 
+  height: 45px
+site_title: NLP2025
+page_title:
+  prefix: 'NLP2025'
+  separator: ': '
+background_image: 
+organization: 
+social_tag: 
+
+# Path to the folder of paper images.
+paper_images_path: 
+
+default_presentation_id: 
+
+# Remove or change to your chat server.
+enable_chat: false
+chat_server: 
+channels_stats_server: 
+
+gather_town: 
+connected_papers_conference_name: 
+
+calendar:
+  start: '2025-03-10'
+  end: '2025-03-14'
+
+navigation_bar:
+  order:
+    - Schedule
+  links:
+    Schedule: schedule.html
+    Papers: papers.html
+ 
