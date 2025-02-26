@@ -131,6 +131,7 @@ body .nav-pills .nav-link.active {
   /* margin-top: 10px; */
   font-size: 1.1em;
   color: #212529 !important;
+  line-height: 1;
 }
 
 .card-title-visited {
@@ -276,6 +277,7 @@ h3.card-subtitle.text-muted {
 .card-subtitle {
   /* text-align: center; */
   font-size: 0.9em;
+  margin-top: 0.3em;
 }
 
 .main-title {

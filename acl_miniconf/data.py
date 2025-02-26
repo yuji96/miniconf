@@ -212,12 +212,12 @@ class Paper(BaseModel):
     authors: List[str]
     paper_pdf: str
     abstract: str
-    track: str 
+    keywords: List[str]
 
+    track: str = ""
     paper_type: Optional[str] = None
     category: Optional[str] = None
     tldr: Optional[str] = None
-    keywords: List[str] = []
     languages: List[str] = []
     underline_url: Optional[str] = None
     underline_id: Optional[int] = None

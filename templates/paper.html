@@ -74,7 +74,9 @@
     </h3>
 
     <p class="card-text text-center h5">
-      <a href="papers.html?track={{paper.track}}" class ="badge badge-pill badge-primary">{{ paper.track }}</a>
+      {% for keyword in paper.keywords %}
+      <a href="papers.html?filter=keywords&search={{keyword}}" class ="badge badge-pill badge-primary">{{ keyword }}</a>
+      {% endfor %}
 
       {#
       {% if paper.program in ['Main', 'Findings', 'Demo', 'Industry'] %}
@@ -157,12 +159,14 @@
         false
         )
     }}
+        {#
         {% if paper.keywords %}
         <div>
           <span class="font-weight-bold">Keywords:</span>
           {{paper.keywords | join(", ")}}
         </div>
         {% endif %}
+        #}
         {% if paper.languages %}
         <div>
           <span class="font-weight-bold">Languages:</span>
