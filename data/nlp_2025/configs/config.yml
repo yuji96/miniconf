@@ -32,7 +32,9 @@ connected_papers_conference_name:
 
 calendar:
   start: '2025-03-10'
-  end: '2025-03-14'
+  end: '2025-03-13'
+  start_time: "08:00:00"
+  end_time: "18:00:00"
 
 navigation_bar:
   order:

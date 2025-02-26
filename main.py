@@ -1,19 +1,17 @@
 # pylint: disable=global-statement,redefined-outer-name
 import os
-import pickle
-from typing import Any, Dict, Optional
-from urllib.parse import quote_plus
 from pathlib import Path
+from typing import Dict
+from urllib.parse import quote_plus
 
 import hydra
-from omegaconf import DictConfig
-
 from flask import Flask, jsonify, redirect, render_template, send_from_directory
 from flask_frozen import Freezer
 from flaskext.markdown import Markdown
+from omegaconf import DictConfig
 
+from acl_miniconf.data import WORKSHOP, ByUid, Conference, Paper, SiteData
 from acl_miniconf.load_site_data import load_site_data, reformat_plenary_data
-from acl_miniconf.data import WORKSHOP, Conference, SiteData, ByUid, Paper
 
 conference: Conference = None
 site_data: SiteData = None
@@ -194,8 +192,8 @@ def workshop(uid):
     for p in site_data.workshop_papers:
         if workshop.short_name in p.event_ids:
             papers.append(p)
-    data['papers'] = papers
-    data['rocketchat_channel'] = f'workshop-{workshop.short_name}'
+    data["papers"] = papers
+    data["rocketchat_channel"] = f"workshop-{workshop.short_name}"
     return render_template("workshop.html", **data)
 
 
@@ -204,10 +202,12 @@ def chat():
     data = _data()
     return render_template("chat.html", **data)
 
+
 @app.route("/map.html")
 def venue_map():
     data = _data()
     return render_template("map.html", **data)
+
 
 # FRONT END SERVING
 @app.route("/schedule.json")
@@ -257,7 +257,7 @@ def send_static(path):
 
 @app.route("/serve_<path>.json")
 def serve(path):
-    return jsonify(site_data[path])
+    return jsonify(getattr(site_data, path, {}))
 
 
 # --------------- DRIVER CODE -------------------------->
