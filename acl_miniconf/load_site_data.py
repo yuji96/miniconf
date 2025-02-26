@@ -58,15 +58,9 @@ def generate_paper_events(site_data: SiteData) -> List[FrontendCalendarEvent]:
             .replace(" ", "")
             .lower()
         )
-        if session.type == "Plenary Sessions":
-            url = f"plenary_sessions.html#tab-{tab_id}"
-        elif session.type == "Workshops":
-            url = f"workshops.html#tab-{tab_id}"
-        elif session.type == "Tutorials":
-            url = f"tutorials.html#tab-{tab_id}"
-        elif session.type == "Socials":
-            url = f"socials.html#tab-{tab_id}"
-        else:
+        # for NLP2025
+        if session.type == "Paper Sessions":
+            # TODO
             url = f"sessions.html#link-{tab_id}-{session.id}"
 
         event = FrontendCalendarEvent(
@@ -77,7 +71,7 @@ def generate_paper_events(site_data: SiteData) -> List[FrontendCalendarEvent]:
             url=url,
             category="time",
             type=session.type,
-            view="week",
+            view="both",
         )
         overall_calendar.append(event)
 
