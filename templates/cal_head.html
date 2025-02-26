@@ -11,7 +11,7 @@
     // M: This variable is here to be filled inside the "$.get" function
     var calendar = null;
 
-    $.get("/schedule.json", function (data, status) {
+    $.get("schedule.json", function (data, status) {
         var events = data;
         // Fun fact! I think this variable is no longer in use
         var event_lookup = Object.fromEntries(events.map(e => [e.title, e]));
