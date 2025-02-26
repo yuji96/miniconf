@@ -62,7 +62,7 @@ def generate_paper_events(site_data: SiteData) -> List[FrontendCalendarEvent]:
             url = f"papers.html?filter=keywords&search={session.name}"
 
         event = FrontendCalendarEvent(
-            title=session.name,
+            title=session.display_name,
             start=session.start_time,
             end=session.end_time,
             location="",

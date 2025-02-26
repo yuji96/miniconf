@@ -78,28 +78,18 @@
                 }
                 successCallback(zoned_events);
             },
-            eventClick: function (eventClickInfo) {
-                var e = eventClickInfo.event;
-                // Prevent reloading the current page, as we clicked
-                // on a hyperlink on the current page
-                eventClickInfo.jsEvent.preventDefault();
+            // eventClick: function (eventClickInfo) {
+            //     var e = eventClickInfo.event;
+            //     // Prevent reloading the current page, as we clicked
+            //     // on a hyperlink on the current page
+            //     eventClickInfo.jsEvent.preventDefault();
 
-                if (e.url) {
-                    window.open(e.url, "_blank");
-                    return false;
-                }
-            },
-            // eventDidMount: function (info) {
-            //     // var title = info.event.title;
-            //     // $(info.el).popover({
-            //     //     title: title,
-            //     //     html: true,
-            //     //     content: info.timeText,
-            //     //     placement: 'top',
-            //     //     trigger: 'hover',
-            //     //     container: 'body'
-            //     // })
+            //     // if (e.url) {
+            //     //     window.open(e.url);
+            //     //     return false;
+            //     // }
             // },
+
             // Render HTML from title as HTML
             eventContent: function (arg) {
                 return {html: arg.event.title}
