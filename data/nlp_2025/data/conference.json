@@ -6,10 +6,562 @@
   "sessions": {
     "A1": {
       "display_name": "A1:NLPモデルの評価・安全性・信頼性(1)",
-      "start_time": "2025-03-10T08:30:00+09:00",
-      "end_time": "2025-03-10T10:00:00+09:00",
+      "start_time": "2025-03-11T08:30:00+09:00",
+      "end_time": "2025-03-11T10:00:00+09:00",
       "id": "A1",
       "name": "A1:NLPモデルの評価・安全性・信頼性(1)",
+      "type": "Paper Sessions"
+    },
+    "B1": {
+      "display_name": "B1:計算・形式言語学(1)",
+      "start_time": "2025-03-11T08:30:00+09:00",
+      "end_time": "2025-03-11T10:00:00+09:00",
+      "id": "B1",
+      "name": "B1:計算・形式言語学(1)",
+      "type": "Paper Sessions"
+    },
+    "C1": {
+      "display_name": "C1:言語資源・アノテーションと評価",
+      "start_time": "2025-03-11T08:30:00+09:00",
+      "end_time": "2025-03-11T10:00:00+09:00",
+      "id": "C1",
+      "name": "C1:言語資源・アノテーションと評価",
+      "type": "Paper Sessions"
+    },
+    "D1": {
+      "display_name": "D1:機械学習",
+      "start_time": "2025-03-11T08:30:00+09:00",
+      "end_time": "2025-03-11T10:00:00+09:00",
+      "id": "D1",
+      "name": "D1:機械学習",
+      "type": "Paper Sessions"
+    },
+    "E1": {
+      "display_name": "E1:人文学と言語処理(1)",
+      "start_time": "2025-03-11T08:30:00+09:00",
+      "end_time": "2025-03-11T10:00:00+09:00",
+      "id": "E1",
+      "name": "E1:人文学と言語処理(1)",
+      "type": "Paper Sessions"
+    },
+    "P1": {
+      "display_name": "P1:ポスター",
+      "start_time": "2025-03-11T08:30:00+09:00",
+      "end_time": "2025-03-11T10:00:00+09:00",
+      "id": "P1",
+      "name": "P1:ポスター",
+      "type": "Paper Sessions"
+    },
+    "Q1": {
+      "display_name": "Q1:ポスター",
+      "start_time": "2025-03-11T08:30:00+09:00",
+      "end_time": "2025-03-11T10:00:00+09:00",
+      "id": "Q1",
+      "name": "Q1:ポスター",
+      "type": "Paper Sessions"
+    },
+    "A2": {
+      "display_name": "A2:NLPモデルの評価・安全性・信頼性(2)",
+      "start_time": "2025-03-11T10:20:00+09:00",
+      "end_time": "2025-03-11T11:50:00+09:00",
+      "id": "A2",
+      "name": "A2:NLPモデルの評価・安全性・信頼性(2)",
+      "type": "Paper Sessions"
+    },
+    "B2": {
+      "display_name": "B2:計算・形式言語学(2)",
+      "start_time": "2025-03-11T10:20:00+09:00",
+      "end_time": "2025-03-11T11:50:00+09:00",
+      "id": "B2",
+      "name": "B2:計算・形式言語学(2)",
+      "type": "Paper Sessions"
+    },
+    "C2": {
+      "display_name": "C2:評判・感情分析，スタイル分析",
+      "start_time": "2025-03-11T10:20:00+09:00",
+      "end_time": "2025-03-11T11:50:00+09:00",
+      "id": "C2",
+      "name": "C2:評判・感情分析，スタイル分析",
+      "type": "Paper Sessions"
+    },
+    "D2": {
+      "display_name": "D2:人とAIの共生に向けた対話システム・言語使用の研究(1)",
+      "start_time": "2025-03-11T10:20:00+09:00",
+      "end_time": "2025-03-11T11:50:00+09:00",
+      "id": "D2",
+      "name": "D2:人とAIの共生に向けた対話システム・言語使用の研究(1)",
+      "type": "Paper Sessions"
+    },
+    "E2": {
+      "display_name": "E2:人文学と言語処理(2)",
+      "start_time": "2025-03-11T10:20:00+09:00",
+      "end_time": "2025-03-11T11:50:00+09:00",
+      "id": "E2",
+      "name": "E2:人文学と言語処理(2)",
+      "type": "Paper Sessions"
+    },
+    "P2": {
+      "display_name": "P2:ポスター",
+      "start_time": "2025-03-11T10:20:00+09:00",
+      "end_time": "2025-03-11T11:50:00+09:00",
+      "id": "P2",
+      "name": "P2:ポスター",
+      "type": "Paper Sessions"
+    },
+    "Q2": {
+      "display_name": "Q2:ポスター",
+      "start_time": "2025-03-11T10:20:00+09:00",
+      "end_time": "2025-03-11T11:50:00+09:00",
+      "id": "Q2",
+      "name": "Q2:ポスター",
+      "type": "Paper Sessions"
+    },
+    "A3": {
+      "display_name": "A3:NLPモデルの評価・安全性・信頼性(3)",
+      "start_time": "2025-03-11T13:00:00+09:00",
+      "end_time": "2025-03-11T14:30:00+09:00",
+      "id": "A3",
+      "name": "A3:NLPモデルの評価・安全性・信頼性(3)",
+      "type": "Paper Sessions"
+    },
+    "B3": {
+      "display_name": "B3:心理言語学・認知モデリング(1)",
+      "start_time": "2025-03-11T13:00:00+09:00",
+      "end_time": "2025-03-11T14:30:00+09:00",
+      "id": "B3",
+      "name": "B3:心理言語学・認知モデリング(1)",
+      "type": "Paper Sessions"
+    },
+    "C3": {
+      "display_name": "C3:マルチモーダル(1)",
+      "start_time": "2025-03-11T13:00:00+09:00",
+      "end_time": "2025-03-11T14:30:00+09:00",
+      "id": "C3",
+      "name": "C3:マルチモーダル(1)",
+      "type": "Paper Sessions"
+    },
+    "D3": {
+      "display_name": "D3:人とAIの共生に向けた対話システム・言語使用の研究(2)",
+      "start_time": "2025-03-11T13:00:00+09:00",
+      "end_time": "2025-03-11T14:30:00+09:00",
+      "id": "D3",
+      "name": "D3:人とAIの共生に向けた対話システム・言語使用の研究(2)",
+      "type": "Paper Sessions"
+    },
+    "E3": {
+      "display_name": "E3:人文学と言語処理(3)",
+      "start_time": "2025-03-11T13:00:00+09:00",
+      "end_time": "2025-03-11T14:30:00+09:00",
+      "id": "E3",
+      "name": "E3:人文学と言語処理(3)",
+      "type": "Paper Sessions"
+    },
+    "P3": {
+      "display_name": "P3:ポスター",
+      "start_time": "2025-03-11T13:00:00+09:00",
+      "end_time": "2025-03-11T14:30:00+09:00",
+      "id": "P3",
+      "name": "P3:ポスター",
+      "type": "Paper Sessions"
+    },
+    "Q3": {
+      "display_name": "Q3:ポスター",
+      "start_time": "2025-03-11T13:00:00+09:00",
+      "end_time": "2025-03-11T14:30:00+09:00",
+      "id": "Q3",
+      "name": "Q3:ポスター",
+      "type": "Paper Sessions"
+    },
+    "A4": {
+      "display_name": "A4:NLPモデルの評価・安全性・信頼性(4)",
+      "start_time": "2025-03-11T14:50:00+09:00",
+      "end_time": "2025-03-11T16:20:00+09:00",
+      "id": "A4",
+      "name": "A4:NLPモデルの評価・安全性・信頼性(4)",
+      "type": "Paper Sessions"
+    },
+    "B4": {
+      "display_name": "B4:心理言語学・認知モデリング(2)",
+      "start_time": "2025-03-11T14:50:00+09:00",
+      "end_time": "2025-03-11T16:20:00+09:00",
+      "id": "B4",
+      "name": "B4:心理言語学・認知モデリング(2)",
+      "type": "Paper Sessions"
+    },
+    "C4": {
+      "display_name": "C4:マルチモーダル(2)",
+      "start_time": "2025-03-11T14:50:00+09:00",
+      "end_time": "2025-03-11T16:20:00+09:00",
+      "id": "C4",
+      "name": "C4:マルチモーダル(2)",
+      "type": "Paper Sessions"
+    },
+    "D4": {
+      "display_name": "D4:人とAIの共生に向けた対話システム・言語使用の研究(3)",
+      "start_time": "2025-03-11T14:50:00+09:00",
+      "end_time": "2025-03-11T16:20:00+09:00",
+      "id": "D4",
+      "name": "D4:人とAIの共生に向けた対話システム・言語使用の研究(3)",
+      "type": "Paper Sessions"
+    },
+    "E4": {
+      "display_name": "E4:人文学と言語処理(4)",
+      "start_time": "2025-03-11T14:50:00+09:00",
+      "end_time": "2025-03-11T16:20:00+09:00",
+      "id": "E4",
+      "name": "E4:人文学と言語処理(4)",
+      "type": "Paper Sessions"
+    },
+    "P4": {
+      "display_name": "P4:ポスター",
+      "start_time": "2025-03-11T14:50:00+09:00",
+      "end_time": "2025-03-11T16:20:00+09:00",
+      "id": "P4",
+      "name": "P4:ポスター",
+      "type": "Paper Sessions"
+    },
+    "Q4": {
+      "display_name": "Q4:ポスター",
+      "start_time": "2025-03-11T14:50:00+09:00",
+      "end_time": "2025-03-11T16:20:00+09:00",
+      "id": "Q4",
+      "name": "Q4:ポスター",
+      "type": "Paper Sessions"
+    },
+    "A5": {
+      "display_name": "A5:NLPモデルの解釈可能性・分析(1)",
+      "start_time": "2025-03-12T08:30:00+09:00",
+      "end_time": "2025-03-12T10:00:00+09:00",
+      "id": "A5",
+      "name": "A5:NLPモデルの解釈可能性・分析(1)",
+      "type": "Paper Sessions"
+    },
+    "B5": {
+      "display_name": "B5:言語処理応用",
+      "start_time": "2025-03-12T08:30:00+09:00",
+      "end_time": "2025-03-12T10:00:00+09:00",
+      "id": "B5",
+      "name": "B5:言語処理応用",
+      "type": "Paper Sessions"
+    },
+    "C5": {
+      "display_name": "C5:テキスト生成",
+      "start_time": "2025-03-12T08:30:00+09:00",
+      "end_time": "2025-03-12T10:00:00+09:00",
+      "id": "C5",
+      "name": "C5:テキスト生成",
+      "type": "Paper Sessions"
+    },
+    "D5": {
+      "display_name": "D5:言語とコミュニケーションの創発(1)",
+      "start_time": "2025-03-12T08:30:00+09:00",
+      "end_time": "2025-03-12T10:00:00+09:00",
+      "id": "D5",
+      "name": "D5:言語とコミュニケーションの創発(1)",
+      "type": "Paper Sessions"
+    },
+    "E5": {
+      "display_name": "E5:金融・経済ドメインのための言語処理(1)",
+      "start_time": "2025-03-12T08:30:00+09:00",
+      "end_time": "2025-03-12T10:00:00+09:00",
+      "id": "E5",
+      "name": "E5:金融・経済ドメインのための言語処理(1)",
+      "type": "Paper Sessions"
+    },
+    "P5": {
+      "display_name": "P5:ポスター",
+      "start_time": "2025-03-12T08:30:00+09:00",
+      "end_time": "2025-03-12T10:00:00+09:00",
+      "id": "P5",
+      "name": "P5:ポスター",
+      "type": "Paper Sessions"
+    },
+    "Q5": {
+      "display_name": "Q5:ポスター",
+      "start_time": "2025-03-12T08:30:00+09:00",
+      "end_time": "2025-03-12T10:00:00+09:00",
+      "id": "Q5",
+      "name": "Q5:ポスター",
+      "type": "Paper Sessions"
+    },
+    "A6": {
+      "display_name": "A6:NLPモデルの解釈可能性・分析(2)",
+      "start_time": "2025-03-12T10:20:00+09:00",
+      "end_time": "2025-03-12T11:50:00+09:00",
+      "id": "A6",
+      "name": "A6:NLPモデルの解釈可能性・分析(2)",
+      "type": "Paper Sessions"
+    },
+    "B6": {
+      "display_name": "B6:知識獲得・情報抽出(1)",
+      "start_time": "2025-03-12T10:20:00+09:00",
+      "end_time": "2025-03-12T11:50:00+09:00",
+      "id": "B6",
+      "name": "B6:知識獲得・情報抽出(1)",
+      "type": "Paper Sessions"
+    },
+    "C6": {
+      "display_name": "C6:教育応用",
+      "start_time": "2025-03-12T10:20:00+09:00",
+      "end_time": "2025-03-12T11:50:00+09:00",
+      "id": "C6",
+      "name": "C6:教育応用",
+      "type": "Paper Sessions"
+    },
+    "D6": {
+      "display_name": "D6:言語とコミュニケーションの創発(2)",
+      "start_time": "2025-03-12T10:20:00+09:00",
+      "end_time": "2025-03-12T11:50:00+09:00",
+      "id": "D6",
+      "name": "D6:言語とコミュニケーションの創発(2)",
+      "type": "Paper Sessions"
+    },
+    "E6": {
+      "display_name": "E6:金融・経済ドメインのための言語処理(2)",
+      "start_time": "2025-03-12T10:20:00+09:00",
+      "end_time": "2025-03-12T11:50:00+09:00",
+      "id": "E6",
+      "name": "E6:金融・経済ドメインのための言語処理(2)",
+      "type": "Paper Sessions"
+    },
+    "P6": {
+      "display_name": "P6:ポスター",
+      "start_time": "2025-03-12T10:20:00+09:00",
+      "end_time": "2025-03-12T11:50:00+09:00",
+      "id": "P6",
+      "name": "P6:ポスター",
+      "type": "Paper Sessions"
+    },
+    "Q6": {
+      "display_name": "Q6:ポスター",
+      "start_time": "2025-03-12T10:20:00+09:00",
+      "end_time": "2025-03-12T11:50:00+09:00",
+      "id": "Q6",
+      "name": "Q6:ポスター",
+      "type": "Paper Sessions"
+    },
+    "A7": {
+      "display_name": "A7:NLPモデルの解釈可能性・分析(3)",
+      "start_time": "2025-03-12T13:00:00+09:00",
+      "end_time": "2025-03-12T14:30:00+09:00",
+      "id": "A7",
+      "name": "A7:NLPモデルの解釈可能性・分析(3)",
+      "type": "Paper Sessions"
+    },
+    "B7": {
+      "display_name": "B7:知識獲得・情報抽出(2)",
+      "start_time": "2025-03-12T13:00:00+09:00",
+      "end_time": "2025-03-12T14:30:00+09:00",
+      "id": "B7",
+      "name": "B7:知識獲得・情報抽出(2)",
+      "type": "Paper Sessions"
+    },
+    "C7": {
+      "display_name": "C7:音声言語処理",
+      "start_time": "2025-03-12T13:00:00+09:00",
+      "end_time": "2025-03-12T14:30:00+09:00",
+      "id": "C7",
+      "name": "C7:音声言語処理",
+      "type": "Paper Sessions"
+    },
+    "D7": {
+      "display_name": "D7:人狼知能：噓を見破り説得する会話ゲームとLLM",
+      "start_time": "2025-03-12T13:00:00+09:00",
+      "end_time": "2025-03-12T14:30:00+09:00",
+      "id": "D7",
+      "name": "D7:人狼知能：噓を見破り説得する会話ゲームとLLM",
+      "type": "Paper Sessions"
+    },
+    "E7": {
+      "display_name": "E7:金融・経済ドメインのための言語処理(3)",
+      "start_time": "2025-03-12T13:00:00+09:00",
+      "end_time": "2025-03-12T14:30:00+09:00",
+      "id": "E7",
+      "name": "E7:金融・経済ドメインのための言語処理(3)",
+      "type": "Paper Sessions"
+    },
+    "P7": {
+      "display_name": "P7:ポスター",
+      "start_time": "2025-03-12T13:00:00+09:00",
+      "end_time": "2025-03-12T14:30:00+09:00",
+      "id": "P7",
+      "name": "P7:ポスター",
+      "type": "Paper Sessions"
+    },
+    "Q7": {
+      "display_name": "Q7:ポスター",
+      "start_time": "2025-03-12T13:00:00+09:00",
+      "end_time": "2025-03-12T14:30:00+09:00",
+      "id": "Q7",
+      "name": "Q7:ポスター",
+      "type": "Paper Sessions"
+    },
+    "A8": {
+      "display_name": "A8:NLPモデルの解釈可能性・分析(4)",
+      "start_time": "2025-03-13T08:30:00+09:00",
+      "end_time": "2025-03-13T10:00:00+09:00",
+      "id": "A8",
+      "name": "A8:NLPモデルの解釈可能性・分析(4)",
+      "type": "Paper Sessions"
+    },
+    "B8": {
+      "display_name": "B8:言語資源構築",
+      "start_time": "2025-03-13T08:30:00+09:00",
+      "end_time": "2025-03-13T10:00:00+09:00",
+      "id": "B8",
+      "name": "B8:言語資源構築",
+      "type": "Paper Sessions"
+    },
+    "C8": {
+      "display_name": "C8:NLPのための効率的/低リソース手法",
+      "start_time": "2025-03-13T08:30:00+09:00",
+      "end_time": "2025-03-13T10:00:00+09:00",
+      "id": "C8",
+      "name": "C8:NLPのための効率的/低リソース手法",
+      "type": "Paper Sessions"
+    },
+    "D8": {
+      "display_name": "D8:対話(1)",
+      "start_time": "2025-03-13T08:30:00+09:00",
+      "end_time": "2025-03-13T10:00:00+09:00",
+      "id": "D8",
+      "name": "D8:対話(1)",
+      "type": "Paper Sessions"
+    },
+    "E8": {
+      "display_name": "E8:認知・脳と自然言語処理(1)",
+      "start_time": "2025-03-13T08:30:00+09:00",
+      "end_time": "2025-03-13T10:00:00+09:00",
+      "id": "E8",
+      "name": "E8:認知・脳と自然言語処理(1)",
+      "type": "Paper Sessions"
+    },
+    "P8": {
+      "display_name": "P8:ポスター",
+      "start_time": "2025-03-13T08:30:00+09:00",
+      "end_time": "2025-03-13T10:00:00+09:00",
+      "id": "P8",
+      "name": "P8:ポスター",
+      "type": "Paper Sessions"
+    },
+    "Q8": {
+      "display_name": "Q8:ポスター",
+      "start_time": "2025-03-13T08:30:00+09:00",
+      "end_time": "2025-03-13T10:00:00+09:00",
+      "id": "Q8",
+      "name": "Q8:ポスター",
+      "type": "Paper Sessions"
+    },
+    "A9": {
+      "display_name": "A9:機械翻訳(1)",
+      "start_time": "2025-03-13T10:20:00+09:00",
+      "end_time": "2025-03-13T11:50:00+09:00",
+      "id": "A9",
+      "name": "A9:機械翻訳(1)",
+      "type": "Paper Sessions"
+    },
+    "B9": {
+      "display_name": "B9:語彙資源・辞書",
+      "start_time": "2025-03-13T10:20:00+09:00",
+      "end_time": "2025-03-13T11:50:00+09:00",
+      "id": "B9",
+      "name": "B9:語彙資源・辞書",
+      "type": "Paper Sessions"
+    },
+    "C9": {
+      "display_name": "C9:情報検索・テキストマイニング",
+      "start_time": "2025-03-13T10:20:00+09:00",
+      "end_time": "2025-03-13T11:50:00+09:00",
+      "id": "C9",
+      "name": "C9:情報検索・テキストマイニング",
+      "type": "Paper Sessions"
+    },
+    "D9": {
+      "display_name": "D9:対話(2)",
+      "start_time": "2025-03-13T10:20:00+09:00",
+      "end_time": "2025-03-13T11:50:00+09:00",
+      "id": "D9",
+      "name": "D9:対話(2)",
+      "type": "Paper Sessions"
+    },
+    "E9": {
+      "display_name": "E9:認知・脳と自然言語処理(2)",
+      "start_time": "2025-03-13T10:20:00+09:00",
+      "end_time": "2025-03-13T11:50:00+09:00",
+      "id": "E9",
+      "name": "E9:認知・脳と自然言語処理(2)",
+      "type": "Paper Sessions"
+    },
+    "P9": {
+      "display_name": "P9:ポスター",
+      "start_time": "2025-03-13T10:20:00+09:00",
+      "end_time": "2025-03-13T11:50:00+09:00",
+      "id": "P9",
+      "name": "P9:ポスター",
+      "type": "Paper Sessions"
+    },
+    "Q9": {
+      "display_name": "Q9:ポスター",
+      "start_time": "2025-03-13T10:20:00+09:00",
+      "end_time": "2025-03-13T11:50:00+09:00",
+      "id": "Q9",
+      "name": "Q9:ポスター",
+      "type": "Paper Sessions"
+    },
+    "A10": {
+      "display_name": "A10:機械翻訳(2)",
+      "start_time": "2025-03-13T13:00:00+09:00",
+      "end_time": "2025-03-13T14:30:00+09:00",
+      "id": "A10",
+      "name": "A10:機械翻訳(2)",
+      "type": "Paper Sessions"
+    },
+    "B10": {
+      "display_name": "B10:形態素・構文・意味解析",
+      "start_time": "2025-03-13T13:00:00+09:00",
+      "end_time": "2025-03-13T14:30:00+09:00",
+      "id": "B10",
+      "name": "B10:形態素・構文・意味解析",
+      "type": "Paper Sessions"
+    },
+    "C10": {
+      "display_name": "C10:LLM構築",
+      "start_time": "2025-03-13T13:00:00+09:00",
+      "end_time": "2025-03-13T14:30:00+09:00",
+      "id": "C10",
+      "name": "C10:LLM構築",
+      "type": "Paper Sessions"
+    },
+    "D10": {
+      "display_name": "D10:質問応答，対話(3)",
+      "start_time": "2025-03-13T13:00:00+09:00",
+      "end_time": "2025-03-13T14:30:00+09:00",
+      "id": "D10",
+      "name": "D10:質問応答，対話(3)",
+      "type": "Paper Sessions"
+    },
+    "E10": {
+      "display_name": "E10:認知・脳と自然言語処理(3)",
+      "start_time": "2025-03-13T13:00:00+09:00",
+      "end_time": "2025-03-13T14:30:00+09:00",
+      "id": "E10",
+      "name": "E10:認知・脳と自然言語処理(3)",
+      "type": "Paper Sessions"
+    },
+    "P10": {
+      "display_name": "P10:ポスター",
+      "start_time": "2025-03-13T13:00:00+09:00",
+      "end_time": "2025-03-13T14:30:00+09:00",
+      "id": "P10",
+      "name": "P10:ポスター",
+      "type": "Paper Sessions"
+    },
+    "Q10": {
+      "display_name": "Q10:ポスター",
+      "start_time": "2025-03-13T13:00:00+09:00",
+      "end_time": "2025-03-13T14:30:00+09:00",
+      "id": "Q10",
+      "name": "Q10:ポスター",
       "type": "Paper Sessions"
     }
   },

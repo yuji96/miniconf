@@ -46,7 +46,6 @@ def extract_list_field(v, key):
         return value.split("|")
 
 
-# TODO: これを改良
 def generate_paper_events(site_data: SiteData) -> List[FrontendCalendarEvent]:
     """We add sessions from papers and compute the overall paper blocks for the weekly view."""
     # Add paper sessions to calendar
@@ -60,8 +59,7 @@ def generate_paper_events(site_data: SiteData) -> List[FrontendCalendarEvent]:
         )
         # for NLP2025
         if session.type == "Paper Sessions":
-            # TODO
-            url = f"sessions.html#link-{tab_id}-{session.id}"
+            url = f"papers.html?filter=keywords&search={session.name}"
 
         event = FrontendCalendarEvent(
             title=session.name,

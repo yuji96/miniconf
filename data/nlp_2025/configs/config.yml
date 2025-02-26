@@ -31,7 +31,7 @@ gather_town:
 connected_papers_conference_name: 
 
 calendar:
-  start: '2025-03-10'
+  start: '2025-03-11'
   end: '2025-03-14'
   start_time: "08:00:00"
   end_time: "18:00:00"
