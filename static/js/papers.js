@@ -491,7 +491,7 @@ const start = (reset_track) => {
     reset_track = reset_track || false;
     
     const urlFilter = getUrlParameter("filter") || 'titles';
-    const program = getUrlParameter("program") || 'Main'
+    const program = getUrlParameter("program") || 'all';
     let default_track = program == "workshop"? "All workshops" : "All tracks";
     
     let track = getUrlParameter("track") || default_track;
@@ -639,15 +639,6 @@ program_to_badge_class["main"] = "danger";
 program_to_badge_class["demo"] = "primary";
 program_to_badge_class["findings"] = "warning";
 program_to_badge_class["workshop"] = "info";
-const card_program_badge = (paper) => {
-    let selected_program = getUrlParameter("program");
-    if (selected_program === "all") 
-        return `<span class="badge 
-                      badge-pill badge-${program_to_badge_class[paper.program]}"
-                      >${paper.program}</span>`;
-    else
-        return ``;
-}
 
 //language=HTML
 const card_html = openreview => `
@@ -656,11 +647,9 @@ const card_html = openreview => `
             <div class="card-body">
 
                 <a href="paper_${openreview.id}.html"
-                target="_blank"><h5 class="card-title ${openreview.read ? 'card-title-visited' : ''}">${openreview.title}</h5>
+                <h5 class="card-title ${openreview.read ? 'card-title-visited' : ''}">${openreview.title}</h5>
                 </a>
                 <h6 class="card-subtitle mb-2 text-muted">${openreview.authors.join(', ')}</h6>
-                
-                ${card_program_badge(openreview)}
                 
                 ${card_image(openreview, render_mode !== 'list')}
 

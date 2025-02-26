@@ -69,7 +69,7 @@
 <script>
     // We use https://fullcalendar.io/
     document.addEventListener('DOMContentLoaded', function() {
-    var initial_view = 'timeGridWeek';
+    var initial_view = 'timeGrid';
     window.fc_current_view = initial_view;
     var initialTimeZone = moment.tz.guess();
     var timeZoneSelectorEl = document.getElementById('time-zone-selector');
@@ -80,11 +80,6 @@
 
     $.get("schedule.json", function (data, status) {
         var events = data;
-        // Fun fact! I think this variable is no longer in use
-        var event_lookup = Object.fromEntries(events.map(e => [e.title, e]));
-        // get event types
-        // var uniqEvents = [...new Set(events.map(x=>x.type))]
-        //  ["Tutorials", "Plenary Sessions", "Workshops", "Socials", "QA Sessions"]
 
         var calendarEl = document.getElementById('calendar');
         var calendar_n = new FullCalendar.Calendar(calendarEl, {
@@ -110,10 +105,13 @@
                 start: '2025-03-10',
                 end: '2025-03-14'
             },
+            slotMinTime: '08:00:00',
+            slotMaxTime: '18:00:00',
             headerToolbar: {
                 left: 'prev,next today',
                 center: 'title',
-                right: 'timeGridWeek,timeGridDay'
+                // right: 'timeGrid,timeGridDay'
+                right: 'timeGrid,timeGridDay'
             },
             slotEventOverlap: false,
             slotDuration: "00:30:00",
@@ -138,8 +136,9 @@
                     obj["start"] = moment(obj["start"]).tz(tz).format();
                     obj["end"] = moment(obj["end"]).tz(tz).format();
 
-                    if (obj["view"] === "day" && view !== "timeGridDay" ||
-                        obj["view"] === "week" && view !== "timeGridWeek" ||
+                    if (
+                        // obj["view"] === "day" && view !== "timeGridDay" ||
+                        // obj["view"] === "week" && view !== "timeGrid" ||
                         !eventTypes.includes(obj["type"])) {
                         obj["display"] = "none";
                     }
@@ -157,17 +156,17 @@
                     return false;
                 }
             },
-            eventDidMount: function (info) {
-                var title = info.event.title;
-                $(info.el).popover({
-                    title: title,
-                    html: true,
-                    content: info.timeText,//+ "<br/> Room: " + event_lookup[title].location,
-                    placement: 'top',
-                    trigger: 'hover',
-                    container: 'body'
-                })
-            },
+            // eventDidMount: function (info) {
+            //     // var title = info.event.title;
+            //     // $(info.el).popover({
+            //     //     title: title,
+            //     //     html: true,
+            //     //     content: info.timeText,
+            //     //     placement: 'top',
+            //     //     trigger: 'hover',
+            //     //     container: 'body'
+            //     // })
+            // },
             // Render HTML from title as HTML
             eventContent: function (arg) {
                 return {html: arg.event.title}
@@ -321,7 +320,7 @@
     <label for="event-type-selector">&nbsp;Event type:</label>
     <select id="event-type-selector" class="selectpicker" multiple>
         
-        <option value="Workshops" selected>Workshops</option>
+        <option value="Paper Sessions" selected>Paper Sessions</option>
         
     </select>
     <div id='calendar'></div>
