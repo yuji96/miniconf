@@ -72,6 +72,19 @@
       >{{ "," if not loop.last }}
       {% endfor %}
     </h3>
+
+    <p class="card-text text-center h5">
+      <a href="papers.html?track={{paper.track}}" class ="badge badge-pill badge-primary">{{ paper.track }}</a>
+
+      {#
+      {% if paper.program in ['Main', 'Findings', 'Demo', 'Industry'] %}
+      <a href="papers.html?program=main&track={{paper.track}}" class ="badge badge-pill badge-primary">{{paper.program}}: {{ paper.track }}</a>
+      {% elif paper.program == "Workshop" %}
+      <a href="papers.html?program=workshop&track={{paper.track}}" class ="badge badge-pill badge-primary">{{ paper.track }}</a>
+      {% endif %}
+      <span class="badge badge-secondary">{{ paper.paper_type | capitalize }} Paper</span>
+      #}
+    </p>
    
     <div class="text-center p-3">
       {% if paper.paper_pdf %}
@@ -135,15 +148,7 @@
         <i class="fas fa-star"></i> Add to Favorites
       </a>
     </div>
-    <p class="card-text text-center h5">
 
-      {% if paper.program in ['Main', 'Findings', 'Demo', 'Industry'] %}
-     <a href="papers.html?program=main&track={{paper.track}}" class ="badge badge-pill badge-primary">{{paper.program}}: {{ paper.track }}</a>
-     {% elif paper.program == "Workshop" %}
-      <a href="papers.html?program=workshop&track={{paper.track}}" class ="badge badge-pill badge-primary">{{ paper.track }}</a>
-      {% endif %}
-      <span class="badge badge-secondary">{{ paper.paper_type | capitalize }} Paper</span>
-    </p>
 
     {{ components.live_sessions(
         events,
@@ -164,19 +169,22 @@
           {{paper.languages | join(", ")}}
         </div>
         {% endif %}
+        {#
         <div>
           <span class="font-weight-bold">TLDR:</span>
           {{paper.tldr}}
         </div>
+        #}
   </div>
 </div>
 
+{#
 <ul class="nav nav-tabs" id="myTab" role="tablist">
   <li class="nav-item">
-    <a class="nav-link active" id="chat-tab" data-toggle="tab" href="#chat" role="tab" aria-controls="chat" aria-selected="true">RocketChat</a>
+    <a class="nav-link active" id="chat-tab" data-toggle="tab" href="#chat" role="tab" aria-controls="chat" aria-selected="false">RocketChat</a>
   </li>
   <li class="nav-item">
-    <a class="nav-link" id="abstract-tab" data-toggle="tab" href="#abstract" role="tab" aria-controls="abstract" aria-selected="false">Abstract</a>
+    <a class="nav-link" id="abstract-tab" data-toggle="tab" href="#abstract" role="tab" aria-controls="abstract" aria-selected="true">Abstract</a>
   </li>
   {% if paper.paper_pdf %}
   <li class="nav-item">
@@ -194,8 +202,10 @@
   </li>
   {% endif %}
 </ul>
+#}
+
 <div class="tab-content" id="myTabContent">
-  <div class="tab-pane fade show active" id="chat" role="tabpanel" aria-labelledby="chat-tab">
+  <div class="tab-pane fade" id="chat" role="tabpanel" aria-labelledby="chat-tab">
 {% if config.enable_chat %}
 {% if paper.rocketchat_channel[6:15] == 'tutorials' %}
   {% set rocketchat = paper.rocketchat_channel[6:14] + paper.rocketchat_channel[15:] %}
@@ -217,7 +227,7 @@
 </div>
 {% endif %}
   </div>
-  <div class="tab-pane fade" id="abstract" role="tabpanel" aria-labelledby="abstract-tab">
+  <div class="tab-pane fade show active" id="abstract" role="tabpanel" aria-labelledby="abstract-tab">
     <div id="details" class="pp-card m-3">
       <div class="card-body">
         <div class="card-text">

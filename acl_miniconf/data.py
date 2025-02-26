@@ -1,13 +1,12 @@
-from collections import defaultdict
-from typing import List, Optional, Dict, Any
-import glob
 import datetime
+import glob
+from collections import defaultdict
 from pathlib import Path
+from typing import Any, Dict, List, Optional
 
-from pydantic import BaseModel
-import json
 import pytz
 import yaml
+from pydantic import BaseModel
 
 MAIN = "Main"
 WORKSHOP = "Workshop"
@@ -211,11 +210,13 @@ class Paper(BaseModel):
     id: str
     title: str
     authors: List[str]
-    track: str
-    paper_type: str
-    category: str
+    paper_pdf: str
     abstract: str
-    tldr: str
+    track: str 
+
+    paper_type: Optional[str] = None
+    category: Optional[str] = None
+    tldr: Optional[str] = None
     keywords: List[str] = []
     languages: List[str] = []
     underline_url: Optional[str] = None
@@ -225,12 +226,11 @@ class Paper(BaseModel):
     slides_pdf: Optional[str] = None
     video_url: Optional[str] = None
     anthology_url: Optional[str] = None
-    paper_pdf: Optional[str] = None
     demo_url: Optional[str] = None
-    event_ids: List[str]
+    event_ids: List[str] = []
     similar_paper_ids: List[str] = []
-    program: str
-    material: str = None
+    program: Optional[str] = None
+    material: Optional[str] = None
     is_paper: bool = True
     display_track: Optional[str] = None
 
