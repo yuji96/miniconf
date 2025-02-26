@@ -556,7 +556,8 @@ div#papers_options > div {
 .fc-v-event {
   overflow: hidden !important;
   text-overflow: ellipsis;
-  white-space: nowrap;
+  /* white-space: nowrap; */
+  white-space: normal;
 }
 
 /* Manipulate calendar event on hover */
