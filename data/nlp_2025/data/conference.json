@@ -2,69 +2,41 @@
   "plenaries": {},
   "tutorials": {},
   "workshops": {},
-  "sessions": {},
-  "events": {
-    "poster-session-3_-semantics_-lexical-(poster)": {
-      "chairs": [],
-      "end_time": "2023-07-11T10:30:00-04:00",
-      "id": "poster-session-3_-semantics_-lexical-(poster)",
-      "link": null,
-      "paper_ids": [],
-      "room": "Frontenac Ballroom and Queen's Quay",
-      "session": "Poster Session 3",
-      "start_time": "2023-07-11T09:00:00-04:00",
-      "track": "Semantics: Lexical",
-      "type": "Poster"
-    },
-    "session-7_-summarization-(virtual-poster)": {
-      "chairs": [],
-      "end_time": "2023-07-12T12:30:00-04:00",
-      "id": "session-7_-summarization-(virtual-poster)",
-      "link": null,
-      "paper_ids": [],
-      "room": "Pier 7&8",
-      "session": "Session 7",
-      "start_time": "2023-07-12T11:00:00-04:00",
-      "track": "Summarization",
-      "type": "Virtual Poster"
-    },
-    "poster-session-4_-question-answering-(poster)": {
-      "chairs": [],
-      "end_time": "2023-07-11T12:30:00-04:00",
-      "id": "poster-session-4_-question-answering-(poster)",
-      "link": null,
-      "paper_ids": [],
-      "room": "Frontenac Ballroom and Queen's Quay",
-      "session": "Poster Session 4",
-      "start_time": "2023-07-11T11:00:00-04:00",
-      "track": "Question Answering",
-      "type": "Poster"
-    },
-    "poster-session-3_-ethics-and-nlp-(poster)": {
-      "chairs": [],
-      "end_time": "2023-07-11T10:30:00-04:00",
-      "id": "poster-session-3_-ethics-and-nlp-(poster)",
-      "link": null,
-      "paper_ids": [],
-      "room": "Frontenac Ballroom and Queen's Quay",
-      "session": "Poster Session 3",
-      "start_time": "2023-07-11T09:00:00-04:00",
-      "track": "Ethics and NLP",
-      "type": "Poster"
-    },
-    "poster-session-4_-machine-translation-(poster)": {
-      "chairs": [],
-      "end_time": "2023-07-11T12:30:00-04:00",
-      "id": "poster-session-4_-machine-translation-(poster)",
-      "link": null,
-      "paper_ids": [],
-      "room": "Frontenac Ballroom and Queen's Quay",
-      "session": "Poster Session 4",
-      "start_time": "2023-07-11T11:00:00-04:00",
-      "track": "Machine Translation",
-      "type": "Poster"
+  "sessions": {
+    "AmericasNLP": {
+      "display_name": "W20 - The 3rd Workshop on NLP for Indigenous Languages of the Americas (AmericasNLP)",
+      "start_time": "2025-03-10T09:00:00+09:00",
+      "end_time": "2025-03-10T17:00:00+09:00",
+      "events": {},
+      "id": "AmericasNLP",
+      "name": "W20 - The 3rd Workshop on NLP for Indigenous Languages of the Americas (AmericasNLP)",
+      "plenary_events": {},
+      
+      "tutorial_events": {},
+      "type": "Workshops",
+      "workshop_events": {
+        "AmericasNLP": {
+          "anthology_venue_id": "ACL",
+          "booklet_id": "workshop_20",
+          "chairs": [],
+          "committee": [],
+          "description": "AmericasNLP aims to (a) encourage research on NLP, computational linguistics, corpus linguistics, and speech around the globe to work on native American languages; (b) )connect researchers and professionals from underrepresented communities and native speakers of endangered languages with the machine learning and natural language processing communities; and (c) )promote research on both neural and non-neural machine learning approaches suitable for low-resource languages.",
+          "end_time": null,
+          "id": "AmericasNLP",
+          "link": null,
+          "paper_ids": [],
+          "room": "Pier 3",
+          "session": "AmericasNLP",
+          "short_name": "AmericasNLP",
+          "start_time": null,
+          "track": "Workshop",
+          "type": "Workshops",
+          "workshop_site_url": "https://turing.iimas.unam.mx/americasnlp/"
+        }
+      }
     }
   },
+  "events": {},
   "papers": [
     [
       "P1258",

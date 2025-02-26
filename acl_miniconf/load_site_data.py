@@ -195,24 +195,6 @@ def generate_paper_events(site_data: SiteData) -> List[Dict[str, Any]]:
 
                 assert start <= end, f"Session start after session end: {session.id} {event.id}\n{start} {end}\n{event.start_time} {event.end_time}"
 
-    # for uid, group in all_grouped.items():
-    #     name = group[0].name
-    #     start_time = group[0].start_time
-    #     end_time = group[0].end_time
-    #     assert all(s.start_time == start_time for s in group)
-    #     assert all(s.end_time == end_time for s in group)
-
-    #     event = FrontendCalendarEvent(
-    #         title=name,
-    #         start=start_time,
-    #         end=end_time,
-    #         location="",
-    #         url=f"sessions.html#tab-{tab_id}",
-    #         category="time",
-    #         type="Paper Sessions",
-    #         view="week",
-    #     )
-    #     overall_calendar.append(event)
     return overall_calendar
 
 
