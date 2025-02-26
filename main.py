@@ -23,6 +23,8 @@ app = Flask(__name__)
 app.config.from_object(__name__)
 app.config["SEND_FILE_MAX_AGE_DEFAULT"] = 0
 app.config["TEMPLATES_AUTO_RELOAD"] = True
+app.config["FREEZER_IGNORE_404_NOT_FOUND"] = True
+
 freezer = Freezer(app)
 markdown = Markdown(app)
 
@@ -237,6 +239,7 @@ def papers_program(program: str):
 
 @app.route("/track_<program_name>_<track_name>.json")
 def track_json(program_name, track_name):
+    print(program_name, track_name)
     if program_name == WORKSHOP:
         papers_for_track = None
         for wsh in site_data.workshops:
