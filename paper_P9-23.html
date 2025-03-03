@@ -64,37 +64,31 @@
   <script src="https://cdn.jsdelivr.net/npm/pdfjs-dist@2.3.200/build/pdf.min.js"></script>
   <script src="static/js/pdf_render.js"></script>
 
-  <title>NLP2025: MATCHA：専門家が平易化した記事を用いたやさしい日本語パラレルコーパス</title>
+  <title>NLP2025: 近傍事例を用いた対話における感情認識</title>
   
-<meta name="citation_title" content="MATCHA：専門家が平易化した記事を用いたやさしい日本語パラレルコーパス" />
+<meta name="citation_title" content="近傍事例を用いた対話における感情認識" />
 
-<meta name="citation_author" content="宮田莉奈" />
+<meta name="citation_author" content="石渡太智" />
 
-<meta name="citation_author" content="惟高日向" />
+<meta name="citation_author" content="後藤淳" />
 
-<meta name="citation_author" content="山内洋輝" />
+<meta name="citation_author" content="山田寛章" />
 
-<meta name="citation_author" content="柳本大輝" />
-
-<meta name="citation_author" content="梶原智之" />
-
-<meta name="citation_author" content="二宮崇" />
-
-<meta name="citation_author" content="西脇靖紘" />
+<meta name="citation_author" content="徳永健伸" />
 
 <meta name="citation_publication_date" content="None" />
 <meta name="citation_conference_title" content="None" />
 <meta name="citation_inbook_title" content="None" />
-<meta name="citation_abstract" content="TBA" />
+<meta name="citation_abstract" content="対話における発話の感情認識が，ソーシャルメディアの感情分析を目的として注目を集めている．対話の感情認識では，同じ発話であっても，先行文脈に応じて異なる感情を示すことがある．従来手法として DialogueCRN [1]は，識別対象の発話とその先行文脈（対話）を利用し，高い識別性能を示した．本研究は，モデル外部のデータベースを活用して，従来の識別モデルを補強する方法を提案する．具体的には，まず識別対象の発話とその先行文脈の内容をクエリーとして，意味的に近い発話を訓練データから k 近傍法を用いて検索する．検索した発話（近傍事例）に付与された感情ラベルと，識別対象の発話との距離を基に感情ラベルの確率分布を作成し，従来の識別モデルの確率分布と重み付け線形和によって組み合わせる．本研究は，定数による重み付き線形和で 2 つの確率分布を組み合わせるだけでなく，重み係数を導出するニューラルネットワークを構築して，識別対象の発話ごとに動的に重み係数を変更する．さらに，適切な重み係数を学習するために，図 1 に示す係数損失を導入する．従来の識別モデル（または近傍事例）による確率分布が適切な場合，従来の識別モデル（または近傍事例）側の重み係数が高くなることが望まれるため，従来の識別モデルによる確率分布と近傍事例による確率分布のそれぞれが示す感情ラベルが，教師ラベルと一致する場合に重み係数を高め，そうでない場合に重み係数を低くする損失関数を設計する．ベンチマークデータ IEMOCAP [2]を用いた評価実験の結果を表 1 に示す．動的に重み係数を変更すCE lossBCE losssadsadsadhappy" />
 
-<meta name="citation_keywords" content="Q1:ポスター" />
+<meta name="citation_keywords" content="P9:ポスター" />
 
 <meta name="citation_pdf_url" content="" />
 
 <script src="static/js/persistor.js"></script>
 
 <script>
-  let paper_id = "Q1-24J"
+  let paper_id = "P9-23"
 
   function updateFavBtn(isFav){
     let favBtn = $('#favBtn');
@@ -221,43 +215,31 @@
 <div class="card m-3" style="">
   <div class="card-header">
     <h2 class="card-title main-title text-center" style="color: black">
-      MATCHA：専門家が平易化した記事を用いたやさしい日本語パラレルコーパス
+      近傍事例を用いた対話における感情認識
     </h2>
     <h3 class="card-subtitle mb-2 text-muted text-center">
       
-      <a href="papers.html?filter=authors&search=宮田莉奈&program=all" class="text-primary"
-        >宮田莉奈</a
+      <a href="papers.html?filter=authors&search=石渡太智&program=all" class="text-primary"
+        >石渡太智</a
       >,
       
-      <a href="papers.html?filter=authors&search=惟高日向&program=all" class="text-primary"
-        >惟高日向</a
+      <a href="papers.html?filter=authors&search=後藤淳&program=all" class="text-primary"
+        >後藤淳</a
       >,
       
-      <a href="papers.html?filter=authors&search=山内洋輝&program=all" class="text-primary"
-        >山内洋輝</a
+      <a href="papers.html?filter=authors&search=山田寛章&program=all" class="text-primary"
+        >山田寛章</a
       >,
       
-      <a href="papers.html?filter=authors&search=柳本大輝&program=all" class="text-primary"
-        >柳本大輝</a
-      >,
-      
-      <a href="papers.html?filter=authors&search=梶原智之&program=all" class="text-primary"
-        >梶原智之</a
-      >,
-      
-      <a href="papers.html?filter=authors&search=二宮崇&program=all" class="text-primary"
-        >二宮崇</a
-      >,
-      
-      <a href="papers.html?filter=authors&search=西脇靖紘&program=all" class="text-primary"
-        >西脇靖紘</a
+      <a href="papers.html?filter=authors&search=徳永健伸&program=all" class="text-primary"
+        >徳永健伸</a
       >
       
     </h3>
 
     <p class="card-text text-center h5">
       
-      <a href="papers.html?filter=keywords&search=Q1:ポスター" class ="badge badge-pill badge-primary">Q1:ポスター</a>
+      <a href="papers.html?filter=keywords&search=P9:ポスター" class ="badge badge-pill badge-primary">P9:ポスター</a>
       
 
       
@@ -265,7 +247,7 @@
    
     <div class="text-center p-3">
       
-      <a class="card-link link-info" target="_blank" href="TBA">
+      <a class="card-link link-info" target="_blank" href="https://www.anlp.jp/proceedings/annual_meeting/2025/pdf_dir/P9-23.pdf">
         📝 Paper 
       </a>
       
@@ -319,7 +301,7 @@
         <div class="card-text">
           <div id="abstractExample">
             <span class="font-weight-bold">Abstract:</span>
-            TBA
+            対話における発話の感情認識が，ソーシャルメディアの感情分析を目的として注目を集めている．対話の感情認識では，同じ発話であっても，先行文脈に応じて異なる感情を示すことがある．従来手法として DialogueCRN [1]は，識別対象の発話とその先行文脈（対話）を利用し，高い識別性能を示した．本研究は，モデル外部のデータベースを活用して，従来の識別モデルを補強する方法を提案する．具体的には，まず識別対象の発話とその先行文脈の内容をクエリーとして，意味的に近い発話を訓練データから k 近傍法を用いて検索する．検索した発話（近傍事例）に付与された感情ラベルと，識別対象の発話との距離を基に感情ラベルの確率分布を作成し，従来の識別モデルの確率分布と重み付け線形和によって組み合わせる．本研究は，定数による重み付き線形和で 2 つの確率分布を組み合わせるだけでなく，重み係数を導出するニューラルネットワークを構築して，識別対象の発話ごとに動的に重み係数を変更する．さらに，適切な重み係数を学習するために，図 1 に示す係数損失を導入する．従来の識別モデル（または近傍事例）による確率分布が適切な場合，従来の識別モデル（または近傍事例）側の重み係数が高くなることが望まれるため，従来の識別モデルによる確率分布と近傍事例による確率分布のそれぞれが示す感情ラベルが，教師ラベルと一致する場合に重み係数を高め，そうでない場合に重み係数を低くする損失関数を設計する．ベンチマークデータ IEMOCAP [2]を用いた評価実験の結果を表 1 に示す．動的に重み係数を変更すCE lossBCE losssadsadsadhappy
           </div>
         </div>
       </div>
@@ -327,7 +309,7 @@
   </div>
   
   <div class="tab-pane fade" id="paper" role="tabpanel" aria-labelledby="paper-tab">
-    <embed src="TBA" type="application/pdf" width="100%" height="850px">
+    <embed src="https://www.anlp.jp/proceedings/annual_meeting/2025/pdf_dir/P9-23.pdf" type="application/pdf" width="100%" height="850px">
   </div>
   
   

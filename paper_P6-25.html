@@ -64,29 +64,31 @@
   <script src="https://cdn.jsdelivr.net/npm/pdfjs-dist@2.3.200/build/pdf.min.js"></script>
   <script src="static/js/pdf_render.js"></script>
 
-  <title>NLP2025: Semantic Shift Stability: 学習コーパス内の単語の意味変化を用いた事前学習済みモデルの時系列性能劣化の監査</title>
+  <title>NLP2025: 未知の知識に対する事前学習済み言語モデルが持つ推論能力の調査</title>
   
-<meta name="citation_title" content="Semantic Shift Stability: 学習コーパス内の単語の意味変化を用いた事前学習済みモデルの時系列性能劣化の監査" />
+<meta name="citation_title" content="未知の知識に対する事前学習済み言語モデルが持つ推論能力の調査" />
 
-<meta name="citation_author" content="石原祥太郎" />
+<meta name="citation_author" content="坂井優介" />
 
-<meta name="citation_author" content="高橋寛武" />
+<meta name="citation_author" content="上垣外英剛" />
 
-<meta name="citation_author" content="白井穂乃" />
+<meta name="citation_author" content="林克彦" />
+
+<meta name="citation_author" content="渡辺太郎" />
 
 <meta name="citation_publication_date" content="None" />
 <meta name="citation_conference_title" content="None" />
 <meta name="citation_inbook_title" content="None" />
-<meta name="citation_abstract" content="TBA" />
+<meta name="citation_abstract" content="事前学習済み言語モデル (Pre-trained Language Models; PLM) は事前学習時に獲得した言語理解能力や知識によって，既知の事象に対して推論を行うことができる一方，未知の事象に対しては PLM の推論能力のみで解を導き出す必要がある．しかし言語モデルの推論能力のみを評価するには，PLM が事前学習時に記憶した知識と獲得した推論能力を完全に切り分けた分析が必要となり，既存のデータセットで測定するのは，事前学習時の記憶が作用してしまうため困難である．本研究では PLM の推論能力の分析に，知識グラフ上の既知の関係から欠損している未知の関係を予測するタスクである知識グラフ補完 (Knowledge Graph Completion; KGC) を対象とする．KGC において埋め込みに基づく従来手法は推論のみから欠損箇所を予測する一方，近年利用されているPLM を用いた手法では事前学習時に記憶したエンティティに関する知識も利用している．そのため KGC は記憶した知識の利用と推論による解決との両側面を有することから，PLM が記憶する知識の影響を測るのに適したタスクである．我々は KGC に対し知識と推論による性能向上を切り分けて測定するための評価方法及びそのためのデータ構築手法を提案する．本研究では PLM が事前学習時にエンティティに関する知識の記憶により推論を行っている箇所を明らかにし，PLM に備わっている未知の事象に対する推論能力も同時に学習していることを示唆する結果が得られた．" />
 
-<meta name="citation_keywords" content="Q9:ポスター" />
+<meta name="citation_keywords" content="P6:ポスター" />
 
 <meta name="citation_pdf_url" content="" />
 
 <script src="static/js/persistor.js"></script>
 
 <script>
-  let paper_id = "Q9-24J"
+  let paper_id = "P6-25"
 
   function updateFavBtn(isFav){
     let favBtn = $('#favBtn');
@@ -213,27 +215,31 @@
 <div class="card m-3" style="">
   <div class="card-header">
     <h2 class="card-title main-title text-center" style="color: black">
-      Semantic Shift Stability: 学習コーパス内の単語の意味変化を用いた事前学習済みモデルの時系列性能劣化の監査
+      未知の知識に対する事前学習済み言語モデルが持つ推論能力の調査
     </h2>
     <h3 class="card-subtitle mb-2 text-muted text-center">
       
-      <a href="papers.html?filter=authors&search=石原祥太郎&program=all" class="text-primary"
-        >石原祥太郎</a
+      <a href="papers.html?filter=authors&search=坂井優介&program=all" class="text-primary"
+        >坂井優介</a
       >,
       
-      <a href="papers.html?filter=authors&search=高橋寛武&program=all" class="text-primary"
-        >高橋寛武</a
+      <a href="papers.html?filter=authors&search=上垣外英剛&program=all" class="text-primary"
+        >上垣外英剛</a
       >,
       
-      <a href="papers.html?filter=authors&search=白井穂乃&program=all" class="text-primary"
-        >白井穂乃</a
+      <a href="papers.html?filter=authors&search=林克彦&program=all" class="text-primary"
+        >林克彦</a
+      >,
+      
+      <a href="papers.html?filter=authors&search=渡辺太郎&program=all" class="text-primary"
+        >渡辺太郎</a
       >
       
     </h3>
 
     <p class="card-text text-center h5">
       
-      <a href="papers.html?filter=keywords&search=Q9:ポスター" class ="badge badge-pill badge-primary">Q9:ポスター</a>
+      <a href="papers.html?filter=keywords&search=P6:ポスター" class ="badge badge-pill badge-primary">P6:ポスター</a>
       
 
       
@@ -241,7 +247,7 @@
    
     <div class="text-center p-3">
       
-      <a class="card-link link-info" target="_blank" href="TBA">
+      <a class="card-link link-info" target="_blank" href="https://www.anlp.jp/proceedings/annual_meeting/2025/pdf_dir/P6-25.pdf">
         📝 Paper 
       </a>
       
@@ -295,7 +301,7 @@
         <div class="card-text">
           <div id="abstractExample">
             <span class="font-weight-bold">Abstract:</span>
-            TBA
+            事前学習済み言語モデル (Pre-trained Language Models; PLM) は事前学習時に獲得した言語理解能力や知識によって，既知の事象に対して推論を行うことができる一方，未知の事象に対しては PLM の推論能力のみで解を導き出す必要がある．しかし言語モデルの推論能力のみを評価するには，PLM が事前学習時に記憶した知識と獲得した推論能力を完全に切り分けた分析が必要となり，既存のデータセットで測定するのは，事前学習時の記憶が作用してしまうため困難である．本研究では PLM の推論能力の分析に，知識グラフ上の既知の関係から欠損している未知の関係を予測するタスクである知識グラフ補完 (Knowledge Graph Completion; KGC) を対象とする．KGC において埋め込みに基づく従来手法は推論のみから欠損箇所を予測する一方，近年利用されているPLM を用いた手法では事前学習時に記憶したエンティティに関する知識も利用している．そのため KGC は記憶した知識の利用と推論による解決との両側面を有することから，PLM が記憶する知識の影響を測るのに適したタスクである．我々は KGC に対し知識と推論による性能向上を切り分けて測定するための評価方法及びそのためのデータ構築手法を提案する．本研究では PLM が事前学習時にエンティティに関する知識の記憶により推論を行っている箇所を明らかにし，PLM に備わっている未知の事象に対する推論能力も同時に学習していることを示唆する結果が得られた．
           </div>
         </div>
       </div>
@@ -303,7 +309,7 @@
   </div>
   
   <div class="tab-pane fade" id="paper" role="tabpanel" aria-labelledby="paper-tab">
-    <embed src="TBA" type="application/pdf" width="100%" height="850px">
+    <embed src="https://www.anlp.jp/proceedings/annual_meeting/2025/pdf_dir/P6-25.pdf" type="application/pdf" width="100%" height="850px">
   </div>
   
   

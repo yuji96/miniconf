@@ -64,29 +64,29 @@
   <script src="https://cdn.jsdelivr.net/npm/pdfjs-dist@2.3.200/build/pdf.min.js"></script>
   <script src="static/js/pdf_render.js"></script>
 
-  <title>NLP2025: Bidirectional Transformer Reranker for Grammatical Error Correction</title>
+  <title>NLP2025: Semantic Shift Stability: 学習コーパス内の単語の意味変化を用いた事前学習済みモデルの時系列性能劣化の監査</title>
   
-<meta name="citation_title" content="Bidirectional Transformer Reranker for Grammatical Error Correction" />
+<meta name="citation_title" content="Semantic Shift Stability: 学習コーパス内の単語の意味変化を用いた事前学習済みモデルの時系列性能劣化の監査" />
 
-<meta name="citation_author" content="YingZhang" />
+<meta name="citation_author" content="石原祥太郎" />
 
-<meta name="citation_author" content="上垣外英剛" />
+<meta name="citation_author" content="高橋寛武" />
 
-<meta name="citation_author" content="奥村学" />
+<meta name="citation_author" content="白井穂乃" />
 
 <meta name="citation_publication_date" content="None" />
 <meta name="citation_conference_title" content="None" />
 <meta name="citation_inbook_title" content="None" />
-<meta name="citation_abstract" content="TBA" />
+<meta name="citation_abstract" content="研究者や実務者にとって事前学習済みモデルの利活用が一般的になる中，実運用上の大きな課題として時系列性能劣化の監査が挙げられる．特に事前学習済み言語モデルは事前学習や推論にかかる時間と費用が大きいため，効率的な監査と再学習の仕組みの検討は重要である．本研究では学習コーパス内の単語の通時的な意味変化を計算することで，事前学習済み言語モデルや単語分散表現の時系列性能劣化を監査する枠組みを提案し，モデルの再学習に関する意思決定を支援する．最初に 2011～2021 年の日本語・英語のニュース記事を用いて，学習コーパスの期間が異なる RoBERTa や word2vec のモデルを構築し，時系列性能劣化を観測した．実験では，学習コーパス内の単語の通時的な意味変化から計算できる指標「Semantic Shift Stability」が小さくなる際，事前学習済みモデルの性能が時系列で大きく劣化しており，監査の用途での有用性を確認できた．提案する枠組みには意味が大きく変化した単語から原因を推察できる利点もあり，2016 年の米大統領選や 2020 年の新型コロナウイルス感染症の影響が示唆された．指標を計算するソースコードはhttps://github.com/Nikkei/semantic-shift-stability で公開した．" />
 
-<meta name="citation_keywords" content="Q5:ポスター" />
+<meta name="citation_keywords" content="Q9:ポスター" />
 
 <meta name="citation_pdf_url" content="" />
 
 <script src="static/js/persistor.js"></script>
 
 <script>
-  let paper_id = "Q5-25J"
+  let paper_id = "Q9-24"
 
   function updateFavBtn(isFav){
     let favBtn = $('#favBtn');
@@ -213,27 +213,27 @@
 <div class="card m-3" style="">
   <div class="card-header">
     <h2 class="card-title main-title text-center" style="color: black">
-      Bidirectional Transformer Reranker for Grammatical Error Correction
+      Semantic Shift Stability: 学習コーパス内の単語の意味変化を用いた事前学習済みモデルの時系列性能劣化の監査
     </h2>
     <h3 class="card-subtitle mb-2 text-muted text-center">
       
-      <a href="papers.html?filter=authors&search=YingZhang&program=all" class="text-primary"
-        >YingZhang</a
+      <a href="papers.html?filter=authors&search=石原祥太郎&program=all" class="text-primary"
+        >石原祥太郎</a
       >,
       
-      <a href="papers.html?filter=authors&search=上垣外英剛&program=all" class="text-primary"
-        >上垣外英剛</a
+      <a href="papers.html?filter=authors&search=高橋寛武&program=all" class="text-primary"
+        >高橋寛武</a
       >,
       
-      <a href="papers.html?filter=authors&search=奥村学&program=all" class="text-primary"
-        >奥村学</a
+      <a href="papers.html?filter=authors&search=白井穂乃&program=all" class="text-primary"
+        >白井穂乃</a
       >
       
     </h3>
 
     <p class="card-text text-center h5">
       
-      <a href="papers.html?filter=keywords&search=Q5:ポスター" class ="badge badge-pill badge-primary">Q5:ポスター</a>
+      <a href="papers.html?filter=keywords&search=Q9:ポスター" class ="badge badge-pill badge-primary">Q9:ポスター</a>
       
 
       
@@ -241,7 +241,7 @@
    
     <div class="text-center p-3">
       
-      <a class="card-link link-info" target="_blank" href="TBA">
+      <a class="card-link link-info" target="_blank" href="https://www.anlp.jp/proceedings/annual_meeting/2025/pdf_dir/Q9-24.pdf">
         📝 Paper 
       </a>
       
@@ -295,7 +295,7 @@
         <div class="card-text">
           <div id="abstractExample">
             <span class="font-weight-bold">Abstract:</span>
-            TBA
+            研究者や実務者にとって事前学習済みモデルの利活用が一般的になる中，実運用上の大きな課題として時系列性能劣化の監査が挙げられる．特に事前学習済み言語モデルは事前学習や推論にかかる時間と費用が大きいため，効率的な監査と再学習の仕組みの検討は重要である．本研究では学習コーパス内の単語の通時的な意味変化を計算することで，事前学習済み言語モデルや単語分散表現の時系列性能劣化を監査する枠組みを提案し，モデルの再学習に関する意思決定を支援する．最初に 2011～2021 年の日本語・英語のニュース記事を用いて，学習コーパスの期間が異なる RoBERTa や word2vec のモデルを構築し，時系列性能劣化を観測した．実験では，学習コーパス内の単語の通時的な意味変化から計算できる指標「Semantic Shift Stability」が小さくなる際，事前学習済みモデルの性能が時系列で大きく劣化しており，監査の用途での有用性を確認できた．提案する枠組みには意味が大きく変化した単語から原因を推察できる利点もあり，2016 年の米大統領選や 2020 年の新型コロナウイルス感染症の影響が示唆された．指標を計算するソースコードはhttps://github.com/Nikkei/semantic-shift-stability で公開した．
           </div>
         </div>
       </div>
@@ -303,7 +303,7 @@
   </div>
   
   <div class="tab-pane fade" id="paper" role="tabpanel" aria-labelledby="paper-tab">
-    <embed src="TBA" type="application/pdf" width="100%" height="850px">
+    <embed src="https://www.anlp.jp/proceedings/annual_meeting/2025/pdf_dir/Q9-24.pdf" type="application/pdf" width="100%" height="850px">
   </div>
   
   
