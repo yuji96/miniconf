@@ -608,15 +608,15 @@ const card_image = (openreview, show) => {
 const card_detail = (openreview, show) => {
     if (show) {
         let str = ''
-        if (openreview.tldr && openreview.tldr != '')
-            str += `<br/><p class="card-text"> ${openreview.tldr}</p>`
+        if (openreview.abstract && openreview.abstract != '')
+            str += `<br/><p class="card-text"> ${openreview.abstract}</p>`
         
-        if (openreview.keywords 
-            && (openreview.keywords.length > 1 
-                || openreview.keywords.length == 1 && openreview.keywords[0] !== ""))
-            str += `<p class="card-text"><span class="font-weight-bold">Keywords:</span>
-                ${openreview.keywords.map(keyword).join(', ')}
-            </p>`
+        // if (openreview.keywords 
+        //     && (openreview.keywords.length > 1 
+        //         || openreview.keywords.length == 1 && openreview.keywords[0] !== ""))
+        //     str += `<p class="card-text"><span class="font-weight-bold">Keywords:</span>
+        //         ${openreview.keywords.map(keyword).join(', ')}
+        //     </p>`
         
         return str
     } else {
