@@ -1,0 +1,1422 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+
+  <!-- External Javascript libs  -->
+  <script src="https://cdn.jsdelivr.net/npm/d3@5/dist/d3.min.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/handlebars@4.7.3/dist/handlebars.min.js"
+    integrity="sha256-/PJBs6QWvXijOFIX04kZpLb6ZtSQckdOIavLWKKOgXU=" crossorigin="anonymous"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js"
+    integrity="sha256-WqU1JavFxSAMcLP2WIOI+GB2zWmShMI82mTpLDcqFUg=" crossorigin="anonymous"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/moment@2.24.0/min/moment.min.js"
+    integrity="sha256-4iQZ6BVL4qNKlQ27TExEhBN1HFPvAvAMbFavKKosSWQ=" crossorigin="anonymous"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/moment-timezone@0.5.28/builds/moment-timezone-with-data.min.js"
+    integrity="sha256-IWYg4uIC8/erItNXYvLtyYHioRi2zT1TFva8qaAU/ww=" crossorigin="anonymous"></script>
+
+  <!-- https://developer.snapappointments.com/bootstrap-select/ -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/css/bootstrap-select.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/js/bootstrap-select.min.js"></script>
+
+  <!-- Library libs -->
+  <script src="static/js/typeahead.bundle.js"></script>
+
+  <script src="https://craig.global.ssl.fastly.net/js/mousetrap/mousetrap.min.js?a4098"></script>
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+    integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+
+  <!-- External CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+    integrity="sha256-YLGeXaapI0/5IgZopewRJcFXomhRMlYYjugPLSyNjTY=" crossorigin="anonymous">
+
+  <!-- External Fonts (no google for china) -->
+  <link href="static/css/Lato.css" rel="stylesheet" />
+  <link href="static/css/Exo.css" rel="stylesheet" />
+  <link href="static/css/Cuprum.css" rel="stylesheet" />
+
+  <link rel="stylesheet" href="static/css/main.css" />
+  <link rel="stylesheet" href="static/css/chats-modal.css" />
+  <link rel="stylesheet" href="static/css/lazy_load.css" />
+  <link rel="stylesheet" href="static/css/typeahead.css" />
+  <script src="https://cdn.jsdelivr.net/npm/pdfjs-dist@2.3.200/build/pdf.min.js"></script>
+  <script src="static/js/pdf_render.js"></script>
+
+  <title>NLP2026: Sessions</title>
+  
+
+  <!-- Favicon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="static/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="static/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="static/favicon/favicon-16x16.png">
+  <link rel="manifest" href="static/favicon/site.webmanifest">
+  <link rel="mask-icon" href="static/favicon/safari-pinned-tab.svg" color="#5bbad5">
+  <link rel="shortcut icon" href="static/favicon/favicon.ico">
+  <meta name="msapplication-TileColor" content="#2d89ef">
+  <meta name="msapplication-config" content="static/favicon/browserconfig.xml">
+  <meta name="theme-color" content="#ffffff">
+</head>
+
+<body>
+  <!-- NAV -->
+  
+  <!-- 
+  ('workshops.html', 'Workshops'),
+  ('index.html', 'Home'),
+  ('sessions.html', 'Sessions'),
+  ('tutorials.html', 'Tutorials'),
+  ('map.html', 'Map'),
+  ('https://' + config.chat_server, 'Chat'),
+  ('https://app.gather.town/app/5OscLswEEuYf2Psb/ACL2023', 'GatherTown'),
+  ('https://2023.aclweb.org/','Main Site'),
+  ('https://2023.aclweb.org/downloads/acl2023-handbook.pdf', 'Handbook'),
+  ('https://2023.aclweb.org/faq/', 'FAQ'),
+  ('https://2023.aclweb.org/committees/organization/', 'Organizers'),
+  ('https://2023.aclweb.org/sponsors/', 'Sponsors'),
+  -->
+
+  <!-- Add back ('livestream.html', 'Livestream'),
+    ('about.html', 'Help'),
+    ('plenary_sessions.html', 'Plenary'),
+    ('livestream.html', 'Livestream'),
+    (config.gather_town , 'Gather'),
+    for a new conference
+    -->
+
+  <nav class="navbar sticky-top navbar-expand-lg navbar-light  bg-emnlp mr-auto customnav" id="main-nav">
+    <div class="container">
+      
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse text-right flex-grow-1" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          
+          <li class="nav-item ">
+            
+            <a class="nav-link" href="schedule.html">Schedule</a>
+            
+          </li>
+          
+          <li class="nav-item ">
+            
+            <a class="nav-link" href="papers.html">Papers</a>
+            
+          </li>
+          
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
+
+  
+  <!-- User Overrides -->
+   
+
+      
+      <div class="container">
+        
+    <!-- Heading -->
+    <div class="heading">
+      
+<div class="my-3"></div>
+<div class="row p-4">
+  <div class="col-12 bd-content">
+    <h1 class="text-center">Paper Sessions</h1>
+  </div>
+</div>
+
+    </div>
+    <div class="tabs pt-3">
+      <!-- Tabs -->
+      <div class="tabs pt-3">
+        
+<ul class="nav nav-pills justify-content-center">
+  
+  <li class="nav-item">
+    <a id="link-march10" class="nav-link active" data-toggle="tab" href="#tab-march10" role="tab" aria-controls="nav-home"
+      aria-selected="true">March 10
+    </a>
+  </li>
+  
+  <li class="nav-item">
+    <a id="link-march11" class="nav-link " data-toggle="tab" href="#tab-march11" role="tab" aria-controls="nav-home"
+      aria-selected="true">March 11
+    </a>
+  </li>
+  
+  <li class="nav-item">
+    <a id="link-march12" class="nav-link " data-toggle="tab" href="#tab-march12" role="tab" aria-controls="nav-home"
+      aria-selected="true">March 12
+    </a>
+  </li>
+  
+</ul>
+
+      </div>
+      <!-- Content -->
+      <div class="content">
+        
+<div class="tab-content" id="nav-tabContent">
+
+    
+    <div class="tab-pane fade active show" id="tab-march10" role="tabpanel"
+        aria-labelledby="nav-profile-tab">
+
+        <div id="march10">
+            <div class="plenary_sessions">
+                <hr />
+                <span>
+                    Timezone:
+                    <span class="badge badge-primary">Conference (Toronto)</span>
+                    <span class="badge badge-secondary">UTC</span>
+                    <span class="badge badge-info">Browser</span>
+                </span>
+                
+                
+                <div class="row p-4 col-md-12" id="A1">
+                    
+                    <div class="row col-12">
+                        <h3>A1:口頭発表1</h3>
+                    </div>
+                    
+                    <div class="row col-12">
+                        <div class="col-12">⏰ Time: March 09, 20:30-22:00 (EDT) <span
+                                class="badge badge-primary">Conference</span></div>
+                        <div class="col-12">
+                            ⏰ Time: <span class="session_times"> (00:30-02:00 UTC)</span>
+                            <span class="badge badge-secondary">UTC</span> /
+                            <span class="badge badge-info">Browser</span>
+                        </div>
+                    </div>
+                    
+                </div>
+                
+                
+                
+                <div class="row p-4 col-md-12" id="A2">
+                    
+                    <div class="row col-12">
+                        <h3>A2:口頭発表2</h3>
+                    </div>
+                    
+                    <div class="row col-12">
+                        <div class="col-12">⏰ Time: March 09, 22:45-23:45 (EDT) <span
+                                class="badge badge-primary">Conference</span></div>
+                        <div class="col-12">
+                            ⏰ Time: <span class="session_times"> (02:45-03:45 UTC)</span>
+                            <span class="badge badge-secondary">UTC</span> /
+                            <span class="badge badge-info">Browser</span>
+                        </div>
+                    </div>
+                    
+                </div>
+                
+                
+                
+                <div class="row p-4 col-md-12" id="A3">
+                    
+                    <div class="row col-12">
+                        <h3>A3:口頭発表3</h3>
+                    </div>
+                    
+                    <div class="row col-12">
+                        <div class="col-12">⏰ Time: March 10, 02:10-03:40 (EDT) <span
+                                class="badge badge-primary">Conference</span></div>
+                        <div class="col-12">
+                            ⏰ Time: <span class="session_times"> (06:10-07:40 UTC)</span>
+                            <span class="badge badge-secondary">UTC</span> /
+                            <span class="badge badge-info">Browser</span>
+                        </div>
+                    </div>
+                    
+                </div>
+                
+                
+                
+                <div class="row p-4 col-md-12" id="A4">
+                    
+                    <div class="row col-12">
+                        <h3>A4:口頭発表4</h3>
+                    </div>
+                    
+                    <div class="row col-12">
+                        <div class="col-12">⏰ Time: March 10, 04:25-05:25 (EDT) <span
+                                class="badge badge-primary">Conference</span></div>
+                        <div class="col-12">
+                            ⏰ Time: <span class="session_times"> (08:25-09:25 UTC)</span>
+                            <span class="badge badge-secondary">UTC</span> /
+                            <span class="badge badge-info">Browser</span>
+                        </div>
+                    </div>
+                    
+                </div>
+                
+                
+                
+                <div class="row p-4 col-md-12" id="B1">
+                    
+                    <div class="row col-12">
+                        <h3>B1:NLPモデルの評価・安全性・信頼性</h3>
+                    </div>
+                    
+                    <div class="row col-12">
+                        <div class="col-12">⏰ Time: March 09, 20:30-22:00 (EDT) <span
+                                class="badge badge-primary">Conference</span></div>
+                        <div class="col-12">
+                            ⏰ Time: <span class="session_times"> (00:30-02:00 UTC)</span>
+                            <span class="badge badge-secondary">UTC</span> /
+                            <span class="badge badge-info">Browser</span>
+                        </div>
+                    </div>
+                    
+                </div>
+                
+                
+                
+                <div class="row p-4 col-md-12" id="B2">
+                    
+                    <div class="row col-12">
+                        <h3>B2:NLPモデルの評価・安全性・信頼性</h3>
+                    </div>
+                    
+                    <div class="row col-12">
+                        <div class="col-12">⏰ Time: March 09, 22:15-23:45 (EDT) <span
+                                class="badge badge-primary">Conference</span></div>
+                        <div class="col-12">
+                            ⏰ Time: <span class="session_times"> (02:15-03:45 UTC)</span>
+                            <span class="badge badge-secondary">UTC</span> /
+                            <span class="badge badge-info">Browser</span>
+                        </div>
+                    </div>
+                    
+                </div>
+                
+                
+                
+                <div class="row p-4 col-md-12" id="B3">
+                    
+                    <div class="row col-12">
+                        <h3>B3:NLPモデルの評価・安全性・信頼性 / NLPモデルの解釈可能性・分析</h3>
+                    </div>
+                    
+                    <div class="row col-12">
+                        <div class="col-12">⏰ Time: March 10, 02:10-03:40 (EDT) <span
+                                class="badge badge-primary">Conference</span></div>
+                        <div class="col-12">
+                            ⏰ Time: <span class="session_times"> (06:10-07:40 UTC)</span>
+                            <span class="badge badge-secondary">UTC</span> /
+                            <span class="badge badge-info">Browser</span>
+                        </div>
+                    </div>
+                    
+                </div>
+                
+                
+                
+                <div class="row p-4 col-md-12" id="B4">
+                    
+                    <div class="row col-12">
+                        <h3>B4:NLPモデルの評価・安全性・信頼性 / NLPモデルの解釈可能性・分析</h3>
+                    </div>
+                    
+                    <div class="row col-12">
+                        <div class="col-12">⏰ Time: March 10, 03:55-05:25 (EDT) <span
+                                class="badge badge-primary">Conference</span></div>
+                        <div class="col-12">
+                            ⏰ Time: <span class="session_times"> (07:55-09:25 UTC)</span>
+                            <span class="badge badge-secondary">UTC</span> /
+                            <span class="badge badge-info">Browser</span>
+                        </div>
+                    </div>
+                    
+                </div>
+                
+                
+                
+                <div class="row p-4 col-md-12" id="C1">
+                    
+                    <div class="row col-12">
+                        <h3>C1:テキスト生成 / 音声言語処理</h3>
+                    </div>
+                    
+                    <div class="row col-12">
+                        <div class="col-12">⏰ Time: March 09, 20:30-22:00 (EDT) <span
+                                class="badge badge-primary">Conference</span></div>
+                        <div class="col-12">
+                            ⏰ Time: <span class="session_times"> (00:30-02:00 UTC)</span>
+                            <span class="badge badge-secondary">UTC</span> /
+                            <span class="badge badge-info">Browser</span>
+                        </div>
+                    </div>
+                    
+                </div>
+                
+                
+                
+                <div class="row p-4 col-md-12" id="C2">
+                    
+                    <div class="row col-12">
+                        <h3>C2:マルチモーダル / 音声言語処理</h3>
+                    </div>
+                    
+                    <div class="row col-12">
+                        <div class="col-12">⏰ Time: March 09, 22:15-23:45 (EDT) <span
+                                class="badge badge-primary">Conference</span></div>
+                        <div class="col-12">
+                            ⏰ Time: <span class="session_times"> (02:15-03:45 UTC)</span>
+                            <span class="badge badge-secondary">UTC</span> /
+                            <span class="badge badge-info">Browser</span>
+                        </div>
+                    </div>
+                    
+                </div>
+                
+                
+                
+                <div class="row p-4 col-md-12" id="C3">
+                    
+                    <div class="row col-12">
+                        <h3>C3:マルチモーダル / テキスト生成</h3>
+                    </div>
+                    
+                    <div class="row col-12">
+                        <div class="col-12">⏰ Time: March 10, 02:10-03:40 (EDT) <span
+                                class="badge badge-primary">Conference</span></div>
+                        <div class="col-12">
+                            ⏰ Time: <span class="session_times"> (06:10-07:40 UTC)</span>
+                            <span class="badge badge-secondary">UTC</span> /
+                            <span class="badge badge-info">Browser</span>
+                        </div>
+                    </div>
+                    
+                </div>
+                
+                
+                
+                <div class="row p-4 col-md-12" id="C4">
+                    
+                    <div class="row col-12">
+                        <h3>C4:マルチモーダル</h3>
+                    </div>
+                    
+                    <div class="row col-12">
+                        <div class="col-12">⏰ Time: March 10, 03:55-05:25 (EDT) <span
+                                class="badge badge-primary">Conference</span></div>
+                        <div class="col-12">
+                            ⏰ Time: <span class="session_times"> (07:55-09:25 UTC)</span>
+                            <span class="badge badge-secondary">UTC</span> /
+                            <span class="badge badge-info">Browser</span>
+                        </div>
+                    </div>
+                    
+                </div>
+                
+                
+                
+                <div class="row p-4 col-md-12" id="P1">
+                    
+                    <div class="row col-12">
+                        <h3>P1:情報検索・テキストマイニング / 機械翻訳</h3>
+                    </div>
+                    
+                    <div class="row col-12">
+                        <div class="col-12">⏰ Time: March 09, 20:30-22:00 (EDT) <span
+                                class="badge badge-primary">Conference</span></div>
+                        <div class="col-12">
+                            ⏰ Time: <span class="session_times"> (00:30-02:00 UTC)</span>
+                            <span class="badge badge-secondary">UTC</span> /
+                            <span class="badge badge-info">Browser</span>
+                        </div>
+                    </div>
+                    
+                </div>
+                
+                
+                
+                <div class="row p-4 col-md-12" id="P2">
+                    
+                    <div class="row col-12">
+                        <h3>P2:情報検索・テキストマイニング / 評判・感情分析・スタイル分析</h3>
+                    </div>
+                    
+                    <div class="row col-12">
+                        <div class="col-12">⏰ Time: March 09, 22:15-23:45 (EDT) <span
+                                class="badge badge-primary">Conference</span></div>
+                        <div class="col-12">
+                            ⏰ Time: <span class="session_times"> (02:15-03:45 UTC)</span>
+                            <span class="badge badge-secondary">UTC</span> /
+                            <span class="badge badge-info">Browser</span>
+                        </div>
+                    </div>
+                    
+                </div>
+                
+                
+                
+                <div class="row p-4 col-md-12" id="P3">
+                    
+                    <div class="row col-12">
+                        <h3>P3:評判・感情分析・スタイル分析 / 対話</h3>
+                    </div>
+                    
+                    <div class="row col-12">
+                        <div class="col-12">⏰ Time: March 10, 02:10-03:40 (EDT) <span
+                                class="badge badge-primary">Conference</span></div>
+                        <div class="col-12">
+                            ⏰ Time: <span class="session_times"> (06:10-07:40 UTC)</span>
+                            <span class="badge badge-secondary">UTC</span> /
+                            <span class="badge badge-info">Browser</span>
+                        </div>
+                    </div>
+                    
+                </div>
+                
+                
+                
+                <div class="row p-4 col-md-12" id="P4">
+                    
+                    <div class="row col-12">
+                        <h3>P4:対話</h3>
+                    </div>
+                    
+                    <div class="row col-12">
+                        <div class="col-12">⏰ Time: March 10, 03:55-05:25 (EDT) <span
+                                class="badge badge-primary">Conference</span></div>
+                        <div class="col-12">
+                            ⏰ Time: <span class="session_times"> (07:55-09:25 UTC)</span>
+                            <span class="badge badge-secondary">UTC</span> /
+                            <span class="badge badge-info">Browser</span>
+                        </div>
+                    </div>
+                    
+                </div>
+                
+                
+                
+                <div class="row p-4 col-md-12" id="Q1">
+                    
+                    <div class="row col-12">
+                        <h3>Q1:語彙資源・辞書 / 言語資源・アノテーションと評価</h3>
+                    </div>
+                    
+                    <div class="row col-12">
+                        <div class="col-12">⏰ Time: March 09, 20:30-22:00 (EDT) <span
+                                class="badge badge-primary">Conference</span></div>
+                        <div class="col-12">
+                            ⏰ Time: <span class="session_times"> (00:30-02:00 UTC)</span>
+                            <span class="badge badge-secondary">UTC</span> /
+                            <span class="badge badge-info">Browser</span>
+                        </div>
+                    </div>
+                    
+                </div>
+                
+                
+                
+                <div class="row p-4 col-md-12" id="Q2">
+                    
+                    <div class="row col-12">
+                        <h3>Q2:言語資源・アノテーションと評価 / 語彙資源・辞書</h3>
+                    </div>
+                    
+                    <div class="row col-12">
+                        <div class="col-12">⏰ Time: March 09, 22:15-23:45 (EDT) <span
+                                class="badge badge-primary">Conference</span></div>
+                        <div class="col-12">
+                            ⏰ Time: <span class="session_times"> (02:15-03:45 UTC)</span>
+                            <span class="badge badge-secondary">UTC</span> /
+                            <span class="badge badge-info">Browser</span>
+                        </div>
+                    </div>
+                    
+                </div>
+                
+                
+                
+                <div class="row p-4 col-md-12" id="Q3">
+                    
+                    <div class="row col-12">
+                        <h3>Q3:言語資源・アノテーションと評価 / その他の応用</h3>
+                    </div>
+                    
+                    <div class="row col-12">
+                        <div class="col-12">⏰ Time: March 10, 02:10-03:40 (EDT) <span
+                                class="badge badge-primary">Conference</span></div>
+                        <div class="col-12">
+                            ⏰ Time: <span class="session_times"> (06:10-07:40 UTC)</span>
+                            <span class="badge badge-secondary">UTC</span> /
+                            <span class="badge badge-info">Browser</span>
+                        </div>
+                    </div>
+                    
+                </div>
+                
+                
+                
+                <div class="row p-4 col-md-12" id="Q4">
+                    
+                    <div class="row col-12">
+                        <h3>Q4:言語資源・アノテーションと評価</h3>
+                    </div>
+                    
+                    <div class="row col-12">
+                        <div class="col-12">⏰ Time: March 10, 03:55-05:25 (EDT) <span
+                                class="badge badge-primary">Conference</span></div>
+                        <div class="col-12">
+                            ⏰ Time: <span class="session_times"> (07:55-09:25 UTC)</span>
+                            <span class="badge badge-secondary">UTC</span> /
+                            <span class="badge badge-info">Browser</span>
+                        </div>
+                    </div>
+                    
+                </div>
+                
+                
+                
+                <div class="row p-4 col-md-12" id="TS1">
+                    
+                    <div class="row col-12">
+                        <h3>TS2:テーマセッション2：せめぎ合う計算言語学——LLM時代に揺れ動く言語観の中で——（ポスター）</h3>
+                    </div>
+                    
+                    <div class="row col-12">
+                        <div class="col-12">⏰ Time: March 09, 20:30-22:00 (EDT) <span
+                                class="badge badge-primary">Conference</span></div>
+                        <div class="col-12">
+                            ⏰ Time: <span class="session_times"> (00:30-02:00 UTC)</span>
+                            <span class="badge badge-secondary">UTC</span> /
+                            <span class="badge badge-info">Browser</span>
+                        </div>
+                    </div>
+                    
+                </div>
+                
+                
+                
+                <div class="row p-4 col-md-12" id="TS2O">
+                    
+                    <div class="row col-12">
+                        <h3>TS2:テーマセッション2：せめぎ合う計算言語学——LLM時代に揺れ動く言語観の中で——（総合討論）</h3>
+                    </div>
+                    
+                    <div class="row col-12">
+                        <div class="col-12">⏰ Time: March 09, 22:15-22:40 (EDT) <span
+                                class="badge badge-primary">Conference</span></div>
+                        <div class="col-12">
+                            ⏰ Time: <span class="session_times"> (02:15-02:40 UTC)</span>
+                            <span class="badge badge-secondary">UTC</span> /
+                            <span class="badge badge-info">Browser</span>
+                        </div>
+                    </div>
+                    
+                </div>
+                
+                
+                
+                <div class="row p-4 col-md-12" id="TS4">
+                    
+                    <div class="row col-12">
+                        <h3>TS4:テーマセッション4：大規模言語モデル時代の数式NLP：表現・推論・検証の実務基盤（ポスター）</h3>
+                    </div>
+                    
+                    <div class="row col-12">
+                        <div class="col-12">⏰ Time: March 10, 02:10-03:40 (EDT) <span
+                                class="badge badge-primary">Conference</span></div>
+                        <div class="col-12">
+                            ⏰ Time: <span class="session_times"> (06:10-07:40 UTC)</span>
+                            <span class="badge badge-secondary">UTC</span> /
+                            <span class="badge badge-info">Browser</span>
+                        </div>
+                    </div>
+                    
+                </div>
+                
+                
+                
+                <div class="row p-4 col-md-12" id="TS4O">
+                    
+                    <div class="row col-12">
+                        <h3>TS4:テーマセッション4：大規模言語モデル時代の数式NLP：表現・推論・検証の実務基盤（総合討論）</h3>
+                    </div>
+                    
+                    <div class="row col-12">
+                        <div class="col-12">⏰ Time: March 10, 03:55-04:20 (EDT) <span
+                                class="badge badge-primary">Conference</span></div>
+                        <div class="col-12">
+                            ⏰ Time: <span class="session_times"> (07:55-08:20 UTC)</span>
+                            <span class="badge badge-secondary">UTC</span> /
+                            <span class="badge badge-info">Browser</span>
+                        </div>
+                    </div>
+                    
+                </div>
+                
+                
+            </div>
+        </div>
+
+    </div>
+    
+    <div class="tab-pane fade " id="tab-march11" role="tabpanel"
+        aria-labelledby="nav-profile-tab">
+
+        <div id="march11">
+            <div class="plenary_sessions">
+                <hr />
+                <span>
+                    Timezone:
+                    <span class="badge badge-primary">Conference (Toronto)</span>
+                    <span class="badge badge-secondary">UTC</span>
+                    <span class="badge badge-info">Browser</span>
+                </span>
+                
+                
+                <div class="row p-4 col-md-12" id="A5">
+                    
+                    <div class="row col-12">
+                        <h3>A5:口頭発表5</h3>
+                    </div>
+                    
+                    <div class="row col-12">
+                        <div class="col-12">⏰ Time: March 10, 20:30-22:00 (EDT) <span
+                                class="badge badge-primary">Conference</span></div>
+                        <div class="col-12">
+                            ⏰ Time: <span class="session_times"> (00:30-02:00 UTC)</span>
+                            <span class="badge badge-secondary">UTC</span> /
+                            <span class="badge badge-info">Browser</span>
+                        </div>
+                    </div>
+                    
+                </div>
+                
+                
+                
+                <div class="row p-4 col-md-12" id="A6">
+                    
+                    <div class="row col-12">
+                        <h3>A6:口頭発表6</h3>
+                    </div>
+                    
+                    <div class="row col-12">
+                        <div class="col-12">⏰ Time: March 10, 22:45-23:45 (EDT) <span
+                                class="badge badge-primary">Conference</span></div>
+                        <div class="col-12">
+                            ⏰ Time: <span class="session_times"> (02:45-03:45 UTC)</span>
+                            <span class="badge badge-secondary">UTC</span> /
+                            <span class="badge badge-info">Browser</span>
+                        </div>
+                    </div>
+                    
+                </div>
+                
+                
+                
+                <div class="row p-4 col-md-12" id="B5">
+                    
+                    <div class="row col-12">
+                        <h3>B5:NLPモデルの解釈可能性・分析</h3>
+                    </div>
+                    
+                    <div class="row col-12">
+                        <div class="col-12">⏰ Time: March 10, 20:30-22:00 (EDT) <span
+                                class="badge badge-primary">Conference</span></div>
+                        <div class="col-12">
+                            ⏰ Time: <span class="session_times"> (00:30-02:00 UTC)</span>
+                            <span class="badge badge-secondary">UTC</span> /
+                            <span class="badge badge-info">Browser</span>
+                        </div>
+                    </div>
+                    
+                </div>
+                
+                
+                
+                <div class="row p-4 col-md-12" id="B6">
+                    
+                    <div class="row col-12">
+                        <h3>B6:NLPモデルの解釈可能性・分析</h3>
+                    </div>
+                    
+                    <div class="row col-12">
+                        <div class="col-12">⏰ Time: March 10, 22:15-23:45 (EDT) <span
+                                class="badge badge-primary">Conference</span></div>
+                        <div class="col-12">
+                            ⏰ Time: <span class="session_times"> (02:15-03:45 UTC)</span>
+                            <span class="badge badge-secondary">UTC</span> /
+                            <span class="badge badge-info">Browser</span>
+                        </div>
+                    </div>
+                    
+                </div>
+                
+                
+                
+                <div class="row p-4 col-md-12" id="C5">
+                    
+                    <div class="row col-12">
+                        <h3>C5:知識獲得・情報抽出 / マルチモーダル</h3>
+                    </div>
+                    
+                    <div class="row col-12">
+                        <div class="col-12">⏰ Time: March 10, 20:30-22:00 (EDT) <span
+                                class="badge badge-primary">Conference</span></div>
+                        <div class="col-12">
+                            ⏰ Time: <span class="session_times"> (00:30-02:00 UTC)</span>
+                            <span class="badge badge-secondary">UTC</span> /
+                            <span class="badge badge-info">Browser</span>
+                        </div>
+                    </div>
+                    
+                </div>
+                
+                
+                
+                <div class="row p-4 col-md-12" id="C6">
+                    
+                    <div class="row col-12">
+                        <h3>C6:知識獲得・情報抽出 / 機械学習</h3>
+                    </div>
+                    
+                    <div class="row col-12">
+                        <div class="col-12">⏰ Time: March 10, 22:15-23:45 (EDT) <span
+                                class="badge badge-primary">Conference</span></div>
+                        <div class="col-12">
+                            ⏰ Time: <span class="session_times"> (02:15-03:45 UTC)</span>
+                            <span class="badge badge-secondary">UTC</span> /
+                            <span class="badge badge-info">Browser</span>
+                        </div>
+                    </div>
+                    
+                </div>
+                
+                
+                
+                <div class="row p-4 col-md-12" id="P5">
+                    
+                    <div class="row col-12">
+                        <h3>P5:対話 / 質問応答</h3>
+                    </div>
+                    
+                    <div class="row col-12">
+                        <div class="col-12">⏰ Time: March 10, 20:30-22:00 (EDT) <span
+                                class="badge badge-primary">Conference</span></div>
+                        <div class="col-12">
+                            ⏰ Time: <span class="session_times"> (00:30-02:00 UTC)</span>
+                            <span class="badge badge-secondary">UTC</span> /
+                            <span class="badge badge-info">Browser</span>
+                        </div>
+                    </div>
+                    
+                </div>
+                
+                
+                
+                <div class="row p-4 col-md-12" id="P6">
+                    
+                    <div class="row col-12">
+                        <h3>P6:実世界接地と言語処理 / 教育応用</h3>
+                    </div>
+                    
+                    <div class="row col-12">
+                        <div class="col-12">⏰ Time: March 10, 22:15-23:45 (EDT) <span
+                                class="badge badge-primary">Conference</span></div>
+                        <div class="col-12">
+                            ⏰ Time: <span class="session_times"> (02:15-03:45 UTC)</span>
+                            <span class="badge badge-secondary">UTC</span> /
+                            <span class="badge badge-info">Browser</span>
+                        </div>
+                    </div>
+                    
+                </div>
+                
+                
+                
+                <div class="row p-4 col-md-12" id="Q5">
+                    
+                    <div class="row col-12">
+                        <h3>Q5:言語資源・アノテーションと評価</h3>
+                    </div>
+                    
+                    <div class="row col-12">
+                        <div class="col-12">⏰ Time: March 10, 20:30-22:00 (EDT) <span
+                                class="badge badge-primary">Conference</span></div>
+                        <div class="col-12">
+                            ⏰ Time: <span class="session_times"> (00:30-02:00 UTC)</span>
+                            <span class="badge badge-secondary">UTC</span> /
+                            <span class="badge badge-info">Browser</span>
+                        </div>
+                    </div>
+                    
+                </div>
+                
+                
+                
+                <div class="row p-4 col-md-12" id="Q6">
+                    
+                    <div class="row col-12">
+                        <h3>Q6:言語資源・アノテーションと評価 / 計算・形式言語学</h3>
+                    </div>
+                    
+                    <div class="row col-12">
+                        <div class="col-12">⏰ Time: March 10, 22:15-23:45 (EDT) <span
+                                class="badge badge-primary">Conference</span></div>
+                        <div class="col-12">
+                            ⏰ Time: <span class="session_times"> (02:15-03:45 UTC)</span>
+                            <span class="badge badge-secondary">UTC</span> /
+                            <span class="badge badge-info">Browser</span>
+                        </div>
+                    </div>
+                    
+                </div>
+                
+                
+                
+                <div class="row p-4 col-md-12" id="TS3">
+                    
+                    <div class="row col-12">
+                        <h3>TS3:テーマセッション3：法ドメインにおける言語処理（ポスター）</h3>
+                    </div>
+                    
+                    <div class="row col-12">
+                        <div class="col-12">⏰ Time: March 10, 20:30-22:00 (EDT) <span
+                                class="badge badge-primary">Conference</span></div>
+                        <div class="col-12">
+                            ⏰ Time: <span class="session_times"> (00:30-02:00 UTC)</span>
+                            <span class="badge badge-secondary">UTC</span> /
+                            <span class="badge badge-info">Browser</span>
+                        </div>
+                    </div>
+                    
+                </div>
+                
+                
+                
+                <div class="row p-4 col-md-12" id="TS3O">
+                    
+                    <div class="row col-12">
+                        <h3>TS3:テーマセッション3：法ドメインにおける言語処理（総合討論）</h3>
+                    </div>
+                    
+                    <div class="row col-12">
+                        <div class="col-12">⏰ Time: March 10, 22:15-22:40 (EDT) <span
+                                class="badge badge-primary">Conference</span></div>
+                        <div class="col-12">
+                            ⏰ Time: <span class="session_times"> (02:15-02:40 UTC)</span>
+                            <span class="badge badge-secondary">UTC</span> /
+                            <span class="badge badge-info">Browser</span>
+                        </div>
+                    </div>
+                    
+                </div>
+                
+                
+            </div>
+        </div>
+
+    </div>
+    
+    <div class="tab-pane fade " id="tab-march12" role="tabpanel"
+        aria-labelledby="nav-profile-tab">
+
+        <div id="march12">
+            <div class="plenary_sessions">
+                <hr />
+                <span>
+                    Timezone:
+                    <span class="badge badge-primary">Conference (Toronto)</span>
+                    <span class="badge badge-secondary">UTC</span>
+                    <span class="badge badge-info">Browser</span>
+                </span>
+                
+                
+                <div class="row p-4 col-md-12" id="A7">
+                    
+                    <div class="row col-12">
+                        <h3>A7:口頭発表7</h3>
+                    </div>
+                    
+                    <div class="row col-12">
+                        <div class="col-12">⏰ Time: March 11, 20:30-22:00 (EDT) <span
+                                class="badge badge-primary">Conference</span></div>
+                        <div class="col-12">
+                            ⏰ Time: <span class="session_times"> (00:30-02:00 UTC)</span>
+                            <span class="badge badge-secondary">UTC</span> /
+                            <span class="badge badge-info">Browser</span>
+                        </div>
+                    </div>
+                    
+                </div>
+                
+                
+                
+                <div class="row p-4 col-md-12" id="A8">
+                    
+                    <div class="row col-12">
+                        <h3>A8:口頭発表8</h3>
+                    </div>
+                    
+                    <div class="row col-12">
+                        <div class="col-12">⏰ Time: March 11, 22:45-23:45 (EDT) <span
+                                class="badge badge-primary">Conference</span></div>
+                        <div class="col-12">
+                            ⏰ Time: <span class="session_times"> (02:45-03:45 UTC)</span>
+                            <span class="badge badge-secondary">UTC</span> /
+                            <span class="badge badge-info">Browser</span>
+                        </div>
+                    </div>
+                    
+                </div>
+                
+                
+                
+                <div class="row p-4 col-md-12" id="A9">
+                    
+                    <div class="row col-12">
+                        <h3>A9:口頭発表9</h3>
+                    </div>
+                    
+                    <div class="row col-12">
+                        <div class="col-12">⏰ Time: March 12, 01:15-02:45 (EDT) <span
+                                class="badge badge-primary">Conference</span></div>
+                        <div class="col-12">
+                            ⏰ Time: <span class="session_times"> (05:15-06:45 UTC)</span>
+                            <span class="badge badge-secondary">UTC</span> /
+                            <span class="badge badge-info">Browser</span>
+                        </div>
+                    </div>
+                    
+                </div>
+                
+                
+                
+                <div class="row p-4 col-md-12" id="B7">
+                    
+                    <div class="row col-12">
+                        <h3>B7:NLPモデルの解釈可能性・分析 / NLPのための効率的・低リソース手法</h3>
+                    </div>
+                    
+                    <div class="row col-12">
+                        <div class="col-12">⏰ Time: March 11, 20:30-22:00 (EDT) <span
+                                class="badge badge-primary">Conference</span></div>
+                        <div class="col-12">
+                            ⏰ Time: <span class="session_times"> (00:30-02:00 UTC)</span>
+                            <span class="badge badge-secondary">UTC</span> /
+                            <span class="badge badge-info">Browser</span>
+                        </div>
+                    </div>
+                    
+                </div>
+                
+                
+                
+                <div class="row p-4 col-md-12" id="B8">
+                    
+                    <div class="row col-12">
+                        <h3>B8:NLPモデルの評価・安全性・信頼性</h3>
+                    </div>
+                    
+                    <div class="row col-12">
+                        <div class="col-12">⏰ Time: March 11, 22:15-23:45 (EDT) <span
+                                class="badge badge-primary">Conference</span></div>
+                        <div class="col-12">
+                            ⏰ Time: <span class="session_times"> (02:15-03:45 UTC)</span>
+                            <span class="badge badge-secondary">UTC</span> /
+                            <span class="badge badge-info">Browser</span>
+                        </div>
+                    </div>
+                    
+                </div>
+                
+                
+                
+                <div class="row p-4 col-md-12" id="B9">
+                    
+                    <div class="row col-12">
+                        <h3>B9:NLPモデルのための評価・安全性・信頼性 / NLPモデルの解釈可能性・分析 / NLPのための効率的・低リソース手法</h3>
+                    </div>
+                    
+                    <div class="row col-12">
+                        <div class="col-12">⏰ Time: March 12, 01:15-02:45 (EDT) <span
+                                class="badge badge-primary">Conference</span></div>
+                        <div class="col-12">
+                            ⏰ Time: <span class="session_times"> (05:15-06:45 UTC)</span>
+                            <span class="badge badge-secondary">UTC</span> /
+                            <span class="badge badge-info">Browser</span>
+                        </div>
+                    </div>
+                    
+                </div>
+                
+                
+                
+                <div class="row p-4 col-md-12" id="C7">
+                    
+                    <div class="row col-12">
+                        <h3>C7:知識獲得・情報抽出 / 機械学習 / LLM構築</h3>
+                    </div>
+                    
+                    <div class="row col-12">
+                        <div class="col-12">⏰ Time: March 11, 20:30-22:00 (EDT) <span
+                                class="badge badge-primary">Conference</span></div>
+                        <div class="col-12">
+                            ⏰ Time: <span class="session_times"> (00:30-02:00 UTC)</span>
+                            <span class="badge badge-secondary">UTC</span> /
+                            <span class="badge badge-info">Browser</span>
+                        </div>
+                    </div>
+                    
+                </div>
+                
+                
+                
+                <div class="row p-4 col-md-12" id="C8">
+                    
+                    <div class="row col-12">
+                        <h3>C8:LLM構築 / 機械翻訳</h3>
+                    </div>
+                    
+                    <div class="row col-12">
+                        <div class="col-12">⏰ Time: March 11, 22:15-23:45 (EDT) <span
+                                class="badge badge-primary">Conference</span></div>
+                        <div class="col-12">
+                            ⏰ Time: <span class="session_times"> (02:15-03:45 UTC)</span>
+                            <span class="badge badge-secondary">UTC</span> /
+                            <span class="badge badge-info">Browser</span>
+                        </div>
+                    </div>
+                    
+                </div>
+                
+                
+                
+                <div class="row p-4 col-md-12" id="C9">
+                    
+                    <div class="row col-12">
+                        <h3>C9:機械翻訳</h3>
+                    </div>
+                    
+                    <div class="row col-12">
+                        <div class="col-12">⏰ Time: March 12, 01:15-02:45 (EDT) <span
+                                class="badge badge-primary">Conference</span></div>
+                        <div class="col-12">
+                            ⏰ Time: <span class="session_times"> (05:15-06:45 UTC)</span>
+                            <span class="badge badge-secondary">UTC</span> /
+                            <span class="badge badge-info">Browser</span>
+                        </div>
+                    </div>
+                    
+                </div>
+                
+                
+                
+                <div class="row p-4 col-md-12" id="P7">
+                    
+                    <div class="row col-12">
+                        <h3>P7:質問応答 / 教育応用 / その他の応用</h3>
+                    </div>
+                    
+                    <div class="row col-12">
+                        <div class="col-12">⏰ Time: March 11, 20:30-22:00 (EDT) <span
+                                class="badge badge-primary">Conference</span></div>
+                        <div class="col-12">
+                            ⏰ Time: <span class="session_times"> (00:30-02:00 UTC)</span>
+                            <span class="badge badge-secondary">UTC</span> /
+                            <span class="badge badge-info">Browser</span>
+                        </div>
+                    </div>
+                    
+                </div>
+                
+                
+                
+                <div class="row p-4 col-md-12" id="P8">
+                    
+                    <div class="row col-12">
+                        <h3>P8:形態素・構文解析 / 意味論・意味解析 / 文脈解析</h3>
+                    </div>
+                    
+                    <div class="row col-12">
+                        <div class="col-12">⏰ Time: March 11, 22:15-23:45 (EDT) <span
+                                class="badge badge-primary">Conference</span></div>
+                        <div class="col-12">
+                            ⏰ Time: <span class="session_times"> (02:15-03:45 UTC)</span>
+                            <span class="badge badge-secondary">UTC</span> /
+                            <span class="badge badge-info">Browser</span>
+                        </div>
+                    </div>
+                    
+                </div>
+                
+                
+                
+                <div class="row p-4 col-md-12" id="P9">
+                    
+                    <div class="row col-12">
+                        <h3>P9:テキスト生成</h3>
+                    </div>
+                    
+                    <div class="row col-12">
+                        <div class="col-12">⏰ Time: March 12, 01:15-02:45 (EDT) <span
+                                class="badge badge-primary">Conference</span></div>
+                        <div class="col-12">
+                            ⏰ Time: <span class="session_times"> (05:15-06:45 UTC)</span>
+                            <span class="badge badge-secondary">UTC</span> /
+                            <span class="badge badge-info">Browser</span>
+                        </div>
+                    </div>
+                    
+                </div>
+                
+                
+                
+                <div class="row p-4 col-md-12" id="Q7">
+                    
+                    <div class="row col-12">
+                        <h3>Q7:言語資源・アノテーションと評価 / 心理言語学・認知モデリング</h3>
+                    </div>
+                    
+                    <div class="row col-12">
+                        <div class="col-12">⏰ Time: March 11, 20:30-22:00 (EDT) <span
+                                class="badge badge-primary">Conference</span></div>
+                        <div class="col-12">
+                            ⏰ Time: <span class="session_times"> (00:30-02:00 UTC)</span>
+                            <span class="badge badge-secondary">UTC</span> /
+                            <span class="badge badge-info">Browser</span>
+                        </div>
+                    </div>
+                    
+                </div>
+                
+                
+                
+                <div class="row p-4 col-md-12" id="Q8">
+                    
+                    <div class="row col-12">
+                        <h3>Q8:計算・形式言語学 / 心理言語学・認知モデリング / 発達言語学・言語教育学 / 社会・フィールド言語学 / その他の言語学</h3>
+                    </div>
+                    
+                    <div class="row col-12">
+                        <div class="col-12">⏰ Time: March 11, 22:15-23:45 (EDT) <span
+                                class="badge badge-primary">Conference</span></div>
+                        <div class="col-12">
+                            ⏰ Time: <span class="session_times"> (02:15-03:45 UTC)</span>
+                            <span class="badge badge-secondary">UTC</span> /
+                            <span class="badge badge-info">Browser</span>
+                        </div>
+                    </div>
+                    
+                </div>
+                
+                
+                
+                <div class="row p-4 col-md-12" id="Q9">
+                    
+                    <div class="row col-12">
+                        <h3>Q9:その他の応用</h3>
+                    </div>
+                    
+                    <div class="row col-12">
+                        <div class="col-12">⏰ Time: March 12, 01:15-02:45 (EDT) <span
+                                class="badge badge-primary">Conference</span></div>
+                        <div class="col-12">
+                            ⏰ Time: <span class="session_times"> (05:15-06:45 UTC)</span>
+                            <span class="badge badge-secondary">UTC</span> /
+                            <span class="badge badge-info">Browser</span>
+                        </div>
+                    </div>
+                    
+                </div>
+                
+                
+                
+                <div class="row p-4 col-md-12" id="TS1">
+                    
+                    <div class="row col-12">
+                        <h3>TS1:テーマセッション1：人狼知能：噓を見破り説得する会話ゲームとLLM（ポスター）</h3>
+                    </div>
+                    
+                    <div class="row col-12">
+                        <div class="col-12">⏰ Time: March 11, 20:30-22:00 (EDT) <span
+                                class="badge badge-primary">Conference</span></div>
+                        <div class="col-12">
+                            ⏰ Time: <span class="session_times"> (00:30-02:00 UTC)</span>
+                            <span class="badge badge-secondary">UTC</span> /
+                            <span class="badge badge-info">Browser</span>
+                        </div>
+                    </div>
+                    
+                </div>
+                
+                
+                
+                <div class="row p-4 col-md-12" id="TS1O">
+                    
+                    <div class="row col-12">
+                        <h3>TS1:テーマセッション1：人狼知能：噓を見破り説得する会話ゲームとLLM（総合討論）</h3>
+                    </div>
+                    
+                    <div class="row col-12">
+                        <div class="col-12">⏰ Time: March 11, 22:15-22:40 (EDT) <span
+                                class="badge badge-primary">Conference</span></div>
+                        <div class="col-12">
+                            ⏰ Time: <span class="session_times"> (02:15-02:40 UTC)</span>
+                            <span class="badge badge-secondary">UTC</span> /
+                            <span class="badge badge-info">Browser</span>
+                        </div>
+                    </div>
+                    
+                </div>
+                
+                
+            </div>
+        </div>
+
+    </div>
+    
+</div>
+
+
+<script src="static/js/time-extend.js"></script>
+<script>
+    $(document).ready(() => {
+        add_local_tz('.session_times');
+        var hash = window.location.hash;
+        if (hash.startsWith('#link-')) {
+            var parts = hash.split('-')
+            if (parts.length >= 2) {
+                var tab_link = parts[0] + '-' + parts[1];
+                console.log('Clicking:' + tab_link);
+                $(tab_link).trigger("click");
+                if (parts.length >= 3) {
+                    var event_link = parts.slice(2).join('-');
+                    console.log('Href to: ' + event_link);
+                    location.href = '#' + event_link;
+                }
+            }
+
+        }
+    });
+
+</script>
+
+
+      </div>
+    </div>
+    
+    
+
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=None"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "None");
+    </script>
+
+    <!-- Footer -->
+    <footer class="footer bg-light p-4">
+      <div class="container">
+        <p class="float-left">
+          <img src="None" height="45px"
+            width="auto" align="center">
+          <span class="lead">NLP2026</span>
+        </p>
+        <p class="float-right"><a href="#" class="text-dark">Back to Top</a></p>
+        <p class="text-center">The title and abstract of the paper are licensed by the author(s) under CC BY 4.0<br>
+          (https://creativecommons.org/licenses/by/4.0/).</p>
+      </div>
+    </footer>
+
+    <!-- Code for hash tags -->
+    <script type="text/javascript">
+      $(document).ready(function () {
+        if (location.hash !== "") {
+          $('a[href="' + location.hash + '"]').tab("show");
+        }
+
+        $("a[data-toggle='tab']").on("shown.bs.tab", function (e) {
+          var hash = $(e.target).attr("href");
+          if (hash.substr(0, 1) == "#") {
+            var position = $(window).scrollTop();
+            location.replace("#" + hash.substr(1));
+            $(window).scrollTop(position);
+          }
+        });
+      });
+    </script>
+    <script src="static/js/lazy_load.js"></script>
+    
+    <div class="modal left fade" id="chatsModal" tabindex="" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable" role="document" style="max-height: 100% !important;">
+        <div class="modal-content" style="max-height: 100% !important;">
+            <div class="modal-header">
+                <h4 class="modal-title" id="exampleModalLabel">Active Chats</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            </div>
+            <div class="modal-body">
+                <div style="margin-bottom: 1em;">
+    <div class="stats-last-update text-muted" id="highly-active-chats-last-update"></div>
+    <a id="highly-active-chats-btn-refresh" href="#" class="text-primary" style="display: none;">Refresh now</a>
+</div>
+
+<div id="highly-active-chats-list">
+</div>
+
+<div class="text-center" id="highly-active-chats-progress-bar" style="margin-bottom: 80em;">
+    <div class="spinner-border text-primary" style="margin-top: 3em; width: 3rem; height: 3rem;" role="status">
+      <span class="sr-only">Loading...</span>
+    </div>
+</div>
+
+<br/>
+<p class="text-muted">
+    <strong>How it works: </strong>
+    We calculate the number of new messages for every channel in the last N seconds. Then, we sort them descendingly.
+    Channels with no new messages will be randomly shuffled. Please note that the number of messages might not be accurate.
+</p>
+
+<script src="static/js/highly-active-chats.js"></script>
+<script>
+    let channel_stats_server = "None"
+    $(document).ready( function () {
+        $('[data-toggle="tooltip"]').tooltip();
+        //load_stats();
+    });
+</script>
+
+            </div>
+
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary btn-sm" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+
+</html>
