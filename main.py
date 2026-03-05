@@ -1,12 +1,11 @@
 # pylint: disable=global-statement,redefined-outer-name
-import hashlib
 import os
 from pathlib import Path
 from typing import Dict
 from urllib.parse import quote_plus
 
 import hydra
-from flask import Blueprint, Flask, jsonify, redirect, render_template, send_from_directory, url_for
+from flask import Flask, jsonify, redirect, render_template, send_from_directory
 from flask_frozen import Freezer
 from flaskext.markdown import Markdown
 from omegaconf import DictConfig
@@ -22,12 +21,6 @@ by_uid: ByUid = None
 
 app = Flask(__name__)
 app.config.from_object(__name__)
-prefix = "nlp2026"
-app.config["APPLICATION_ROOT"] = "/" + prefix
-
-# Create Blueprint with url_prefix
-bp = Blueprint("main", __name__, url_prefix=f"/{prefix}")
-
 app.config["SEND_FILE_MAX_AGE_DEFAULT"] = 0
 app.config["TEMPLATES_AUTO_RELOAD"] = True
 app.config["FREEZER_IGNORE_404_NOT_FOUND"] = True
@@ -53,20 +46,20 @@ def _data():
 
 @app.route("/")
 def index():
-    return redirect(f"/{prefix}/index.html")
+    return redirect("/index.html")
 
 
 # TOP LEVEL PAGES
 
 
-@bp.route("/index.html")
+@app.route("/index.html")
 def home():
     data = _data()
     data["ack_text"] = site_data.pages["acknowledgement.md"]
     return render_template("index.html", **data)
 
 
-@bp.route("/papers.html")
+@app.route("/papers.html")
 def papers():
     data = _data()
     # The data will be loaded from `papers.json`.
@@ -76,7 +69,7 @@ def papers():
     return render_template("papers.html", **data)
 
 
-@bp.route("/papers_vis.html")
+@app.route("/papers_vis.html")
 def papers_vis():
     data = _data()
     # The data will be loaded from `papers.json`.
@@ -85,7 +78,7 @@ def papers_vis():
     return render_template("papers_vis.html", **data)
 
 
-@bp.route("/papers_keyword_vis.html")
+@app.route("/papers_keyword_vis.html")
 def papers_keyword_vis():
     data = _data()
     # The data will be loaded from `papers.json`.
@@ -94,7 +87,7 @@ def papers_keyword_vis():
     return render_template("papers_keyword_vis.html", **data)
 
 
-@bp.route("/schedule.html")
+@app.route("/schedule.html")
 def schedule():
     data = _data()
     data["calendar"] = [e.dict() for e in site_data.calendar]
@@ -102,13 +95,13 @@ def schedule():
     return render_template("schedule.html", **data)
 
 
-@bp.route("/livestream.html")
+@app.route("/livestream.html")
 def livestream():
     data = _data()
     return render_template("livestream.html", **data)
 
 
-@bp.route("/plenary_sessions.html")
+@app.route("/plenary_sessions.html")
 def plenary_sessions():
     data = _data()
     session_data, session_day_data = reformat_plenary_data(site_data.plenaries)
@@ -117,7 +110,7 @@ def plenary_sessions():
     return render_template("plenary_sessions.html", **data)
 
 
-@bp.route("/sessions.html")
+@app.route("/sessions.html")
 def sessions():
     data = _data()
     data["session_days"] = site_data.session_days
@@ -135,21 +128,21 @@ def sessions():
     return render_template("sessions.html", **data)
 
 
-@bp.route("/tutorials.html")
+@app.route("/tutorials.html")
 def tutorials():
     data = _data()
     data["tutorials"] = site_data.tutorials
     return render_template("tutorials.html", **data)
 
 
-@bp.route("/workshops.html")
+@app.route("/workshops.html")
 def workshops():
     data = _data()
     data["workshops"] = site_data.workshops
     return render_template("workshops.html", **data)
 
 
-@bp.route("/socials.html")
+@app.route("/socials.html")
 def socials():
     data = _data()
     data["socials"] = site_data.socials
@@ -157,7 +150,7 @@ def socials():
 
 
 # ITEM PAGES
-@bp.route("/paper_<uid>.html")
+@app.route("/paper_<uid>.html")
 def paper(uid):
     data = _data()
 
@@ -165,8 +158,14 @@ def paper(uid):
     data["id"] = uid
     data["openreview"] = v
     data["paper"] = v
-    data["events"] = [conference.events[e_id] for e_id in v.event_ids if e_id in conference.events]
-    data["workshop_events"] = [conference.workshops[e_id] for e_id in v.event_ids if e_id in conference.workshops]
+    data["events"] = [
+        conference.events[e_id] for e_id in v.event_ids if e_id in conference.events
+    ]
+    data["workshop_events"] = [
+        conference.workshops[e_id]
+        for e_id in v.event_ids
+        if e_id in conference.workshops
+    ]
     data["paper_recs"] = [by_uid.papers[i] for i in v.similar_paper_ids[1:]]
     # TODO: Fix
     data["zone"] = site_data.local_timezone
@@ -174,21 +173,21 @@ def paper(uid):
     return render_template("paper.html", **data)
 
 
-@bp.route("/plenary_session_<uid>.html")
+@app.route("/plenary_session_<uid>.html")
 def plenary_session(uid):
     data = _data()
     data["plenary_session"] = by_uid.plenaries[uid]
     return render_template("plenary_session.html", **data)
 
 
-@bp.route("/tutorial_<uid>.html")
+@app.route("/tutorial_<uid>.html")
 def tutorial(uid):
     data = _data()
     data["tutorial"] = by_uid.tutorials[uid]
     return render_template("tutorial.html", **data)
 
 
-@bp.route("/workshop_<uid>.html")
+@app.route("/workshop_<uid>.html")
 def workshop(uid):
     data = _data()
     workshop = by_uid.workshops[uid]
@@ -202,41 +201,43 @@ def workshop(uid):
     return render_template("workshop.html", **data)
 
 
-@bp.route("/chat.html")
+@app.route("/chat.html")
 def chat():
     data = _data()
     return render_template("chat.html", **data)
 
 
-@bp.route("/map.html")
+@app.route("/map.html")
 def venue_map():
     data = _data()
     return render_template("map.html", **data)
 
 
 # FRONT END SERVING
-@bp.route("/schedule.json")
+@app.route("/schedule.json")
 def schedule_json():
     return jsonify([e.dict() for e in site_data.calendar])
 
 
-@bp.route("/papers.json")
+@app.route("/papers.json")
 def papers_json():
     return jsonify([p.dict() for p in site_data.papers])
 
 
-@bp.route("/papers_<program>.json")
+@app.route("/papers_<program>.json")
 def papers_program(program: str):
     if program == "workshop":
         papers_for_program = []
         for wsh in site_data.workshops:
             papers_for_program.extend(wsh.papers)
     else:
-        papers_for_program = [paper.dict() for paper in site_data.papers if paper.program == program]
+        papers_for_program = [
+            paper.dict() for paper in site_data.papers if paper.program == program
+        ]
     return jsonify(papers_for_program)
 
 
-@bp.route("/track_<program_name>_<track_name>.json")
+@app.route("/track_<program_name>_<track_name>.json")
 def track_json(program_name, track_name):
     print(program_name, track_name)
     if program_name == WORKSHOP:
@@ -247,17 +248,19 @@ def track_json(program_name, track_name):
                 break
     else:
         papers_for_track = [
-            paper.dict() for paper in site_data.papers if paper.track == track_name and paper.program == program_name
+            paper.dict()
+            for paper in site_data.papers
+            if paper.track == track_name and paper.program == program_name
         ]
     return jsonify(papers_for_track)
 
 
-@bp.route("/static/<path:path>")
+@app.route("/static/<path:path>")
 def send_static(path):
     return send_from_directory("static", path)
 
 
-@bp.route("/serve_<path>.json")
+@app.route("/serve_<path>.json")
 def serve(path):
     return jsonify(getattr(site_data, path, {}))
 
@@ -265,32 +268,29 @@ def serve(path):
 # --------------- DRIVER CODE -------------------------->
 # Code to turn it all static
 
-# Register Blueprint after all routes are defined
-app.register_blueprint(bp)
-
 
 @freezer.register_generator
 def generator():
     for paper in site_data.papers:
-        yield "main.paper", {"uid": paper.id}
+        yield "paper", {"uid": paper.id}
 
     for program in site_data.programs:
-        yield "main.papers_program", {"program": program}
+        yield "papers_program", {"program": program}
         for track in site_data.track_ids:
-            yield "main.track_json", {"track_name": track, "program_name": program}
+            yield "track_json", {"track_name": track, "program_name": program}
 
-    yield "main.papers_program", {"program": WORKSHOP}
+    yield "papers_program", {"program": WORKSHOP}
     for wsh in site_data.workshops:
-        yield "main.track_json", {"track_name": wsh.title, "program_name": WORKSHOP}
+        yield "track_json", {"track_name": wsh.title, "program_name": WORKSHOP}
 
     for plenary_key, _ in site_data.plenaries.items():
-        yield "main.plenary_session", {"uid": plenary_key}
+        yield "plenary_session", {"uid": plenary_key}
 
     for tutorial in site_data.tutorials.values():
-        yield "main.tutorial", {"uid": tutorial.id}
+        yield "tutorial", {"uid": tutorial.id}
 
     for workshop in site_data.workshops.values():
-        yield "main.workshop", {"uid": workshop.id}
+        yield "workshop", {"uid": workshop.id}
 
     # for key in site_data:
     #    yield "serve", {"path": key}
