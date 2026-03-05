@@ -28,30 +28,9 @@ app.config["APPLICATION_ROOT"] = "/" + prefix
 # Create Blueprint with url_prefix
 bp = Blueprint("main", __name__, url_prefix=f"/{prefix}")
 
-
-def get_file_hash(filepath):
-    """ファイルの更新時刻をバージョンとして取得（MD5ハッシュより確実）"""
-    static_file = os.path.join(app.static_folder, filepath)
-    if os.path.exists(static_file):
-        return int(os.path.getmtime(static_file))
-    return 0
-
-
-@app.context_processor
-def inject_cache_buster():
-    """テンプレートでキャッシュバスターを使えるようにする"""
-
-    def versioned_url(filepath):
-        version = get_file_hash(filepath)
-        return url_for("static", filename=filepath, v=version)
-
-    return dict(versioned_url=versioned_url)
-
-
 app.config["SEND_FILE_MAX_AGE_DEFAULT"] = 0
 app.config["TEMPLATES_AUTO_RELOAD"] = True
 app.config["FREEZER_IGNORE_404_NOT_FOUND"] = True
-# app.config["FREEZER_BASE_URL"] = f"http://localhost/{prefix}/"
 
 freezer = Freezer(app)
 markdown = Markdown(app)
