@@ -25,11 +25,11 @@ app.config.from_object(__name__)
 
 
 def get_file_hash(filepath):
-    """ファイルのハッシュ値を取得"""
-    if os.path.exists(filepath):
-        with open(filepath, "rb") as f:
-            return hashlib.md5(f.read()).hexdigest()[:8]
-    return ""
+    """ファイルの更新時刻をバージョンとして取得（MD5ハッシュより確実）"""
+    static_file = os.path.join(app.static_folder, filepath)
+    if os.path.exists(static_file):
+        return int(os.path.getmtime(static_file))
+    return 0
 
 
 @app.context_processor
@@ -37,9 +37,8 @@ def inject_cache_buster():
     """テンプレートでキャッシュバスターを使えるようにする"""
 
     def versioned_url(filepath):
-        static_file = os.path.join(app.static_folder, filepath)
-        file_hash = get_file_hash(static_file)
-        return url_for("static", filename=filepath, v=file_hash)
+        version = get_file_hash(filepath)
+        return url_for("static", filename=filepath, v=version)
 
     return dict(versioned_url=versioned_url)
 
