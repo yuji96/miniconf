@@ -272,25 +272,25 @@ app.register_blueprint(bp)
 @freezer.register_generator
 def generator():
     for paper in site_data.papers:
-        yield "paper", {"uid": paper.id}
+        yield "main.paper", {"uid": paper.id}
 
     for program in site_data.programs:
-        yield "papers_program", {"program": program}
+        yield "main.papers_program", {"program": program}
         for track in site_data.track_ids:
-            yield "track_json", {"track_name": track, "program_name": program}
+            yield "main.track_json", {"track_name": track, "program_name": program}
 
-    yield "papers_program", {"program": WORKSHOP}
+    yield "main.papers_program", {"program": WORKSHOP}
     for wsh in site_data.workshops:
-        yield "track_json", {"track_name": wsh.title, "program_name": WORKSHOP}
+        yield "main.track_json", {"track_name": wsh.title, "program_name": WORKSHOP}
 
     for plenary_key, _ in site_data.plenaries.items():
-        yield "plenary_session", {"uid": plenary_key}
+        yield "main.plenary_session", {"uid": plenary_key}
 
     for tutorial in site_data.tutorials.values():
-        yield "tutorial", {"uid": tutorial.id}
+        yield "main.tutorial", {"uid": tutorial.id}
 
     for workshop in site_data.workshops.values():
-        yield "workshop", {"uid": workshop.id}
+        yield "main.workshop", {"uid": workshop.id}
 
     # for key in site_data:
     #    yield "serve", {"path": key}
