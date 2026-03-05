@@ -64,36 +64,28 @@
   <script src="https://cdn.jsdelivr.net/npm/pdfjs-dist@2.3.200/build/pdf.min.js"></script>
   <script src="static/js/pdf_render.js"></script>
 
-  <title>NLP2025: LLM as a Debate Judge: 学習者ディベーターへの自動フィードバック生成</title>
+  <title>NLP2026: 主張と根拠の繋がりを評価する科学論文レビュー評価指標</title>
   
-<meta name="citation_title" content="LLM as a Debate Judge: 学習者ディベーターへの自動フィードバック生成" />
+<meta name="citation_title" content="主張と根拠の繋がりを評価する科学論文レビュー評価指標" />
 
-<meta name="citation_author" content="尾崎大晟" />
+<meta name="citation_author" content="森清忠" />
 
-<meta name="citation_author" content="市野敬介" />
+<meta name="citation_author" content="田中翔平" />
 
-<meta name="citation_author" content="松田拓" />
+<meta name="citation_author" content="平澤寅庄" />
 
-<meta name="citation_author" content="久保健治" />
+<meta name="citation_author" content="小津野将" />
 
-<meta name="citation_author" content="内藤昭一" />
+<meta name="citation_author" content="吉野幸一郎" />
 
-<meta name="citation_author" content="山口健史" />
-
-<meta name="citation_author" content="天野祥太朗" />
-
-<meta name="citation_author" content="井之上直也" />
-
-<meta name="citation_author" content="中川智皓" />
-
-<meta name="citation_author" content="新谷篤彦" />
+<meta name="citation_author" content="牛久祥孝" />
 
 <meta name="citation_publication_date" content="None" />
 <meta name="citation_conference_title" content="None" />
 <meta name="citation_inbook_title" content="None" />
-<meta name="citation_abstract" content="本研究は，批判的思考力育成の有効手段とされるディベートにおいて，人的リソースの負担が大きいエキスパートジャッジの役割を，LLM エージェントで代替可能とするシステムを提案する．ディベートエキスパートらと共にマルチ LLM エージェントシステム用のディベート評価指標(ジャッジ指標)を新たに設計し，それを元に肯定側へフィードバックを提供するジャッジシステムを構築した．さらに，システムが出力したフィードバックと，エキスパートが作成した模範フィードバックを比較評価する実験を行った．その結果，論点の整理などといった観点では LLM によるフィードバックが人間エキスパート以上の品質を示した．" />
+<meta name="citation_abstract" content="科学論文レビューは，投稿論文数の急増により査読の人的コストの不足に直面している．この問題の解決策として，科学論文レビューの効率化を目的とした言語モデルの活用が積極的に模索されている．人間が理解できる形で，科学論文レビュー評価の裏付け度合いを評価する手法が提案された．その手法では議論の構成要素である主張と根拠を抽出して，主張に根拠がある割合で科学論文レビューの裏付け度合いを評価した．裏付け度合いとは客観的な事実に基づいた主張の度合いである．しかし，科学論文レビューの裏付け度合いの評価では主張に対する根拠の有無だけではなく，主張と根拠の繋がりを適切に評価することでより人間らしい評価を実現できる可能性がある．本研究では主張と根拠の繋がりを評価する新たな科学論文レビュー評価指標を提案し，提案手法と人間の主観評価との相関が従来手法と比べて強いことを示した．" />
 
-<meta name="citation_keywords" content="C5:テキスト生成" />
+<meta name="citation_keywords" content="C5:知識獲得・情報抽出 / マルチモーダル" />
 
 <meta name="citation_pdf_url" content="" />
 
@@ -227,55 +219,39 @@
 <div class="card m-3" style="">
   <div class="card-header">
     <h2 class="card-title main-title text-center" style="color: black">
-      LLM as a Debate Judge: 学習者ディベーターへの自動フィードバック生成
+      主張と根拠の繋がりを評価する科学論文レビュー評価指標
     </h2>
     <h3 class="card-subtitle mb-2 text-muted text-center">
       
-      <a href="papers.html?filter=authors&search=尾崎大晟&program=all" class="text-primary"
-        >尾崎大晟</a
+      <a href="papers.html?filter=authors&search=森清忠&program=all" class="text-primary"
+        >森清忠</a
       >,
       
-      <a href="papers.html?filter=authors&search=市野敬介&program=all" class="text-primary"
-        >市野敬介</a
+      <a href="papers.html?filter=authors&search=田中翔平&program=all" class="text-primary"
+        >田中翔平</a
       >,
       
-      <a href="papers.html?filter=authors&search=松田拓&program=all" class="text-primary"
-        >松田拓</a
+      <a href="papers.html?filter=authors&search=平澤寅庄&program=all" class="text-primary"
+        >平澤寅庄</a
       >,
       
-      <a href="papers.html?filter=authors&search=久保健治&program=all" class="text-primary"
-        >久保健治</a
+      <a href="papers.html?filter=authors&search=小津野将&program=all" class="text-primary"
+        >小津野将</a
       >,
       
-      <a href="papers.html?filter=authors&search=内藤昭一&program=all" class="text-primary"
-        >内藤昭一</a
+      <a href="papers.html?filter=authors&search=吉野幸一郎&program=all" class="text-primary"
+        >吉野幸一郎</a
       >,
       
-      <a href="papers.html?filter=authors&search=山口健史&program=all" class="text-primary"
-        >山口健史</a
-      >,
-      
-      <a href="papers.html?filter=authors&search=天野祥太朗&program=all" class="text-primary"
-        >天野祥太朗</a
-      >,
-      
-      <a href="papers.html?filter=authors&search=井之上直也&program=all" class="text-primary"
-        >井之上直也</a
-      >,
-      
-      <a href="papers.html?filter=authors&search=中川智皓&program=all" class="text-primary"
-        >中川智皓</a
-      >,
-      
-      <a href="papers.html?filter=authors&search=新谷篤彦&program=all" class="text-primary"
-        >新谷篤彦</a
+      <a href="papers.html?filter=authors&search=牛久祥孝&program=all" class="text-primary"
+        >牛久祥孝</a
       >
       
     </h3>
 
     <p class="card-text text-center h5">
       
-      <a href="papers.html?filter=keywords&search=C5:テキスト生成" class ="badge badge-pill badge-primary">C5:テキスト生成</a>
+      <a href="papers.html?filter=keywords&search=C5:知識獲得・情報抽出 / マルチモーダル" class ="badge badge-pill badge-primary">C5:知識獲得・情報抽出 / マルチモーダル</a>
       
 
       
@@ -283,7 +259,7 @@
    
     <div class="text-center p-3">
       
-      <a class="card-link link-info" target="_blank" href="https://www.anlp.jp/proceedings/annual_meeting/2025/pdf_dir/C5-6.pdf">
+      <a class="card-link link-info" target="_blank" href="https://www.anlp.jp/proceedings/annual_meeting/2026/pdf_dir/C5-6.pdf">
         📝 Paper 
       </a>
       
@@ -337,7 +313,7 @@
         <div class="card-text">
           <div id="abstractExample">
             <span class="font-weight-bold">Abstract:</span>
-            本研究は，批判的思考力育成の有効手段とされるディベートにおいて，人的リソースの負担が大きいエキスパートジャッジの役割を，LLM エージェントで代替可能とするシステムを提案する．ディベートエキスパートらと共にマルチ LLM エージェントシステム用のディベート評価指標(ジャッジ指標)を新たに設計し，それを元に肯定側へフィードバックを提供するジャッジシステムを構築した．さらに，システムが出力したフィードバックと，エキスパートが作成した模範フィードバックを比較評価する実験を行った．その結果，論点の整理などといった観点では LLM によるフィードバックが人間エキスパート以上の品質を示した．
+            科学論文レビューは，投稿論文数の急増により査読の人的コストの不足に直面している．この問題の解決策として，科学論文レビューの効率化を目的とした言語モデルの活用が積極的に模索されている．人間が理解できる形で，科学論文レビュー評価の裏付け度合いを評価する手法が提案された．その手法では議論の構成要素である主張と根拠を抽出して，主張に根拠がある割合で科学論文レビューの裏付け度合いを評価した．裏付け度合いとは客観的な事実に基づいた主張の度合いである．しかし，科学論文レビューの裏付け度合いの評価では主張に対する根拠の有無だけではなく，主張と根拠の繋がりを適切に評価することでより人間らしい評価を実現できる可能性がある．本研究では主張と根拠の繋がりを評価する新たな科学論文レビュー評価指標を提案し，提案手法と人間の主観評価との相関が従来手法と比べて強いことを示した．
           </div>
         </div>
       </div>
@@ -345,7 +321,7 @@
   </div>
   
   <div class="tab-pane fade" id="paper" role="tabpanel" aria-labelledby="paper-tab">
-    <embed src="https://www.anlp.jp/proceedings/annual_meeting/2025/pdf_dir/C5-6.pdf" type="application/pdf" width="100%" height="850px">
+    <embed src="https://www.anlp.jp/proceedings/annual_meeting/2026/pdf_dir/C5-6.pdf" type="application/pdf" width="100%" height="850px">
   </div>
   
   
@@ -388,7 +364,7 @@
         <p class="float-left">
           <img src="None" height="45px"
             width="auto" align="center">
-          <span class="lead">NLP2025</span>
+          <span class="lead">NLP2026</span>
         </p>
         <p class="float-right"><a href="#" class="text-dark">Back to Top</a></p>
         <p class="text-center">The title and abstract of the paper are licensed by the author(s) under CC BY 4.0<br>

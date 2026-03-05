@@ -64,30 +64,24 @@
   <script src="https://cdn.jsdelivr.net/npm/pdfjs-dist@2.3.200/build/pdf.min.js"></script>
   <script src="static/js/pdf_render.js"></script>
 
-  <title>NLP2025: SoftMatcha: 大規模コーパス検索のための柔らかくも高速なパターンマッチャー</title>
+  <title>NLP2026: 多言語文埋め込みの意味と言語の分離のための損失関数の分析</title>
   
-<meta name="citation_title" content="SoftMatcha: 大規模コーパス検索のための柔らかくも高速なパターンマッチャー" />
+<meta name="citation_title" content="多言語文埋め込みの意味と言語の分離のための損失関数の分析" />
 
-<meta name="citation_author" content="出口祥之" />
+<meta name="citation_author" content="野々村奏" />
 
-<meta name="citation_author" content="鴨田豪" />
+<meta name="citation_author" content="福島啓太" />
 
-<meta name="citation_author" content="松下祐介" />
+<meta name="citation_author" content="近藤里咲" />
 
-<meta name="citation_author" content="田口智大" />
-
-<meta name="citation_author" content="末永幸平" />
-
-<meta name="citation_author" content="和賀正樹" />
-
-<meta name="citation_author" content="横井祥" />
+<meta name="citation_author" content="梶原智之" />
 
 <meta name="citation_publication_date" content="None" />
 <meta name="citation_conference_title" content="None" />
 <meta name="citation_inbook_title" content="None" />
-<meta name="citation_abstract" content="用例や言語現象をコーパスから素早く探し出すgrep などのパターン検索は，コーパスと人間をつなぐための基本的で重要な道具である．しかし，既存の文字列一致に基づくパターン検索では，表記揺れや類義語といった表層の変化を捉えることは難しい．文埋め込みを用いた密ベクトル検索も注目を集めており，意味的に粗く類似したテキストを検索できるが，具体的なクエリの出現位置の特定や列挙といった操作は困難である．本研究では，単語埋め込みを用いた柔らかいパターンマッチャーSoftMatcha を提案する．提案法は，転置索引を拡張したアルゴリズムを用いており，巨大コーパスに対して柔らかくも高速な検索・列挙をおこなうことができる．コーパス中の有害事例の列挙や，形態論的に複雑な特徴を持つ言語に対する用例検索を通して，SoftMatcha の有用性を実験的にも確認した∗．" />
+<meta name="citation_abstract" content="本研究では，多言語文埋め込みが言語情報の影響を強く受ける問題に対し，意味情報と言語情報の 2要素に分離するアプローチに着目する．分離のための訓練の損失関数は，意味情報または言語情報の各要素内において定義される要素内制約と，両者に跨る要素間制約に大別できる．既存手法ではこれらを併用しているが，制約の違いによる埋め込み分離への影響や，埋め込みモデルのアーキテクチャの違いの影響については明らかになっていない．実験の結果，エンコーダ由来モデルでは両制約の併用が有効であるのに対し，LLM 由来モデルでは要素間制約のみが有効であることが示された．また，要素内制約は埋め込み空間の一様性を改善し，要素間制約は対訳文間の整合性を改善するという違いを確認した．" />
 
-<meta name="citation_keywords" content="P8:ポスター" />
+<meta name="citation_keywords" content="P8:形態素・構文解析 / 意味論・意味解析 / 文脈解析" />
 
 <meta name="citation_pdf_url" content="" />
 
@@ -221,43 +215,31 @@
 <div class="card m-3" style="">
   <div class="card-header">
     <h2 class="card-title main-title text-center" style="color: black">
-      SoftMatcha: 大規模コーパス検索のための柔らかくも高速なパターンマッチャー
+      多言語文埋め込みの意味と言語の分離のための損失関数の分析
     </h2>
     <h3 class="card-subtitle mb-2 text-muted text-center">
       
-      <a href="papers.html?filter=authors&search=出口祥之&program=all" class="text-primary"
-        >出口祥之</a
+      <a href="papers.html?filter=authors&search=野々村奏&program=all" class="text-primary"
+        >野々村奏</a
       >,
       
-      <a href="papers.html?filter=authors&search=鴨田豪&program=all" class="text-primary"
-        >鴨田豪</a
+      <a href="papers.html?filter=authors&search=福島啓太&program=all" class="text-primary"
+        >福島啓太</a
       >,
       
-      <a href="papers.html?filter=authors&search=松下祐介&program=all" class="text-primary"
-        >松下祐介</a
+      <a href="papers.html?filter=authors&search=近藤里咲&program=all" class="text-primary"
+        >近藤里咲</a
       >,
       
-      <a href="papers.html?filter=authors&search=田口智大&program=all" class="text-primary"
-        >田口智大</a
-      >,
-      
-      <a href="papers.html?filter=authors&search=末永幸平&program=all" class="text-primary"
-        >末永幸平</a
-      >,
-      
-      <a href="papers.html?filter=authors&search=和賀正樹&program=all" class="text-primary"
-        >和賀正樹</a
-      >,
-      
-      <a href="papers.html?filter=authors&search=横井祥&program=all" class="text-primary"
-        >横井祥</a
+      <a href="papers.html?filter=authors&search=梶原智之&program=all" class="text-primary"
+        >梶原智之</a
       >
       
     </h3>
 
     <p class="card-text text-center h5">
       
-      <a href="papers.html?filter=keywords&search=P8:ポスター" class ="badge badge-pill badge-primary">P8:ポスター</a>
+      <a href="papers.html?filter=keywords&search=P8:形態素・構文解析 / 意味論・意味解析 / 文脈解析" class ="badge badge-pill badge-primary">P8:形態素・構文解析 / 意味論・意味解析 / 文脈解析</a>
       
 
       
@@ -265,7 +247,7 @@
    
     <div class="text-center p-3">
       
-      <a class="card-link link-info" target="_blank" href="https://www.anlp.jp/proceedings/annual_meeting/2025/pdf_dir/P8-20.pdf">
+      <a class="card-link link-info" target="_blank" href="https://www.anlp.jp/proceedings/annual_meeting/2026/pdf_dir/P8-20.pdf">
         📝 Paper 
       </a>
       
@@ -319,7 +301,7 @@
         <div class="card-text">
           <div id="abstractExample">
             <span class="font-weight-bold">Abstract:</span>
-            用例や言語現象をコーパスから素早く探し出すgrep などのパターン検索は，コーパスと人間をつなぐための基本的で重要な道具である．しかし，既存の文字列一致に基づくパターン検索では，表記揺れや類義語といった表層の変化を捉えることは難しい．文埋め込みを用いた密ベクトル検索も注目を集めており，意味的に粗く類似したテキストを検索できるが，具体的なクエリの出現位置の特定や列挙といった操作は困難である．本研究では，単語埋め込みを用いた柔らかいパターンマッチャーSoftMatcha を提案する．提案法は，転置索引を拡張したアルゴリズムを用いており，巨大コーパスに対して柔らかくも高速な検索・列挙をおこなうことができる．コーパス中の有害事例の列挙や，形態論的に複雑な特徴を持つ言語に対する用例検索を通して，SoftMatcha の有用性を実験的にも確認した∗．
+            本研究では，多言語文埋め込みが言語情報の影響を強く受ける問題に対し，意味情報と言語情報の 2要素に分離するアプローチに着目する．分離のための訓練の損失関数は，意味情報または言語情報の各要素内において定義される要素内制約と，両者に跨る要素間制約に大別できる．既存手法ではこれらを併用しているが，制約の違いによる埋め込み分離への影響や，埋め込みモデルのアーキテクチャの違いの影響については明らかになっていない．実験の結果，エンコーダ由来モデルでは両制約の併用が有効であるのに対し，LLM 由来モデルでは要素間制約のみが有効であることが示された．また，要素内制約は埋め込み空間の一様性を改善し，要素間制約は対訳文間の整合性を改善するという違いを確認した．
           </div>
         </div>
       </div>
@@ -327,7 +309,7 @@
   </div>
   
   <div class="tab-pane fade" id="paper" role="tabpanel" aria-labelledby="paper-tab">
-    <embed src="https://www.anlp.jp/proceedings/annual_meeting/2025/pdf_dir/P8-20.pdf" type="application/pdf" width="100%" height="850px">
+    <embed src="https://www.anlp.jp/proceedings/annual_meeting/2026/pdf_dir/P8-20.pdf" type="application/pdf" width="100%" height="850px">
   </div>
   
   
@@ -370,7 +352,7 @@
         <p class="float-left">
           <img src="None" height="45px"
             width="auto" align="center">
-          <span class="lead">NLP2025</span>
+          <span class="lead">NLP2026</span>
         </p>
         <p class="float-right"><a href="#" class="text-dark">Back to Top</a></p>
         <p class="text-center">The title and abstract of the paper are licensed by the author(s) under CC BY 4.0<br>

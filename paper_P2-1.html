@@ -64,26 +64,18 @@
   <script src="https://cdn.jsdelivr.net/npm/pdfjs-dist@2.3.200/build/pdf.min.js"></script>
   <script src="static/js/pdf_render.js"></script>
 
-  <title>NLP2025: プロンプトの言語による数値時系列解釈能力の変化</title>
+  <title>NLP2026: Renga Street: Top-kクエリ処理アルゴリズムによる高速類似文字列検索の実装</title>
   
-<meta name="citation_title" content="プロンプトの言語による数値時系列解釈能力の変化" />
+<meta name="citation_title" content="Renga Street: Top-kクエリ処理アルゴリズムによる高速類似文字列検索の実装" />
 
-<meta name="citation_author" content="新井深月" />
-
-<meta name="citation_author" content="石垣達也" />
-
-<meta name="citation_author" content="宮尾祐介" />
-
-<meta name="citation_author" content="高村大也" />
-
-<meta name="citation_author" content="小林一郎" />
+<meta name="citation_author" content="山城颯太" />
 
 <meta name="citation_publication_date" content="None" />
 <meta name="citation_conference_title" content="None" />
 <meta name="citation_inbook_title" content="None" />
-<meta name="citation_abstract" content="本研究では，大規模言語モデル（LLM）の数値時系列解釈能力を測る 16 の評価タスクにおいて，プロンプトの記述言語の影響を検証する．数値時系列は，マルチモーダル言語生成や時系列予測などの多くの問題で重要な入力情報となっている．従来，LLM の数値理解能力を評価するタスクは，非系列データの算術演算や数値を含む表の論理推論が中心であったが，数値時系列に特化した評価タスクの開発が進んでいる．そこで本研究では，1)イベント検出，2)計算，3)比較の 3 つのカテゴリの評価タスクに対し，プロンプトの言語（日本語と英語）の違いによる性能差について考察する．実験より，タスクによってプロンプトの言語選択が数値解釈能力に影響を与えることが明らかとなった．" />
+<meta name="citation_abstract" content="類似文字列検索は，あらかじめ与えられた文字列集合のうちから，入力クエリ文字列に類似した文字列集合を返却するタスクであり，古くから研究され続けている[1, 2]．既存手法の多くは，類似性尺度として編集距離，あるいは文字 N-gram 素性（Q-gram）の cosine 係数や Jaccard 係数を使用しており，各素性ごとの重みを同一と見なしている．しかし，出現頻度がべき乗則に従う自然言語を対象とする場合は，BM25 [3]のように低頻度素性を重視するスコアリング手法を用いることで，文字列同士の比較回数削減と精度向上が見込める．本研究は類似文字列検索タスクを複数タームに基づく OR 検索として定式化し直し，Top-k クエリ処理手法の一つである MaxScore アルゴリズムを使用することで，高速かつ正確に Top-k 類似文字列が取得できることを確認した．" />
 
-<meta name="citation_keywords" content="P2:ポスター" />
+<meta name="citation_keywords" content="P2:情報検索・テキストマイニング / 評判・感情分析・スタイル分析" />
 
 <meta name="citation_pdf_url" content="" />
 
@@ -217,35 +209,19 @@
 <div class="card m-3" style="">
   <div class="card-header">
     <h2 class="card-title main-title text-center" style="color: black">
-      プロンプトの言語による数値時系列解釈能力の変化
+      Renga Street: Top-kクエリ処理アルゴリズムによる高速類似文字列検索の実装
     </h2>
     <h3 class="card-subtitle mb-2 text-muted text-center">
       
-      <a href="papers.html?filter=authors&search=新井深月&program=all" class="text-primary"
-        >新井深月</a
-      >,
-      
-      <a href="papers.html?filter=authors&search=石垣達也&program=all" class="text-primary"
-        >石垣達也</a
-      >,
-      
-      <a href="papers.html?filter=authors&search=宮尾祐介&program=all" class="text-primary"
-        >宮尾祐介</a
-      >,
-      
-      <a href="papers.html?filter=authors&search=高村大也&program=all" class="text-primary"
-        >高村大也</a
-      >,
-      
-      <a href="papers.html?filter=authors&search=小林一郎&program=all" class="text-primary"
-        >小林一郎</a
+      <a href="papers.html?filter=authors&search=山城颯太&program=all" class="text-primary"
+        >山城颯太</a
       >
       
     </h3>
 
     <p class="card-text text-center h5">
       
-      <a href="papers.html?filter=keywords&search=P2:ポスター" class ="badge badge-pill badge-primary">P2:ポスター</a>
+      <a href="papers.html?filter=keywords&search=P2:情報検索・テキストマイニング / 評判・感情分析・スタイル分析" class ="badge badge-pill badge-primary">P2:情報検索・テキストマイニング / 評判・感情分析・スタイル分析</a>
       
 
       
@@ -253,7 +229,7 @@
    
     <div class="text-center p-3">
       
-      <a class="card-link link-info" target="_blank" href="https://www.anlp.jp/proceedings/annual_meeting/2025/pdf_dir/P2-1.pdf">
+      <a class="card-link link-info" target="_blank" href="https://www.anlp.jp/proceedings/annual_meeting/2026/pdf_dir/P2-1.pdf">
         📝 Paper 
       </a>
       
@@ -307,7 +283,7 @@
         <div class="card-text">
           <div id="abstractExample">
             <span class="font-weight-bold">Abstract:</span>
-            本研究では，大規模言語モデル（LLM）の数値時系列解釈能力を測る 16 の評価タスクにおいて，プロンプトの記述言語の影響を検証する．数値時系列は，マルチモーダル言語生成や時系列予測などの多くの問題で重要な入力情報となっている．従来，LLM の数値理解能力を評価するタスクは，非系列データの算術演算や数値を含む表の論理推論が中心であったが，数値時系列に特化した評価タスクの開発が進んでいる．そこで本研究では，1)イベント検出，2)計算，3)比較の 3 つのカテゴリの評価タスクに対し，プロンプトの言語（日本語と英語）の違いによる性能差について考察する．実験より，タスクによってプロンプトの言語選択が数値解釈能力に影響を与えることが明らかとなった．
+            類似文字列検索は，あらかじめ与えられた文字列集合のうちから，入力クエリ文字列に類似した文字列集合を返却するタスクであり，古くから研究され続けている[1, 2]．既存手法の多くは，類似性尺度として編集距離，あるいは文字 N-gram 素性（Q-gram）の cosine 係数や Jaccard 係数を使用しており，各素性ごとの重みを同一と見なしている．しかし，出現頻度がべき乗則に従う自然言語を対象とする場合は，BM25 [3]のように低頻度素性を重視するスコアリング手法を用いることで，文字列同士の比較回数削減と精度向上が見込める．本研究は類似文字列検索タスクを複数タームに基づく OR 検索として定式化し直し，Top-k クエリ処理手法の一つである MaxScore アルゴリズムを使用することで，高速かつ正確に Top-k 類似文字列が取得できることを確認した．
           </div>
         </div>
       </div>
@@ -315,7 +291,7 @@
   </div>
   
   <div class="tab-pane fade" id="paper" role="tabpanel" aria-labelledby="paper-tab">
-    <embed src="https://www.anlp.jp/proceedings/annual_meeting/2025/pdf_dir/P2-1.pdf" type="application/pdf" width="100%" height="850px">
+    <embed src="https://www.anlp.jp/proceedings/annual_meeting/2026/pdf_dir/P2-1.pdf" type="application/pdf" width="100%" height="850px">
   </div>
   
   
@@ -358,7 +334,7 @@
         <p class="float-left">
           <img src="None" height="45px"
             width="auto" align="center">
-          <span class="lead">NLP2025</span>
+          <span class="lead">NLP2026</span>
         </p>
         <p class="float-right"><a href="#" class="text-dark">Back to Top</a></p>
         <p class="text-center">The title and abstract of the paper are licensed by the author(s) under CC BY 4.0<br>

@@ -64,22 +64,24 @@
   <script src="https://cdn.jsdelivr.net/npm/pdfjs-dist@2.3.200/build/pdf.min.js"></script>
   <script src="static/js/pdf_render.js"></script>
 
-  <title>NLP2025: 日本語比較表現のための論理推論システムの構築</title>
+  <title>NLP2026: 採用決定タスクを用いたLLMの年齢バイアス検出</title>
   
-<meta name="citation_title" content="日本語比較表現のための論理推論システムの構築" />
+<meta name="citation_title" content="採用決定タスクを用いたLLMの年齢バイアス検出" />
 
-<meta name="citation_author" content="三上燿輔" />
+<meta name="citation_author" content="岡部真幸" />
 
-<meta name="citation_author" content="松岡大樹" />
+<meta name="citation_author" content="榎本大晟" />
 
-<meta name="citation_author" content="谷中瞳" />
+<meta name="citation_author" content="小町守" />
+
+<meta name="citation_author" content="欅惇志" />
 
 <meta name="citation_publication_date" content="None" />
 <meta name="citation_conference_title" content="None" />
 <meta name="citation_inbook_title" content="None" />
-<meta name="citation_abstract" content="比較表現を含む自然言語推論(NLI)は，比較対象となる性質が成り立つ程度を文から読み取り推論を行う必要があるため，挑戦的なタスクである．このような推論を頑健に扱える推論システムの実現に向けて，合成的意味論に基づく論理推論システムが提案されている．しかし，日本語の比較表現に注目したシステムの開発は十分に取り組まれていない．そこで本研究は，形式意味論に基づいた日本語比較表現のための論理推論システムを提案する．提案システムの評価には比較表現を含む日本語 NLI データセットを用いる．既存の LLM との正答率の比較により本提案の有効性を示す．" />
+<meta name="citation_abstract" content="大規模言語モデル(LLM)に採用通知メールを生成させてバイアスを検出する研究として、先行研究では、人種・民族及び性別に基づくバイアスを検証している。そこで本研究では、採用通知メール生成プロンプトにおいて年齢を追加し、先行研究で検証されていない年齢バイアスの検出を試みた。また、採用通知メールを生成するスタイルの指示文がバイアスに与える影響の調査も行なった。実験の結果、年齢による採用率差が一貫して存在し、また、生成スタイル指示の違いにより、採用率および属性間格差が変化することが確認された。" />
 
-<meta name="citation_keywords" content="B2:計算・形式言語学(2)" />
+<meta name="citation_keywords" content="B2:NLPモデルの評価・安全性・信頼性" />
 
 <meta name="citation_pdf_url" content="" />
 
@@ -213,27 +215,31 @@
 <div class="card m-3" style="">
   <div class="card-header">
     <h2 class="card-title main-title text-center" style="color: black">
-      日本語比較表現のための論理推論システムの構築
+      採用決定タスクを用いたLLMの年齢バイアス検出
     </h2>
     <h3 class="card-subtitle mb-2 text-muted text-center">
       
-      <a href="papers.html?filter=authors&search=三上燿輔&program=all" class="text-primary"
-        >三上燿輔</a
+      <a href="papers.html?filter=authors&search=岡部真幸&program=all" class="text-primary"
+        >岡部真幸</a
       >,
       
-      <a href="papers.html?filter=authors&search=松岡大樹&program=all" class="text-primary"
-        >松岡大樹</a
+      <a href="papers.html?filter=authors&search=榎本大晟&program=all" class="text-primary"
+        >榎本大晟</a
       >,
       
-      <a href="papers.html?filter=authors&search=谷中瞳&program=all" class="text-primary"
-        >谷中瞳</a
+      <a href="papers.html?filter=authors&search=小町守&program=all" class="text-primary"
+        >小町守</a
+      >,
+      
+      <a href="papers.html?filter=authors&search=欅惇志&program=all" class="text-primary"
+        >欅惇志</a
       >
       
     </h3>
 
     <p class="card-text text-center h5">
       
-      <a href="papers.html?filter=keywords&search=B2:計算・形式言語学(2)" class ="badge badge-pill badge-primary">B2:計算・形式言語学(2)</a>
+      <a href="papers.html?filter=keywords&search=B2:NLPモデルの評価・安全性・信頼性" class ="badge badge-pill badge-primary">B2:NLPモデルの評価・安全性・信頼性</a>
       
 
       
@@ -241,7 +247,7 @@
    
     <div class="text-center p-3">
       
-      <a class="card-link link-info" target="_blank" href="https://www.anlp.jp/proceedings/annual_meeting/2025/pdf_dir/B2-4.pdf">
+      <a class="card-link link-info" target="_blank" href="https://www.anlp.jp/proceedings/annual_meeting/2026/pdf_dir/B2-4.pdf">
         📝 Paper 
       </a>
       
@@ -295,7 +301,7 @@
         <div class="card-text">
           <div id="abstractExample">
             <span class="font-weight-bold">Abstract:</span>
-            比較表現を含む自然言語推論(NLI)は，比較対象となる性質が成り立つ程度を文から読み取り推論を行う必要があるため，挑戦的なタスクである．このような推論を頑健に扱える推論システムの実現に向けて，合成的意味論に基づく論理推論システムが提案されている．しかし，日本語の比較表現に注目したシステムの開発は十分に取り組まれていない．そこで本研究は，形式意味論に基づいた日本語比較表現のための論理推論システムを提案する．提案システムの評価には比較表現を含む日本語 NLI データセットを用いる．既存の LLM との正答率の比較により本提案の有効性を示す．
+            大規模言語モデル(LLM)に採用通知メールを生成させてバイアスを検出する研究として、先行研究では、人種・民族及び性別に基づくバイアスを検証している。そこで本研究では、採用通知メール生成プロンプトにおいて年齢を追加し、先行研究で検証されていない年齢バイアスの検出を試みた。また、採用通知メールを生成するスタイルの指示文がバイアスに与える影響の調査も行なった。実験の結果、年齢による採用率差が一貫して存在し、また、生成スタイル指示の違いにより、採用率および属性間格差が変化することが確認された。
           </div>
         </div>
       </div>
@@ -303,7 +309,7 @@
   </div>
   
   <div class="tab-pane fade" id="paper" role="tabpanel" aria-labelledby="paper-tab">
-    <embed src="https://www.anlp.jp/proceedings/annual_meeting/2025/pdf_dir/B2-4.pdf" type="application/pdf" width="100%" height="850px">
+    <embed src="https://www.anlp.jp/proceedings/annual_meeting/2026/pdf_dir/B2-4.pdf" type="application/pdf" width="100%" height="850px">
   </div>
   
   
@@ -346,7 +352,7 @@
         <p class="float-left">
           <img src="None" height="45px"
             width="auto" align="center">
-          <span class="lead">NLP2025</span>
+          <span class="lead">NLP2026</span>
         </p>
         <p class="float-right"><a href="#" class="text-dark">Back to Top</a></p>
         <p class="text-center">The title and abstract of the paper are licensed by the author(s) under CC BY 4.0<br>

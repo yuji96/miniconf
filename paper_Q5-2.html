@@ -64,20 +64,26 @@
   <script src="https://cdn.jsdelivr.net/npm/pdfjs-dist@2.3.200/build/pdf.min.js"></script>
   <script src="static/js/pdf_render.js"></script>
 
-  <title>NLP2025: 訓練・推論時の不一致を解消する離散拡散テキスト生成モデル</title>
+  <title>NLP2026: KokoroChat: 講習を受けたカウンセラーによるロールプレイを通じて収集された日本語カウンセリング対話データセット</title>
   
-<meta name="citation_title" content="訓練・推論時の不一致を解消する離散拡散テキスト生成モデル" />
+<meta name="citation_title" content="KokoroChat: 講習を受けたカウンセラーによるロールプレイを通じて収集された日本語カウンセリング対話データセット" />
 
-<meta name="citation_author" content="浅田真生" />
+<meta name="citation_author" content="斉志揚" />
 
-<meta name="citation_author" content="三輪誠" />
+<meta name="citation_author" content="金子拓正" />
+
+<meta name="citation_author" content="高溝恵子" />
+
+<meta name="citation_author" content="浮世満理子" />
+
+<meta name="citation_author" content="稲葉通将" />
 
 <meta name="citation_publication_date" content="None" />
 <meta name="citation_conference_title" content="None" />
 <meta name="citation_inbook_title" content="None" />
-<meta name="citation_abstract" content="本研究では，離散拡散モデルを用いたテキスト生成において生じる訓練時と推論時の不一致に注目し，この問題を解消するため，訓練時の損失計算においてモデルが予測した系列を次ステップの入力として使用する 2 ステップ損失計算アプローチと，その確率的スケジューリングを提案する．提案手法を広く使用されている 4 つのテキスト生成ベンチマークデータセットにおいて学習・評価した結果，2 ステップ損失計算による離散拡散モデルの性能向上を確認した．" />
+<meta name="citation_abstract" content="言語モデルによる心理カウンセリング応答の生成には，高品質なデータセットが不可欠である．しかし，クラウドソーシングによる収集には作業者の教育が必要であり，実際のカウンセリング記録はプライバシーの問題から利用が難しい．近年は大規模言語モデル（Large Language Model; LLM）による対話データの自動生成も行われているが，多様性やカウンセリングプロセスの信頼性に欠ける場合が多い．本研究では，講習を受けたカウンセラー同士によるロールプレイにより，高品質な日本語の心理カウンセリング対話を収集した．その結果，6,589 件の長文対話とクライアントによる包括的なフィードバックを含むデータセット KokoroChat1）を構築した．このデータを用いた LLM のファインチューニングにより，カウンセリング応答生成において性能の向上が確認された．" />
 
-<meta name="citation_keywords" content="Q5:ポスター" />
+<meta name="citation_keywords" content="Q5:言語資源・アノテーションと評価" />
 
 <meta name="citation_pdf_url" content="" />
 
@@ -211,23 +217,35 @@
 <div class="card m-3" style="">
   <div class="card-header">
     <h2 class="card-title main-title text-center" style="color: black">
-      訓練・推論時の不一致を解消する離散拡散テキスト生成モデル
+      KokoroChat: 講習を受けたカウンセラーによるロールプレイを通じて収集された日本語カウンセリング対話データセット
     </h2>
     <h3 class="card-subtitle mb-2 text-muted text-center">
       
-      <a href="papers.html?filter=authors&search=浅田真生&program=all" class="text-primary"
-        >浅田真生</a
+      <a href="papers.html?filter=authors&search=斉志揚&program=all" class="text-primary"
+        >斉志揚</a
       >,
       
-      <a href="papers.html?filter=authors&search=三輪誠&program=all" class="text-primary"
-        >三輪誠</a
+      <a href="papers.html?filter=authors&search=金子拓正&program=all" class="text-primary"
+        >金子拓正</a
+      >,
+      
+      <a href="papers.html?filter=authors&search=高溝恵子&program=all" class="text-primary"
+        >高溝恵子</a
+      >,
+      
+      <a href="papers.html?filter=authors&search=浮世満理子&program=all" class="text-primary"
+        >浮世満理子</a
+      >,
+      
+      <a href="papers.html?filter=authors&search=稲葉通将&program=all" class="text-primary"
+        >稲葉通将</a
       >
       
     </h3>
 
     <p class="card-text text-center h5">
       
-      <a href="papers.html?filter=keywords&search=Q5:ポスター" class ="badge badge-pill badge-primary">Q5:ポスター</a>
+      <a href="papers.html?filter=keywords&search=Q5:言語資源・アノテーションと評価" class ="badge badge-pill badge-primary">Q5:言語資源・アノテーションと評価</a>
       
 
       
@@ -235,7 +253,7 @@
    
     <div class="text-center p-3">
       
-      <a class="card-link link-info" target="_blank" href="https://www.anlp.jp/proceedings/annual_meeting/2025/pdf_dir/Q5-2.pdf">
+      <a class="card-link link-info" target="_blank" href="https://www.anlp.jp/proceedings/annual_meeting/2026/pdf_dir/Q5-2.pdf">
         📝 Paper 
       </a>
       
@@ -289,7 +307,7 @@
         <div class="card-text">
           <div id="abstractExample">
             <span class="font-weight-bold">Abstract:</span>
-            本研究では，離散拡散モデルを用いたテキスト生成において生じる訓練時と推論時の不一致に注目し，この問題を解消するため，訓練時の損失計算においてモデルが予測した系列を次ステップの入力として使用する 2 ステップ損失計算アプローチと，その確率的スケジューリングを提案する．提案手法を広く使用されている 4 つのテキスト生成ベンチマークデータセットにおいて学習・評価した結果，2 ステップ損失計算による離散拡散モデルの性能向上を確認した．
+            言語モデルによる心理カウンセリング応答の生成には，高品質なデータセットが不可欠である．しかし，クラウドソーシングによる収集には作業者の教育が必要であり，実際のカウンセリング記録はプライバシーの問題から利用が難しい．近年は大規模言語モデル（Large Language Model; LLM）による対話データの自動生成も行われているが，多様性やカウンセリングプロセスの信頼性に欠ける場合が多い．本研究では，講習を受けたカウンセラー同士によるロールプレイにより，高品質な日本語の心理カウンセリング対話を収集した．その結果，6,589 件の長文対話とクライアントによる包括的なフィードバックを含むデータセット KokoroChat1）を構築した．このデータを用いた LLM のファインチューニングにより，カウンセリング応答生成において性能の向上が確認された．
           </div>
         </div>
       </div>
@@ -297,7 +315,7 @@
   </div>
   
   <div class="tab-pane fade" id="paper" role="tabpanel" aria-labelledby="paper-tab">
-    <embed src="https://www.anlp.jp/proceedings/annual_meeting/2025/pdf_dir/Q5-2.pdf" type="application/pdf" width="100%" height="850px">
+    <embed src="https://www.anlp.jp/proceedings/annual_meeting/2026/pdf_dir/Q5-2.pdf" type="application/pdf" width="100%" height="850px">
   </div>
   
   
@@ -340,7 +358,7 @@
         <p class="float-left">
           <img src="None" height="45px"
             width="auto" align="center">
-          <span class="lead">NLP2025</span>
+          <span class="lead">NLP2026</span>
         </p>
         <p class="float-right"><a href="#" class="text-dark">Back to Top</a></p>
         <p class="text-center">The title and abstract of the paper are licensed by the author(s) under CC BY 4.0<br>

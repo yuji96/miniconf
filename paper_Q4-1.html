@@ -64,24 +64,18 @@
   <script src="https://cdn.jsdelivr.net/npm/pdfjs-dist@2.3.200/build/pdf.min.js"></script>
   <script src="static/js/pdf_render.js"></script>
 
-  <title>NLP2025: Semantic feature engineering for in-context AutoML</title>
+  <title>NLP2026: Japanese HR NIAH: 架空データを用いた日本語人事労務領域のロングコンテキスト性能評価ベンチマーク</title>
   
-<meta name="citation_title" content="Semantic feature engineering for in-context AutoML" />
+<meta name="citation_title" content="Japanese HR NIAH: 架空データを用いた日本語人事労務領域のロングコンテキスト性能評価ベンチマーク" />
 
-<meta name="citation_author" content="AfonsoLourenço" />
-
-<meta name="citation_author" content="寛彰金月" />
-
-<meta name="citation_author" content="司睦田原" />
-
-<meta name="citation_author" content="GoretiMarreiros" />
+<meta name="citation_author" content="久保田崇文" />
 
 <meta name="citation_publication_date" content="None" />
 <meta name="citation_conference_title" content="None" />
 <meta name="citation_inbook_title" content="None" />
-<meta name="citation_abstract" content="Machine learning for structured data has lagged be-hind text and image, with current methods remainingapplication-dependent and requiring extensive algorithmselection and hyperparameter tuning. Large tabular models(LTMs) oﬀer a promising solution for context-aware Au-toML by pretraining on diverse tabular datasets. However,scalability remains a challenge due to the quadratic growthof contexts. This paper introduces a novel in-context Au-toML paradigm focused on semantically informed featureengineering, where input data, rather than model parame-ters, are treated as learnable components. By leveragingtask-speciﬁc insights from data card descriptions and his-torical logs, a large language model (LLM) enhances con-text creation for a LTM. Empirical results on ten benchmarkdatasets demonstrate this paradigm delivers competitiveperformance compared to conventional AutoML methods." />
+<meta name="citation_abstract" content="ロングコンテキスト LLM の実用化が進む中，大量の文書から必要な情報を正確に検索・統合する能力の評価が重要となっている．特に人事労務ドメインでは，就業規則，勤怠データ，契約書など多様な文書を統合し，複雑な質問に答える必要がある．しかし，既存の NIAH ベンチマークは一般的なドメインでの評価に留まり，日本語や特定ドメインに特化した評価は不足している．本研究では，日本語人事労務ドメインに特化した NIAH ベンチマークを構築した．架空企業の従業員 60 名分のデータを含む合成データセットを「干し草の山（Haystack）」として作成し，単一データ検索，複数データ検索，時系列データ検索の 3 種類のタスクタイプを設計した．主要な 6 モデルを評価した結果，モデル間で性能差が確認され，特に時系列データ検索タスクで難易度が高いことが明らかになった．本研究は，日本語ドメイン特化ベンチマークの提供と，人事 SaaS 企業における LLM 実用化の指針を示す点で貢献する．" />
 
-<meta name="citation_keywords" content="Q4:ポスター" />
+<meta name="citation_keywords" content="Q4:言語資源・アノテーションと評価" />
 
 <meta name="citation_pdf_url" content="" />
 
@@ -215,31 +209,19 @@
 <div class="card m-3" style="">
   <div class="card-header">
     <h2 class="card-title main-title text-center" style="color: black">
-      Semantic feature engineering for in-context AutoML
+      Japanese HR NIAH: 架空データを用いた日本語人事労務領域のロングコンテキスト性能評価ベンチマーク
     </h2>
     <h3 class="card-subtitle mb-2 text-muted text-center">
       
-      <a href="papers.html?filter=authors&search=AfonsoLourenço&program=all" class="text-primary"
-        >AfonsoLourenço</a
-      >,
-      
-      <a href="papers.html?filter=authors&search=寛彰金月&program=all" class="text-primary"
-        >寛彰金月</a
-      >,
-      
-      <a href="papers.html?filter=authors&search=司睦田原&program=all" class="text-primary"
-        >司睦田原</a
-      >,
-      
-      <a href="papers.html?filter=authors&search=GoretiMarreiros&program=all" class="text-primary"
-        >GoretiMarreiros</a
+      <a href="papers.html?filter=authors&search=久保田崇文&program=all" class="text-primary"
+        >久保田崇文</a
       >
       
     </h3>
 
     <p class="card-text text-center h5">
       
-      <a href="papers.html?filter=keywords&search=Q4:ポスター" class ="badge badge-pill badge-primary">Q4:ポスター</a>
+      <a href="papers.html?filter=keywords&search=Q4:言語資源・アノテーションと評価" class ="badge badge-pill badge-primary">Q4:言語資源・アノテーションと評価</a>
       
 
       
@@ -247,7 +229,7 @@
    
     <div class="text-center p-3">
       
-      <a class="card-link link-info" target="_blank" href="https://www.anlp.jp/proceedings/annual_meeting/2025/pdf_dir/Q4-1.pdf">
+      <a class="card-link link-info" target="_blank" href="https://www.anlp.jp/proceedings/annual_meeting/2026/pdf_dir/Q4-1.pdf">
         📝 Paper 
       </a>
       
@@ -301,7 +283,7 @@
         <div class="card-text">
           <div id="abstractExample">
             <span class="font-weight-bold">Abstract:</span>
-            Machine learning for structured data has lagged be-hind text and image, with current methods remainingapplication-dependent and requiring extensive algorithmselection and hyperparameter tuning. Large tabular models(LTMs) oﬀer a promising solution for context-aware Au-toML by pretraining on diverse tabular datasets. However,scalability remains a challenge due to the quadratic growthof contexts. This paper introduces a novel in-context Au-toML paradigm focused on semantically informed featureengineering, where input data, rather than model parame-ters, are treated as learnable components. By leveragingtask-speciﬁc insights from data card descriptions and his-torical logs, a large language model (LLM) enhances con-text creation for a LTM. Empirical results on ten benchmarkdatasets demonstrate this paradigm delivers competitiveperformance compared to conventional AutoML methods.
+            ロングコンテキスト LLM の実用化が進む中，大量の文書から必要な情報を正確に検索・統合する能力の評価が重要となっている．特に人事労務ドメインでは，就業規則，勤怠データ，契約書など多様な文書を統合し，複雑な質問に答える必要がある．しかし，既存の NIAH ベンチマークは一般的なドメインでの評価に留まり，日本語や特定ドメインに特化した評価は不足している．本研究では，日本語人事労務ドメインに特化した NIAH ベンチマークを構築した．架空企業の従業員 60 名分のデータを含む合成データセットを「干し草の山（Haystack）」として作成し，単一データ検索，複数データ検索，時系列データ検索の 3 種類のタスクタイプを設計した．主要な 6 モデルを評価した結果，モデル間で性能差が確認され，特に時系列データ検索タスクで難易度が高いことが明らかになった．本研究は，日本語ドメイン特化ベンチマークの提供と，人事 SaaS 企業における LLM 実用化の指針を示す点で貢献する．
           </div>
         </div>
       </div>
@@ -309,7 +291,7 @@
   </div>
   
   <div class="tab-pane fade" id="paper" role="tabpanel" aria-labelledby="paper-tab">
-    <embed src="https://www.anlp.jp/proceedings/annual_meeting/2025/pdf_dir/Q4-1.pdf" type="application/pdf" width="100%" height="850px">
+    <embed src="https://www.anlp.jp/proceedings/annual_meeting/2026/pdf_dir/Q4-1.pdf" type="application/pdf" width="100%" height="850px">
   </div>
   
   
@@ -352,7 +334,7 @@
         <p class="float-left">
           <img src="None" height="45px"
             width="auto" align="center">
-          <span class="lead">NLP2025</span>
+          <span class="lead">NLP2026</span>
         </p>
         <p class="float-right"><a href="#" class="text-dark">Back to Top</a></p>
         <p class="text-center">The title and abstract of the paper are licensed by the author(s) under CC BY 4.0<br>

@@ -64,30 +64,24 @@
   <script src="https://cdn.jsdelivr.net/npm/pdfjs-dist@2.3.200/build/pdf.min.js"></script>
   <script src="static/js/pdf_render.js"></script>
 
-  <title>NLP2025: JAMSE：日本語LLM評価用の高品質な少サンプル日本語ベンチマークの作成および評価−GENIAC LLM開発コンペティションからの知見−</title>
+  <title>NLP2026: 日本語の文書レベルのテキスト平易化の自動評価</title>
   
-<meta name="citation_title" content="JAMSE：日本語LLM評価用の高品質な少サンプル日本語ベンチマークの作成および評価−GENIAC LLM開発コンペティションからの知見−" />
+<meta name="citation_title" content="日本語の文書レベルのテキスト平易化の自動評価" />
 
-<meta name="citation_author" content="山崎友大" />
+<meta name="citation_author" content="山下伊織" />
 
-<meta name="citation_author" content="谷口仁慈" />
+<meta name="citation_author" content="木山朔" />
 
-<meta name="citation_author" content="山際愛実" />
+<meta name="citation_author" content="KexinBian" />
 
-<meta name="citation_author" content="原田憲旺" />
-
-<meta name="citation_author" content="小島武" />
-
-<meta name="citation_author" content="岩澤有祐" />
-
-<meta name="citation_author" content="松尾豊" />
+<meta name="citation_author" content="小町守" />
 
 <meta name="citation_publication_date" content="None" />
 <meta name="citation_conference_title" content="None" />
 <meta name="citation_inbook_title" content="None" />
-<meta name="citation_abstract" content="日本語 LLM の開発が盛んな一方，日本語評価ベンチマークの数や質は十分でない．また，既存のベンチマークはサンプル数が多く，評価コストが高いという問題がある．本稿では，高品質かつ少サンプルな評価用日本語ベンチマーク JAMSE を提案する．JAMSE は，7 つのベンチマークから構成されており，1 ベンチマークあたり 100 サンプルである．そのため，日本語 LLM の言語理解能力と生成能力を低コストで評価することができる．国内外の継続学習モデルや GENIAC コンペティションで開発されたモデルで評価を行ったところ，Nejumi LeaderboardNeo による評価結果と強い相関が確認された．1）" />
+<meta name="citation_abstract" content="本研究は，日本語の文書レベルにおける，テキスト平易化の大規模言語モデル（LLM）の自動評価能力を検証するものである．データセットとしてJADOS-eval [1]を用い，ソース文書に対応する複数の平易化文書について，必要性・十分性・文平易度・文書平易度の 4 指標を対象に，人手評価と LLM の分類結果を比較した．その結果，GPT-4o と Gemini2.5 Pro は 0-shot でも高い一致率を示し，従来指標D-SARI [2]より人手評価との相関が高い傾向が確認された．一方，多くのモデルは文書平易度を体系的に過小評価し，特に漢字出現率など表層的難度が判断に影響する可能性が示された．" />
 
-<meta name="citation_keywords" content="Q6:ポスター" />
+<meta name="citation_keywords" content="Q6:言語資源・アノテーションと評価 / 計算・形式言語学" />
 
 <meta name="citation_pdf_url" content="" />
 
@@ -221,43 +215,31 @@
 <div class="card m-3" style="">
   <div class="card-header">
     <h2 class="card-title main-title text-center" style="color: black">
-      JAMSE：日本語LLM評価用の高品質な少サンプル日本語ベンチマークの作成および評価−GENIAC LLM開発コンペティションからの知見−
+      日本語の文書レベルのテキスト平易化の自動評価
     </h2>
     <h3 class="card-subtitle mb-2 text-muted text-center">
       
-      <a href="papers.html?filter=authors&search=山崎友大&program=all" class="text-primary"
-        >山崎友大</a
+      <a href="papers.html?filter=authors&search=山下伊織&program=all" class="text-primary"
+        >山下伊織</a
       >,
       
-      <a href="papers.html?filter=authors&search=谷口仁慈&program=all" class="text-primary"
-        >谷口仁慈</a
+      <a href="papers.html?filter=authors&search=木山朔&program=all" class="text-primary"
+        >木山朔</a
       >,
       
-      <a href="papers.html?filter=authors&search=山際愛実&program=all" class="text-primary"
-        >山際愛実</a
+      <a href="papers.html?filter=authors&search=KexinBian&program=all" class="text-primary"
+        >KexinBian</a
       >,
       
-      <a href="papers.html?filter=authors&search=原田憲旺&program=all" class="text-primary"
-        >原田憲旺</a
-      >,
-      
-      <a href="papers.html?filter=authors&search=小島武&program=all" class="text-primary"
-        >小島武</a
-      >,
-      
-      <a href="papers.html?filter=authors&search=岩澤有祐&program=all" class="text-primary"
-        >岩澤有祐</a
-      >,
-      
-      <a href="papers.html?filter=authors&search=松尾豊&program=all" class="text-primary"
-        >松尾豊</a
+      <a href="papers.html?filter=authors&search=小町守&program=all" class="text-primary"
+        >小町守</a
       >
       
     </h3>
 
     <p class="card-text text-center h5">
       
-      <a href="papers.html?filter=keywords&search=Q6:ポスター" class ="badge badge-pill badge-primary">Q6:ポスター</a>
+      <a href="papers.html?filter=keywords&search=Q6:言語資源・アノテーションと評価 / 計算・形式言語学" class ="badge badge-pill badge-primary">Q6:言語資源・アノテーションと評価 / 計算・形式言語学</a>
       
 
       
@@ -265,7 +247,7 @@
    
     <div class="text-center p-3">
       
-      <a class="card-link link-info" target="_blank" href="https://www.anlp.jp/proceedings/annual_meeting/2025/pdf_dir/Q6-2.pdf">
+      <a class="card-link link-info" target="_blank" href="https://www.anlp.jp/proceedings/annual_meeting/2026/pdf_dir/Q6-2.pdf">
         📝 Paper 
       </a>
       
@@ -319,7 +301,7 @@
         <div class="card-text">
           <div id="abstractExample">
             <span class="font-weight-bold">Abstract:</span>
-            日本語 LLM の開発が盛んな一方，日本語評価ベンチマークの数や質は十分でない．また，既存のベンチマークはサンプル数が多く，評価コストが高いという問題がある．本稿では，高品質かつ少サンプルな評価用日本語ベンチマーク JAMSE を提案する．JAMSE は，7 つのベンチマークから構成されており，1 ベンチマークあたり 100 サンプルである．そのため，日本語 LLM の言語理解能力と生成能力を低コストで評価することができる．国内外の継続学習モデルや GENIAC コンペティションで開発されたモデルで評価を行ったところ，Nejumi LeaderboardNeo による評価結果と強い相関が確認された．1）
+            本研究は，日本語の文書レベルにおける，テキスト平易化の大規模言語モデル（LLM）の自動評価能力を検証するものである．データセットとしてJADOS-eval [1]を用い，ソース文書に対応する複数の平易化文書について，必要性・十分性・文平易度・文書平易度の 4 指標を対象に，人手評価と LLM の分類結果を比較した．その結果，GPT-4o と Gemini2.5 Pro は 0-shot でも高い一致率を示し，従来指標D-SARI [2]より人手評価との相関が高い傾向が確認された．一方，多くのモデルは文書平易度を体系的に過小評価し，特に漢字出現率など表層的難度が判断に影響する可能性が示された．
           </div>
         </div>
       </div>
@@ -327,7 +309,7 @@
   </div>
   
   <div class="tab-pane fade" id="paper" role="tabpanel" aria-labelledby="paper-tab">
-    <embed src="https://www.anlp.jp/proceedings/annual_meeting/2025/pdf_dir/Q6-2.pdf" type="application/pdf" width="100%" height="850px">
+    <embed src="https://www.anlp.jp/proceedings/annual_meeting/2026/pdf_dir/Q6-2.pdf" type="application/pdf" width="100%" height="850px">
   </div>
   
   
@@ -370,7 +352,7 @@
         <p class="float-left">
           <img src="None" height="45px"
             width="auto" align="center">
-          <span class="lead">NLP2025</span>
+          <span class="lead">NLP2026</span>
         </p>
         <p class="float-right"><a href="#" class="text-dark">Back to Top</a></p>
         <p class="text-center">The title and abstract of the paper are licensed by the author(s) under CC BY 4.0<br>

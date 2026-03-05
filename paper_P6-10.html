@@ -64,20 +64,20 @@
   <script src="https://cdn.jsdelivr.net/npm/pdfjs-dist@2.3.200/build/pdf.min.js"></script>
   <script src="static/js/pdf_render.js"></script>
 
-  <title>NLP2025: 質問応答によるメールからの送信者情報抽出</title>
+  <title>NLP2026: 自動採点モデルにおけるAttention層に着目した採点根拠の分析</title>
   
-<meta name="citation_title" content="質問応答によるメールからの送信者情報抽出" />
+<meta name="citation_title" content="自動採点モデルにおけるAttention層に着目した採点根拠の分析" />
 
-<meta name="citation_author" content="大田尾匠" />
+<meta name="citation_author" content="宮田創太" />
 
-<meta name="citation_author" content="橋本航" />
+<meta name="citation_author" content="横井健" />
 
 <meta name="citation_publication_date" content="None" />
 <meta name="citation_conference_title" content="None" />
 <meta name="citation_inbook_title" content="None" />
-<meta name="citation_abstract" content="本研究では、効率的なメール管理のために、メールから送信者情報(氏名・会社名・部署・役職)を抽出する重要性に着目し、送信者のメールヘッダとメール本文を入力として、質問応答によって送信者情報を抽出する手法を提案する。実験では、Transformer をベースとした複数の言語モデルの性能を比較した。結果として、モデルのアーキテクチャによって抽出性能が高い項目が異なること、GPT-4oは正解が存在しない場合も誤抽出する傾向があるがEncoder-only モデルより性能が高いこと、入力長による性能低下はモデルや抽出項目によって違った傾向があることがわかった。" />
+<meta name="citation_abstract" content="本研 究は、採点 根拠 の指 標と して 利用 でき るAttention 層に着目し、自動採点モデルの採点方針を探り、解答文の特徴を分析することを目指す。提案手法として、解答文のクラスタリング・Attention 層の出力ベクトルのクラスタリングを通して、採点者・自動採点モデルの採点方針を可視化した。その後、クラスタリング結果と採点結果をもとに、採点者・自動採点モデルから見た解答文の特徴分析を行った。具体的には、頻出単語の統計、Attention の重みと SHAP 値の統計、スピアマンの順位相関係数を用いて解答文の特徴分析を行った。その結果、解答文の特徴として、高得点の解答文は問題の話題に関連した単語を多く含み、低得点の解答文は抽象的な単語を多く含むことが分かった。また、採点者・自動採点モデルが具体性、語彙、単語のスペルに注目して採点をしていることが、単語で明らかにすることができた。" />
 
-<meta name="citation_keywords" content="P6:ポスター" />
+<meta name="citation_keywords" content="P6:実世界接地と言語処理 / 教育応用" />
 
 <meta name="citation_pdf_url" content="" />
 
@@ -211,23 +211,23 @@
 <div class="card m-3" style="">
   <div class="card-header">
     <h2 class="card-title main-title text-center" style="color: black">
-      質問応答によるメールからの送信者情報抽出
+      自動採点モデルにおけるAttention層に着目した採点根拠の分析
     </h2>
     <h3 class="card-subtitle mb-2 text-muted text-center">
       
-      <a href="papers.html?filter=authors&search=大田尾匠&program=all" class="text-primary"
-        >大田尾匠</a
+      <a href="papers.html?filter=authors&search=宮田創太&program=all" class="text-primary"
+        >宮田創太</a
       >,
       
-      <a href="papers.html?filter=authors&search=橋本航&program=all" class="text-primary"
-        >橋本航</a
+      <a href="papers.html?filter=authors&search=横井健&program=all" class="text-primary"
+        >横井健</a
       >
       
     </h3>
 
     <p class="card-text text-center h5">
       
-      <a href="papers.html?filter=keywords&search=P6:ポスター" class ="badge badge-pill badge-primary">P6:ポスター</a>
+      <a href="papers.html?filter=keywords&search=P6:実世界接地と言語処理 / 教育応用" class ="badge badge-pill badge-primary">P6:実世界接地と言語処理 / 教育応用</a>
       
 
       
@@ -235,7 +235,7 @@
    
     <div class="text-center p-3">
       
-      <a class="card-link link-info" target="_blank" href="https://www.anlp.jp/proceedings/annual_meeting/2025/pdf_dir/P6-10.pdf">
+      <a class="card-link link-info" target="_blank" href="https://www.anlp.jp/proceedings/annual_meeting/2026/pdf_dir/P6-10.pdf">
         📝 Paper 
       </a>
       
@@ -289,7 +289,7 @@
         <div class="card-text">
           <div id="abstractExample">
             <span class="font-weight-bold">Abstract:</span>
-            本研究では、効率的なメール管理のために、メールから送信者情報(氏名・会社名・部署・役職)を抽出する重要性に着目し、送信者のメールヘッダとメール本文を入力として、質問応答によって送信者情報を抽出する手法を提案する。実験では、Transformer をベースとした複数の言語モデルの性能を比較した。結果として、モデルのアーキテクチャによって抽出性能が高い項目が異なること、GPT-4oは正解が存在しない場合も誤抽出する傾向があるがEncoder-only モデルより性能が高いこと、入力長による性能低下はモデルや抽出項目によって違った傾向があることがわかった。
+            本研 究は、採点 根拠 の指 標と して 利用 でき るAttention 層に着目し、自動採点モデルの採点方針を探り、解答文の特徴を分析することを目指す。提案手法として、解答文のクラスタリング・Attention 層の出力ベクトルのクラスタリングを通して、採点者・自動採点モデルの採点方針を可視化した。その後、クラスタリング結果と採点結果をもとに、採点者・自動採点モデルから見た解答文の特徴分析を行った。具体的には、頻出単語の統計、Attention の重みと SHAP 値の統計、スピアマンの順位相関係数を用いて解答文の特徴分析を行った。その結果、解答文の特徴として、高得点の解答文は問題の話題に関連した単語を多く含み、低得点の解答文は抽象的な単語を多く含むことが分かった。また、採点者・自動採点モデルが具体性、語彙、単語のスペルに注目して採点をしていることが、単語で明らかにすることができた。
           </div>
         </div>
       </div>
@@ -297,7 +297,7 @@
   </div>
   
   <div class="tab-pane fade" id="paper" role="tabpanel" aria-labelledby="paper-tab">
-    <embed src="https://www.anlp.jp/proceedings/annual_meeting/2025/pdf_dir/P6-10.pdf" type="application/pdf" width="100%" height="850px">
+    <embed src="https://www.anlp.jp/proceedings/annual_meeting/2026/pdf_dir/P6-10.pdf" type="application/pdf" width="100%" height="850px">
   </div>
   
   
@@ -340,7 +340,7 @@
         <p class="float-left">
           <img src="None" height="45px"
             width="auto" align="center">
-          <span class="lead">NLP2025</span>
+          <span class="lead">NLP2026</span>
         </p>
         <p class="float-right"><a href="#" class="text-dark">Back to Top</a></p>
         <p class="text-center">The title and abstract of the paper are licensed by the author(s) under CC BY 4.0<br>

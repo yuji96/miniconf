@@ -64,24 +64,26 @@
   <script src="https://cdn.jsdelivr.net/npm/pdfjs-dist@2.3.200/build/pdf.min.js"></script>
   <script src="static/js/pdf_render.js"></script>
 
-  <title>NLP2025: ASCII CHALLENGE−LLMは画家になれるか−</title>
+  <title>NLP2026: カスタマーサポート問い合わせに対するLLM自動タグ付与の実現可能性の検討</title>
   
-<meta name="citation_title" content="ASCII CHALLENGE−LLMは画家になれるか−" />
+<meta name="citation_title" content="カスタマーサポート問い合わせに対するLLM自動タグ付与の実現可能性の検討" />
 
-<meta name="citation_author" content="吉田遥音" />
+<meta name="citation_author" content="岩田伸治" />
 
-<meta name="citation_author" content="羽根田賢和" />
+<meta name="citation_author" content="佐藤志貴" />
 
-<meta name="citation_author" content="斉藤いつみ" />
+<meta name="citation_author" content="小比田涼介" />
 
-<meta name="citation_author" content="坂口慶祐" />
+<meta name="citation_author" content="石井陽子" />
+
+<meta name="citation_author" content="岡本あずさ" />
 
 <meta name="citation_publication_date" content="None" />
 <meta name="citation_conference_title" content="None" />
 <meta name="citation_inbook_title" content="None" />
-<meta name="citation_abstract" content="アスキーアートはイラストや画像を文字で表現するテキストアートである．文字だけを用いて様々な表現を可能にするアスキーアートは現代社会で広く用いられている一方で，その作成は容易ではない．また既存の生成ツールは画像を機械的に変換するなど柔軟性が低い方法に限定されている．本研究では，自然言語からアスキーアートを生成する手段としての LLM・LVLM の利用可能性の検証を行った．結果として現行のモデルでは生成が困難だが，アスキーアートに特化したデータセットを用いて学習することで生成可能になる兆しが見えた．" />
+<meta name="citation_abstract" content="カスタマーサポートでは，問い合わせに対して内容に応じたタグを付与し分類することで，タグごとに確立されたフローを用いた効率的な対応を実現するという運用がしばしば採用されるが，タグの付与は解釈と判断を伴う手作業であり負荷が高い．本稿では，こうした運用の効率化に向け，大規模言語モデルによる自動タグ付与の実現可能性を検討する．実験を通じて，タグ観点の多様性（たとえばトラブル内容を表すタグとその原因を表すタグの混在）がタグ付けを単純な多クラス分類タスクへ当てはめることを困難にすることがわかった．最後に，この性質をむしろ強みとして捉え，タグを観点別に整理し各観点からタグ付与を行うことで，問い合わせの意図を多角的に捉える枠組みを議論する．" />
 
-<meta name="citation_keywords" content="P5:ポスター" />
+<meta name="citation_keywords" content="P5:対話 / 質問応答" />
 
 <meta name="citation_pdf_url" content="" />
 
@@ -215,31 +217,35 @@
 <div class="card m-3" style="">
   <div class="card-header">
     <h2 class="card-title main-title text-center" style="color: black">
-      ASCII CHALLENGE−LLMは画家になれるか−
+      カスタマーサポート問い合わせに対するLLM自動タグ付与の実現可能性の検討
     </h2>
     <h3 class="card-subtitle mb-2 text-muted text-center">
       
-      <a href="papers.html?filter=authors&search=吉田遥音&program=all" class="text-primary"
-        >吉田遥音</a
+      <a href="papers.html?filter=authors&search=岩田伸治&program=all" class="text-primary"
+        >岩田伸治</a
       >,
       
-      <a href="papers.html?filter=authors&search=羽根田賢和&program=all" class="text-primary"
-        >羽根田賢和</a
+      <a href="papers.html?filter=authors&search=佐藤志貴&program=all" class="text-primary"
+        >佐藤志貴</a
       >,
       
-      <a href="papers.html?filter=authors&search=斉藤いつみ&program=all" class="text-primary"
-        >斉藤いつみ</a
+      <a href="papers.html?filter=authors&search=小比田涼介&program=all" class="text-primary"
+        >小比田涼介</a
       >,
       
-      <a href="papers.html?filter=authors&search=坂口慶祐&program=all" class="text-primary"
-        >坂口慶祐</a
+      <a href="papers.html?filter=authors&search=石井陽子&program=all" class="text-primary"
+        >石井陽子</a
+      >,
+      
+      <a href="papers.html?filter=authors&search=岡本あずさ&program=all" class="text-primary"
+        >岡本あずさ</a
       >
       
     </h3>
 
     <p class="card-text text-center h5">
       
-      <a href="papers.html?filter=keywords&search=P5:ポスター" class ="badge badge-pill badge-primary">P5:ポスター</a>
+      <a href="papers.html?filter=keywords&search=P5:対話 / 質問応答" class ="badge badge-pill badge-primary">P5:対話 / 質問応答</a>
       
 
       
@@ -247,7 +253,7 @@
    
     <div class="text-center p-3">
       
-      <a class="card-link link-info" target="_blank" href="https://www.anlp.jp/proceedings/annual_meeting/2025/pdf_dir/P5-6.pdf">
+      <a class="card-link link-info" target="_blank" href="https://www.anlp.jp/proceedings/annual_meeting/2026/pdf_dir/P5-6.pdf">
         📝 Paper 
       </a>
       
@@ -301,7 +307,7 @@
         <div class="card-text">
           <div id="abstractExample">
             <span class="font-weight-bold">Abstract:</span>
-            アスキーアートはイラストや画像を文字で表現するテキストアートである．文字だけを用いて様々な表現を可能にするアスキーアートは現代社会で広く用いられている一方で，その作成は容易ではない．また既存の生成ツールは画像を機械的に変換するなど柔軟性が低い方法に限定されている．本研究では，自然言語からアスキーアートを生成する手段としての LLM・LVLM の利用可能性の検証を行った．結果として現行のモデルでは生成が困難だが，アスキーアートに特化したデータセットを用いて学習することで生成可能になる兆しが見えた．
+            カスタマーサポートでは，問い合わせに対して内容に応じたタグを付与し分類することで，タグごとに確立されたフローを用いた効率的な対応を実現するという運用がしばしば採用されるが，タグの付与は解釈と判断を伴う手作業であり負荷が高い．本稿では，こうした運用の効率化に向け，大規模言語モデルによる自動タグ付与の実現可能性を検討する．実験を通じて，タグ観点の多様性（たとえばトラブル内容を表すタグとその原因を表すタグの混在）がタグ付けを単純な多クラス分類タスクへ当てはめることを困難にすることがわかった．最後に，この性質をむしろ強みとして捉え，タグを観点別に整理し各観点からタグ付与を行うことで，問い合わせの意図を多角的に捉える枠組みを議論する．
           </div>
         </div>
       </div>
@@ -309,7 +315,7 @@
   </div>
   
   <div class="tab-pane fade" id="paper" role="tabpanel" aria-labelledby="paper-tab">
-    <embed src="https://www.anlp.jp/proceedings/annual_meeting/2025/pdf_dir/P5-6.pdf" type="application/pdf" width="100%" height="850px">
+    <embed src="https://www.anlp.jp/proceedings/annual_meeting/2026/pdf_dir/P5-6.pdf" type="application/pdf" width="100%" height="850px">
   </div>
   
   
@@ -352,7 +358,7 @@
         <p class="float-left">
           <img src="None" height="45px"
             width="auto" align="center">
-          <span class="lead">NLP2025</span>
+          <span class="lead">NLP2026</span>
         </p>
         <p class="float-right"><a href="#" class="text-dark">Back to Top</a></p>
         <p class="text-center">The title and abstract of the paper are licensed by the author(s) under CC BY 4.0<br>

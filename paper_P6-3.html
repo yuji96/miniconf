@@ -64,24 +64,28 @@
   <script src="https://cdn.jsdelivr.net/npm/pdfjs-dist@2.3.200/build/pdf.min.js"></script>
   <script src="static/js/pdf_render.js"></script>
 
-  <title>NLP2025: 記号的知識蒸留における敵対的学習の利用とその評価</title>
+  <title>NLP2026: 国産農業用 LLM のための要点抽出における模伝的アルゴリズムの検討</title>
   
-<meta name="citation_title" content="記号的知識蒸留における敵対的学習の利用とその評価" />
+<meta name="citation_title" content="国産農業用 LLM のための要点抽出における模伝的アルゴリズムの検討" />
 
-<meta name="citation_author" content="日浦隆博" />
+<meta name="citation_author" content="渋木英潔" />
 
-<meta name="citation_author" content="河野誠也" />
+<meta name="citation_author" content="阪本浩太郎" />
 
-<meta name="citation_author" content="AngelGarciaContreras" />
+<meta name="citation_author" content="桂樹哲雄" />
 
-<meta name="citation_author" content="吉野幸一郎" />
+<meta name="citation_author" content="小林暁雄" />
+
+<meta name="citation_author" content="石原潤一" />
+
+<meta name="citation_author" content="大友将宏" />
 
 <meta name="citation_publication_date" content="None" />
 <meta name="citation_conference_title" content="None" />
 <meta name="citation_inbook_title" content="None" />
-<meta name="citation_abstract" content="大規模言語モデル（LLM）は多くの自然言語処理タスクで顕著な性能を実現しているが，知識推論のようなタスクでは依然として性能に課題があり，知識トリプルを用いた適応により知識間の関係性を明示的に学習させるアプローチが注目されている．大規模・高精度な学習用トリプルの獲得に有効なのが記号的知識蒸留である．これは LLM の持つ膨大な知識をトリプルとして出力し，知識推論モデルの学習に使用する手法である．この手法ではトリプルの一部に人手評価を行い，フィルタモデルの学習を行っている．本研究では，敵対的な学習を導入することにより，人手評価を必要としない，自動的な記号的知識蒸留を実現する手法を提案し評価する．" />
+<meta name="citation_abstract" content="一般の学生にとって LLM の利用は API を経由し た推論が前提でウェイト更新を伴う学習が難しいこ とが多い。そこで本稿は、LLM の振る舞いを「モデ ル内部のウェイト＝遺伝子」と「モデル外部の離散 プロンプト＝ミーム（模伝子）」に分け、遺伝子を 固定したままミームを進化的に改良する模伝的アル ゴリズムを提案する。予備検証として、農業ドメイ ン QA の要点抽出における 25 件のクローズド環境 で実験を行った結果、gpt-5-mini は一般化ケンドー ル距離で第 1 世代の 0.8313 から第 5 世代 0.6692 へ、gpt-oss-120b は第 1 世代 0.8904 から第 10 世代 0.1996へと縮まり、gpt-5.2（第 1 世代 0.7760）を上回った。" />
 
-<meta name="citation_keywords" content="P6:ポスター" />
+<meta name="citation_keywords" content="P6:実世界接地と言語処理 / 教育応用" />
 
 <meta name="citation_pdf_url" content="" />
 
@@ -215,31 +219,39 @@
 <div class="card m-3" style="">
   <div class="card-header">
     <h2 class="card-title main-title text-center" style="color: black">
-      記号的知識蒸留における敵対的学習の利用とその評価
+      国産農業用 LLM のための要点抽出における模伝的アルゴリズムの検討
     </h2>
     <h3 class="card-subtitle mb-2 text-muted text-center">
       
-      <a href="papers.html?filter=authors&search=日浦隆博&program=all" class="text-primary"
-        >日浦隆博</a
+      <a href="papers.html?filter=authors&search=渋木英潔&program=all" class="text-primary"
+        >渋木英潔</a
       >,
       
-      <a href="papers.html?filter=authors&search=河野誠也&program=all" class="text-primary"
-        >河野誠也</a
+      <a href="papers.html?filter=authors&search=阪本浩太郎&program=all" class="text-primary"
+        >阪本浩太郎</a
       >,
       
-      <a href="papers.html?filter=authors&search=AngelGarciaContreras&program=all" class="text-primary"
-        >AngelGarciaContreras</a
+      <a href="papers.html?filter=authors&search=桂樹哲雄&program=all" class="text-primary"
+        >桂樹哲雄</a
       >,
       
-      <a href="papers.html?filter=authors&search=吉野幸一郎&program=all" class="text-primary"
-        >吉野幸一郎</a
+      <a href="papers.html?filter=authors&search=小林暁雄&program=all" class="text-primary"
+        >小林暁雄</a
+      >,
+      
+      <a href="papers.html?filter=authors&search=石原潤一&program=all" class="text-primary"
+        >石原潤一</a
+      >,
+      
+      <a href="papers.html?filter=authors&search=大友将宏&program=all" class="text-primary"
+        >大友将宏</a
       >
       
     </h3>
 
     <p class="card-text text-center h5">
       
-      <a href="papers.html?filter=keywords&search=P6:ポスター" class ="badge badge-pill badge-primary">P6:ポスター</a>
+      <a href="papers.html?filter=keywords&search=P6:実世界接地と言語処理 / 教育応用" class ="badge badge-pill badge-primary">P6:実世界接地と言語処理 / 教育応用</a>
       
 
       
@@ -247,7 +259,7 @@
    
     <div class="text-center p-3">
       
-      <a class="card-link link-info" target="_blank" href="https://www.anlp.jp/proceedings/annual_meeting/2025/pdf_dir/P6-3.pdf">
+      <a class="card-link link-info" target="_blank" href="https://www.anlp.jp/proceedings/annual_meeting/2026/pdf_dir/P6-3.pdf">
         📝 Paper 
       </a>
       
@@ -301,7 +313,7 @@
         <div class="card-text">
           <div id="abstractExample">
             <span class="font-weight-bold">Abstract:</span>
-            大規模言語モデル（LLM）は多くの自然言語処理タスクで顕著な性能を実現しているが，知識推論のようなタスクでは依然として性能に課題があり，知識トリプルを用いた適応により知識間の関係性を明示的に学習させるアプローチが注目されている．大規模・高精度な学習用トリプルの獲得に有効なのが記号的知識蒸留である．これは LLM の持つ膨大な知識をトリプルとして出力し，知識推論モデルの学習に使用する手法である．この手法ではトリプルの一部に人手評価を行い，フィルタモデルの学習を行っている．本研究では，敵対的な学習を導入することにより，人手評価を必要としない，自動的な記号的知識蒸留を実現する手法を提案し評価する．
+            一般の学生にとって LLM の利用は API を経由し た推論が前提でウェイト更新を伴う学習が難しいこ とが多い。そこで本稿は、LLM の振る舞いを「モデ ル内部のウェイト＝遺伝子」と「モデル外部の離散 プロンプト＝ミーム（模伝子）」に分け、遺伝子を 固定したままミームを進化的に改良する模伝的アル ゴリズムを提案する。予備検証として、農業ドメイ ン QA の要点抽出における 25 件のクローズド環境 で実験を行った結果、gpt-5-mini は一般化ケンドー ル距離で第 1 世代の 0.8313 から第 5 世代 0.6692 へ、gpt-oss-120b は第 1 世代 0.8904 から第 10 世代 0.1996へと縮まり、gpt-5.2（第 1 世代 0.7760）を上回った。
           </div>
         </div>
       </div>
@@ -309,7 +321,7 @@
   </div>
   
   <div class="tab-pane fade" id="paper" role="tabpanel" aria-labelledby="paper-tab">
-    <embed src="https://www.anlp.jp/proceedings/annual_meeting/2025/pdf_dir/P6-3.pdf" type="application/pdf" width="100%" height="850px">
+    <embed src="https://www.anlp.jp/proceedings/annual_meeting/2026/pdf_dir/P6-3.pdf" type="application/pdf" width="100%" height="850px">
   </div>
   
   
@@ -352,7 +364,7 @@
         <p class="float-left">
           <img src="None" height="45px"
             width="auto" align="center">
-          <span class="lead">NLP2025</span>
+          <span class="lead">NLP2026</span>
         </p>
         <p class="float-right"><a href="#" class="text-dark">Back to Top</a></p>
         <p class="text-center">The title and abstract of the paper are licensed by the author(s) under CC BY 4.0<br>

@@ -64,22 +64,20 @@
   <script src="https://cdn.jsdelivr.net/npm/pdfjs-dist@2.3.200/build/pdf.min.js"></script>
   <script src="static/js/pdf_render.js"></script>
 
-  <title>NLP2025: 関数単位の修正箇所特定によるリポジトリレベルのバグ修正</title>
+  <title>NLP2026: LLMエージェントにおける指示曖昧性の内部表現解析</title>
   
-<meta name="citation_title" content="関数単位の修正箇所特定によるリポジトリレベルのバグ修正" />
+<meta name="citation_title" content="LLMエージェントにおける指示曖昧性の内部表現解析" />
 
-<meta name="citation_author" content="近藤瑞希" />
+<meta name="citation_author" content="貝出直大" />
 
-<meta name="citation_author" content="河原大輔" />
-
-<meta name="citation_author" content="倉林利行" />
+<meta name="citation_author" content="井之上直也" />
 
 <meta name="citation_publication_date" content="None" />
 <meta name="citation_conference_title" content="None" />
 <meta name="citation_inbook_title" content="None" />
-<meta name="citation_abstract" content="近年、大規模言語モデル(LLM)のコード生成能力は飛躍的に上昇し、ソフトウェアエンジニアリングタスクを LLM に適用する研究が多く行われている。本研究では、LLM の並列処理能力に着目し、LLMエージェントを用いないリポジトリレベルでのバグ修正手法を提案する。リポジトリ内から修正が必要なファイルと関数を特定し、各関数を LLM で独立に修正し、統合する。これらを複数のモデルを用いてアンサンブルする。SWE-bench Lite を用いた評価の結果、ファイルの検索と関数の特定は高精度だったが、バグ修正の精度は他のシステムと比べて大きな改善は見られなかった。" />
+<meta name="citation_abstract" content="LLM エージェントの実環境適用において，指示の曖昧性検知は重要課題である．既存研究は出力監視に留まり，内部機序の解明は不十分であった．本研究では，3 次元ブロック配置タスクにおける LLMの内部状態を Linear Probing により解析した．実験の結果，(1)曖昧性は中間層以降で線形分離可能であること，(2)内部表現による判定精度はテキスト出力を上回り，内部表現がテキスト出力に十分反映されていない可能性があること，(3)CoT はタスク遂行を改善するが内部の曖昧性表現の質には寄与しないこと，が明らかになった．本研究はエージェントの指示曖昧性を内部表現レベルで解析した初めての試みである．" />
 
-<meta name="citation_keywords" content="B5:言語処理応用" />
+<meta name="citation_keywords" content="B5:NLPモデルの解釈可能性・分析" />
 
 <meta name="citation_pdf_url" content="" />
 
@@ -213,27 +211,23 @@
 <div class="card m-3" style="">
   <div class="card-header">
     <h2 class="card-title main-title text-center" style="color: black">
-      関数単位の修正箇所特定によるリポジトリレベルのバグ修正
+      LLMエージェントにおける指示曖昧性の内部表現解析
     </h2>
     <h3 class="card-subtitle mb-2 text-muted text-center">
       
-      <a href="papers.html?filter=authors&search=近藤瑞希&program=all" class="text-primary"
-        >近藤瑞希</a
+      <a href="papers.html?filter=authors&search=貝出直大&program=all" class="text-primary"
+        >貝出直大</a
       >,
       
-      <a href="papers.html?filter=authors&search=河原大輔&program=all" class="text-primary"
-        >河原大輔</a
-      >,
-      
-      <a href="papers.html?filter=authors&search=倉林利行&program=all" class="text-primary"
-        >倉林利行</a
+      <a href="papers.html?filter=authors&search=井之上直也&program=all" class="text-primary"
+        >井之上直也</a
       >
       
     </h3>
 
     <p class="card-text text-center h5">
       
-      <a href="papers.html?filter=keywords&search=B5:言語処理応用" class ="badge badge-pill badge-primary">B5:言語処理応用</a>
+      <a href="papers.html?filter=keywords&search=B5:NLPモデルの解釈可能性・分析" class ="badge badge-pill badge-primary">B5:NLPモデルの解釈可能性・分析</a>
       
 
       
@@ -241,7 +235,7 @@
    
     <div class="text-center p-3">
       
-      <a class="card-link link-info" target="_blank" href="https://www.anlp.jp/proceedings/annual_meeting/2025/pdf_dir/B5-2.pdf">
+      <a class="card-link link-info" target="_blank" href="https://www.anlp.jp/proceedings/annual_meeting/2026/pdf_dir/B5-2.pdf">
         📝 Paper 
       </a>
       
@@ -295,7 +289,7 @@
         <div class="card-text">
           <div id="abstractExample">
             <span class="font-weight-bold">Abstract:</span>
-            近年、大規模言語モデル(LLM)のコード生成能力は飛躍的に上昇し、ソフトウェアエンジニアリングタスクを LLM に適用する研究が多く行われている。本研究では、LLM の並列処理能力に着目し、LLMエージェントを用いないリポジトリレベルでのバグ修正手法を提案する。リポジトリ内から修正が必要なファイルと関数を特定し、各関数を LLM で独立に修正し、統合する。これらを複数のモデルを用いてアンサンブルする。SWE-bench Lite を用いた評価の結果、ファイルの検索と関数の特定は高精度だったが、バグ修正の精度は他のシステムと比べて大きな改善は見られなかった。
+            LLM エージェントの実環境適用において，指示の曖昧性検知は重要課題である．既存研究は出力監視に留まり，内部機序の解明は不十分であった．本研究では，3 次元ブロック配置タスクにおける LLMの内部状態を Linear Probing により解析した．実験の結果，(1)曖昧性は中間層以降で線形分離可能であること，(2)内部表現による判定精度はテキスト出力を上回り，内部表現がテキスト出力に十分反映されていない可能性があること，(3)CoT はタスク遂行を改善するが内部の曖昧性表現の質には寄与しないこと，が明らかになった．本研究はエージェントの指示曖昧性を内部表現レベルで解析した初めての試みである．
           </div>
         </div>
       </div>
@@ -303,7 +297,7 @@
   </div>
   
   <div class="tab-pane fade" id="paper" role="tabpanel" aria-labelledby="paper-tab">
-    <embed src="https://www.anlp.jp/proceedings/annual_meeting/2025/pdf_dir/B5-2.pdf" type="application/pdf" width="100%" height="850px">
+    <embed src="https://www.anlp.jp/proceedings/annual_meeting/2026/pdf_dir/B5-2.pdf" type="application/pdf" width="100%" height="850px">
   </div>
   
   
@@ -346,7 +340,7 @@
         <p class="float-left">
           <img src="None" height="45px"
             width="auto" align="center">
-          <span class="lead">NLP2025</span>
+          <span class="lead">NLP2026</span>
         </p>
         <p class="float-right"><a href="#" class="text-dark">Back to Top</a></p>
         <p class="text-center">The title and abstract of the paper are licensed by the author(s) under CC BY 4.0<br>

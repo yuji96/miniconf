@@ -64,28 +64,28 @@
   <script src="https://cdn.jsdelivr.net/npm/pdfjs-dist@2.3.200/build/pdf.min.js"></script>
   <script src="static/js/pdf_render.js"></script>
 
-  <title>NLP2025: 言語モデルのパラメータから探るDetokenizationメカニズム</title>
+  <title>NLP2026: Profanity as a cue: when LLMs mistake toxicity for hate</title>
   
-<meta name="citation_title" content="言語モデルのパラメータから探るDetokenizationメカニズム" />
+<meta name="citation_title" content="Profanity as a cue: when LLMs mistake toxicity for hate" />
 
-<meta name="citation_author" content="鴨田豪" />
+<meta name="citation_author" content="HaotianYe" />
 
-<meta name="citation_author" content="BenjaminHeinzerling" />
+<meta name="citation_author" content="◊宋海越" />
 
-<meta name="citation_author" content="稲葉達郎" />
+<meta name="citation_author" content="HourKaing" />
 
-<meta name="citation_author" content="工藤慧音" />
+<meta name="citation_author" content="丁塵辰" />
 
-<meta name="citation_author" content="坂口慶祐" />
+<meta name="citation_author" content="田中英輝" />
 
-<meta name="citation_author" content="乾健太郎" />
+<meta name="citation_author" content="内山将夫" />
 
 <meta name="citation_publication_date" content="None" />
 <meta name="citation_conference_title" content="None" />
 <meta name="citation_inbook_title" content="None" />
-<meta name="citation_abstract" content="トークナイザは単語を複数のサブワードに分割することがあるが，その分割が言語的に意味のあるものになるとは限らない．推論の段階仮説（Stages ofinference hypothesis）では，言語モデルの序盤層はこうしたサブワードトークン列をより意味のある表現に変換(Detokenize)するとされている．本研究では，従来のプロービングや因果介入などの経験的手法に依存せず，Detokenization をモデルの重みに基づく解析によって観測できることを示す．具体的には，GPT-2 の第 1 層の注意機構を解析的に分解し，トークンタイプに由来する寄与とトークンの位置に由来する項の寄与とを切り分けた分析を行い，近いトークンや頻出 Bigram への注意の偏りを明らかにする1）．" />
+<meta name="citation_abstract" content="In this work, we study the role of profanity as a proxycue in hate speech detection by evaluating multiple LLMsunder controlled setups that decouple hatefulness and pro-fanity. Our ﬁndings suggest that models consistently un-derperform on nuanced hate without profanity and benignprofanity, indicating over-reliance on profanity cues. Con-trolled masking and insertion of profanity further inducelabel ﬂips and shift attention away from semantic hateful-ness, motivating ﬁne-grained benchmarks and evaluationmethods that separate profanity from hate." />
 
-<meta name="citation_keywords" content="P2:ポスター" />
+<meta name="citation_keywords" content="P2:情報検索・テキストマイニング / 評判・感情分析・スタイル分析" />
 
 <meta name="citation_pdf_url" content="" />
 
@@ -219,39 +219,39 @@
 <div class="card m-3" style="">
   <div class="card-header">
     <h2 class="card-title main-title text-center" style="color: black">
-      言語モデルのパラメータから探るDetokenizationメカニズム
+      Profanity as a cue: when LLMs mistake toxicity for hate
     </h2>
     <h3 class="card-subtitle mb-2 text-muted text-center">
       
-      <a href="papers.html?filter=authors&search=鴨田豪&program=all" class="text-primary"
-        >鴨田豪</a
+      <a href="papers.html?filter=authors&search=HaotianYe&program=all" class="text-primary"
+        >HaotianYe</a
       >,
       
-      <a href="papers.html?filter=authors&search=BenjaminHeinzerling&program=all" class="text-primary"
-        >BenjaminHeinzerling</a
+      <a href="papers.html?filter=authors&search=◊宋海越&program=all" class="text-primary"
+        >◊宋海越</a
       >,
       
-      <a href="papers.html?filter=authors&search=稲葉達郎&program=all" class="text-primary"
-        >稲葉達郎</a
+      <a href="papers.html?filter=authors&search=HourKaing&program=all" class="text-primary"
+        >HourKaing</a
       >,
       
-      <a href="papers.html?filter=authors&search=工藤慧音&program=all" class="text-primary"
-        >工藤慧音</a
+      <a href="papers.html?filter=authors&search=丁塵辰&program=all" class="text-primary"
+        >丁塵辰</a
       >,
       
-      <a href="papers.html?filter=authors&search=坂口慶祐&program=all" class="text-primary"
-        >坂口慶祐</a
+      <a href="papers.html?filter=authors&search=田中英輝&program=all" class="text-primary"
+        >田中英輝</a
       >,
       
-      <a href="papers.html?filter=authors&search=乾健太郎&program=all" class="text-primary"
-        >乾健太郎</a
+      <a href="papers.html?filter=authors&search=内山将夫&program=all" class="text-primary"
+        >内山将夫</a
       >
       
     </h3>
 
     <p class="card-text text-center h5">
       
-      <a href="papers.html?filter=keywords&search=P2:ポスター" class ="badge badge-pill badge-primary">P2:ポスター</a>
+      <a href="papers.html?filter=keywords&search=P2:情報検索・テキストマイニング / 評判・感情分析・スタイル分析" class ="badge badge-pill badge-primary">P2:情報検索・テキストマイニング / 評判・感情分析・スタイル分析</a>
       
 
       
@@ -259,7 +259,7 @@
    
     <div class="text-center p-3">
       
-      <a class="card-link link-info" target="_blank" href="https://www.anlp.jp/proceedings/annual_meeting/2025/pdf_dir/P2-9.pdf">
+      <a class="card-link link-info" target="_blank" href="https://www.anlp.jp/proceedings/annual_meeting/2026/pdf_dir/P2-9.pdf">
         📝 Paper 
       </a>
       
@@ -313,7 +313,7 @@
         <div class="card-text">
           <div id="abstractExample">
             <span class="font-weight-bold">Abstract:</span>
-            トークナイザは単語を複数のサブワードに分割することがあるが，その分割が言語的に意味のあるものになるとは限らない．推論の段階仮説（Stages ofinference hypothesis）では，言語モデルの序盤層はこうしたサブワードトークン列をより意味のある表現に変換(Detokenize)するとされている．本研究では，従来のプロービングや因果介入などの経験的手法に依存せず，Detokenization をモデルの重みに基づく解析によって観測できることを示す．具体的には，GPT-2 の第 1 層の注意機構を解析的に分解し，トークンタイプに由来する寄与とトークンの位置に由来する項の寄与とを切り分けた分析を行い，近いトークンや頻出 Bigram への注意の偏りを明らかにする1）．
+            In this work, we study the role of profanity as a proxycue in hate speech detection by evaluating multiple LLMsunder controlled setups that decouple hatefulness and pro-fanity. Our ﬁndings suggest that models consistently un-derperform on nuanced hate without profanity and benignprofanity, indicating over-reliance on profanity cues. Con-trolled masking and insertion of profanity further inducelabel ﬂips and shift attention away from semantic hateful-ness, motivating ﬁne-grained benchmarks and evaluationmethods that separate profanity from hate.
           </div>
         </div>
       </div>
@@ -321,7 +321,7 @@
   </div>
   
   <div class="tab-pane fade" id="paper" role="tabpanel" aria-labelledby="paper-tab">
-    <embed src="https://www.anlp.jp/proceedings/annual_meeting/2025/pdf_dir/P2-9.pdf" type="application/pdf" width="100%" height="850px">
+    <embed src="https://www.anlp.jp/proceedings/annual_meeting/2026/pdf_dir/P2-9.pdf" type="application/pdf" width="100%" height="850px">
   </div>
   
   
@@ -364,7 +364,7 @@
         <p class="float-left">
           <img src="None" height="45px"
             width="auto" align="center">
-          <span class="lead">NLP2025</span>
+          <span class="lead">NLP2026</span>
         </p>
         <p class="float-right"><a href="#" class="text-dark">Back to Top</a></p>
         <p class="text-center">The title and abstract of the paper are licensed by the author(s) under CC BY 4.0<br>

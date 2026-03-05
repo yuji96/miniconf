@@ -64,24 +64,24 @@
   <script src="https://cdn.jsdelivr.net/npm/pdfjs-dist@2.3.200/build/pdf.min.js"></script>
   <script src="static/js/pdf_render.js"></script>
 
-  <title>NLP2025: 算術タスクを用いた文脈内学習による外挿能力の分析</title>
+  <title>NLP2026: Deep Research Agentはタスクの進捗を推定できるのか？</title>
   
-<meta name="citation_title" content="算術タスクを用いた文脈内学習による外挿能力の分析" />
+<meta name="citation_title" content="Deep Research Agentはタスクの進捗を推定できるのか？" />
 
-<meta name="citation_author" content="進藤稜真" />
+<meta name="citation_author" content="阿部健也" />
 
-<meta name="citation_author" content="竹下昌志" />
+<meta name="citation_author" content="竹岡邦紘" />
 
-<meta name="citation_author" content="ジェプカラファウ" />
+<meta name="citation_author" content="秋元康佑" />
 
-<meta name="citation_author" content="伊藤敏彦" />
+<meta name="citation_author" content="小山田昌史" />
 
 <meta name="citation_publication_date" content="None" />
 <meta name="citation_conference_title" content="None" />
 <meta name="citation_inbook_title" content="None" />
-<meta name="citation_abstract" content="大規模言語モデルは文脈内学習(ICL)が可能であることが知られているが,その内部メカニズムについては未だ統一的な見解が存在しない.争点の一つに, ICL によってパラメータを更新することなく未知のタスクに適応可能か,すなわち外挿可能かどうかという点がある.そこで本研究では,二変数一次関数𝑧 =𝑎𝑥+ 𝑏𝑦に基づく算術データセットを構築し,ICL による内挿・外挿能力を定量的に評価した.その結果, ICL によって部分的に未学習のタスクでも解決可能であること,文脈内の例を増加させることで,内挿時と外挿時の内部表現が類似する傾向にあること,学習データ内のタスクの多様性が ICL 能力の創発に重要であることが示唆された." />
+<meta name="citation_abstract" content="Deep Research（DR）型の Agent は検索や文書閲覧を反復してタスクを解くが，探索をいつやめるかの判断が課題である．停止を Agent に委ねると，情報が不十分なまま終了する過小探索や，必要な情報が揃っていても探索を継続する過度探索が生じうる．本研究では，停止を含む探索制御の基盤となる中間状態の指標として，DR の進捗を導入する．具体的には，進捗を「探索履歴が正答に必要な情報をどの程度含むか」として定義し，この値を推定する進捗予測タスクを提案する．実験では，複数の LLM やプロンプトによる推測を比較し，分析することで，推定の誤差が大きくなりやすい状況やタスクによる推測難易度の違いを明らかにした．" />
 
-<meta name="citation_keywords" content="P2:ポスター" />
+<meta name="citation_keywords" content="P2:情報検索・テキストマイニング / 評判・感情分析・スタイル分析" />
 
 <meta name="citation_pdf_url" content="" />
 
@@ -215,31 +215,31 @@
 <div class="card m-3" style="">
   <div class="card-header">
     <h2 class="card-title main-title text-center" style="color: black">
-      算術タスクを用いた文脈内学習による外挿能力の分析
+      Deep Research Agentはタスクの進捗を推定できるのか？
     </h2>
     <h3 class="card-subtitle mb-2 text-muted text-center">
       
-      <a href="papers.html?filter=authors&search=進藤稜真&program=all" class="text-primary"
-        >進藤稜真</a
+      <a href="papers.html?filter=authors&search=阿部健也&program=all" class="text-primary"
+        >阿部健也</a
       >,
       
-      <a href="papers.html?filter=authors&search=竹下昌志&program=all" class="text-primary"
-        >竹下昌志</a
+      <a href="papers.html?filter=authors&search=竹岡邦紘&program=all" class="text-primary"
+        >竹岡邦紘</a
       >,
       
-      <a href="papers.html?filter=authors&search=ジェプカラファウ&program=all" class="text-primary"
-        >ジェプカラファウ</a
+      <a href="papers.html?filter=authors&search=秋元康佑&program=all" class="text-primary"
+        >秋元康佑</a
       >,
       
-      <a href="papers.html?filter=authors&search=伊藤敏彦&program=all" class="text-primary"
-        >伊藤敏彦</a
+      <a href="papers.html?filter=authors&search=小山田昌史&program=all" class="text-primary"
+        >小山田昌史</a
       >
       
     </h3>
 
     <p class="card-text text-center h5">
       
-      <a href="papers.html?filter=keywords&search=P2:ポスター" class ="badge badge-pill badge-primary">P2:ポスター</a>
+      <a href="papers.html?filter=keywords&search=P2:情報検索・テキストマイニング / 評判・感情分析・スタイル分析" class ="badge badge-pill badge-primary">P2:情報検索・テキストマイニング / 評判・感情分析・スタイル分析</a>
       
 
       
@@ -247,7 +247,7 @@
    
     <div class="text-center p-3">
       
-      <a class="card-link link-info" target="_blank" href="https://www.anlp.jp/proceedings/annual_meeting/2025/pdf_dir/P2-21.pdf">
+      <a class="card-link link-info" target="_blank" href="https://www.anlp.jp/proceedings/annual_meeting/2026/pdf_dir/P2-21.pdf">
         📝 Paper 
       </a>
       
@@ -301,7 +301,7 @@
         <div class="card-text">
           <div id="abstractExample">
             <span class="font-weight-bold">Abstract:</span>
-            大規模言語モデルは文脈内学習(ICL)が可能であることが知られているが,その内部メカニズムについては未だ統一的な見解が存在しない.争点の一つに, ICL によってパラメータを更新することなく未知のタスクに適応可能か,すなわち外挿可能かどうかという点がある.そこで本研究では,二変数一次関数𝑧 =𝑎𝑥+ 𝑏𝑦に基づく算術データセットを構築し,ICL による内挿・外挿能力を定量的に評価した.その結果, ICL によって部分的に未学習のタスクでも解決可能であること,文脈内の例を増加させることで,内挿時と外挿時の内部表現が類似する傾向にあること,学習データ内のタスクの多様性が ICL 能力の創発に重要であることが示唆された.
+            Deep Research（DR）型の Agent は検索や文書閲覧を反復してタスクを解くが，探索をいつやめるかの判断が課題である．停止を Agent に委ねると，情報が不十分なまま終了する過小探索や，必要な情報が揃っていても探索を継続する過度探索が生じうる．本研究では，停止を含む探索制御の基盤となる中間状態の指標として，DR の進捗を導入する．具体的には，進捗を「探索履歴が正答に必要な情報をどの程度含むか」として定義し，この値を推定する進捗予測タスクを提案する．実験では，複数の LLM やプロンプトによる推測を比較し，分析することで，推定の誤差が大きくなりやすい状況やタスクによる推測難易度の違いを明らかにした．
           </div>
         </div>
       </div>
@@ -309,7 +309,7 @@
   </div>
   
   <div class="tab-pane fade" id="paper" role="tabpanel" aria-labelledby="paper-tab">
-    <embed src="https://www.anlp.jp/proceedings/annual_meeting/2025/pdf_dir/P2-21.pdf" type="application/pdf" width="100%" height="850px">
+    <embed src="https://www.anlp.jp/proceedings/annual_meeting/2026/pdf_dir/P2-21.pdf" type="application/pdf" width="100%" height="850px">
   </div>
   
   
@@ -352,7 +352,7 @@
         <p class="float-left">
           <img src="None" height="45px"
             width="auto" align="center">
-          <span class="lead">NLP2025</span>
+          <span class="lead">NLP2026</span>
         </p>
         <p class="float-right"><a href="#" class="text-dark">Back to Top</a></p>
         <p class="text-center">The title and abstract of the paper are licensed by the author(s) under CC BY 4.0<br>

@@ -64,24 +64,20 @@
   <script src="https://cdn.jsdelivr.net/npm/pdfjs-dist@2.3.200/build/pdf.min.js"></script>
   <script src="static/js/pdf_render.js"></script>
 
-  <title>NLP2025: 文対モデリングのための言い換えに基づく対照学習</title>
+  <title>NLP2026: 大規模言語モデルを用いたシフト還元型CCG構文解析</title>
   
-<meta name="citation_title" content="文対モデリングのための言い換えに基づく対照学習" />
+<meta name="citation_title" content="大規模言語モデルを用いたシフト還元型CCG構文解析" />
 
-<meta name="citation_author" content="杉山誠治" />
+<meta name="citation_author" content="東洸介" />
 
-<meta name="citation_author" content="近藤里咲" />
-
-<meta name="citation_author" content="梶原智之" />
-
-<meta name="citation_author" content="二宮崇" />
+<meta name="citation_author" content="平尾努" />
 
 <meta name="citation_publication_date" content="None" />
 <meta name="citation_conference_title" content="None" />
 <meta name="citation_inbook_title" content="None" />
-<meta name="citation_abstract" content="本研究では，文対モデリングタスクの性能改善のために，事前学習済みマスク言語モデルに対する追加事前学習の手法を提案する．マスク言語モデリングによる事前学習は，意味的に近い文の埋め込み同士を埋め込み空間上で必ずしも近づけるようには設計されていない．そこで提案手法では，事前学習済みマスク言語モデルに対して，言い換え文対の文埋め込みを近づける対照学習を適用し，文対モデリングの性能改善を目指す．対照学習の先行研究で標準的に使用される自然言語推論コーパスは，英語以外の言語では大規模に利用できない課題があるが，本手法では生コーパスと言い換え辞書から低コストに対照学習のための学習データを構築できる．4 種類の文対モデリングタスクにおける実験の結果，英日の両言語において提案手法の有効性を確認できた．" />
+<meta name="citation_abstract" content="CCG 構文解析において，文中の単語に CCG カテゴリを割り当てる Supertagging は，特に重要な基盤処理であり，さまざまな手法が提案されている．本研究では大規模言語モデル(LLM)を用いてシフト還元動作を予測して解析木を構築しつつ，シフト動作時に Supertagging を行う手法を提案する．提案手法の特徴は明示的にスタックとキューを与えず，文字列で解析状態を表し，1 つ前の状態を参照しつつ解析動作を予測することにある．CCGbank を用いて評価実験を行った結果，1 つ前の状態を参照することで解析性能が向上し，無効な動作の予測が減った．一方，提案手法は短い Supertag に対する正解率は高かったものの，長い Supertag に対する正解率は著しく低かった．" />
 
-<meta name="citation_keywords" content="P8:ポスター" />
+<meta name="citation_keywords" content="P8:形態素・構文解析 / 意味論・意味解析 / 文脈解析" />
 
 <meta name="citation_pdf_url" content="" />
 
@@ -215,31 +211,23 @@
 <div class="card m-3" style="">
   <div class="card-header">
     <h2 class="card-title main-title text-center" style="color: black">
-      文対モデリングのための言い換えに基づく対照学習
+      大規模言語モデルを用いたシフト還元型CCG構文解析
     </h2>
     <h3 class="card-subtitle mb-2 text-muted text-center">
       
-      <a href="papers.html?filter=authors&search=杉山誠治&program=all" class="text-primary"
-        >杉山誠治</a
+      <a href="papers.html?filter=authors&search=東洸介&program=all" class="text-primary"
+        >東洸介</a
       >,
       
-      <a href="papers.html?filter=authors&search=近藤里咲&program=all" class="text-primary"
-        >近藤里咲</a
-      >,
-      
-      <a href="papers.html?filter=authors&search=梶原智之&program=all" class="text-primary"
-        >梶原智之</a
-      >,
-      
-      <a href="papers.html?filter=authors&search=二宮崇&program=all" class="text-primary"
-        >二宮崇</a
+      <a href="papers.html?filter=authors&search=平尾努&program=all" class="text-primary"
+        >平尾努</a
       >
       
     </h3>
 
     <p class="card-text text-center h5">
       
-      <a href="papers.html?filter=keywords&search=P8:ポスター" class ="badge badge-pill badge-primary">P8:ポスター</a>
+      <a href="papers.html?filter=keywords&search=P8:形態素・構文解析 / 意味論・意味解析 / 文脈解析" class ="badge badge-pill badge-primary">P8:形態素・構文解析 / 意味論・意味解析 / 文脈解析</a>
       
 
       
@@ -247,7 +235,7 @@
    
     <div class="text-center p-3">
       
-      <a class="card-link link-info" target="_blank" href="https://www.anlp.jp/proceedings/annual_meeting/2025/pdf_dir/P8-7.pdf">
+      <a class="card-link link-info" target="_blank" href="https://www.anlp.jp/proceedings/annual_meeting/2026/pdf_dir/P8-7.pdf">
         📝 Paper 
       </a>
       
@@ -301,7 +289,7 @@
         <div class="card-text">
           <div id="abstractExample">
             <span class="font-weight-bold">Abstract:</span>
-            本研究では，文対モデリングタスクの性能改善のために，事前学習済みマスク言語モデルに対する追加事前学習の手法を提案する．マスク言語モデリングによる事前学習は，意味的に近い文の埋め込み同士を埋め込み空間上で必ずしも近づけるようには設計されていない．そこで提案手法では，事前学習済みマスク言語モデルに対して，言い換え文対の文埋め込みを近づける対照学習を適用し，文対モデリングの性能改善を目指す．対照学習の先行研究で標準的に使用される自然言語推論コーパスは，英語以外の言語では大規模に利用できない課題があるが，本手法では生コーパスと言い換え辞書から低コストに対照学習のための学習データを構築できる．4 種類の文対モデリングタスクにおける実験の結果，英日の両言語において提案手法の有効性を確認できた．
+            CCG 構文解析において，文中の単語に CCG カテゴリを割り当てる Supertagging は，特に重要な基盤処理であり，さまざまな手法が提案されている．本研究では大規模言語モデル(LLM)を用いてシフト還元動作を予測して解析木を構築しつつ，シフト動作時に Supertagging を行う手法を提案する．提案手法の特徴は明示的にスタックとキューを与えず，文字列で解析状態を表し，1 つ前の状態を参照しつつ解析動作を予測することにある．CCGbank を用いて評価実験を行った結果，1 つ前の状態を参照することで解析性能が向上し，無効な動作の予測が減った．一方，提案手法は短い Supertag に対する正解率は高かったものの，長い Supertag に対する正解率は著しく低かった．
           </div>
         </div>
       </div>
@@ -309,7 +297,7 @@
   </div>
   
   <div class="tab-pane fade" id="paper" role="tabpanel" aria-labelledby="paper-tab">
-    <embed src="https://www.anlp.jp/proceedings/annual_meeting/2025/pdf_dir/P8-7.pdf" type="application/pdf" width="100%" height="850px">
+    <embed src="https://www.anlp.jp/proceedings/annual_meeting/2026/pdf_dir/P8-7.pdf" type="application/pdf" width="100%" height="850px">
   </div>
   
   
@@ -352,7 +340,7 @@
         <p class="float-left">
           <img src="None" height="45px"
             width="auto" align="center">
-          <span class="lead">NLP2025</span>
+          <span class="lead">NLP2026</span>
         </p>
         <p class="float-right"><a href="#" class="text-dark">Back to Top</a></p>
         <p class="text-center">The title and abstract of the paper are licensed by the author(s) under CC BY 4.0<br>

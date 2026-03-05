@@ -64,24 +64,22 @@
   <script src="https://cdn.jsdelivr.net/npm/pdfjs-dist@2.3.200/build/pdf.min.js"></script>
   <script src="static/js/pdf_render.js"></script>
 
-  <title>NLP2025: Jellyfish: データ前処理のためのLLM</title>
+  <title>NLP2026: 広告文におけるスパン単位の誤り推定</title>
   
-<meta name="citation_title" content="Jellyfish: データ前処理のためのLLM" />
+<meta name="citation_title" content="広告文におけるスパン単位の誤り推定" />
 
-<meta name="citation_author" content="張皓辰" />
+<meta name="citation_author" content="上垣外英剛" />
 
-<meta name="citation_author" content="董于洋" />
+<meta name="citation_author" content="村上聡一朗" />
 
-<meta name="citation_author" content="肖川" />
-
-<meta name="citation_author" content="小山田昌史" />
+<meta name="citation_author" content="張培楠" />
 
 <meta name="citation_publication_date" content="None" />
 <meta name="citation_conference_title" content="None" />
 <meta name="citation_inbook_title" content="None" />
-<meta name="citation_abstract" content="データ分析において不可欠なステップであるデータ前処理（DP）に対して，大規模言語モデル（LLM）の活用が注目を集めている．しかし，既存手法の多くは GPT の API に依存しており，プライバシーやコスト面での課題が残されている．本研究では，ローカル環境で実行可能な，Llama3-8B,mistral-7B などのパラメータ規模が小さい LLM にのInstruction-tuning を実施し，代表的な DP タスクにおける性能を包括的に評価した．本実験により，全てのモデルの性能向上が確認され，GPT-3.5/4 に匹敵する処理能力を実証した．この取り組みは，ローカル環境で実行でき，プライバシーとコストを考慮しつつ高性能な DP を実現しうる LLM による実用的な解決策を提案するものである．モデルおよび学習データは https://huggingface.co/NECOUDBFM で公開されている．" />
+<meta name="citation_abstract" content="広告文はユーザーに対して商品やサービスの価値を簡潔かつ正確に伝える重要な役割を担う。しかし、広告文中に文法的あるいは意味的な誤りが含まれる場合，ユーザーの理解を妨げるだけでなく、誤った情報を伝達してしまう危険性がある。従来の広告文評価では，文全体を単位とした品質推定が主であり、どの部分にどのような誤りが存在するかを詳細に捉えることは困難であった。本研究では，広告文中の誤りをスパン単位で検出し、その種類と深刻度を同時に推定する手法を提案する。さらに既存の広告文データセットを拡張し、スパン単位の誤りに対するアノテーション付きデータセットを構築した。実験の結果、提案手法は複数の事前学習済み言語モデルで有効に機能し、推定された誤りの重大さが人手評価と高い相関を示すことを確認した。" />
 
-<meta name="citation_keywords" content="Q4:ポスター" />
+<meta name="citation_keywords" content="Q4:言語資源・アノテーションと評価" />
 
 <meta name="citation_pdf_url" content="" />
 
@@ -215,31 +213,27 @@
 <div class="card m-3" style="">
   <div class="card-header">
     <h2 class="card-title main-title text-center" style="color: black">
-      Jellyfish: データ前処理のためのLLM
+      広告文におけるスパン単位の誤り推定
     </h2>
     <h3 class="card-subtitle mb-2 text-muted text-center">
       
-      <a href="papers.html?filter=authors&search=張皓辰&program=all" class="text-primary"
-        >張皓辰</a
+      <a href="papers.html?filter=authors&search=上垣外英剛&program=all" class="text-primary"
+        >上垣外英剛</a
       >,
       
-      <a href="papers.html?filter=authors&search=董于洋&program=all" class="text-primary"
-        >董于洋</a
+      <a href="papers.html?filter=authors&search=村上聡一朗&program=all" class="text-primary"
+        >村上聡一朗</a
       >,
       
-      <a href="papers.html?filter=authors&search=肖川&program=all" class="text-primary"
-        >肖川</a
-      >,
-      
-      <a href="papers.html?filter=authors&search=小山田昌史&program=all" class="text-primary"
-        >小山田昌史</a
+      <a href="papers.html?filter=authors&search=張培楠&program=all" class="text-primary"
+        >張培楠</a
       >
       
     </h3>
 
     <p class="card-text text-center h5">
       
-      <a href="papers.html?filter=keywords&search=Q4:ポスター" class ="badge badge-pill badge-primary">Q4:ポスター</a>
+      <a href="papers.html?filter=keywords&search=Q4:言語資源・アノテーションと評価" class ="badge badge-pill badge-primary">Q4:言語資源・アノテーションと評価</a>
       
 
       
@@ -247,7 +241,7 @@
    
     <div class="text-center p-3">
       
-      <a class="card-link link-info" target="_blank" href="https://www.anlp.jp/proceedings/annual_meeting/2025/pdf_dir/Q4-23.pdf">
+      <a class="card-link link-info" target="_blank" href="https://www.anlp.jp/proceedings/annual_meeting/2026/pdf_dir/Q4-23.pdf">
         📝 Paper 
       </a>
       
@@ -301,7 +295,7 @@
         <div class="card-text">
           <div id="abstractExample">
             <span class="font-weight-bold">Abstract:</span>
-            データ分析において不可欠なステップであるデータ前処理（DP）に対して，大規模言語モデル（LLM）の活用が注目を集めている．しかし，既存手法の多くは GPT の API に依存しており，プライバシーやコスト面での課題が残されている．本研究では，ローカル環境で実行可能な，Llama3-8B,mistral-7B などのパラメータ規模が小さい LLM にのInstruction-tuning を実施し，代表的な DP タスクにおける性能を包括的に評価した．本実験により，全てのモデルの性能向上が確認され，GPT-3.5/4 に匹敵する処理能力を実証した．この取り組みは，ローカル環境で実行でき，プライバシーとコストを考慮しつつ高性能な DP を実現しうる LLM による実用的な解決策を提案するものである．モデルおよび学習データは https://huggingface.co/NECOUDBFM で公開されている．
+            広告文はユーザーに対して商品やサービスの価値を簡潔かつ正確に伝える重要な役割を担う。しかし、広告文中に文法的あるいは意味的な誤りが含まれる場合，ユーザーの理解を妨げるだけでなく、誤った情報を伝達してしまう危険性がある。従来の広告文評価では，文全体を単位とした品質推定が主であり、どの部分にどのような誤りが存在するかを詳細に捉えることは困難であった。本研究では，広告文中の誤りをスパン単位で検出し、その種類と深刻度を同時に推定する手法を提案する。さらに既存の広告文データセットを拡張し、スパン単位の誤りに対するアノテーション付きデータセットを構築した。実験の結果、提案手法は複数の事前学習済み言語モデルで有効に機能し、推定された誤りの重大さが人手評価と高い相関を示すことを確認した。
           </div>
         </div>
       </div>
@@ -309,7 +303,7 @@
   </div>
   
   <div class="tab-pane fade" id="paper" role="tabpanel" aria-labelledby="paper-tab">
-    <embed src="https://www.anlp.jp/proceedings/annual_meeting/2025/pdf_dir/Q4-23.pdf" type="application/pdf" width="100%" height="850px">
+    <embed src="https://www.anlp.jp/proceedings/annual_meeting/2026/pdf_dir/Q4-23.pdf" type="application/pdf" width="100%" height="850px">
   </div>
   
   
@@ -352,7 +346,7 @@
         <p class="float-left">
           <img src="None" height="45px"
             width="auto" align="center">
-          <span class="lead">NLP2025</span>
+          <span class="lead">NLP2026</span>
         </p>
         <p class="float-right"><a href="#" class="text-dark">Back to Top</a></p>
         <p class="text-center">The title and abstract of the paper are licensed by the author(s) under CC BY 4.0<br>

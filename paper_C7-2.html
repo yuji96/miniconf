@@ -64,42 +64,22 @@
   <script src="https://cdn.jsdelivr.net/npm/pdfjs-dist@2.3.200/build/pdf.min.js"></script>
   <script src="static/js/pdf_render.js"></script>
 
-  <title>NLP2025: 音声・音響・音楽を扱うオープン基盤モデルの構築に向けたデータセット策定</title>
+  <title>NLP2026: ドメイン特化LLMの推論能力向上を目的とした合成指示データセットの構築と金融ドメインにおける評価</title>
   
-<meta name="citation_title" content="音声・音響・音楽を扱うオープン基盤モデルの構築に向けたデータセット策定" />
+<meta name="citation_title" content="ドメイン特化LLMの推論能力向上を目的とした合成指示データセットの構築と金融ドメインにおける評価" />
 
-<meta name="citation_author" content="高道慎之介" />
+<meta name="citation_author" content="大河内悠磨" />
 
-<meta name="citation_author" content="和田仰" />
+<meta name="citation_author" content="FabioMilentiansenSim" />
 
-<meta name="citation_author" content="小川諒" />
-
-<meta name="citation_author" content="山岡洸瑛" />
-
-<meta name="citation_author" content="中田亘" />
-
-<meta name="citation_author" content="淺井航平" />
-
-<meta name="citation_author" content="関健太郎" />
-
-<meta name="citation_author" content="岡本悠希" />
-
-<meta name="citation_author" content="齋藤佑樹" />
-
-<meta name="citation_author" content="小川哲司" />
-
-<meta name="citation_author" content="猿渡洋" />
-
-<meta name="citation_author" content="中村友彦" />
-
-<meta name="citation_author" content="深山覚" />
+<meta name="citation_author" content="岡田智靖" />
 
 <meta name="citation_publication_date" content="None" />
 <meta name="citation_conference_title" content="None" />
 <meta name="citation_inbook_title" content="None" />
-<meta name="citation_abstract" content="本論文では，音声・音響・音楽信号を対象とするオープンな音基盤モデル構築に向けた，データセットの策定結果を報告する．汎用的な音基盤モデルを構築してその知見を共有するには，構築に資するデータセットを再現可能な形で整備すべきである．本論文では，音基盤モデルの満たすべき入出力条件を整理し，策定したデータセットについて分析する．" />
+<meta name="citation_abstract" content="特定ドメインへの LLM 適応において，専門知識と推論能力の両立は喫緊の課題である．本研究では，ドメイン語彙を起点としたデータ合成により，任意の分野で高品質な合成指示データを構築する汎用手法を提案する．実証として本手法を金融分野に適用し，総計約 95 億トークンの大規模な思考過程（Chain-of-Thought）付き指示データセットを構築した．評価の結果，金融ベンチマークにおいて公式モデル比で性能向上を確認し，手法の有効性を実証した．併せて，思考過程長が性能に与える影響とその限界についても報告する．" />
 
-<meta name="citation_keywords" content="C7:音声言語処理" />
+<meta name="citation_keywords" content="C7:知識獲得・情報抽出 / 機械学習 / LLM構築" />
 
 <meta name="citation_pdf_url" content="" />
 
@@ -233,67 +213,27 @@
 <div class="card m-3" style="">
   <div class="card-header">
     <h2 class="card-title main-title text-center" style="color: black">
-      音声・音響・音楽を扱うオープン基盤モデルの構築に向けたデータセット策定
+      ドメイン特化LLMの推論能力向上を目的とした合成指示データセットの構築と金融ドメインにおける評価
     </h2>
     <h3 class="card-subtitle mb-2 text-muted text-center">
       
-      <a href="papers.html?filter=authors&search=高道慎之介&program=all" class="text-primary"
-        >高道慎之介</a
+      <a href="papers.html?filter=authors&search=大河内悠磨&program=all" class="text-primary"
+        >大河内悠磨</a
       >,
       
-      <a href="papers.html?filter=authors&search=和田仰&program=all" class="text-primary"
-        >和田仰</a
+      <a href="papers.html?filter=authors&search=FabioMilentiansenSim&program=all" class="text-primary"
+        >FabioMilentiansenSim</a
       >,
       
-      <a href="papers.html?filter=authors&search=小川諒&program=all" class="text-primary"
-        >小川諒</a
-      >,
-      
-      <a href="papers.html?filter=authors&search=山岡洸瑛&program=all" class="text-primary"
-        >山岡洸瑛</a
-      >,
-      
-      <a href="papers.html?filter=authors&search=中田亘&program=all" class="text-primary"
-        >中田亘</a
-      >,
-      
-      <a href="papers.html?filter=authors&search=淺井航平&program=all" class="text-primary"
-        >淺井航平</a
-      >,
-      
-      <a href="papers.html?filter=authors&search=関健太郎&program=all" class="text-primary"
-        >関健太郎</a
-      >,
-      
-      <a href="papers.html?filter=authors&search=岡本悠希&program=all" class="text-primary"
-        >岡本悠希</a
-      >,
-      
-      <a href="papers.html?filter=authors&search=齋藤佑樹&program=all" class="text-primary"
-        >齋藤佑樹</a
-      >,
-      
-      <a href="papers.html?filter=authors&search=小川哲司&program=all" class="text-primary"
-        >小川哲司</a
-      >,
-      
-      <a href="papers.html?filter=authors&search=猿渡洋&program=all" class="text-primary"
-        >猿渡洋</a
-      >,
-      
-      <a href="papers.html?filter=authors&search=中村友彦&program=all" class="text-primary"
-        >中村友彦</a
-      >,
-      
-      <a href="papers.html?filter=authors&search=深山覚&program=all" class="text-primary"
-        >深山覚</a
+      <a href="papers.html?filter=authors&search=岡田智靖&program=all" class="text-primary"
+        >岡田智靖</a
       >
       
     </h3>
 
     <p class="card-text text-center h5">
       
-      <a href="papers.html?filter=keywords&search=C7:音声言語処理" class ="badge badge-pill badge-primary">C7:音声言語処理</a>
+      <a href="papers.html?filter=keywords&search=C7:知識獲得・情報抽出 / 機械学習 / LLM構築" class ="badge badge-pill badge-primary">C7:知識獲得・情報抽出 / 機械学習 / LLM構築</a>
       
 
       
@@ -301,7 +241,7 @@
    
     <div class="text-center p-3">
       
-      <a class="card-link link-info" target="_blank" href="https://www.anlp.jp/proceedings/annual_meeting/2025/pdf_dir/C7-2.pdf">
+      <a class="card-link link-info" target="_blank" href="https://www.anlp.jp/proceedings/annual_meeting/2026/pdf_dir/C7-2.pdf">
         📝 Paper 
       </a>
       
@@ -355,7 +295,7 @@
         <div class="card-text">
           <div id="abstractExample">
             <span class="font-weight-bold">Abstract:</span>
-            本論文では，音声・音響・音楽信号を対象とするオープンな音基盤モデル構築に向けた，データセットの策定結果を報告する．汎用的な音基盤モデルを構築してその知見を共有するには，構築に資するデータセットを再現可能な形で整備すべきである．本論文では，音基盤モデルの満たすべき入出力条件を整理し，策定したデータセットについて分析する．
+            特定ドメインへの LLM 適応において，専門知識と推論能力の両立は喫緊の課題である．本研究では，ドメイン語彙を起点としたデータ合成により，任意の分野で高品質な合成指示データを構築する汎用手法を提案する．実証として本手法を金融分野に適用し，総計約 95 億トークンの大規模な思考過程（Chain-of-Thought）付き指示データセットを構築した．評価の結果，金融ベンチマークにおいて公式モデル比で性能向上を確認し，手法の有効性を実証した．併せて，思考過程長が性能に与える影響とその限界についても報告する．
           </div>
         </div>
       </div>
@@ -363,7 +303,7 @@
   </div>
   
   <div class="tab-pane fade" id="paper" role="tabpanel" aria-labelledby="paper-tab">
-    <embed src="https://www.anlp.jp/proceedings/annual_meeting/2025/pdf_dir/C7-2.pdf" type="application/pdf" width="100%" height="850px">
+    <embed src="https://www.anlp.jp/proceedings/annual_meeting/2026/pdf_dir/C7-2.pdf" type="application/pdf" width="100%" height="850px">
   </div>
   
   
@@ -406,7 +346,7 @@
         <p class="float-left">
           <img src="None" height="45px"
             width="auto" align="center">
-          <span class="lead">NLP2025</span>
+          <span class="lead">NLP2026</span>
         </p>
         <p class="float-right"><a href="#" class="text-dark">Back to Top</a></p>
         <p class="text-center">The title and abstract of the paper are licensed by the author(s) under CC BY 4.0<br>

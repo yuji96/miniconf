@@ -64,24 +64,28 @@
   <script src="https://cdn.jsdelivr.net/npm/pdfjs-dist@2.3.200/build/pdf.min.js"></script>
   <script src="static/js/pdf_render.js"></script>
 
-  <title>NLP2025: Towards Modular Fine-tuning of LLM-based Multilingual Neural Machine Translation</title>
+  <title>NLP2026: ナレッジグラフRAG における語彙的マッチングを用いた検索精度の改善</title>
   
-<meta name="citation_title" content="Towards Modular Fine-tuning of LLM-based Multilingual Neural Machine Translation" />
+<meta name="citation_title" content="ナレッジグラフRAG における語彙的マッチングを用いた検索精度の改善" />
 
-<meta name="citation_author" content="ZheCao" />
+<meta name="citation_author" content="高見昂季" />
 
-<meta name="citation_author" content="YusukeOda" />
+<meta name="citation_author" content="滝口哲也" />
 
-<meta name="citation_author" content="AkikoAizawa" />
+<meta name="citation_author" content="有木康雄" />
 
-<meta name="citation_author" content="TaroWatanabe" />
+<meta name="citation_author" content="岩﨑雄介" />
+
+<meta name="citation_author" content="小島幹" />
+
+<meta name="citation_author" content="山本昌輝" />
 
 <meta name="citation_publication_date" content="None" />
 <meta name="citation_conference_title" content="None" />
 <meta name="citation_inbook_title" content="None" />
-<meta name="citation_abstract" content="As Large Language Models support more and more lan-guages, they face increasing challenges in alleviating lan-guage inference and adapting to unseen languages. In thiswork, we propose a modular ﬁne-tuning pipeline for mul-tilingual neural machine translation, where adapters aretrained separately for input and output languages. Dur-ing translation, the parameters of the corresponding inputand output language adapters are combined using weightedsummation. Experiments on 5 languages show that ourmethods can reach 50% of full-parameter ﬁne-tuning per-formance with only 0.5% to 1% trainable parameters.Moreover, under certain weight conﬁgurations, merginginput and output language adapters outperforms using themindividually in some language directions, highlighting thepotential of our merging strategy." />
+<meta name="citation_abstract" content="従来のナレッジグラフ RAG は埋め込みベクトルによる検索が主流であり，語彙的マッチングの欠如による検索漏れが懸念される．本稿では，ナレッジグラフ内の構造化データに対して BM25 によるパス重み付けを行い，グラフ検索の精度を改善する手法を提案する．さらに，グラフ検索と BM25 検索を統合するハイブリッド検索を行うことで，直接的な語彙マッチングによる更なる精度改善を実現する．評価実験の結果，提案手法は従来手法と比較して高い検索精度を達成し，その有効性が確認された．" />
 
-<meta name="citation_keywords" content="P1:ポスター" />
+<meta name="citation_keywords" content="P1:情報検索・テキストマイニング / 機械翻訳" />
 
 <meta name="citation_pdf_url" content="" />
 
@@ -215,31 +219,39 @@
 <div class="card m-3" style="">
   <div class="card-header">
     <h2 class="card-title main-title text-center" style="color: black">
-      Towards Modular Fine-tuning of LLM-based Multilingual Neural Machine Translation
+      ナレッジグラフRAG における語彙的マッチングを用いた検索精度の改善
     </h2>
     <h3 class="card-subtitle mb-2 text-muted text-center">
       
-      <a href="papers.html?filter=authors&search=ZheCao&program=all" class="text-primary"
-        >ZheCao</a
+      <a href="papers.html?filter=authors&search=高見昂季&program=all" class="text-primary"
+        >高見昂季</a
       >,
       
-      <a href="papers.html?filter=authors&search=YusukeOda&program=all" class="text-primary"
-        >YusukeOda</a
+      <a href="papers.html?filter=authors&search=滝口哲也&program=all" class="text-primary"
+        >滝口哲也</a
       >,
       
-      <a href="papers.html?filter=authors&search=AkikoAizawa&program=all" class="text-primary"
-        >AkikoAizawa</a
+      <a href="papers.html?filter=authors&search=有木康雄&program=all" class="text-primary"
+        >有木康雄</a
       >,
       
-      <a href="papers.html?filter=authors&search=TaroWatanabe&program=all" class="text-primary"
-        >TaroWatanabe</a
+      <a href="papers.html?filter=authors&search=岩﨑雄介&program=all" class="text-primary"
+        >岩﨑雄介</a
+      >,
+      
+      <a href="papers.html?filter=authors&search=小島幹&program=all" class="text-primary"
+        >小島幹</a
+      >,
+      
+      <a href="papers.html?filter=authors&search=山本昌輝&program=all" class="text-primary"
+        >山本昌輝</a
       >
       
     </h3>
 
     <p class="card-text text-center h5">
       
-      <a href="papers.html?filter=keywords&search=P1:ポスター" class ="badge badge-pill badge-primary">P1:ポスター</a>
+      <a href="papers.html?filter=keywords&search=P1:情報検索・テキストマイニング / 機械翻訳" class ="badge badge-pill badge-primary">P1:情報検索・テキストマイニング / 機械翻訳</a>
       
 
       
@@ -247,7 +259,7 @@
    
     <div class="text-center p-3">
       
-      <a class="card-link link-info" target="_blank" href="https://www.anlp.jp/proceedings/annual_meeting/2025/pdf_dir/P1-10.pdf">
+      <a class="card-link link-info" target="_blank" href="https://www.anlp.jp/proceedings/annual_meeting/2026/pdf_dir/P1-10.pdf">
         📝 Paper 
       </a>
       
@@ -301,7 +313,7 @@
         <div class="card-text">
           <div id="abstractExample">
             <span class="font-weight-bold">Abstract:</span>
-            As Large Language Models support more and more lan-guages, they face increasing challenges in alleviating lan-guage inference and adapting to unseen languages. In thiswork, we propose a modular ﬁne-tuning pipeline for mul-tilingual neural machine translation, where adapters aretrained separately for input and output languages. Dur-ing translation, the parameters of the corresponding inputand output language adapters are combined using weightedsummation. Experiments on 5 languages show that ourmethods can reach 50% of full-parameter ﬁne-tuning per-formance with only 0.5% to 1% trainable parameters.Moreover, under certain weight conﬁgurations, merginginput and output language adapters outperforms using themindividually in some language directions, highlighting thepotential of our merging strategy.
+            従来のナレッジグラフ RAG は埋め込みベクトルによる検索が主流であり，語彙的マッチングの欠如による検索漏れが懸念される．本稿では，ナレッジグラフ内の構造化データに対して BM25 によるパス重み付けを行い，グラフ検索の精度を改善する手法を提案する．さらに，グラフ検索と BM25 検索を統合するハイブリッド検索を行うことで，直接的な語彙マッチングによる更なる精度改善を実現する．評価実験の結果，提案手法は従来手法と比較して高い検索精度を達成し，その有効性が確認された．
           </div>
         </div>
       </div>
@@ -309,7 +321,7 @@
   </div>
   
   <div class="tab-pane fade" id="paper" role="tabpanel" aria-labelledby="paper-tab">
-    <embed src="https://www.anlp.jp/proceedings/annual_meeting/2025/pdf_dir/P1-10.pdf" type="application/pdf" width="100%" height="850px">
+    <embed src="https://www.anlp.jp/proceedings/annual_meeting/2026/pdf_dir/P1-10.pdf" type="application/pdf" width="100%" height="850px">
   </div>
   
   
@@ -352,7 +364,7 @@
         <p class="float-left">
           <img src="None" height="45px"
             width="auto" align="center">
-          <span class="lead">NLP2025</span>
+          <span class="lead">NLP2026</span>
         </p>
         <p class="float-right"><a href="#" class="text-dark">Back to Top</a></p>
         <p class="text-center">The title and abstract of the paper are licensed by the author(s) under CC BY 4.0<br>

@@ -64,24 +64,32 @@
   <script src="https://cdn.jsdelivr.net/npm/pdfjs-dist@2.3.200/build/pdf.min.js"></script>
   <script src="static/js/pdf_render.js"></script>
 
-  <title>NLP2025: 多言語での判例事実概要からの法的関係性のグラフ可視化</title>
+  <title>NLP2026: コストと精度を考慮した質問と文書に基づく適応的RAG選択</title>
   
-<meta name="citation_title" content="多言語での判例事実概要からの法的関係性のグラフ可視化" />
+<meta name="citation_title" content="コストと精度を考慮した質問と文書に基づく適応的RAG選択" />
 
-<meta name="citation_author" content="大南英理" />
+<meta name="citation_author" content="穴口史将" />
 
-<meta name="citation_author" content="宮西大樹" />
+<meta name="citation_author" content="チャクラボルティシュデシナ" />
 
-<meta name="citation_author" content="前田航希" />
+<meta name="citation_author" content="森田武史" />
 
-<meta name="citation_author" content="栗田修平" />
+<meta name="citation_author" content="太田葵" />
+
+<meta name="citation_author" content="浅田真生" />
+
+<meta name="citation_author" content="江上周作" />
+
+<meta name="citation_author" content="鵜飼孝典" />
+
+<meta name="citation_author" content="濱崎雅弘" />
 
 <meta name="citation_publication_date" content="None" />
 <meta name="citation_conference_title" content="None" />
 <meta name="citation_inbook_title" content="None" />
-<meta name="citation_abstract" content="裁判官による判決作成では，争点の事実に関連する法律を解釈し事実を当てはめて結論を導く．他方モデルによる判例予測では，法律領域の精度向上とAI の信頼性観点での推論過程の明確化が課題である．本研究では，どのように法律解釈を行ったかを可視化し，モデルが法律解釈を学習することでドメイン知識を向上させるため，EU 法判例を用いて判例内の事実の法的関連性のグラフ生成タスクである LegalViz を提案する．更に，グラフ構造と法律内容の双方を考慮したグラフ可視化評価を行うため評価手法を提案する．実験では，学習したモデルがFew-shot 設定の GPT モデルの性能を上回ることから提案データセットの有効性を示した．" />
+<meta name="citation_abstract" content="大規模言語モデルの応答品質の向上を目的として，多様な Retrieval-Augmented Generation（RAG）が研究されている．例えば，知識グラフや要約を用いて外部知識を活用する RAG がある．一方で，単純な質問には NaiveRAG で実用的な精度を維持できる．高度な RAG はコストを増大させ，実運用における効率を低下させるため，入力に応じた RAG 構成の選択が必要である．提案手法は，質問と文書から抽出した特徴量を用いてランキングモデルが性能指標の順位を予測し，ユーザが設定した重みに基づいて適応的な構成を選択する．評価実験の結果，重みに応じた RAG 構成の選択が可能であり，全質問に対して同一の RAG 構成を適用した場合と比較して𝐹1値を向上させ，実行時間を短縮した．" />
 
-<meta name="citation_keywords" content="B7:知識獲得・情報抽出(2)" />
+<meta name="citation_keywords" content="B7:NLPモデルの解釈可能性・分析 / NLPのための効率的・低リソース手法" />
 
 <meta name="citation_pdf_url" content="" />
 
@@ -215,31 +223,47 @@
 <div class="card m-3" style="">
   <div class="card-header">
     <h2 class="card-title main-title text-center" style="color: black">
-      多言語での判例事実概要からの法的関係性のグラフ可視化
+      コストと精度を考慮した質問と文書に基づく適応的RAG選択
     </h2>
     <h3 class="card-subtitle mb-2 text-muted text-center">
       
-      <a href="papers.html?filter=authors&search=大南英理&program=all" class="text-primary"
-        >大南英理</a
+      <a href="papers.html?filter=authors&search=穴口史将&program=all" class="text-primary"
+        >穴口史将</a
       >,
       
-      <a href="papers.html?filter=authors&search=宮西大樹&program=all" class="text-primary"
-        >宮西大樹</a
+      <a href="papers.html?filter=authors&search=チャクラボルティシュデシナ&program=all" class="text-primary"
+        >チャクラボルティシュデシナ</a
       >,
       
-      <a href="papers.html?filter=authors&search=前田航希&program=all" class="text-primary"
-        >前田航希</a
+      <a href="papers.html?filter=authors&search=森田武史&program=all" class="text-primary"
+        >森田武史</a
       >,
       
-      <a href="papers.html?filter=authors&search=栗田修平&program=all" class="text-primary"
-        >栗田修平</a
+      <a href="papers.html?filter=authors&search=太田葵&program=all" class="text-primary"
+        >太田葵</a
+      >,
+      
+      <a href="papers.html?filter=authors&search=浅田真生&program=all" class="text-primary"
+        >浅田真生</a
+      >,
+      
+      <a href="papers.html?filter=authors&search=江上周作&program=all" class="text-primary"
+        >江上周作</a
+      >,
+      
+      <a href="papers.html?filter=authors&search=鵜飼孝典&program=all" class="text-primary"
+        >鵜飼孝典</a
+      >,
+      
+      <a href="papers.html?filter=authors&search=濱崎雅弘&program=all" class="text-primary"
+        >濱崎雅弘</a
       >
       
     </h3>
 
     <p class="card-text text-center h5">
       
-      <a href="papers.html?filter=keywords&search=B7:知識獲得・情報抽出(2)" class ="badge badge-pill badge-primary">B7:知識獲得・情報抽出(2)</a>
+      <a href="papers.html?filter=keywords&search=B7:NLPモデルの解釈可能性・分析 / NLPのための効率的・低リソース手法" class ="badge badge-pill badge-primary">B7:NLPモデルの解釈可能性・分析 / NLPのための効率的・低リソース手法</a>
       
 
       
@@ -247,7 +271,7 @@
    
     <div class="text-center p-3">
       
-      <a class="card-link link-info" target="_blank" href="https://www.anlp.jp/proceedings/annual_meeting/2025/pdf_dir/B7-4.pdf">
+      <a class="card-link link-info" target="_blank" href="https://www.anlp.jp/proceedings/annual_meeting/2026/pdf_dir/B7-4.pdf">
         📝 Paper 
       </a>
       
@@ -301,7 +325,7 @@
         <div class="card-text">
           <div id="abstractExample">
             <span class="font-weight-bold">Abstract:</span>
-            裁判官による判決作成では，争点の事実に関連する法律を解釈し事実を当てはめて結論を導く．他方モデルによる判例予測では，法律領域の精度向上とAI の信頼性観点での推論過程の明確化が課題である．本研究では，どのように法律解釈を行ったかを可視化し，モデルが法律解釈を学習することでドメイン知識を向上させるため，EU 法判例を用いて判例内の事実の法的関連性のグラフ生成タスクである LegalViz を提案する．更に，グラフ構造と法律内容の双方を考慮したグラフ可視化評価を行うため評価手法を提案する．実験では，学習したモデルがFew-shot 設定の GPT モデルの性能を上回ることから提案データセットの有効性を示した．
+            大規模言語モデルの応答品質の向上を目的として，多様な Retrieval-Augmented Generation（RAG）が研究されている．例えば，知識グラフや要約を用いて外部知識を活用する RAG がある．一方で，単純な質問には NaiveRAG で実用的な精度を維持できる．高度な RAG はコストを増大させ，実運用における効率を低下させるため，入力に応じた RAG 構成の選択が必要である．提案手法は，質問と文書から抽出した特徴量を用いてランキングモデルが性能指標の順位を予測し，ユーザが設定した重みに基づいて適応的な構成を選択する．評価実験の結果，重みに応じた RAG 構成の選択が可能であり，全質問に対して同一の RAG 構成を適用した場合と比較して𝐹1値を向上させ，実行時間を短縮した．
           </div>
         </div>
       </div>
@@ -309,7 +333,7 @@
   </div>
   
   <div class="tab-pane fade" id="paper" role="tabpanel" aria-labelledby="paper-tab">
-    <embed src="https://www.anlp.jp/proceedings/annual_meeting/2025/pdf_dir/B7-4.pdf" type="application/pdf" width="100%" height="850px">
+    <embed src="https://www.anlp.jp/proceedings/annual_meeting/2026/pdf_dir/B7-4.pdf" type="application/pdf" width="100%" height="850px">
   </div>
   
   
@@ -352,7 +376,7 @@
         <p class="float-left">
           <img src="None" height="45px"
             width="auto" align="center">
-          <span class="lead">NLP2025</span>
+          <span class="lead">NLP2026</span>
         </p>
         <p class="float-right"><a href="#" class="text-dark">Back to Top</a></p>
         <p class="text-center">The title and abstract of the paper are licensed by the author(s) under CC BY 4.0<br>

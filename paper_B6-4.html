@@ -64,34 +64,20 @@
   <script src="https://cdn.jsdelivr.net/npm/pdfjs-dist@2.3.200/build/pdf.min.js"></script>
   <script src="static/js/pdf_render.js"></script>
 
-  <title>NLP2025: 故障解析における事前学習済みSentence-DeBERTaによる拡張ナレッジグラフとクエリ分解を用いたGraphRAG</title>
+  <title>NLP2026: スパースオートエンコーダーを用いた大規模言語モデルによる文書内トピック解釈の分析</title>
   
-<meta name="citation_title" content="故障解析における事前学習済みSentence-DeBERTaによる拡張ナレッジグラフとクエリ分解を用いたGraphRAG" />
+<meta name="citation_title" content="スパースオートエンコーダーを用いた大規模言語モデルによる文書内トピック解釈の分析" />
 
-<meta name="citation_author" content="小島湧太" />
+<meta name="citation_author" content="加藤由芽" />
 
-<meta name="citation_author" content="坂地泰紀" />
-
-<meta name="citation_author" content="鈴木雅弘" />
-
-<meta name="citation_author" content="中村格士" />
-
-<meta name="citation_author" content="坂田大晃" />
-
-<meta name="citation_author" content="関和也" />
-
-<meta name="citation_author" content="勅使河原優" />
-
-<meta name="citation_author" content="山下雅己" />
-
-<meta name="citation_author" content="青山和浩" />
+<meta name="citation_author" content="小林一郎" />
 
 <meta name="citation_publication_date" content="None" />
 <meta name="citation_conference_title" content="None" />
 <meta name="citation_inbook_title" content="None" />
-<meta name="citation_abstract" content="熟練から若手エンジニアへの故障解析の知識継承は自動車業界喫緊の課題である.故障に関する文書は非構造的でデータ量が多いため,そのままでは活用が困難である.このような文書をデータの構造化に優れるナレッジグラフ(KG)に変換することは有効であるが,依然として理解が難しい.GraphRAG は, KG と大規模言語モデル(LLM)によるRAG (Retrieval-Augmented Generation)であり, KG 自体の理解を深めることも期待される.既存の KG を用いた GraphRAG に必要な処理を調査するため,本稿では LLM と継続事前学習済みSentence-DeBERTa で拡張した既存の KG と,クエリの分解に焦点を当てた EdgeGraphRAG を提案する.独自のデータセット構築と自動評価により,現時点での有効性の検討と既存の KG を用いた際の課題を論じる." />
+<meta name="citation_abstract" content="本研究は，大規模言語モデル（LLM）が文書のトピック情報を内部でどのように表現しているかを分析することを目的とする．LLM の中間層表現をSparse Autoencoder（SAE）により分解し，得られた潜在特徴に対して潜在的ディリクレ配分法（LDA）を適用することで，内部特徴と文書トピックとの対応関係を検証した．実験の結果，得られたトピック分布は文書ラベルと一定の対応を示した一方，同一ラベル内でも複数の異なるトピック分布が存在し，またトピック間の距離構造は文書ラベル間の類似性を必ずしも反映しないことが明らかとなった．これは, LLM における文書トピック表現が，人間が定義する意味的カテゴリより細かく,微細なニュアンスを捉えたものになっている可能性を示唆する．" />
 
-<meta name="citation_keywords" content="B6:知識獲得・情報抽出(1)" />
+<meta name="citation_keywords" content="B6:NLPモデルの解釈可能性・分析" />
 
 <meta name="citation_pdf_url" content="" />
 
@@ -225,51 +211,23 @@
 <div class="card m-3" style="">
   <div class="card-header">
     <h2 class="card-title main-title text-center" style="color: black">
-      故障解析における事前学習済みSentence-DeBERTaによる拡張ナレッジグラフとクエリ分解を用いたGraphRAG
+      スパースオートエンコーダーを用いた大規模言語モデルによる文書内トピック解釈の分析
     </h2>
     <h3 class="card-subtitle mb-2 text-muted text-center">
       
-      <a href="papers.html?filter=authors&search=小島湧太&program=all" class="text-primary"
-        >小島湧太</a
+      <a href="papers.html?filter=authors&search=加藤由芽&program=all" class="text-primary"
+        >加藤由芽</a
       >,
       
-      <a href="papers.html?filter=authors&search=坂地泰紀&program=all" class="text-primary"
-        >坂地泰紀</a
-      >,
-      
-      <a href="papers.html?filter=authors&search=鈴木雅弘&program=all" class="text-primary"
-        >鈴木雅弘</a
-      >,
-      
-      <a href="papers.html?filter=authors&search=中村格士&program=all" class="text-primary"
-        >中村格士</a
-      >,
-      
-      <a href="papers.html?filter=authors&search=坂田大晃&program=all" class="text-primary"
-        >坂田大晃</a
-      >,
-      
-      <a href="papers.html?filter=authors&search=関和也&program=all" class="text-primary"
-        >関和也</a
-      >,
-      
-      <a href="papers.html?filter=authors&search=勅使河原優&program=all" class="text-primary"
-        >勅使河原優</a
-      >,
-      
-      <a href="papers.html?filter=authors&search=山下雅己&program=all" class="text-primary"
-        >山下雅己</a
-      >,
-      
-      <a href="papers.html?filter=authors&search=青山和浩&program=all" class="text-primary"
-        >青山和浩</a
+      <a href="papers.html?filter=authors&search=小林一郎&program=all" class="text-primary"
+        >小林一郎</a
       >
       
     </h3>
 
     <p class="card-text text-center h5">
       
-      <a href="papers.html?filter=keywords&search=B6:知識獲得・情報抽出(1)" class ="badge badge-pill badge-primary">B6:知識獲得・情報抽出(1)</a>
+      <a href="papers.html?filter=keywords&search=B6:NLPモデルの解釈可能性・分析" class ="badge badge-pill badge-primary">B6:NLPモデルの解釈可能性・分析</a>
       
 
       
@@ -277,7 +235,7 @@
    
     <div class="text-center p-3">
       
-      <a class="card-link link-info" target="_blank" href="https://www.anlp.jp/proceedings/annual_meeting/2025/pdf_dir/B6-4.pdf">
+      <a class="card-link link-info" target="_blank" href="https://www.anlp.jp/proceedings/annual_meeting/2026/pdf_dir/B6-4.pdf">
         📝 Paper 
       </a>
       
@@ -331,7 +289,7 @@
         <div class="card-text">
           <div id="abstractExample">
             <span class="font-weight-bold">Abstract:</span>
-            熟練から若手エンジニアへの故障解析の知識継承は自動車業界喫緊の課題である.故障に関する文書は非構造的でデータ量が多いため,そのままでは活用が困難である.このような文書をデータの構造化に優れるナレッジグラフ(KG)に変換することは有効であるが,依然として理解が難しい.GraphRAG は, KG と大規模言語モデル(LLM)によるRAG (Retrieval-Augmented Generation)であり, KG 自体の理解を深めることも期待される.既存の KG を用いた GraphRAG に必要な処理を調査するため,本稿では LLM と継続事前学習済みSentence-DeBERTa で拡張した既存の KG と,クエリの分解に焦点を当てた EdgeGraphRAG を提案する.独自のデータセット構築と自動評価により,現時点での有効性の検討と既存の KG を用いた際の課題を論じる.
+            本研究は，大規模言語モデル（LLM）が文書のトピック情報を内部でどのように表現しているかを分析することを目的とする．LLM の中間層表現をSparse Autoencoder（SAE）により分解し，得られた潜在特徴に対して潜在的ディリクレ配分法（LDA）を適用することで，内部特徴と文書トピックとの対応関係を検証した．実験の結果，得られたトピック分布は文書ラベルと一定の対応を示した一方，同一ラベル内でも複数の異なるトピック分布が存在し，またトピック間の距離構造は文書ラベル間の類似性を必ずしも反映しないことが明らかとなった．これは, LLM における文書トピック表現が，人間が定義する意味的カテゴリより細かく,微細なニュアンスを捉えたものになっている可能性を示唆する．
           </div>
         </div>
       </div>
@@ -339,7 +297,7 @@
   </div>
   
   <div class="tab-pane fade" id="paper" role="tabpanel" aria-labelledby="paper-tab">
-    <embed src="https://www.anlp.jp/proceedings/annual_meeting/2025/pdf_dir/B6-4.pdf" type="application/pdf" width="100%" height="850px">
+    <embed src="https://www.anlp.jp/proceedings/annual_meeting/2026/pdf_dir/B6-4.pdf" type="application/pdf" width="100%" height="850px">
   </div>
   
   
@@ -382,7 +340,7 @@
         <p class="float-left">
           <img src="None" height="45px"
             width="auto" align="center">
-          <span class="lead">NLP2025</span>
+          <span class="lead">NLP2026</span>
         </p>
         <p class="float-right"><a href="#" class="text-dark">Back to Top</a></p>
         <p class="text-center">The title and abstract of the paper are licensed by the author(s) under CC BY 4.0<br>

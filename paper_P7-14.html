@@ -64,28 +64,22 @@
   <script src="https://cdn.jsdelivr.net/npm/pdfjs-dist@2.3.200/build/pdf.min.js"></script>
   <script src="static/js/pdf_render.js"></script>
 
-  <title>NLP2025: SelfCheckGPTはコード生成におけるハルシネーションを検知できるか</title>
+  <title>NLP2026: LLMベース文法誤り訂正における編集の多数決による過剰訂正の抑制</title>
   
-<meta name="citation_title" content="SelfCheckGPTはコード生成におけるハルシネーションを検知できるか" />
+<meta name="citation_title" content="LLMベース文法誤り訂正における編集の多数決による過剰訂正の抑制" />
 
-<meta name="citation_author" content="伊東和香" />
+<meta name="citation_author" content="五藤巧" />
 
-<meta name="citation_author" content="小原有以" />
+<meta name="citation_author" content="坂井優介" />
 
-<meta name="citation_author" content="佐藤美唯" />
-
-<meta name="citation_author" content="秋信有花" />
-
-<meta name="citation_author" content="倉林利行" />
-
-<meta name="citation_author" content="倉光君郎" />
+<meta name="citation_author" content="渡辺太郎" />
 
 <meta name="citation_publication_date" content="None" />
 <meta name="citation_conference_title" content="None" />
 <meta name="citation_inbook_title" content="None" />
-<meta name="citation_abstract" content="大規模言語モデル(Large Language Model, LLM)によるコード生成は，ソフトウェア開発の効率化に寄与する技術として注目されている．しかし LLM の出力にはハルシネーションを含むことが問題となる．ハルシネーションを含む出力コードはエラーを引き起こす可能性があるため，事前にハルシネーションを検知することが重要である．本研究では，自然言語におけるハルシネーション検知手法である SelfCheckGPT をコード生成に適用する．一般的なコード生成の評価手法である実行ベース評価と，SelfCheckGPT によるコードの評価を比較することで，両者の関連性を確認する．実行ベース評価と比較した結果，特に BLEU，ROUGE-L，EditSim を利用した SelfCheckGPT による評価において，実行ベース評価との関連性が見られた．" />
+<meta name="citation_abstract" content="大規模言語モデルを用いた文法誤り訂正には過剰訂正が頻発する．本研究では，過剰訂正を抑制することを目的として，単一モデルから複数の候補を生成し，編集の多数決に基づいてアンサンブルする推論手法を提案する．なお，提案法はモデルの改変や追加学習を必要としない汎用的な手法である．4-shot 設定で 3 種類の英語ベンチマークにおける性能を検証し，g reedy な推論と比較して最大 10 ポイント以上スコアが向上することを示した．また，指示文によらず訂正文の品質が安定することも明らかとなった．" />
 
-<meta name="citation_keywords" content="P7:ポスター" />
+<meta name="citation_keywords" content="P7:質問応答 / 教育応用 / その他の応用" />
 
 <meta name="citation_pdf_url" content="" />
 
@@ -219,39 +213,27 @@
 <div class="card m-3" style="">
   <div class="card-header">
     <h2 class="card-title main-title text-center" style="color: black">
-      SelfCheckGPTはコード生成におけるハルシネーションを検知できるか
+      LLMベース文法誤り訂正における編集の多数決による過剰訂正の抑制
     </h2>
     <h3 class="card-subtitle mb-2 text-muted text-center">
       
-      <a href="papers.html?filter=authors&search=伊東和香&program=all" class="text-primary"
-        >伊東和香</a
+      <a href="papers.html?filter=authors&search=五藤巧&program=all" class="text-primary"
+        >五藤巧</a
       >,
       
-      <a href="papers.html?filter=authors&search=小原有以&program=all" class="text-primary"
-        >小原有以</a
+      <a href="papers.html?filter=authors&search=坂井優介&program=all" class="text-primary"
+        >坂井優介</a
       >,
       
-      <a href="papers.html?filter=authors&search=佐藤美唯&program=all" class="text-primary"
-        >佐藤美唯</a
-      >,
-      
-      <a href="papers.html?filter=authors&search=秋信有花&program=all" class="text-primary"
-        >秋信有花</a
-      >,
-      
-      <a href="papers.html?filter=authors&search=倉林利行&program=all" class="text-primary"
-        >倉林利行</a
-      >,
-      
-      <a href="papers.html?filter=authors&search=倉光君郎&program=all" class="text-primary"
-        >倉光君郎</a
+      <a href="papers.html?filter=authors&search=渡辺太郎&program=all" class="text-primary"
+        >渡辺太郎</a
       >
       
     </h3>
 
     <p class="card-text text-center h5">
       
-      <a href="papers.html?filter=keywords&search=P7:ポスター" class ="badge badge-pill badge-primary">P7:ポスター</a>
+      <a href="papers.html?filter=keywords&search=P7:質問応答 / 教育応用 / その他の応用" class ="badge badge-pill badge-primary">P7:質問応答 / 教育応用 / その他の応用</a>
       
 
       
@@ -259,7 +241,7 @@
    
     <div class="text-center p-3">
       
-      <a class="card-link link-info" target="_blank" href="https://www.anlp.jp/proceedings/annual_meeting/2025/pdf_dir/P7-14.pdf">
+      <a class="card-link link-info" target="_blank" href="https://www.anlp.jp/proceedings/annual_meeting/2026/pdf_dir/P7-14.pdf">
         📝 Paper 
       </a>
       
@@ -313,7 +295,7 @@
         <div class="card-text">
           <div id="abstractExample">
             <span class="font-weight-bold">Abstract:</span>
-            大規模言語モデル(Large Language Model, LLM)によるコード生成は，ソフトウェア開発の効率化に寄与する技術として注目されている．しかし LLM の出力にはハルシネーションを含むことが問題となる．ハルシネーションを含む出力コードはエラーを引き起こす可能性があるため，事前にハルシネーションを検知することが重要である．本研究では，自然言語におけるハルシネーション検知手法である SelfCheckGPT をコード生成に適用する．一般的なコード生成の評価手法である実行ベース評価と，SelfCheckGPT によるコードの評価を比較することで，両者の関連性を確認する．実行ベース評価と比較した結果，特に BLEU，ROUGE-L，EditSim を利用した SelfCheckGPT による評価において，実行ベース評価との関連性が見られた．
+            大規模言語モデルを用いた文法誤り訂正には過剰訂正が頻発する．本研究では，過剰訂正を抑制することを目的として，単一モデルから複数の候補を生成し，編集の多数決に基づいてアンサンブルする推論手法を提案する．なお，提案法はモデルの改変や追加学習を必要としない汎用的な手法である．4-shot 設定で 3 種類の英語ベンチマークにおける性能を検証し，g reedy な推論と比較して最大 10 ポイント以上スコアが向上することを示した．また，指示文によらず訂正文の品質が安定することも明らかとなった．
           </div>
         </div>
       </div>
@@ -321,7 +303,7 @@
   </div>
   
   <div class="tab-pane fade" id="paper" role="tabpanel" aria-labelledby="paper-tab">
-    <embed src="https://www.anlp.jp/proceedings/annual_meeting/2025/pdf_dir/P7-14.pdf" type="application/pdf" width="100%" height="850px">
+    <embed src="https://www.anlp.jp/proceedings/annual_meeting/2026/pdf_dir/P7-14.pdf" type="application/pdf" width="100%" height="850px">
   </div>
   
   
@@ -364,7 +346,7 @@
         <p class="float-left">
           <img src="None" height="45px"
             width="auto" align="center">
-          <span class="lead">NLP2025</span>
+          <span class="lead">NLP2026</span>
         </p>
         <p class="float-right"><a href="#" class="text-dark">Back to Top</a></p>
         <p class="text-center">The title and abstract of the paper are licensed by the author(s) under CC BY 4.0<br>

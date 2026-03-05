@@ -64,28 +64,22 @@
   <script src="https://cdn.jsdelivr.net/npm/pdfjs-dist@2.3.200/build/pdf.min.js"></script>
   <script src="static/js/pdf_render.js"></script>
 
-  <title>NLP2025: 複単語表現検出におけるLLMファインチューニングの有効性</title>
+  <title>NLP2026: 意味的類似度と NLI による候補絞り込みを用いた RAG データベースのレコード間矛盾検知</title>
   
-<meta name="citation_title" content="複単語表現検出におけるLLMファインチューニングの有効性" />
+<meta name="citation_title" content="意味的類似度と NLI による候補絞り込みを用いた RAG データベースのレコード間矛盾検知" />
 
-<meta name="citation_author" content="井手佑翼" />
+<meta name="citation_author" content="中島明" />
 
-<meta name="citation_author" content="JoshuaTanner" />
+<meta name="citation_author" content="田宮寛人" />
 
-<meta name="citation_author" content="AdamNohejl" />
-
-<meta name="citation_author" content="JustinVasselli" />
-
-<meta name="citation_author" content="上垣外英剛" />
-
-<meta name="citation_author" content="渡辺太郎" />
+<meta name="citation_author" content="柿崎和也" />
 
 <meta name="citation_publication_date" content="None" />
 <meta name="citation_conference_title" content="None" />
 <meta name="citation_inbook_title" content="None" />
-<meta name="citation_abstract" content="複単語表現、すなわちイディオム性を持つ単語の系列の検出は、機械翻訳など様々な下流タスクで重要な役割を果たす。本研究では、これまで複単語表現検出で用いられてこなかった大規模言語モデルのファインチューニングについて検証する。比較対象として、先行研究で優れた性能を示したエンコーダベースのシステムの検証も行う。実験の結果、提案手法が先行手法を大きく上回る性能を見せた。一方、提案手法を含む全手法で、再現率の低さが課題であることも明らかになった。また、モデルサイズを考慮した比較の結果から、メモリ効率の観点ではエンコーダベースの手法に利があることを示唆する。" />
+<meta name="citation_abstract" content="Retrieval-Augmented Generation（RAG）は，大規模言語モデル（Large Language Model，LLM）と外部知識を組み合わせた応答生成手法であるが，参照データベースに矛盾が含まれる場合，誤った応答が生成される恐れがある．データベースのレコード間の矛盾判定において，高い文脈理解能力を持つ矛盾検知に LLM を用いることは有望であるが，候補対数の増大に伴うトークン消費が課題となる．本稿では，類似度に基づいて選出された候補ペアに対して，自然言語推論（Natural Language Inference，NLI）モデルを応用した矛盾スコア算出によるフィルタリングを導入することで，検知性能を維持したまま LLMの入出力トークン数を削減する手法を提案する．また，擬似データベースを用いた実験により，ベースライン手法と同等以上の F1 スコアを保ちつつ，総トークン数を 70%未満に削減可能であることを示す．" />
 
-<meta name="citation_keywords" content="Q9:ポスター" />
+<meta name="citation_keywords" content="Q9:その他の応用" />
 
 <meta name="citation_pdf_url" content="" />
 
@@ -219,39 +213,27 @@
 <div class="card m-3" style="">
   <div class="card-header">
     <h2 class="card-title main-title text-center" style="color: black">
-      複単語表現検出におけるLLMファインチューニングの有効性
+      意味的類似度と NLI による候補絞り込みを用いた RAG データベースのレコード間矛盾検知
     </h2>
     <h3 class="card-subtitle mb-2 text-muted text-center">
       
-      <a href="papers.html?filter=authors&search=井手佑翼&program=all" class="text-primary"
-        >井手佑翼</a
+      <a href="papers.html?filter=authors&search=中島明&program=all" class="text-primary"
+        >中島明</a
       >,
       
-      <a href="papers.html?filter=authors&search=JoshuaTanner&program=all" class="text-primary"
-        >JoshuaTanner</a
+      <a href="papers.html?filter=authors&search=田宮寛人&program=all" class="text-primary"
+        >田宮寛人</a
       >,
       
-      <a href="papers.html?filter=authors&search=AdamNohejl&program=all" class="text-primary"
-        >AdamNohejl</a
-      >,
-      
-      <a href="papers.html?filter=authors&search=JustinVasselli&program=all" class="text-primary"
-        >JustinVasselli</a
-      >,
-      
-      <a href="papers.html?filter=authors&search=上垣外英剛&program=all" class="text-primary"
-        >上垣外英剛</a
-      >,
-      
-      <a href="papers.html?filter=authors&search=渡辺太郎&program=all" class="text-primary"
-        >渡辺太郎</a
+      <a href="papers.html?filter=authors&search=柿崎和也&program=all" class="text-primary"
+        >柿崎和也</a
       >
       
     </h3>
 
     <p class="card-text text-center h5">
       
-      <a href="papers.html?filter=keywords&search=Q9:ポスター" class ="badge badge-pill badge-primary">Q9:ポスター</a>
+      <a href="papers.html?filter=keywords&search=Q9:その他の応用" class ="badge badge-pill badge-primary">Q9:その他の応用</a>
       
 
       
@@ -259,7 +241,7 @@
    
     <div class="text-center p-3">
       
-      <a class="card-link link-info" target="_blank" href="https://www.anlp.jp/proceedings/annual_meeting/2025/pdf_dir/Q9-11.pdf">
+      <a class="card-link link-info" target="_blank" href="https://www.anlp.jp/proceedings/annual_meeting/2026/pdf_dir/Q9-11.pdf">
         📝 Paper 
       </a>
       
@@ -313,7 +295,7 @@
         <div class="card-text">
           <div id="abstractExample">
             <span class="font-weight-bold">Abstract:</span>
-            複単語表現、すなわちイディオム性を持つ単語の系列の検出は、機械翻訳など様々な下流タスクで重要な役割を果たす。本研究では、これまで複単語表現検出で用いられてこなかった大規模言語モデルのファインチューニングについて検証する。比較対象として、先行研究で優れた性能を示したエンコーダベースのシステムの検証も行う。実験の結果、提案手法が先行手法を大きく上回る性能を見せた。一方、提案手法を含む全手法で、再現率の低さが課題であることも明らかになった。また、モデルサイズを考慮した比較の結果から、メモリ効率の観点ではエンコーダベースの手法に利があることを示唆する。
+            Retrieval-Augmented Generation（RAG）は，大規模言語モデル（Large Language Model，LLM）と外部知識を組み合わせた応答生成手法であるが，参照データベースに矛盾が含まれる場合，誤った応答が生成される恐れがある．データベースのレコード間の矛盾判定において，高い文脈理解能力を持つ矛盾検知に LLM を用いることは有望であるが，候補対数の増大に伴うトークン消費が課題となる．本稿では，類似度に基づいて選出された候補ペアに対して，自然言語推論（Natural Language Inference，NLI）モデルを応用した矛盾スコア算出によるフィルタリングを導入することで，検知性能を維持したまま LLMの入出力トークン数を削減する手法を提案する．また，擬似データベースを用いた実験により，ベースライン手法と同等以上の F1 スコアを保ちつつ，総トークン数を 70%未満に削減可能であることを示す．
           </div>
         </div>
       </div>
@@ -321,7 +303,7 @@
   </div>
   
   <div class="tab-pane fade" id="paper" role="tabpanel" aria-labelledby="paper-tab">
-    <embed src="https://www.anlp.jp/proceedings/annual_meeting/2025/pdf_dir/Q9-11.pdf" type="application/pdf" width="100%" height="850px">
+    <embed src="https://www.anlp.jp/proceedings/annual_meeting/2026/pdf_dir/Q9-11.pdf" type="application/pdf" width="100%" height="850px">
   </div>
   
   
@@ -364,7 +346,7 @@
         <p class="float-left">
           <img src="None" height="45px"
             width="auto" align="center">
-          <span class="lead">NLP2025</span>
+          <span class="lead">NLP2026</span>
         </p>
         <p class="float-right"><a href="#" class="text-dark">Back to Top</a></p>
         <p class="text-center">The title and abstract of the paper are licensed by the author(s) under CC BY 4.0<br>

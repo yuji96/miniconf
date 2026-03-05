@@ -64,18 +64,24 @@
   <script src="https://cdn.jsdelivr.net/npm/pdfjs-dist@2.3.200/build/pdf.min.js"></script>
   <script src="static/js/pdf_render.js"></script>
 
-  <title>NLP2025: 英文リーダビリティ指標FKGLはほぼ平均文中音節数である</title>
+  <title>NLP2026: Lost in the Files：長コンテキストLLM による複数専門文書からの網羅的情報抽出とその限界</title>
   
-<meta name="citation_title" content="英文リーダビリティ指標FKGLはほぼ平均文中音節数である" />
+<meta name="citation_title" content="Lost in the Files：長コンテキストLLM による複数専門文書からの網羅的情報抽出とその限界" />
 
-<meta name="citation_author" content="江原遥" />
+<meta name="citation_author" content="佐藤正太" />
+
+<meta name="citation_author" content="古川慧" />
+
+<meta name="citation_author" content="生駒和也" />
+
+<meta name="citation_author" content="園田亜斗夢" />
 
 <meta name="citation_publication_date" content="None" />
 <meta name="citation_conference_title" content="None" />
 <meta name="citation_inbook_title" content="None" />
-<meta name="citation_abstract" content="Flesch-Kincaid 式は，英語の可読性指標として古典的だが代表的であり，近年の大規模言語モデルの出力評価においても用いられている．これらの式は単語あたりの平均文長と音節あたりの平均単語長の線形和であり，この線形和には数十年の長期の使用に耐える，人間の認知に基づく何らかの理論的要因の存在が示唆される．本研究では，これらの式の理論的解析を行いこの理論的要因を明らかにした．先行研究とは異なり，これらの式が「1 文あたりの平均音節数」として解釈できることを示した．学年が上がるにつれて語彙の範囲は拡大する可能性があるが，音節の範囲は学年や年齢に関係なく一定に保たれる．これが，長期に使われ続ける要因であろう．評価実験では，BNC を用いて本理論枠組みの妥当性を確認し，他言語版 FKGL の提案も行う．" />
+<meta name="citation_abstract" content="RAG は外部知識の参照において有効であるが，文書群全体からの網羅的な情報抽出においては構造的な課題を抱えている．本研究では，RAG の代替アプローチとして，長コンテキスト対応マルチモーダルLLM への PDF 直接入力に着目し，その情報抽出の網羅性を体系的に評価した．複数モデルを用いた比較実験の結果，単一文書では高い抽出精度を示す一方，複数文書の同時処理においては情報の欠落や混同が生じやすくなること，および PDF の構造的理解においてモデルごとの特性が顕著に現れることが明らかになった．" />
 
-<meta name="citation_keywords" content="B3:心理言語学・認知モデリング(1)" />
+<meta name="citation_keywords" content="B3:NLPモデルの評価・安全性・信頼性 / NLPモデルの解釈可能性・分析" />
 
 <meta name="citation_pdf_url" content="" />
 
@@ -209,19 +215,31 @@
 <div class="card m-3" style="">
   <div class="card-header">
     <h2 class="card-title main-title text-center" style="color: black">
-      英文リーダビリティ指標FKGLはほぼ平均文中音節数である
+      Lost in the Files：長コンテキストLLM による複数専門文書からの網羅的情報抽出とその限界
     </h2>
     <h3 class="card-subtitle mb-2 text-muted text-center">
       
-      <a href="papers.html?filter=authors&search=江原遥&program=all" class="text-primary"
-        >江原遥</a
+      <a href="papers.html?filter=authors&search=佐藤正太&program=all" class="text-primary"
+        >佐藤正太</a
+      >,
+      
+      <a href="papers.html?filter=authors&search=古川慧&program=all" class="text-primary"
+        >古川慧</a
+      >,
+      
+      <a href="papers.html?filter=authors&search=生駒和也&program=all" class="text-primary"
+        >生駒和也</a
+      >,
+      
+      <a href="papers.html?filter=authors&search=園田亜斗夢&program=all" class="text-primary"
+        >園田亜斗夢</a
       >
       
     </h3>
 
     <p class="card-text text-center h5">
       
-      <a href="papers.html?filter=keywords&search=B3:心理言語学・認知モデリング(1)" class ="badge badge-pill badge-primary">B3:心理言語学・認知モデリング(1)</a>
+      <a href="papers.html?filter=keywords&search=B3:NLPモデルの評価・安全性・信頼性 / NLPモデルの解釈可能性・分析" class ="badge badge-pill badge-primary">B3:NLPモデルの評価・安全性・信頼性 / NLPモデルの解釈可能性・分析</a>
       
 
       
@@ -229,7 +247,7 @@
    
     <div class="text-center p-3">
       
-      <a class="card-link link-info" target="_blank" href="https://www.anlp.jp/proceedings/annual_meeting/2025/pdf_dir/B3-4.pdf">
+      <a class="card-link link-info" target="_blank" href="https://www.anlp.jp/proceedings/annual_meeting/2026/pdf_dir/B3-4.pdf">
         📝 Paper 
       </a>
       
@@ -283,7 +301,7 @@
         <div class="card-text">
           <div id="abstractExample">
             <span class="font-weight-bold">Abstract:</span>
-            Flesch-Kincaid 式は，英語の可読性指標として古典的だが代表的であり，近年の大規模言語モデルの出力評価においても用いられている．これらの式は単語あたりの平均文長と音節あたりの平均単語長の線形和であり，この線形和には数十年の長期の使用に耐える，人間の認知に基づく何らかの理論的要因の存在が示唆される．本研究では，これらの式の理論的解析を行いこの理論的要因を明らかにした．先行研究とは異なり，これらの式が「1 文あたりの平均音節数」として解釈できることを示した．学年が上がるにつれて語彙の範囲は拡大する可能性があるが，音節の範囲は学年や年齢に関係なく一定に保たれる．これが，長期に使われ続ける要因であろう．評価実験では，BNC を用いて本理論枠組みの妥当性を確認し，他言語版 FKGL の提案も行う．
+            RAG は外部知識の参照において有効であるが，文書群全体からの網羅的な情報抽出においては構造的な課題を抱えている．本研究では，RAG の代替アプローチとして，長コンテキスト対応マルチモーダルLLM への PDF 直接入力に着目し，その情報抽出の網羅性を体系的に評価した．複数モデルを用いた比較実験の結果，単一文書では高い抽出精度を示す一方，複数文書の同時処理においては情報の欠落や混同が生じやすくなること，および PDF の構造的理解においてモデルごとの特性が顕著に現れることが明らかになった．
           </div>
         </div>
       </div>
@@ -291,7 +309,7 @@
   </div>
   
   <div class="tab-pane fade" id="paper" role="tabpanel" aria-labelledby="paper-tab">
-    <embed src="https://www.anlp.jp/proceedings/annual_meeting/2025/pdf_dir/B3-4.pdf" type="application/pdf" width="100%" height="850px">
+    <embed src="https://www.anlp.jp/proceedings/annual_meeting/2026/pdf_dir/B3-4.pdf" type="application/pdf" width="100%" height="850px">
   </div>
   
   
@@ -334,7 +352,7 @@
         <p class="float-left">
           <img src="None" height="45px"
             width="auto" align="center">
-          <span class="lead">NLP2025</span>
+          <span class="lead">NLP2026</span>
         </p>
         <p class="float-right"><a href="#" class="text-dark">Back to Top</a></p>
         <p class="text-center">The title and abstract of the paper are licensed by the author(s) under CC BY 4.0<br>

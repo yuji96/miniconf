@@ -64,26 +64,18 @@
   <script src="https://cdn.jsdelivr.net/npm/pdfjs-dist@2.3.200/build/pdf.min.js"></script>
   <script src="static/js/pdf_render.js"></script>
 
-  <title>NLP2025: 自然言語における冪則と統語構造の関係の再考</title>
+  <title>NLP2026: 情報スペクトル理論に基づく大規模言語モデルの生成挙動解析</title>
   
-<meta name="citation_title" content="自然言語における冪則と統語構造の関係の再考" />
+<meta name="citation_title" content="情報スペクトル理論に基づく大規模言語モデルの生成挙動解析" />
 
-<meta name="citation_author" content="中石海" />
-
-<meta name="citation_author" content="吉田遼" />
-
-<meta name="citation_author" content="梶川康平" />
-
-<meta name="citation_author" content="福島孝治" />
-
-<meta name="citation_author" content="大関洋平" />
+<meta name="citation_author" content="太刀岡勇気" />
 
 <meta name="citation_publication_date" content="None" />
 <meta name="citation_conference_title" content="None" />
 <meta name="citation_inbook_title" content="None" />
-<meta name="citation_abstract" content="自然言語の系列において，要素間の相関は距離について冪的に減衰することが知られている．これは，系列中のある要素を変更すると，その影響がどれだけ離れた要素にも及び得ることを意味する．先行研究[1]は，このような特徴的現象を，系列の背後にある階層的な統語構造と結びつけて説明している．しかし，この説明は統語構造に関するいくつかの仮定に依拠しており，それらの仮定が実際に自然言語で成り立つかどうかは検証されていない．そこで，本研究は，ツリーバンクを用いて統語構造の統計的性質を調べ，先行研究の仮定がいずれも成り立たないことを明らかにする．" />
+<meta name="citation_abstract" content="本稿では，大規模言語モデル(LLM)を非定常な一般情報源として捉え，情報スペクトル理論に基づく生成挙動解析を提案する．生成系列ごとに系列レベル符号化レートを定義し，その分布を経験的情報スペクトルとして評価することで，正誤差が平均的指標では捉えにくく，高 surprisal 側の tail に顕著に現れることを示す．さらに生成系列を固定した教師強制に基づく情報利得スペクトルを導入し，追加情報(択一選択肢・RAG・知識グラフ)の効果が系列ごとに不均一であり，有効に作用する系列を識別できることを確認した．また温度や条件付与が生成分布の尾部と性能へ与える影響を，分布指標と性能指標の両面から統一的に整理する枠組みを与える．" />
 
-<meta name="citation_keywords" content="B1:計算・形式言語学(1)" />
+<meta name="citation_keywords" content="B1:NLPモデルの評価・安全性・信頼性" />
 
 <meta name="citation_pdf_url" content="" />
 
@@ -217,35 +209,19 @@
 <div class="card m-3" style="">
   <div class="card-header">
     <h2 class="card-title main-title text-center" style="color: black">
-      自然言語における冪則と統語構造の関係の再考
+      情報スペクトル理論に基づく大規模言語モデルの生成挙動解析
     </h2>
     <h3 class="card-subtitle mb-2 text-muted text-center">
       
-      <a href="papers.html?filter=authors&search=中石海&program=all" class="text-primary"
-        >中石海</a
-      >,
-      
-      <a href="papers.html?filter=authors&search=吉田遼&program=all" class="text-primary"
-        >吉田遼</a
-      >,
-      
-      <a href="papers.html?filter=authors&search=梶川康平&program=all" class="text-primary"
-        >梶川康平</a
-      >,
-      
-      <a href="papers.html?filter=authors&search=福島孝治&program=all" class="text-primary"
-        >福島孝治</a
-      >,
-      
-      <a href="papers.html?filter=authors&search=大関洋平&program=all" class="text-primary"
-        >大関洋平</a
+      <a href="papers.html?filter=authors&search=太刀岡勇気&program=all" class="text-primary"
+        >太刀岡勇気</a
       >
       
     </h3>
 
     <p class="card-text text-center h5">
       
-      <a href="papers.html?filter=keywords&search=B1:計算・形式言語学(1)" class ="badge badge-pill badge-primary">B1:計算・形式言語学(1)</a>
+      <a href="papers.html?filter=keywords&search=B1:NLPモデルの評価・安全性・信頼性" class ="badge badge-pill badge-primary">B1:NLPモデルの評価・安全性・信頼性</a>
       
 
       
@@ -253,7 +229,7 @@
    
     <div class="text-center p-3">
       
-      <a class="card-link link-info" target="_blank" href="https://www.anlp.jp/proceedings/annual_meeting/2025/pdf_dir/B1-1.pdf">
+      <a class="card-link link-info" target="_blank" href="https://www.anlp.jp/proceedings/annual_meeting/2026/pdf_dir/B1-1.pdf">
         📝 Paper 
       </a>
       
@@ -307,7 +283,7 @@
         <div class="card-text">
           <div id="abstractExample">
             <span class="font-weight-bold">Abstract:</span>
-            自然言語の系列において，要素間の相関は距離について冪的に減衰することが知られている．これは，系列中のある要素を変更すると，その影響がどれだけ離れた要素にも及び得ることを意味する．先行研究[1]は，このような特徴的現象を，系列の背後にある階層的な統語構造と結びつけて説明している．しかし，この説明は統語構造に関するいくつかの仮定に依拠しており，それらの仮定が実際に自然言語で成り立つかどうかは検証されていない．そこで，本研究は，ツリーバンクを用いて統語構造の統計的性質を調べ，先行研究の仮定がいずれも成り立たないことを明らかにする．
+            本稿では，大規模言語モデル(LLM)を非定常な一般情報源として捉え，情報スペクトル理論に基づく生成挙動解析を提案する．生成系列ごとに系列レベル符号化レートを定義し，その分布を経験的情報スペクトルとして評価することで，正誤差が平均的指標では捉えにくく，高 surprisal 側の tail に顕著に現れることを示す．さらに生成系列を固定した教師強制に基づく情報利得スペクトルを導入し，追加情報(択一選択肢・RAG・知識グラフ)の効果が系列ごとに不均一であり，有効に作用する系列を識別できることを確認した．また温度や条件付与が生成分布の尾部と性能へ与える影響を，分布指標と性能指標の両面から統一的に整理する枠組みを与える．
           </div>
         </div>
       </div>
@@ -315,7 +291,7 @@
   </div>
   
   <div class="tab-pane fade" id="paper" role="tabpanel" aria-labelledby="paper-tab">
-    <embed src="https://www.anlp.jp/proceedings/annual_meeting/2025/pdf_dir/B1-1.pdf" type="application/pdf" width="100%" height="850px">
+    <embed src="https://www.anlp.jp/proceedings/annual_meeting/2026/pdf_dir/B1-1.pdf" type="application/pdf" width="100%" height="850px">
   </div>
   
   
@@ -358,7 +334,7 @@
         <p class="float-left">
           <img src="None" height="45px"
             width="auto" align="center">
-          <span class="lead">NLP2025</span>
+          <span class="lead">NLP2026</span>
         </p>
         <p class="float-right"><a href="#" class="text-dark">Back to Top</a></p>
         <p class="text-center">The title and abstract of the paper are licensed by the author(s) under CC BY 4.0<br>

@@ -64,20 +64,28 @@
   <script src="https://cdn.jsdelivr.net/npm/pdfjs-dist@2.3.200/build/pdf.min.js"></script>
   <script src="static/js/pdf_render.js"></script>
 
-  <title>NLP2025: 学術情報推薦におけるグラフ構造の有効性検証</title>
+  <title>NLP2026: 技術文書に対する事象ラベル生成と付与の検討</title>
   
-<meta name="citation_title" content="学術情報推薦におけるグラフ構造の有効性検証" />
+<meta name="citation_title" content="技術文書に対する事象ラベル生成と付与の検討" />
 
-<meta name="citation_author" content="長尾浩良" />
+<meta name="citation_author" content="深草理貴" />
 
-<meta name="citation_author" content="桂井麻里衣" />
+<meta name="citation_author" content="大八木悠聖" />
+
+<meta name="citation_author" content="喜多俊介" />
+
+<meta name="citation_author" content="森辰則" />
+
+<meta name="citation_author" content="小野寺理恵" />
+
+<meta name="citation_author" content="伊藤拓海" />
 
 <meta name="citation_publication_date" content="None" />
 <meta name="citation_conference_title" content="None" />
 <meta name="citation_inbook_title" content="None" />
-<meta name="citation_abstract" content="研究者への情報推薦は論文調査や関連研究者の探索に有用である．個々の研究者の業績一覧が入手可能な場合，そのコンテンツ情報を各人の専門興味のモデル化に用いることができる．一方，共著者情報が適切に整備されている場合，研究者や論文をノードとしたグラフ構造に基づくモデル化手法を採用できる．近年はこのようなグラフベース手法が注目を集めているが，コンテンツ情報のみでのモデル化手法と同一条件下で比較した例は未だ報告されていない．本論文では，学術情報推薦をグラフ内のリンク予測問題とみなし，これら二種類の手法を比較する．実験方法を情報推薦の観点から再設計した結果，コンテンツベース手法がグラフベース手法より高い性能を示した．また，リンク予測の観点での推薦性能と推薦結果の意外性はトレードオフの関係にあることが示唆された．" />
+<meta name="citation_abstract" content="品質規程の整備では，規程文書をプロセス単位で参照・監査できる形に再編する必要がある一方，業務文書は簡潔，規程文書は条件や例外を含む詳細記述になりやすく，粒度差のため単純な文字列突合が難しい．本研究は，文が表す状況を述語項構造に基づく JSON 形式の「構造ラベル」として表現し，述語概念と格付き項概念を付与して照合する枠組みを示す．複合名詞は内包事象を入れ子で保持し，焦点で解釈のぶれを抑える．特許請求項と明細を模擬データとして，一般化の有無による照合の挙動を評価した．" />
 
-<meta name="citation_keywords" content="P8:ポスター" />
+<meta name="citation_keywords" content="P8:形態素・構文解析 / 意味論・意味解析 / 文脈解析" />
 
 <meta name="citation_pdf_url" content="" />
 
@@ -211,23 +219,39 @@
 <div class="card m-3" style="">
   <div class="card-header">
     <h2 class="card-title main-title text-center" style="color: black">
-      学術情報推薦におけるグラフ構造の有効性検証
+      技術文書に対する事象ラベル生成と付与の検討
     </h2>
     <h3 class="card-subtitle mb-2 text-muted text-center">
       
-      <a href="papers.html?filter=authors&search=長尾浩良&program=all" class="text-primary"
-        >長尾浩良</a
+      <a href="papers.html?filter=authors&search=深草理貴&program=all" class="text-primary"
+        >深草理貴</a
       >,
       
-      <a href="papers.html?filter=authors&search=桂井麻里衣&program=all" class="text-primary"
-        >桂井麻里衣</a
+      <a href="papers.html?filter=authors&search=大八木悠聖&program=all" class="text-primary"
+        >大八木悠聖</a
+      >,
+      
+      <a href="papers.html?filter=authors&search=喜多俊介&program=all" class="text-primary"
+        >喜多俊介</a
+      >,
+      
+      <a href="papers.html?filter=authors&search=森辰則&program=all" class="text-primary"
+        >森辰則</a
+      >,
+      
+      <a href="papers.html?filter=authors&search=小野寺理恵&program=all" class="text-primary"
+        >小野寺理恵</a
+      >,
+      
+      <a href="papers.html?filter=authors&search=伊藤拓海&program=all" class="text-primary"
+        >伊藤拓海</a
       >
       
     </h3>
 
     <p class="card-text text-center h5">
       
-      <a href="papers.html?filter=keywords&search=P8:ポスター" class ="badge badge-pill badge-primary">P8:ポスター</a>
+      <a href="papers.html?filter=keywords&search=P8:形態素・構文解析 / 意味論・意味解析 / 文脈解析" class ="badge badge-pill badge-primary">P8:形態素・構文解析 / 意味論・意味解析 / 文脈解析</a>
       
 
       
@@ -235,7 +259,7 @@
    
     <div class="text-center p-3">
       
-      <a class="card-link link-info" target="_blank" href="https://www.anlp.jp/proceedings/annual_meeting/2025/pdf_dir/P8-22.pdf">
+      <a class="card-link link-info" target="_blank" href="https://www.anlp.jp/proceedings/annual_meeting/2026/pdf_dir/P8-22.pdf">
         📝 Paper 
       </a>
       
@@ -289,7 +313,7 @@
         <div class="card-text">
           <div id="abstractExample">
             <span class="font-weight-bold">Abstract:</span>
-            研究者への情報推薦は論文調査や関連研究者の探索に有用である．個々の研究者の業績一覧が入手可能な場合，そのコンテンツ情報を各人の専門興味のモデル化に用いることができる．一方，共著者情報が適切に整備されている場合，研究者や論文をノードとしたグラフ構造に基づくモデル化手法を採用できる．近年はこのようなグラフベース手法が注目を集めているが，コンテンツ情報のみでのモデル化手法と同一条件下で比較した例は未だ報告されていない．本論文では，学術情報推薦をグラフ内のリンク予測問題とみなし，これら二種類の手法を比較する．実験方法を情報推薦の観点から再設計した結果，コンテンツベース手法がグラフベース手法より高い性能を示した．また，リンク予測の観点での推薦性能と推薦結果の意外性はトレードオフの関係にあることが示唆された．
+            品質規程の整備では，規程文書をプロセス単位で参照・監査できる形に再編する必要がある一方，業務文書は簡潔，規程文書は条件や例外を含む詳細記述になりやすく，粒度差のため単純な文字列突合が難しい．本研究は，文が表す状況を述語項構造に基づく JSON 形式の「構造ラベル」として表現し，述語概念と格付き項概念を付与して照合する枠組みを示す．複合名詞は内包事象を入れ子で保持し，焦点で解釈のぶれを抑える．特許請求項と明細を模擬データとして，一般化の有無による照合の挙動を評価した．
           </div>
         </div>
       </div>
@@ -297,7 +321,7 @@
   </div>
   
   <div class="tab-pane fade" id="paper" role="tabpanel" aria-labelledby="paper-tab">
-    <embed src="https://www.anlp.jp/proceedings/annual_meeting/2025/pdf_dir/P8-22.pdf" type="application/pdf" width="100%" height="850px">
+    <embed src="https://www.anlp.jp/proceedings/annual_meeting/2026/pdf_dir/P8-22.pdf" type="application/pdf" width="100%" height="850px">
   </div>
   
   
@@ -340,7 +364,7 @@
         <p class="float-left">
           <img src="None" height="45px"
             width="auto" align="center">
-          <span class="lead">NLP2025</span>
+          <span class="lead">NLP2026</span>
         </p>
         <p class="float-right"><a href="#" class="text-dark">Back to Top</a></p>
         <p class="text-center">The title and abstract of the paper are licensed by the author(s) under CC BY 4.0<br>

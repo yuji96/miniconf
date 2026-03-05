@@ -64,22 +64,26 @@
   <script src="https://cdn.jsdelivr.net/npm/pdfjs-dist@2.3.200/build/pdf.min.js"></script>
   <script src="static/js/pdf_render.js"></script>
 
-  <title>NLP2025: 人間と LLM の &#34;面白さ&#34; の感性は一致するのか？</title>
+  <title>NLP2026: Few-Shot学習を用いた未見の設問に対する手書き答案の採点</title>
   
-<meta name="citation_title" content="人間と LLM の &#34;面白さ&#34; の感性は一致するのか？" />
+<meta name="citation_title" content="Few-Shot学習を用いた未見の設問に対する手書き答案の採点" />
 
-<meta name="citation_author" content="坂部立" />
+<meta name="citation_author" content="齊藤隆浩" />
 
-<meta name="citation_author" content="金輝燦" />
+<meta name="citation_author" content="HungTuanNguyen" />
 
-<meta name="citation_author" content="小町守" />
+<meta name="citation_author" content="古宮嘉那子" />
+
+<meta name="citation_author" content="石岡恒憲" />
+
+<meta name="citation_author" content="中川正樹" />
 
 <meta name="citation_publication_date" content="None" />
 <meta name="citation_conference_title" content="None" />
 <meta name="citation_inbook_title" content="None" />
-<meta name="citation_abstract" content="計算機によるユーモアの研究は，対話システムなどの自然言語処理ツールの高度化に不可欠とされている一方で，大規模言語モデル(Large LanguageModel; LLM)のユーモア生成や評価に関してはまだ十分に検討されていない．本研究では，図 1 のように大喜利を題材として新たに高品質な日本語の大喜利データセットを構築し，LLM の大喜利生成能力と大喜利評価能力を検証した．" />
+<meta name="citation_abstract" content="本稿では Few-Shot 学習を用い、学習時に未見の問題に対する日本語手書き答案の採点について検証した。手書き答案を人手及び自動のいずれかで書き起こしした解答データを、LLM に模範解答とのペアとして与えて Few-Shot 学習を行い、類似度ベースで採点を行わせた。Few-Shot 事例データには採点対象とは異なる設問に対する解答ペアを使用した。多くの場合で採点性能が Zero-Shot 学習時よりも向上し、Zero-Shot 学習と Fine-Tuning を行った場合の中間の性能を示すことが分かった。また、ノイズを含む自動書き起こし答案の採点には、Fine-Tuning を行った場合と比較して Few-Shot 学習の性能は不十分であることが分かった。さらに、条件を変えていくつかの実験を行い、複数の知見が得られた。" />
 
-<meta name="citation_keywords" content="P7:ポスター" />
+<meta name="citation_keywords" content="P7:質問応答 / 教育応用 / その他の応用" />
 
 <meta name="citation_pdf_url" content="" />
 
@@ -213,27 +217,35 @@
 <div class="card m-3" style="">
   <div class="card-header">
     <h2 class="card-title main-title text-center" style="color: black">
-      人間と LLM の &#34;面白さ&#34; の感性は一致するのか？
+      Few-Shot学習を用いた未見の設問に対する手書き答案の採点
     </h2>
     <h3 class="card-subtitle mb-2 text-muted text-center">
       
-      <a href="papers.html?filter=authors&search=坂部立&program=all" class="text-primary"
-        >坂部立</a
+      <a href="papers.html?filter=authors&search=齊藤隆浩&program=all" class="text-primary"
+        >齊藤隆浩</a
       >,
       
-      <a href="papers.html?filter=authors&search=金輝燦&program=all" class="text-primary"
-        >金輝燦</a
+      <a href="papers.html?filter=authors&search=HungTuanNguyen&program=all" class="text-primary"
+        >HungTuanNguyen</a
       >,
       
-      <a href="papers.html?filter=authors&search=小町守&program=all" class="text-primary"
-        >小町守</a
+      <a href="papers.html?filter=authors&search=古宮嘉那子&program=all" class="text-primary"
+        >古宮嘉那子</a
+      >,
+      
+      <a href="papers.html?filter=authors&search=石岡恒憲&program=all" class="text-primary"
+        >石岡恒憲</a
+      >,
+      
+      <a href="papers.html?filter=authors&search=中川正樹&program=all" class="text-primary"
+        >中川正樹</a
       >
       
     </h3>
 
     <p class="card-text text-center h5">
       
-      <a href="papers.html?filter=keywords&search=P7:ポスター" class ="badge badge-pill badge-primary">P7:ポスター</a>
+      <a href="papers.html?filter=keywords&search=P7:質問応答 / 教育応用 / その他の応用" class ="badge badge-pill badge-primary">P7:質問応答 / 教育応用 / その他の応用</a>
       
 
       
@@ -241,7 +253,7 @@
    
     <div class="text-center p-3">
       
-      <a class="card-link link-info" target="_blank" href="https://www.anlp.jp/proceedings/annual_meeting/2025/pdf_dir/P7-9.pdf">
+      <a class="card-link link-info" target="_blank" href="https://www.anlp.jp/proceedings/annual_meeting/2026/pdf_dir/P7-9.pdf">
         📝 Paper 
       </a>
       
@@ -295,7 +307,7 @@
         <div class="card-text">
           <div id="abstractExample">
             <span class="font-weight-bold">Abstract:</span>
-            計算機によるユーモアの研究は，対話システムなどの自然言語処理ツールの高度化に不可欠とされている一方で，大規模言語モデル(Large LanguageModel; LLM)のユーモア生成や評価に関してはまだ十分に検討されていない．本研究では，図 1 のように大喜利を題材として新たに高品質な日本語の大喜利データセットを構築し，LLM の大喜利生成能力と大喜利評価能力を検証した．
+            本稿では Few-Shot 学習を用い、学習時に未見の問題に対する日本語手書き答案の採点について検証した。手書き答案を人手及び自動のいずれかで書き起こしした解答データを、LLM に模範解答とのペアとして与えて Few-Shot 学習を行い、類似度ベースで採点を行わせた。Few-Shot 事例データには採点対象とは異なる設問に対する解答ペアを使用した。多くの場合で採点性能が Zero-Shot 学習時よりも向上し、Zero-Shot 学習と Fine-Tuning を行った場合の中間の性能を示すことが分かった。また、ノイズを含む自動書き起こし答案の採点には、Fine-Tuning を行った場合と比較して Few-Shot 学習の性能は不十分であることが分かった。さらに、条件を変えていくつかの実験を行い、複数の知見が得られた。
           </div>
         </div>
       </div>
@@ -303,7 +315,7 @@
   </div>
   
   <div class="tab-pane fade" id="paper" role="tabpanel" aria-labelledby="paper-tab">
-    <embed src="https://www.anlp.jp/proceedings/annual_meeting/2025/pdf_dir/P7-9.pdf" type="application/pdf" width="100%" height="850px">
+    <embed src="https://www.anlp.jp/proceedings/annual_meeting/2026/pdf_dir/P7-9.pdf" type="application/pdf" width="100%" height="850px">
   </div>
   
   
@@ -346,7 +358,7 @@
         <p class="float-left">
           <img src="None" height="45px"
             width="auto" align="center">
-          <span class="lead">NLP2025</span>
+          <span class="lead">NLP2026</span>
         </p>
         <p class="float-right"><a href="#" class="text-dark">Back to Top</a></p>
         <p class="text-center">The title and abstract of the paper are licensed by the author(s) under CC BY 4.0<br>

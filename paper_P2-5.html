@@ -64,20 +64,20 @@
   <script src="https://cdn.jsdelivr.net/npm/pdfjs-dist@2.3.200/build/pdf.min.js"></script>
   <script src="static/js/pdf_render.js"></script>
 
-  <title>NLP2025: Beyond the Induction Circuit: A Mechanistic Prototype for Out-of-domain In-context Learning</title>
+  <title>NLP2026: ラベルノイズに頑健な Dual Encoder 学習: 大規模マルチラベル分類における自己推定型損失重み付け</title>
   
-<meta name="citation_title" content="Beyond the Induction Circuit: A Mechanistic Prototype for Out-of-domain In-context Learning" />
+<meta name="citation_title" content="ラベルノイズに頑健な Dual Encoder 学習: 大規模マルチラベル分類における自己推定型損失重み付け" />
 
-<meta name="citation_author" content="趙羽風" />
+<meta name="citation_author" content="牧野拓哉" />
 
-<meta name="citation_author" content="井之上直也" />
+<meta name="citation_author" content="ChunpengMa" />
 
 <meta name="citation_publication_date" content="None" />
 <meta name="citation_conference_title" content="None" />
 <meta name="citation_inbook_title" content="None" />
-<meta name="citation_abstract" content="In-context Learning (ICL) is a promising few-shot learn-ing paradigm with unclear mechanisms. Existing explana-tions heavily rely on Induction Heads, which fail to accountfor out-of-domain ICL, where query labels are absent indemonstrations. To address this, we model ICL as attributeresolution, where queries are mixtures of some attributes,and ICL identiﬁes and resolves relevant attributes for pre-dictions. In this paper, we propose a mechanistic prototypeusing toy models trained on synthetic data, and observe:(1) even 1-layer Transformers achieve non-trivial accuracy,with limited beneﬁt from additional demonstrations,(2)scaling models eﬀectively improve accuracy, and (3) in-ference operations can be decomposed into label spaceidentiﬁcation and generalized induction, warranting fur-ther exploration." />
+<meta name="citation_abstract" content="大規模マルチラベル分類においてラベルノイズは不可避な課題である．既存の Generalized CrossEntropy は，損失の大きさに応じてノイズを判定するため学習が難しい事例をノイズと誤認して学習への影響を低下させ，網羅性を損なう．本研究は意味的類似度に基づく自己推定型損失重み付け手法を提案する．提案手法はラベルの学習中のモデルによる事例とラベルの意味的類似性に応じて，事例–ラベル単位で重みを適応的に与える．具体的には，意味的類似性が低い正例への学習を抑制すると同時に，意味的に類似した負例への学習の寄与を緩和することで潜在的な正例を保護する．人工ノイズ環境下の実験において，提案手法は既存手法と比較して高頻度ラベルの精度(P@1)および頻度バイアスを除去した精度(PSP@1)を改善した．" />
 
-<meta name="citation_keywords" content="P2:ポスター" />
+<meta name="citation_keywords" content="P2:情報検索・テキストマイニング / 評判・感情分析・スタイル分析" />
 
 <meta name="citation_pdf_url" content="" />
 
@@ -211,23 +211,23 @@
 <div class="card m-3" style="">
   <div class="card-header">
     <h2 class="card-title main-title text-center" style="color: black">
-      Beyond the Induction Circuit: A Mechanistic Prototype for Out-of-domain In-context Learning
+      ラベルノイズに頑健な Dual Encoder 学習: 大規模マルチラベル分類における自己推定型損失重み付け
     </h2>
     <h3 class="card-subtitle mb-2 text-muted text-center">
       
-      <a href="papers.html?filter=authors&search=趙羽風&program=all" class="text-primary"
-        >趙羽風</a
+      <a href="papers.html?filter=authors&search=牧野拓哉&program=all" class="text-primary"
+        >牧野拓哉</a
       >,
       
-      <a href="papers.html?filter=authors&search=井之上直也&program=all" class="text-primary"
-        >井之上直也</a
+      <a href="papers.html?filter=authors&search=ChunpengMa&program=all" class="text-primary"
+        >ChunpengMa</a
       >
       
     </h3>
 
     <p class="card-text text-center h5">
       
-      <a href="papers.html?filter=keywords&search=P2:ポスター" class ="badge badge-pill badge-primary">P2:ポスター</a>
+      <a href="papers.html?filter=keywords&search=P2:情報検索・テキストマイニング / 評判・感情分析・スタイル分析" class ="badge badge-pill badge-primary">P2:情報検索・テキストマイニング / 評判・感情分析・スタイル分析</a>
       
 
       
@@ -235,7 +235,7 @@
    
     <div class="text-center p-3">
       
-      <a class="card-link link-info" target="_blank" href="https://www.anlp.jp/proceedings/annual_meeting/2025/pdf_dir/P2-5.pdf">
+      <a class="card-link link-info" target="_blank" href="https://www.anlp.jp/proceedings/annual_meeting/2026/pdf_dir/P2-5.pdf">
         📝 Paper 
       </a>
       
@@ -289,7 +289,7 @@
         <div class="card-text">
           <div id="abstractExample">
             <span class="font-weight-bold">Abstract:</span>
-            In-context Learning (ICL) is a promising few-shot learn-ing paradigm with unclear mechanisms. Existing explana-tions heavily rely on Induction Heads, which fail to accountfor out-of-domain ICL, where query labels are absent indemonstrations. To address this, we model ICL as attributeresolution, where queries are mixtures of some attributes,and ICL identiﬁes and resolves relevant attributes for pre-dictions. In this paper, we propose a mechanistic prototypeusing toy models trained on synthetic data, and observe:(1) even 1-layer Transformers achieve non-trivial accuracy,with limited beneﬁt from additional demonstrations,(2)scaling models eﬀectively improve accuracy, and (3) in-ference operations can be decomposed into label spaceidentiﬁcation and generalized induction, warranting fur-ther exploration.
+            大規模マルチラベル分類においてラベルノイズは不可避な課題である．既存の Generalized CrossEntropy は，損失の大きさに応じてノイズを判定するため学習が難しい事例をノイズと誤認して学習への影響を低下させ，網羅性を損なう．本研究は意味的類似度に基づく自己推定型損失重み付け手法を提案する．提案手法はラベルの学習中のモデルによる事例とラベルの意味的類似性に応じて，事例–ラベル単位で重みを適応的に与える．具体的には，意味的類似性が低い正例への学習を抑制すると同時に，意味的に類似した負例への学習の寄与を緩和することで潜在的な正例を保護する．人工ノイズ環境下の実験において，提案手法は既存手法と比較して高頻度ラベルの精度(P@1)および頻度バイアスを除去した精度(PSP@1)を改善した．
           </div>
         </div>
       </div>
@@ -297,7 +297,7 @@
   </div>
   
   <div class="tab-pane fade" id="paper" role="tabpanel" aria-labelledby="paper-tab">
-    <embed src="https://www.anlp.jp/proceedings/annual_meeting/2025/pdf_dir/P2-5.pdf" type="application/pdf" width="100%" height="850px">
+    <embed src="https://www.anlp.jp/proceedings/annual_meeting/2026/pdf_dir/P2-5.pdf" type="application/pdf" width="100%" height="850px">
   </div>
   
   
@@ -340,7 +340,7 @@
         <p class="float-left">
           <img src="None" height="45px"
             width="auto" align="center">
-          <span class="lead">NLP2025</span>
+          <span class="lead">NLP2026</span>
         </p>
         <p class="float-right"><a href="#" class="text-dark">Back to Top</a></p>
         <p class="text-center">The title and abstract of the paper are licensed by the author(s) under CC BY 4.0<br>

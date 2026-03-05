@@ -64,22 +64,20 @@
   <script src="https://cdn.jsdelivr.net/npm/pdfjs-dist@2.3.200/build/pdf.min.js"></script>
   <script src="static/js/pdf_render.js"></script>
 
-  <title>NLP2025: 特定ドメイン向けローカル検索用のサジェスト提示に向けた分析</title>
+  <title>NLP2026: Cross-Lingual Knowledge Transfer for Arabic Summarization via Model Merging and Portable Reward Tuning</title>
   
-<meta name="citation_title" content="特定ドメイン向けローカル検索用のサジェスト提示に向けた分析" />
+<meta name="citation_title" content="Cross-Lingual Knowledge Transfer for Arabic Summarization via Model Merging and Portable Reward Tuning" />
 
-<meta name="citation_author" content="鈴木琴音" />
+<meta name="citation_author" content="◊AhmadAlmoustafa" />
 
-<meta name="citation_author" content="岩本和真" />
-
-<meta name="citation_author" content="安藤一秋" />
+<meta name="citation_author" content="松崎拓也" />
 
 <meta name="citation_publication_date" content="None" />
 <meta name="citation_conference_title" content="None" />
 <meta name="citation_inbook_title" content="None" />
-<meta name="citation_abstract" content="検索システムの支援の 1 つであるサジェスト機能は，膨大な検索ログを利用して実装されているため，ローカル文書を対象とした検索システムに転用できない．この課題を解決するために，本研究では，検索対象文書内の単語類似性に基づくサジェスト機能について検討する．本稿では，事前分析として，Wikipedia データで学習された Word2Vec モデルと，検索対象文書集合の特定ドメインデータで追加学習した Word2Vec モデルを用いて，特定ドメインデータの追加学習による単語ベクトルの分布や類似性の変化を定量・定性的に分析する．分析の結果，追加学習したモデルは，特定ドメインにおける語彙の関係性を捉えられており，検索対象文書のドメイン特性を活かしたサジェスト機能の実現可能性を確認した．" />
+<meta name="citation_abstract" content="Arabic summarization remains challenging due to lim-ited supervised data and the cost of ﬁne-tuning large lan-guage models (LLMs). We study model merging as away to transfer English summarization behavior to Arabicwithout retraining large models. Starting from a multilin-gual decoder-only LLM, we train two parameter-eﬃcientsummarization adapters: one on Arabic news and one onEnglish news, and apply a sparse, conﬂict-aware merge thatselectively combines adapter updates in targeted attentioncomponents. On an Arabic news summarization test set,the merged adapter outperforms an Arabic-only adapter onROUGE, BLEU, BERTScore, and LLM-as-a-judge proto-col. To scale within the same model family, we also mergeArabic and English reward adapters and use the merged re-ward to steer a larger frozen model under Portable RewardTuning (PRT) at inference time, yielding consistent gainsover using an Arabic-only reward." />
 
-<meta name="citation_keywords" content="P8:ポスター" />
+<meta name="citation_keywords" content="P8:形態素・構文解析 / 意味論・意味解析 / 文脈解析" />
 
 <meta name="citation_pdf_url" content="" />
 
@@ -213,27 +211,23 @@
 <div class="card m-3" style="">
   <div class="card-header">
     <h2 class="card-title main-title text-center" style="color: black">
-      特定ドメイン向けローカル検索用のサジェスト提示に向けた分析
+      Cross-Lingual Knowledge Transfer for Arabic Summarization via Model Merging and Portable Reward Tuning
     </h2>
     <h3 class="card-subtitle mb-2 text-muted text-center">
       
-      <a href="papers.html?filter=authors&search=鈴木琴音&program=all" class="text-primary"
-        >鈴木琴音</a
+      <a href="papers.html?filter=authors&search=◊AhmadAlmoustafa&program=all" class="text-primary"
+        >◊AhmadAlmoustafa</a
       >,
       
-      <a href="papers.html?filter=authors&search=岩本和真&program=all" class="text-primary"
-        >岩本和真</a
-      >,
-      
-      <a href="papers.html?filter=authors&search=安藤一秋&program=all" class="text-primary"
-        >安藤一秋</a
+      <a href="papers.html?filter=authors&search=松崎拓也&program=all" class="text-primary"
+        >松崎拓也</a
       >
       
     </h3>
 
     <p class="card-text text-center h5">
       
-      <a href="papers.html?filter=keywords&search=P8:ポスター" class ="badge badge-pill badge-primary">P8:ポスター</a>
+      <a href="papers.html?filter=keywords&search=P8:形態素・構文解析 / 意味論・意味解析 / 文脈解析" class ="badge badge-pill badge-primary">P8:形態素・構文解析 / 意味論・意味解析 / 文脈解析</a>
       
 
       
@@ -241,7 +235,7 @@
    
     <div class="text-center p-3">
       
-      <a class="card-link link-info" target="_blank" href="https://www.anlp.jp/proceedings/annual_meeting/2025/pdf_dir/P8-9.pdf">
+      <a class="card-link link-info" target="_blank" href="https://www.anlp.jp/proceedings/annual_meeting/2026/pdf_dir/P8-9.pdf">
         📝 Paper 
       </a>
       
@@ -295,7 +289,7 @@
         <div class="card-text">
           <div id="abstractExample">
             <span class="font-weight-bold">Abstract:</span>
-            検索システムの支援の 1 つであるサジェスト機能は，膨大な検索ログを利用して実装されているため，ローカル文書を対象とした検索システムに転用できない．この課題を解決するために，本研究では，検索対象文書内の単語類似性に基づくサジェスト機能について検討する．本稿では，事前分析として，Wikipedia データで学習された Word2Vec モデルと，検索対象文書集合の特定ドメインデータで追加学習した Word2Vec モデルを用いて，特定ドメインデータの追加学習による単語ベクトルの分布や類似性の変化を定量・定性的に分析する．分析の結果，追加学習したモデルは，特定ドメインにおける語彙の関係性を捉えられており，検索対象文書のドメイン特性を活かしたサジェスト機能の実現可能性を確認した．
+            Arabic summarization remains challenging due to lim-ited supervised data and the cost of ﬁne-tuning large lan-guage models (LLMs). We study model merging as away to transfer English summarization behavior to Arabicwithout retraining large models. Starting from a multilin-gual decoder-only LLM, we train two parameter-eﬃcientsummarization adapters: one on Arabic news and one onEnglish news, and apply a sparse, conﬂict-aware merge thatselectively combines adapter updates in targeted attentioncomponents. On an Arabic news summarization test set,the merged adapter outperforms an Arabic-only adapter onROUGE, BLEU, BERTScore, and LLM-as-a-judge proto-col. To scale within the same model family, we also mergeArabic and English reward adapters and use the merged re-ward to steer a larger frozen model under Portable RewardTuning (PRT) at inference time, yielding consistent gainsover using an Arabic-only reward.
           </div>
         </div>
       </div>
@@ -303,7 +297,7 @@
   </div>
   
   <div class="tab-pane fade" id="paper" role="tabpanel" aria-labelledby="paper-tab">
-    <embed src="https://www.anlp.jp/proceedings/annual_meeting/2025/pdf_dir/P8-9.pdf" type="application/pdf" width="100%" height="850px">
+    <embed src="https://www.anlp.jp/proceedings/annual_meeting/2026/pdf_dir/P8-9.pdf" type="application/pdf" width="100%" height="850px">
   </div>
   
   
@@ -346,7 +340,7 @@
         <p class="float-left">
           <img src="None" height="45px"
             width="auto" align="center">
-          <span class="lead">NLP2025</span>
+          <span class="lead">NLP2026</span>
         </p>
         <p class="float-right"><a href="#" class="text-dark">Back to Top</a></p>
         <p class="text-center">The title and abstract of the paper are licensed by the author(s) under CC BY 4.0<br>

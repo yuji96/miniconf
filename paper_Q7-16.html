@@ -64,20 +64,24 @@
   <script src="https://cdn.jsdelivr.net/npm/pdfjs-dist@2.3.200/build/pdf.min.js"></script>
   <script src="static/js/pdf_render.js"></script>
 
-  <title>NLP2025: LLM埋め込みと遷移確率予測を利用した実店舗内顧客行動シミュレーション</title>
+  <title>NLP2026: 認知デコーディング：眼球運動による大規模言語モデルの読みやすさ制御</title>
   
-<meta name="citation_title" content="LLM埋め込みと遷移確率予測を利用した実店舗内顧客行動シミュレーション" />
+<meta name="citation_title" content="認知デコーディング：眼球運動による大規模言語モデルの読みやすさ制御" />
 
-<meta name="citation_author" content="宮本遼人" />
+<meta name="citation_author" content="原田宥都" />
 
-<meta name="citation_author" content="春日瑛" />
+<meta name="citation_author" content="染谷大河" />
+
+<meta name="citation_author" content="吉田遼" />
+
+<meta name="citation_author" content="大関洋平" />
 
 <meta name="citation_publication_date" content="None" />
 <meta name="citation_conference_title" content="None" />
 <meta name="citation_inbook_title" content="None" />
-<meta name="citation_abstract" content="実店舗での顧客行動シミュレーションは物理的な制約やコストから難しく，WEB のような A/B テストが不可能なため需要が高い．本研究では顧客の店内行動をシミュレートするフレームワーク LISSを提案する．店内をエリア区分し，隣接する棚や商品，滞在時間を LLM で埋め込み化することで，新商品の追加やレイアウト変更が購入率や滞在時間に与える影響を推定する．手法は過去の店舗行動ログを用いて学習し，変更時の行動変化を推論する．EZOHUB TOKYO における実データを用いて商品追加や配置変更の影響，情報拡張による推論安定化，柔軟な条件の設定が可能であることを確認した．実運用向けの推論アプリケーションも開発した．" />
+<meta name="citation_abstract" content="大規模言語モデルは高いベンチマーク性能や専門的で正確な回答を実現している一方で，その生成文が読者にとって必ずしも読みやすく，処理しやすいとは限らない．本研究は読解過程で生じる認知的な負荷に着目し，読み時間の推定値を読者側の処理コストの近似として用いることで，より読みやすい文章の生成を試みた．本稿では視線情報を用いた二つの介入手法を提案した．複数候補から読み時間コストの小さい出力を選び直す方法と，逐次生成中に次トークン候補の選択確率を読み時間に基づいて補正する方法である．実験では要約生成タスクを読みやすさと要約品質の指標によって評価し，さらに人間の読み時間との一致を評価した．" />
 
-<meta name="citation_keywords" content="Q7:ポスター" />
+<meta name="citation_keywords" content="Q7:言語資源・アノテーションと評価 / 心理言語学・認知モデリング" />
 
 <meta name="citation_pdf_url" content="" />
 
@@ -211,23 +215,31 @@
 <div class="card m-3" style="">
   <div class="card-header">
     <h2 class="card-title main-title text-center" style="color: black">
-      LLM埋め込みと遷移確率予測を利用した実店舗内顧客行動シミュレーション
+      認知デコーディング：眼球運動による大規模言語モデルの読みやすさ制御
     </h2>
     <h3 class="card-subtitle mb-2 text-muted text-center">
       
-      <a href="papers.html?filter=authors&search=宮本遼人&program=all" class="text-primary"
-        >宮本遼人</a
+      <a href="papers.html?filter=authors&search=原田宥都&program=all" class="text-primary"
+        >原田宥都</a
       >,
       
-      <a href="papers.html?filter=authors&search=春日瑛&program=all" class="text-primary"
-        >春日瑛</a
+      <a href="papers.html?filter=authors&search=染谷大河&program=all" class="text-primary"
+        >染谷大河</a
+      >,
+      
+      <a href="papers.html?filter=authors&search=吉田遼&program=all" class="text-primary"
+        >吉田遼</a
+      >,
+      
+      <a href="papers.html?filter=authors&search=大関洋平&program=all" class="text-primary"
+        >大関洋平</a
       >
       
     </h3>
 
     <p class="card-text text-center h5">
       
-      <a href="papers.html?filter=keywords&search=Q7:ポスター" class ="badge badge-pill badge-primary">Q7:ポスター</a>
+      <a href="papers.html?filter=keywords&search=Q7:言語資源・アノテーションと評価 / 心理言語学・認知モデリング" class ="badge badge-pill badge-primary">Q7:言語資源・アノテーションと評価 / 心理言語学・認知モデリング</a>
       
 
       
@@ -235,7 +247,7 @@
    
     <div class="text-center p-3">
       
-      <a class="card-link link-info" target="_blank" href="https://www.anlp.jp/proceedings/annual_meeting/2025/pdf_dir/Q7-16.pdf">
+      <a class="card-link link-info" target="_blank" href="https://www.anlp.jp/proceedings/annual_meeting/2026/pdf_dir/Q7-16.pdf">
         📝 Paper 
       </a>
       
@@ -289,7 +301,7 @@
         <div class="card-text">
           <div id="abstractExample">
             <span class="font-weight-bold">Abstract:</span>
-            実店舗での顧客行動シミュレーションは物理的な制約やコストから難しく，WEB のような A/B テストが不可能なため需要が高い．本研究では顧客の店内行動をシミュレートするフレームワーク LISSを提案する．店内をエリア区分し，隣接する棚や商品，滞在時間を LLM で埋め込み化することで，新商品の追加やレイアウト変更が購入率や滞在時間に与える影響を推定する．手法は過去の店舗行動ログを用いて学習し，変更時の行動変化を推論する．EZOHUB TOKYO における実データを用いて商品追加や配置変更の影響，情報拡張による推論安定化，柔軟な条件の設定が可能であることを確認した．実運用向けの推論アプリケーションも開発した．
+            大規模言語モデルは高いベンチマーク性能や専門的で正確な回答を実現している一方で，その生成文が読者にとって必ずしも読みやすく，処理しやすいとは限らない．本研究は読解過程で生じる認知的な負荷に着目し，読み時間の推定値を読者側の処理コストの近似として用いることで，より読みやすい文章の生成を試みた．本稿では視線情報を用いた二つの介入手法を提案した．複数候補から読み時間コストの小さい出力を選び直す方法と，逐次生成中に次トークン候補の選択確率を読み時間に基づいて補正する方法である．実験では要約生成タスクを読みやすさと要約品質の指標によって評価し，さらに人間の読み時間との一致を評価した．
           </div>
         </div>
       </div>
@@ -297,7 +309,7 @@
   </div>
   
   <div class="tab-pane fade" id="paper" role="tabpanel" aria-labelledby="paper-tab">
-    <embed src="https://www.anlp.jp/proceedings/annual_meeting/2025/pdf_dir/Q7-16.pdf" type="application/pdf" width="100%" height="850px">
+    <embed src="https://www.anlp.jp/proceedings/annual_meeting/2026/pdf_dir/Q7-16.pdf" type="application/pdf" width="100%" height="850px">
   </div>
   
   
@@ -340,7 +352,7 @@
         <p class="float-left">
           <img src="None" height="45px"
             width="auto" align="center">
-          <span class="lead">NLP2025</span>
+          <span class="lead">NLP2026</span>
         </p>
         <p class="float-right"><a href="#" class="text-dark">Back to Top</a></p>
         <p class="text-center">The title and abstract of the paper are licensed by the author(s) under CC BY 4.0<br>

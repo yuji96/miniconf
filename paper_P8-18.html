@@ -64,28 +64,22 @@
   <script src="https://cdn.jsdelivr.net/npm/pdfjs-dist@2.3.200/build/pdf.min.js"></script>
   <script src="static/js/pdf_render.js"></script>
 
-  <title>NLP2025: 論文を対象とした RAG システムにおける質問分類に基づく動的検索</title>
+  <title>NLP2026: 文章執筆支援のための項省略の可否判断予測モデル</title>
   
-<meta name="citation_title" content="論文を対象とした RAG システムにおける質問分類に基づく動的検索" />
+<meta name="citation_title" content="文章執筆支援のための項省略の可否判断予測モデル" />
 
-<meta name="citation_author" content="大平颯人" />
+<meta name="citation_author" content="久保田智天" />
 
-<meta name="citation_author" content="佐藤郁子" />
+<meta name="citation_author" content="松林優一郎" />
 
-<meta name="citation_author" content="真鍋章" />
-
-<meta name="citation_author" content="谷本恒野" />
-
-<meta name="citation_author" content="原慎大" />
-
-<meta name="citation_author" content="小町守" />
+<meta name="citation_author" content="乾健太郎" />
 
 <meta name="citation_publication_date" content="None" />
 <meta name="citation_conference_title" content="None" />
 <meta name="citation_inbook_title" content="None" />
-<meta name="citation_abstract" content="本研究では，企業内で蓄積される論文形式の技報の効率的な活用を目的とし，RAG（Retrieval-Augmented Generation）システムにおける質問分類に基づく動的検索手法を提案する．技報は，技術的な知見や情報を記録した重要な資産である一方，必要な情報を迅速かつ正確に検索することが課題となっている．本手法では技報に関する QA データに質問分類のラベルを付与したデータセットを構築し，質問分類に応じて検索戦略を動的に調整することで，応答精度の向上と応答速度の維持を実現する．" />
+<meta name="citation_abstract" content="本研究では，文章執筆における「省略された主語や目的語(項)を表出すべきか」の可否判断の支援を目的に，読み手の項省略可否判断を予測するモデルを構築する．項省略の可否判断予測タスクの設計とデータセットの構築を行い，追加学習を実施したLLM の予測性能を評価する．実験の結果，モデルは一定の判断能力を持つ一方で，適切な位置への指摘や正確な格の使い分けに関しては改善の余地があることが明らかになった．" />
 
-<meta name="citation_keywords" content="P8:ポスター" />
+<meta name="citation_keywords" content="P8:形態素・構文解析 / 意味論・意味解析 / 文脈解析" />
 
 <meta name="citation_pdf_url" content="" />
 
@@ -219,39 +213,27 @@
 <div class="card m-3" style="">
   <div class="card-header">
     <h2 class="card-title main-title text-center" style="color: black">
-      論文を対象とした RAG システムにおける質問分類に基づく動的検索
+      文章執筆支援のための項省略の可否判断予測モデル
     </h2>
     <h3 class="card-subtitle mb-2 text-muted text-center">
       
-      <a href="papers.html?filter=authors&search=大平颯人&program=all" class="text-primary"
-        >大平颯人</a
+      <a href="papers.html?filter=authors&search=久保田智天&program=all" class="text-primary"
+        >久保田智天</a
       >,
       
-      <a href="papers.html?filter=authors&search=佐藤郁子&program=all" class="text-primary"
-        >佐藤郁子</a
+      <a href="papers.html?filter=authors&search=松林優一郎&program=all" class="text-primary"
+        >松林優一郎</a
       >,
       
-      <a href="papers.html?filter=authors&search=真鍋章&program=all" class="text-primary"
-        >真鍋章</a
-      >,
-      
-      <a href="papers.html?filter=authors&search=谷本恒野&program=all" class="text-primary"
-        >谷本恒野</a
-      >,
-      
-      <a href="papers.html?filter=authors&search=原慎大&program=all" class="text-primary"
-        >原慎大</a
-      >,
-      
-      <a href="papers.html?filter=authors&search=小町守&program=all" class="text-primary"
-        >小町守</a
+      <a href="papers.html?filter=authors&search=乾健太郎&program=all" class="text-primary"
+        >乾健太郎</a
       >
       
     </h3>
 
     <p class="card-text text-center h5">
       
-      <a href="papers.html?filter=keywords&search=P8:ポスター" class ="badge badge-pill badge-primary">P8:ポスター</a>
+      <a href="papers.html?filter=keywords&search=P8:形態素・構文解析 / 意味論・意味解析 / 文脈解析" class ="badge badge-pill badge-primary">P8:形態素・構文解析 / 意味論・意味解析 / 文脈解析</a>
       
 
       
@@ -259,7 +241,7 @@
    
     <div class="text-center p-3">
       
-      <a class="card-link link-info" target="_blank" href="https://www.anlp.jp/proceedings/annual_meeting/2025/pdf_dir/P8-18.pdf">
+      <a class="card-link link-info" target="_blank" href="https://www.anlp.jp/proceedings/annual_meeting/2026/pdf_dir/P8-18.pdf">
         📝 Paper 
       </a>
       
@@ -313,7 +295,7 @@
         <div class="card-text">
           <div id="abstractExample">
             <span class="font-weight-bold">Abstract:</span>
-            本研究では，企業内で蓄積される論文形式の技報の効率的な活用を目的とし，RAG（Retrieval-Augmented Generation）システムにおける質問分類に基づく動的検索手法を提案する．技報は，技術的な知見や情報を記録した重要な資産である一方，必要な情報を迅速かつ正確に検索することが課題となっている．本手法では技報に関する QA データに質問分類のラベルを付与したデータセットを構築し，質問分類に応じて検索戦略を動的に調整することで，応答精度の向上と応答速度の維持を実現する．
+            本研究では，文章執筆における「省略された主語や目的語(項)を表出すべきか」の可否判断の支援を目的に，読み手の項省略可否判断を予測するモデルを構築する．項省略の可否判断予測タスクの設計とデータセットの構築を行い，追加学習を実施したLLM の予測性能を評価する．実験の結果，モデルは一定の判断能力を持つ一方で，適切な位置への指摘や正確な格の使い分けに関しては改善の余地があることが明らかになった．
           </div>
         </div>
       </div>
@@ -321,7 +303,7 @@
   </div>
   
   <div class="tab-pane fade" id="paper" role="tabpanel" aria-labelledby="paper-tab">
-    <embed src="https://www.anlp.jp/proceedings/annual_meeting/2025/pdf_dir/P8-18.pdf" type="application/pdf" width="100%" height="850px">
+    <embed src="https://www.anlp.jp/proceedings/annual_meeting/2026/pdf_dir/P8-18.pdf" type="application/pdf" width="100%" height="850px">
   </div>
   
   
@@ -364,7 +346,7 @@
         <p class="float-left">
           <img src="None" height="45px"
             width="auto" align="center">
-          <span class="lead">NLP2025</span>
+          <span class="lead">NLP2026</span>
         </p>
         <p class="float-right"><a href="#" class="text-dark">Back to Top</a></p>
         <p class="text-center">The title and abstract of the paper are licensed by the author(s) under CC BY 4.0<br>

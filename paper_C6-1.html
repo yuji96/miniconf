@@ -64,20 +64,18 @@
   <script src="https://cdn.jsdelivr.net/npm/pdfjs-dist@2.3.200/build/pdf.min.js"></script>
   <script src="static/js/pdf_render.js"></script>
 
-  <title>NLP2025: Evaluating the Impact of Continual Pre-Training on Japanese Essay Scoring Tasks</title>
+  <title>NLP2026: ファインチューニング技術を用いた名寄せタスクの実装検証</title>
   
-<meta name="citation_title" content="Evaluating the Impact of Continual Pre-Training on Japanese Essay Scoring Tasks" />
+<meta name="citation_title" content="ファインチューニング技術を用いた名寄せタスクの実装検証" />
 
-<meta name="citation_author" content="BoagoOkgetheng" />
-
-<meta name="citation_author" content="KoichiTakeuchi" />
+<meta name="citation_author" content="張龍傑" />
 
 <meta name="citation_publication_date" content="None" />
 <meta name="citation_conference_title" content="None" />
 <meta name="citation_inbook_title" content="None" />
-<meta name="citation_abstract" content="This paper investigates whether continually pre-trainingLarge Language Models on domain-speciﬁc reference textscan improve performance in Japanese Automated EssayScoring tasks. We use a dataset covering multiple es-say prompts related to four thematic areas― Globaliza-tion, Natural Science, Critical Thinking, and East AsianEconomics. Each essay is scored on a ﬁve-point scalefor Comprehensiveness. Models undergo two conﬁgura-tions:(1) direct ﬁne-tuning on the scored essays, and (2)an additional continual pre-training phase using domain-speciﬁc texts prior to ﬁne-tuning. Our ﬁndings indicatethat most models beneﬁt from this extra training, as ev-idenced by improvements in evaluation metrics such asthe F1 Score, Quadratic Weighted Kappa, Accuracy, andRoot Mean Squared Error. These results underscore theimportance of domain adaptation for more accurate essayscoring." />
+<meta name="citation_abstract" content="本研究は、大規模顧客名辞書を対象とした名寄せ（エンティティマッチング）タスクにおいて、BERT系モデルのファインチューニング手法を比較し、性能と計算コストのバランスを検証したものである。従来広く用いられてきた多クラス分類モデル（BertForSequenceClassiﬁcation）は、分類クラス数が非常に多い場合に精度低下が生じることが知られている。そこで本研究では、分類モデルによる直接予測に加え、Sentence-BERT を用いたベクトル類似度ベースの名寄せ手法を検討した。顧客名辞書から同一ラベルのペア（Positive Pair）と、ランダムまたは類似度上位から抽出した異なるラベルのペア（Negative Pair）を作成し、複数のファインチューニング方式を比較した。特に、類似度が高いがラベルが異なる Hard Negative Pair を用いたSentence-BERT は、全手法の中で最高精度を達成した。一方、分類モデルを用いたベクトル類似度方式は精度はやや劣るものの、学習コストを大幅に削減できることが確認された。" />
 
-<meta name="citation_keywords" content="C6:教育応用" />
+<meta name="citation_keywords" content="C6:知識獲得・情報抽出 / 機械学習" />
 
 <meta name="citation_pdf_url" content="" />
 
@@ -211,23 +209,19 @@
 <div class="card m-3" style="">
   <div class="card-header">
     <h2 class="card-title main-title text-center" style="color: black">
-      Evaluating the Impact of Continual Pre-Training on Japanese Essay Scoring Tasks
+      ファインチューニング技術を用いた名寄せタスクの実装検証
     </h2>
     <h3 class="card-subtitle mb-2 text-muted text-center">
       
-      <a href="papers.html?filter=authors&search=BoagoOkgetheng&program=all" class="text-primary"
-        >BoagoOkgetheng</a
-      >,
-      
-      <a href="papers.html?filter=authors&search=KoichiTakeuchi&program=all" class="text-primary"
-        >KoichiTakeuchi</a
+      <a href="papers.html?filter=authors&search=張龍傑&program=all" class="text-primary"
+        >張龍傑</a
       >
       
     </h3>
 
     <p class="card-text text-center h5">
       
-      <a href="papers.html?filter=keywords&search=C6:教育応用" class ="badge badge-pill badge-primary">C6:教育応用</a>
+      <a href="papers.html?filter=keywords&search=C6:知識獲得・情報抽出 / 機械学習" class ="badge badge-pill badge-primary">C6:知識獲得・情報抽出 / 機械学習</a>
       
 
       
@@ -235,7 +229,7 @@
    
     <div class="text-center p-3">
       
-      <a class="card-link link-info" target="_blank" href="https://www.anlp.jp/proceedings/annual_meeting/2025/pdf_dir/C6-1.pdf">
+      <a class="card-link link-info" target="_blank" href="https://www.anlp.jp/proceedings/annual_meeting/2026/pdf_dir/C6-1.pdf">
         📝 Paper 
       </a>
       
@@ -289,7 +283,7 @@
         <div class="card-text">
           <div id="abstractExample">
             <span class="font-weight-bold">Abstract:</span>
-            This paper investigates whether continually pre-trainingLarge Language Models on domain-speciﬁc reference textscan improve performance in Japanese Automated EssayScoring tasks. We use a dataset covering multiple es-say prompts related to four thematic areas― Globaliza-tion, Natural Science, Critical Thinking, and East AsianEconomics. Each essay is scored on a ﬁve-point scalefor Comprehensiveness. Models undergo two conﬁgura-tions:(1) direct ﬁne-tuning on the scored essays, and (2)an additional continual pre-training phase using domain-speciﬁc texts prior to ﬁne-tuning. Our ﬁndings indicatethat most models beneﬁt from this extra training, as ev-idenced by improvements in evaluation metrics such asthe F1 Score, Quadratic Weighted Kappa, Accuracy, andRoot Mean Squared Error. These results underscore theimportance of domain adaptation for more accurate essayscoring.
+            本研究は、大規模顧客名辞書を対象とした名寄せ（エンティティマッチング）タスクにおいて、BERT系モデルのファインチューニング手法を比較し、性能と計算コストのバランスを検証したものである。従来広く用いられてきた多クラス分類モデル（BertForSequenceClassiﬁcation）は、分類クラス数が非常に多い場合に精度低下が生じることが知られている。そこで本研究では、分類モデルによる直接予測に加え、Sentence-BERT を用いたベクトル類似度ベースの名寄せ手法を検討した。顧客名辞書から同一ラベルのペア（Positive Pair）と、ランダムまたは類似度上位から抽出した異なるラベルのペア（Negative Pair）を作成し、複数のファインチューニング方式を比較した。特に、類似度が高いがラベルが異なる Hard Negative Pair を用いたSentence-BERT は、全手法の中で最高精度を達成した。一方、分類モデルを用いたベクトル類似度方式は精度はやや劣るものの、学習コストを大幅に削減できることが確認された。
           </div>
         </div>
       </div>
@@ -297,7 +291,7 @@
   </div>
   
   <div class="tab-pane fade" id="paper" role="tabpanel" aria-labelledby="paper-tab">
-    <embed src="https://www.anlp.jp/proceedings/annual_meeting/2025/pdf_dir/C6-1.pdf" type="application/pdf" width="100%" height="850px">
+    <embed src="https://www.anlp.jp/proceedings/annual_meeting/2026/pdf_dir/C6-1.pdf" type="application/pdf" width="100%" height="850px">
   </div>
   
   
@@ -340,7 +334,7 @@
         <p class="float-left">
           <img src="None" height="45px"
             width="auto" align="center">
-          <span class="lead">NLP2025</span>
+          <span class="lead">NLP2026</span>
         </p>
         <p class="float-right"><a href="#" class="text-dark">Back to Top</a></p>
         <p class="text-center">The title and abstract of the paper are licensed by the author(s) under CC BY 4.0<br>

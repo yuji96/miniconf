@@ -64,24 +64,30 @@
   <script src="https://cdn.jsdelivr.net/npm/pdfjs-dist@2.3.200/build/pdf.min.js"></script>
   <script src="static/js/pdf_render.js"></script>
 
-  <title>NLP2025: 対話履歴の LLM 埋め込みを用いた音声合成のスタイル制御</title>
+  <title>NLP2026: LLMを用いた音声対話による接客訓練・半構造化インタビュー</title>
   
-<meta name="citation_title" content="対話履歴の LLM 埋め込みを用いた音声合成のスタイル制御" />
+<meta name="citation_title" content="LLMを用いた音声対話による接客訓練・半構造化インタビュー" />
 
-<meta name="citation_author" content="小島淳嗣" />
+<meta name="citation_author" content="YifanMa" />
 
-<meta name="citation_author" content="藤田雄介" />
+<meta name="citation_author" content="花一傑" />
 
-<meta name="citation_author" content="水本智也" />
+<meta name="citation_author" content="高橋空大" />
 
-<meta name="citation_author" content="吉川克正" />
+<meta name="citation_author" content="長谷川遼" />
+
+<meta name="citation_author" content="土田陸斗" />
+
+<meta name="citation_author" content="園田哲也" />
+
+<meta name="citation_author" content="宇津呂武仁" />
 
 <meta name="citation_publication_date" content="None" />
 <meta name="citation_conference_title" content="None" />
 <meta name="citation_inbook_title" content="None" />
-<meta name="citation_abstract" content="対話履歴に基づき、合成音声のスタイルを制御する手法を検討する。対話履歴を考慮するため、提案モデルは、大規模言語モデルによって得られた対話履歴の埋め込みに基づき音声を合成する。実験では、Emotional Speech Database を用いて擬似対話履歴付き音声データセットを作成し、モデルを学習した。実音声と合成音声の発話スタイルの類似度を 5段階で主観評価し、提案モデルに対話履歴を入力せずに音声を合成する手法と性能を比較した。その結果、提案手法は 3.1 ± 0.18、比較手法は 2.3 ± 0.19 となり、対話履歴に基づく発話スタイル制御の有効性が示された。" />
+<meta name="citation_abstract" content="本研究では，状態遷移モデルと大規模言語モデル（LLM）を用いたテキストベースの接客訓練および半構造化インタビューシステムを拡張し，より現実的かつ実践的な訓練環境の提供を目的とする。従来のシステムは，構造化された段階的指導と，AI による柔軟な応答生成を可能にし，効率的なスキル習得を支援してきた。一方で，対話がテキストに限定されているため，実際の接客場面で生じる心理的緊張感やストレスを十分に再現できないという課題があった。この課題を解決するため，本研究では自動音声認識（ASR）および音声合成（TTS）を訓練フレームワークに統合し，ユーザとシステムの間で音声ベースの対話を行う構成とした。これにより，実環境に近いストレス下での訓練を可能とし，接客スキル習得におけるリアリティおよび訓練効果の向上を実現する。" />
 
-<meta name="citation_keywords" content="P5:ポスター" />
+<meta name="citation_keywords" content="P5:対話 / 質問応答" />
 
 <meta name="citation_pdf_url" content="" />
 
@@ -215,31 +221,43 @@
 <div class="card m-3" style="">
   <div class="card-header">
     <h2 class="card-title main-title text-center" style="color: black">
-      対話履歴の LLM 埋め込みを用いた音声合成のスタイル制御
+      LLMを用いた音声対話による接客訓練・半構造化インタビュー
     </h2>
     <h3 class="card-subtitle mb-2 text-muted text-center">
       
-      <a href="papers.html?filter=authors&search=小島淳嗣&program=all" class="text-primary"
-        >小島淳嗣</a
+      <a href="papers.html?filter=authors&search=YifanMa&program=all" class="text-primary"
+        >YifanMa</a
       >,
       
-      <a href="papers.html?filter=authors&search=藤田雄介&program=all" class="text-primary"
-        >藤田雄介</a
+      <a href="papers.html?filter=authors&search=花一傑&program=all" class="text-primary"
+        >花一傑</a
       >,
       
-      <a href="papers.html?filter=authors&search=水本智也&program=all" class="text-primary"
-        >水本智也</a
+      <a href="papers.html?filter=authors&search=高橋空大&program=all" class="text-primary"
+        >高橋空大</a
       >,
       
-      <a href="papers.html?filter=authors&search=吉川克正&program=all" class="text-primary"
-        >吉川克正</a
+      <a href="papers.html?filter=authors&search=長谷川遼&program=all" class="text-primary"
+        >長谷川遼</a
+      >,
+      
+      <a href="papers.html?filter=authors&search=土田陸斗&program=all" class="text-primary"
+        >土田陸斗</a
+      >,
+      
+      <a href="papers.html?filter=authors&search=園田哲也&program=all" class="text-primary"
+        >園田哲也</a
+      >,
+      
+      <a href="papers.html?filter=authors&search=宇津呂武仁&program=all" class="text-primary"
+        >宇津呂武仁</a
       >
       
     </h3>
 
     <p class="card-text text-center h5">
       
-      <a href="papers.html?filter=keywords&search=P5:ポスター" class ="badge badge-pill badge-primary">P5:ポスター</a>
+      <a href="papers.html?filter=keywords&search=P5:対話 / 質問応答" class ="badge badge-pill badge-primary">P5:対話 / 質問応答</a>
       
 
       
@@ -247,7 +265,7 @@
    
     <div class="text-center p-3">
       
-      <a class="card-link link-info" target="_blank" href="https://www.anlp.jp/proceedings/annual_meeting/2025/pdf_dir/P5-18.pdf">
+      <a class="card-link link-info" target="_blank" href="https://www.anlp.jp/proceedings/annual_meeting/2026/pdf_dir/P5-18.pdf">
         📝 Paper 
       </a>
       
@@ -301,7 +319,7 @@
         <div class="card-text">
           <div id="abstractExample">
             <span class="font-weight-bold">Abstract:</span>
-            対話履歴に基づき、合成音声のスタイルを制御する手法を検討する。対話履歴を考慮するため、提案モデルは、大規模言語モデルによって得られた対話履歴の埋め込みに基づき音声を合成する。実験では、Emotional Speech Database を用いて擬似対話履歴付き音声データセットを作成し、モデルを学習した。実音声と合成音声の発話スタイルの類似度を 5段階で主観評価し、提案モデルに対話履歴を入力せずに音声を合成する手法と性能を比較した。その結果、提案手法は 3.1 ± 0.18、比較手法は 2.3 ± 0.19 となり、対話履歴に基づく発話スタイル制御の有効性が示された。
+            本研究では，状態遷移モデルと大規模言語モデル（LLM）を用いたテキストベースの接客訓練および半構造化インタビューシステムを拡張し，より現実的かつ実践的な訓練環境の提供を目的とする。従来のシステムは，構造化された段階的指導と，AI による柔軟な応答生成を可能にし，効率的なスキル習得を支援してきた。一方で，対話がテキストに限定されているため，実際の接客場面で生じる心理的緊張感やストレスを十分に再現できないという課題があった。この課題を解決するため，本研究では自動音声認識（ASR）および音声合成（TTS）を訓練フレームワークに統合し，ユーザとシステムの間で音声ベースの対話を行う構成とした。これにより，実環境に近いストレス下での訓練を可能とし，接客スキル習得におけるリアリティおよび訓練効果の向上を実現する。
           </div>
         </div>
       </div>
@@ -309,7 +327,7 @@
   </div>
   
   <div class="tab-pane fade" id="paper" role="tabpanel" aria-labelledby="paper-tab">
-    <embed src="https://www.anlp.jp/proceedings/annual_meeting/2025/pdf_dir/P5-18.pdf" type="application/pdf" width="100%" height="850px">
+    <embed src="https://www.anlp.jp/proceedings/annual_meeting/2026/pdf_dir/P5-18.pdf" type="application/pdf" width="100%" height="850px">
   </div>
   
   
@@ -352,7 +370,7 @@
         <p class="float-left">
           <img src="None" height="45px"
             width="auto" align="center">
-          <span class="lead">NLP2025</span>
+          <span class="lead">NLP2026</span>
         </p>
         <p class="float-right"><a href="#" class="text-dark">Back to Top</a></p>
         <p class="text-center">The title and abstract of the paper are licensed by the author(s) under CC BY 4.0<br>

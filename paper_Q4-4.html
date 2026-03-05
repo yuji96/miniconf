@@ -64,24 +64,22 @@
   <script src="https://cdn.jsdelivr.net/npm/pdfjs-dist@2.3.200/build/pdf.min.js"></script>
   <script src="static/js/pdf_render.js"></script>
 
-  <title>NLP2025: 医療分野に特化した日本語の小規模言語モデルの開発</title>
+  <title>NLP2026: 日本語常識道徳データセットにおける情報欠損検出・文脈補完の自動化検証</title>
   
-<meta name="citation_title" content="医療分野に特化した日本語の小規模言語モデルの開発" />
+<meta name="citation_title" content="日本語常識道徳データセットにおける情報欠損検出・文脈補完の自動化検証" />
 
-<meta name="citation_author" content="渡辺翔吾" />
+<meta name="citation_author" content="伊藤達也" />
 
-<meta name="citation_author" content="連乃駿" />
+<meta name="citation_author" content="大橋巧" />
 
-<meta name="citation_author" content="今岡幸弘" />
-
-<meta name="citation_author" content="飯原弘二" />
+<meta name="citation_author" content="彌冨仁" />
 
 <meta name="citation_publication_date" content="None" />
 <meta name="citation_conference_title" content="None" />
 <meta name="citation_inbook_title" content="None" />
-<meta name="citation_abstract" content="本研究では，日本語の医療分野に特化した小規模言語モデルの開発を行った．日本語に焦点を絞ったテキストクリーニングと形態素解析，教科書相当の品質に分類されたテキストデータ，疾病・薬剤に関する話題についての合成テキストデータを使用し，軽量化に重きをおいた 1B の言語モデルの事前学習を実施した．このモデルをベースモデルとして指示ファインチューニングしたモデルを IgakuQA とJMED-LLM を用いて評価を行った．ファインチューニングモデルにおいて，JMED-LLM の 8 つの評価指標のうち，6 つのタスクで既存の大規模言語モデルより高いスコアを示した．この結果から，ネットワークや計算資源が限られた環境において，特定の分野に特化した小規模言語モデルの運用が選択肢の１つになり得る可能性が示唆された．" />
+<meta name="citation_abstract" content="日本 語常 識道 徳デ ータ セッ ト JCommonsense-Morality には，状況設定が欠落した短文が一部に含まれ，判断の妥当性が読み手の文脈解釈に依存するという課題がある．本研究では，大規模言語モデル（LLM）を用いた情報欠損文章の自動検出と文脈情報付加の実現可能性を検討した．検出では，曖昧な事例を再現率 0.931 で特定できた一方，適合率は0.096 にとどまり，人手による精査が不可欠であることを示した．文脈情報付加では，LLM 生成と人手フィードバックを組み合わせ，厳格な制約下で論理的一貫性のある補完を実現し，対象の全事例で不確実性を解消した．以上より，我々は，道徳推論評価基盤の高品質化に向けた手順と課題を提示する．" />
 
-<meta name="citation_keywords" content="Q4:ポスター" />
+<meta name="citation_keywords" content="Q4:言語資源・アノテーションと評価" />
 
 <meta name="citation_pdf_url" content="" />
 
@@ -215,31 +213,27 @@
 <div class="card m-3" style="">
   <div class="card-header">
     <h2 class="card-title main-title text-center" style="color: black">
-      医療分野に特化した日本語の小規模言語モデルの開発
+      日本語常識道徳データセットにおける情報欠損検出・文脈補完の自動化検証
     </h2>
     <h3 class="card-subtitle mb-2 text-muted text-center">
       
-      <a href="papers.html?filter=authors&search=渡辺翔吾&program=all" class="text-primary"
-        >渡辺翔吾</a
+      <a href="papers.html?filter=authors&search=伊藤達也&program=all" class="text-primary"
+        >伊藤達也</a
       >,
       
-      <a href="papers.html?filter=authors&search=連乃駿&program=all" class="text-primary"
-        >連乃駿</a
+      <a href="papers.html?filter=authors&search=大橋巧&program=all" class="text-primary"
+        >大橋巧</a
       >,
       
-      <a href="papers.html?filter=authors&search=今岡幸弘&program=all" class="text-primary"
-        >今岡幸弘</a
-      >,
-      
-      <a href="papers.html?filter=authors&search=飯原弘二&program=all" class="text-primary"
-        >飯原弘二</a
+      <a href="papers.html?filter=authors&search=彌冨仁&program=all" class="text-primary"
+        >彌冨仁</a
       >
       
     </h3>
 
     <p class="card-text text-center h5">
       
-      <a href="papers.html?filter=keywords&search=Q4:ポスター" class ="badge badge-pill badge-primary">Q4:ポスター</a>
+      <a href="papers.html?filter=keywords&search=Q4:言語資源・アノテーションと評価" class ="badge badge-pill badge-primary">Q4:言語資源・アノテーションと評価</a>
       
 
       
@@ -247,7 +241,7 @@
    
     <div class="text-center p-3">
       
-      <a class="card-link link-info" target="_blank" href="https://www.anlp.jp/proceedings/annual_meeting/2025/pdf_dir/Q4-4.pdf">
+      <a class="card-link link-info" target="_blank" href="https://www.anlp.jp/proceedings/annual_meeting/2026/pdf_dir/Q4-4.pdf">
         📝 Paper 
       </a>
       
@@ -301,7 +295,7 @@
         <div class="card-text">
           <div id="abstractExample">
             <span class="font-weight-bold">Abstract:</span>
-            本研究では，日本語の医療分野に特化した小規模言語モデルの開発を行った．日本語に焦点を絞ったテキストクリーニングと形態素解析，教科書相当の品質に分類されたテキストデータ，疾病・薬剤に関する話題についての合成テキストデータを使用し，軽量化に重きをおいた 1B の言語モデルの事前学習を実施した．このモデルをベースモデルとして指示ファインチューニングしたモデルを IgakuQA とJMED-LLM を用いて評価を行った．ファインチューニングモデルにおいて，JMED-LLM の 8 つの評価指標のうち，6 つのタスクで既存の大規模言語モデルより高いスコアを示した．この結果から，ネットワークや計算資源が限られた環境において，特定の分野に特化した小規模言語モデルの運用が選択肢の１つになり得る可能性が示唆された．
+            日本 語常 識道 徳デ ータ セッ ト JCommonsense-Morality には，状況設定が欠落した短文が一部に含まれ，判断の妥当性が読み手の文脈解釈に依存するという課題がある．本研究では，大規模言語モデル（LLM）を用いた情報欠損文章の自動検出と文脈情報付加の実現可能性を検討した．検出では，曖昧な事例を再現率 0.931 で特定できた一方，適合率は0.096 にとどまり，人手による精査が不可欠であることを示した．文脈情報付加では，LLM 生成と人手フィードバックを組み合わせ，厳格な制約下で論理的一貫性のある補完を実現し，対象の全事例で不確実性を解消した．以上より，我々は，道徳推論評価基盤の高品質化に向けた手順と課題を提示する．
           </div>
         </div>
       </div>
@@ -309,7 +303,7 @@
   </div>
   
   <div class="tab-pane fade" id="paper" role="tabpanel" aria-labelledby="paper-tab">
-    <embed src="https://www.anlp.jp/proceedings/annual_meeting/2025/pdf_dir/Q4-4.pdf" type="application/pdf" width="100%" height="850px">
+    <embed src="https://www.anlp.jp/proceedings/annual_meeting/2026/pdf_dir/Q4-4.pdf" type="application/pdf" width="100%" height="850px">
   </div>
   
   
@@ -352,7 +346,7 @@
         <p class="float-left">
           <img src="None" height="45px"
             width="auto" align="center">
-          <span class="lead">NLP2025</span>
+          <span class="lead">NLP2026</span>
         </p>
         <p class="float-right"><a href="#" class="text-dark">Back to Top</a></p>
         <p class="text-center">The title and abstract of the paper are licensed by the author(s) under CC BY 4.0<br>

@@ -64,22 +64,20 @@
   <script src="https://cdn.jsdelivr.net/npm/pdfjs-dist@2.3.200/build/pdf.min.js"></script>
   <script src="static/js/pdf_render.js"></script>
 
-  <title>NLP2025: 音声モデルにおけるCritical Period仮説の検証</title>
+  <title>NLP2026: サブワード非依存の辞書ベースBERTモデルを用いた日本語文法の誤り検出</title>
   
-<meta name="citation_title" content="音声モデルにおけるCritical Period仮説の検証" />
+<meta name="citation_title" content="サブワード非依存の辞書ベースBERTモデルを用いた日本語文法の誤り検出" />
 
-<meta name="citation_author" content="古賀友里愛" />
+<meta name="citation_author" content="山下稜心" />
 
-<meta name="citation_author" content="神藤駿介" />
-
-<meta name="citation_author" content="宮尾祐介" />
+<meta name="citation_author" content="馬青" />
 
 <meta name="citation_publication_date" content="None" />
 <meta name="citation_conference_title" content="None" />
 <meta name="citation_inbook_title" content="None" />
-<meta name="citation_abstract" content="本研究では，自己教師あり学習音声モデル（SSLモデル）の第二言語（L2）獲得過程を，Critical Period（CP）仮説の観点から分析する．L2 獲得におけるCP 仮説とは，人間は L2 への接触開始時期が遅いほど，その習得が困難になるとするものである．CPに注目することは，SSL モデルの学習メカニズムや効率的な L2 学習手法に加え，人間の脳の言語学習の仕組みに関する新たな示唆をも与える可能性がある．実験の結果，SSL モデルでは L2 の音韻獲得における CP 仮説は成り立たなかったが，早期に L2 の学習を開始したモデルは L1 モノリンガルモデルや初めから 2 言語で学習したモデルとは異なる埋め込みを獲得していることが示唆された．" />
+<meta name="citation_abstract" content="本研究では，日本語文法誤り検出の実用性向上を目的とし，データセットとモデル構成の改善を行った．われわれの先行研究で用いたデータセットでは，未知語処理をサブワード分割に依存していたため，誤り文特有の未知語によりトークンが過度に細分化される問題があった．そこで，誤り文と訂正文の対応関係に基づいてトークンを再割当てし，データセットを再構築した．また，再構築したデータから生成した辞書に基づく独自トークナイザを設計した．さらに，誤り位置を直接推定する手法に加え，文レベルの正誤判定後に誤り位置推定を行う二段階モデルを提案し，構文情報の有効性についても検討した．" />
 
-<meta name="citation_keywords" content="C7:音声言語処理" />
+<meta name="citation_keywords" content="C7:知識獲得・情報抽出 / 機械学習 / LLM構築" />
 
 <meta name="citation_pdf_url" content="" />
 
@@ -213,27 +211,23 @@
 <div class="card m-3" style="">
   <div class="card-header">
     <h2 class="card-title main-title text-center" style="color: black">
-      音声モデルにおけるCritical Period仮説の検証
+      サブワード非依存の辞書ベースBERTモデルを用いた日本語文法の誤り検出
     </h2>
     <h3 class="card-subtitle mb-2 text-muted text-center">
       
-      <a href="papers.html?filter=authors&search=古賀友里愛&program=all" class="text-primary"
-        >古賀友里愛</a
+      <a href="papers.html?filter=authors&search=山下稜心&program=all" class="text-primary"
+        >山下稜心</a
       >,
       
-      <a href="papers.html?filter=authors&search=神藤駿介&program=all" class="text-primary"
-        >神藤駿介</a
-      >,
-      
-      <a href="papers.html?filter=authors&search=宮尾祐介&program=all" class="text-primary"
-        >宮尾祐介</a
+      <a href="papers.html?filter=authors&search=馬青&program=all" class="text-primary"
+        >馬青</a
       >
       
     </h3>
 
     <p class="card-text text-center h5">
       
-      <a href="papers.html?filter=keywords&search=C7:音声言語処理" class ="badge badge-pill badge-primary">C7:音声言語処理</a>
+      <a href="papers.html?filter=keywords&search=C7:知識獲得・情報抽出 / 機械学習 / LLM構築" class ="badge badge-pill badge-primary">C7:知識獲得・情報抽出 / 機械学習 / LLM構築</a>
       
 
       
@@ -241,7 +235,7 @@
    
     <div class="text-center p-3">
       
-      <a class="card-link link-info" target="_blank" href="https://www.anlp.jp/proceedings/annual_meeting/2025/pdf_dir/C7-4.pdf">
+      <a class="card-link link-info" target="_blank" href="https://www.anlp.jp/proceedings/annual_meeting/2026/pdf_dir/C7-4.pdf">
         📝 Paper 
       </a>
       
@@ -295,7 +289,7 @@
         <div class="card-text">
           <div id="abstractExample">
             <span class="font-weight-bold">Abstract:</span>
-            本研究では，自己教師あり学習音声モデル（SSLモデル）の第二言語（L2）獲得過程を，Critical Period（CP）仮説の観点から分析する．L2 獲得におけるCP 仮説とは，人間は L2 への接触開始時期が遅いほど，その習得が困難になるとするものである．CPに注目することは，SSL モデルの学習メカニズムや効率的な L2 学習手法に加え，人間の脳の言語学習の仕組みに関する新たな示唆をも与える可能性がある．実験の結果，SSL モデルでは L2 の音韻獲得における CP 仮説は成り立たなかったが，早期に L2 の学習を開始したモデルは L1 モノリンガルモデルや初めから 2 言語で学習したモデルとは異なる埋め込みを獲得していることが示唆された．
+            本研究では，日本語文法誤り検出の実用性向上を目的とし，データセットとモデル構成の改善を行った．われわれの先行研究で用いたデータセットでは，未知語処理をサブワード分割に依存していたため，誤り文特有の未知語によりトークンが過度に細分化される問題があった．そこで，誤り文と訂正文の対応関係に基づいてトークンを再割当てし，データセットを再構築した．また，再構築したデータから生成した辞書に基づく独自トークナイザを設計した．さらに，誤り位置を直接推定する手法に加え，文レベルの正誤判定後に誤り位置推定を行う二段階モデルを提案し，構文情報の有効性についても検討した．
           </div>
         </div>
       </div>
@@ -303,7 +297,7 @@
   </div>
   
   <div class="tab-pane fade" id="paper" role="tabpanel" aria-labelledby="paper-tab">
-    <embed src="https://www.anlp.jp/proceedings/annual_meeting/2025/pdf_dir/C7-4.pdf" type="application/pdf" width="100%" height="850px">
+    <embed src="https://www.anlp.jp/proceedings/annual_meeting/2026/pdf_dir/C7-4.pdf" type="application/pdf" width="100%" height="850px">
   </div>
   
   
@@ -346,7 +340,7 @@
         <p class="float-left">
           <img src="None" height="45px"
             width="auto" align="center">
-          <span class="lead">NLP2025</span>
+          <span class="lead">NLP2026</span>
         </p>
         <p class="float-right"><a href="#" class="text-dark">Back to Top</a></p>
         <p class="text-center">The title and abstract of the paper are licensed by the author(s) under CC BY 4.0<br>

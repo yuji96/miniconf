@@ -64,20 +64,20 @@
   <script src="https://cdn.jsdelivr.net/npm/pdfjs-dist@2.3.200/build/pdf.min.js"></script>
   <script src="static/js/pdf_render.js"></script>
 
-  <title>NLP2025: Sentence-BERT による，レコメンドへのユーザー意図の反映</title>
+  <title>NLP2026: 日本語WiCにおける半教師あり学習の単語頻度に応じた性能評価</title>
   
-<meta name="citation_title" content="Sentence-BERT による，レコメンドへのユーザー意図の反映" />
+<meta name="citation_title" content="日本語WiCにおける半教師あり学習の単語頻度に応じた性能評価" />
 
-<meta name="citation_author" content="青井孝史" />
+<meta name="citation_author" content="山下莉実" />
 
-<meta name="citation_author" content="久保田崇文" />
+<meta name="citation_author" content="佐々木稔" />
 
 <meta name="citation_publication_date" content="None" />
 <meta name="citation_conference_title" content="None" />
 <meta name="citation_inbook_title" content="None" />
-<meta name="citation_abstract" content="本論文では，株式会社カカクコムが運営する求人ボックスを題材として，大規模で更新頻度が高い検索サービスにおける高性能なレコメンドシステムの設計方針を提示する．文ベクトルを生成するのに適した深層学習モデル Sentence-BERT を用いて，閲覧履歴からユーザーを表現するベクトルを作成することで，パーソナライズされた推薦を可能にする．さらに Item2vec の思想を応用したファインチューニングを行うことで，文章の意味のみならずユーザーの意図をベクトル表現に反映することが可能になる．" />
+<meta name="citation_abstract" content="本研究では,日本語 WiC タスクにおいて,半教師あり学習モデル COSINE の性能を,単語の出現頻度に基づいて分析した.対象単語を頻度別に分割し,疑似ラベル採用時の確信度閾値を変化させた場合の挙動を,教師あり学習（SL）と比較した.その結果,中頻度語においては,COSINE が低い閾値設定で SL に見られる過学習を抑制し,文脈をより適切に捉える傾向が確認された.一方,低頻度語では,ノイズの影響でCOSINE の性能が低下し,SL の方が高い正答率を示すケースも観測された.結論として,COSINE は過学習抑制を目的とした正則化的手法として有効であり,単語頻度や確信度に応じて手法や閾値を切り替えるハイブリッド戦略の有効性が示唆された." />
 
-<meta name="citation_keywords" content="P8:ポスター" />
+<meta name="citation_keywords" content="P8:形態素・構文解析 / 意味論・意味解析 / 文脈解析" />
 
 <meta name="citation_pdf_url" content="" />
 
@@ -211,23 +211,23 @@
 <div class="card m-3" style="">
   <div class="card-header">
     <h2 class="card-title main-title text-center" style="color: black">
-      Sentence-BERT による，レコメンドへのユーザー意図の反映
+      日本語WiCにおける半教師あり学習の単語頻度に応じた性能評価
     </h2>
     <h3 class="card-subtitle mb-2 text-muted text-center">
       
-      <a href="papers.html?filter=authors&search=青井孝史&program=all" class="text-primary"
-        >青井孝史</a
+      <a href="papers.html?filter=authors&search=山下莉実&program=all" class="text-primary"
+        >山下莉実</a
       >,
       
-      <a href="papers.html?filter=authors&search=久保田崇文&program=all" class="text-primary"
-        >久保田崇文</a
+      <a href="papers.html?filter=authors&search=佐々木稔&program=all" class="text-primary"
+        >佐々木稔</a
       >
       
     </h3>
 
     <p class="card-text text-center h5">
       
-      <a href="papers.html?filter=keywords&search=P8:ポスター" class ="badge badge-pill badge-primary">P8:ポスター</a>
+      <a href="papers.html?filter=keywords&search=P8:形態素・構文解析 / 意味論・意味解析 / 文脈解析" class ="badge badge-pill badge-primary">P8:形態素・構文解析 / 意味論・意味解析 / 文脈解析</a>
       
 
       
@@ -235,7 +235,7 @@
    
     <div class="text-center p-3">
       
-      <a class="card-link link-info" target="_blank" href="https://www.anlp.jp/proceedings/annual_meeting/2025/pdf_dir/P8-12.pdf">
+      <a class="card-link link-info" target="_blank" href="https://www.anlp.jp/proceedings/annual_meeting/2026/pdf_dir/P8-12.pdf">
         📝 Paper 
       </a>
       
@@ -289,7 +289,7 @@
         <div class="card-text">
           <div id="abstractExample">
             <span class="font-weight-bold">Abstract:</span>
-            本論文では，株式会社カカクコムが運営する求人ボックスを題材として，大規模で更新頻度が高い検索サービスにおける高性能なレコメンドシステムの設計方針を提示する．文ベクトルを生成するのに適した深層学習モデル Sentence-BERT を用いて，閲覧履歴からユーザーを表現するベクトルを作成することで，パーソナライズされた推薦を可能にする．さらに Item2vec の思想を応用したファインチューニングを行うことで，文章の意味のみならずユーザーの意図をベクトル表現に反映することが可能になる．
+            本研究では,日本語 WiC タスクにおいて,半教師あり学習モデル COSINE の性能を,単語の出現頻度に基づいて分析した.対象単語を頻度別に分割し,疑似ラベル採用時の確信度閾値を変化させた場合の挙動を,教師あり学習（SL）と比較した.その結果,中頻度語においては,COSINE が低い閾値設定で SL に見られる過学習を抑制し,文脈をより適切に捉える傾向が確認された.一方,低頻度語では,ノイズの影響でCOSINE の性能が低下し,SL の方が高い正答率を示すケースも観測された.結論として,COSINE は過学習抑制を目的とした正則化的手法として有効であり,単語頻度や確信度に応じて手法や閾値を切り替えるハイブリッド戦略の有効性が示唆された.
           </div>
         </div>
       </div>
@@ -297,7 +297,7 @@
   </div>
   
   <div class="tab-pane fade" id="paper" role="tabpanel" aria-labelledby="paper-tab">
-    <embed src="https://www.anlp.jp/proceedings/annual_meeting/2025/pdf_dir/P8-12.pdf" type="application/pdf" width="100%" height="850px">
+    <embed src="https://www.anlp.jp/proceedings/annual_meeting/2026/pdf_dir/P8-12.pdf" type="application/pdf" width="100%" height="850px">
   </div>
   
   
@@ -340,7 +340,7 @@
         <p class="float-left">
           <img src="None" height="45px"
             width="auto" align="center">
-          <span class="lead">NLP2025</span>
+          <span class="lead">NLP2026</span>
         </p>
         <p class="float-right"><a href="#" class="text-dark">Back to Top</a></p>
         <p class="text-center">The title and abstract of the paper are licensed by the author(s) under CC BY 4.0<br>

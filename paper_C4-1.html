@@ -64,36 +64,28 @@
   <script src="https://cdn.jsdelivr.net/npm/pdfjs-dist@2.3.200/build/pdf.min.js"></script>
   <script src="static/js/pdf_render.js"></script>
 
-  <title>NLP2025: 早期うつ状態検出のためのマルチモーダル対話データセットに基づくうつ状態検出モデルの性能評価</title>
+  <title>NLP2026: WAON: 視覚言語モデルのための大規模かつ高品質な日本語画像・テキスト対データセット</title>
   
-<meta name="citation_title" content="早期うつ状態検出のためのマルチモーダル対話データセットに基づくうつ状態検出モデルの性能評価" />
+<meta name="citation_title" content="WAON: 視覚言語モデルのための大規模かつ高品質な日本語画像・テキスト対データセット" />
 
-<meta name="citation_author" content="柏原功太郎" />
+<meta name="citation_author" content="杉浦一瑳" />
 
-<meta name="citation_author" content="高鍋俊樹" />
+<meta name="citation_author" content="栗田修平" />
 
-<meta name="citation_author" content="木内敬太" />
+<meta name="citation_author" content="小田悠介" />
 
-<meta name="citation_author" content="梅原英裕" />
+<meta name="citation_author" content="河原大輔" />
 
-<meta name="citation_author" content="入澤航史" />
+<meta name="citation_author" content="岡部寿男" />
 
-<meta name="citation_author" content="中瀧理仁" />
-
-<meta name="citation_author" content="沼田周助" />
-
-<meta name="citation_author" content="康シン" />
-
-<meta name="citation_author" content="吉田稔" />
-
-<meta name="citation_author" content="松本和幸" />
+<meta name="citation_author" content="岡崎直観" />
 
 <meta name="citation_publication_date" content="None" />
 <meta name="citation_conference_title" content="None" />
 <meta name="citation_inbook_title" content="None" />
-<meta name="citation_abstract" content="ストレスや不安によるうつ病が世界的に増加しており,日本でも深刻な問題となっている.しかし,カウンセラーや精神科医の不足により早期発見が困難である.本研究では,我々の研究グループで構築しているカウンセリング面談時の言語・音声・動画・心拍及びアンケートデータから成るデータセットを用いて,最新の Mamba ベースのマルチモーダルうつ状態検出モデルの学習・評価を行った.その結果,既存の大規模データセットを用いた事前学習と本データセットでの微調整が,モデル性能の向上に効果的であることが分かった." />
+<meta name="citation_abstract" content="視覚言語モデルの性能は事前学習に用いられる画像・テキスト対データセットの規模と品質に大きく依存する．しかし，英語や中国語に比べて，大規模かつ高品質な日本語画像・テキスト対データセットは不足している.この課題を解決するために，本研究では近年のデータキュレーションに関する知見を取り入れたデータセット構築パイプラインを整備し，Common Crawl を基に約 1 億 5,500 万件の事例の日本語画像・テキスト対データセット WAON を開発した.評価実験の結果，WAON は既存のデータセットと比較して日本文化タスクにおける性能を効率的に向上させることを示した.データセット，モデル，およびコードは公開する.1）." />
 
-<meta name="citation_keywords" content="C4:マルチモーダル(2)" />
+<meta name="citation_keywords" content="C4:マルチモーダル" />
 
 <meta name="citation_pdf_url" content="" />
 
@@ -227,55 +219,39 @@
 <div class="card m-3" style="">
   <div class="card-header">
     <h2 class="card-title main-title text-center" style="color: black">
-      早期うつ状態検出のためのマルチモーダル対話データセットに基づくうつ状態検出モデルの性能評価
+      WAON: 視覚言語モデルのための大規模かつ高品質な日本語画像・テキスト対データセット
     </h2>
     <h3 class="card-subtitle mb-2 text-muted text-center">
       
-      <a href="papers.html?filter=authors&search=柏原功太郎&program=all" class="text-primary"
-        >柏原功太郎</a
+      <a href="papers.html?filter=authors&search=杉浦一瑳&program=all" class="text-primary"
+        >杉浦一瑳</a
       >,
       
-      <a href="papers.html?filter=authors&search=高鍋俊樹&program=all" class="text-primary"
-        >高鍋俊樹</a
+      <a href="papers.html?filter=authors&search=栗田修平&program=all" class="text-primary"
+        >栗田修平</a
       >,
       
-      <a href="papers.html?filter=authors&search=木内敬太&program=all" class="text-primary"
-        >木内敬太</a
+      <a href="papers.html?filter=authors&search=小田悠介&program=all" class="text-primary"
+        >小田悠介</a
       >,
       
-      <a href="papers.html?filter=authors&search=梅原英裕&program=all" class="text-primary"
-        >梅原英裕</a
+      <a href="papers.html?filter=authors&search=河原大輔&program=all" class="text-primary"
+        >河原大輔</a
       >,
       
-      <a href="papers.html?filter=authors&search=入澤航史&program=all" class="text-primary"
-        >入澤航史</a
+      <a href="papers.html?filter=authors&search=岡部寿男&program=all" class="text-primary"
+        >岡部寿男</a
       >,
       
-      <a href="papers.html?filter=authors&search=中瀧理仁&program=all" class="text-primary"
-        >中瀧理仁</a
-      >,
-      
-      <a href="papers.html?filter=authors&search=沼田周助&program=all" class="text-primary"
-        >沼田周助</a
-      >,
-      
-      <a href="papers.html?filter=authors&search=康シン&program=all" class="text-primary"
-        >康シン</a
-      >,
-      
-      <a href="papers.html?filter=authors&search=吉田稔&program=all" class="text-primary"
-        >吉田稔</a
-      >,
-      
-      <a href="papers.html?filter=authors&search=松本和幸&program=all" class="text-primary"
-        >松本和幸</a
+      <a href="papers.html?filter=authors&search=岡崎直観&program=all" class="text-primary"
+        >岡崎直観</a
       >
       
     </h3>
 
     <p class="card-text text-center h5">
       
-      <a href="papers.html?filter=keywords&search=C4:マルチモーダル(2)" class ="badge badge-pill badge-primary">C4:マルチモーダル(2)</a>
+      <a href="papers.html?filter=keywords&search=C4:マルチモーダル" class ="badge badge-pill badge-primary">C4:マルチモーダル</a>
       
 
       
@@ -283,7 +259,7 @@
    
     <div class="text-center p-3">
       
-      <a class="card-link link-info" target="_blank" href="https://www.anlp.jp/proceedings/annual_meeting/2025/pdf_dir/C4-1.pdf">
+      <a class="card-link link-info" target="_blank" href="https://www.anlp.jp/proceedings/annual_meeting/2026/pdf_dir/C4-1.pdf">
         📝 Paper 
       </a>
       
@@ -337,7 +313,7 @@
         <div class="card-text">
           <div id="abstractExample">
             <span class="font-weight-bold">Abstract:</span>
-            ストレスや不安によるうつ病が世界的に増加しており,日本でも深刻な問題となっている.しかし,カウンセラーや精神科医の不足により早期発見が困難である.本研究では,我々の研究グループで構築しているカウンセリング面談時の言語・音声・動画・心拍及びアンケートデータから成るデータセットを用いて,最新の Mamba ベースのマルチモーダルうつ状態検出モデルの学習・評価を行った.その結果,既存の大規模データセットを用いた事前学習と本データセットでの微調整が,モデル性能の向上に効果的であることが分かった.
+            視覚言語モデルの性能は事前学習に用いられる画像・テキスト対データセットの規模と品質に大きく依存する．しかし，英語や中国語に比べて，大規模かつ高品質な日本語画像・テキスト対データセットは不足している.この課題を解決するために，本研究では近年のデータキュレーションに関する知見を取り入れたデータセット構築パイプラインを整備し，Common Crawl を基に約 1 億 5,500 万件の事例の日本語画像・テキスト対データセット WAON を開発した.評価実験の結果，WAON は既存のデータセットと比較して日本文化タスクにおける性能を効率的に向上させることを示した.データセット，モデル，およびコードは公開する.1）.
           </div>
         </div>
       </div>
@@ -345,7 +321,7 @@
   </div>
   
   <div class="tab-pane fade" id="paper" role="tabpanel" aria-labelledby="paper-tab">
-    <embed src="https://www.anlp.jp/proceedings/annual_meeting/2025/pdf_dir/C4-1.pdf" type="application/pdf" width="100%" height="850px">
+    <embed src="https://www.anlp.jp/proceedings/annual_meeting/2026/pdf_dir/C4-1.pdf" type="application/pdf" width="100%" height="850px">
   </div>
   
   
@@ -388,7 +364,7 @@
         <p class="float-left">
           <img src="None" height="45px"
             width="auto" align="center">
-          <span class="lead">NLP2025</span>
+          <span class="lead">NLP2026</span>
         </p>
         <p class="float-right"><a href="#" class="text-dark">Back to Top</a></p>
         <p class="text-center">The title and abstract of the paper are licensed by the author(s) under CC BY 4.0<br>

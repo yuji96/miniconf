@@ -64,24 +64,26 @@
   <script src="https://cdn.jsdelivr.net/npm/pdfjs-dist@2.3.200/build/pdf.min.js"></script>
   <script src="static/js/pdf_render.js"></script>
 
-  <title>NLP2025: 大規模言語モデルを用いたStory Intention Graph の自動生成の精度改善</title>
+  <title>NLP2026: Noisy Channel に基づく生成確率による画像生成評価</title>
   
-<meta name="citation_title" content="大規模言語モデルを用いたStory Intention Graph の自動生成の精度改善" />
+<meta name="citation_title" content="Noisy Channel に基づく生成確率による画像生成評価" />
 
-<meta name="citation_author" content="吉川祐輔" />
+<meta name="citation_author" content="林和樹" />
 
-<meta name="citation_author" content="井上壮志" />
+<meta name="citation_author" content="尾崎慎太郎" />
 
-<meta name="citation_author" content="銭本友樹" />
+<meta name="citation_author" content="神野倫行" />
 
-<meta name="citation_author" content="東中竜一郎" />
+<meta name="citation_author" content="上垣外英剛" />
+
+<meta name="citation_author" content="渡辺太郎" />
 
 <meta name="citation_publication_date" content="None" />
 <meta name="citation_conference_title" content="None" />
 <meta name="citation_inbook_title" content="None" />
-<meta name="citation_abstract" content="対話システムが物語を理解できれば，話者の価値観や経験などをより深く理解することができるようになると考えられる．先行研究で我々は，物語の表現として Elson によって提案された Story IntentionGraph (SIG)に着目し，大規模言語モデル（LLM）を用いて，物語文から SIG の自動生成に取り組んだ．しかしながら，SIG の構造は複雑であり，物語文から SIG を自動生成する精度は高くなかった．本研究では，より高度な推論が可能と考えられるLLM を用いた SIG の自動生成の改善を行う．具体的には, LLM として GPT-4o,および，推論力に優れた OpenAI o1 を採用し,プロンプトへの shot の導入を行った．実験では，自動生成された SIG を，人手によって作成された SIG と比較した．その結果，OpenAI o1 に shot の追加を行うことで，人手作成SIG の約 76%という比較的高い精度で SIG を自動生成可能なことが分かった．" />
+<meta name="citation_abstract" content="近年の画像生成（T2I）モデルの進展により，生成画像の表現力や多様性は大きく向上している一方で，長文や複雑な指示を含む生成では，単一指標で出力を評価することが難しく，既存の評価手法は高度化した生成能力に十分対応できていない．本研究では，生成確率に基づく Noisy Channel により T2I 評価を再定式化し，画像のテキスト整合性と視覚的品質を統一的に捉える確率的評価指標を提案する．提案手法は，LVLM の推論能力を教師強制尤度として用いた整合性評価と，自己回帰型画像生成モデルの尤度による品質評価を組み合わせることで，生成結果間の相対比較に依存せず，各画像を独立に評価できる．検証の結果，提案手法は人手による画像選好と高い整合性を示し，既存のスコアリング手法を一貫して上回る性能を達成した．また，評価観点を切り替えることで，同一の確率的枠組みのもとで多様な人手判断を柔軟に捉えられることを確認した．" />
 
-<meta name="citation_keywords" content="Q9:ポスター" />
+<meta name="citation_keywords" content="Q9:その他の応用" />
 
 <meta name="citation_pdf_url" content="" />
 
@@ -215,31 +217,35 @@
 <div class="card m-3" style="">
   <div class="card-header">
     <h2 class="card-title main-title text-center" style="color: black">
-      大規模言語モデルを用いたStory Intention Graph の自動生成の精度改善
+      Noisy Channel に基づく生成確率による画像生成評価
     </h2>
     <h3 class="card-subtitle mb-2 text-muted text-center">
       
-      <a href="papers.html?filter=authors&search=吉川祐輔&program=all" class="text-primary"
-        >吉川祐輔</a
+      <a href="papers.html?filter=authors&search=林和樹&program=all" class="text-primary"
+        >林和樹</a
       >,
       
-      <a href="papers.html?filter=authors&search=井上壮志&program=all" class="text-primary"
-        >井上壮志</a
+      <a href="papers.html?filter=authors&search=尾崎慎太郎&program=all" class="text-primary"
+        >尾崎慎太郎</a
       >,
       
-      <a href="papers.html?filter=authors&search=銭本友樹&program=all" class="text-primary"
-        >銭本友樹</a
+      <a href="papers.html?filter=authors&search=神野倫行&program=all" class="text-primary"
+        >神野倫行</a
       >,
       
-      <a href="papers.html?filter=authors&search=東中竜一郎&program=all" class="text-primary"
-        >東中竜一郎</a
+      <a href="papers.html?filter=authors&search=上垣外英剛&program=all" class="text-primary"
+        >上垣外英剛</a
+      >,
+      
+      <a href="papers.html?filter=authors&search=渡辺太郎&program=all" class="text-primary"
+        >渡辺太郎</a
       >
       
     </h3>
 
     <p class="card-text text-center h5">
       
-      <a href="papers.html?filter=keywords&search=Q9:ポスター" class ="badge badge-pill badge-primary">Q9:ポスター</a>
+      <a href="papers.html?filter=keywords&search=Q9:その他の応用" class ="badge badge-pill badge-primary">Q9:その他の応用</a>
       
 
       
@@ -247,7 +253,7 @@
    
     <div class="text-center p-3">
       
-      <a class="card-link link-info" target="_blank" href="https://www.anlp.jp/proceedings/annual_meeting/2025/pdf_dir/Q9-20.pdf">
+      <a class="card-link link-info" target="_blank" href="https://www.anlp.jp/proceedings/annual_meeting/2026/pdf_dir/Q9-20.pdf">
         📝 Paper 
       </a>
       
@@ -301,7 +307,7 @@
         <div class="card-text">
           <div id="abstractExample">
             <span class="font-weight-bold">Abstract:</span>
-            対話システムが物語を理解できれば，話者の価値観や経験などをより深く理解することができるようになると考えられる．先行研究で我々は，物語の表現として Elson によって提案された Story IntentionGraph (SIG)に着目し，大規模言語モデル（LLM）を用いて，物語文から SIG の自動生成に取り組んだ．しかしながら，SIG の構造は複雑であり，物語文から SIG を自動生成する精度は高くなかった．本研究では，より高度な推論が可能と考えられるLLM を用いた SIG の自動生成の改善を行う．具体的には, LLM として GPT-4o,および，推論力に優れた OpenAI o1 を採用し,プロンプトへの shot の導入を行った．実験では，自動生成された SIG を，人手によって作成された SIG と比較した．その結果，OpenAI o1 に shot の追加を行うことで，人手作成SIG の約 76%という比較的高い精度で SIG を自動生成可能なことが分かった．
+            近年の画像生成（T2I）モデルの進展により，生成画像の表現力や多様性は大きく向上している一方で，長文や複雑な指示を含む生成では，単一指標で出力を評価することが難しく，既存の評価手法は高度化した生成能力に十分対応できていない．本研究では，生成確率に基づく Noisy Channel により T2I 評価を再定式化し，画像のテキスト整合性と視覚的品質を統一的に捉える確率的評価指標を提案する．提案手法は，LVLM の推論能力を教師強制尤度として用いた整合性評価と，自己回帰型画像生成モデルの尤度による品質評価を組み合わせることで，生成結果間の相対比較に依存せず，各画像を独立に評価できる．検証の結果，提案手法は人手による画像選好と高い整合性を示し，既存のスコアリング手法を一貫して上回る性能を達成した．また，評価観点を切り替えることで，同一の確率的枠組みのもとで多様な人手判断を柔軟に捉えられることを確認した．
           </div>
         </div>
       </div>
@@ -309,7 +315,7 @@
   </div>
   
   <div class="tab-pane fade" id="paper" role="tabpanel" aria-labelledby="paper-tab">
-    <embed src="https://www.anlp.jp/proceedings/annual_meeting/2025/pdf_dir/Q9-20.pdf" type="application/pdf" width="100%" height="850px">
+    <embed src="https://www.anlp.jp/proceedings/annual_meeting/2026/pdf_dir/Q9-20.pdf" type="application/pdf" width="100%" height="850px">
   </div>
   
   
@@ -352,7 +358,7 @@
         <p class="float-left">
           <img src="None" height="45px"
             width="auto" align="center">
-          <span class="lead">NLP2025</span>
+          <span class="lead">NLP2026</span>
         </p>
         <p class="float-right"><a href="#" class="text-dark">Back to Top</a></p>
         <p class="text-center">The title and abstract of the paper are licensed by the author(s) under CC BY 4.0<br>

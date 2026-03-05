@@ -64,22 +64,22 @@
   <script src="https://cdn.jsdelivr.net/npm/pdfjs-dist@2.3.200/build/pdf.min.js"></script>
   <script src="static/js/pdf_render.js"></script>
 
-  <title>NLP2025: 画像言語モデルにおけるハルシネーションの発生とVisual Attention精度の関係の調査</title>
+  <title>NLP2026: Multimodal LLMを用いた適応的階層分割と段階的統合によるダイアグラム構造認識の検討</title>
   
-<meta name="citation_title" content="画像言語モデルにおけるハルシネーションの発生とVisual Attention精度の関係の調査" />
+<meta name="citation_title" content="Multimodal LLMを用いた適応的階層分割と段階的統合によるダイアグラム構造認識の検討" />
 
-<meta name="citation_author" content="富田雅代" />
+<meta name="citation_author" content="内藤美里" />
 
-<meta name="citation_author" content="林克彦" />
+<meta name="citation_author" content="宮本健" />
 
-<meta name="citation_author" content="金子知適" />
+<meta name="citation_author" content="三輪祥太郎" />
 
 <meta name="citation_publication_date" content="None" />
 <meta name="citation_conference_title" content="None" />
 <meta name="citation_inbook_title" content="None" />
-<meta name="citation_abstract" content="画像言語モデルは、与えられた画像と矛盾する出力を生成することが報告されている。この現象はハルシネーションと呼ばれ、画像言語モデルの信用を損ない、普及を阻害する要因となっている。しかし、ハルシネーションの発生と、画像言語モデルがテキスト生成時に画像の適切な領域へ注目しているかどうかは関連すると予想されるが、データでは示されていない。本研究では、ハルシネーションの有無に関する評価指標である POPE を用い、画像内に実際に写っている物体と写っていない物体を対象として、ハルシネーションの発生と画像内の注目領域との関係を検証する。" />
+<meta name="citation_abstract" content="フローチャートや ER 図のようなダイアグラムの構造認識では，ノードは形状・大きさが多様で局所的に密集する一方，エッジは図全体にまたがる長距離の接続経路を含むため，局所的な詳細理解と大域的な接続関係の把握を同時に行うことが求められる．このような異なるスケールの情報が混在することが，Multimodal LLM での単一視点での認識を困難にしている．本研究では，ノード密度とエッジの配置に応じて領域を柔軟に分割する「適応的階層分割」と，分割で切断された長距離エッジや重複ノードを階層的に復元する「段階的統合」を提案し，GPT-5.1 および GPT-4o による評価を通じて，分割戦略と認識戦略の組み合わせがダイアグラム構造認識性能に与える影響を分析する．" />
 
-<meta name="citation_keywords" content="C4:マルチモーダル(2)" />
+<meta name="citation_keywords" content="C4:マルチモーダル" />
 
 <meta name="citation_pdf_url" content="" />
 
@@ -213,27 +213,27 @@
 <div class="card m-3" style="">
   <div class="card-header">
     <h2 class="card-title main-title text-center" style="color: black">
-      画像言語モデルにおけるハルシネーションの発生とVisual Attention精度の関係の調査
+      Multimodal LLMを用いた適応的階層分割と段階的統合によるダイアグラム構造認識の検討
     </h2>
     <h3 class="card-subtitle mb-2 text-muted text-center">
       
-      <a href="papers.html?filter=authors&search=富田雅代&program=all" class="text-primary"
-        >富田雅代</a
+      <a href="papers.html?filter=authors&search=内藤美里&program=all" class="text-primary"
+        >内藤美里</a
       >,
       
-      <a href="papers.html?filter=authors&search=林克彦&program=all" class="text-primary"
-        >林克彦</a
+      <a href="papers.html?filter=authors&search=宮本健&program=all" class="text-primary"
+        >宮本健</a
       >,
       
-      <a href="papers.html?filter=authors&search=金子知適&program=all" class="text-primary"
-        >金子知適</a
+      <a href="papers.html?filter=authors&search=三輪祥太郎&program=all" class="text-primary"
+        >三輪祥太郎</a
       >
       
     </h3>
 
     <p class="card-text text-center h5">
       
-      <a href="papers.html?filter=keywords&search=C4:マルチモーダル(2)" class ="badge badge-pill badge-primary">C4:マルチモーダル(2)</a>
+      <a href="papers.html?filter=keywords&search=C4:マルチモーダル" class ="badge badge-pill badge-primary">C4:マルチモーダル</a>
       
 
       
@@ -241,7 +241,7 @@
    
     <div class="text-center p-3">
       
-      <a class="card-link link-info" target="_blank" href="https://www.anlp.jp/proceedings/annual_meeting/2025/pdf_dir/C4-4.pdf">
+      <a class="card-link link-info" target="_blank" href="https://www.anlp.jp/proceedings/annual_meeting/2026/pdf_dir/C4-4.pdf">
         📝 Paper 
       </a>
       
@@ -295,7 +295,7 @@
         <div class="card-text">
           <div id="abstractExample">
             <span class="font-weight-bold">Abstract:</span>
-            画像言語モデルは、与えられた画像と矛盾する出力を生成することが報告されている。この現象はハルシネーションと呼ばれ、画像言語モデルの信用を損ない、普及を阻害する要因となっている。しかし、ハルシネーションの発生と、画像言語モデルがテキスト生成時に画像の適切な領域へ注目しているかどうかは関連すると予想されるが、データでは示されていない。本研究では、ハルシネーションの有無に関する評価指標である POPE を用い、画像内に実際に写っている物体と写っていない物体を対象として、ハルシネーションの発生と画像内の注目領域との関係を検証する。
+            フローチャートや ER 図のようなダイアグラムの構造認識では，ノードは形状・大きさが多様で局所的に密集する一方，エッジは図全体にまたがる長距離の接続経路を含むため，局所的な詳細理解と大域的な接続関係の把握を同時に行うことが求められる．このような異なるスケールの情報が混在することが，Multimodal LLM での単一視点での認識を困難にしている．本研究では，ノード密度とエッジの配置に応じて領域を柔軟に分割する「適応的階層分割」と，分割で切断された長距離エッジや重複ノードを階層的に復元する「段階的統合」を提案し，GPT-5.1 および GPT-4o による評価を通じて，分割戦略と認識戦略の組み合わせがダイアグラム構造認識性能に与える影響を分析する．
           </div>
         </div>
       </div>
@@ -303,7 +303,7 @@
   </div>
   
   <div class="tab-pane fade" id="paper" role="tabpanel" aria-labelledby="paper-tab">
-    <embed src="https://www.anlp.jp/proceedings/annual_meeting/2025/pdf_dir/C4-4.pdf" type="application/pdf" width="100%" height="850px">
+    <embed src="https://www.anlp.jp/proceedings/annual_meeting/2026/pdf_dir/C4-4.pdf" type="application/pdf" width="100%" height="850px">
   </div>
   
   
@@ -346,7 +346,7 @@
         <p class="float-left">
           <img src="None" height="45px"
             width="auto" align="center">
-          <span class="lead">NLP2025</span>
+          <span class="lead">NLP2026</span>
         </p>
         <p class="float-right"><a href="#" class="text-dark">Back to Top</a></p>
         <p class="text-center">The title and abstract of the paper are licensed by the author(s) under CC BY 4.0<br>

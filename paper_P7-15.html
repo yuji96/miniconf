@@ -64,34 +64,20 @@
   <script src="https://cdn.jsdelivr.net/npm/pdfjs-dist@2.3.200/build/pdf.min.js"></script>
   <script src="static/js/pdf_render.js"></script>
 
-  <title>NLP2025: 日本語LLMに含まれる交差バイアスと有害性の評価に向けて</title>
+  <title>NLP2026: スマートグラスを想定した講義補助を目的とした板書文字認識</title>
   
-<meta name="citation_title" content="日本語LLMに含まれる交差バイアスと有害性の評価に向けて" />
+<meta name="citation_title" content="スマートグラスを想定した講義補助を目的とした板書文字認識" />
 
-<meta name="citation_author" content="谷中瞳" />
+<meta name="citation_author" content="金承憲" />
 
-<meta name="citation_author" content="SunjinOh" />
-
-<meta name="citation_author" content="XinqiHe" />
-
-<meta name="citation_author" content="NamgiHan" />
-
-<meta name="citation_author" content="JieLu" />
-
-<meta name="citation_author" content="九門涼真" />
-
-<meta name="citation_author" content="松岡佑磨" />
-
-<meta name="citation_author" content="渡部和彦" />
-
-<meta name="citation_author" content="板津木綿子" />
+<meta name="citation_author" content="竹内孔一" />
 
 <meta name="citation_publication_date" content="None" />
 <meta name="citation_conference_title" content="None" />
 <meta name="citation_inbook_title" content="None" />
-<meta name="citation_abstract" content="LLM の社会的バイアスの評価において，個々の社会的属性だけでなく，複数の属性の組み合わせからなる交差バイアスを社会問題の事例に基づいて評価することの重要性が指摘されている．本研究では，QA タスクで LLM の交差バイアスを評価する日本語ベンチマーク inter-JBBQ を構築する．inter-JBBQを用いて GPT-4o と Swallow を分析した結果，同じ問題でも属性の組み合わせによって回答に変動があり，曖昧な問題に対し GPT-4o は Swallow と比較して答えられないと回答する傾向が強化されていた．一方，曖昧性を解消した問題では Swallow の正答率が GPT-4o の正答率を上回る場合も観測された．注意：本論文には不快な表現が一部含まれます．" />
+<meta name="citation_abstract" content="スマートグラスによる講義支援では，黒板・スライドの OCR 結果を翻訳・要約などの下流処理へ接続するが，日本語文と数式が混在する講義資料ではOCR 誤りが多く，下流処理の安定性を損なう．本研究は準リアルタイム利用を想定し，OCR 結果に講師音声（ASR）を文脈ヒントとして付与して LLMで後処理するパイプラインを提案する．提案法は信頼度に基づくルーティングと，数式／混在テキスト向けの分岐，phase 別音声ヒント，出力制限ポリシを統合する．理工系日本語講義の静止画 21 枚で評価した結果，PaddleOCR 単独に対して最大 32.6%のCER 改善，41.3%の WER 改善，83.2%の BLEU-1 上昇を確認し，残る失敗要因も分析した．" />
 
-<meta name="citation_keywords" content="P7:ポスター" />
+<meta name="citation_keywords" content="P7:質問応答 / 教育応用 / その他の応用" />
 
 <meta name="citation_pdf_url" content="" />
 
@@ -225,51 +211,23 @@
 <div class="card m-3" style="">
   <div class="card-header">
     <h2 class="card-title main-title text-center" style="color: black">
-      日本語LLMに含まれる交差バイアスと有害性の評価に向けて
+      スマートグラスを想定した講義補助を目的とした板書文字認識
     </h2>
     <h3 class="card-subtitle mb-2 text-muted text-center">
       
-      <a href="papers.html?filter=authors&search=谷中瞳&program=all" class="text-primary"
-        >谷中瞳</a
+      <a href="papers.html?filter=authors&search=金承憲&program=all" class="text-primary"
+        >金承憲</a
       >,
       
-      <a href="papers.html?filter=authors&search=SunjinOh&program=all" class="text-primary"
-        >SunjinOh</a
-      >,
-      
-      <a href="papers.html?filter=authors&search=XinqiHe&program=all" class="text-primary"
-        >XinqiHe</a
-      >,
-      
-      <a href="papers.html?filter=authors&search=NamgiHan&program=all" class="text-primary"
-        >NamgiHan</a
-      >,
-      
-      <a href="papers.html?filter=authors&search=JieLu&program=all" class="text-primary"
-        >JieLu</a
-      >,
-      
-      <a href="papers.html?filter=authors&search=九門涼真&program=all" class="text-primary"
-        >九門涼真</a
-      >,
-      
-      <a href="papers.html?filter=authors&search=松岡佑磨&program=all" class="text-primary"
-        >松岡佑磨</a
-      >,
-      
-      <a href="papers.html?filter=authors&search=渡部和彦&program=all" class="text-primary"
-        >渡部和彦</a
-      >,
-      
-      <a href="papers.html?filter=authors&search=板津木綿子&program=all" class="text-primary"
-        >板津木綿子</a
+      <a href="papers.html?filter=authors&search=竹内孔一&program=all" class="text-primary"
+        >竹内孔一</a
       >
       
     </h3>
 
     <p class="card-text text-center h5">
       
-      <a href="papers.html?filter=keywords&search=P7:ポスター" class ="badge badge-pill badge-primary">P7:ポスター</a>
+      <a href="papers.html?filter=keywords&search=P7:質問応答 / 教育応用 / その他の応用" class ="badge badge-pill badge-primary">P7:質問応答 / 教育応用 / その他の応用</a>
       
 
       
@@ -277,7 +235,7 @@
    
     <div class="text-center p-3">
       
-      <a class="card-link link-info" target="_blank" href="https://www.anlp.jp/proceedings/annual_meeting/2025/pdf_dir/P7-15.pdf">
+      <a class="card-link link-info" target="_blank" href="https://www.anlp.jp/proceedings/annual_meeting/2026/pdf_dir/P7-15.pdf">
         📝 Paper 
       </a>
       
@@ -331,7 +289,7 @@
         <div class="card-text">
           <div id="abstractExample">
             <span class="font-weight-bold">Abstract:</span>
-            LLM の社会的バイアスの評価において，個々の社会的属性だけでなく，複数の属性の組み合わせからなる交差バイアスを社会問題の事例に基づいて評価することの重要性が指摘されている．本研究では，QA タスクで LLM の交差バイアスを評価する日本語ベンチマーク inter-JBBQ を構築する．inter-JBBQを用いて GPT-4o と Swallow を分析した結果，同じ問題でも属性の組み合わせによって回答に変動があり，曖昧な問題に対し GPT-4o は Swallow と比較して答えられないと回答する傾向が強化されていた．一方，曖昧性を解消した問題では Swallow の正答率が GPT-4o の正答率を上回る場合も観測された．注意：本論文には不快な表現が一部含まれます．
+            スマートグラスによる講義支援では，黒板・スライドの OCR 結果を翻訳・要約などの下流処理へ接続するが，日本語文と数式が混在する講義資料ではOCR 誤りが多く，下流処理の安定性を損なう．本研究は準リアルタイム利用を想定し，OCR 結果に講師音声（ASR）を文脈ヒントとして付与して LLMで後処理するパイプラインを提案する．提案法は信頼度に基づくルーティングと，数式／混在テキスト向けの分岐，phase 別音声ヒント，出力制限ポリシを統合する．理工系日本語講義の静止画 21 枚で評価した結果，PaddleOCR 単独に対して最大 32.6%のCER 改善，41.3%の WER 改善，83.2%の BLEU-1 上昇を確認し，残る失敗要因も分析した．
           </div>
         </div>
       </div>
@@ -339,7 +297,7 @@
   </div>
   
   <div class="tab-pane fade" id="paper" role="tabpanel" aria-labelledby="paper-tab">
-    <embed src="https://www.anlp.jp/proceedings/annual_meeting/2025/pdf_dir/P7-15.pdf" type="application/pdf" width="100%" height="850px">
+    <embed src="https://www.anlp.jp/proceedings/annual_meeting/2026/pdf_dir/P7-15.pdf" type="application/pdf" width="100%" height="850px">
   </div>
   
   
@@ -382,7 +340,7 @@
         <p class="float-left">
           <img src="None" height="45px"
             width="auto" align="center">
-          <span class="lead">NLP2025</span>
+          <span class="lead">NLP2026</span>
         </p>
         <p class="float-right"><a href="#" class="text-dark">Back to Top</a></p>
         <p class="text-center">The title and abstract of the paper are licensed by the author(s) under CC BY 4.0<br>

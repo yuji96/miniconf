@@ -64,18 +64,24 @@
   <script src="https://cdn.jsdelivr.net/npm/pdfjs-dist@2.3.200/build/pdf.min.js"></script>
   <script src="static/js/pdf_render.js"></script>
 
-  <title>NLP2025: LLMとDocker環境を統合した対話型言語処理教育プラットフォームの設計と実装</title>
+  <title>NLP2026: ユーザ発話を用いたシステム応答に対する不満検出</title>
   
-<meta name="citation_title" content="LLMとDocker環境を統合した対話型言語処理教育プラットフォームの設計と実装" />
+<meta name="citation_title" content="ユーザ発話を用いたシステム応答に対する不満検出" />
 
-<meta name="citation_author" content="長谷部陽一郎" />
+<meta name="citation_author" content="齋藤由佳" />
+
+<meta name="citation_author" content="沼屋征海" />
+
+<meta name="citation_author" content="赤間怜奈" />
+
+<meta name="citation_author" content="鈴木潤" />
 
 <meta name="citation_publication_date" content="None" />
 <meta name="citation_conference_title" content="None" />
 <meta name="citation_inbook_title" content="None" />
-<meta name="citation_abstract" content="LLM と  Docker 環境を統合した対話型言語処理教育プラットフォームを提案する．本システムは，Electron ベースのデスクトップアプリケーションとして複数のOS 環境で動作し，Docker コンテナ上に構築された再現可能な言語処理環境を提供する．ユーザは独自の Web UI や Jupyter Notebook を介して LLM と対話しながら，様々な言語処理ツールを活用した実践的な学習が可能となる．また Rubyを用いた DSL による記述で独自のアプリを作成できるため，多様な教育ニーズに対応した柔軟なカスタマイズが可能である．本プラットフォームは，LLMを用いた新たな教育手法の探求を促進し，言語処理教育の質的向上に貢献すると期待される．" />
+<meta name="citation_abstract" content="本研究では，LLM とのコミュニケーションを通じてユーザが感じる不満が，発話テキストにどの程度表出しているかを明らかにすることを目的とする．ユーザ自身が付与した不満ラベルを正解として二値分類を行い，入力に用いる文脈を変えた複数条件において不満検出を評価する．実験の結果，F1 スコアがラベル比率に基づく無作為抽出を上回り，不満感情が一定程度検出可能な形で表出していることが示唆された．" />
 
-<meta name="citation_keywords" content="P3:ポスター" />
+<meta name="citation_keywords" content="P3:評判・感情分析・スタイル分析 / 対話" />
 
 <meta name="citation_pdf_url" content="" />
 
@@ -209,19 +215,31 @@
 <div class="card m-3" style="">
   <div class="card-header">
     <h2 class="card-title main-title text-center" style="color: black">
-      LLMとDocker環境を統合した対話型言語処理教育プラットフォームの設計と実装
+      ユーザ発話を用いたシステム応答に対する不満検出
     </h2>
     <h3 class="card-subtitle mb-2 text-muted text-center">
       
-      <a href="papers.html?filter=authors&search=長谷部陽一郎&program=all" class="text-primary"
-        >長谷部陽一郎</a
+      <a href="papers.html?filter=authors&search=齋藤由佳&program=all" class="text-primary"
+        >齋藤由佳</a
+      >,
+      
+      <a href="papers.html?filter=authors&search=沼屋征海&program=all" class="text-primary"
+        >沼屋征海</a
+      >,
+      
+      <a href="papers.html?filter=authors&search=赤間怜奈&program=all" class="text-primary"
+        >赤間怜奈</a
+      >,
+      
+      <a href="papers.html?filter=authors&search=鈴木潤&program=all" class="text-primary"
+        >鈴木潤</a
       >
       
     </h3>
 
     <p class="card-text text-center h5">
       
-      <a href="papers.html?filter=keywords&search=P3:ポスター" class ="badge badge-pill badge-primary">P3:ポスター</a>
+      <a href="papers.html?filter=keywords&search=P3:評判・感情分析・スタイル分析 / 対話" class ="badge badge-pill badge-primary">P3:評判・感情分析・スタイル分析 / 対話</a>
       
 
       
@@ -229,7 +247,7 @@
    
     <div class="text-center p-3">
       
-      <a class="card-link link-info" target="_blank" href="https://www.anlp.jp/proceedings/annual_meeting/2025/pdf_dir/P3-8.pdf">
+      <a class="card-link link-info" target="_blank" href="https://www.anlp.jp/proceedings/annual_meeting/2026/pdf_dir/P3-8.pdf">
         📝 Paper 
       </a>
       
@@ -283,7 +301,7 @@
         <div class="card-text">
           <div id="abstractExample">
             <span class="font-weight-bold">Abstract:</span>
-            LLM と  Docker 環境を統合した対話型言語処理教育プラットフォームを提案する．本システムは，Electron ベースのデスクトップアプリケーションとして複数のOS 環境で動作し，Docker コンテナ上に構築された再現可能な言語処理環境を提供する．ユーザは独自の Web UI や Jupyter Notebook を介して LLM と対話しながら，様々な言語処理ツールを活用した実践的な学習が可能となる．また Rubyを用いた DSL による記述で独自のアプリを作成できるため，多様な教育ニーズに対応した柔軟なカスタマイズが可能である．本プラットフォームは，LLMを用いた新たな教育手法の探求を促進し，言語処理教育の質的向上に貢献すると期待される．
+            本研究では，LLM とのコミュニケーションを通じてユーザが感じる不満が，発話テキストにどの程度表出しているかを明らかにすることを目的とする．ユーザ自身が付与した不満ラベルを正解として二値分類を行い，入力に用いる文脈を変えた複数条件において不満検出を評価する．実験の結果，F1 スコアがラベル比率に基づく無作為抽出を上回り，不満感情が一定程度検出可能な形で表出していることが示唆された．
           </div>
         </div>
       </div>
@@ -291,7 +309,7 @@
   </div>
   
   <div class="tab-pane fade" id="paper" role="tabpanel" aria-labelledby="paper-tab">
-    <embed src="https://www.anlp.jp/proceedings/annual_meeting/2025/pdf_dir/P3-8.pdf" type="application/pdf" width="100%" height="850px">
+    <embed src="https://www.anlp.jp/proceedings/annual_meeting/2026/pdf_dir/P3-8.pdf" type="application/pdf" width="100%" height="850px">
   </div>
   
   
@@ -334,7 +352,7 @@
         <p class="float-left">
           <img src="None" height="45px"
             width="auto" align="center">
-          <span class="lead">NLP2025</span>
+          <span class="lead">NLP2026</span>
         </p>
         <p class="float-right"><a href="#" class="text-dark">Back to Top</a></p>
         <p class="text-center">The title and abstract of the paper are licensed by the author(s) under CC BY 4.0<br>

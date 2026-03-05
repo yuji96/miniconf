@@ -64,24 +64,20 @@
   <script src="https://cdn.jsdelivr.net/npm/pdfjs-dist@2.3.200/build/pdf.min.js"></script>
   <script src="static/js/pdf_render.js"></script>
 
-  <title>NLP2025: 文書埋め込みとクラスタリングを組み合わせたトピック分析手法の提案</title>
+  <title>NLP2026: 文埋め込みにおける意味とスタイルの相違性</title>
   
-<meta name="citation_title" content="文書埋め込みとクラスタリングを組み合わせたトピック分析手法の提案" />
+<meta name="citation_title" content="文埋め込みにおける意味とスタイルの相違性" />
 
-<meta name="citation_author" content="藤田葵" />
+<meta name="citation_author" content="山内悠輔" />
 
-<meta name="citation_author" content="中山悠理" />
-
-<meta name="citation_author" content="山本泰智" />
-
-<meta name="citation_author" content="小林亮太" />
+<meta name="citation_author" content="相澤彰子" />
 
 <meta name="citation_publication_date" content="None" />
 <meta name="citation_conference_title" content="None" />
 <meta name="citation_inbook_title" content="None" />
-<meta name="citation_abstract" content="トピック分析とは，文書群を内容によってグループに分類する技術であり、大規模テキストデータの分析に有用である．トピック分析の代表的手法として LDA (Latent Dirichlet Allocation)があり，政治学，文献計量学，ソーシャルメディア分析などの分野へ応用されてきた．一方，LDA を単語数が少ない文書に適用すると，人間が解釈しやすい分類結果を得ることが難しいという問題があった．本研究では，文書埋め込みとクラスタリングを組み合わせたトピック分析手法を提案する．4 つのデータセットを分析した結果，既存手法に比べ，提案手法はより人間に近いトピック分類を行うことが示された．" />
+<meta name="citation_abstract" content="Semantic Textual Similarity (STS)タスクは文ベクトルの評価に用いられる自然言語処理の基盤的なタスクである。”文章の類似性”の定義は本質的に曖昧であり、データセットによって異なるが、多様な種類のデータセット間の包括的な分析を行った研究は限られており、言語モデルが人間と同様に多様な種類の意味やスタイルの違いを捉えているかどうかは不明である。本研究では、凍結した Encoder に軽量な pooler を取り付ける統一的フレームワークを導入し、STS、Paraphrase identiﬁcation (PI)、Triplet データセット間で統一的な分析を行う。21 種類のデータセットを用いた実験の結果、意味の概念は STS/PI タスク間で高い相関を示す一方、スタイルは意味的類似性とは独立した概念であり、明示的な分離が必要であることが分かった。" />
 
-<meta name="citation_keywords" content="P8:ポスター" />
+<meta name="citation_keywords" content="P8:形態素・構文解析 / 意味論・意味解析 / 文脈解析" />
 
 <meta name="citation_pdf_url" content="" />
 
@@ -215,31 +211,23 @@
 <div class="card m-3" style="">
   <div class="card-header">
     <h2 class="card-title main-title text-center" style="color: black">
-      文書埋め込みとクラスタリングを組み合わせたトピック分析手法の提案
+      文埋め込みにおける意味とスタイルの相違性
     </h2>
     <h3 class="card-subtitle mb-2 text-muted text-center">
       
-      <a href="papers.html?filter=authors&search=藤田葵&program=all" class="text-primary"
-        >藤田葵</a
+      <a href="papers.html?filter=authors&search=山内悠輔&program=all" class="text-primary"
+        >山内悠輔</a
       >,
       
-      <a href="papers.html?filter=authors&search=中山悠理&program=all" class="text-primary"
-        >中山悠理</a
-      >,
-      
-      <a href="papers.html?filter=authors&search=山本泰智&program=all" class="text-primary"
-        >山本泰智</a
-      >,
-      
-      <a href="papers.html?filter=authors&search=小林亮太&program=all" class="text-primary"
-        >小林亮太</a
+      <a href="papers.html?filter=authors&search=相澤彰子&program=all" class="text-primary"
+        >相澤彰子</a
       >
       
     </h3>
 
     <p class="card-text text-center h5">
       
-      <a href="papers.html?filter=keywords&search=P8:ポスター" class ="badge badge-pill badge-primary">P8:ポスター</a>
+      <a href="papers.html?filter=keywords&search=P8:形態素・構文解析 / 意味論・意味解析 / 文脈解析" class ="badge badge-pill badge-primary">P8:形態素・構文解析 / 意味論・意味解析 / 文脈解析</a>
       
 
       
@@ -247,7 +235,7 @@
    
     <div class="text-center p-3">
       
-      <a class="card-link link-info" target="_blank" href="https://www.anlp.jp/proceedings/annual_meeting/2025/pdf_dir/P8-19.pdf">
+      <a class="card-link link-info" target="_blank" href="https://www.anlp.jp/proceedings/annual_meeting/2026/pdf_dir/P8-19.pdf">
         📝 Paper 
       </a>
       
@@ -301,7 +289,7 @@
         <div class="card-text">
           <div id="abstractExample">
             <span class="font-weight-bold">Abstract:</span>
-            トピック分析とは，文書群を内容によってグループに分類する技術であり、大規模テキストデータの分析に有用である．トピック分析の代表的手法として LDA (Latent Dirichlet Allocation)があり，政治学，文献計量学，ソーシャルメディア分析などの分野へ応用されてきた．一方，LDA を単語数が少ない文書に適用すると，人間が解釈しやすい分類結果を得ることが難しいという問題があった．本研究では，文書埋め込みとクラスタリングを組み合わせたトピック分析手法を提案する．4 つのデータセットを分析した結果，既存手法に比べ，提案手法はより人間に近いトピック分類を行うことが示された．
+            Semantic Textual Similarity (STS)タスクは文ベクトルの評価に用いられる自然言語処理の基盤的なタスクである。”文章の類似性”の定義は本質的に曖昧であり、データセットによって異なるが、多様な種類のデータセット間の包括的な分析を行った研究は限られており、言語モデルが人間と同様に多様な種類の意味やスタイルの違いを捉えているかどうかは不明である。本研究では、凍結した Encoder に軽量な pooler を取り付ける統一的フレームワークを導入し、STS、Paraphrase identiﬁcation (PI)、Triplet データセット間で統一的な分析を行う。21 種類のデータセットを用いた実験の結果、意味の概念は STS/PI タスク間で高い相関を示す一方、スタイルは意味的類似性とは独立した概念であり、明示的な分離が必要であることが分かった。
           </div>
         </div>
       </div>
@@ -309,7 +297,7 @@
   </div>
   
   <div class="tab-pane fade" id="paper" role="tabpanel" aria-labelledby="paper-tab">
-    <embed src="https://www.anlp.jp/proceedings/annual_meeting/2025/pdf_dir/P8-19.pdf" type="application/pdf" width="100%" height="850px">
+    <embed src="https://www.anlp.jp/proceedings/annual_meeting/2026/pdf_dir/P8-19.pdf" type="application/pdf" width="100%" height="850px">
   </div>
   
   
@@ -352,7 +340,7 @@
         <p class="float-left">
           <img src="None" height="45px"
             width="auto" align="center">
-          <span class="lead">NLP2025</span>
+          <span class="lead">NLP2026</span>
         </p>
         <p class="float-right"><a href="#" class="text-dark">Back to Top</a></p>
         <p class="text-center">The title and abstract of the paper are licensed by the author(s) under CC BY 4.0<br>

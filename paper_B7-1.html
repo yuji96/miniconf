@@ -64,18 +64,26 @@
   <script src="https://cdn.jsdelivr.net/npm/pdfjs-dist@2.3.200/build/pdf.min.js"></script>
   <script src="static/js/pdf_render.js"></script>
 
-  <title>NLP2025: 大規模言語モデルベースの日本語固有表現抽出におけるSelf-ReflectionとFew-Shot学習による精度改善</title>
+  <title>NLP2026: 人手評価データセットの統計的類似性と代替可能性</title>
   
-<meta name="citation_title" content="大規模言語モデルベースの日本語固有表現抽出におけるSelf-ReflectionとFew-Shot学習による精度改善" />
+<meta name="citation_title" content="人手評価データセットの統計的類似性と代替可能性" />
 
-<meta name="citation_author" content="久保田崇文" />
+<meta name="citation_author" content="沼屋征海" />
+
+<meta name="citation_author" content="赤間怜奈" />
+
+<meta name="citation_author" content="守屋彰二" />
+
+<meta name="citation_author" content="佐藤志貴" />
+
+<meta name="citation_author" content="鈴木潤" />
 
 <meta name="citation_publication_date" content="None" />
 <meta name="citation_conference_title" content="None" />
 <meta name="citation_inbook_title" content="None" />
-<meta name="citation_abstract" content="本研究では，大規模言語モデル（Large  LanguageModel: LLM）を活用した日本語固有表現抽出（Named Entity Recognition: NER）の精度向上手法として Self-Reflection の有効性を検証した．Self-Reflectionは，モデルが自身のタスク結果を評価し，反省点を考慮した再試行を行うことで精度を向上させる枠組みである．GPT-4o を対象とした実験では，Few-Shot 学習と組み合わせることで F1-Scoreが 1.6 ポイント向上した．しかし，一部の条件下では精度の低下や評価結果の不正確性が観察され，今後は Few-Shot 設計の最適化が課題となる．本研究の結果は，LLM ベースの日本語 NER 精度向上の指針として，実応用への貢献が期待される．" />
+<meta name="citation_abstract" content="コストの高い人手評価において，1 設定で得たモデル評価を他設定の評価として近似的に代替できる可能性がある．本研究では，人手評価の統計的性質に着目し，既存のモデル評価から代替可能性を推定する枠組みを提案する．具体的には，サンプル内標準偏差および平均スコアの分布をヒストグラム化し，分布間距離で類似度を定量化する．実験では 33設定を対象に 10 モデルの応答を収集し，LLM 評価で人手評価を再現して順位相関を算出した．結果，標準偏差分布の類似度と順位相関の間に正の相関が確認され，評価者間のばらつきが近い設定ほどモデルの相対的優劣が一致しやすいことが示唆された．" />
 
-<meta name="citation_keywords" content="B7:知識獲得・情報抽出(2)" />
+<meta name="citation_keywords" content="B7:NLPモデルの解釈可能性・分析 / NLPのための効率的・低リソース手法" />
 
 <meta name="citation_pdf_url" content="" />
 
@@ -209,19 +217,35 @@
 <div class="card m-3" style="">
   <div class="card-header">
     <h2 class="card-title main-title text-center" style="color: black">
-      大規模言語モデルベースの日本語固有表現抽出におけるSelf-ReflectionとFew-Shot学習による精度改善
+      人手評価データセットの統計的類似性と代替可能性
     </h2>
     <h3 class="card-subtitle mb-2 text-muted text-center">
       
-      <a href="papers.html?filter=authors&search=久保田崇文&program=all" class="text-primary"
-        >久保田崇文</a
+      <a href="papers.html?filter=authors&search=沼屋征海&program=all" class="text-primary"
+        >沼屋征海</a
+      >,
+      
+      <a href="papers.html?filter=authors&search=赤間怜奈&program=all" class="text-primary"
+        >赤間怜奈</a
+      >,
+      
+      <a href="papers.html?filter=authors&search=守屋彰二&program=all" class="text-primary"
+        >守屋彰二</a
+      >,
+      
+      <a href="papers.html?filter=authors&search=佐藤志貴&program=all" class="text-primary"
+        >佐藤志貴</a
+      >,
+      
+      <a href="papers.html?filter=authors&search=鈴木潤&program=all" class="text-primary"
+        >鈴木潤</a
       >
       
     </h3>
 
     <p class="card-text text-center h5">
       
-      <a href="papers.html?filter=keywords&search=B7:知識獲得・情報抽出(2)" class ="badge badge-pill badge-primary">B7:知識獲得・情報抽出(2)</a>
+      <a href="papers.html?filter=keywords&search=B7:NLPモデルの解釈可能性・分析 / NLPのための効率的・低リソース手法" class ="badge badge-pill badge-primary">B7:NLPモデルの解釈可能性・分析 / NLPのための効率的・低リソース手法</a>
       
 
       
@@ -229,7 +253,7 @@
    
     <div class="text-center p-3">
       
-      <a class="card-link link-info" target="_blank" href="https://www.anlp.jp/proceedings/annual_meeting/2025/pdf_dir/B7-1.pdf">
+      <a class="card-link link-info" target="_blank" href="https://www.anlp.jp/proceedings/annual_meeting/2026/pdf_dir/B7-1.pdf">
         📝 Paper 
       </a>
       
@@ -283,7 +307,7 @@
         <div class="card-text">
           <div id="abstractExample">
             <span class="font-weight-bold">Abstract:</span>
-            本研究では，大規模言語モデル（Large  LanguageModel: LLM）を活用した日本語固有表現抽出（Named Entity Recognition: NER）の精度向上手法として Self-Reflection の有効性を検証した．Self-Reflectionは，モデルが自身のタスク結果を評価し，反省点を考慮した再試行を行うことで精度を向上させる枠組みである．GPT-4o を対象とした実験では，Few-Shot 学習と組み合わせることで F1-Scoreが 1.6 ポイント向上した．しかし，一部の条件下では精度の低下や評価結果の不正確性が観察され，今後は Few-Shot 設計の最適化が課題となる．本研究の結果は，LLM ベースの日本語 NER 精度向上の指針として，実応用への貢献が期待される．
+            コストの高い人手評価において，1 設定で得たモデル評価を他設定の評価として近似的に代替できる可能性がある．本研究では，人手評価の統計的性質に着目し，既存のモデル評価から代替可能性を推定する枠組みを提案する．具体的には，サンプル内標準偏差および平均スコアの分布をヒストグラム化し，分布間距離で類似度を定量化する．実験では 33設定を対象に 10 モデルの応答を収集し，LLM 評価で人手評価を再現して順位相関を算出した．結果，標準偏差分布の類似度と順位相関の間に正の相関が確認され，評価者間のばらつきが近い設定ほどモデルの相対的優劣が一致しやすいことが示唆された．
           </div>
         </div>
       </div>
@@ -291,7 +315,7 @@
   </div>
   
   <div class="tab-pane fade" id="paper" role="tabpanel" aria-labelledby="paper-tab">
-    <embed src="https://www.anlp.jp/proceedings/annual_meeting/2025/pdf_dir/B7-1.pdf" type="application/pdf" width="100%" height="850px">
+    <embed src="https://www.anlp.jp/proceedings/annual_meeting/2026/pdf_dir/B7-1.pdf" type="application/pdf" width="100%" height="850px">
   </div>
   
   
@@ -334,7 +358,7 @@
         <p class="float-left">
           <img src="None" height="45px"
             width="auto" align="center">
-          <span class="lead">NLP2025</span>
+          <span class="lead">NLP2026</span>
         </p>
         <p class="float-right"><a href="#" class="text-dark">Back to Top</a></p>
         <p class="text-center">The title and abstract of the paper are licensed by the author(s) under CC BY 4.0<br>

@@ -64,22 +64,36 @@
   <script src="https://cdn.jsdelivr.net/npm/pdfjs-dist@2.3.200/build/pdf.min.js"></script>
   <script src="static/js/pdf_render.js"></script>
 
-  <title>NLP2025: LLM を用いた質問生成による児童の作文の詳述化支援の検討</title>
+  <title>NLP2026: 処方データにおける不確実な診療科名のLLMを用いた実体同定手法</title>
   
-<meta name="citation_title" content="LLM を用いた質問生成による児童の作文の詳述化支援の検討" />
+<meta name="citation_title" content="処方データにおける不確実な診療科名のLLMを用いた実体同定手法" />
 
-<meta name="citation_author" content="横野光" />
+<meta name="citation_author" content="川邊智也" />
 
-<meta name="citation_author" content="成家雅史" />
+<meta name="citation_author" content="保坂桂佑" />
 
-<meta name="citation_author" content="宮城信" />
+<meta name="citation_author" content="清水俊樹" />
+
+<meta name="citation_author" content="横田直彦" />
+
+<meta name="citation_author" content="齋藤晋二" />
+
+<meta name="citation_author" content="中江郁青" />
+
+<meta name="citation_author" content="清水佳一郎" />
+
+<meta name="citation_author" content="沖﨑歩" />
+
+<meta name="citation_author" content="小熊彩香" />
+
+<meta name="citation_author" content="塚本友太郎" />
 
 <meta name="citation_publication_date" content="None" />
 <meta name="citation_conference_title" content="None" />
 <meta name="citation_inbook_title" content="None" />
-<meta name="citation_abstract" content="小学校の作文教育における内容に関する指導では出来事の具体的な描写を促すといったことが行われる．しかし，児童にとっては具体的なイメージがわかず詳述化が困難となることもある．これに対し，作文に内容に対する質問を児童に行うことで修正の指針を示すことができると考えられるが，多くの児童の作文に対し質問を考えることは教師にとって大きな負荷となる．そこで本研究では，内容の詳述化のための質問生成に大規模言語モデルが利用できるかについて，小学生に対して行った調査に基づき検討を行った．" />
+<meta name="citation_abstract" content="薬剤師の対人業務強化に伴い，患者特性や行動の高度な分析が求められている．その上で「診療科情報」は重要な要素となるが，実務データは独自の運用に起因する表記揺れや情報の欠損が散見され，データ品質の低さが分析のボトルネックとなっている．本研究では，処方情報や患者属性のコンテキストを用いた LLM による診療科情報の実体同定手法を提案する．評価の結果，提案手法は診療科情報の欠損や誤りに対して高い頑健性を示し，特に処方情報が診療科特定における重要な判断因子であることが確認された．" />
 
-<meta name="citation_keywords" content="C6:教育応用" />
+<meta name="citation_keywords" content="C6:知識獲得・情報抽出 / 機械学習" />
 
 <meta name="citation_pdf_url" content="" />
 
@@ -213,27 +227,55 @@
 <div class="card m-3" style="">
   <div class="card-header">
     <h2 class="card-title main-title text-center" style="color: black">
-      LLM を用いた質問生成による児童の作文の詳述化支援の検討
+      処方データにおける不確実な診療科名のLLMを用いた実体同定手法
     </h2>
     <h3 class="card-subtitle mb-2 text-muted text-center">
       
-      <a href="papers.html?filter=authors&search=横野光&program=all" class="text-primary"
-        >横野光</a
+      <a href="papers.html?filter=authors&search=川邊智也&program=all" class="text-primary"
+        >川邊智也</a
       >,
       
-      <a href="papers.html?filter=authors&search=成家雅史&program=all" class="text-primary"
-        >成家雅史</a
+      <a href="papers.html?filter=authors&search=保坂桂佑&program=all" class="text-primary"
+        >保坂桂佑</a
       >,
       
-      <a href="papers.html?filter=authors&search=宮城信&program=all" class="text-primary"
-        >宮城信</a
+      <a href="papers.html?filter=authors&search=清水俊樹&program=all" class="text-primary"
+        >清水俊樹</a
+      >,
+      
+      <a href="papers.html?filter=authors&search=横田直彦&program=all" class="text-primary"
+        >横田直彦</a
+      >,
+      
+      <a href="papers.html?filter=authors&search=齋藤晋二&program=all" class="text-primary"
+        >齋藤晋二</a
+      >,
+      
+      <a href="papers.html?filter=authors&search=中江郁青&program=all" class="text-primary"
+        >中江郁青</a
+      >,
+      
+      <a href="papers.html?filter=authors&search=清水佳一郎&program=all" class="text-primary"
+        >清水佳一郎</a
+      >,
+      
+      <a href="papers.html?filter=authors&search=沖﨑歩&program=all" class="text-primary"
+        >沖﨑歩</a
+      >,
+      
+      <a href="papers.html?filter=authors&search=小熊彩香&program=all" class="text-primary"
+        >小熊彩香</a
+      >,
+      
+      <a href="papers.html?filter=authors&search=塚本友太郎&program=all" class="text-primary"
+        >塚本友太郎</a
       >
       
     </h3>
 
     <p class="card-text text-center h5">
       
-      <a href="papers.html?filter=keywords&search=C6:教育応用" class ="badge badge-pill badge-primary">C6:教育応用</a>
+      <a href="papers.html?filter=keywords&search=C6:知識獲得・情報抽出 / 機械学習" class ="badge badge-pill badge-primary">C6:知識獲得・情報抽出 / 機械学習</a>
       
 
       
@@ -241,7 +283,7 @@
    
     <div class="text-center p-3">
       
-      <a class="card-link link-info" target="_blank" href="https://www.anlp.jp/proceedings/annual_meeting/2025/pdf_dir/C6-4.pdf">
+      <a class="card-link link-info" target="_blank" href="https://www.anlp.jp/proceedings/annual_meeting/2026/pdf_dir/C6-4.pdf">
         📝 Paper 
       </a>
       
@@ -295,7 +337,7 @@
         <div class="card-text">
           <div id="abstractExample">
             <span class="font-weight-bold">Abstract:</span>
-            小学校の作文教育における内容に関する指導では出来事の具体的な描写を促すといったことが行われる．しかし，児童にとっては具体的なイメージがわかず詳述化が困難となることもある．これに対し，作文に内容に対する質問を児童に行うことで修正の指針を示すことができると考えられるが，多くの児童の作文に対し質問を考えることは教師にとって大きな負荷となる．そこで本研究では，内容の詳述化のための質問生成に大規模言語モデルが利用できるかについて，小学生に対して行った調査に基づき検討を行った．
+            薬剤師の対人業務強化に伴い，患者特性や行動の高度な分析が求められている．その上で「診療科情報」は重要な要素となるが，実務データは独自の運用に起因する表記揺れや情報の欠損が散見され，データ品質の低さが分析のボトルネックとなっている．本研究では，処方情報や患者属性のコンテキストを用いた LLM による診療科情報の実体同定手法を提案する．評価の結果，提案手法は診療科情報の欠損や誤りに対して高い頑健性を示し，特に処方情報が診療科特定における重要な判断因子であることが確認された．
           </div>
         </div>
       </div>
@@ -303,7 +345,7 @@
   </div>
   
   <div class="tab-pane fade" id="paper" role="tabpanel" aria-labelledby="paper-tab">
-    <embed src="https://www.anlp.jp/proceedings/annual_meeting/2025/pdf_dir/C6-4.pdf" type="application/pdf" width="100%" height="850px">
+    <embed src="https://www.anlp.jp/proceedings/annual_meeting/2026/pdf_dir/C6-4.pdf" type="application/pdf" width="100%" height="850px">
   </div>
   
   
@@ -346,7 +388,7 @@
         <p class="float-left">
           <img src="None" height="45px"
             width="auto" align="center">
-          <span class="lead">NLP2025</span>
+          <span class="lead">NLP2026</span>
         </p>
         <p class="float-right"><a href="#" class="text-dark">Back to Top</a></p>
         <p class="text-center">The title and abstract of the paper are licensed by the author(s) under CC BY 4.0<br>

@@ -64,26 +64,22 @@
   <script src="https://cdn.jsdelivr.net/npm/pdfjs-dist@2.3.200/build/pdf.min.js"></script>
   <script src="static/js/pdf_render.js"></script>
 
-  <title>NLP2025: Attention スコアの分布類似性を用いた大規模言語モデルの動作効率化および省メモリ化</title>
+  <title>NLP2026: プレゼンテーション練習支援のためのAI質疑応答システムの構築</title>
   
-<meta name="citation_title" content="Attention スコアの分布類似性を用いた大規模言語モデルの動作効率化および省メモリ化" />
+<meta name="citation_title" content="プレゼンテーション練習支援のためのAI質疑応答システムの構築" />
 
-<meta name="citation_author" content="谷口令" />
+<meta name="citation_author" content="宮城昭汰" />
 
-<meta name="citation_author" content="肖川" />
+<meta name="citation_author" content="ヴァグレミロ大河" />
 
-<meta name="citation_author" content="董于洋" />
-
-<meta name="citation_author" content="小山田昌史" />
-
-<meta name="citation_author" content="鬼塚真" />
+<meta name="citation_author" content="三輪賢一郎" />
 
 <meta name="citation_publication_date" content="None" />
 <meta name="citation_conference_title" content="None" />
 <meta name="citation_inbook_title" content="None" />
-<meta name="citation_abstract" content="Transformer-デコーダをベースとした大規模言語モデルは、文脈理解・回答における精度の高さから活用が広がっている。近年では長文入力への需要が高まっているが、自己注意処理(Attention)における計算量が入力長の 2 乗に比例すること、KV キャッシュのサイズが入力長に比例するという理由により、入力長に対して制限が存在する。本研究ではTransformer 内の各レイヤ・各ヘッドについて注意スコアの分布を調査し、同一レイヤにおいてスコアを共有できるヘッドが存在すること、また各レイヤについてスコアが大きなトークンが共通していることを明らかにした。これを元に自己注意処理の効率化と KV キャッシュの削減を行い、削減前と比較してベンチマークにおける精度低下が限定的であることを確認した。" />
+<meta name="citation_abstract" content="学会発表や報告の場において，質疑応答への的確な対応力を養うには相応のトレーニングが必要である．これまでにも，VR 技術や自動評価システムを用いたプレゼンテーション支援の試みが報告されているが，多くは英語発表を対象としたものや，想定質問が固定的で柔軟性に乏しいという課題があった．そこで本研究では，日本語話者を対象に，大規模言語モデルと音声対話エージェントを組み合わせることで，予稿集や発表スライドの内容に応じて動的に質問を生成可能な AI 質疑応答システムを構築した．実地検証の結果，本システムが予測した想定質問の的中率は部分一致も含めれば 7 割弱となり，質疑応答練習ツールとしての可能性を持つことが示された．" />
 
-<meta name="citation_keywords" content="P5:ポスター" />
+<meta name="citation_keywords" content="P5:対話 / 質問応答" />
 
 <meta name="citation_pdf_url" content="" />
 
@@ -217,35 +213,27 @@
 <div class="card m-3" style="">
   <div class="card-header">
     <h2 class="card-title main-title text-center" style="color: black">
-      Attention スコアの分布類似性を用いた大規模言語モデルの動作効率化および省メモリ化
+      プレゼンテーション練習支援のためのAI質疑応答システムの構築
     </h2>
     <h3 class="card-subtitle mb-2 text-muted text-center">
       
-      <a href="papers.html?filter=authors&search=谷口令&program=all" class="text-primary"
-        >谷口令</a
+      <a href="papers.html?filter=authors&search=宮城昭汰&program=all" class="text-primary"
+        >宮城昭汰</a
       >,
       
-      <a href="papers.html?filter=authors&search=肖川&program=all" class="text-primary"
-        >肖川</a
+      <a href="papers.html?filter=authors&search=ヴァグレミロ大河&program=all" class="text-primary"
+        >ヴァグレミロ大河</a
       >,
       
-      <a href="papers.html?filter=authors&search=董于洋&program=all" class="text-primary"
-        >董于洋</a
-      >,
-      
-      <a href="papers.html?filter=authors&search=小山田昌史&program=all" class="text-primary"
-        >小山田昌史</a
-      >,
-      
-      <a href="papers.html?filter=authors&search=鬼塚真&program=all" class="text-primary"
-        >鬼塚真</a
+      <a href="papers.html?filter=authors&search=三輪賢一郎&program=all" class="text-primary"
+        >三輪賢一郎</a
       >
       
     </h3>
 
     <p class="card-text text-center h5">
       
-      <a href="papers.html?filter=keywords&search=P5:ポスター" class ="badge badge-pill badge-primary">P5:ポスター</a>
+      <a href="papers.html?filter=keywords&search=P5:対話 / 質問応答" class ="badge badge-pill badge-primary">P5:対話 / 質問応答</a>
       
 
       
@@ -253,7 +241,7 @@
    
     <div class="text-center p-3">
       
-      <a class="card-link link-info" target="_blank" href="https://www.anlp.jp/proceedings/annual_meeting/2025/pdf_dir/P5-3.pdf">
+      <a class="card-link link-info" target="_blank" href="https://www.anlp.jp/proceedings/annual_meeting/2026/pdf_dir/P5-3.pdf">
         📝 Paper 
       </a>
       
@@ -307,7 +295,7 @@
         <div class="card-text">
           <div id="abstractExample">
             <span class="font-weight-bold">Abstract:</span>
-            Transformer-デコーダをベースとした大規模言語モデルは、文脈理解・回答における精度の高さから活用が広がっている。近年では長文入力への需要が高まっているが、自己注意処理(Attention)における計算量が入力長の 2 乗に比例すること、KV キャッシュのサイズが入力長に比例するという理由により、入力長に対して制限が存在する。本研究ではTransformer 内の各レイヤ・各ヘッドについて注意スコアの分布を調査し、同一レイヤにおいてスコアを共有できるヘッドが存在すること、また各レイヤについてスコアが大きなトークンが共通していることを明らかにした。これを元に自己注意処理の効率化と KV キャッシュの削減を行い、削減前と比較してベンチマークにおける精度低下が限定的であることを確認した。
+            学会発表や報告の場において，質疑応答への的確な対応力を養うには相応のトレーニングが必要である．これまでにも，VR 技術や自動評価システムを用いたプレゼンテーション支援の試みが報告されているが，多くは英語発表を対象としたものや，想定質問が固定的で柔軟性に乏しいという課題があった．そこで本研究では，日本語話者を対象に，大規模言語モデルと音声対話エージェントを組み合わせることで，予稿集や発表スライドの内容に応じて動的に質問を生成可能な AI 質疑応答システムを構築した．実地検証の結果，本システムが予測した想定質問の的中率は部分一致も含めれば 7 割弱となり，質疑応答練習ツールとしての可能性を持つことが示された．
           </div>
         </div>
       </div>
@@ -315,7 +303,7 @@
   </div>
   
   <div class="tab-pane fade" id="paper" role="tabpanel" aria-labelledby="paper-tab">
-    <embed src="https://www.anlp.jp/proceedings/annual_meeting/2025/pdf_dir/P5-3.pdf" type="application/pdf" width="100%" height="850px">
+    <embed src="https://www.anlp.jp/proceedings/annual_meeting/2026/pdf_dir/P5-3.pdf" type="application/pdf" width="100%" height="850px">
   </div>
   
   
@@ -358,7 +346,7 @@
         <p class="float-left">
           <img src="None" height="45px"
             width="auto" align="center">
-          <span class="lead">NLP2025</span>
+          <span class="lead">NLP2026</span>
         </p>
         <p class="float-right"><a href="#" class="text-dark">Back to Top</a></p>
         <p class="text-center">The title and abstract of the paper are licensed by the author(s) under CC BY 4.0<br>

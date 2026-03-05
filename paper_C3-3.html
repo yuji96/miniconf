@@ -64,28 +64,22 @@
   <script src="https://cdn.jsdelivr.net/npm/pdfjs-dist@2.3.200/build/pdf.min.js"></script>
   <script src="static/js/pdf_render.js"></script>
 
-  <title>NLP2025: Large Vision-Language Modelを用いた非構造ドキュメント画像向け情報抽出</title>
+  <title>NLP2026: ポインタ局所探索によるGUI Agent向け汎用Grounding後処理の検討</title>
   
-<meta name="citation_title" content="Large Vision-Language Modelを用いた非構造ドキュメント画像向け情報抽出" />
+<meta name="citation_title" content="ポインタ局所探索によるGUI Agent向け汎用Grounding後処理の検討" />
 
-<meta name="citation_author" content="江上尚志" />
+<meta name="citation_author" content="内藤美里" />
 
-<meta name="citation_author" content="中田百科" />
+<meta name="citation_author" content="宮本健" />
 
-<meta name="citation_author" content="福地鈴佳" />
-
-<meta name="citation_author" content="久保田茉莉花" />
-
-<meta name="citation_author" content="山根大輝" />
-
-<meta name="citation_author" content="薬師寺政和" />
+<meta name="citation_author" content="三輪祥太郎" />
 
 <meta name="citation_publication_date" content="None" />
 <meta name="citation_conference_title" content="None" />
 <meta name="citation_inbook_title" content="None" />
-<meta name="citation_abstract" content="本研究では，非構造ドキュメント画像の情報抽出に取り組む．光学文字認識（OCR）の結果に対して大規模言語モデルを適用することで高精度な情報抽出が行えることが報告されているが，文書画像は一般に文字だけでなく，図形や文字の色などを含んだレイアウトも用いて情報を表現している．そのためOCR によって文字情報に劣化させる方法に比べ，画像を直接扱う Large Vision-Language Model の方がより高精度に抽出できる可能性がある．そこで，非構造ドキュメントとしてメニュー画像を対象とし，この方法で情報抽出を行い従来手法と比較した．" />
+<meta name="citation_abstract" content="LLM ベース GUI Agent では，動作計画から画面上座標への Grounding 精度が課題の 1 つである[1, 6]．本研究では GUI での「ホバー時のハイライト」や「カーソル形状の変化」といった動的な反応を利用し，既存 GUI Agent に後付け可能な汎用 Grounding 後処理手法を提案する．Agent が出力した座標周辺でポインタをグリッド走査し，背景・カーソルの変化量から候補点を生成して，MLLM に最適候補を選択させる．既存 GUI Agent である Agent S3 [4]に本手法を組み込み，PowerPoint [10]と FreeCAD [8]上のタスクで評価した結果，「長方形の右辺を選択せよ」のような精密 Grounding タスクにおいて成功例が増加し，単純なステップ数増加では代替できない効果が示唆された．" />
 
-<meta name="citation_keywords" content="C3:マルチモーダル(1)" />
+<meta name="citation_keywords" content="C3:マルチモーダル / テキスト生成" />
 
 <meta name="citation_pdf_url" content="" />
 
@@ -219,39 +213,27 @@
 <div class="card m-3" style="">
   <div class="card-header">
     <h2 class="card-title main-title text-center" style="color: black">
-      Large Vision-Language Modelを用いた非構造ドキュメント画像向け情報抽出
+      ポインタ局所探索によるGUI Agent向け汎用Grounding後処理の検討
     </h2>
     <h3 class="card-subtitle mb-2 text-muted text-center">
       
-      <a href="papers.html?filter=authors&search=江上尚志&program=all" class="text-primary"
-        >江上尚志</a
+      <a href="papers.html?filter=authors&search=内藤美里&program=all" class="text-primary"
+        >内藤美里</a
       >,
       
-      <a href="papers.html?filter=authors&search=中田百科&program=all" class="text-primary"
-        >中田百科</a
+      <a href="papers.html?filter=authors&search=宮本健&program=all" class="text-primary"
+        >宮本健</a
       >,
       
-      <a href="papers.html?filter=authors&search=福地鈴佳&program=all" class="text-primary"
-        >福地鈴佳</a
-      >,
-      
-      <a href="papers.html?filter=authors&search=久保田茉莉花&program=all" class="text-primary"
-        >久保田茉莉花</a
-      >,
-      
-      <a href="papers.html?filter=authors&search=山根大輝&program=all" class="text-primary"
-        >山根大輝</a
-      >,
-      
-      <a href="papers.html?filter=authors&search=薬師寺政和&program=all" class="text-primary"
-        >薬師寺政和</a
+      <a href="papers.html?filter=authors&search=三輪祥太郎&program=all" class="text-primary"
+        >三輪祥太郎</a
       >
       
     </h3>
 
     <p class="card-text text-center h5">
       
-      <a href="papers.html?filter=keywords&search=C3:マルチモーダル(1)" class ="badge badge-pill badge-primary">C3:マルチモーダル(1)</a>
+      <a href="papers.html?filter=keywords&search=C3:マルチモーダル / テキスト生成" class ="badge badge-pill badge-primary">C3:マルチモーダル / テキスト生成</a>
       
 
       
@@ -259,7 +241,7 @@
    
     <div class="text-center p-3">
       
-      <a class="card-link link-info" target="_blank" href="https://www.anlp.jp/proceedings/annual_meeting/2025/pdf_dir/C3-3.pdf">
+      <a class="card-link link-info" target="_blank" href="https://www.anlp.jp/proceedings/annual_meeting/2026/pdf_dir/C3-3.pdf">
         📝 Paper 
       </a>
       
@@ -313,7 +295,7 @@
         <div class="card-text">
           <div id="abstractExample">
             <span class="font-weight-bold">Abstract:</span>
-            本研究では，非構造ドキュメント画像の情報抽出に取り組む．光学文字認識（OCR）の結果に対して大規模言語モデルを適用することで高精度な情報抽出が行えることが報告されているが，文書画像は一般に文字だけでなく，図形や文字の色などを含んだレイアウトも用いて情報を表現している．そのためOCR によって文字情報に劣化させる方法に比べ，画像を直接扱う Large Vision-Language Model の方がより高精度に抽出できる可能性がある．そこで，非構造ドキュメントとしてメニュー画像を対象とし，この方法で情報抽出を行い従来手法と比較した．
+            LLM ベース GUI Agent では，動作計画から画面上座標への Grounding 精度が課題の 1 つである[1, 6]．本研究では GUI での「ホバー時のハイライト」や「カーソル形状の変化」といった動的な反応を利用し，既存 GUI Agent に後付け可能な汎用 Grounding 後処理手法を提案する．Agent が出力した座標周辺でポインタをグリッド走査し，背景・カーソルの変化量から候補点を生成して，MLLM に最適候補を選択させる．既存 GUI Agent である Agent S3 [4]に本手法を組み込み，PowerPoint [10]と FreeCAD [8]上のタスクで評価した結果，「長方形の右辺を選択せよ」のような精密 Grounding タスクにおいて成功例が増加し，単純なステップ数増加では代替できない効果が示唆された．
           </div>
         </div>
       </div>
@@ -321,7 +303,7 @@
   </div>
   
   <div class="tab-pane fade" id="paper" role="tabpanel" aria-labelledby="paper-tab">
-    <embed src="https://www.anlp.jp/proceedings/annual_meeting/2025/pdf_dir/C3-3.pdf" type="application/pdf" width="100%" height="850px">
+    <embed src="https://www.anlp.jp/proceedings/annual_meeting/2026/pdf_dir/C3-3.pdf" type="application/pdf" width="100%" height="850px">
   </div>
   
   
@@ -364,7 +346,7 @@
         <p class="float-left">
           <img src="None" height="45px"
             width="auto" align="center">
-          <span class="lead">NLP2025</span>
+          <span class="lead">NLP2026</span>
         </p>
         <p class="float-right"><a href="#" class="text-dark">Back to Top</a></p>
         <p class="text-center">The title and abstract of the paper are licensed by the author(s) under CC BY 4.0<br>

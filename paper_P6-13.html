@@ -64,18 +64,20 @@
   <script src="https://cdn.jsdelivr.net/npm/pdfjs-dist@2.3.200/build/pdf.min.js"></script>
   <script src="static/js/pdf_render.js"></script>
 
-  <title>NLP2025: コミュニティ特有のハッシュタグ空間を考慮したマルチラベル候補生成器を用いる二段階推薦</title>
+  <title>NLP2026: 文書画像 QA の表理解における検索と生成に適した表現形式の提案</title>
   
-<meta name="citation_title" content="コミュニティ特有のハッシュタグ空間を考慮したマルチラベル候補生成器を用いる二段階推薦" />
+<meta name="citation_title" content="文書画像 QA の表理解における検索と生成に適した表現形式の提案" />
 
-<meta name="citation_author" content="深澤祐援" />
+<meta name="citation_author" content="蒲原悠登" />
+
+<meta name="citation_author" content="竹内孔一" />
 
 <meta name="citation_publication_date" content="None" />
 <meta name="citation_conference_title" content="None" />
 <meta name="citation_inbook_title" content="None" />
-<meta name="citation_abstract" content="近年,顧客とのエンゲージメントを生む施策としてコミュニティの重要性や価値が増しており,コミューン株式会社が提供する“Commune”のようにクライアントごとに個別のコミュニティを提供するサービスが注目されている.このようなコミュニティ提供は顧客体験の向上に寄与する一方で,例としてハッシュタグ推薦タスクにおいては,各コミュニティが異なるハッシュタグ空間を持つため新たな課題をもたらす.本研究では,単一のモデルで複数のコミュニティに対するハッシュタグ推薦を可能にするべくマルチラベル分類モデルを用いた二段階推薦を提案する.提案手法は実験の結果, NDCG@10 で0.52 を達成し、推論速度の観点からも実運用に適した有効性を確認した." />
+<meta name="citation_abstract" content="文書画像 QA において、表は構造と内容の理解が必要であるため難易度が高い。本研究では、表のテキスト表現（Markdown、要約、併用）が MLLM-RAGの検索と生成に与える影響を検証し、検索と生成に適した表現形式の提案を行う。JDocQA を用いた実験の結果、検索では構造と意味を補完する「併用」が最も有効であった。一方、回答生成では、参照外画像のノイズに対し、画像に加え Markdown をテキスト提示することが頑健性維持に有効であることを示した。これらに基づき、検索と生成の各段階に適した表テキスト表現の設計指針を提案する。" />
 
-<meta name="citation_keywords" content="P6:ポスター" />
+<meta name="citation_keywords" content="P6:実世界接地と言語処理 / 教育応用" />
 
 <meta name="citation_pdf_url" content="" />
 
@@ -209,19 +211,23 @@
 <div class="card m-3" style="">
   <div class="card-header">
     <h2 class="card-title main-title text-center" style="color: black">
-      コミュニティ特有のハッシュタグ空間を考慮したマルチラベル候補生成器を用いる二段階推薦
+      文書画像 QA の表理解における検索と生成に適した表現形式の提案
     </h2>
     <h3 class="card-subtitle mb-2 text-muted text-center">
       
-      <a href="papers.html?filter=authors&search=深澤祐援&program=all" class="text-primary"
-        >深澤祐援</a
+      <a href="papers.html?filter=authors&search=蒲原悠登&program=all" class="text-primary"
+        >蒲原悠登</a
+      >,
+      
+      <a href="papers.html?filter=authors&search=竹内孔一&program=all" class="text-primary"
+        >竹内孔一</a
       >
       
     </h3>
 
     <p class="card-text text-center h5">
       
-      <a href="papers.html?filter=keywords&search=P6:ポスター" class ="badge badge-pill badge-primary">P6:ポスター</a>
+      <a href="papers.html?filter=keywords&search=P6:実世界接地と言語処理 / 教育応用" class ="badge badge-pill badge-primary">P6:実世界接地と言語処理 / 教育応用</a>
       
 
       
@@ -229,7 +235,7 @@
    
     <div class="text-center p-3">
       
-      <a class="card-link link-info" target="_blank" href="https://www.anlp.jp/proceedings/annual_meeting/2025/pdf_dir/P6-13.pdf">
+      <a class="card-link link-info" target="_blank" href="https://www.anlp.jp/proceedings/annual_meeting/2026/pdf_dir/P6-13.pdf">
         📝 Paper 
       </a>
       
@@ -283,7 +289,7 @@
         <div class="card-text">
           <div id="abstractExample">
             <span class="font-weight-bold">Abstract:</span>
-            近年,顧客とのエンゲージメントを生む施策としてコミュニティの重要性や価値が増しており,コミューン株式会社が提供する“Commune”のようにクライアントごとに個別のコミュニティを提供するサービスが注目されている.このようなコミュニティ提供は顧客体験の向上に寄与する一方で,例としてハッシュタグ推薦タスクにおいては,各コミュニティが異なるハッシュタグ空間を持つため新たな課題をもたらす.本研究では,単一のモデルで複数のコミュニティに対するハッシュタグ推薦を可能にするべくマルチラベル分類モデルを用いた二段階推薦を提案する.提案手法は実験の結果, NDCG@10 で0.52 を達成し、推論速度の観点からも実運用に適した有効性を確認した.
+            文書画像 QA において、表は構造と内容の理解が必要であるため難易度が高い。本研究では、表のテキスト表現（Markdown、要約、併用）が MLLM-RAGの検索と生成に与える影響を検証し、検索と生成に適した表現形式の提案を行う。JDocQA を用いた実験の結果、検索では構造と意味を補完する「併用」が最も有効であった。一方、回答生成では、参照外画像のノイズに対し、画像に加え Markdown をテキスト提示することが頑健性維持に有効であることを示した。これらに基づき、検索と生成の各段階に適した表テキスト表現の設計指針を提案する。
           </div>
         </div>
       </div>
@@ -291,7 +297,7 @@
   </div>
   
   <div class="tab-pane fade" id="paper" role="tabpanel" aria-labelledby="paper-tab">
-    <embed src="https://www.anlp.jp/proceedings/annual_meeting/2025/pdf_dir/P6-13.pdf" type="application/pdf" width="100%" height="850px">
+    <embed src="https://www.anlp.jp/proceedings/annual_meeting/2026/pdf_dir/P6-13.pdf" type="application/pdf" width="100%" height="850px">
   </div>
   
   
@@ -334,7 +340,7 @@
         <p class="float-left">
           <img src="None" height="45px"
             width="auto" align="center">
-          <span class="lead">NLP2025</span>
+          <span class="lead">NLP2026</span>
         </p>
         <p class="float-right"><a href="#" class="text-dark">Back to Top</a></p>
         <p class="text-center">The title and abstract of the paper are licensed by the author(s) under CC BY 4.0<br>

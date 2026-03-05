@@ -64,22 +64,18 @@
   <script src="https://cdn.jsdelivr.net/npm/pdfjs-dist@2.3.200/build/pdf.min.js"></script>
   <script src="static/js/pdf_render.js"></script>
 
-  <title>NLP2025: 判決書要約文の自動評価</title>
+  <title>NLP2026: LLM による個別事情に応じた金融プランニング能力の評価 ―価値観適合性に基づくルーブリック評価フレームワーク―</title>
   
-<meta name="citation_title" content="判決書要約文の自動評価" />
+<meta name="citation_title" content="LLM による個別事情に応じた金融プランニング能力の評価 ―価値観適合性に基づくルーブリック評価フレームワーク―" />
 
-<meta name="citation_author" content="新保彰人" />
-
-<meta name="citation_author" content="山田寛章" />
-
-<meta name="citation_author" content="徳永健伸" />
+<meta name="citation_author" content="川原一修" />
 
 <meta name="citation_publication_date" content="None" />
 <meta name="citation_conference_title" content="None" />
 <meta name="citation_inbook_title" content="None" />
-<meta name="citation_abstract" content="一般の文書要約で使われている ROUGE などの自動評価指標は判決書自動要約タスクでも使われている．しかし既存の自動評価指標では判決書要約文に不可欠な要素が，要約文に含まれているかを評価することができない．本研究では，判決書要約文に特化した評価ルーブリックを策定し，それに基づいて法律の専門家による人手評価を行う．そして，その評価データを利用して判決書要約文に特化した自動評価器を構築する．構築した評価器をカッパ係数で評価し，自動評価器と正解データとの一致度が人手評価者の間の一致度を部分的に上回ることを示す．" />
+<meta name="citation_abstract" content="大規模言語モデル（LLM）を金融アドバイザーとして活用する期待が高まっている.従来研究では金融知識の正確性評価が主であったが,実際のファイナンシャルプランニングでは相談者の個別事情や価値観に即した「納得できる提案」が求められる.本研究では,価値観・制約が異なる 12 カテゴリの模擬相談者を設計し,GPT/Claude/Gemini 系列計 9 種の LLM アドバイザーとの対話を通じて 479 件の提案を生成させた.「価値観一致」「実現可能性」「対話品質」の 3 観点・15 項目のルーブリックで評価した結果,価値観適応型プロンプトの効果はモデルにより大きく異なることが判明した. Gemini-3-Pro（+27 点）や Claude Sonnet 系（+10〜13 点）では有効だが,GPT-5.1 や Claude Opus では差が縮小・逆転する.運用上,プロンプトの有効性がモデル更新で変化し得ることから,LLM-as-a-Judge による継続的な自動評価システムの必要性が示唆された." />
 
-<meta name="citation_keywords" content="P5:ポスター" />
+<meta name="citation_keywords" content="P5:対話 / 質問応答" />
 
 <meta name="citation_pdf_url" content="" />
 
@@ -213,27 +209,19 @@
 <div class="card m-3" style="">
   <div class="card-header">
     <h2 class="card-title main-title text-center" style="color: black">
-      判決書要約文の自動評価
+      LLM による個別事情に応じた金融プランニング能力の評価 ―価値観適合性に基づくルーブリック評価フレームワーク―
     </h2>
     <h3 class="card-subtitle mb-2 text-muted text-center">
       
-      <a href="papers.html?filter=authors&search=新保彰人&program=all" class="text-primary"
-        >新保彰人</a
-      >,
-      
-      <a href="papers.html?filter=authors&search=山田寛章&program=all" class="text-primary"
-        >山田寛章</a
-      >,
-      
-      <a href="papers.html?filter=authors&search=徳永健伸&program=all" class="text-primary"
-        >徳永健伸</a
+      <a href="papers.html?filter=authors&search=川原一修&program=all" class="text-primary"
+        >川原一修</a
       >
       
     </h3>
 
     <p class="card-text text-center h5">
       
-      <a href="papers.html?filter=keywords&search=P5:ポスター" class ="badge badge-pill badge-primary">P5:ポスター</a>
+      <a href="papers.html?filter=keywords&search=P5:対話 / 質問応答" class ="badge badge-pill badge-primary">P5:対話 / 質問応答</a>
       
 
       
@@ -241,7 +229,7 @@
    
     <div class="text-center p-3">
       
-      <a class="card-link link-info" target="_blank" href="https://www.anlp.jp/proceedings/annual_meeting/2025/pdf_dir/P5-10.pdf">
+      <a class="card-link link-info" target="_blank" href="https://www.anlp.jp/proceedings/annual_meeting/2026/pdf_dir/P5-10.pdf">
         📝 Paper 
       </a>
       
@@ -295,7 +283,7 @@
         <div class="card-text">
           <div id="abstractExample">
             <span class="font-weight-bold">Abstract:</span>
-            一般の文書要約で使われている ROUGE などの自動評価指標は判決書自動要約タスクでも使われている．しかし既存の自動評価指標では判決書要約文に不可欠な要素が，要約文に含まれているかを評価することができない．本研究では，判決書要約文に特化した評価ルーブリックを策定し，それに基づいて法律の専門家による人手評価を行う．そして，その評価データを利用して判決書要約文に特化した自動評価器を構築する．構築した評価器をカッパ係数で評価し，自動評価器と正解データとの一致度が人手評価者の間の一致度を部分的に上回ることを示す．
+            大規模言語モデル（LLM）を金融アドバイザーとして活用する期待が高まっている.従来研究では金融知識の正確性評価が主であったが,実際のファイナンシャルプランニングでは相談者の個別事情や価値観に即した「納得できる提案」が求められる.本研究では,価値観・制約が異なる 12 カテゴリの模擬相談者を設計し,GPT/Claude/Gemini 系列計 9 種の LLM アドバイザーとの対話を通じて 479 件の提案を生成させた.「価値観一致」「実現可能性」「対話品質」の 3 観点・15 項目のルーブリックで評価した結果,価値観適応型プロンプトの効果はモデルにより大きく異なることが判明した. Gemini-3-Pro（+27 点）や Claude Sonnet 系（+10〜13 点）では有効だが,GPT-5.1 や Claude Opus では差が縮小・逆転する.運用上,プロンプトの有効性がモデル更新で変化し得ることから,LLM-as-a-Judge による継続的な自動評価システムの必要性が示唆された.
           </div>
         </div>
       </div>
@@ -303,7 +291,7 @@
   </div>
   
   <div class="tab-pane fade" id="paper" role="tabpanel" aria-labelledby="paper-tab">
-    <embed src="https://www.anlp.jp/proceedings/annual_meeting/2025/pdf_dir/P5-10.pdf" type="application/pdf" width="100%" height="850px">
+    <embed src="https://www.anlp.jp/proceedings/annual_meeting/2026/pdf_dir/P5-10.pdf" type="application/pdf" width="100%" height="850px">
   </div>
   
   
@@ -346,7 +334,7 @@
         <p class="float-left">
           <img src="None" height="45px"
             width="auto" align="center">
-          <span class="lead">NLP2025</span>
+          <span class="lead">NLP2026</span>
         </p>
         <p class="float-right"><a href="#" class="text-dark">Back to Top</a></p>
         <p class="text-center">The title and abstract of the paper are licensed by the author(s) under CC BY 4.0<br>

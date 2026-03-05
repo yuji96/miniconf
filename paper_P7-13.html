@@ -64,26 +64,22 @@
   <script src="https://cdn.jsdelivr.net/npm/pdfjs-dist@2.3.200/build/pdf.min.js"></script>
   <script src="static/js/pdf_render.js"></script>
 
-  <title>NLP2025: 日本語大規模言語モデルの事前訓練過程における下流タスク性能の網羅的な分析</title>
+  <title>NLP2026: 脱文脈化に基づくRAGのマルチホップQAへの適用</title>
   
-<meta name="citation_title" content="日本語大規模言語モデルの事前訓練過程における下流タスク性能の網羅的な分析" />
+<meta name="citation_title" content="脱文脈化に基づくRAGのマルチホップQAへの適用" />
 
-<meta name="citation_author" content="西田悠人" />
+<meta name="citation_author" content="尾崎花奈" />
 
-<meta name="citation_author" content="小田悠介" />
+<meta name="citation_author" content="今一修" />
 
-<meta name="citation_author" content="NamgiHan" />
-
-<meta name="citation_author" content="高木優" />
-
-<meta name="citation_author" content="宮尾祐介" />
+<meta name="citation_author" content="平山淳一" />
 
 <meta name="citation_publication_date" content="None" />
 <meta name="citation_conference_title" content="None" />
 <meta name="citation_inbook_title" content="None" />
-<meta name="citation_abstract" content="大規模言語モデル(LLM)は目覚ましい発展を遂げているが，その高い性能がどのように獲得されていくのかについての理解は不十分である．本稿では，日本語を多く含む大規模テキストを用いて学習された LLM-jp-3 モデルを対象に，様々なモデルサイズ・下流タスクにおけるモデルの学習過程を分析し，日本語 LLM の内部メカニズムの洞察を深める．分析の結果，LLM の学習過程の下流タスクのスコアの軌跡は，タスクの種類によっていくつかの典型的なパターンに分類できることが示唆された．" />
+<meta name="citation_abstract" content="本研究では，マルチホップ QA タスクに対し，文書の脱文脈化と文脈補完質問文の事前生成を組み合わせた新たな RAG フレームワーク「DeconRAG」を提案する．3 種類のマルチホップ QA データセットで実験を行い，DeconRAG は従来の NaiveRAG や質問分解のみを用いた手法よりも高い精度を示した．また，多段推論型 RAG 手法である ChainRAG と比較しても，DeconRAG は 2 種類のデータセットで上回りつつ，推論効率にも優れることが確認された．" />
 
-<meta name="citation_keywords" content="P7:ポスター" />
+<meta name="citation_keywords" content="P7:質問応答 / 教育応用 / その他の応用" />
 
 <meta name="citation_pdf_url" content="" />
 
@@ -217,35 +213,27 @@
 <div class="card m-3" style="">
   <div class="card-header">
     <h2 class="card-title main-title text-center" style="color: black">
-      日本語大規模言語モデルの事前訓練過程における下流タスク性能の網羅的な分析
+      脱文脈化に基づくRAGのマルチホップQAへの適用
     </h2>
     <h3 class="card-subtitle mb-2 text-muted text-center">
       
-      <a href="papers.html?filter=authors&search=西田悠人&program=all" class="text-primary"
-        >西田悠人</a
+      <a href="papers.html?filter=authors&search=尾崎花奈&program=all" class="text-primary"
+        >尾崎花奈</a
       >,
       
-      <a href="papers.html?filter=authors&search=小田悠介&program=all" class="text-primary"
-        >小田悠介</a
+      <a href="papers.html?filter=authors&search=今一修&program=all" class="text-primary"
+        >今一修</a
       >,
       
-      <a href="papers.html?filter=authors&search=NamgiHan&program=all" class="text-primary"
-        >NamgiHan</a
-      >,
-      
-      <a href="papers.html?filter=authors&search=高木優&program=all" class="text-primary"
-        >高木優</a
-      >,
-      
-      <a href="papers.html?filter=authors&search=宮尾祐介&program=all" class="text-primary"
-        >宮尾祐介</a
+      <a href="papers.html?filter=authors&search=平山淳一&program=all" class="text-primary"
+        >平山淳一</a
       >
       
     </h3>
 
     <p class="card-text text-center h5">
       
-      <a href="papers.html?filter=keywords&search=P7:ポスター" class ="badge badge-pill badge-primary">P7:ポスター</a>
+      <a href="papers.html?filter=keywords&search=P7:質問応答 / 教育応用 / その他の応用" class ="badge badge-pill badge-primary">P7:質問応答 / 教育応用 / その他の応用</a>
       
 
       
@@ -253,7 +241,7 @@
    
     <div class="text-center p-3">
       
-      <a class="card-link link-info" target="_blank" href="https://www.anlp.jp/proceedings/annual_meeting/2025/pdf_dir/P7-13.pdf">
+      <a class="card-link link-info" target="_blank" href="https://www.anlp.jp/proceedings/annual_meeting/2026/pdf_dir/P7-13.pdf">
         📝 Paper 
       </a>
       
@@ -307,7 +295,7 @@
         <div class="card-text">
           <div id="abstractExample">
             <span class="font-weight-bold">Abstract:</span>
-            大規模言語モデル(LLM)は目覚ましい発展を遂げているが，その高い性能がどのように獲得されていくのかについての理解は不十分である．本稿では，日本語を多く含む大規模テキストを用いて学習された LLM-jp-3 モデルを対象に，様々なモデルサイズ・下流タスクにおけるモデルの学習過程を分析し，日本語 LLM の内部メカニズムの洞察を深める．分析の結果，LLM の学習過程の下流タスクのスコアの軌跡は，タスクの種類によっていくつかの典型的なパターンに分類できることが示唆された．
+            本研究では，マルチホップ QA タスクに対し，文書の脱文脈化と文脈補完質問文の事前生成を組み合わせた新たな RAG フレームワーク「DeconRAG」を提案する．3 種類のマルチホップ QA データセットで実験を行い，DeconRAG は従来の NaiveRAG や質問分解のみを用いた手法よりも高い精度を示した．また，多段推論型 RAG 手法である ChainRAG と比較しても，DeconRAG は 2 種類のデータセットで上回りつつ，推論効率にも優れることが確認された．
           </div>
         </div>
       </div>
@@ -315,7 +303,7 @@
   </div>
   
   <div class="tab-pane fade" id="paper" role="tabpanel" aria-labelledby="paper-tab">
-    <embed src="https://www.anlp.jp/proceedings/annual_meeting/2025/pdf_dir/P7-13.pdf" type="application/pdf" width="100%" height="850px">
+    <embed src="https://www.anlp.jp/proceedings/annual_meeting/2026/pdf_dir/P7-13.pdf" type="application/pdf" width="100%" height="850px">
   </div>
   
   
@@ -358,7 +346,7 @@
         <p class="float-left">
           <img src="None" height="45px"
             width="auto" align="center">
-          <span class="lead">NLP2025</span>
+          <span class="lead">NLP2026</span>
         </p>
         <p class="float-right"><a href="#" class="text-dark">Back to Top</a></p>
         <p class="text-center">The title and abstract of the paper are licensed by the author(s) under CC BY 4.0<br>

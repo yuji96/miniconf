@@ -64,26 +64,22 @@
   <script src="https://cdn.jsdelivr.net/npm/pdfjs-dist@2.3.200/build/pdf.min.js"></script>
   <script src="static/js/pdf_render.js"></script>
 
-  <title>NLP2025: 評価結果の予測確率を用いたLLMによるLLMの相対評価</title>
+  <title>NLP2026: 日本語における LLM と人間の誤用傾向の差異の分析</title>
   
-<meta name="citation_title" content="評価結果の予測確率を用いたLLMによるLLMの相対評価" />
+<meta name="citation_title" content="日本語における LLM と人間の誤用傾向の差異の分析" />
 
-<meta name="citation_author" content="森田隼功" />
+<meta name="citation_author" content="中西純" />
 
-<meta name="citation_author" content="大林弘明" />
+<meta name="citation_author" content="牧野晃平" />
 
-<meta name="citation_author" content="田村晃裕" />
-
-<meta name="citation_author" content="濱田充男" />
-
-<meta name="citation_author" content="加藤恒夫" />
+<meta name="citation_author" content="佐々木裕" />
 
 <meta name="citation_publication_date" content="None" />
 <meta name="citation_conference_title" content="None" />
 <meta name="citation_inbook_title" content="None" />
-<meta name="citation_abstract" content="本論文では，評価結果の予測確率を用いる大規模言語モデル（LLM）による LLM の新たな相対評価手法を提案する．従来の相対評価では，評価対象LLM の提示順を入れ替えた際に評価結果が変動する位置バイアスが生じた際，最終的な評価結果を適切に定める手法が確立されていない．そこで，本研究では，位置バイアスが生じた際に，提示順入れ替え前後の評価結果の予測確率の平均が最も高い結果を最終的な評価結果とする手法を提案する．そして，本提案手法を文章作成等のビジネスタスクを対象に評価し，有効性を確認した．" />
+<meta name="citation_abstract" content="大規模言語モデル（LLM）は自然な文章を生成する一方で，人間の文章に一定確率で現れるはずの「誤用」が観察されることは稀である．本研究はこの現象を，日本語の母語話者における認知的取り違え（例：「危機一髪／危機一発」）に焦点を当てて定量化する．具体的には，(i) Wikipedia 編集履歴由来の正誤ペアから，認知的要因に起因する誤用事例のみを抽出して，日本語誤用データセットを構築した（81k 件）．(ii)アンケート（400 名）と LLM の出力分布から，同一指標として二択正規化確率を算出，比較し，LLM と人間の正用選好率の相関は約 0.3 と低いと確認された．(iii) SFT および DPO により，人間の誤用傾向を部分的に模倣できると示した．" />
 
-<meta name="citation_keywords" content="Q2:ポスター" />
+<meta name="citation_keywords" content="Q2:言語資源・アノテーションと評価 / 語彙資源・辞書" />
 
 <meta name="citation_pdf_url" content="" />
 
@@ -217,35 +213,27 @@
 <div class="card m-3" style="">
   <div class="card-header">
     <h2 class="card-title main-title text-center" style="color: black">
-      評価結果の予測確率を用いたLLMによるLLMの相対評価
+      日本語における LLM と人間の誤用傾向の差異の分析
     </h2>
     <h3 class="card-subtitle mb-2 text-muted text-center">
       
-      <a href="papers.html?filter=authors&search=森田隼功&program=all" class="text-primary"
-        >森田隼功</a
+      <a href="papers.html?filter=authors&search=中西純&program=all" class="text-primary"
+        >中西純</a
       >,
       
-      <a href="papers.html?filter=authors&search=大林弘明&program=all" class="text-primary"
-        >大林弘明</a
+      <a href="papers.html?filter=authors&search=牧野晃平&program=all" class="text-primary"
+        >牧野晃平</a
       >,
       
-      <a href="papers.html?filter=authors&search=田村晃裕&program=all" class="text-primary"
-        >田村晃裕</a
-      >,
-      
-      <a href="papers.html?filter=authors&search=濱田充男&program=all" class="text-primary"
-        >濱田充男</a
-      >,
-      
-      <a href="papers.html?filter=authors&search=加藤恒夫&program=all" class="text-primary"
-        >加藤恒夫</a
+      <a href="papers.html?filter=authors&search=佐々木裕&program=all" class="text-primary"
+        >佐々木裕</a
       >
       
     </h3>
 
     <p class="card-text text-center h5">
       
-      <a href="papers.html?filter=keywords&search=Q2:ポスター" class ="badge badge-pill badge-primary">Q2:ポスター</a>
+      <a href="papers.html?filter=keywords&search=Q2:言語資源・アノテーションと評価 / 語彙資源・辞書" class ="badge badge-pill badge-primary">Q2:言語資源・アノテーションと評価 / 語彙資源・辞書</a>
       
 
       
@@ -253,7 +241,7 @@
    
     <div class="text-center p-3">
       
-      <a class="card-link link-info" target="_blank" href="https://www.anlp.jp/proceedings/annual_meeting/2025/pdf_dir/Q2-14.pdf">
+      <a class="card-link link-info" target="_blank" href="https://www.anlp.jp/proceedings/annual_meeting/2026/pdf_dir/Q2-14.pdf">
         📝 Paper 
       </a>
       
@@ -307,7 +295,7 @@
         <div class="card-text">
           <div id="abstractExample">
             <span class="font-weight-bold">Abstract:</span>
-            本論文では，評価結果の予測確率を用いる大規模言語モデル（LLM）による LLM の新たな相対評価手法を提案する．従来の相対評価では，評価対象LLM の提示順を入れ替えた際に評価結果が変動する位置バイアスが生じた際，最終的な評価結果を適切に定める手法が確立されていない．そこで，本研究では，位置バイアスが生じた際に，提示順入れ替え前後の評価結果の予測確率の平均が最も高い結果を最終的な評価結果とする手法を提案する．そして，本提案手法を文章作成等のビジネスタスクを対象に評価し，有効性を確認した．
+            大規模言語モデル（LLM）は自然な文章を生成する一方で，人間の文章に一定確率で現れるはずの「誤用」が観察されることは稀である．本研究はこの現象を，日本語の母語話者における認知的取り違え（例：「危機一髪／危機一発」）に焦点を当てて定量化する．具体的には，(i) Wikipedia 編集履歴由来の正誤ペアから，認知的要因に起因する誤用事例のみを抽出して，日本語誤用データセットを構築した（81k 件）．(ii)アンケート（400 名）と LLM の出力分布から，同一指標として二択正規化確率を算出，比較し，LLM と人間の正用選好率の相関は約 0.3 と低いと確認された．(iii) SFT および DPO により，人間の誤用傾向を部分的に模倣できると示した．
           </div>
         </div>
       </div>
@@ -315,7 +303,7 @@
   </div>
   
   <div class="tab-pane fade" id="paper" role="tabpanel" aria-labelledby="paper-tab">
-    <embed src="https://www.anlp.jp/proceedings/annual_meeting/2025/pdf_dir/Q2-14.pdf" type="application/pdf" width="100%" height="850px">
+    <embed src="https://www.anlp.jp/proceedings/annual_meeting/2026/pdf_dir/Q2-14.pdf" type="application/pdf" width="100%" height="850px">
   </div>
   
   
@@ -358,7 +346,7 @@
         <p class="float-left">
           <img src="None" height="45px"
             width="auto" align="center">
-          <span class="lead">NLP2025</span>
+          <span class="lead">NLP2026</span>
         </p>
         <p class="float-right"><a href="#" class="text-dark">Back to Top</a></p>
         <p class="text-center">The title and abstract of the paper are licensed by the author(s) under CC BY 4.0<br>

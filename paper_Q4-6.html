@@ -64,28 +64,22 @@
   <script src="https://cdn.jsdelivr.net/npm/pdfjs-dist@2.3.200/build/pdf.min.js"></script>
   <script src="static/js/pdf_render.js"></script>
 
-  <title>NLP2025: LLM事前学習の効率化と性質改善： 埋め込み層および出力層のパラメータ固定による再利用</title>
+  <title>NLP2026: データセット説明文からの数値メタデータ自動抽出</title>
   
-<meta name="citation_title" content="LLM事前学習の効率化と性質改善： 埋め込み層および出力層のパラメータ固定による再利用" />
+<meta name="citation_title" content="データセット説明文からの数値メタデータ自動抽出" />
 
-<meta name="citation_author" content="李宰成" />
+<meta name="citation_author" content="嘉本名晋" />
 
-<meta name="citation_author" content="矢野一樹" />
+<meta name="citation_author" content="田村晃裕" />
 
-<meta name="citation_author" content="高橋良允" />
-
-<meta name="citation_author" content="柴田圭悟" />
-
-<meta name="citation_author" content="池田航" />
-
-<meta name="citation_author" content="鈴木潤" />
+<meta name="citation_author" content="桂井麻里衣" />
 
 <meta name="citation_publication_date" content="None" />
 <meta name="citation_conference_title" content="None" />
 <meta name="citation_inbook_title" content="None" />
-<meta name="citation_abstract" content="LLM の効率的な段階的事前学習法を提案する．提案法では，事前に適切な埋め込み層と出力層のパラメータを獲得し，それを初期値として再利用した上で固定して事前学習をする．この手順を取ることで，標準的な事前学習より計算量およびメモリ要求量を削減可能であることを示す．また，事前に獲得した埋め込み層と出力層の単語ベクトルとしての性能が標準的な事前学習で得られる表現よりも優れており，それが LLM の最終的な性能向上に寄与する可能性があることを示す．" />
+<meta name="citation_abstract" content="機械学習研究において適切なデータセットの発見は重要な課題であるが，データセット説明文の多くは非構造化テキストであり，数値による検索が困難である．本研究では，データセット文書から数値情報を抽出し構造化メタデータとして整理するタスクを新たに提案する．まず，論文とリポジトリからデータセットに関する説明文書 3,926 件を抽出し，数値エンティティとその文脈に関するアノテーション済みコーパスを構築した．次に，数値情報と数値情報の補足情報（非数値情報）を二段階に分けて抽出するようモデルを訓練した．実験では，数値エンティティに対して F1 スコア 72.0%，非数値エンティティに対して F1 スコア 63.4%を達成した．" />
 
-<meta name="citation_keywords" content="Q4:ポスター" />
+<meta name="citation_keywords" content="Q4:言語資源・アノテーションと評価" />
 
 <meta name="citation_pdf_url" content="" />
 
@@ -219,39 +213,27 @@
 <div class="card m-3" style="">
   <div class="card-header">
     <h2 class="card-title main-title text-center" style="color: black">
-      LLM事前学習の効率化と性質改善： 埋め込み層および出力層のパラメータ固定による再利用
+      データセット説明文からの数値メタデータ自動抽出
     </h2>
     <h3 class="card-subtitle mb-2 text-muted text-center">
       
-      <a href="papers.html?filter=authors&search=李宰成&program=all" class="text-primary"
-        >李宰成</a
+      <a href="papers.html?filter=authors&search=嘉本名晋&program=all" class="text-primary"
+        >嘉本名晋</a
       >,
       
-      <a href="papers.html?filter=authors&search=矢野一樹&program=all" class="text-primary"
-        >矢野一樹</a
+      <a href="papers.html?filter=authors&search=田村晃裕&program=all" class="text-primary"
+        >田村晃裕</a
       >,
       
-      <a href="papers.html?filter=authors&search=高橋良允&program=all" class="text-primary"
-        >高橋良允</a
-      >,
-      
-      <a href="papers.html?filter=authors&search=柴田圭悟&program=all" class="text-primary"
-        >柴田圭悟</a
-      >,
-      
-      <a href="papers.html?filter=authors&search=池田航&program=all" class="text-primary"
-        >池田航</a
-      >,
-      
-      <a href="papers.html?filter=authors&search=鈴木潤&program=all" class="text-primary"
-        >鈴木潤</a
+      <a href="papers.html?filter=authors&search=桂井麻里衣&program=all" class="text-primary"
+        >桂井麻里衣</a
       >
       
     </h3>
 
     <p class="card-text text-center h5">
       
-      <a href="papers.html?filter=keywords&search=Q4:ポスター" class ="badge badge-pill badge-primary">Q4:ポスター</a>
+      <a href="papers.html?filter=keywords&search=Q4:言語資源・アノテーションと評価" class ="badge badge-pill badge-primary">Q4:言語資源・アノテーションと評価</a>
       
 
       
@@ -259,7 +241,7 @@
    
     <div class="text-center p-3">
       
-      <a class="card-link link-info" target="_blank" href="https://www.anlp.jp/proceedings/annual_meeting/2025/pdf_dir/Q4-6.pdf">
+      <a class="card-link link-info" target="_blank" href="https://www.anlp.jp/proceedings/annual_meeting/2026/pdf_dir/Q4-6.pdf">
         📝 Paper 
       </a>
       
@@ -313,7 +295,7 @@
         <div class="card-text">
           <div id="abstractExample">
             <span class="font-weight-bold">Abstract:</span>
-            LLM の効率的な段階的事前学習法を提案する．提案法では，事前に適切な埋め込み層と出力層のパラメータを獲得し，それを初期値として再利用した上で固定して事前学習をする．この手順を取ることで，標準的な事前学習より計算量およびメモリ要求量を削減可能であることを示す．また，事前に獲得した埋め込み層と出力層の単語ベクトルとしての性能が標準的な事前学習で得られる表現よりも優れており，それが LLM の最終的な性能向上に寄与する可能性があることを示す．
+            機械学習研究において適切なデータセットの発見は重要な課題であるが，データセット説明文の多くは非構造化テキストであり，数値による検索が困難である．本研究では，データセット文書から数値情報を抽出し構造化メタデータとして整理するタスクを新たに提案する．まず，論文とリポジトリからデータセットに関する説明文書 3,926 件を抽出し，数値エンティティとその文脈に関するアノテーション済みコーパスを構築した．次に，数値情報と数値情報の補足情報（非数値情報）を二段階に分けて抽出するようモデルを訓練した．実験では，数値エンティティに対して F1 スコア 72.0%，非数値エンティティに対して F1 スコア 63.4%を達成した．
           </div>
         </div>
       </div>
@@ -321,7 +303,7 @@
   </div>
   
   <div class="tab-pane fade" id="paper" role="tabpanel" aria-labelledby="paper-tab">
-    <embed src="https://www.anlp.jp/proceedings/annual_meeting/2025/pdf_dir/Q4-6.pdf" type="application/pdf" width="100%" height="850px">
+    <embed src="https://www.anlp.jp/proceedings/annual_meeting/2026/pdf_dir/Q4-6.pdf" type="application/pdf" width="100%" height="850px">
   </div>
   
   
@@ -364,7 +346,7 @@
         <p class="float-left">
           <img src="None" height="45px"
             width="auto" align="center">
-          <span class="lead">NLP2025</span>
+          <span class="lead">NLP2026</span>
         </p>
         <p class="float-right"><a href="#" class="text-dark">Back to Top</a></p>
         <p class="text-center">The title and abstract of the paper are licensed by the author(s) under CC BY 4.0<br>

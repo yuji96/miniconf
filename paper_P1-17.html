@@ -64,26 +64,22 @@
   <script src="https://cdn.jsdelivr.net/npm/pdfjs-dist@2.3.200/build/pdf.min.js"></script>
   <script src="static/js/pdf_render.js"></script>
 
-  <title>NLP2025: 複数のLLMを活用した機械翻訳のための協力デコーディング</title>
+  <title>NLP2026: 日本語 Text2Data のためのデータセットの検証および実社会応用</title>
   
-<meta name="citation_title" content="複数のLLMを活用した機械翻訳のための協力デコーディング" />
+<meta name="citation_title" content="日本語 Text2Data のためのデータセットの検証および実社会応用" />
 
-<meta name="citation_author" content="白井尚登" />
+<meta name="citation_author" content="仲田将斗" />
 
-<meta name="citation_author" content="衣川和尭" />
+<meta name="citation_author" content="亀甲博貴" />
 
-<meta name="citation_author" content="伊藤均" />
-
-<meta name="citation_author" content="美野秀弥" />
-
-<meta name="citation_author" content="河合吉彦" />
+<meta name="citation_author" content="森信介" />
 
 <meta name="citation_publication_date" content="None" />
 <meta name="citation_conference_title" content="None" />
 <meta name="citation_inbook_title" content="None" />
-<meta name="citation_abstract" content="大規模言語モデル（LLM）は対話などの生成タスクで成功する一方，翻訳性能の向上や計算コストの高さに課題がある．そこで本論文では，これらの課題を解決するために機械翻訳に適した新たな協力デコーディング手法を提案する．本手法は各言語の単言語データの継続事前学習をしたのち，対訳データによる追加学習をした小型 LLM と，より大型なLLM を組み合わせて翻訳を行う．日英・独英翻訳タスクについて双方向で実験した結果，提案手法はパラメータサイズの小さなモデルを学習することで計算コストを抑え,既存の協力デコーディング手法を上回る翻訳性能を示した．" />
+<meta name="citation_abstract" content="テキストアナリティクスにおける実験設定の記述や再現は，非専門家の研究者にとって困難な課題である．本研究では，構造化データとテキストを相互変換する Data2Text および Text2Data タスクの基盤強化を目的とし，日本語 Wikipedia から抽出した 123M文規模の新たなデータセット Japinax を構築した．実験では，事前学習済み言語モデルのne-tune におけるデータサイズと変換精度の相関を分析し，実用的な精度を得るための定量的な指標を明らかにした．さらに，実社会応用として Web アプリケーション LiTA を開発し，研究支援機能を提供するとともに，ユーザからのフィードバックを通じて継続的にデータセットを拡充するシステムを実現した．" />
 
-<meta name="citation_keywords" content="P1:ポスター" />
+<meta name="citation_keywords" content="P1:情報検索・テキストマイニング / 機械翻訳" />
 
 <meta name="citation_pdf_url" content="" />
 
@@ -217,35 +213,27 @@
 <div class="card m-3" style="">
   <div class="card-header">
     <h2 class="card-title main-title text-center" style="color: black">
-      複数のLLMを活用した機械翻訳のための協力デコーディング
+      日本語 Text2Data のためのデータセットの検証および実社会応用
     </h2>
     <h3 class="card-subtitle mb-2 text-muted text-center">
       
-      <a href="papers.html?filter=authors&search=白井尚登&program=all" class="text-primary"
-        >白井尚登</a
+      <a href="papers.html?filter=authors&search=仲田将斗&program=all" class="text-primary"
+        >仲田将斗</a
       >,
       
-      <a href="papers.html?filter=authors&search=衣川和尭&program=all" class="text-primary"
-        >衣川和尭</a
+      <a href="papers.html?filter=authors&search=亀甲博貴&program=all" class="text-primary"
+        >亀甲博貴</a
       >,
       
-      <a href="papers.html?filter=authors&search=伊藤均&program=all" class="text-primary"
-        >伊藤均</a
-      >,
-      
-      <a href="papers.html?filter=authors&search=美野秀弥&program=all" class="text-primary"
-        >美野秀弥</a
-      >,
-      
-      <a href="papers.html?filter=authors&search=河合吉彦&program=all" class="text-primary"
-        >河合吉彦</a
+      <a href="papers.html?filter=authors&search=森信介&program=all" class="text-primary"
+        >森信介</a
       >
       
     </h3>
 
     <p class="card-text text-center h5">
       
-      <a href="papers.html?filter=keywords&search=P1:ポスター" class ="badge badge-pill badge-primary">P1:ポスター</a>
+      <a href="papers.html?filter=keywords&search=P1:情報検索・テキストマイニング / 機械翻訳" class ="badge badge-pill badge-primary">P1:情報検索・テキストマイニング / 機械翻訳</a>
       
 
       
@@ -253,7 +241,7 @@
    
     <div class="text-center p-3">
       
-      <a class="card-link link-info" target="_blank" href="https://www.anlp.jp/proceedings/annual_meeting/2025/pdf_dir/P1-17.pdf">
+      <a class="card-link link-info" target="_blank" href="https://www.anlp.jp/proceedings/annual_meeting/2026/pdf_dir/P1-17.pdf">
         📝 Paper 
       </a>
       
@@ -307,7 +295,7 @@
         <div class="card-text">
           <div id="abstractExample">
             <span class="font-weight-bold">Abstract:</span>
-            大規模言語モデル（LLM）は対話などの生成タスクで成功する一方，翻訳性能の向上や計算コストの高さに課題がある．そこで本論文では，これらの課題を解決するために機械翻訳に適した新たな協力デコーディング手法を提案する．本手法は各言語の単言語データの継続事前学習をしたのち，対訳データによる追加学習をした小型 LLM と，より大型なLLM を組み合わせて翻訳を行う．日英・独英翻訳タスクについて双方向で実験した結果，提案手法はパラメータサイズの小さなモデルを学習することで計算コストを抑え,既存の協力デコーディング手法を上回る翻訳性能を示した．
+            テキストアナリティクスにおける実験設定の記述や再現は，非専門家の研究者にとって困難な課題である．本研究では，構造化データとテキストを相互変換する Data2Text および Text2Data タスクの基盤強化を目的とし，日本語 Wikipedia から抽出した 123M文規模の新たなデータセット Japinax を構築した．実験では，事前学習済み言語モデルのne-tune におけるデータサイズと変換精度の相関を分析し，実用的な精度を得るための定量的な指標を明らかにした．さらに，実社会応用として Web アプリケーション LiTA を開発し，研究支援機能を提供するとともに，ユーザからのフィードバックを通じて継続的にデータセットを拡充するシステムを実現した．
           </div>
         </div>
       </div>
@@ -315,7 +303,7 @@
   </div>
   
   <div class="tab-pane fade" id="paper" role="tabpanel" aria-labelledby="paper-tab">
-    <embed src="https://www.anlp.jp/proceedings/annual_meeting/2025/pdf_dir/P1-17.pdf" type="application/pdf" width="100%" height="850px">
+    <embed src="https://www.anlp.jp/proceedings/annual_meeting/2026/pdf_dir/P1-17.pdf" type="application/pdf" width="100%" height="850px">
   </div>
   
   
@@ -358,7 +346,7 @@
         <p class="float-left">
           <img src="None" height="45px"
             width="auto" align="center">
-          <span class="lead">NLP2025</span>
+          <span class="lead">NLP2026</span>
         </p>
         <p class="float-right"><a href="#" class="text-dark">Back to Top</a></p>
         <p class="text-center">The title and abstract of the paper are licensed by the author(s) under CC BY 4.0<br>

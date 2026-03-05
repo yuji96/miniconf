@@ -64,48 +64,26 @@
   <script src="https://cdn.jsdelivr.net/npm/pdfjs-dist@2.3.200/build/pdf.min.js"></script>
   <script src="static/js/pdf_render.js"></script>
 
-  <title>NLP2025: Asagi: 合成データセットを活用した大規模日本語VLM</title>
+  <title>NLP2026: LLMの文体差理解向上のためのデータセットの開発</title>
   
-<meta name="citation_title" content="Asagi: 合成データセットを活用した大規模日本語VLM" />
+<meta name="citation_title" content="LLMの文体差理解向上のためのデータセットの開発" />
 
-<meta name="citation_author" content="上原康平" />
+<meta name="citation_author" content="森貞堅湧" />
 
-<meta name="citation_author" content="黒瀬優介" />
+<meta name="citation_author" content="田窪洋介" />
 
-<meta name="citation_author" content="安道健一郎" />
+<meta name="citation_author" content="高品良" />
 
-<meta name="citation_author" content="JialiChen" />
+<meta name="citation_author" content="狩野洋一" />
 
-<meta name="citation_author" content="FanGao" />
-
-<meta name="citation_author" content="金澤爽太郎" />
-
-<meta name="citation_author" content="坂本拓彌" />
-
-<meta name="citation_author" content="竹田悠哉" />
-
-<meta name="citation_author" content="BomingYang" />
-
-<meta name="citation_author" content="XinjieZhao" />
-
-<meta name="citation_author" content="村尾晃平" />
-
-<meta name="citation_author" content="吉田浩" />
-
-<meta name="citation_author" content="田村孝之" />
-
-<meta name="citation_author" content="合田憲人" />
-
-<meta name="citation_author" content="喜連川優" />
-
-<meta name="citation_author" content="原田達也" />
+<meta name="citation_author" content="JeongmyeongLee" />
 
 <meta name="citation_publication_date" content="None" />
 <meta name="citation_conference_title" content="None" />
 <meta name="citation_inbook_title" content="None" />
-<meta name="citation_abstract" content="大規模言語モデル（LLM）の発展として，画像など他のモダリティも扱う大規模マルチモーダルモデルの研究が進んでいる．本研究で注目する Vision &amp;Language モデル（VLM）は，画像とテキストを同時に入力可能なモデルである．しかしながら，データが潤沢な英語モデルに比べ，データの不足する日本語モデルの開発は十分とはいえない．本研究では，日本語能力に特化した VLM の開発のため，大規模な日本語テキスト・画像ペアの合成データセットを新たに構築した．なお，データセットの構築時に，ライセンスによってデータ利用が制限される LLMは用いていない．構築したデータセットを用いて日本語 VLM を訓練し，その性能を評価した．" />
+<meta name="citation_abstract" content="大規模言語モデル（LLM）は高い日本語生成性能を示す一方で，話し言葉や書き言葉といった文体差に対する理解には課題が残されている．本研究では，話し言葉および書き言葉の理解向上を目的とした日本語データセットを新たに作成し，LLM に対する学習を行った．さらに，学習前後のモデル出力を代表的な LLM の 1 つである GPT-5 を評価器として用いて比較し，文体別の理解性能の変化を定量的に分析した．その結果，作成したデータセットによる学習が話し言葉および書き言葉の理解向上に寄与することを確認した．" />
 
-<meta name="citation_keywords" content="Q3:ポスター" />
+<meta name="citation_keywords" content="Q3:言語資源・アノテーションと評価 / その他の応用" />
 
 <meta name="citation_pdf_url" content="" />
 
@@ -239,79 +217,35 @@
 <div class="card m-3" style="">
   <div class="card-header">
     <h2 class="card-title main-title text-center" style="color: black">
-      Asagi: 合成データセットを活用した大規模日本語VLM
+      LLMの文体差理解向上のためのデータセットの開発
     </h2>
     <h3 class="card-subtitle mb-2 text-muted text-center">
       
-      <a href="papers.html?filter=authors&search=上原康平&program=all" class="text-primary"
-        >上原康平</a
+      <a href="papers.html?filter=authors&search=森貞堅湧&program=all" class="text-primary"
+        >森貞堅湧</a
       >,
       
-      <a href="papers.html?filter=authors&search=黒瀬優介&program=all" class="text-primary"
-        >黒瀬優介</a
+      <a href="papers.html?filter=authors&search=田窪洋介&program=all" class="text-primary"
+        >田窪洋介</a
       >,
       
-      <a href="papers.html?filter=authors&search=安道健一郎&program=all" class="text-primary"
-        >安道健一郎</a
+      <a href="papers.html?filter=authors&search=高品良&program=all" class="text-primary"
+        >高品良</a
       >,
       
-      <a href="papers.html?filter=authors&search=JialiChen&program=all" class="text-primary"
-        >JialiChen</a
+      <a href="papers.html?filter=authors&search=狩野洋一&program=all" class="text-primary"
+        >狩野洋一</a
       >,
       
-      <a href="papers.html?filter=authors&search=FanGao&program=all" class="text-primary"
-        >FanGao</a
-      >,
-      
-      <a href="papers.html?filter=authors&search=金澤爽太郎&program=all" class="text-primary"
-        >金澤爽太郎</a
-      >,
-      
-      <a href="papers.html?filter=authors&search=坂本拓彌&program=all" class="text-primary"
-        >坂本拓彌</a
-      >,
-      
-      <a href="papers.html?filter=authors&search=竹田悠哉&program=all" class="text-primary"
-        >竹田悠哉</a
-      >,
-      
-      <a href="papers.html?filter=authors&search=BomingYang&program=all" class="text-primary"
-        >BomingYang</a
-      >,
-      
-      <a href="papers.html?filter=authors&search=XinjieZhao&program=all" class="text-primary"
-        >XinjieZhao</a
-      >,
-      
-      <a href="papers.html?filter=authors&search=村尾晃平&program=all" class="text-primary"
-        >村尾晃平</a
-      >,
-      
-      <a href="papers.html?filter=authors&search=吉田浩&program=all" class="text-primary"
-        >吉田浩</a
-      >,
-      
-      <a href="papers.html?filter=authors&search=田村孝之&program=all" class="text-primary"
-        >田村孝之</a
-      >,
-      
-      <a href="papers.html?filter=authors&search=合田憲人&program=all" class="text-primary"
-        >合田憲人</a
-      >,
-      
-      <a href="papers.html?filter=authors&search=喜連川優&program=all" class="text-primary"
-        >喜連川優</a
-      >,
-      
-      <a href="papers.html?filter=authors&search=原田達也&program=all" class="text-primary"
-        >原田達也</a
+      <a href="papers.html?filter=authors&search=JeongmyeongLee&program=all" class="text-primary"
+        >JeongmyeongLee</a
       >
       
     </h3>
 
     <p class="card-text text-center h5">
       
-      <a href="papers.html?filter=keywords&search=Q3:ポスター" class ="badge badge-pill badge-primary">Q3:ポスター</a>
+      <a href="papers.html?filter=keywords&search=Q3:言語資源・アノテーションと評価 / その他の応用" class ="badge badge-pill badge-primary">Q3:言語資源・アノテーションと評価 / その他の応用</a>
       
 
       
@@ -319,7 +253,7 @@
    
     <div class="text-center p-3">
       
-      <a class="card-link link-info" target="_blank" href="https://www.anlp.jp/proceedings/annual_meeting/2025/pdf_dir/Q3-5.pdf">
+      <a class="card-link link-info" target="_blank" href="https://www.anlp.jp/proceedings/annual_meeting/2026/pdf_dir/Q3-5.pdf">
         📝 Paper 
       </a>
       
@@ -373,7 +307,7 @@
         <div class="card-text">
           <div id="abstractExample">
             <span class="font-weight-bold">Abstract:</span>
-            大規模言語モデル（LLM）の発展として，画像など他のモダリティも扱う大規模マルチモーダルモデルの研究が進んでいる．本研究で注目する Vision &amp;Language モデル（VLM）は，画像とテキストを同時に入力可能なモデルである．しかしながら，データが潤沢な英語モデルに比べ，データの不足する日本語モデルの開発は十分とはいえない．本研究では，日本語能力に特化した VLM の開発のため，大規模な日本語テキスト・画像ペアの合成データセットを新たに構築した．なお，データセットの構築時に，ライセンスによってデータ利用が制限される LLMは用いていない．構築したデータセットを用いて日本語 VLM を訓練し，その性能を評価した．
+            大規模言語モデル（LLM）は高い日本語生成性能を示す一方で，話し言葉や書き言葉といった文体差に対する理解には課題が残されている．本研究では，話し言葉および書き言葉の理解向上を目的とした日本語データセットを新たに作成し，LLM に対する学習を行った．さらに，学習前後のモデル出力を代表的な LLM の 1 つである GPT-5 を評価器として用いて比較し，文体別の理解性能の変化を定量的に分析した．その結果，作成したデータセットによる学習が話し言葉および書き言葉の理解向上に寄与することを確認した．
           </div>
         </div>
       </div>
@@ -381,7 +315,7 @@
   </div>
   
   <div class="tab-pane fade" id="paper" role="tabpanel" aria-labelledby="paper-tab">
-    <embed src="https://www.anlp.jp/proceedings/annual_meeting/2025/pdf_dir/Q3-5.pdf" type="application/pdf" width="100%" height="850px">
+    <embed src="https://www.anlp.jp/proceedings/annual_meeting/2026/pdf_dir/Q3-5.pdf" type="application/pdf" width="100%" height="850px">
   </div>
   
   
@@ -424,7 +358,7 @@
         <p class="float-left">
           <img src="None" height="45px"
             width="auto" align="center">
-          <span class="lead">NLP2025</span>
+          <span class="lead">NLP2026</span>
         </p>
         <p class="float-right"><a href="#" class="text-dark">Back to Top</a></p>
         <p class="text-center">The title and abstract of the paper are licensed by the author(s) under CC BY 4.0<br>

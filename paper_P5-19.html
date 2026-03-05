@@ -64,22 +64,22 @@
   <script src="https://cdn.jsdelivr.net/npm/pdfjs-dist@2.3.200/build/pdf.min.js"></script>
   <script src="static/js/pdf_render.js"></script>
 
-  <title>NLP2025: 音声トークナイズが音声言語モデルの性能に与える影響の調査</title>
+  <title>NLP2026: 論点予測に基づく動的仮説スロット生成を用いた対話フレームワークの検討</title>
   
-<meta name="citation_title" content="音声トークナイズが音声言語モデルの性能に与える影響の調査" />
+<meta name="citation_title" content="論点予測に基づく動的仮説スロット生成を用いた対話フレームワークの検討" />
 
-<meta name="citation_author" content="神藤駿介" />
+<meta name="citation_author" content="橋本慧海" />
 
-<meta name="citation_author" content="宮尾祐介" />
+<meta name="citation_author" content="長澤史記" />
 
-<meta name="citation_author" content="高道慎之介" />
+<meta name="citation_author" content="白松俊" />
 
 <meta name="citation_publication_date" content="None" />
 <meta name="citation_conference_title" content="None" />
 <meta name="citation_inbook_title" content="None" />
-<meta name="citation_abstract" content="近年，音声言語処理の新たな手法として TextlessNLP（テキスト資源に頼らず音声資源のみを用いてNLP システムを構築する試み）が注目を集めている．その基盤となる「音声言語モデル」は，音声シグナルを「トークナイズ」して離散表現に変換した上で言語モデルを学習し，音声言語処理の実現を目指すものである．本研究では，計 36 通りの音声トークナイズ手法を用いて音声言語モデルを学習して性能を比較し，音声トークナイズが音声言語モデルの性能に与える影響を調査した．実験の結果，音声シグナルを適切な粒度で分節すること，離散化時のクラスタ数を増やすことの有用性が示唆された．" />
+<meta name="citation_abstract" content="我々は看護師キャリア面談の事前ヒアリングを支援するスロット生成型対話を開発してきた．しかし，LLM による動的スロット生成は話題が拡散し，質問意図が伝わりにくい課題があった．そこで，本研究ではユーザ応答から次に深掘りすべき論点（将来判断・感情・問題原因）を予測し，その論点を条件としてアブダクションによる仮説スロット生成と質問生成を制御するフレームワークを提案する．ESC の対話戦略ラベル予測モデルを論点予測の代替として用い，GPT-4o で仮説と質問を生成した．予備実験では同一履歴に対し論点条件を切り替えると生成質問の観点が系統的に変化することを確認し，対話の一貫性向上の可能性を示した．" />
 
-<meta name="citation_keywords" content="P5:ポスター" />
+<meta name="citation_keywords" content="P5:対話 / 質問応答" />
 
 <meta name="citation_pdf_url" content="" />
 
@@ -213,27 +213,27 @@
 <div class="card m-3" style="">
   <div class="card-header">
     <h2 class="card-title main-title text-center" style="color: black">
-      音声トークナイズが音声言語モデルの性能に与える影響の調査
+      論点予測に基づく動的仮説スロット生成を用いた対話フレームワークの検討
     </h2>
     <h3 class="card-subtitle mb-2 text-muted text-center">
       
-      <a href="papers.html?filter=authors&search=神藤駿介&program=all" class="text-primary"
-        >神藤駿介</a
+      <a href="papers.html?filter=authors&search=橋本慧海&program=all" class="text-primary"
+        >橋本慧海</a
       >,
       
-      <a href="papers.html?filter=authors&search=宮尾祐介&program=all" class="text-primary"
-        >宮尾祐介</a
+      <a href="papers.html?filter=authors&search=長澤史記&program=all" class="text-primary"
+        >長澤史記</a
       >,
       
-      <a href="papers.html?filter=authors&search=高道慎之介&program=all" class="text-primary"
-        >高道慎之介</a
+      <a href="papers.html?filter=authors&search=白松俊&program=all" class="text-primary"
+        >白松俊</a
       >
       
     </h3>
 
     <p class="card-text text-center h5">
       
-      <a href="papers.html?filter=keywords&search=P5:ポスター" class ="badge badge-pill badge-primary">P5:ポスター</a>
+      <a href="papers.html?filter=keywords&search=P5:対話 / 質問応答" class ="badge badge-pill badge-primary">P5:対話 / 質問応答</a>
       
 
       
@@ -241,7 +241,7 @@
    
     <div class="text-center p-3">
       
-      <a class="card-link link-info" target="_blank" href="https://www.anlp.jp/proceedings/annual_meeting/2025/pdf_dir/P5-19.pdf">
+      <a class="card-link link-info" target="_blank" href="https://www.anlp.jp/proceedings/annual_meeting/2026/pdf_dir/P5-19.pdf">
         📝 Paper 
       </a>
       
@@ -295,7 +295,7 @@
         <div class="card-text">
           <div id="abstractExample">
             <span class="font-weight-bold">Abstract:</span>
-            近年，音声言語処理の新たな手法として TextlessNLP（テキスト資源に頼らず音声資源のみを用いてNLP システムを構築する試み）が注目を集めている．その基盤となる「音声言語モデル」は，音声シグナルを「トークナイズ」して離散表現に変換した上で言語モデルを学習し，音声言語処理の実現を目指すものである．本研究では，計 36 通りの音声トークナイズ手法を用いて音声言語モデルを学習して性能を比較し，音声トークナイズが音声言語モデルの性能に与える影響を調査した．実験の結果，音声シグナルを適切な粒度で分節すること，離散化時のクラスタ数を増やすことの有用性が示唆された．
+            我々は看護師キャリア面談の事前ヒアリングを支援するスロット生成型対話を開発してきた．しかし，LLM による動的スロット生成は話題が拡散し，質問意図が伝わりにくい課題があった．そこで，本研究ではユーザ応答から次に深掘りすべき論点（将来判断・感情・問題原因）を予測し，その論点を条件としてアブダクションによる仮説スロット生成と質問生成を制御するフレームワークを提案する．ESC の対話戦略ラベル予測モデルを論点予測の代替として用い，GPT-4o で仮説と質問を生成した．予備実験では同一履歴に対し論点条件を切り替えると生成質問の観点が系統的に変化することを確認し，対話の一貫性向上の可能性を示した．
           </div>
         </div>
       </div>
@@ -303,7 +303,7 @@
   </div>
   
   <div class="tab-pane fade" id="paper" role="tabpanel" aria-labelledby="paper-tab">
-    <embed src="https://www.anlp.jp/proceedings/annual_meeting/2025/pdf_dir/P5-19.pdf" type="application/pdf" width="100%" height="850px">
+    <embed src="https://www.anlp.jp/proceedings/annual_meeting/2026/pdf_dir/P5-19.pdf" type="application/pdf" width="100%" height="850px">
   </div>
   
   
@@ -346,7 +346,7 @@
         <p class="float-left">
           <img src="None" height="45px"
             width="auto" align="center">
-          <span class="lead">NLP2025</span>
+          <span class="lead">NLP2026</span>
         </p>
         <p class="float-right"><a href="#" class="text-dark">Back to Top</a></p>
         <p class="text-center">The title and abstract of the paper are licensed by the author(s) under CC BY 4.0<br>

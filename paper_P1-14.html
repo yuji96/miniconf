@@ -64,22 +64,24 @@
   <script src="https://cdn.jsdelivr.net/npm/pdfjs-dist@2.3.200/build/pdf.min.js"></script>
   <script src="static/js/pdf_render.js"></script>
 
-  <title>NLP2025: Adapting Multilingual Models for Specialized Translation through Mixed Fine-tuning</title>
+  <title>NLP2026: Embeddingタスクでの継続事前学習によるドメイン特化の検討</title>
   
-<meta name="citation_title" content="Adapting Multilingual Models for Specialized Translation through Mixed Fine-tuning" />
+<meta name="citation_title" content="Embeddingタスクでの継続事前学習によるドメイン特化の検討" />
 
-<meta name="citation_author" content="LiyanWang" />
+<meta name="citation_author" content="藤本裕之" />
 
-<meta name="citation_author" content="HaotongWang" />
+<meta name="citation_author" content="高田直幸" />
 
-<meta name="citation_author" content="YvesLepage" />
+<meta name="citation_author" content="今田翔平" />
+
+<meta name="citation_author" content="青木秀行" />
 
 <meta name="citation_publication_date" content="None" />
 <meta name="citation_conference_title" content="None" />
 <meta name="citation_inbook_title" content="None" />
-<meta name="citation_abstract" content="In this work, we dissect mixed ﬁne-tuning for adapt-ing multilingual models to English-to-Japanese translation.We explore diﬀerent sampling regimes across specializedand generic translations. Our ﬁndings indicate that over-sampling the in-domain data leads to notable improvementsin domain-speciﬁc performance, yet at the cost of severedegradation in generalization to unseen languages, per-forming even worse than basic ﬁne-tuning with no genericdata. In contrast, undersampling the generic data pre-serves more of the original multilingual capabilities whilestill achieving moderate domain adaptation gains. Theseresults highlight the critical role of managing training sizeand data coverage to optimize the trade-oﬀ between spe-cialization and generalization during adaptation." />
+<meta name="citation_abstract" content="汎用的な Embedding モデルでは未知のドメイン知識の埋め込みが困難である。本研究では、事前学習済みモデルに継続事前学習で新規のドメイン知識を付加することで特定ドメインに特化させることは可能なのかを検証した。Wikipedia の新規記事を疑似ドメインデータを作成し、ベンチマークを提案した。その結果、継続事前学習によってドメイン知識に関する能力が向上することを確認した。今後、より Embedding 能力が高いモデルでの効果、異なる性質のドメイン知識について検討したい。" />
 
-<meta name="citation_keywords" content="P1:ポスター" />
+<meta name="citation_keywords" content="P1:情報検索・テキストマイニング / 機械翻訳" />
 
 <meta name="citation_pdf_url" content="" />
 
@@ -213,27 +215,31 @@
 <div class="card m-3" style="">
   <div class="card-header">
     <h2 class="card-title main-title text-center" style="color: black">
-      Adapting Multilingual Models for Specialized Translation through Mixed Fine-tuning
+      Embeddingタスクでの継続事前学習によるドメイン特化の検討
     </h2>
     <h3 class="card-subtitle mb-2 text-muted text-center">
       
-      <a href="papers.html?filter=authors&search=LiyanWang&program=all" class="text-primary"
-        >LiyanWang</a
+      <a href="papers.html?filter=authors&search=藤本裕之&program=all" class="text-primary"
+        >藤本裕之</a
       >,
       
-      <a href="papers.html?filter=authors&search=HaotongWang&program=all" class="text-primary"
-        >HaotongWang</a
+      <a href="papers.html?filter=authors&search=高田直幸&program=all" class="text-primary"
+        >高田直幸</a
       >,
       
-      <a href="papers.html?filter=authors&search=YvesLepage&program=all" class="text-primary"
-        >YvesLepage</a
+      <a href="papers.html?filter=authors&search=今田翔平&program=all" class="text-primary"
+        >今田翔平</a
+      >,
+      
+      <a href="papers.html?filter=authors&search=青木秀行&program=all" class="text-primary"
+        >青木秀行</a
       >
       
     </h3>
 
     <p class="card-text text-center h5">
       
-      <a href="papers.html?filter=keywords&search=P1:ポスター" class ="badge badge-pill badge-primary">P1:ポスター</a>
+      <a href="papers.html?filter=keywords&search=P1:情報検索・テキストマイニング / 機械翻訳" class ="badge badge-pill badge-primary">P1:情報検索・テキストマイニング / 機械翻訳</a>
       
 
       
@@ -241,7 +247,7 @@
    
     <div class="text-center p-3">
       
-      <a class="card-link link-info" target="_blank" href="https://www.anlp.jp/proceedings/annual_meeting/2025/pdf_dir/P1-14.pdf">
+      <a class="card-link link-info" target="_blank" href="https://www.anlp.jp/proceedings/annual_meeting/2026/pdf_dir/P1-14.pdf">
         📝 Paper 
       </a>
       
@@ -295,7 +301,7 @@
         <div class="card-text">
           <div id="abstractExample">
             <span class="font-weight-bold">Abstract:</span>
-            In this work, we dissect mixed ﬁne-tuning for adapt-ing multilingual models to English-to-Japanese translation.We explore diﬀerent sampling regimes across specializedand generic translations. Our ﬁndings indicate that over-sampling the in-domain data leads to notable improvementsin domain-speciﬁc performance, yet at the cost of severedegradation in generalization to unseen languages, per-forming even worse than basic ﬁne-tuning with no genericdata. In contrast, undersampling the generic data pre-serves more of the original multilingual capabilities whilestill achieving moderate domain adaptation gains. Theseresults highlight the critical role of managing training sizeand data coverage to optimize the trade-oﬀ between spe-cialization and generalization during adaptation.
+            汎用的な Embedding モデルでは未知のドメイン知識の埋め込みが困難である。本研究では、事前学習済みモデルに継続事前学習で新規のドメイン知識を付加することで特定ドメインに特化させることは可能なのかを検証した。Wikipedia の新規記事を疑似ドメインデータを作成し、ベンチマークを提案した。その結果、継続事前学習によってドメイン知識に関する能力が向上することを確認した。今後、より Embedding 能力が高いモデルでの効果、異なる性質のドメイン知識について検討したい。
           </div>
         </div>
       </div>
@@ -303,7 +309,7 @@
   </div>
   
   <div class="tab-pane fade" id="paper" role="tabpanel" aria-labelledby="paper-tab">
-    <embed src="https://www.anlp.jp/proceedings/annual_meeting/2025/pdf_dir/P1-14.pdf" type="application/pdf" width="100%" height="850px">
+    <embed src="https://www.anlp.jp/proceedings/annual_meeting/2026/pdf_dir/P1-14.pdf" type="application/pdf" width="100%" height="850px">
   </div>
   
   
@@ -346,7 +352,7 @@
         <p class="float-left">
           <img src="None" height="45px"
             width="auto" align="center">
-          <span class="lead">NLP2025</span>
+          <span class="lead">NLP2026</span>
         </p>
         <p class="float-right"><a href="#" class="text-dark">Back to Top</a></p>
         <p class="text-center">The title and abstract of the paper are licensed by the author(s) under CC BY 4.0<br>

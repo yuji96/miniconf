@@ -64,22 +64,34 @@
   <script src="https://cdn.jsdelivr.net/npm/pdfjs-dist@2.3.200/build/pdf.min.js"></script>
   <script src="static/js/pdf_render.js"></script>
 
-  <title>NLP2025: 日本語大規模言語モデルの有用性と安全性の両立に向けたチューニング手法の検証</title>
+  <title>NLP2026: LLMの生成テキストの真偽検証のための日本語真偽判定データセットの構築</title>
   
-<meta name="citation_title" content="日本語大規模言語モデルの有用性と安全性の両立に向けたチューニング手法の検証" />
+<meta name="citation_title" content="LLMの生成テキストの真偽検証のための日本語真偽判定データセットの構築" />
 
-<meta name="citation_author" content="勝又智" />
+<meta name="citation_author" content="政野美和" />
 
-<meta name="citation_author" content="児玉貴志" />
+<meta name="citation_author" content="清丸寛一" />
 
-<meta name="citation_author" content="宮尾祐介" />
+<meta name="citation_author" content="欅惇志" />
+
+<meta name="citation_author" content="堀尾海斗" />
+
+<meta name="citation_author" content="源怜維" />
+
+<meta name="citation_author" content="欅リベカ" />
+
+<meta name="citation_author" content="中山功太" />
+
+<meta name="citation_author" content="橘秀幸" />
+
+<meta name="citation_author" content="河原大輔" />
 
 <meta name="citation_publication_date" content="None" />
 <meta name="citation_conference_title" content="None" />
 <meta name="citation_inbook_title" content="None" />
-<meta name="citation_abstract" content="大規模言語モデルは多様な入力に対しても有用な回答を生成できるが，出力された回答の安全性に関する課題も指摘されている．特に日本語 LLM の研究開発では安全性に対する対策がまだ十分には進んでいない．本研究では日本語 LLM の安全性向上を目的としたチューニングを行い，特に有用性を損なわずに安全性を向上させる手法について検討する．さらに日本語 LLM の安全性を自動で評価するツールを新たに作成し，チューニングによる安全性向上を定量的に検証する．実験では，SupervisedFine-Tuning や Direct Preference Optimization を適切に組み合わせることで，安全性を効果的に向上させられることを確認した．" />
+<meta name="citation_abstract" content="LLM の生成テキスト中の情報の真偽を検証するシステムの開発が進められている．真偽検証システムの真偽判定ステップでは，検索によって取得した根拠テキストによって生成テキストの情報が支持されるかを判定する．本研究では，厳密な真偽判定のみでは捉えきれない言説と根拠テキストの関係を扱うため，真偽判定ラベルセットを拡張して実用的な日本語真偽判定データセットの構築に取り組む．構築したデータセットに基づき，プロンプトベースの真偽判定手法の性能を評価した結果，推論の流れを指示するプロンプトを用いることで性能が改善することが明らかになった．" />
 
-<meta name="citation_keywords" content="Q4:ポスター" />
+<meta name="citation_keywords" content="Q4:言語資源・アノテーションと評価" />
 
 <meta name="citation_pdf_url" content="" />
 
@@ -213,27 +225,51 @@
 <div class="card m-3" style="">
   <div class="card-header">
     <h2 class="card-title main-title text-center" style="color: black">
-      日本語大規模言語モデルの有用性と安全性の両立に向けたチューニング手法の検証
+      LLMの生成テキストの真偽検証のための日本語真偽判定データセットの構築
     </h2>
     <h3 class="card-subtitle mb-2 text-muted text-center">
       
-      <a href="papers.html?filter=authors&search=勝又智&program=all" class="text-primary"
-        >勝又智</a
+      <a href="papers.html?filter=authors&search=政野美和&program=all" class="text-primary"
+        >政野美和</a
       >,
       
-      <a href="papers.html?filter=authors&search=児玉貴志&program=all" class="text-primary"
-        >児玉貴志</a
+      <a href="papers.html?filter=authors&search=清丸寛一&program=all" class="text-primary"
+        >清丸寛一</a
       >,
       
-      <a href="papers.html?filter=authors&search=宮尾祐介&program=all" class="text-primary"
-        >宮尾祐介</a
+      <a href="papers.html?filter=authors&search=欅惇志&program=all" class="text-primary"
+        >欅惇志</a
+      >,
+      
+      <a href="papers.html?filter=authors&search=堀尾海斗&program=all" class="text-primary"
+        >堀尾海斗</a
+      >,
+      
+      <a href="papers.html?filter=authors&search=源怜維&program=all" class="text-primary"
+        >源怜維</a
+      >,
+      
+      <a href="papers.html?filter=authors&search=欅リベカ&program=all" class="text-primary"
+        >欅リベカ</a
+      >,
+      
+      <a href="papers.html?filter=authors&search=中山功太&program=all" class="text-primary"
+        >中山功太</a
+      >,
+      
+      <a href="papers.html?filter=authors&search=橘秀幸&program=all" class="text-primary"
+        >橘秀幸</a
+      >,
+      
+      <a href="papers.html?filter=authors&search=河原大輔&program=all" class="text-primary"
+        >河原大輔</a
       >
       
     </h3>
 
     <p class="card-text text-center h5">
       
-      <a href="papers.html?filter=keywords&search=Q4:ポスター" class ="badge badge-pill badge-primary">Q4:ポスター</a>
+      <a href="papers.html?filter=keywords&search=Q4:言語資源・アノテーションと評価" class ="badge badge-pill badge-primary">Q4:言語資源・アノテーションと評価</a>
       
 
       
@@ -241,7 +277,7 @@
    
     <div class="text-center p-3">
       
-      <a class="card-link link-info" target="_blank" href="https://www.anlp.jp/proceedings/annual_meeting/2025/pdf_dir/Q4-19.pdf">
+      <a class="card-link link-info" target="_blank" href="https://www.anlp.jp/proceedings/annual_meeting/2026/pdf_dir/Q4-19.pdf">
         📝 Paper 
       </a>
       
@@ -295,7 +331,7 @@
         <div class="card-text">
           <div id="abstractExample">
             <span class="font-weight-bold">Abstract:</span>
-            大規模言語モデルは多様な入力に対しても有用な回答を生成できるが，出力された回答の安全性に関する課題も指摘されている．特に日本語 LLM の研究開発では安全性に対する対策がまだ十分には進んでいない．本研究では日本語 LLM の安全性向上を目的としたチューニングを行い，特に有用性を損なわずに安全性を向上させる手法について検討する．さらに日本語 LLM の安全性を自動で評価するツールを新たに作成し，チューニングによる安全性向上を定量的に検証する．実験では，SupervisedFine-Tuning や Direct Preference Optimization を適切に組み合わせることで，安全性を効果的に向上させられることを確認した．
+            LLM の生成テキスト中の情報の真偽を検証するシステムの開発が進められている．真偽検証システムの真偽判定ステップでは，検索によって取得した根拠テキストによって生成テキストの情報が支持されるかを判定する．本研究では，厳密な真偽判定のみでは捉えきれない言説と根拠テキストの関係を扱うため，真偽判定ラベルセットを拡張して実用的な日本語真偽判定データセットの構築に取り組む．構築したデータセットに基づき，プロンプトベースの真偽判定手法の性能を評価した結果，推論の流れを指示するプロンプトを用いることで性能が改善することが明らかになった．
           </div>
         </div>
       </div>
@@ -303,7 +339,7 @@
   </div>
   
   <div class="tab-pane fade" id="paper" role="tabpanel" aria-labelledby="paper-tab">
-    <embed src="https://www.anlp.jp/proceedings/annual_meeting/2025/pdf_dir/Q4-19.pdf" type="application/pdf" width="100%" height="850px">
+    <embed src="https://www.anlp.jp/proceedings/annual_meeting/2026/pdf_dir/Q4-19.pdf" type="application/pdf" width="100%" height="850px">
   </div>
   
   
@@ -346,7 +382,7 @@
         <p class="float-left">
           <img src="None" height="45px"
             width="auto" align="center">
-          <span class="lead">NLP2025</span>
+          <span class="lead">NLP2026</span>
         </p>
         <p class="float-right"><a href="#" class="text-dark">Back to Top</a></p>
         <p class="text-center">The title and abstract of the paper are licensed by the author(s) under CC BY 4.0<br>

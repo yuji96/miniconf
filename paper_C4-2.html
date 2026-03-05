@@ -64,22 +64,28 @@
   <script src="https://cdn.jsdelivr.net/npm/pdfjs-dist@2.3.200/build/pdf.min.js"></script>
   <script src="static/js/pdf_render.js"></script>
 
-  <title>NLP2025: A Survey of MultiModal Large Language Models</title>
+  <title>NLP2026: 構造化知識蒸留とVisual Attention最適化によるドメイン特化型VLMの構築</title>
   
-<meta name="citation_title" content="A Survey of MultiModal Large Language Models" />
+<meta name="citation_title" content="構造化知識蒸留とVisual Attention最適化によるドメイン特化型VLMの構築" />
 
-<meta name="citation_author" content="YahanYu" />
+<meta name="citation_author" content="柴田高志" />
 
-<meta name="citation_author" content="DuzhenZhang" />
+<meta name="citation_author" content="田村颯樹" />
 
-<meta name="citation_author" content="ChenhuiChu" />
+<meta name="citation_author" content="月江惇元" />
+
+<meta name="citation_author" content="宮﨑淳" />
+
+<meta name="citation_author" content="髙野奨太" />
+
+<meta name="citation_author" content="中山和子" />
 
 <meta name="citation_publication_date" content="None" />
 <meta name="citation_conference_title" content="None" />
 <meta name="citation_inbook_title" content="None" />
-<meta name="citation_abstract" content="In recent years, MultiModal Large Language Models(MM-LLMs) have undergone substantial advancements,augmenting oﬀ-the-shelf LLMs to suppor t MM inputs oroutputs via cost-eﬀective training strategies. In this paper,we provide a survey aimed at facilitating further researchon MM-LLMs. We outline general design formulationsfor model architecture. Furthermore, we review the perfor-mance of selected MM-LLMs on mainstream benchmarksand explore future directions. More latest developments inthis ﬁeld are provided in a real-time tracking website.1）Wehope that this survey contributes to the ongoing advance-ment of the MM-LLMs domain." />
+<meta name="citation_abstract" content="近年，VLM の発展により画像とテキストを統合的に理解する AI が実用化されているが，通信設備保守のような特定ドメインでは専門知識やドメイン特化の評価基準への対応が課題である．ドメイン特化型 VLM の開発においては，その開発や評価手法は十分に確立されていないため，本研究では，通信設備保守業務を対象に，構造化知識蒸留と VisualAttention 最適化を統合した VLM 構築手法を提案する．データ面では業務知識を付与した合成データ生成により専門知識を注入し，モデル面では SoftRegisters による Attention 制御により視覚的根拠の信頼性を向上させる．評価実験により正確性と危険予知能力が向上し，実業務への適用可能性を示した．" />
 
-<meta name="citation_keywords" content="C4:マルチモーダル(2)" />
+<meta name="citation_keywords" content="C4:マルチモーダル" />
 
 <meta name="citation_pdf_url" content="" />
 
@@ -213,27 +219,39 @@
 <div class="card m-3" style="">
   <div class="card-header">
     <h2 class="card-title main-title text-center" style="color: black">
-      A Survey of MultiModal Large Language Models
+      構造化知識蒸留とVisual Attention最適化によるドメイン特化型VLMの構築
     </h2>
     <h3 class="card-subtitle mb-2 text-muted text-center">
       
-      <a href="papers.html?filter=authors&search=YahanYu&program=all" class="text-primary"
-        >YahanYu</a
+      <a href="papers.html?filter=authors&search=柴田高志&program=all" class="text-primary"
+        >柴田高志</a
       >,
       
-      <a href="papers.html?filter=authors&search=DuzhenZhang&program=all" class="text-primary"
-        >DuzhenZhang</a
+      <a href="papers.html?filter=authors&search=田村颯樹&program=all" class="text-primary"
+        >田村颯樹</a
       >,
       
-      <a href="papers.html?filter=authors&search=ChenhuiChu&program=all" class="text-primary"
-        >ChenhuiChu</a
+      <a href="papers.html?filter=authors&search=月江惇元&program=all" class="text-primary"
+        >月江惇元</a
+      >,
+      
+      <a href="papers.html?filter=authors&search=宮﨑淳&program=all" class="text-primary"
+        >宮﨑淳</a
+      >,
+      
+      <a href="papers.html?filter=authors&search=髙野奨太&program=all" class="text-primary"
+        >髙野奨太</a
+      >,
+      
+      <a href="papers.html?filter=authors&search=中山和子&program=all" class="text-primary"
+        >中山和子</a
       >
       
     </h3>
 
     <p class="card-text text-center h5">
       
-      <a href="papers.html?filter=keywords&search=C4:マルチモーダル(2)" class ="badge badge-pill badge-primary">C4:マルチモーダル(2)</a>
+      <a href="papers.html?filter=keywords&search=C4:マルチモーダル" class ="badge badge-pill badge-primary">C4:マルチモーダル</a>
       
 
       
@@ -241,7 +259,7 @@
    
     <div class="text-center p-3">
       
-      <a class="card-link link-info" target="_blank" href="https://www.anlp.jp/proceedings/annual_meeting/2025/pdf_dir/C4-2.pdf">
+      <a class="card-link link-info" target="_blank" href="https://www.anlp.jp/proceedings/annual_meeting/2026/pdf_dir/C4-2.pdf">
         📝 Paper 
       </a>
       
@@ -295,7 +313,7 @@
         <div class="card-text">
           <div id="abstractExample">
             <span class="font-weight-bold">Abstract:</span>
-            In recent years, MultiModal Large Language Models(MM-LLMs) have undergone substantial advancements,augmenting oﬀ-the-shelf LLMs to suppor t MM inputs oroutputs via cost-eﬀective training strategies. In this paper,we provide a survey aimed at facilitating further researchon MM-LLMs. We outline general design formulationsfor model architecture. Furthermore, we review the perfor-mance of selected MM-LLMs on mainstream benchmarksand explore future directions. More latest developments inthis ﬁeld are provided in a real-time tracking website.1）Wehope that this survey contributes to the ongoing advance-ment of the MM-LLMs domain.
+            近年，VLM の発展により画像とテキストを統合的に理解する AI が実用化されているが，通信設備保守のような特定ドメインでは専門知識やドメイン特化の評価基準への対応が課題である．ドメイン特化型 VLM の開発においては，その開発や評価手法は十分に確立されていないため，本研究では，通信設備保守業務を対象に，構造化知識蒸留と VisualAttention 最適化を統合した VLM 構築手法を提案する．データ面では業務知識を付与した合成データ生成により専門知識を注入し，モデル面では SoftRegisters による Attention 制御により視覚的根拠の信頼性を向上させる．評価実験により正確性と危険予知能力が向上し，実業務への適用可能性を示した．
           </div>
         </div>
       </div>
@@ -303,7 +321,7 @@
   </div>
   
   <div class="tab-pane fade" id="paper" role="tabpanel" aria-labelledby="paper-tab">
-    <embed src="https://www.anlp.jp/proceedings/annual_meeting/2025/pdf_dir/C4-2.pdf" type="application/pdf" width="100%" height="850px">
+    <embed src="https://www.anlp.jp/proceedings/annual_meeting/2026/pdf_dir/C4-2.pdf" type="application/pdf" width="100%" height="850px">
   </div>
   
   
@@ -346,7 +364,7 @@
         <p class="float-left">
           <img src="None" height="45px"
             width="auto" align="center">
-          <span class="lead">NLP2025</span>
+          <span class="lead">NLP2026</span>
         </p>
         <p class="float-right"><a href="#" class="text-dark">Back to Top</a></p>
         <p class="text-center">The title and abstract of the paper are licensed by the author(s) under CC BY 4.0<br>

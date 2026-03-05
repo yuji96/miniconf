@@ -64,22 +64,24 @@
   <script src="https://cdn.jsdelivr.net/npm/pdfjs-dist@2.3.200/build/pdf.min.js"></script>
   <script src="static/js/pdf_render.js"></script>
 
-  <title>NLP2025: 根拠に基づいたレビュー生成のための LLM を用いた自動アノテーションの検討</title>
+  <title>NLP2026: ニューラル言語モデルによるかき混ぜ構文のモデリング</title>
   
-<meta name="citation_title" content="根拠に基づいたレビュー生成のための LLM を用いた自動アノテーションの検討" />
+<meta name="citation_title" content="ニューラル言語モデルによるかき混ぜ構文のモデリング" />
 
-<meta name="citation_author" content="田中翔平" />
+<meta name="citation_author" content="竹本健悟" />
 
-<meta name="citation_author" content="平澤寅庄" />
+<meta name="citation_author" content="武田更紗" />
 
-<meta name="citation_author" content="牛久祥孝" />
+<meta name="citation_author" content="井上景太" />
+
+<meta name="citation_author" content="大関洋平" />
 
 <meta name="citation_publication_date" content="None" />
 <meta name="citation_conference_title" content="None" />
 <meta name="citation_inbook_title" content="None" />
-<meta name="citation_abstract" content="本研究では論文の内容を根拠としてレビューを生成可能なモデルを構築することを目指す．この目的を達成する一つの方法として，学習データのレビューが論文のどの部分に基づいているかという情報を活用することが考えられるが，こうした情報を含むデータセットを人手で作成することはコストがかかる．そこで本論文では，レビューと論文の結びつきや論文の内容を正確に反映したレビュー文をLLM を用いて自動でアノテーションすることを検討した．評価結果より，現在の LLM はレビューと論文の結びつきをある程度の精度で予測することができ，論文の内容を正確に反映したレビュー文を高い精度で選択できることがわかった．" />
+<meta name="citation_abstract" content="フィラー・ギャップ依存は，wh 句とその解釈位置との間に成立する長距離依存関係である．近年，言語モデルがフィラー・ギャップ依存に対応してどのような予測を形成するのかをサプライザルを用いて評価する研究が進められているが，その多くは英語の wh 移動を対象としている．本研究では，複数の言語モデルについて日本語のかき混ぜ構文を対象にサプライザルの分析を行う．実験の結果，言語モデルは部分的にかき混ぜ構文におけるフィラー・ギャップ依存の交互作用を一般化し，人間の処理傾向とも整合的な予測傾向を示した．" />
 
-<meta name="citation_keywords" content="Q6:ポスター" />
+<meta name="citation_keywords" content="Q6:言語資源・アノテーションと評価 / 計算・形式言語学" />
 
 <meta name="citation_pdf_url" content="" />
 
@@ -213,27 +215,31 @@
 <div class="card m-3" style="">
   <div class="card-header">
     <h2 class="card-title main-title text-center" style="color: black">
-      根拠に基づいたレビュー生成のための LLM を用いた自動アノテーションの検討
+      ニューラル言語モデルによるかき混ぜ構文のモデリング
     </h2>
     <h3 class="card-subtitle mb-2 text-muted text-center">
       
-      <a href="papers.html?filter=authors&search=田中翔平&program=all" class="text-primary"
-        >田中翔平</a
+      <a href="papers.html?filter=authors&search=竹本健悟&program=all" class="text-primary"
+        >竹本健悟</a
       >,
       
-      <a href="papers.html?filter=authors&search=平澤寅庄&program=all" class="text-primary"
-        >平澤寅庄</a
+      <a href="papers.html?filter=authors&search=武田更紗&program=all" class="text-primary"
+        >武田更紗</a
       >,
       
-      <a href="papers.html?filter=authors&search=牛久祥孝&program=all" class="text-primary"
-        >牛久祥孝</a
+      <a href="papers.html?filter=authors&search=井上景太&program=all" class="text-primary"
+        >井上景太</a
+      >,
+      
+      <a href="papers.html?filter=authors&search=大関洋平&program=all" class="text-primary"
+        >大関洋平</a
       >
       
     </h3>
 
     <p class="card-text text-center h5">
       
-      <a href="papers.html?filter=keywords&search=Q6:ポスター" class ="badge badge-pill badge-primary">Q6:ポスター</a>
+      <a href="papers.html?filter=keywords&search=Q6:言語資源・アノテーションと評価 / 計算・形式言語学" class ="badge badge-pill badge-primary">Q6:言語資源・アノテーションと評価 / 計算・形式言語学</a>
       
 
       
@@ -241,7 +247,7 @@
    
     <div class="text-center p-3">
       
-      <a class="card-link link-info" target="_blank" href="https://www.anlp.jp/proceedings/annual_meeting/2025/pdf_dir/Q6-16.pdf">
+      <a class="card-link link-info" target="_blank" href="https://www.anlp.jp/proceedings/annual_meeting/2026/pdf_dir/Q6-16.pdf">
         📝 Paper 
       </a>
       
@@ -295,7 +301,7 @@
         <div class="card-text">
           <div id="abstractExample">
             <span class="font-weight-bold">Abstract:</span>
-            本研究では論文の内容を根拠としてレビューを生成可能なモデルを構築することを目指す．この目的を達成する一つの方法として，学習データのレビューが論文のどの部分に基づいているかという情報を活用することが考えられるが，こうした情報を含むデータセットを人手で作成することはコストがかかる．そこで本論文では，レビューと論文の結びつきや論文の内容を正確に反映したレビュー文をLLM を用いて自動でアノテーションすることを検討した．評価結果より，現在の LLM はレビューと論文の結びつきをある程度の精度で予測することができ，論文の内容を正確に反映したレビュー文を高い精度で選択できることがわかった．
+            フィラー・ギャップ依存は，wh 句とその解釈位置との間に成立する長距離依存関係である．近年，言語モデルがフィラー・ギャップ依存に対応してどのような予測を形成するのかをサプライザルを用いて評価する研究が進められているが，その多くは英語の wh 移動を対象としている．本研究では，複数の言語モデルについて日本語のかき混ぜ構文を対象にサプライザルの分析を行う．実験の結果，言語モデルは部分的にかき混ぜ構文におけるフィラー・ギャップ依存の交互作用を一般化し，人間の処理傾向とも整合的な予測傾向を示した．
           </div>
         </div>
       </div>
@@ -303,7 +309,7 @@
   </div>
   
   <div class="tab-pane fade" id="paper" role="tabpanel" aria-labelledby="paper-tab">
-    <embed src="https://www.anlp.jp/proceedings/annual_meeting/2025/pdf_dir/Q6-16.pdf" type="application/pdf" width="100%" height="850px">
+    <embed src="https://www.anlp.jp/proceedings/annual_meeting/2026/pdf_dir/Q6-16.pdf" type="application/pdf" width="100%" height="850px">
   </div>
   
   
@@ -346,7 +352,7 @@
         <p class="float-left">
           <img src="None" height="45px"
             width="auto" align="center">
-          <span class="lead">NLP2025</span>
+          <span class="lead">NLP2026</span>
         </p>
         <p class="float-right"><a href="#" class="text-dark">Back to Top</a></p>
         <p class="text-center">The title and abstract of the paper are licensed by the author(s) under CC BY 4.0<br>

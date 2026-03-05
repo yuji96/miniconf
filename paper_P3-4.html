@@ -64,24 +64,26 @@
   <script src="https://cdn.jsdelivr.net/npm/pdfjs-dist@2.3.200/build/pdf.min.js"></script>
   <script src="static/js/pdf_render.js"></script>
 
-  <title>NLP2025: 生成AIによる多肢選択式語彙問題および錯乱肢の生成と訂正</title>
+  <title>NLP2026: Theory of mindのベンチマーク指標は対話能力と関係があるのか？LLMにおける対話能力とTheory of Mindの相関分析</title>
   
-<meta name="citation_title" content="生成AIによる多肢選択式語彙問題および錯乱肢の生成と訂正" />
+<meta name="citation_title" content="Theory of mindのベンチマーク指標は対話能力と関係があるのか？LLMにおける対話能力とTheory of Mindの相関分析" />
 
-<meta name="citation_author" content="内田諭" />
+<meta name="citation_author" content="伊勢野晴久" />
 
-<meta name="citation_author" content="畔元里沙子" />
+<meta name="citation_author" content="大橋厚元" />
 
-<meta name="citation_author" content="吉村理一" />
+<meta name="citation_author" content="小川哲司" />
 
-<meta name="citation_author" content="伊藤薫" />
+<meta name="citation_author" content="高道慎之介" />
+
+<meta name="citation_author" content="東中竜一郎" />
 
 <meta name="citation_publication_date" content="None" />
 <meta name="citation_conference_title" content="None" />
 <meta name="citation_inbook_title" content="None" />
-<meta name="citation_abstract" content="本論では語彙学習を目的とした多肢選択式空所補充問題の作成のため生成 AI 等の技術を活用し，その性能を検証した．最初に英単語 300 語に対し，ChatGPT にプロンプトを与え問題文と錯乱肢を生成した．錯乱肢には人手で訂正の有無をアノテーションし，ChatGPT と Gemini を用いて自動訂正の可能性を検討した．結果として，問題生成については訂正が不要であった一方，錯乱肢生成では約 17.8%で訂正を要した．この結果を受けて，生成 AI の錯乱肢の訂正能力を検証したところ，F1 値が最大 0.291となり，不十分な結果となった．提案手法として，予め準備した錯乱肢を BERT の確率により選別する方式を試した結果，訂正が必要な場合は 11.0%となり，生成 AI に対する優位性が明らかになった．" />
+<meta name="citation_abstract" content="対話では，Theory of Mind（ToM）による相手の心的状態の推測が重要な役割を果たすと考えられる．大規模言語モデル（LLM）においても，ToM の向上が対話能力の改善をもたらすと期待されているが，ToM と対話能力の関係性についての定量的検証は不十分である．そこで本研究では，7 種類の高性能な LLM を対象に，3 つの ToM ベンチマーク（ToMBENCH，FANToM，Hi-ToM）と 6 つの対話タスクにおける性能を評価することで，ToM 性能と対話能力の相関関係を実験によって調査した．その実験の結果，ToM と対話能力の間に相関関係が確認された．その一方で，評価する ToM の側面によって相関の強さに違いが生じることも分かった．具体的には，会話形式で評価される ToM や直接信念を尋ねる質問形式で評価される ToM は対話能力とより高い相関を示すことが分かった．" />
 
-<meta name="citation_keywords" content="P3:ポスター" />
+<meta name="citation_keywords" content="P3:評判・感情分析・スタイル分析 / 対話" />
 
 <meta name="citation_pdf_url" content="" />
 
@@ -215,31 +217,35 @@
 <div class="card m-3" style="">
   <div class="card-header">
     <h2 class="card-title main-title text-center" style="color: black">
-      生成AIによる多肢選択式語彙問題および錯乱肢の生成と訂正
+      Theory of mindのベンチマーク指標は対話能力と関係があるのか？LLMにおける対話能力とTheory of Mindの相関分析
     </h2>
     <h3 class="card-subtitle mb-2 text-muted text-center">
       
-      <a href="papers.html?filter=authors&search=内田諭&program=all" class="text-primary"
-        >内田諭</a
+      <a href="papers.html?filter=authors&search=伊勢野晴久&program=all" class="text-primary"
+        >伊勢野晴久</a
       >,
       
-      <a href="papers.html?filter=authors&search=畔元里沙子&program=all" class="text-primary"
-        >畔元里沙子</a
+      <a href="papers.html?filter=authors&search=大橋厚元&program=all" class="text-primary"
+        >大橋厚元</a
       >,
       
-      <a href="papers.html?filter=authors&search=吉村理一&program=all" class="text-primary"
-        >吉村理一</a
+      <a href="papers.html?filter=authors&search=小川哲司&program=all" class="text-primary"
+        >小川哲司</a
       >,
       
-      <a href="papers.html?filter=authors&search=伊藤薫&program=all" class="text-primary"
-        >伊藤薫</a
+      <a href="papers.html?filter=authors&search=高道慎之介&program=all" class="text-primary"
+        >高道慎之介</a
+      >,
+      
+      <a href="papers.html?filter=authors&search=東中竜一郎&program=all" class="text-primary"
+        >東中竜一郎</a
       >
       
     </h3>
 
     <p class="card-text text-center h5">
       
-      <a href="papers.html?filter=keywords&search=P3:ポスター" class ="badge badge-pill badge-primary">P3:ポスター</a>
+      <a href="papers.html?filter=keywords&search=P3:評判・感情分析・スタイル分析 / 対話" class ="badge badge-pill badge-primary">P3:評判・感情分析・スタイル分析 / 対話</a>
       
 
       
@@ -247,7 +253,7 @@
    
     <div class="text-center p-3">
       
-      <a class="card-link link-info" target="_blank" href="https://www.anlp.jp/proceedings/annual_meeting/2025/pdf_dir/P3-4.pdf">
+      <a class="card-link link-info" target="_blank" href="https://www.anlp.jp/proceedings/annual_meeting/2026/pdf_dir/P3-4.pdf">
         📝 Paper 
       </a>
       
@@ -301,7 +307,7 @@
         <div class="card-text">
           <div id="abstractExample">
             <span class="font-weight-bold">Abstract:</span>
-            本論では語彙学習を目的とした多肢選択式空所補充問題の作成のため生成 AI 等の技術を活用し，その性能を検証した．最初に英単語 300 語に対し，ChatGPT にプロンプトを与え問題文と錯乱肢を生成した．錯乱肢には人手で訂正の有無をアノテーションし，ChatGPT と Gemini を用いて自動訂正の可能性を検討した．結果として，問題生成については訂正が不要であった一方，錯乱肢生成では約 17.8%で訂正を要した．この結果を受けて，生成 AI の錯乱肢の訂正能力を検証したところ，F1 値が最大 0.291となり，不十分な結果となった．提案手法として，予め準備した錯乱肢を BERT の確率により選別する方式を試した結果，訂正が必要な場合は 11.0%となり，生成 AI に対する優位性が明らかになった．
+            対話では，Theory of Mind（ToM）による相手の心的状態の推測が重要な役割を果たすと考えられる．大規模言語モデル（LLM）においても，ToM の向上が対話能力の改善をもたらすと期待されているが，ToM と対話能力の関係性についての定量的検証は不十分である．そこで本研究では，7 種類の高性能な LLM を対象に，3 つの ToM ベンチマーク（ToMBENCH，FANToM，Hi-ToM）と 6 つの対話タスクにおける性能を評価することで，ToM 性能と対話能力の相関関係を実験によって調査した．その実験の結果，ToM と対話能力の間に相関関係が確認された．その一方で，評価する ToM の側面によって相関の強さに違いが生じることも分かった．具体的には，会話形式で評価される ToM や直接信念を尋ねる質問形式で評価される ToM は対話能力とより高い相関を示すことが分かった．
           </div>
         </div>
       </div>
@@ -309,7 +315,7 @@
   </div>
   
   <div class="tab-pane fade" id="paper" role="tabpanel" aria-labelledby="paper-tab">
-    <embed src="https://www.anlp.jp/proceedings/annual_meeting/2025/pdf_dir/P3-4.pdf" type="application/pdf" width="100%" height="850px">
+    <embed src="https://www.anlp.jp/proceedings/annual_meeting/2026/pdf_dir/P3-4.pdf" type="application/pdf" width="100%" height="850px">
   </div>
   
   
@@ -352,7 +358,7 @@
         <p class="float-left">
           <img src="None" height="45px"
             width="auto" align="center">
-          <span class="lead">NLP2025</span>
+          <span class="lead">NLP2026</span>
         </p>
         <p class="float-right"><a href="#" class="text-dark">Back to Top</a></p>
         <p class="text-center">The title and abstract of the paper are licensed by the author(s) under CC BY 4.0<br>

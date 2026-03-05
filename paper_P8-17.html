@@ -64,30 +64,24 @@
   <script src="https://cdn.jsdelivr.net/npm/pdfjs-dist@2.3.200/build/pdf.min.js"></script>
   <script src="static/js/pdf_render.js"></script>
 
-  <title>NLP2025: ユーザ行動ログに基づくクエリ理解のための検索クエリ埋め込み</title>
+  <title>NLP2026: LLMを活用した分節談話表示理論に基づく日本語談話構造解析</title>
   
-<meta name="citation_title" content="ユーザ行動ログに基づくクエリ理解のための検索クエリ埋め込み" />
+<meta name="citation_title" content="LLMを活用した分節談話表示理論に基づく日本語談話構造解析" />
 
-<meta name="citation_author" content="西川荘介" />
+<meta name="citation_author" content="富崎智睦" />
 
-<meta name="citation_author" content="平子潤" />
+<meta name="citation_author" content="三上燿輔" />
 
-<meta name="citation_author" content="鍜治伸裕" />
+<meta name="citation_author" content="綿引周" />
 
-<meta name="citation_author" content="渡邉幸暉" />
-
-<meta name="citation_author" content="浅野広樹" />
-
-<meta name="citation_author" content="山城颯太" />
-
-<meta name="citation_author" content="佐野峻平" />
+<meta name="citation_author" content="谷中瞳" />
 
 <meta name="citation_publication_date" content="None" />
 <meta name="citation_conference_title" content="None" />
 <meta name="citation_inbook_title" content="None" />
-<meta name="citation_abstract" content="検索クエリの意図をよく反映した埋め込み表現は,検索エンジンの様々なクエリ理解(Query Under-standing, QU)タスクに活用できる.しかし,検索クエリは短く表層形の変化が生じやすいため,既存手法では意図を十分に捉えられない.本研究ではユーザ行動ログから抽出した,検索意図が類似するクエリペアを正例とする対照学習手法を提案する.このペアは表層形の類似性に依らず意図が類似するため,表層形の差異に頑健でクエリに内在する意図を的確に捉える埋め込みモデルを実現できる.提案モデルは複数の QU タスク評価で Ruri や SimCSE などの最先端テキスト埋め込みモデルを大幅に上回った." />
+<meta name="citation_abstract" content="分節談話表示理論(SDRT)は文章や会話中の談話関係を記述する理論である．英語では LLM をファインチューニングし，SDRT に基づく談話解析を高精度で行う手法が提案されている．しかし，日本語の SDRT コーパスは整備されておらず，日本語における同手法の有効性は自明でない．そこで，本研究では英語の SDRT コーパスを翻訳して日本語 SDRTコーパスを作成し，作成したコーパスを用いて日本語 SDRT 解析器を構築した．結果，日本語の解析器は英語と同等の性能を示した．また，談話標識などの特定の談話関係に頻出する言語表現に着目してアブレーション分析を行った結果，頻出表現が必ずしも談話関係の予測に寄与しないことが示唆された．" />
 
-<meta name="citation_keywords" content="P8:ポスター" />
+<meta name="citation_keywords" content="P8:形態素・構文解析 / 意味論・意味解析 / 文脈解析" />
 
 <meta name="citation_pdf_url" content="" />
 
@@ -221,43 +215,31 @@
 <div class="card m-3" style="">
   <div class="card-header">
     <h2 class="card-title main-title text-center" style="color: black">
-      ユーザ行動ログに基づくクエリ理解のための検索クエリ埋め込み
+      LLMを活用した分節談話表示理論に基づく日本語談話構造解析
     </h2>
     <h3 class="card-subtitle mb-2 text-muted text-center">
       
-      <a href="papers.html?filter=authors&search=西川荘介&program=all" class="text-primary"
-        >西川荘介</a
+      <a href="papers.html?filter=authors&search=富崎智睦&program=all" class="text-primary"
+        >富崎智睦</a
       >,
       
-      <a href="papers.html?filter=authors&search=平子潤&program=all" class="text-primary"
-        >平子潤</a
+      <a href="papers.html?filter=authors&search=三上燿輔&program=all" class="text-primary"
+        >三上燿輔</a
       >,
       
-      <a href="papers.html?filter=authors&search=鍜治伸裕&program=all" class="text-primary"
-        >鍜治伸裕</a
+      <a href="papers.html?filter=authors&search=綿引周&program=all" class="text-primary"
+        >綿引周</a
       >,
       
-      <a href="papers.html?filter=authors&search=渡邉幸暉&program=all" class="text-primary"
-        >渡邉幸暉</a
-      >,
-      
-      <a href="papers.html?filter=authors&search=浅野広樹&program=all" class="text-primary"
-        >浅野広樹</a
-      >,
-      
-      <a href="papers.html?filter=authors&search=山城颯太&program=all" class="text-primary"
-        >山城颯太</a
-      >,
-      
-      <a href="papers.html?filter=authors&search=佐野峻平&program=all" class="text-primary"
-        >佐野峻平</a
+      <a href="papers.html?filter=authors&search=谷中瞳&program=all" class="text-primary"
+        >谷中瞳</a
       >
       
     </h3>
 
     <p class="card-text text-center h5">
       
-      <a href="papers.html?filter=keywords&search=P8:ポスター" class ="badge badge-pill badge-primary">P8:ポスター</a>
+      <a href="papers.html?filter=keywords&search=P8:形態素・構文解析 / 意味論・意味解析 / 文脈解析" class ="badge badge-pill badge-primary">P8:形態素・構文解析 / 意味論・意味解析 / 文脈解析</a>
       
 
       
@@ -265,7 +247,7 @@
    
     <div class="text-center p-3">
       
-      <a class="card-link link-info" target="_blank" href="https://www.anlp.jp/proceedings/annual_meeting/2025/pdf_dir/P8-17.pdf">
+      <a class="card-link link-info" target="_blank" href="https://www.anlp.jp/proceedings/annual_meeting/2026/pdf_dir/P8-17.pdf">
         📝 Paper 
       </a>
       
@@ -319,7 +301,7 @@
         <div class="card-text">
           <div id="abstractExample">
             <span class="font-weight-bold">Abstract:</span>
-            検索クエリの意図をよく反映した埋め込み表現は,検索エンジンの様々なクエリ理解(Query Under-standing, QU)タスクに活用できる.しかし,検索クエリは短く表層形の変化が生じやすいため,既存手法では意図を十分に捉えられない.本研究ではユーザ行動ログから抽出した,検索意図が類似するクエリペアを正例とする対照学習手法を提案する.このペアは表層形の類似性に依らず意図が類似するため,表層形の差異に頑健でクエリに内在する意図を的確に捉える埋め込みモデルを実現できる.提案モデルは複数の QU タスク評価で Ruri や SimCSE などの最先端テキスト埋め込みモデルを大幅に上回った.
+            分節談話表示理論(SDRT)は文章や会話中の談話関係を記述する理論である．英語では LLM をファインチューニングし，SDRT に基づく談話解析を高精度で行う手法が提案されている．しかし，日本語の SDRT コーパスは整備されておらず，日本語における同手法の有効性は自明でない．そこで，本研究では英語の SDRT コーパスを翻訳して日本語 SDRTコーパスを作成し，作成したコーパスを用いて日本語 SDRT 解析器を構築した．結果，日本語の解析器は英語と同等の性能を示した．また，談話標識などの特定の談話関係に頻出する言語表現に着目してアブレーション分析を行った結果，頻出表現が必ずしも談話関係の予測に寄与しないことが示唆された．
           </div>
         </div>
       </div>
@@ -327,7 +309,7 @@
   </div>
   
   <div class="tab-pane fade" id="paper" role="tabpanel" aria-labelledby="paper-tab">
-    <embed src="https://www.anlp.jp/proceedings/annual_meeting/2025/pdf_dir/P8-17.pdf" type="application/pdf" width="100%" height="850px">
+    <embed src="https://www.anlp.jp/proceedings/annual_meeting/2026/pdf_dir/P8-17.pdf" type="application/pdf" width="100%" height="850px">
   </div>
   
   
@@ -370,7 +352,7 @@
         <p class="float-left">
           <img src="None" height="45px"
             width="auto" align="center">
-          <span class="lead">NLP2025</span>
+          <span class="lead">NLP2026</span>
         </p>
         <p class="float-right"><a href="#" class="text-dark">Back to Top</a></p>
         <p class="text-center">The title and abstract of the paper are licensed by the author(s) under CC BY 4.0<br>

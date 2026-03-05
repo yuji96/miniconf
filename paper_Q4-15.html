@@ -64,20 +64,20 @@
   <script src="https://cdn.jsdelivr.net/npm/pdfjs-dist@2.3.200/build/pdf.min.js"></script>
   <script src="static/js/pdf_render.js"></script>
 
-  <title>NLP2025: 真面目 LLM と不真面目 LLM で推論能力は変わるか？</title>
+  <title>NLP2026: 文脈の違いに着目した言外の意図理解日本語ベンチマークの構築</title>
   
-<meta name="citation_title" content="真面目 LLM と不真面目 LLM で推論能力は変わるか？" />
+<meta name="citation_title" content="文脈の違いに着目した言外の意図理解日本語ベンチマークの構築" />
 
-<meta name="citation_author" content="堀尾海斗" />
+<meta name="citation_author" content="小方雅子" />
 
-<meta name="citation_author" content="河原大輔" />
+<meta name="citation_author" content="菊池英明" />
 
 <meta name="citation_publication_date" content="None" />
 <meta name="citation_conference_title" content="None" />
 <meta name="citation_inbook_title" content="None" />
-<meta name="citation_abstract" content="本研究では、真面目さという性格を LLM に付与した場合のタスク正解率への影響を検証する。手法としては、真面目さ、不真面目さを付与する複数種類のプロンプトを用いる。実験では、日本語の 3 種類のタスクを使用して各プロンプトを検証する。実験の結果、真面目さを付与した場合はプロンプトによって正解率が向上することもあれば低下することもあること、不真面目さを付与した場合は基本的に正解率が低下することがわかった。また、正解率に大きな変化を与える言語表現が存在することも判明した。" />
+<meta name="citation_abstract" content="対話における言外の意図は文脈に応じて変化しうるため，大規模言語モデル（LLM）が人間と円滑にコミュニケーションを行うためには，文脈を踏まえた言外の意図理解能力が重要である。本研究では，同一の発話文に対して異なる文脈を与え言外の意図を回答させることで文脈依存的な言外の意図理解を評価可能な日本語ベンチマークを構築した。構築したベンチマークを用いて複数の LLM を評価した結果，いずれのモデルも文脈依存事例において高い正解率を示し，文脈情報を利用した言外の意図理解が可能であることが示された。さらに，ベンチマーク規模の影響を分析した結果，構築段階で無作為に並べ替えられたベンチマークの先頭 400 件程度のみを用いた評価であっても，全体評価を安定して近似できることが確認された。" />
 
-<meta name="citation_keywords" content="Q4:ポスター" />
+<meta name="citation_keywords" content="Q4:言語資源・アノテーションと評価" />
 
 <meta name="citation_pdf_url" content="" />
 
@@ -211,23 +211,23 @@
 <div class="card m-3" style="">
   <div class="card-header">
     <h2 class="card-title main-title text-center" style="color: black">
-      真面目 LLM と不真面目 LLM で推論能力は変わるか？
+      文脈の違いに着目した言外の意図理解日本語ベンチマークの構築
     </h2>
     <h3 class="card-subtitle mb-2 text-muted text-center">
       
-      <a href="papers.html?filter=authors&search=堀尾海斗&program=all" class="text-primary"
-        >堀尾海斗</a
+      <a href="papers.html?filter=authors&search=小方雅子&program=all" class="text-primary"
+        >小方雅子</a
       >,
       
-      <a href="papers.html?filter=authors&search=河原大輔&program=all" class="text-primary"
-        >河原大輔</a
+      <a href="papers.html?filter=authors&search=菊池英明&program=all" class="text-primary"
+        >菊池英明</a
       >
       
     </h3>
 
     <p class="card-text text-center h5">
       
-      <a href="papers.html?filter=keywords&search=Q4:ポスター" class ="badge badge-pill badge-primary">Q4:ポスター</a>
+      <a href="papers.html?filter=keywords&search=Q4:言語資源・アノテーションと評価" class ="badge badge-pill badge-primary">Q4:言語資源・アノテーションと評価</a>
       
 
       
@@ -235,7 +235,7 @@
    
     <div class="text-center p-3">
       
-      <a class="card-link link-info" target="_blank" href="https://www.anlp.jp/proceedings/annual_meeting/2025/pdf_dir/Q4-15.pdf">
+      <a class="card-link link-info" target="_blank" href="https://www.anlp.jp/proceedings/annual_meeting/2026/pdf_dir/Q4-15.pdf">
         📝 Paper 
       </a>
       
@@ -289,7 +289,7 @@
         <div class="card-text">
           <div id="abstractExample">
             <span class="font-weight-bold">Abstract:</span>
-            本研究では、真面目さという性格を LLM に付与した場合のタスク正解率への影響を検証する。手法としては、真面目さ、不真面目さを付与する複数種類のプロンプトを用いる。実験では、日本語の 3 種類のタスクを使用して各プロンプトを検証する。実験の結果、真面目さを付与した場合はプロンプトによって正解率が向上することもあれば低下することもあること、不真面目さを付与した場合は基本的に正解率が低下することがわかった。また、正解率に大きな変化を与える言語表現が存在することも判明した。
+            対話における言外の意図は文脈に応じて変化しうるため，大規模言語モデル（LLM）が人間と円滑にコミュニケーションを行うためには，文脈を踏まえた言外の意図理解能力が重要である。本研究では，同一の発話文に対して異なる文脈を与え言外の意図を回答させることで文脈依存的な言外の意図理解を評価可能な日本語ベンチマークを構築した。構築したベンチマークを用いて複数の LLM を評価した結果，いずれのモデルも文脈依存事例において高い正解率を示し，文脈情報を利用した言外の意図理解が可能であることが示された。さらに，ベンチマーク規模の影響を分析した結果，構築段階で無作為に並べ替えられたベンチマークの先頭 400 件程度のみを用いた評価であっても，全体評価を安定して近似できることが確認された。
           </div>
         </div>
       </div>
@@ -297,7 +297,7 @@
   </div>
   
   <div class="tab-pane fade" id="paper" role="tabpanel" aria-labelledby="paper-tab">
-    <embed src="https://www.anlp.jp/proceedings/annual_meeting/2025/pdf_dir/Q4-15.pdf" type="application/pdf" width="100%" height="850px">
+    <embed src="https://www.anlp.jp/proceedings/annual_meeting/2026/pdf_dir/Q4-15.pdf" type="application/pdf" width="100%" height="850px">
   </div>
   
   
@@ -340,7 +340,7 @@
         <p class="float-left">
           <img src="None" height="45px"
             width="auto" align="center">
-          <span class="lead">NLP2025</span>
+          <span class="lead">NLP2026</span>
         </p>
         <p class="float-right"><a href="#" class="text-dark">Back to Top</a></p>
         <p class="text-center">The title and abstract of the paper are licensed by the author(s) under CC BY 4.0<br>

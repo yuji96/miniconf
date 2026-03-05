@@ -64,26 +64,20 @@
   <script src="https://cdn.jsdelivr.net/npm/pdfjs-dist@2.3.200/build/pdf.min.js"></script>
   <script src="static/js/pdf_render.js"></script>
 
-  <title>NLP2025: 合成単語データを用いた低コスト高品質な音声認識のドメイン適応</title>
+  <title>NLP2026: ゲーム会話データを用いた発話対象推定の分析</title>
   
-<meta name="citation_title" content="合成単語データを用いた低コスト高品質な音声認識のドメイン適応" />
+<meta name="citation_title" content="ゲーム会話データを用いた発話対象推定の分析" />
 
-<meta name="citation_author" content="小松秀輔" />
+<meta name="citation_author" content="佐藤浩輔" />
 
-<meta name="citation_author" content="大西一誉" />
-
-<meta name="citation_author" content="田中康紀" />
-
-<meta name="citation_author" content="金道鉉" />
-
-<meta name="citation_author" content="吉野幸一郎" />
+<meta name="citation_author" content="頼展韜" />
 
 <meta name="citation_publication_date" content="None" />
 <meta name="citation_conference_title" content="None" />
 <meta name="citation_inbook_title" content="None" />
-<meta name="citation_abstract" content="深層学習により高い性能を発揮している汎用音声認識モデルは，ドメインに適応した出力を行うにはファインチューニングによる追加学習を必要としている．先行研究では大規模言語モデルと制御音声合成を用いたデータ拡張による音声認識モデルのファインチューニング手法が提案されているが，コストと未知語の学習の面で課題が残る．本研究では単語のみの制御音声合成を結合した音声データを用いた低コストかつ，高品質なファインチューニング手法を提案する．実験では既存手法と比較して，提案手法によるファインチューニングは 1/3 程度の学習コストでより多くの未知語を学習することができることを示した．" />
+<meta name="citation_abstract" content="ゲームやアニメなどといった物語コンテンツにおいては、振る舞いの一貫性や語彙選択の適切性など発話上のキャラクターらしさが重視されている。これまでキャラクター発話に関わるシステムにおいては主に発話の非文脈依存的な言語的特徴に焦点があてられてきた。本研究では会話における文脈依存的要素として発話対象に着目し、ゲームの会話データを用いて LLM に会話内の各発話の発話対象を推定させる実験を行った。ゲーム内のシーンの会話ログを与え、発話内容が誰を対象にしているか(特定のキャラクター/ 全員/ 不特定)を LLM に推定させた。結果は、2 者間の会話においてはほぼ人手と一貫する結果が出ていたのに対し、3 者以上の会話ログにおいては一貫度は低かった。発話対象推定タスクの課題について議論する。" />
 
-<meta name="citation_keywords" content="P5:ポスター" />
+<meta name="citation_keywords" content="P5:対話 / 質問応答" />
 
 <meta name="citation_pdf_url" content="" />
 
@@ -217,35 +211,23 @@
 <div class="card m-3" style="">
   <div class="card-header">
     <h2 class="card-title main-title text-center" style="color: black">
-      合成単語データを用いた低コスト高品質な音声認識のドメイン適応
+      ゲーム会話データを用いた発話対象推定の分析
     </h2>
     <h3 class="card-subtitle mb-2 text-muted text-center">
       
-      <a href="papers.html?filter=authors&search=小松秀輔&program=all" class="text-primary"
-        >小松秀輔</a
+      <a href="papers.html?filter=authors&search=佐藤浩輔&program=all" class="text-primary"
+        >佐藤浩輔</a
       >,
       
-      <a href="papers.html?filter=authors&search=大西一誉&program=all" class="text-primary"
-        >大西一誉</a
-      >,
-      
-      <a href="papers.html?filter=authors&search=田中康紀&program=all" class="text-primary"
-        >田中康紀</a
-      >,
-      
-      <a href="papers.html?filter=authors&search=金道鉉&program=all" class="text-primary"
-        >金道鉉</a
-      >,
-      
-      <a href="papers.html?filter=authors&search=吉野幸一郎&program=all" class="text-primary"
-        >吉野幸一郎</a
+      <a href="papers.html?filter=authors&search=頼展韜&program=all" class="text-primary"
+        >頼展韜</a
       >
       
     </h3>
 
     <p class="card-text text-center h5">
       
-      <a href="papers.html?filter=keywords&search=P5:ポスター" class ="badge badge-pill badge-primary">P5:ポスター</a>
+      <a href="papers.html?filter=keywords&search=P5:対話 / 質問応答" class ="badge badge-pill badge-primary">P5:対話 / 質問応答</a>
       
 
       
@@ -253,7 +235,7 @@
    
     <div class="text-center p-3">
       
-      <a class="card-link link-info" target="_blank" href="https://www.anlp.jp/proceedings/annual_meeting/2025/pdf_dir/P5-14.pdf">
+      <a class="card-link link-info" target="_blank" href="https://www.anlp.jp/proceedings/annual_meeting/2026/pdf_dir/P5-14.pdf">
         📝 Paper 
       </a>
       
@@ -307,7 +289,7 @@
         <div class="card-text">
           <div id="abstractExample">
             <span class="font-weight-bold">Abstract:</span>
-            深層学習により高い性能を発揮している汎用音声認識モデルは，ドメインに適応した出力を行うにはファインチューニングによる追加学習を必要としている．先行研究では大規模言語モデルと制御音声合成を用いたデータ拡張による音声認識モデルのファインチューニング手法が提案されているが，コストと未知語の学習の面で課題が残る．本研究では単語のみの制御音声合成を結合した音声データを用いた低コストかつ，高品質なファインチューニング手法を提案する．実験では既存手法と比較して，提案手法によるファインチューニングは 1/3 程度の学習コストでより多くの未知語を学習することができることを示した．
+            ゲームやアニメなどといった物語コンテンツにおいては、振る舞いの一貫性や語彙選択の適切性など発話上のキャラクターらしさが重視されている。これまでキャラクター発話に関わるシステムにおいては主に発話の非文脈依存的な言語的特徴に焦点があてられてきた。本研究では会話における文脈依存的要素として発話対象に着目し、ゲームの会話データを用いて LLM に会話内の各発話の発話対象を推定させる実験を行った。ゲーム内のシーンの会話ログを与え、発話内容が誰を対象にしているか(特定のキャラクター/ 全員/ 不特定)を LLM に推定させた。結果は、2 者間の会話においてはほぼ人手と一貫する結果が出ていたのに対し、3 者以上の会話ログにおいては一貫度は低かった。発話対象推定タスクの課題について議論する。
           </div>
         </div>
       </div>
@@ -315,7 +297,7 @@
   </div>
   
   <div class="tab-pane fade" id="paper" role="tabpanel" aria-labelledby="paper-tab">
-    <embed src="https://www.anlp.jp/proceedings/annual_meeting/2025/pdf_dir/P5-14.pdf" type="application/pdf" width="100%" height="850px">
+    <embed src="https://www.anlp.jp/proceedings/annual_meeting/2026/pdf_dir/P5-14.pdf" type="application/pdf" width="100%" height="850px">
   </div>
   
   
@@ -358,7 +340,7 @@
         <p class="float-left">
           <img src="None" height="45px"
             width="auto" align="center">
-          <span class="lead">NLP2025</span>
+          <span class="lead">NLP2026</span>
         </p>
         <p class="float-right"><a href="#" class="text-dark">Back to Top</a></p>
         <p class="text-center">The title and abstract of the paper are licensed by the author(s) under CC BY 4.0<br>

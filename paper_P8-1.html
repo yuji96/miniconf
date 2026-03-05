@@ -64,24 +64,20 @@
   <script src="https://cdn.jsdelivr.net/npm/pdfjs-dist@2.3.200/build/pdf.min.js"></script>
   <script src="static/js/pdf_render.js"></script>
 
-  <title>NLP2025: 検索付き拡張生成におけるハイパーパラメータとプロンプトの同時最適化</title>
+  <title>NLP2026: カタカナ語の意味分類におけるFine-Tuningの有効性検証 : 頻度と多義性が精度に与える影響</title>
   
-<meta name="citation_title" content="検索付き拡張生成におけるハイパーパラメータとプロンプトの同時最適化" />
+<meta name="citation_title" content="カタカナ語の意味分類におけるFine-Tuningの有効性検証 : 頻度と多義性が精度に与える影響" />
 
-<meta name="citation_author" content="鈴木海渡" />
+<meta name="citation_author" content="小滝主紀" />
 
-<meta name="citation_author" content="水野尚人" />
-
-<meta name="citation_author" content="柳瀬利彦" />
-
-<meta name="citation_author" content="佐藤元紀" />
+<meta name="citation_author" content="佐々木稔" />
 
 <meta name="citation_publication_date" content="None" />
 <meta name="citation_conference_title" content="None" />
 <meta name="citation_inbook_title" content="None" />
-<meta name="citation_abstract" content="Retrieval-augmented generation（RAG）は，コーパスからの情報検索を活用することにより，大規模言語モデル（LLM）の性能を大幅に向上させる．RAG の性能は，RAG パイプラインにおけるハイパーパラメータと，LLM に与えるプロンプトに大きく依存する．本研究で提案する UniOptRAG フレームワークでは，単変量最適化アルゴリズムを組み合わせることで，ハイパーパラメータとプロンプトを同時に最適化する．この同時最適化によっていずれか一方のみを最適化する場合の性能を上回り，既存研究でファインチューニングや高度な推論パイプラインを用いた場合と同等の性能を達成することを示す．" />
+<meta name="citation_abstract" content="LLM や PLM を用いたカタカナ語の意味分類では、和製英語や外来語といった独自の課題を持つ特性が精度に影響を与える可能性がある.そこで本研究では、BCCWJ から抽出したカタカナ語を対象として、DeBERTa V3 を Fine-Tuning し、精度向上への方策を探った.対象単語を頻度と多義性で 4 象限に分類して分析した結果、Fine-Tuning によりベースラインから平均約 53%の精度向上を達成した.さらにベースラインモデルでは低頻度、低多義性語が、Fine-Tuning 後のモデルでは高頻度、低多義性語が最高精度であった.統計分析により、頻度よりも多義性の方が精度に与える影響が大きいことが定量的に示された." />
 
-<meta name="citation_keywords" content="P8:ポスター" />
+<meta name="citation_keywords" content="P8:形態素・構文解析 / 意味論・意味解析 / 文脈解析" />
 
 <meta name="citation_pdf_url" content="" />
 
@@ -215,31 +211,23 @@
 <div class="card m-3" style="">
   <div class="card-header">
     <h2 class="card-title main-title text-center" style="color: black">
-      検索付き拡張生成におけるハイパーパラメータとプロンプトの同時最適化
+      カタカナ語の意味分類におけるFine-Tuningの有効性検証 : 頻度と多義性が精度に与える影響
     </h2>
     <h3 class="card-subtitle mb-2 text-muted text-center">
       
-      <a href="papers.html?filter=authors&search=鈴木海渡&program=all" class="text-primary"
-        >鈴木海渡</a
+      <a href="papers.html?filter=authors&search=小滝主紀&program=all" class="text-primary"
+        >小滝主紀</a
       >,
       
-      <a href="papers.html?filter=authors&search=水野尚人&program=all" class="text-primary"
-        >水野尚人</a
-      >,
-      
-      <a href="papers.html?filter=authors&search=柳瀬利彦&program=all" class="text-primary"
-        >柳瀬利彦</a
-      >,
-      
-      <a href="papers.html?filter=authors&search=佐藤元紀&program=all" class="text-primary"
-        >佐藤元紀</a
+      <a href="papers.html?filter=authors&search=佐々木稔&program=all" class="text-primary"
+        >佐々木稔</a
       >
       
     </h3>
 
     <p class="card-text text-center h5">
       
-      <a href="papers.html?filter=keywords&search=P8:ポスター" class ="badge badge-pill badge-primary">P8:ポスター</a>
+      <a href="papers.html?filter=keywords&search=P8:形態素・構文解析 / 意味論・意味解析 / 文脈解析" class ="badge badge-pill badge-primary">P8:形態素・構文解析 / 意味論・意味解析 / 文脈解析</a>
       
 
       
@@ -247,7 +235,7 @@
    
     <div class="text-center p-3">
       
-      <a class="card-link link-info" target="_blank" href="https://www.anlp.jp/proceedings/annual_meeting/2025/pdf_dir/P8-1.pdf">
+      <a class="card-link link-info" target="_blank" href="https://www.anlp.jp/proceedings/annual_meeting/2026/pdf_dir/P8-1.pdf">
         📝 Paper 
       </a>
       
@@ -301,7 +289,7 @@
         <div class="card-text">
           <div id="abstractExample">
             <span class="font-weight-bold">Abstract:</span>
-            Retrieval-augmented generation（RAG）は，コーパスからの情報検索を活用することにより，大規模言語モデル（LLM）の性能を大幅に向上させる．RAG の性能は，RAG パイプラインにおけるハイパーパラメータと，LLM に与えるプロンプトに大きく依存する．本研究で提案する UniOptRAG フレームワークでは，単変量最適化アルゴリズムを組み合わせることで，ハイパーパラメータとプロンプトを同時に最適化する．この同時最適化によっていずれか一方のみを最適化する場合の性能を上回り，既存研究でファインチューニングや高度な推論パイプラインを用いた場合と同等の性能を達成することを示す．
+            LLM や PLM を用いたカタカナ語の意味分類では、和製英語や外来語といった独自の課題を持つ特性が精度に影響を与える可能性がある.そこで本研究では、BCCWJ から抽出したカタカナ語を対象として、DeBERTa V3 を Fine-Tuning し、精度向上への方策を探った.対象単語を頻度と多義性で 4 象限に分類して分析した結果、Fine-Tuning によりベースラインから平均約 53%の精度向上を達成した.さらにベースラインモデルでは低頻度、低多義性語が、Fine-Tuning 後のモデルでは高頻度、低多義性語が最高精度であった.統計分析により、頻度よりも多義性の方が精度に与える影響が大きいことが定量的に示された.
           </div>
         </div>
       </div>
@@ -309,7 +297,7 @@
   </div>
   
   <div class="tab-pane fade" id="paper" role="tabpanel" aria-labelledby="paper-tab">
-    <embed src="https://www.anlp.jp/proceedings/annual_meeting/2025/pdf_dir/P8-1.pdf" type="application/pdf" width="100%" height="850px">
+    <embed src="https://www.anlp.jp/proceedings/annual_meeting/2026/pdf_dir/P8-1.pdf" type="application/pdf" width="100%" height="850px">
   </div>
   
   
@@ -352,7 +340,7 @@
         <p class="float-left">
           <img src="None" height="45px"
             width="auto" align="center">
-          <span class="lead">NLP2025</span>
+          <span class="lead">NLP2026</span>
         </p>
         <p class="float-right"><a href="#" class="text-dark">Back to Top</a></p>
         <p class="text-center">The title and abstract of the paper are licensed by the author(s) under CC BY 4.0<br>

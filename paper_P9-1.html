@@ -64,22 +64,36 @@
   <script src="https://cdn.jsdelivr.net/npm/pdfjs-dist@2.3.200/build/pdf.min.js"></script>
   <script src="static/js/pdf_render.js"></script>
 
-  <title>NLP2025: オンラインニュースコメントを対象としたアスペクトベースのコメントフィルタリングシステム</title>
+  <title>NLP2026: クラスタの&#34;意味&#34;を語るAI：LLMによる教師なし学習の説明性付与</title>
   
-<meta name="citation_title" content="オンラインニュースコメントを対象としたアスペクトベースのコメントフィルタリングシステム" />
+<meta name="citation_title" content="クラスタの&#34;意味&#34;を語るAI：LLMによる教師なし学習の説明性付与" />
 
-<meta name="citation_author" content="笠原璃音" />
+<meta name="citation_author" content="CaioCésarPinheirodeMoura" />
 
-<meta name="citation_author" content="大和淳司" />
+<meta name="citation_author" content="新見佳祐" />
 
-<meta name="citation_author" content="菊井玄一郎" />
+<meta name="citation_author" content="山科勇輔" />
+
+<meta name="citation_author" content="塩見和真" />
+
+<meta name="citation_author" content="市川佳彦" />
+
+<meta name="citation_author" content="加茂司" />
+
+<meta name="citation_author" content="久保谷篤" />
+
+<meta name="citation_author" content="鮎澤雄治" />
+
+<meta name="citation_author" content="山本達也" />
+
+<meta name="citation_author" content="吉田圭吾" />
 
 <meta name="citation_publication_date" content="None" />
 <meta name="citation_conference_title" content="None" />
 <meta name="citation_inbook_title" content="None" />
-<meta name="citation_abstract" content="SNS やオンラインニュースのコメント欄では，誹謗中傷など知りたくない情報に触れることが多く，精神的な負担を感じる人が増えている．NG ワード設定によるフィルタリングの手法もあるが，攻撃的なコメントを完全に防ぐことは難しい．また，既存のコメント表示アルゴリズムは古いコメントを優位に扱う仕様であるため，新しく投稿された有益なコメントが埋もれてしまい，得たい情報を得ることができないという問題もある．これらの課題を解決するために，誹謗中傷表現を含まない建設的なコメントを抽出し，建設的度合いを閲覧者が調節できるシステムを提案した．本研究では，コメントのアスペクト情報を基に建設的度合いを推定する推定器を作成し，GPT4 と比較した実験で提案手法の有効性を確認した．" />
+<meta name="citation_abstract" content="クラスタリング結果の解釈には，統計的知識に加えて対象分野のドメイン知識が不可欠であり，その多くは分析者の経験や主観に依存する．このため，解釈コストの増大や客観性の確保が課題となっている．本論文では，大規模言語モデル（Large LanguageModel; LLM）を用いてクラスタリング結果に説明性を付与する手法を提案する．クラスタごとの統計量とドメイン固有のコンテキスト情報を LLM に入力し，各クラスタの意味や特徴を自然言語で生成する．脳波（Electroencephalography; EEG）データを用いた検証実験により，LLM が数値特徴と専門知識を結び付け，有用な解釈を提示できることを確認した．" />
 
-<meta name="citation_keywords" content="P9:ポスター" />
+<meta name="citation_keywords" content="P9:テキスト生成" />
 
 <meta name="citation_pdf_url" content="" />
 
@@ -213,27 +227,55 @@
 <div class="card m-3" style="">
   <div class="card-header">
     <h2 class="card-title main-title text-center" style="color: black">
-      オンラインニュースコメントを対象としたアスペクトベースのコメントフィルタリングシステム
+      クラスタの&#34;意味&#34;を語るAI：LLMによる教師なし学習の説明性付与
     </h2>
     <h3 class="card-subtitle mb-2 text-muted text-center">
       
-      <a href="papers.html?filter=authors&search=笠原璃音&program=all" class="text-primary"
-        >笠原璃音</a
+      <a href="papers.html?filter=authors&search=CaioCésarPinheirodeMoura&program=all" class="text-primary"
+        >CaioCésarPinheirodeMoura</a
       >,
       
-      <a href="papers.html?filter=authors&search=大和淳司&program=all" class="text-primary"
-        >大和淳司</a
+      <a href="papers.html?filter=authors&search=新見佳祐&program=all" class="text-primary"
+        >新見佳祐</a
       >,
       
-      <a href="papers.html?filter=authors&search=菊井玄一郎&program=all" class="text-primary"
-        >菊井玄一郎</a
+      <a href="papers.html?filter=authors&search=山科勇輔&program=all" class="text-primary"
+        >山科勇輔</a
+      >,
+      
+      <a href="papers.html?filter=authors&search=塩見和真&program=all" class="text-primary"
+        >塩見和真</a
+      >,
+      
+      <a href="papers.html?filter=authors&search=市川佳彦&program=all" class="text-primary"
+        >市川佳彦</a
+      >,
+      
+      <a href="papers.html?filter=authors&search=加茂司&program=all" class="text-primary"
+        >加茂司</a
+      >,
+      
+      <a href="papers.html?filter=authors&search=久保谷篤&program=all" class="text-primary"
+        >久保谷篤</a
+      >,
+      
+      <a href="papers.html?filter=authors&search=鮎澤雄治&program=all" class="text-primary"
+        >鮎澤雄治</a
+      >,
+      
+      <a href="papers.html?filter=authors&search=山本達也&program=all" class="text-primary"
+        >山本達也</a
+      >,
+      
+      <a href="papers.html?filter=authors&search=吉田圭吾&program=all" class="text-primary"
+        >吉田圭吾</a
       >
       
     </h3>
 
     <p class="card-text text-center h5">
       
-      <a href="papers.html?filter=keywords&search=P9:ポスター" class ="badge badge-pill badge-primary">P9:ポスター</a>
+      <a href="papers.html?filter=keywords&search=P9:テキスト生成" class ="badge badge-pill badge-primary">P9:テキスト生成</a>
       
 
       
@@ -241,7 +283,7 @@
    
     <div class="text-center p-3">
       
-      <a class="card-link link-info" target="_blank" href="https://www.anlp.jp/proceedings/annual_meeting/2025/pdf_dir/P9-1.pdf">
+      <a class="card-link link-info" target="_blank" href="https://www.anlp.jp/proceedings/annual_meeting/2026/pdf_dir/P9-1.pdf">
         📝 Paper 
       </a>
       
@@ -295,7 +337,7 @@
         <div class="card-text">
           <div id="abstractExample">
             <span class="font-weight-bold">Abstract:</span>
-            SNS やオンラインニュースのコメント欄では，誹謗中傷など知りたくない情報に触れることが多く，精神的な負担を感じる人が増えている．NG ワード設定によるフィルタリングの手法もあるが，攻撃的なコメントを完全に防ぐことは難しい．また，既存のコメント表示アルゴリズムは古いコメントを優位に扱う仕様であるため，新しく投稿された有益なコメントが埋もれてしまい，得たい情報を得ることができないという問題もある．これらの課題を解決するために，誹謗中傷表現を含まない建設的なコメントを抽出し，建設的度合いを閲覧者が調節できるシステムを提案した．本研究では，コメントのアスペクト情報を基に建設的度合いを推定する推定器を作成し，GPT4 と比較した実験で提案手法の有効性を確認した．
+            クラスタリング結果の解釈には，統計的知識に加えて対象分野のドメイン知識が不可欠であり，その多くは分析者の経験や主観に依存する．このため，解釈コストの増大や客観性の確保が課題となっている．本論文では，大規模言語モデル（Large LanguageModel; LLM）を用いてクラスタリング結果に説明性を付与する手法を提案する．クラスタごとの統計量とドメイン固有のコンテキスト情報を LLM に入力し，各クラスタの意味や特徴を自然言語で生成する．脳波（Electroencephalography; EEG）データを用いた検証実験により，LLM が数値特徴と専門知識を結び付け，有用な解釈を提示できることを確認した．
           </div>
         </div>
       </div>
@@ -303,7 +345,7 @@
   </div>
   
   <div class="tab-pane fade" id="paper" role="tabpanel" aria-labelledby="paper-tab">
-    <embed src="https://www.anlp.jp/proceedings/annual_meeting/2025/pdf_dir/P9-1.pdf" type="application/pdf" width="100%" height="850px">
+    <embed src="https://www.anlp.jp/proceedings/annual_meeting/2026/pdf_dir/P9-1.pdf" type="application/pdf" width="100%" height="850px">
   </div>
   
   
@@ -346,7 +388,7 @@
         <p class="float-left">
           <img src="None" height="45px"
             width="auto" align="center">
-          <span class="lead">NLP2025</span>
+          <span class="lead">NLP2026</span>
         </p>
         <p class="float-right"><a href="#" class="text-dark">Back to Top</a></p>
         <p class="text-center">The title and abstract of the paper are licensed by the author(s) under CC BY 4.0<br>

@@ -64,26 +64,20 @@
   <script src="https://cdn.jsdelivr.net/npm/pdfjs-dist@2.3.200/build/pdf.min.js"></script>
   <script src="static/js/pdf_render.js"></script>
 
-  <title>NLP2025: オープンLLMによる翻訳を活用した日本語CLIPの開発</title>
+  <title>NLP2026: 正例・負例ペアの定義不要なクロスモーダル関係の定量化 ―歌詞とダンスのペアデータを対象として―</title>
   
-<meta name="citation_title" content="オープンLLMによる翻訳を活用した日本語CLIPの開発" />
+<meta name="citation_title" content="正例・負例ペアの定義不要なクロスモーダル関係の定量化 ―歌詞とダンスのペアデータを対象として―" />
 
-<meta name="citation_author" content="杉浦一瑳" />
+<meta name="citation_author" content="渡邉研斗" />
 
-<meta name="citation_author" content="栗田修平" />
-
-<meta name="citation_author" content="小田悠介" />
-
-<meta name="citation_author" content="河原大輔" />
-
-<meta name="citation_author" content="岡崎直観" />
+<meta name="citation_author" content="後藤真孝" />
 
 <meta name="citation_publication_date" content="None" />
 <meta name="citation_conference_title" content="None" />
 <meta name="citation_inbook_title" content="None" />
-<meta name="citation_abstract" content="CLIP は視覚言語モデルのコンポーネントとして採用される事例が増えており,重要性が増している.しかし,オープンな日本語画像・テキスト対データセットは不足しており,モデル開発の障壁となっている.本研究では,オープン LLM を用いた機械翻訳により, 20 億事例の日本語画像・テキスト対データセットを構築し,日本語 CLIP を学習した.学習済みモデルの性能を, 7 つの評価データセットを用いて評価した結果,平均スコアが同程度のモデルサイズにおいて高水準であった一方,日本文化に関するタスクの性能が低いことがわかった.学習済みモデル1）2）,学習データセット3）,翻訳ツール4）,評価コード5）は公開する." />
+<meta name="citation_abstract" content="対照学習をはじめとする深層学習手法により，クロスモーダル関係を End-to-End に定量化する研究が広く行われている．しかし，これらの手法は，学習時に正例・負例ペアが既知であることを前提としている．一方で，実データにおいては，どのペアが正例または負例に該当するかを事前に定義できない場合が多い．本研究では，正例・負例ペアを定義せずに，クロスモーダル関係をデータ駆動的に定量化する手法を提案する．歌詞とダンスのペアデータを対象とした分析により，多様な関係性を明らかにするとともに，歌詞に基づくダンス検索タスクにおいて，従来手法を大幅に上回る性能を達成した．" />
 
-<meta name="citation_keywords" content="C4:マルチモーダル(2)" />
+<meta name="citation_keywords" content="C4:マルチモーダル" />
 
 <meta name="citation_pdf_url" content="" />
 
@@ -217,35 +211,23 @@
 <div class="card m-3" style="">
   <div class="card-header">
     <h2 class="card-title main-title text-center" style="color: black">
-      オープンLLMによる翻訳を活用した日本語CLIPの開発
+      正例・負例ペアの定義不要なクロスモーダル関係の定量化 ―歌詞とダンスのペアデータを対象として―
     </h2>
     <h3 class="card-subtitle mb-2 text-muted text-center">
       
-      <a href="papers.html?filter=authors&search=杉浦一瑳&program=all" class="text-primary"
-        >杉浦一瑳</a
+      <a href="papers.html?filter=authors&search=渡邉研斗&program=all" class="text-primary"
+        >渡邉研斗</a
       >,
       
-      <a href="papers.html?filter=authors&search=栗田修平&program=all" class="text-primary"
-        >栗田修平</a
-      >,
-      
-      <a href="papers.html?filter=authors&search=小田悠介&program=all" class="text-primary"
-        >小田悠介</a
-      >,
-      
-      <a href="papers.html?filter=authors&search=河原大輔&program=all" class="text-primary"
-        >河原大輔</a
-      >,
-      
-      <a href="papers.html?filter=authors&search=岡崎直観&program=all" class="text-primary"
-        >岡崎直観</a
+      <a href="papers.html?filter=authors&search=後藤真孝&program=all" class="text-primary"
+        >後藤真孝</a
       >
       
     </h3>
 
     <p class="card-text text-center h5">
       
-      <a href="papers.html?filter=keywords&search=C4:マルチモーダル(2)" class ="badge badge-pill badge-primary">C4:マルチモーダル(2)</a>
+      <a href="papers.html?filter=keywords&search=C4:マルチモーダル" class ="badge badge-pill badge-primary">C4:マルチモーダル</a>
       
 
       
@@ -253,7 +235,7 @@
    
     <div class="text-center p-3">
       
-      <a class="card-link link-info" target="_blank" href="https://www.anlp.jp/proceedings/annual_meeting/2025/pdf_dir/C4-6.pdf">
+      <a class="card-link link-info" target="_blank" href="https://www.anlp.jp/proceedings/annual_meeting/2026/pdf_dir/C4-6.pdf">
         📝 Paper 
       </a>
       
@@ -307,7 +289,7 @@
         <div class="card-text">
           <div id="abstractExample">
             <span class="font-weight-bold">Abstract:</span>
-            CLIP は視覚言語モデルのコンポーネントとして採用される事例が増えており,重要性が増している.しかし,オープンな日本語画像・テキスト対データセットは不足しており,モデル開発の障壁となっている.本研究では,オープン LLM を用いた機械翻訳により, 20 億事例の日本語画像・テキスト対データセットを構築し,日本語 CLIP を学習した.学習済みモデルの性能を, 7 つの評価データセットを用いて評価した結果,平均スコアが同程度のモデルサイズにおいて高水準であった一方,日本文化に関するタスクの性能が低いことがわかった.学習済みモデル1）2）,学習データセット3）,翻訳ツール4）,評価コード5）は公開する.
+            対照学習をはじめとする深層学習手法により，クロスモーダル関係を End-to-End に定量化する研究が広く行われている．しかし，これらの手法は，学習時に正例・負例ペアが既知であることを前提としている．一方で，実データにおいては，どのペアが正例または負例に該当するかを事前に定義できない場合が多い．本研究では，正例・負例ペアを定義せずに，クロスモーダル関係をデータ駆動的に定量化する手法を提案する．歌詞とダンスのペアデータを対象とした分析により，多様な関係性を明らかにするとともに，歌詞に基づくダンス検索タスクにおいて，従来手法を大幅に上回る性能を達成した．
           </div>
         </div>
       </div>
@@ -315,7 +297,7 @@
   </div>
   
   <div class="tab-pane fade" id="paper" role="tabpanel" aria-labelledby="paper-tab">
-    <embed src="https://www.anlp.jp/proceedings/annual_meeting/2025/pdf_dir/C4-6.pdf" type="application/pdf" width="100%" height="850px">
+    <embed src="https://www.anlp.jp/proceedings/annual_meeting/2026/pdf_dir/C4-6.pdf" type="application/pdf" width="100%" height="850px">
   </div>
   
   
@@ -358,7 +340,7 @@
         <p class="float-left">
           <img src="None" height="45px"
             width="auto" align="center">
-          <span class="lead">NLP2025</span>
+          <span class="lead">NLP2026</span>
         </p>
         <p class="float-right"><a href="#" class="text-dark">Back to Top</a></p>
         <p class="text-center">The title and abstract of the paper are licensed by the author(s) under CC BY 4.0<br>

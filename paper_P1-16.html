@@ -64,20 +64,22 @@
   <script src="https://cdn.jsdelivr.net/npm/pdfjs-dist@2.3.200/build/pdf.min.js"></script>
   <script src="static/js/pdf_render.js"></script>
 
-  <title>NLP2025: BART 文章校正モデルにおけるコピー機構の有用性の検証</title>
+  <title>NLP2026: 言語間対応を考慮したバイリンガルサブワード分割</title>
   
-<meta name="citation_title" content="BART 文章校正モデルにおけるコピー機構の有用性の検証" />
+<meta name="citation_title" content="言語間対応を考慮したバイリンガルサブワード分割" />
 
-<meta name="citation_author" content="北岡佑一" />
+<meta name="citation_author" content="西田祥人" />
 
-<meta name="citation_author" content="真嘉比愛" />
+<meta name="citation_author" content="二宮崇" />
+
+<meta name="citation_author" content="後藤功雄" />
 
 <meta name="citation_publication_date" content="None" />
 <meta name="citation_conference_title" content="None" />
 <meta name="citation_inbook_title" content="None" />
-<meta name="citation_abstract" content="近年、大規模言語モデル（LLM）の発展により、高度な自然言語処理タスクの実現が可能となっている。しかし、文章校正タスクにおいて、LLM は入力文の意図を超えた過剰な書き換えを行う傾向があり、元の文意を保持できないという課題がある。本研究では、BART モデルにコピー機構を導入することで、必要最小限の編集に限定した文章校正の実現を目指した。評価実験では、ERRANT による F0.5 スコアを用いて編集精度を測定し、従来のBART モデルと比べて精度が向上したのを確認した。また、LLM である Gemini とも比較を行い、本手法が有効であることを示した。この成果は、我々の文章校正 AI サービス「ちゅらいと」の改善に向けた重要な知見となる。" />
+<meta name="citation_abstract" content="本研究では EM アルゴリズムを用いて，潜在変数として対訳サブワード間の対応関係を学習する手法を提案する．従来のニューラル機械翻訳では，言語ごとに独立して学習されたサブワード分割モデルを用いることが一般的である．しかし，従来手法は対訳関係を考慮していないため，原言語と目的言語で語内部の分割が不整合となり，翻訳モデルの学習を妨げる可能性がある．提案手法では，対訳コーパスからサブワード文対間のサブワードの対応関係を直接モデル化することで，言語間の分割の一貫性を向上させる．複数の機械翻訳タスクにおける評価実験の結果，提案手法が複数の言語対で翻訳精度を改善することを確認した．" />
 
-<meta name="citation_keywords" content="P1:ポスター" />
+<meta name="citation_keywords" content="P1:情報検索・テキストマイニング / 機械翻訳" />
 
 <meta name="citation_pdf_url" content="" />
 
@@ -211,23 +213,27 @@
 <div class="card m-3" style="">
   <div class="card-header">
     <h2 class="card-title main-title text-center" style="color: black">
-      BART 文章校正モデルにおけるコピー機構の有用性の検証
+      言語間対応を考慮したバイリンガルサブワード分割
     </h2>
     <h3 class="card-subtitle mb-2 text-muted text-center">
       
-      <a href="papers.html?filter=authors&search=北岡佑一&program=all" class="text-primary"
-        >北岡佑一</a
+      <a href="papers.html?filter=authors&search=西田祥人&program=all" class="text-primary"
+        >西田祥人</a
       >,
       
-      <a href="papers.html?filter=authors&search=真嘉比愛&program=all" class="text-primary"
-        >真嘉比愛</a
+      <a href="papers.html?filter=authors&search=二宮崇&program=all" class="text-primary"
+        >二宮崇</a
+      >,
+      
+      <a href="papers.html?filter=authors&search=後藤功雄&program=all" class="text-primary"
+        >後藤功雄</a
       >
       
     </h3>
 
     <p class="card-text text-center h5">
       
-      <a href="papers.html?filter=keywords&search=P1:ポスター" class ="badge badge-pill badge-primary">P1:ポスター</a>
+      <a href="papers.html?filter=keywords&search=P1:情報検索・テキストマイニング / 機械翻訳" class ="badge badge-pill badge-primary">P1:情報検索・テキストマイニング / 機械翻訳</a>
       
 
       
@@ -235,7 +241,7 @@
    
     <div class="text-center p-3">
       
-      <a class="card-link link-info" target="_blank" href="https://www.anlp.jp/proceedings/annual_meeting/2025/pdf_dir/P1-16.pdf">
+      <a class="card-link link-info" target="_blank" href="https://www.anlp.jp/proceedings/annual_meeting/2026/pdf_dir/P1-16.pdf">
         📝 Paper 
       </a>
       
@@ -289,7 +295,7 @@
         <div class="card-text">
           <div id="abstractExample">
             <span class="font-weight-bold">Abstract:</span>
-            近年、大規模言語モデル（LLM）の発展により、高度な自然言語処理タスクの実現が可能となっている。しかし、文章校正タスクにおいて、LLM は入力文の意図を超えた過剰な書き換えを行う傾向があり、元の文意を保持できないという課題がある。本研究では、BART モデルにコピー機構を導入することで、必要最小限の編集に限定した文章校正の実現を目指した。評価実験では、ERRANT による F0.5 スコアを用いて編集精度を測定し、従来のBART モデルと比べて精度が向上したのを確認した。また、LLM である Gemini とも比較を行い、本手法が有効であることを示した。この成果は、我々の文章校正 AI サービス「ちゅらいと」の改善に向けた重要な知見となる。
+            本研究では EM アルゴリズムを用いて，潜在変数として対訳サブワード間の対応関係を学習する手法を提案する．従来のニューラル機械翻訳では，言語ごとに独立して学習されたサブワード分割モデルを用いることが一般的である．しかし，従来手法は対訳関係を考慮していないため，原言語と目的言語で語内部の分割が不整合となり，翻訳モデルの学習を妨げる可能性がある．提案手法では，対訳コーパスからサブワード文対間のサブワードの対応関係を直接モデル化することで，言語間の分割の一貫性を向上させる．複数の機械翻訳タスクにおける評価実験の結果，提案手法が複数の言語対で翻訳精度を改善することを確認した．
           </div>
         </div>
       </div>
@@ -297,7 +303,7 @@
   </div>
   
   <div class="tab-pane fade" id="paper" role="tabpanel" aria-labelledby="paper-tab">
-    <embed src="https://www.anlp.jp/proceedings/annual_meeting/2025/pdf_dir/P1-16.pdf" type="application/pdf" width="100%" height="850px">
+    <embed src="https://www.anlp.jp/proceedings/annual_meeting/2026/pdf_dir/P1-16.pdf" type="application/pdf" width="100%" height="850px">
   </div>
   
   
@@ -340,7 +346,7 @@
         <p class="float-left">
           <img src="None" height="45px"
             width="auto" align="center">
-          <span class="lead">NLP2025</span>
+          <span class="lead">NLP2026</span>
         </p>
         <p class="float-right"><a href="#" class="text-dark">Back to Top</a></p>
         <p class="text-center">The title and abstract of the paper are licensed by the author(s) under CC BY 4.0<br>

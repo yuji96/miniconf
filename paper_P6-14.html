@@ -64,22 +64,20 @@
   <script src="https://cdn.jsdelivr.net/npm/pdfjs-dist@2.3.200/build/pdf.min.js"></script>
   <script src="static/js/pdf_render.js"></script>
 
-  <title>NLP2025: 自己修正に基づく固有表現抽出モデルの指示学習</title>
+  <title>NLP2026: Open Cloze化した語彙穴埋め問題の運用可能性評価 BERT予測に基づく正解語保持判定法</title>
   
-<meta name="citation_title" content="自己修正に基づく固有表現抽出モデルの指示学習" />
+<meta name="citation_title" content="Open Cloze化した語彙穴埋め問題の運用可能性評価 BERT予測に基づく正解語保持判定法" />
 
-<meta name="citation_author" content="高橋拓誠" />
+<meta name="citation_author" content="北川みやび" />
 
-<meta name="citation_author" content="谷口友紀" />
-
-<meta name="citation_author" content="大熊智子" />
+<meta name="citation_author" content="竹中要一" />
 
 <meta name="citation_publication_date" content="None" />
 <meta name="citation_conference_title" content="None" />
 <meta name="citation_inbook_title" content="None" />
-<meta name="citation_abstract" content="固有表現抽出における過抽出やラベルの認識誤りは，典型的な性能低下の要因であり，大規模言語モデルにおいても頻出する課題である．本稿では，固有表現抽出を学習する過程で，抽出エラーを自己修正(Self-Correction)するための指示学習を提案する．本研究における自己修正の学習は，固有表現抽出の教師データのみ参照し，抽出エラーの検証や修正に関する追加アノテーションを必要としない．化学分野の特許を対象とした固有表現抽出において，自己修正に基づく指示学習を導入することで，固有表現の抽出エラーを大幅に抑制できることを示した．" />
+<meta name="citation_abstract" content="本研究は，多肢選択式語彙穴埋め問題を OpenCloze 問題へ機械変換した際に，元問題の正解語を単一正答として維持できているとみなせる問題かどうかを，モデル予測に基づき自動判定する枠組みを提案する．BERT の masked language model（MLM）で空所の予測分布を得て，正解語と top-1 予測語の一致／不一致により妥当性を操作的に定義した．英検2 級 30 問から 1 トークン条件で 28 問を評価し，一致は5 問（ 17.9%）であ った．さらに，不一致事例の一部では正解語が上位候補に含まれることが確認され，Open Cloze 化に伴う別解の扱いと採点基準設計が課題となることを指摘する." />
 
-<meta name="citation_keywords" content="P6:ポスター" />
+<meta name="citation_keywords" content="P6:実世界接地と言語処理 / 教育応用" />
 
 <meta name="citation_pdf_url" content="" />
 
@@ -213,27 +211,23 @@
 <div class="card m-3" style="">
   <div class="card-header">
     <h2 class="card-title main-title text-center" style="color: black">
-      自己修正に基づく固有表現抽出モデルの指示学習
+      Open Cloze化した語彙穴埋め問題の運用可能性評価 BERT予測に基づく正解語保持判定法
     </h2>
     <h3 class="card-subtitle mb-2 text-muted text-center">
       
-      <a href="papers.html?filter=authors&search=高橋拓誠&program=all" class="text-primary"
-        >高橋拓誠</a
+      <a href="papers.html?filter=authors&search=北川みやび&program=all" class="text-primary"
+        >北川みやび</a
       >,
       
-      <a href="papers.html?filter=authors&search=谷口友紀&program=all" class="text-primary"
-        >谷口友紀</a
-      >,
-      
-      <a href="papers.html?filter=authors&search=大熊智子&program=all" class="text-primary"
-        >大熊智子</a
+      <a href="papers.html?filter=authors&search=竹中要一&program=all" class="text-primary"
+        >竹中要一</a
       >
       
     </h3>
 
     <p class="card-text text-center h5">
       
-      <a href="papers.html?filter=keywords&search=P6:ポスター" class ="badge badge-pill badge-primary">P6:ポスター</a>
+      <a href="papers.html?filter=keywords&search=P6:実世界接地と言語処理 / 教育応用" class ="badge badge-pill badge-primary">P6:実世界接地と言語処理 / 教育応用</a>
       
 
       
@@ -241,7 +235,7 @@
    
     <div class="text-center p-3">
       
-      <a class="card-link link-info" target="_blank" href="https://www.anlp.jp/proceedings/annual_meeting/2025/pdf_dir/P6-14.pdf">
+      <a class="card-link link-info" target="_blank" href="https://www.anlp.jp/proceedings/annual_meeting/2026/pdf_dir/P6-14.pdf">
         📝 Paper 
       </a>
       
@@ -295,7 +289,7 @@
         <div class="card-text">
           <div id="abstractExample">
             <span class="font-weight-bold">Abstract:</span>
-            固有表現抽出における過抽出やラベルの認識誤りは，典型的な性能低下の要因であり，大規模言語モデルにおいても頻出する課題である．本稿では，固有表現抽出を学習する過程で，抽出エラーを自己修正(Self-Correction)するための指示学習を提案する．本研究における自己修正の学習は，固有表現抽出の教師データのみ参照し，抽出エラーの検証や修正に関する追加アノテーションを必要としない．化学分野の特許を対象とした固有表現抽出において，自己修正に基づく指示学習を導入することで，固有表現の抽出エラーを大幅に抑制できることを示した．
+            本研究は，多肢選択式語彙穴埋め問題を OpenCloze 問題へ機械変換した際に，元問題の正解語を単一正答として維持できているとみなせる問題かどうかを，モデル予測に基づき自動判定する枠組みを提案する．BERT の masked language model（MLM）で空所の予測分布を得て，正解語と top-1 予測語の一致／不一致により妥当性を操作的に定義した．英検2 級 30 問から 1 トークン条件で 28 問を評価し，一致は5 問（ 17.9%）であ った．さらに，不一致事例の一部では正解語が上位候補に含まれることが確認され，Open Cloze 化に伴う別解の扱いと採点基準設計が課題となることを指摘する.
           </div>
         </div>
       </div>
@@ -303,7 +297,7 @@
   </div>
   
   <div class="tab-pane fade" id="paper" role="tabpanel" aria-labelledby="paper-tab">
-    <embed src="https://www.anlp.jp/proceedings/annual_meeting/2025/pdf_dir/P6-14.pdf" type="application/pdf" width="100%" height="850px">
+    <embed src="https://www.anlp.jp/proceedings/annual_meeting/2026/pdf_dir/P6-14.pdf" type="application/pdf" width="100%" height="850px">
   </div>
   
   
@@ -346,7 +340,7 @@
         <p class="float-left">
           <img src="None" height="45px"
             width="auto" align="center">
-          <span class="lead">NLP2025</span>
+          <span class="lead">NLP2026</span>
         </p>
         <p class="float-right"><a href="#" class="text-dark">Back to Top</a></p>
         <p class="text-center">The title and abstract of the paper are licensed by the author(s) under CC BY 4.0<br>

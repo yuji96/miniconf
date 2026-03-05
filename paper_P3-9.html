@@ -64,22 +64,24 @@
   <script src="https://cdn.jsdelivr.net/npm/pdfjs-dist@2.3.200/build/pdf.min.js"></script>
   <script src="static/js/pdf_render.js"></script>
 
-  <title>NLP2025: 文法誤り訂正における人手評価と自動評価の乖離とその解決</title>
+  <title>NLP2026: GPT-4oによる感情推定を用いた攻撃的投稿判定</title>
   
-<meta name="citation_title" content="文法誤り訂正における人手評価と自動評価の乖離とその解決" />
+<meta name="citation_title" content="GPT-4oによる感情推定を用いた攻撃的投稿判定" />
 
-<meta name="citation_author" content="五藤巧" />
+<meta name="citation_author" content="草野雅也" />
 
-<meta name="citation_author" content="坂井優介" />
+<meta name="citation_author" content="佐久間拓人" />
 
-<meta name="citation_author" content="渡辺太郎" />
+<meta name="citation_author" content="谷文" />
+
+<meta name="citation_author" content="加藤昇平" />
 
 <meta name="citation_publication_date" content="None" />
 <meta name="citation_conference_title" content="None" />
 <meta name="citation_inbook_title" content="None" />
-<meta name="citation_abstract" content="文法誤り訂正における自動評価尺度の目的の一つは，人手評価を模倣するような訂正システムの順位づけである．しかし，現状の自動評価は人手評価と乖離した評価手順に基づいており，このことは人手評価を模倣する目的と矛盾している．具体的には，人手評価は文単位の相対的な評価結果をレーティングアルゴリズムで順位に変換するが，自動評価では文単位の絶対的な評価結果を平均するなどしてコーパス単位評価に集約し，ソートすることで順位とする．本研究では，この乖離を埋めるために既存の自動評価尺度を人手評価の方法と一致するように用いることを提案し，実際に多くの尺度で人手評価との一致度が向上することを示す．" />
+<meta name="citation_abstract" content="近年，SNS 上で他者に対して攻撃的な投稿（攻撃的投稿）が増加しており，その自動検出に関する研究が実施されている．しかし，皮肉表現や文脈依存を含む投稿に対して誤判定する課題がある．本研究では，高い言語処理能力を持つ大規模言語モデルと感情情報を用いた，SNS 上の攻撃的投稿判定手法を提案する．提案手法では，GPT-4o を用いて喜びや悲しみなどの 8 種類の感情に対する推定確率を出力し，投稿と出力された推定確率の両方を参照して攻撃性判定する．正答率，F1 スコアおよび混同行列を用いて，感情情報および例示情報の有効性を調査した結果，LLM による攻撃性判定において情報の付加が有効であることが確認された．" />
 
-<meta name="citation_keywords" content="P3:ポスター" />
+<meta name="citation_keywords" content="P3:評判・感情分析・スタイル分析 / 対話" />
 
 <meta name="citation_pdf_url" content="" />
 
@@ -213,27 +215,31 @@
 <div class="card m-3" style="">
   <div class="card-header">
     <h2 class="card-title main-title text-center" style="color: black">
-      文法誤り訂正における人手評価と自動評価の乖離とその解決
+      GPT-4oによる感情推定を用いた攻撃的投稿判定
     </h2>
     <h3 class="card-subtitle mb-2 text-muted text-center">
       
-      <a href="papers.html?filter=authors&search=五藤巧&program=all" class="text-primary"
-        >五藤巧</a
+      <a href="papers.html?filter=authors&search=草野雅也&program=all" class="text-primary"
+        >草野雅也</a
       >,
       
-      <a href="papers.html?filter=authors&search=坂井優介&program=all" class="text-primary"
-        >坂井優介</a
+      <a href="papers.html?filter=authors&search=佐久間拓人&program=all" class="text-primary"
+        >佐久間拓人</a
       >,
       
-      <a href="papers.html?filter=authors&search=渡辺太郎&program=all" class="text-primary"
-        >渡辺太郎</a
+      <a href="papers.html?filter=authors&search=谷文&program=all" class="text-primary"
+        >谷文</a
+      >,
+      
+      <a href="papers.html?filter=authors&search=加藤昇平&program=all" class="text-primary"
+        >加藤昇平</a
       >
       
     </h3>
 
     <p class="card-text text-center h5">
       
-      <a href="papers.html?filter=keywords&search=P3:ポスター" class ="badge badge-pill badge-primary">P3:ポスター</a>
+      <a href="papers.html?filter=keywords&search=P3:評判・感情分析・スタイル分析 / 対話" class ="badge badge-pill badge-primary">P3:評判・感情分析・スタイル分析 / 対話</a>
       
 
       
@@ -241,7 +247,7 @@
    
     <div class="text-center p-3">
       
-      <a class="card-link link-info" target="_blank" href="https://www.anlp.jp/proceedings/annual_meeting/2025/pdf_dir/P3-9.pdf">
+      <a class="card-link link-info" target="_blank" href="https://www.anlp.jp/proceedings/annual_meeting/2026/pdf_dir/P3-9.pdf">
         📝 Paper 
       </a>
       
@@ -295,7 +301,7 @@
         <div class="card-text">
           <div id="abstractExample">
             <span class="font-weight-bold">Abstract:</span>
-            文法誤り訂正における自動評価尺度の目的の一つは，人手評価を模倣するような訂正システムの順位づけである．しかし，現状の自動評価は人手評価と乖離した評価手順に基づいており，このことは人手評価を模倣する目的と矛盾している．具体的には，人手評価は文単位の相対的な評価結果をレーティングアルゴリズムで順位に変換するが，自動評価では文単位の絶対的な評価結果を平均するなどしてコーパス単位評価に集約し，ソートすることで順位とする．本研究では，この乖離を埋めるために既存の自動評価尺度を人手評価の方法と一致するように用いることを提案し，実際に多くの尺度で人手評価との一致度が向上することを示す．
+            近年，SNS 上で他者に対して攻撃的な投稿（攻撃的投稿）が増加しており，その自動検出に関する研究が実施されている．しかし，皮肉表現や文脈依存を含む投稿に対して誤判定する課題がある．本研究では，高い言語処理能力を持つ大規模言語モデルと感情情報を用いた，SNS 上の攻撃的投稿判定手法を提案する．提案手法では，GPT-4o を用いて喜びや悲しみなどの 8 種類の感情に対する推定確率を出力し，投稿と出力された推定確率の両方を参照して攻撃性判定する．正答率，F1 スコアおよび混同行列を用いて，感情情報および例示情報の有効性を調査した結果，LLM による攻撃性判定において情報の付加が有効であることが確認された．
           </div>
         </div>
       </div>
@@ -303,7 +309,7 @@
   </div>
   
   <div class="tab-pane fade" id="paper" role="tabpanel" aria-labelledby="paper-tab">
-    <embed src="https://www.anlp.jp/proceedings/annual_meeting/2025/pdf_dir/P3-9.pdf" type="application/pdf" width="100%" height="850px">
+    <embed src="https://www.anlp.jp/proceedings/annual_meeting/2026/pdf_dir/P3-9.pdf" type="application/pdf" width="100%" height="850px">
   </div>
   
   
@@ -346,7 +352,7 @@
         <p class="float-left">
           <img src="None" height="45px"
             width="auto" align="center">
-          <span class="lead">NLP2025</span>
+          <span class="lead">NLP2026</span>
         </p>
         <p class="float-right"><a href="#" class="text-dark">Back to Top</a></p>
         <p class="text-center">The title and abstract of the paper are licensed by the author(s) under CC BY 4.0<br>

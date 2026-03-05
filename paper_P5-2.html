@@ -64,28 +64,38 @@
   <script src="https://cdn.jsdelivr.net/npm/pdfjs-dist@2.3.200/build/pdf.min.js"></script>
   <script src="static/js/pdf_render.js"></script>
 
-  <title>NLP2025: レビュー情報を用いた LLM による観光地比較表生成</title>
+  <title>NLP2026: 農業分野の栽培暦VQAデータセットの構築 —LLMのマルチモーダル質問自動生成能力の評価—</title>
   
-<meta name="citation_title" content="レビュー情報を用いた LLM による観光地比較表生成" />
+<meta name="citation_title" content="農業分野の栽培暦VQAデータセットの構築 —LLMのマルチモーダル質問自動生成能力の評価—" />
 
-<meta name="citation_author" content="辻本陵" />
+<meta name="citation_author" content="宮脇一輝" />
 
-<meta name="citation_author" content="坪内孝太" />
+<meta name="citation_author" content="會田勇斗" />
 
-<meta name="citation_author" content="山下達雄" />
+<meta name="citation_author" content="高橋洸丞" />
 
-<meta name="citation_author" content="松田裕貴" />
+<meta name="citation_author" content="中川菫" />
 
-<meta name="citation_author" content="諏訪博彦" />
+<meta name="citation_author" content="木村泰知" />
 
-<meta name="citation_author" content="大内啓樹" />
+<meta name="citation_author" content="門脇一真" />
+
+<meta name="citation_author" content="小林暁雄" />
+
+<meta name="citation_author" content="大友将宏" />
+
+<meta name="citation_author" content="石原潤一" />
+
+<meta name="citation_author" content="馬場研太" />
+
+<meta name="citation_author" content="桂樹哲雄" />
 
 <meta name="citation_publication_date" content="None" />
 <meta name="citation_conference_title" content="None" />
 <meta name="citation_inbook_title" content="None" />
-<meta name="citation_abstract" content="Table Generation は，複数の要素を比較する際に有用な技術である．本研究では，観光地（POI）のレビュー情報を基に観光地間の比較表を自動生成する新しい手法を提案する．レビューから属性-レビューペアを抽出し，それを属性ごとに整理した情報を LLMs に入力することで，客観的要素と主観的要素を含む比較表の生成を可能にした．評価実験では，無作為なレビュー入力やレビューを使用しない手法と比較して，提案手法が優れた比較表を生成できることを確認した．本研究は，観光地選定を支援する実用的なアプローチを提示し，Table Generationタスクに新たな視点を提供するものである．" />
+<meta name="citation_abstract" content="本研究では，大規模言語モデル（LLM）を用いて，農業分野の文書「栽培暦」を対象とした VisualQuestion Answering（VQA）データセットを構築する．JA，農業試験場，農研機構などが発行し文章や図表を含む文書である栽培暦を LLM に入力し，農業知識に関する質問・回答ペアを生成した．また生成結果を人手で確認し，LLM のマルチモーダル質問自動生成能力について考察するとともに，不適切な質問や回答を修正した．最終的に，229 文書から687 件の質問・回答ペアとその矩形情報を含む栽培暦 QA データセットを構築し，農業分野における質問応答研究および知識活用の基盤となるデータ資源が整備された．" />
 
-<meta name="citation_keywords" content="P5:ポスター" />
+<meta name="citation_keywords" content="P5:対話 / 質問応答" />
 
 <meta name="citation_pdf_url" content="" />
 
@@ -219,39 +229,59 @@
 <div class="card m-3" style="">
   <div class="card-header">
     <h2 class="card-title main-title text-center" style="color: black">
-      レビュー情報を用いた LLM による観光地比較表生成
+      農業分野の栽培暦VQAデータセットの構築 —LLMのマルチモーダル質問自動生成能力の評価—
     </h2>
     <h3 class="card-subtitle mb-2 text-muted text-center">
       
-      <a href="papers.html?filter=authors&search=辻本陵&program=all" class="text-primary"
-        >辻本陵</a
+      <a href="papers.html?filter=authors&search=宮脇一輝&program=all" class="text-primary"
+        >宮脇一輝</a
       >,
       
-      <a href="papers.html?filter=authors&search=坪内孝太&program=all" class="text-primary"
-        >坪内孝太</a
+      <a href="papers.html?filter=authors&search=會田勇斗&program=all" class="text-primary"
+        >會田勇斗</a
       >,
       
-      <a href="papers.html?filter=authors&search=山下達雄&program=all" class="text-primary"
-        >山下達雄</a
+      <a href="papers.html?filter=authors&search=高橋洸丞&program=all" class="text-primary"
+        >高橋洸丞</a
       >,
       
-      <a href="papers.html?filter=authors&search=松田裕貴&program=all" class="text-primary"
-        >松田裕貴</a
+      <a href="papers.html?filter=authors&search=中川菫&program=all" class="text-primary"
+        >中川菫</a
       >,
       
-      <a href="papers.html?filter=authors&search=諏訪博彦&program=all" class="text-primary"
-        >諏訪博彦</a
+      <a href="papers.html?filter=authors&search=木村泰知&program=all" class="text-primary"
+        >木村泰知</a
       >,
       
-      <a href="papers.html?filter=authors&search=大内啓樹&program=all" class="text-primary"
-        >大内啓樹</a
+      <a href="papers.html?filter=authors&search=門脇一真&program=all" class="text-primary"
+        >門脇一真</a
+      >,
+      
+      <a href="papers.html?filter=authors&search=小林暁雄&program=all" class="text-primary"
+        >小林暁雄</a
+      >,
+      
+      <a href="papers.html?filter=authors&search=大友将宏&program=all" class="text-primary"
+        >大友将宏</a
+      >,
+      
+      <a href="papers.html?filter=authors&search=石原潤一&program=all" class="text-primary"
+        >石原潤一</a
+      >,
+      
+      <a href="papers.html?filter=authors&search=馬場研太&program=all" class="text-primary"
+        >馬場研太</a
+      >,
+      
+      <a href="papers.html?filter=authors&search=桂樹哲雄&program=all" class="text-primary"
+        >桂樹哲雄</a
       >
       
     </h3>
 
     <p class="card-text text-center h5">
       
-      <a href="papers.html?filter=keywords&search=P5:ポスター" class ="badge badge-pill badge-primary">P5:ポスター</a>
+      <a href="papers.html?filter=keywords&search=P5:対話 / 質問応答" class ="badge badge-pill badge-primary">P5:対話 / 質問応答</a>
       
 
       
@@ -259,7 +289,7 @@
    
     <div class="text-center p-3">
       
-      <a class="card-link link-info" target="_blank" href="https://www.anlp.jp/proceedings/annual_meeting/2025/pdf_dir/P5-2.pdf">
+      <a class="card-link link-info" target="_blank" href="https://www.anlp.jp/proceedings/annual_meeting/2026/pdf_dir/P5-2.pdf">
         📝 Paper 
       </a>
       
@@ -313,7 +343,7 @@
         <div class="card-text">
           <div id="abstractExample">
             <span class="font-weight-bold">Abstract:</span>
-            Table Generation は，複数の要素を比較する際に有用な技術である．本研究では，観光地（POI）のレビュー情報を基に観光地間の比較表を自動生成する新しい手法を提案する．レビューから属性-レビューペアを抽出し，それを属性ごとに整理した情報を LLMs に入力することで，客観的要素と主観的要素を含む比較表の生成を可能にした．評価実験では，無作為なレビュー入力やレビューを使用しない手法と比較して，提案手法が優れた比較表を生成できることを確認した．本研究は，観光地選定を支援する実用的なアプローチを提示し，Table Generationタスクに新たな視点を提供するものである．
+            本研究では，大規模言語モデル（LLM）を用いて，農業分野の文書「栽培暦」を対象とした VisualQuestion Answering（VQA）データセットを構築する．JA，農業試験場，農研機構などが発行し文章や図表を含む文書である栽培暦を LLM に入力し，農業知識に関する質問・回答ペアを生成した．また生成結果を人手で確認し，LLM のマルチモーダル質問自動生成能力について考察するとともに，不適切な質問や回答を修正した．最終的に，229 文書から687 件の質問・回答ペアとその矩形情報を含む栽培暦 QA データセットを構築し，農業分野における質問応答研究および知識活用の基盤となるデータ資源が整備された．
           </div>
         </div>
       </div>
@@ -321,7 +351,7 @@
   </div>
   
   <div class="tab-pane fade" id="paper" role="tabpanel" aria-labelledby="paper-tab">
-    <embed src="https://www.anlp.jp/proceedings/annual_meeting/2025/pdf_dir/P5-2.pdf" type="application/pdf" width="100%" height="850px">
+    <embed src="https://www.anlp.jp/proceedings/annual_meeting/2026/pdf_dir/P5-2.pdf" type="application/pdf" width="100%" height="850px">
   </div>
   
   
@@ -364,7 +394,7 @@
         <p class="float-left">
           <img src="None" height="45px"
             width="auto" align="center">
-          <span class="lead">NLP2025</span>
+          <span class="lead">NLP2026</span>
         </p>
         <p class="float-right"><a href="#" class="text-dark">Back to Top</a></p>
         <p class="text-center">The title and abstract of the paper are licensed by the author(s) under CC BY 4.0<br>

@@ -64,26 +64,22 @@
   <script src="https://cdn.jsdelivr.net/npm/pdfjs-dist@2.3.200/build/pdf.min.js"></script>
   <script src="static/js/pdf_render.js"></script>
 
-  <title>NLP2025: Vision Language Modelを用いた走行画像認識性能の検証</title>
+  <title>NLP2026: SciGA-Vec: 学術論文におけるベクタ画像形式の Graphical Abstract データセット</title>
   
-<meta name="citation_title" content="Vision Language Modelを用いた走行画像認識性能の検証" />
+<meta name="citation_title" content="SciGA-Vec: 学術論文におけるベクタ画像形式の Graphical Abstract データセット" />
 
-<meta name="citation_author" content="表野理人" />
+<meta name="citation_author" content="川田拓朗" />
 
-<meta name="citation_author" content="針屋慶吾" />
+<meta name="citation_author" content="北田俊輔" />
 
-<meta name="citation_author" content="福田有輝也" />
-
-<meta name="citation_author" content="米陀佳祐" />
-
-<meta name="citation_author" content="菅沼直樹" />
+<meta name="citation_author" content="彌冨仁" />
 
 <meta name="citation_publication_date" content="None" />
 <meta name="citation_conference_title" content="None" />
 <meta name="citation_inbook_title" content="None" />
-<meta name="citation_abstract" content="自動運転技術の関連研究に用いられる走行データを効率良く応用する場合，交通状況を理解するための詳細な認識が重要である．そこで，走行データの認識に，走行中の自車から撮影されたカメラ画像を深層学習ベースモデルによる分類で得られる情報を用いることが有効な手段として挙げられる．本研究では，画像情報のみを扱う Convolutional  neuralnetwork(CNN)ベースモデルと画像とテキストの両方の情報を扱える Vision Language Model(VLM)の走行画像認識性能を評価・比較する．実験の結果，VLM が詳細なラベルである走行エリア，走行場所，路面状況，渋滞状況，掠れた白線の有無，工事規制されている車線の有無のラベルにおいて，CNN ベースモデルの精度を上回ったことが確認された．" />
+<meta name="citation_abstract" content="Graphical Abstract (GA)は，論文の主要な貢献を視覚的に伝える重要な表現である.既存の GA データセットでは画素の集合として画像を表現するラスタ画像としてのみ提供されてきたため,矩形や矢印,テキストといった構造情報を活用した GA の解析や編集,生成に関する研究は制限されていた.本研究では,ラスタ画像を構造情報を保持したベクタ画像へ変換するパイプラインを提案し,既存の GA データセットに適用することでベクタ形式 GA データセット SciGA-Vec を構築する. SciGA-Vec は，GA の構造的解析や編集可能な生成モデルの学習,評価を可能とし, GA を構造化インフォグラフィックとして扱う将来の研究の基盤を提供する." />
 
-<meta name="citation_keywords" content="Q3:ポスター" />
+<meta name="citation_keywords" content="Q3:言語資源・アノテーションと評価 / その他の応用" />
 
 <meta name="citation_pdf_url" content="" />
 
@@ -217,35 +213,27 @@
 <div class="card m-3" style="">
   <div class="card-header">
     <h2 class="card-title main-title text-center" style="color: black">
-      Vision Language Modelを用いた走行画像認識性能の検証
+      SciGA-Vec: 学術論文におけるベクタ画像形式の Graphical Abstract データセット
     </h2>
     <h3 class="card-subtitle mb-2 text-muted text-center">
       
-      <a href="papers.html?filter=authors&search=表野理人&program=all" class="text-primary"
-        >表野理人</a
+      <a href="papers.html?filter=authors&search=川田拓朗&program=all" class="text-primary"
+        >川田拓朗</a
       >,
       
-      <a href="papers.html?filter=authors&search=針屋慶吾&program=all" class="text-primary"
-        >針屋慶吾</a
+      <a href="papers.html?filter=authors&search=北田俊輔&program=all" class="text-primary"
+        >北田俊輔</a
       >,
       
-      <a href="papers.html?filter=authors&search=福田有輝也&program=all" class="text-primary"
-        >福田有輝也</a
-      >,
-      
-      <a href="papers.html?filter=authors&search=米陀佳祐&program=all" class="text-primary"
-        >米陀佳祐</a
-      >,
-      
-      <a href="papers.html?filter=authors&search=菅沼直樹&program=all" class="text-primary"
-        >菅沼直樹</a
+      <a href="papers.html?filter=authors&search=彌冨仁&program=all" class="text-primary"
+        >彌冨仁</a
       >
       
     </h3>
 
     <p class="card-text text-center h5">
       
-      <a href="papers.html?filter=keywords&search=Q3:ポスター" class ="badge badge-pill badge-primary">Q3:ポスター</a>
+      <a href="papers.html?filter=keywords&search=Q3:言語資源・アノテーションと評価 / その他の応用" class ="badge badge-pill badge-primary">Q3:言語資源・アノテーションと評価 / その他の応用</a>
       
 
       
@@ -253,7 +241,7 @@
    
     <div class="text-center p-3">
       
-      <a class="card-link link-info" target="_blank" href="https://www.anlp.jp/proceedings/annual_meeting/2025/pdf_dir/Q3-3.pdf">
+      <a class="card-link link-info" target="_blank" href="https://www.anlp.jp/proceedings/annual_meeting/2026/pdf_dir/Q3-3.pdf">
         📝 Paper 
       </a>
       
@@ -307,7 +295,7 @@
         <div class="card-text">
           <div id="abstractExample">
             <span class="font-weight-bold">Abstract:</span>
-            自動運転技術の関連研究に用いられる走行データを効率良く応用する場合，交通状況を理解するための詳細な認識が重要である．そこで，走行データの認識に，走行中の自車から撮影されたカメラ画像を深層学習ベースモデルによる分類で得られる情報を用いることが有効な手段として挙げられる．本研究では，画像情報のみを扱う Convolutional  neuralnetwork(CNN)ベースモデルと画像とテキストの両方の情報を扱える Vision Language Model(VLM)の走行画像認識性能を評価・比較する．実験の結果，VLM が詳細なラベルである走行エリア，走行場所，路面状況，渋滞状況，掠れた白線の有無，工事規制されている車線の有無のラベルにおいて，CNN ベースモデルの精度を上回ったことが確認された．
+            Graphical Abstract (GA)は，論文の主要な貢献を視覚的に伝える重要な表現である.既存の GA データセットでは画素の集合として画像を表現するラスタ画像としてのみ提供されてきたため,矩形や矢印,テキストといった構造情報を活用した GA の解析や編集,生成に関する研究は制限されていた.本研究では,ラスタ画像を構造情報を保持したベクタ画像へ変換するパイプラインを提案し,既存の GA データセットに適用することでベクタ形式 GA データセット SciGA-Vec を構築する. SciGA-Vec は，GA の構造的解析や編集可能な生成モデルの学習,評価を可能とし, GA を構造化インフォグラフィックとして扱う将来の研究の基盤を提供する.
           </div>
         </div>
       </div>
@@ -315,7 +303,7 @@
   </div>
   
   <div class="tab-pane fade" id="paper" role="tabpanel" aria-labelledby="paper-tab">
-    <embed src="https://www.anlp.jp/proceedings/annual_meeting/2025/pdf_dir/Q3-3.pdf" type="application/pdf" width="100%" height="850px">
+    <embed src="https://www.anlp.jp/proceedings/annual_meeting/2026/pdf_dir/Q3-3.pdf" type="application/pdf" width="100%" height="850px">
   </div>
   
   
@@ -358,7 +346,7 @@
         <p class="float-left">
           <img src="None" height="45px"
             width="auto" align="center">
-          <span class="lead">NLP2025</span>
+          <span class="lead">NLP2026</span>
         </p>
         <p class="float-right"><a href="#" class="text-dark">Back to Top</a></p>
         <p class="text-center">The title and abstract of the paper are licensed by the author(s) under CC BY 4.0<br>

@@ -64,24 +64,20 @@
   <script src="https://cdn.jsdelivr.net/npm/pdfjs-dist@2.3.200/build/pdf.min.js"></script>
   <script src="static/js/pdf_render.js"></script>
 
-  <title>NLP2025: BERTを用いた誤訳検出とLLMを用いた誤訳訂正による特許翻訳の自動後編集</title>
+  <title>NLP2026: NumColBERT: マルチベクトル検索パイプラインを維持した数値条件対応検索モデルの提案</title>
   
-<meta name="citation_title" content="BERTを用いた誤訳検出とLLMを用いた誤訳訂正による特許翻訳の自動後編集" />
+<meta name="citation_title" content="NumColBERT: マルチベクトル検索パイプラインを維持した数値条件対応検索モデルの提案" />
 
-<meta name="citation_author" content="武馬光星" />
+<meta name="citation_author" content="藤巻晴葵" />
 
-<meta name="citation_author" content="西村柾人" />
-
-<meta name="citation_author" content="宇津呂武仁" />
-
-<meta name="citation_author" content="永田昌明" />
+<meta name="citation_author" content="加藤誠" />
 
 <meta name="citation_publication_date" content="None" />
 <meta name="citation_conference_title" content="None" />
 <meta name="citation_inbook_title" content="None" />
-<meta name="citation_abstract" content="特許翻訳は，その専門性と厳密さから高い翻訳精度が求められる分野である．しかし，従来のTransformer ベースのニューラル機械翻訳(NMT)モデルでは，特許文特有の長文構造や複雑な書式に起因する訳抜けや繰り返しといった誤訳が発生しやすいという課題がある．さらに，近年急速に発展している大規模言語モデルの翻訳訂正能力については，特許翻訳における有効性が十分に検討されていない．本論文では，mBERT を用いたトークンレベルの誤訳検出と大規模言語モデル(LLM)を用いた訂正手法を組み合わせた手法を提案する．BLEU および COMET のスコアで評価を行い，提案手法が最も高い翻訳精度を達成し，誤訳や繰り返しの改善に寄与することが示された．一方で，訳抜け文の訂正においては，課題も確認された．" />
+<meta name="citation_abstract" content="数値条件を含むクエリに対する密検索において，既存モデルは性能が低く，専用モジュールを用いる従来手法は既存検索パイプラインとの統合が困難である．本研究では，既存の検索パイプラインに影響を与えずに数値条件検索の性能を向上させるNumColBERT を提案し，数値トークン検出・数値情報予測・対照学習・埋め込み設計を導入した．実験の結果，提案手法は通常の微調整手法と比較して数値条件検索性能を改善し，専用モジュールを用いる従来手法と同等以上の性能を達成した．本研究の成果は，既存の検索パイプラインを維持したまま数値条件検索を改善できる可能性を示すものであり，既存システムに適用しやすく，保守性の高い検索システムの提供が期待できる．" />
 
-<meta name="citation_keywords" content="P1:ポスター" />
+<meta name="citation_keywords" content="P1:情報検索・テキストマイニング / 機械翻訳" />
 
 <meta name="citation_pdf_url" content="" />
 
@@ -215,31 +211,23 @@
 <div class="card m-3" style="">
   <div class="card-header">
     <h2 class="card-title main-title text-center" style="color: black">
-      BERTを用いた誤訳検出とLLMを用いた誤訳訂正による特許翻訳の自動後編集
+      NumColBERT: マルチベクトル検索パイプラインを維持した数値条件対応検索モデルの提案
     </h2>
     <h3 class="card-subtitle mb-2 text-muted text-center">
       
-      <a href="papers.html?filter=authors&search=武馬光星&program=all" class="text-primary"
-        >武馬光星</a
+      <a href="papers.html?filter=authors&search=藤巻晴葵&program=all" class="text-primary"
+        >藤巻晴葵</a
       >,
       
-      <a href="papers.html?filter=authors&search=西村柾人&program=all" class="text-primary"
-        >西村柾人</a
-      >,
-      
-      <a href="papers.html?filter=authors&search=宇津呂武仁&program=all" class="text-primary"
-        >宇津呂武仁</a
-      >,
-      
-      <a href="papers.html?filter=authors&search=永田昌明&program=all" class="text-primary"
-        >永田昌明</a
+      <a href="papers.html?filter=authors&search=加藤誠&program=all" class="text-primary"
+        >加藤誠</a
       >
       
     </h3>
 
     <p class="card-text text-center h5">
       
-      <a href="papers.html?filter=keywords&search=P1:ポスター" class ="badge badge-pill badge-primary">P1:ポスター</a>
+      <a href="papers.html?filter=keywords&search=P1:情報検索・テキストマイニング / 機械翻訳" class ="badge badge-pill badge-primary">P1:情報検索・テキストマイニング / 機械翻訳</a>
       
 
       
@@ -247,7 +235,7 @@
    
     <div class="text-center p-3">
       
-      <a class="card-link link-info" target="_blank" href="https://www.anlp.jp/proceedings/annual_meeting/2025/pdf_dir/P1-6.pdf">
+      <a class="card-link link-info" target="_blank" href="https://www.anlp.jp/proceedings/annual_meeting/2026/pdf_dir/P1-6.pdf">
         📝 Paper 
       </a>
       
@@ -301,7 +289,7 @@
         <div class="card-text">
           <div id="abstractExample">
             <span class="font-weight-bold">Abstract:</span>
-            特許翻訳は，その専門性と厳密さから高い翻訳精度が求められる分野である．しかし，従来のTransformer ベースのニューラル機械翻訳(NMT)モデルでは，特許文特有の長文構造や複雑な書式に起因する訳抜けや繰り返しといった誤訳が発生しやすいという課題がある．さらに，近年急速に発展している大規模言語モデルの翻訳訂正能力については，特許翻訳における有効性が十分に検討されていない．本論文では，mBERT を用いたトークンレベルの誤訳検出と大規模言語モデル(LLM)を用いた訂正手法を組み合わせた手法を提案する．BLEU および COMET のスコアで評価を行い，提案手法が最も高い翻訳精度を達成し，誤訳や繰り返しの改善に寄与することが示された．一方で，訳抜け文の訂正においては，課題も確認された．
+            数値条件を含むクエリに対する密検索において，既存モデルは性能が低く，専用モジュールを用いる従来手法は既存検索パイプラインとの統合が困難である．本研究では，既存の検索パイプラインに影響を与えずに数値条件検索の性能を向上させるNumColBERT を提案し，数値トークン検出・数値情報予測・対照学習・埋め込み設計を導入した．実験の結果，提案手法は通常の微調整手法と比較して数値条件検索性能を改善し，専用モジュールを用いる従来手法と同等以上の性能を達成した．本研究の成果は，既存の検索パイプラインを維持したまま数値条件検索を改善できる可能性を示すものであり，既存システムに適用しやすく，保守性の高い検索システムの提供が期待できる．
           </div>
         </div>
       </div>
@@ -309,7 +297,7 @@
   </div>
   
   <div class="tab-pane fade" id="paper" role="tabpanel" aria-labelledby="paper-tab">
-    <embed src="https://www.anlp.jp/proceedings/annual_meeting/2025/pdf_dir/P1-6.pdf" type="application/pdf" width="100%" height="850px">
+    <embed src="https://www.anlp.jp/proceedings/annual_meeting/2026/pdf_dir/P1-6.pdf" type="application/pdf" width="100%" height="850px">
   </div>
   
   
@@ -352,7 +340,7 @@
         <p class="float-left">
           <img src="None" height="45px"
             width="auto" align="center">
-          <span class="lead">NLP2025</span>
+          <span class="lead">NLP2026</span>
         </p>
         <p class="float-right"><a href="#" class="text-dark">Back to Top</a></p>
         <p class="text-center">The title and abstract of the paper are licensed by the author(s) under CC BY 4.0<br>

@@ -64,20 +64,24 @@
   <script src="https://cdn.jsdelivr.net/npm/pdfjs-dist@2.3.200/build/pdf.min.js"></script>
   <script src="static/js/pdf_render.js"></script>
 
-  <title>NLP2025: 社会的承認によって定義された心があるAI：評価方法と有効性の基礎検討</title>
+  <title>NLP2026: 人間同士の対話を対象とする確信度を考慮したLLM性格推定</title>
   
-<meta name="citation_title" content="社会的承認によって定義された心があるAI：評価方法と有効性の基礎検討" />
+<meta name="citation_title" content="人間同士の対話を対象とする確信度を考慮したLLM性格推定" />
 
-<meta name="citation_author" content="飯田愛結" />
+<meta name="citation_author" content="望月敦史" />
 
-<meta name="citation_author" content="大澤正彦" />
+<meta name="citation_author" content="高橋空大" />
+
+<meta name="citation_author" content="土田陸斗" />
+
+<meta name="citation_author" content="宇津呂武仁" />
 
 <meta name="citation_publication_date" content="None" />
 <meta name="citation_conference_title" content="None" />
 <meta name="citation_inbook_title" content="None" />
-<meta name="citation_abstract" content="「&#34;それ&#34;であると認められることをもって、&#34;それ&#34;の定義を満たす」とする社会的承認という方法で定義された「心がある AI」の実現を目指す．そして人と AI 自身が「心がある」ことを認める AI のつくりかたを考える．本論文では，社会的承認による定義やこの場合の評価方法の実現性，作成する人工物の有効性を議論する端緒を形成することを目的に，簡単な発話応答に対する評価を実施した．実験ではダニエルデネットの提唱する「設計スタンス」「意図スタンス」の考え方に基づく，設計発話/応答と意図発話/応答の組み合わせを作成し印象を調べた．" />
+<meta name="citation_abstract" content="本論文では，LLM を用いた性格推定における課題に着目し，一部の対話データには正確な推定に必要な十分な情報が含まれていないことを示す．自己申告による性格特性と第三者によって知覚された性格特性との間に乖離が存在することが報告されていることを踏まえ，本論文では，推定結果の信頼性を評価する指標として確信度推定を導入する．実験結果から，人手による確信度が高いほど，LLM による性格特性推定の精度が向上することが示された．さらに，CNN モデルによって学習された確信度指標を用いて LLM の推定結果を補正することで，外向性，神経症傾向，および全性格特性を通した全体性能において性能向上が観測された．" />
 
-<meta name="citation_keywords" content="P4:ポスター" />
+<meta name="citation_keywords" content="P4:対話" />
 
 <meta name="citation_pdf_url" content="" />
 
@@ -211,23 +215,31 @@
 <div class="card m-3" style="">
   <div class="card-header">
     <h2 class="card-title main-title text-center" style="color: black">
-      社会的承認によって定義された心があるAI：評価方法と有効性の基礎検討
+      人間同士の対話を対象とする確信度を考慮したLLM性格推定
     </h2>
     <h3 class="card-subtitle mb-2 text-muted text-center">
       
-      <a href="papers.html?filter=authors&search=飯田愛結&program=all" class="text-primary"
-        >飯田愛結</a
+      <a href="papers.html?filter=authors&search=望月敦史&program=all" class="text-primary"
+        >望月敦史</a
       >,
       
-      <a href="papers.html?filter=authors&search=大澤正彦&program=all" class="text-primary"
-        >大澤正彦</a
+      <a href="papers.html?filter=authors&search=高橋空大&program=all" class="text-primary"
+        >高橋空大</a
+      >,
+      
+      <a href="papers.html?filter=authors&search=土田陸斗&program=all" class="text-primary"
+        >土田陸斗</a
+      >,
+      
+      <a href="papers.html?filter=authors&search=宇津呂武仁&program=all" class="text-primary"
+        >宇津呂武仁</a
       >
       
     </h3>
 
     <p class="card-text text-center h5">
       
-      <a href="papers.html?filter=keywords&search=P4:ポスター" class ="badge badge-pill badge-primary">P4:ポスター</a>
+      <a href="papers.html?filter=keywords&search=P4:対話" class ="badge badge-pill badge-primary">P4:対話</a>
       
 
       
@@ -235,7 +247,7 @@
    
     <div class="text-center p-3">
       
-      <a class="card-link link-info" target="_blank" href="https://www.anlp.jp/proceedings/annual_meeting/2025/pdf_dir/P4-12.pdf">
+      <a class="card-link link-info" target="_blank" href="https://www.anlp.jp/proceedings/annual_meeting/2026/pdf_dir/P4-12.pdf">
         📝 Paper 
       </a>
       
@@ -289,7 +301,7 @@
         <div class="card-text">
           <div id="abstractExample">
             <span class="font-weight-bold">Abstract:</span>
-            「&#34;それ&#34;であると認められることをもって、&#34;それ&#34;の定義を満たす」とする社会的承認という方法で定義された「心がある AI」の実現を目指す．そして人と AI 自身が「心がある」ことを認める AI のつくりかたを考える．本論文では，社会的承認による定義やこの場合の評価方法の実現性，作成する人工物の有効性を議論する端緒を形成することを目的に，簡単な発話応答に対する評価を実施した．実験ではダニエルデネットの提唱する「設計スタンス」「意図スタンス」の考え方に基づく，設計発話/応答と意図発話/応答の組み合わせを作成し印象を調べた．
+            本論文では，LLM を用いた性格推定における課題に着目し，一部の対話データには正確な推定に必要な十分な情報が含まれていないことを示す．自己申告による性格特性と第三者によって知覚された性格特性との間に乖離が存在することが報告されていることを踏まえ，本論文では，推定結果の信頼性を評価する指標として確信度推定を導入する．実験結果から，人手による確信度が高いほど，LLM による性格特性推定の精度が向上することが示された．さらに，CNN モデルによって学習された確信度指標を用いて LLM の推定結果を補正することで，外向性，神経症傾向，および全性格特性を通した全体性能において性能向上が観測された．
           </div>
         </div>
       </div>
@@ -297,7 +309,7 @@
   </div>
   
   <div class="tab-pane fade" id="paper" role="tabpanel" aria-labelledby="paper-tab">
-    <embed src="https://www.anlp.jp/proceedings/annual_meeting/2025/pdf_dir/P4-12.pdf" type="application/pdf" width="100%" height="850px">
+    <embed src="https://www.anlp.jp/proceedings/annual_meeting/2026/pdf_dir/P4-12.pdf" type="application/pdf" width="100%" height="850px">
   </div>
   
   
@@ -340,7 +352,7 @@
         <p class="float-left">
           <img src="None" height="45px"
             width="auto" align="center">
-          <span class="lead">NLP2025</span>
+          <span class="lead">NLP2026</span>
         </p>
         <p class="float-right"><a href="#" class="text-dark">Back to Top</a></p>
         <p class="text-center">The title and abstract of the paper are licensed by the author(s) under CC BY 4.0<br>

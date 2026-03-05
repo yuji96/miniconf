@@ -64,22 +64,20 @@
   <script src="https://cdn.jsdelivr.net/npm/pdfjs-dist@2.3.200/build/pdf.min.js"></script>
   <script src="static/js/pdf_render.js"></script>
 
-  <title>NLP2025: RAGによる芸能人の話題集約及びその経歴の良否判定</title>
+  <title>NLP2026: 同一条件下における Encoder/Decoder アーキテクチャによる文埋め込みの性能分析</title>
   
-<meta name="citation_title" content="RAGによる芸能人の話題集約及びその経歴の良否判定" />
+<meta name="citation_title" content="同一条件下における Encoder/Decoder アーキテクチャによる文埋め込みの性能分析" />
 
-<meta name="citation_author" content="土田陸斗" />
+<meta name="citation_author" content="岡田龍樹" />
 
-<meta name="citation_author" content="横山響" />
-
-<meta name="citation_author" content="宇津呂武仁" />
+<meta name="citation_author" content="杉本徹" />
 
 <meta name="citation_publication_date" content="None" />
 <meta name="citation_conference_title" content="None" />
 <meta name="citation_inbook_title" content="None" />
-<meta name="citation_abstract" content="本論文の目的は，先行研究[9]の情報探索の問題点の解決と，大規模言語モデルによる良否判定の能否を判明させることである．その手法として，まずウェブページの芸能人に関する記事から対象の芸能人に言及している文を収集する．この際，記事を全て人が確認することは困難であるため，その収集を大規模言語モデルの ChatGPT で行う．次に，集めた文章を ChatGPT によって内容でカテゴリ分けし，カテゴリ名を付ける．ここで付けた名前を芸能人の観点と呼ぶことにする．この芸能人の観点について，先行研究[9]の手法との対応付けや，大規模言語モデルによる経歴の良否判定を行う．" />
+<meta name="citation_abstract" content="Retrieval-Augmented Generation (RAG)の実用化が進む中，文埋め込みモデルの重要性が増している．近年，大規模事前学習済み Decoder モデルを文埋め込みに転用する手法が提案されているが，従来のEncoder モデルとの性能・実用性の比較は十分でない．本研究では，同一のパラメータ数・学習データ・学習手法で構築した Encoder モデルと Decoder モデルを定量的に比較した．その結果，同一条件下ではEncoder モデルが下流タスク性能の面で Decoder モデルを上回った．また処理速度やメモリ効率の面でも優位であることを示した．一方，大規模事前学習済み Decoder モデルの知識転用は，追加コストを抑えつつ性能向上をもたらす有効な手法であることも確認された．これらの知見は，実用的な文埋め込みモデルの選択指針を提供するだけでなく，アーキテクチャ選択が性能に与える影響の理解を深める重要な示唆となる．" />
 
-<meta name="citation_keywords" content="C9:情報検索・テキストマイニング" />
+<meta name="citation_keywords" content="C9:機械翻訳" />
 
 <meta name="citation_pdf_url" content="" />
 
@@ -213,27 +211,23 @@
 <div class="card m-3" style="">
   <div class="card-header">
     <h2 class="card-title main-title text-center" style="color: black">
-      RAGによる芸能人の話題集約及びその経歴の良否判定
+      同一条件下における Encoder/Decoder アーキテクチャによる文埋め込みの性能分析
     </h2>
     <h3 class="card-subtitle mb-2 text-muted text-center">
       
-      <a href="papers.html?filter=authors&search=土田陸斗&program=all" class="text-primary"
-        >土田陸斗</a
+      <a href="papers.html?filter=authors&search=岡田龍樹&program=all" class="text-primary"
+        >岡田龍樹</a
       >,
       
-      <a href="papers.html?filter=authors&search=横山響&program=all" class="text-primary"
-        >横山響</a
-      >,
-      
-      <a href="papers.html?filter=authors&search=宇津呂武仁&program=all" class="text-primary"
-        >宇津呂武仁</a
+      <a href="papers.html?filter=authors&search=杉本徹&program=all" class="text-primary"
+        >杉本徹</a
       >
       
     </h3>
 
     <p class="card-text text-center h5">
       
-      <a href="papers.html?filter=keywords&search=C9:情報検索・テキストマイニング" class ="badge badge-pill badge-primary">C9:情報検索・テキストマイニング</a>
+      <a href="papers.html?filter=keywords&search=C9:機械翻訳" class ="badge badge-pill badge-primary">C9:機械翻訳</a>
       
 
       
@@ -241,7 +235,7 @@
    
     <div class="text-center p-3">
       
-      <a class="card-link link-info" target="_blank" href="https://www.anlp.jp/proceedings/annual_meeting/2025/pdf_dir/C9-1.pdf">
+      <a class="card-link link-info" target="_blank" href="https://www.anlp.jp/proceedings/annual_meeting/2026/pdf_dir/C9-1.pdf">
         📝 Paper 
       </a>
       
@@ -295,7 +289,7 @@
         <div class="card-text">
           <div id="abstractExample">
             <span class="font-weight-bold">Abstract:</span>
-            本論文の目的は，先行研究[9]の情報探索の問題点の解決と，大規模言語モデルによる良否判定の能否を判明させることである．その手法として，まずウェブページの芸能人に関する記事から対象の芸能人に言及している文を収集する．この際，記事を全て人が確認することは困難であるため，その収集を大規模言語モデルの ChatGPT で行う．次に，集めた文章を ChatGPT によって内容でカテゴリ分けし，カテゴリ名を付ける．ここで付けた名前を芸能人の観点と呼ぶことにする．この芸能人の観点について，先行研究[9]の手法との対応付けや，大規模言語モデルによる経歴の良否判定を行う．
+            Retrieval-Augmented Generation (RAG)の実用化が進む中，文埋め込みモデルの重要性が増している．近年，大規模事前学習済み Decoder モデルを文埋め込みに転用する手法が提案されているが，従来のEncoder モデルとの性能・実用性の比較は十分でない．本研究では，同一のパラメータ数・学習データ・学習手法で構築した Encoder モデルと Decoder モデルを定量的に比較した．その結果，同一条件下ではEncoder モデルが下流タスク性能の面で Decoder モデルを上回った．また処理速度やメモリ効率の面でも優位であることを示した．一方，大規模事前学習済み Decoder モデルの知識転用は，追加コストを抑えつつ性能向上をもたらす有効な手法であることも確認された．これらの知見は，実用的な文埋め込みモデルの選択指針を提供するだけでなく，アーキテクチャ選択が性能に与える影響の理解を深める重要な示唆となる．
           </div>
         </div>
       </div>
@@ -303,7 +297,7 @@
   </div>
   
   <div class="tab-pane fade" id="paper" role="tabpanel" aria-labelledby="paper-tab">
-    <embed src="https://www.anlp.jp/proceedings/annual_meeting/2025/pdf_dir/C9-1.pdf" type="application/pdf" width="100%" height="850px">
+    <embed src="https://www.anlp.jp/proceedings/annual_meeting/2026/pdf_dir/C9-1.pdf" type="application/pdf" width="100%" height="850px">
   </div>
   
   
@@ -346,7 +340,7 @@
         <p class="float-left">
           <img src="None" height="45px"
             width="auto" align="center">
-          <span class="lead">NLP2025</span>
+          <span class="lead">NLP2026</span>
         </p>
         <p class="float-right"><a href="#" class="text-dark">Back to Top</a></p>
         <p class="text-center">The title and abstract of the paper are licensed by the author(s) under CC BY 4.0<br>

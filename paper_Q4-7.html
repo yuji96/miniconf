@@ -64,22 +64,26 @@
   <script src="https://cdn.jsdelivr.net/npm/pdfjs-dist@2.3.200/build/pdf.min.js"></script>
   <script src="static/js/pdf_render.js"></script>
 
-  <title>NLP2025: LoRAを活用した言語モデルの中間層蒸留</title>
+  <title>NLP2026: 因果関係に着目した製品リコール情報データセットの構築</title>
   
-<meta name="citation_title" content="LoRAを活用した言語モデルの中間層蒸留" />
+<meta name="citation_title" content="因果関係に着目した製品リコール情報データセットの構築" />
 
-<meta name="citation_author" content="鈴木偉士" />
+<meta name="citation_author" content="河合英紀" />
 
-<meta name="citation_author" content="山田寛章" />
+<meta name="citation_author" content="安藤まや" />
 
-<meta name="citation_author" content="徳永健伸" />
+<meta name="citation_author" content="斉藤恵利" />
+
+<meta name="citation_author" content="福井香" />
+
+<meta name="citation_author" content="関根聡" />
 
 <meta name="citation_publication_date" content="None" />
 <meta name="citation_conference_title" content="None" />
 <meta name="citation_inbook_title" content="None" />
-<meta name="citation_abstract" content="近年，言語モデルの巨大化により，計算コストが大きく増加したため，性能を保ちつつモデルのパラメータ数を削減する手法が求められている．その一つに知識蒸留があり，中間層蒸留はその一種である．モデルの中間層出力も損失関数の計算に用いる中間層蒸留は有効とされてきたが，線形写像を推論時に用いないため，学習の効果が保証されない問題があった．本研究では，中間層蒸留の線形写像を LoRA のアダプターで代替し，推論時に除かれない線形写像を実現した LoRAILD を提案し，実験を行った．その結果，中間層蒸留の効果に対する否定的な結果を得た．" />
+<meta name="citation_abstract" content="本研究は，自動車産業におけるリコール・不具合情報の因果関係抽出を目的とし，国土交通省のリコールデータ 5,000 件を対象に，不具合事象の因果関係や関連部品を詳細にアノテーションした大規模データセットを構築した．アノテーションの結果，部品単位での不具合発生傾向をきめ細かく分析し，部品ごとに典型的な因果関係を洗い出し分類することが可能となった．これにより，従来は暗黙知として属人的に蓄積されていた知識を，因果関係マップとして可視化・共有できるようになった．" />
 
-<meta name="citation_keywords" content="Q4:ポスター" />
+<meta name="citation_keywords" content="Q4:言語資源・アノテーションと評価" />
 
 <meta name="citation_pdf_url" content="" />
 
@@ -213,27 +217,35 @@
 <div class="card m-3" style="">
   <div class="card-header">
     <h2 class="card-title main-title text-center" style="color: black">
-      LoRAを活用した言語モデルの中間層蒸留
+      因果関係に着目した製品リコール情報データセットの構築
     </h2>
     <h3 class="card-subtitle mb-2 text-muted text-center">
       
-      <a href="papers.html?filter=authors&search=鈴木偉士&program=all" class="text-primary"
-        >鈴木偉士</a
+      <a href="papers.html?filter=authors&search=河合英紀&program=all" class="text-primary"
+        >河合英紀</a
       >,
       
-      <a href="papers.html?filter=authors&search=山田寛章&program=all" class="text-primary"
-        >山田寛章</a
+      <a href="papers.html?filter=authors&search=安藤まや&program=all" class="text-primary"
+        >安藤まや</a
       >,
       
-      <a href="papers.html?filter=authors&search=徳永健伸&program=all" class="text-primary"
-        >徳永健伸</a
+      <a href="papers.html?filter=authors&search=斉藤恵利&program=all" class="text-primary"
+        >斉藤恵利</a
+      >,
+      
+      <a href="papers.html?filter=authors&search=福井香&program=all" class="text-primary"
+        >福井香</a
+      >,
+      
+      <a href="papers.html?filter=authors&search=関根聡&program=all" class="text-primary"
+        >関根聡</a
       >
       
     </h3>
 
     <p class="card-text text-center h5">
       
-      <a href="papers.html?filter=keywords&search=Q4:ポスター" class ="badge badge-pill badge-primary">Q4:ポスター</a>
+      <a href="papers.html?filter=keywords&search=Q4:言語資源・アノテーションと評価" class ="badge badge-pill badge-primary">Q4:言語資源・アノテーションと評価</a>
       
 
       
@@ -241,7 +253,7 @@
    
     <div class="text-center p-3">
       
-      <a class="card-link link-info" target="_blank" href="https://www.anlp.jp/proceedings/annual_meeting/2025/pdf_dir/Q4-7.pdf">
+      <a class="card-link link-info" target="_blank" href="https://www.anlp.jp/proceedings/annual_meeting/2026/pdf_dir/Q4-7.pdf">
         📝 Paper 
       </a>
       
@@ -295,7 +307,7 @@
         <div class="card-text">
           <div id="abstractExample">
             <span class="font-weight-bold">Abstract:</span>
-            近年，言語モデルの巨大化により，計算コストが大きく増加したため，性能を保ちつつモデルのパラメータ数を削減する手法が求められている．その一つに知識蒸留があり，中間層蒸留はその一種である．モデルの中間層出力も損失関数の計算に用いる中間層蒸留は有効とされてきたが，線形写像を推論時に用いないため，学習の効果が保証されない問題があった．本研究では，中間層蒸留の線形写像を LoRA のアダプターで代替し，推論時に除かれない線形写像を実現した LoRAILD を提案し，実験を行った．その結果，中間層蒸留の効果に対する否定的な結果を得た．
+            本研究は，自動車産業におけるリコール・不具合情報の因果関係抽出を目的とし，国土交通省のリコールデータ 5,000 件を対象に，不具合事象の因果関係や関連部品を詳細にアノテーションした大規模データセットを構築した．アノテーションの結果，部品単位での不具合発生傾向をきめ細かく分析し，部品ごとに典型的な因果関係を洗い出し分類することが可能となった．これにより，従来は暗黙知として属人的に蓄積されていた知識を，因果関係マップとして可視化・共有できるようになった．
           </div>
         </div>
       </div>
@@ -303,7 +315,7 @@
   </div>
   
   <div class="tab-pane fade" id="paper" role="tabpanel" aria-labelledby="paper-tab">
-    <embed src="https://www.anlp.jp/proceedings/annual_meeting/2025/pdf_dir/Q4-7.pdf" type="application/pdf" width="100%" height="850px">
+    <embed src="https://www.anlp.jp/proceedings/annual_meeting/2026/pdf_dir/Q4-7.pdf" type="application/pdf" width="100%" height="850px">
   </div>
   
   
@@ -346,7 +358,7 @@
         <p class="float-left">
           <img src="None" height="45px"
             width="auto" align="center">
-          <span class="lead">NLP2025</span>
+          <span class="lead">NLP2026</span>
         </p>
         <p class="float-right"><a href="#" class="text-dark">Back to Top</a></p>
         <p class="text-center">The title and abstract of the paper are licensed by the author(s) under CC BY 4.0<br>

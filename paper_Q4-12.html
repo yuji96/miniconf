@@ -64,26 +64,22 @@
   <script src="https://cdn.jsdelivr.net/npm/pdfjs-dist@2.3.200/build/pdf.min.js"></script>
   <script src="static/js/pdf_render.js"></script>
 
-  <title>NLP2025: 対訳構造の指示調整は言語間転移を促進するのか？</title>
+  <title>NLP2026: YOMI-Bench：LLMの日本語読み理解に向けた評価用ベンチマーク</title>
   
-<meta name="citation_title" content="対訳構造の指示調整は言語間転移を促進するのか？" />
+<meta name="citation_title" content="YOMI-Bench：LLMの日本語読み理解に向けた評価用ベンチマーク" />
 
-<meta name="citation_author" content="佐藤美唯" />
+<meta name="citation_author" content="三林亮太" />
 
-<meta name="citation_author" content="西潟優羽" />
+<meta name="citation_author" content="高村大也" />
 
-<meta name="citation_author" content="秋信有花" />
-
-<meta name="citation_author" content="倉林利行" />
-
-<meta name="citation_author" content="倉光君郎" />
+<meta name="citation_author" content="谷中瞳" />
 
 <meta name="citation_publication_date" content="None" />
 <meta name="citation_conference_title" content="None" />
 <meta name="citation_inbook_title" content="None" />
-<meta name="citation_abstract" content="多言語 LLM や低資源言語 LLM の開発において，言語間での事前学習データの不均衡は大きな技術課題である．現状は，英語中心の事前学習データが圧倒的に多い一方、低資源言語のデータ収集や作成は容易ではない．言語間転移は英語で学習した知識を活用して低資源言語の性能を高めることが期待されるが，その発生条件や原理は未解明な部分が多い．本研究では，指示調整を通じて言語間転移を促進させることを目指し，指示文を二言語の対訳構造にした対訳指示調整(Parallel Instruction Fine-Tuning, PIFT)を提案する．PIFT の効果を日本語からのコード生成タスクで調査した結果，単言語の指示文を用いた指示調整と比較して性能が向上することを確認した．" />
+<meta name="citation_abstract" content="本研究では，日本語の読み評価に特化した LLMベンチマークである YOMI-Bench を提案する．日本語における漢字は同じ 1 文字でも読みの候補が複数あり，表層上のテキストからは読みを想起するのが難しい．このような言語的側面から，LLM においても日本語の漢字の読みに関する性能が低いことが経験的に知られている．提案する YOMI-Bench は日本語の読み性能評価に特化した 3 種類のタスクで構成されたベンチマークである．本ベンチマークを用いた評価実験の結果，日本語に特化したローカルLLM であっても読み性能は限定的であることが明らかとなった．さらに，読みを明示的に考慮する生成タスクにおいては，商用モデルにおいても十分な性能が得られていないことが確認された．" />
 
-<meta name="citation_keywords" content="Q4:ポスター" />
+<meta name="citation_keywords" content="Q4:言語資源・アノテーションと評価" />
 
 <meta name="citation_pdf_url" content="" />
 
@@ -217,35 +213,27 @@
 <div class="card m-3" style="">
   <div class="card-header">
     <h2 class="card-title main-title text-center" style="color: black">
-      対訳構造の指示調整は言語間転移を促進するのか？
+      YOMI-Bench：LLMの日本語読み理解に向けた評価用ベンチマーク
     </h2>
     <h3 class="card-subtitle mb-2 text-muted text-center">
       
-      <a href="papers.html?filter=authors&search=佐藤美唯&program=all" class="text-primary"
-        >佐藤美唯</a
+      <a href="papers.html?filter=authors&search=三林亮太&program=all" class="text-primary"
+        >三林亮太</a
       >,
       
-      <a href="papers.html?filter=authors&search=西潟優羽&program=all" class="text-primary"
-        >西潟優羽</a
+      <a href="papers.html?filter=authors&search=高村大也&program=all" class="text-primary"
+        >高村大也</a
       >,
       
-      <a href="papers.html?filter=authors&search=秋信有花&program=all" class="text-primary"
-        >秋信有花</a
-      >,
-      
-      <a href="papers.html?filter=authors&search=倉林利行&program=all" class="text-primary"
-        >倉林利行</a
-      >,
-      
-      <a href="papers.html?filter=authors&search=倉光君郎&program=all" class="text-primary"
-        >倉光君郎</a
+      <a href="papers.html?filter=authors&search=谷中瞳&program=all" class="text-primary"
+        >谷中瞳</a
       >
       
     </h3>
 
     <p class="card-text text-center h5">
       
-      <a href="papers.html?filter=keywords&search=Q4:ポスター" class ="badge badge-pill badge-primary">Q4:ポスター</a>
+      <a href="papers.html?filter=keywords&search=Q4:言語資源・アノテーションと評価" class ="badge badge-pill badge-primary">Q4:言語資源・アノテーションと評価</a>
       
 
       
@@ -253,7 +241,7 @@
    
     <div class="text-center p-3">
       
-      <a class="card-link link-info" target="_blank" href="https://www.anlp.jp/proceedings/annual_meeting/2025/pdf_dir/Q4-12.pdf">
+      <a class="card-link link-info" target="_blank" href="https://www.anlp.jp/proceedings/annual_meeting/2026/pdf_dir/Q4-12.pdf">
         📝 Paper 
       </a>
       
@@ -307,7 +295,7 @@
         <div class="card-text">
           <div id="abstractExample">
             <span class="font-weight-bold">Abstract:</span>
-            多言語 LLM や低資源言語 LLM の開発において，言語間での事前学習データの不均衡は大きな技術課題である．現状は，英語中心の事前学習データが圧倒的に多い一方、低資源言語のデータ収集や作成は容易ではない．言語間転移は英語で学習した知識を活用して低資源言語の性能を高めることが期待されるが，その発生条件や原理は未解明な部分が多い．本研究では，指示調整を通じて言語間転移を促進させることを目指し，指示文を二言語の対訳構造にした対訳指示調整(Parallel Instruction Fine-Tuning, PIFT)を提案する．PIFT の効果を日本語からのコード生成タスクで調査した結果，単言語の指示文を用いた指示調整と比較して性能が向上することを確認した．
+            本研究では，日本語の読み評価に特化した LLMベンチマークである YOMI-Bench を提案する．日本語における漢字は同じ 1 文字でも読みの候補が複数あり，表層上のテキストからは読みを想起するのが難しい．このような言語的側面から，LLM においても日本語の漢字の読みに関する性能が低いことが経験的に知られている．提案する YOMI-Bench は日本語の読み性能評価に特化した 3 種類のタスクで構成されたベンチマークである．本ベンチマークを用いた評価実験の結果，日本語に特化したローカルLLM であっても読み性能は限定的であることが明らかとなった．さらに，読みを明示的に考慮する生成タスクにおいては，商用モデルにおいても十分な性能が得られていないことが確認された．
           </div>
         </div>
       </div>
@@ -315,7 +303,7 @@
   </div>
   
   <div class="tab-pane fade" id="paper" role="tabpanel" aria-labelledby="paper-tab">
-    <embed src="https://www.anlp.jp/proceedings/annual_meeting/2025/pdf_dir/Q4-12.pdf" type="application/pdf" width="100%" height="850px">
+    <embed src="https://www.anlp.jp/proceedings/annual_meeting/2026/pdf_dir/Q4-12.pdf" type="application/pdf" width="100%" height="850px">
   </div>
   
   
@@ -358,7 +346,7 @@
         <p class="float-left">
           <img src="None" height="45px"
             width="auto" align="center">
-          <span class="lead">NLP2025</span>
+          <span class="lead">NLP2026</span>
         </p>
         <p class="float-right"><a href="#" class="text-dark">Back to Top</a></p>
         <p class="text-center">The title and abstract of the paper are licensed by the author(s) under CC BY 4.0<br>

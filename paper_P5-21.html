@@ -64,24 +64,22 @@
   <script src="https://cdn.jsdelivr.net/npm/pdfjs-dist@2.3.200/build/pdf.min.js"></script>
   <script src="static/js/pdf_render.js"></script>
 
-  <title>NLP2025: 二重分節構造モデルを用いた連続音声からの教師なし音素・単語・文法獲得</title>
+  <title>NLP2026: ユーザシミュレータを用いた対話システムのデバッグ支援に向けた対話評価指標の設計</title>
   
-<meta name="citation_title" content="二重分節構造モデルを用いた連続音声からの教師なし音素・単語・文法獲得" />
+<meta name="citation_title" content="ユーザシミュレータを用いた対話システムのデバッグ支援に向けた対話評価指標の設計" />
 
-<meta name="citation_author" content="落合翔馬" />
+<meta name="citation_author" content="亀山京右" />
 
-<meta name="citation_author" content="齋藤一誠" />
+<meta name="citation_author" content="中野幹生" />
 
-<meta name="citation_author" content="長野匡隼" />
-
-<meta name="citation_author" content="中村友昭" />
+<meta name="citation_author" content="駒谷和範" />
 
 <meta name="citation_publication_date" content="None" />
 <meta name="citation_conference_title" content="None" />
 <meta name="citation_inbook_title" content="None" />
-<meta name="citation_abstract" content="人間は二重分節構造を持つ連続音声信号を明確な境界点やラベルなしに音素や単語に分割し，単語の遷移規則を文法として学習することが可能である．音声信号の二重分節構造を学習するモデルを構築することは，人間の言語獲得過程を構成論的に解明するために重要である．そこで本稿では，Gaussian Process Hidden Semi Markov Model(GP-HSMM)と Hidden Semi Markov Model (HSMM)を階層的に接続し，連続音声信号から音素，単語と文法を学習することが可能な新しい確率的生成モデルを提案する．提案手法では，各統計モデルのパラメータを相互に更新している．そのため，音素と単語と文法が相互に影響し合った学習を可能とする．実験では，文法学習を含む提案手法が，文法学習をしない従来手法よりも高い精度で連続音声信号を音素と単語に分割・分類できることを示した．また，文法学習が文中の単語数の正確な推定に大きく寄与することを示した．" />
+<meta name="citation_abstract" content="対話システムのデバッグでは，多様なユーザとの対話データから問題を発見する必要がある．LLMを利用したユーザシミュレータの活用により，対話データを容易に生成できるようになった反面，分析にかかる負担は依然として課題である．本研究では，従来の対話評価指標では捉えにくいシステムの問題を明示的に評価可能な指標の提案を行う．指標の設計では，ユーザシミュレータとの対話で発生するシステムの問題を既存のエラー類型に基づき明確化し，対話評価指標として新たに定義した．対話評価指標の有効性検証では，LLM を用いた自動評価を行い，人手で付与した発話エラーを含む発話を検出可能であることを確認した．" />
 
-<meta name="citation_keywords" content="P5:ポスター" />
+<meta name="citation_keywords" content="P5:対話 / 質問応答" />
 
 <meta name="citation_pdf_url" content="" />
 
@@ -215,31 +213,27 @@
 <div class="card m-3" style="">
   <div class="card-header">
     <h2 class="card-title main-title text-center" style="color: black">
-      二重分節構造モデルを用いた連続音声からの教師なし音素・単語・文法獲得
+      ユーザシミュレータを用いた対話システムのデバッグ支援に向けた対話評価指標の設計
     </h2>
     <h3 class="card-subtitle mb-2 text-muted text-center">
       
-      <a href="papers.html?filter=authors&search=落合翔馬&program=all" class="text-primary"
-        >落合翔馬</a
+      <a href="papers.html?filter=authors&search=亀山京右&program=all" class="text-primary"
+        >亀山京右</a
       >,
       
-      <a href="papers.html?filter=authors&search=齋藤一誠&program=all" class="text-primary"
-        >齋藤一誠</a
+      <a href="papers.html?filter=authors&search=中野幹生&program=all" class="text-primary"
+        >中野幹生</a
       >,
       
-      <a href="papers.html?filter=authors&search=長野匡隼&program=all" class="text-primary"
-        >長野匡隼</a
-      >,
-      
-      <a href="papers.html?filter=authors&search=中村友昭&program=all" class="text-primary"
-        >中村友昭</a
+      <a href="papers.html?filter=authors&search=駒谷和範&program=all" class="text-primary"
+        >駒谷和範</a
       >
       
     </h3>
 
     <p class="card-text text-center h5">
       
-      <a href="papers.html?filter=keywords&search=P5:ポスター" class ="badge badge-pill badge-primary">P5:ポスター</a>
+      <a href="papers.html?filter=keywords&search=P5:対話 / 質問応答" class ="badge badge-pill badge-primary">P5:対話 / 質問応答</a>
       
 
       
@@ -247,7 +241,7 @@
    
     <div class="text-center p-3">
       
-      <a class="card-link link-info" target="_blank" href="https://www.anlp.jp/proceedings/annual_meeting/2025/pdf_dir/P5-21.pdf">
+      <a class="card-link link-info" target="_blank" href="https://www.anlp.jp/proceedings/annual_meeting/2026/pdf_dir/P5-21.pdf">
         📝 Paper 
       </a>
       
@@ -301,7 +295,7 @@
         <div class="card-text">
           <div id="abstractExample">
             <span class="font-weight-bold">Abstract:</span>
-            人間は二重分節構造を持つ連続音声信号を明確な境界点やラベルなしに音素や単語に分割し，単語の遷移規則を文法として学習することが可能である．音声信号の二重分節構造を学習するモデルを構築することは，人間の言語獲得過程を構成論的に解明するために重要である．そこで本稿では，Gaussian Process Hidden Semi Markov Model(GP-HSMM)と Hidden Semi Markov Model (HSMM)を階層的に接続し，連続音声信号から音素，単語と文法を学習することが可能な新しい確率的生成モデルを提案する．提案手法では，各統計モデルのパラメータを相互に更新している．そのため，音素と単語と文法が相互に影響し合った学習を可能とする．実験では，文法学習を含む提案手法が，文法学習をしない従来手法よりも高い精度で連続音声信号を音素と単語に分割・分類できることを示した．また，文法学習が文中の単語数の正確な推定に大きく寄与することを示した．
+            対話システムのデバッグでは，多様なユーザとの対話データから問題を発見する必要がある．LLMを利用したユーザシミュレータの活用により，対話データを容易に生成できるようになった反面，分析にかかる負担は依然として課題である．本研究では，従来の対話評価指標では捉えにくいシステムの問題を明示的に評価可能な指標の提案を行う．指標の設計では，ユーザシミュレータとの対話で発生するシステムの問題を既存のエラー類型に基づき明確化し，対話評価指標として新たに定義した．対話評価指標の有効性検証では，LLM を用いた自動評価を行い，人手で付与した発話エラーを含む発話を検出可能であることを確認した．
           </div>
         </div>
       </div>
@@ -309,7 +303,7 @@
   </div>
   
   <div class="tab-pane fade" id="paper" role="tabpanel" aria-labelledby="paper-tab">
-    <embed src="https://www.anlp.jp/proceedings/annual_meeting/2025/pdf_dir/P5-21.pdf" type="application/pdf" width="100%" height="850px">
+    <embed src="https://www.anlp.jp/proceedings/annual_meeting/2026/pdf_dir/P5-21.pdf" type="application/pdf" width="100%" height="850px">
   </div>
   
   
@@ -352,7 +346,7 @@
         <p class="float-left">
           <img src="None" height="45px"
             width="auto" align="center">
-          <span class="lead">NLP2025</span>
+          <span class="lead">NLP2026</span>
         </p>
         <p class="float-right"><a href="#" class="text-dark">Back to Top</a></p>
         <p class="text-center">The title and abstract of the paper are licensed by the author(s) under CC BY 4.0<br>

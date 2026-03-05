@@ -64,30 +64,18 @@
   <script src="https://cdn.jsdelivr.net/npm/pdfjs-dist@2.3.200/build/pdf.min.js"></script>
   <script src="static/js/pdf_render.js"></script>
 
-  <title>NLP2025: 情報抽出パイプラインにおけるエラー伝播抑制手法の提案：オーバーサンプリング、フィルタリング指向学習、概念対応</title>
+  <title>NLP2026: ニュース記事埋め込みによる意味空間の比較研究 (E5 と Qwen によるクラスタ分布および意味表現特性の比較)</title>
   
-<meta name="citation_title" content="情報抽出パイプラインにおけるエラー伝播抑制手法の提案：オーバーサンプリング、フィルタリング指向学習、概念対応" />
+<meta name="citation_title" content="ニュース記事埋め込みによる意味空間の比較研究 (E5 と Qwen によるクラスタ分布および意味表現特性の比較)" />
 
-<meta name="citation_author" content="西田典起" />
-
-<meta name="citation_author" content="ShanshanLiu" />
-
-<meta name="citation_author" content="RumanaFerdousMunne" />
-
-<meta name="citation_author" content="徳永なるみ" />
-
-<meta name="citation_author" content="山縣友紀" />
-
-<meta name="citation_author" content="古崎晃司" />
-
-<meta name="citation_author" content="松本裕治" />
+<meta name="citation_author" content="内山和憲" />
 
 <meta name="citation_publication_date" content="None" />
 <meta name="citation_conference_title" content="None" />
 <meta name="citation_inbook_title" content="None" />
-<meta name="citation_abstract" content="本研究では、情報抽出パイプラインにおけるエラー伝播問題を軽減するための方法を提案する。エンティティの偽陰性問題(抽出漏れ)に対して、「オーバーサンプリング」を導入する。また、エンティティの偽陽性問題(過剰抽出)に対しては、「フィルタリング指向学習」を提案する。さらに、エンティティ曖昧性解消による間違った概念とメンションの紐づけの文書レベル関係抽出に対する影響を軽減するために、「概念対応」を導入する。複数ドメインのデータセットを用いた実験の結果、提案手法によって、情報抽出パイプラインのエラー伝播に対するロバスト性が向上することを確認した。" />
+<meta name="citation_abstract" content="本研究では，2012 年から 2016 年の HuﬀPost ニュース記事 162,376 件を対象に，文埋め込みモデルが構築する意味空間の構造的差異を比較分析した。SentenceTransformer[1]を用い，E5[2]および Qwen [3]による文埋め込みを生成し、k-means クラスタリング（𝑘= 50）を行い，クラスタ内分散，クラスタ重心に基づく階層クラスタリング，および社会トピックに対する時系列的反応数に着目して分析を行った。その結果，E5 は高凝集クラスタを形成し，政策・制度などの構造的トピックを明確に分離する傾向を示した。一方，Qwen は文脈的要素を反映した分散的な意味空間を形成し，社会的出来事に対する反応が複数クラスタに広く分布した。これらの結果は，文埋め込みモデルの選択が，ニュース分析における解釈の性質に本質的な影響を与えることを示唆する。" />
 
-<meta name="citation_keywords" content="B6:知識獲得・情報抽出(1)" />
+<meta name="citation_keywords" content="B6:NLPモデルの解釈可能性・分析" />
 
 <meta name="citation_pdf_url" content="" />
 
@@ -221,43 +209,19 @@
 <div class="card m-3" style="">
   <div class="card-header">
     <h2 class="card-title main-title text-center" style="color: black">
-      情報抽出パイプラインにおけるエラー伝播抑制手法の提案：オーバーサンプリング、フィルタリング指向学習、概念対応
+      ニュース記事埋め込みによる意味空間の比較研究 (E5 と Qwen によるクラスタ分布および意味表現特性の比較)
     </h2>
     <h3 class="card-subtitle mb-2 text-muted text-center">
       
-      <a href="papers.html?filter=authors&search=西田典起&program=all" class="text-primary"
-        >西田典起</a
-      >,
-      
-      <a href="papers.html?filter=authors&search=ShanshanLiu&program=all" class="text-primary"
-        >ShanshanLiu</a
-      >,
-      
-      <a href="papers.html?filter=authors&search=RumanaFerdousMunne&program=all" class="text-primary"
-        >RumanaFerdousMunne</a
-      >,
-      
-      <a href="papers.html?filter=authors&search=徳永なるみ&program=all" class="text-primary"
-        >徳永なるみ</a
-      >,
-      
-      <a href="papers.html?filter=authors&search=山縣友紀&program=all" class="text-primary"
-        >山縣友紀</a
-      >,
-      
-      <a href="papers.html?filter=authors&search=古崎晃司&program=all" class="text-primary"
-        >古崎晃司</a
-      >,
-      
-      <a href="papers.html?filter=authors&search=松本裕治&program=all" class="text-primary"
-        >松本裕治</a
+      <a href="papers.html?filter=authors&search=内山和憲&program=all" class="text-primary"
+        >内山和憲</a
       >
       
     </h3>
 
     <p class="card-text text-center h5">
       
-      <a href="papers.html?filter=keywords&search=B6:知識獲得・情報抽出(1)" class ="badge badge-pill badge-primary">B6:知識獲得・情報抽出(1)</a>
+      <a href="papers.html?filter=keywords&search=B6:NLPモデルの解釈可能性・分析" class ="badge badge-pill badge-primary">B6:NLPモデルの解釈可能性・分析</a>
       
 
       
@@ -265,7 +229,7 @@
    
     <div class="text-center p-3">
       
-      <a class="card-link link-info" target="_blank" href="https://www.anlp.jp/proceedings/annual_meeting/2025/pdf_dir/B6-2.pdf">
+      <a class="card-link link-info" target="_blank" href="https://www.anlp.jp/proceedings/annual_meeting/2026/pdf_dir/B6-2.pdf">
         📝 Paper 
       </a>
       
@@ -319,7 +283,7 @@
         <div class="card-text">
           <div id="abstractExample">
             <span class="font-weight-bold">Abstract:</span>
-            本研究では、情報抽出パイプラインにおけるエラー伝播問題を軽減するための方法を提案する。エンティティの偽陰性問題(抽出漏れ)に対して、「オーバーサンプリング」を導入する。また、エンティティの偽陽性問題(過剰抽出)に対しては、「フィルタリング指向学習」を提案する。さらに、エンティティ曖昧性解消による間違った概念とメンションの紐づけの文書レベル関係抽出に対する影響を軽減するために、「概念対応」を導入する。複数ドメインのデータセットを用いた実験の結果、提案手法によって、情報抽出パイプラインのエラー伝播に対するロバスト性が向上することを確認した。
+            本研究では，2012 年から 2016 年の HuﬀPost ニュース記事 162,376 件を対象に，文埋め込みモデルが構築する意味空間の構造的差異を比較分析した。SentenceTransformer[1]を用い，E5[2]および Qwen [3]による文埋め込みを生成し、k-means クラスタリング（𝑘= 50）を行い，クラスタ内分散，クラスタ重心に基づく階層クラスタリング，および社会トピックに対する時系列的反応数に着目して分析を行った。その結果，E5 は高凝集クラスタを形成し，政策・制度などの構造的トピックを明確に分離する傾向を示した。一方，Qwen は文脈的要素を反映した分散的な意味空間を形成し，社会的出来事に対する反応が複数クラスタに広く分布した。これらの結果は，文埋め込みモデルの選択が，ニュース分析における解釈の性質に本質的な影響を与えることを示唆する。
           </div>
         </div>
       </div>
@@ -327,7 +291,7 @@
   </div>
   
   <div class="tab-pane fade" id="paper" role="tabpanel" aria-labelledby="paper-tab">
-    <embed src="https://www.anlp.jp/proceedings/annual_meeting/2025/pdf_dir/B6-2.pdf" type="application/pdf" width="100%" height="850px">
+    <embed src="https://www.anlp.jp/proceedings/annual_meeting/2026/pdf_dir/B6-2.pdf" type="application/pdf" width="100%" height="850px">
   </div>
   
   
@@ -370,7 +334,7 @@
         <p class="float-left">
           <img src="None" height="45px"
             width="auto" align="center">
-          <span class="lead">NLP2025</span>
+          <span class="lead">NLP2026</span>
         </p>
         <p class="float-right"><a href="#" class="text-dark">Back to Top</a></p>
         <p class="text-center">The title and abstract of the paper are licensed by the author(s) under CC BY 4.0<br>

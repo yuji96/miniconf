@@ -64,24 +64,22 @@
   <script src="https://cdn.jsdelivr.net/npm/pdfjs-dist@2.3.200/build/pdf.min.js"></script>
   <script src="static/js/pdf_render.js"></script>
 
-  <title>NLP2025: 大規模言語モデルが持つ抽象推論能力の分析</title>
+  <title>NLP2026: 時間とともに変化する未整理な外部知識の継続的な整理と長文コンテキストRAGへの活用</title>
   
-<meta name="citation_title" content="大規模言語モデルが持つ抽象推論能力の分析" />
+<meta name="citation_title" content="時間とともに変化する未整理な外部知識の継続的な整理と長文コンテキストRAGへの活用" />
 
-<meta name="citation_author" content="清野輝風" />
+<meta name="citation_author" content="西田典起" />
 
-<meta name="citation_author" content="青木洋一" />
+<meta name="citation_author" content="FeiCheng" />
 
-<meta name="citation_author" content="斉藤いつみ" />
-
-<meta name="citation_author" content="坂口慶祐" />
+<meta name="citation_author" content="松本裕治" />
 
 <meta name="citation_publication_date" content="None" />
 <meta name="citation_conference_title" content="None" />
 <meta name="citation_inbook_title" content="None" />
-<meta name="citation_abstract" content="人工知能が高度な汎化能力を持つためには，少数の例からパターンを抽出し，新しい入力に適用する抽象推論能力の向上が重要である．しかしながら，既存の大規模言語モデルは未だ十分な抽象推論能力を有しておらず，その能力について詳細な分析が必要である．本稿ではこれらの能力を評価する代表的なデータセットである ARC（Abstraction andReasoning Corpus ）について few-shot 学習を通して実際に解かせ，ARC の各タスクに必要な処理を能力ごとに分解し分類した上で，能力ごとの精度を分析することで大規模言語モデルの抽象推論能力を詳細に評価する．" />
+<meta name="citation_abstract" content="本研究では，外部知識をタイムスタンプ付き命題の集合として表現し，命題間の時間的更新関係や矛盾関係，根拠関係を明示的に構造化する RAG フレームワーク，Temporally-structured Proposition RelationsRAG（TPR-RAG）を提案する．TPR-RAG は，質問に応じて関連命題とその関係構造を検索し，LLMが時間的妥当性や情報の信頼性を考慮して推論できる構造化コンテキストを生成する．実験により，TPR-RAG は従来のチャンクベースおよび命題ベースの RAG 手法と比べて，頑健性と精度の両面で一貫した性能向上を示すことを確認した．" />
 
-<meta name="citation_keywords" content="P7:ポスター" />
+<meta name="citation_keywords" content="P7:質問応答 / 教育応用 / その他の応用" />
 
 <meta name="citation_pdf_url" content="" />
 
@@ -215,31 +213,27 @@
 <div class="card m-3" style="">
   <div class="card-header">
     <h2 class="card-title main-title text-center" style="color: black">
-      大規模言語モデルが持つ抽象推論能力の分析
+      時間とともに変化する未整理な外部知識の継続的な整理と長文コンテキストRAGへの活用
     </h2>
     <h3 class="card-subtitle mb-2 text-muted text-center">
       
-      <a href="papers.html?filter=authors&search=清野輝風&program=all" class="text-primary"
-        >清野輝風</a
+      <a href="papers.html?filter=authors&search=西田典起&program=all" class="text-primary"
+        >西田典起</a
       >,
       
-      <a href="papers.html?filter=authors&search=青木洋一&program=all" class="text-primary"
-        >青木洋一</a
+      <a href="papers.html?filter=authors&search=FeiCheng&program=all" class="text-primary"
+        >FeiCheng</a
       >,
       
-      <a href="papers.html?filter=authors&search=斉藤いつみ&program=all" class="text-primary"
-        >斉藤いつみ</a
-      >,
-      
-      <a href="papers.html?filter=authors&search=坂口慶祐&program=all" class="text-primary"
-        >坂口慶祐</a
+      <a href="papers.html?filter=authors&search=松本裕治&program=all" class="text-primary"
+        >松本裕治</a
       >
       
     </h3>
 
     <p class="card-text text-center h5">
       
-      <a href="papers.html?filter=keywords&search=P7:ポスター" class ="badge badge-pill badge-primary">P7:ポスター</a>
+      <a href="papers.html?filter=keywords&search=P7:質問応答 / 教育応用 / その他の応用" class ="badge badge-pill badge-primary">P7:質問応答 / 教育応用 / その他の応用</a>
       
 
       
@@ -247,7 +241,7 @@
    
     <div class="text-center p-3">
       
-      <a class="card-link link-info" target="_blank" href="https://www.anlp.jp/proceedings/annual_meeting/2025/pdf_dir/P7-20.pdf">
+      <a class="card-link link-info" target="_blank" href="https://www.anlp.jp/proceedings/annual_meeting/2026/pdf_dir/P7-20.pdf">
         📝 Paper 
       </a>
       
@@ -301,7 +295,7 @@
         <div class="card-text">
           <div id="abstractExample">
             <span class="font-weight-bold">Abstract:</span>
-            人工知能が高度な汎化能力を持つためには，少数の例からパターンを抽出し，新しい入力に適用する抽象推論能力の向上が重要である．しかしながら，既存の大規模言語モデルは未だ十分な抽象推論能力を有しておらず，その能力について詳細な分析が必要である．本稿ではこれらの能力を評価する代表的なデータセットである ARC（Abstraction andReasoning Corpus ）について few-shot 学習を通して実際に解かせ，ARC の各タスクに必要な処理を能力ごとに分解し分類した上で，能力ごとの精度を分析することで大規模言語モデルの抽象推論能力を詳細に評価する．
+            本研究では，外部知識をタイムスタンプ付き命題の集合として表現し，命題間の時間的更新関係や矛盾関係，根拠関係を明示的に構造化する RAG フレームワーク，Temporally-structured Proposition RelationsRAG（TPR-RAG）を提案する．TPR-RAG は，質問に応じて関連命題とその関係構造を検索し，LLMが時間的妥当性や情報の信頼性を考慮して推論できる構造化コンテキストを生成する．実験により，TPR-RAG は従来のチャンクベースおよび命題ベースの RAG 手法と比べて，頑健性と精度の両面で一貫した性能向上を示すことを確認した．
           </div>
         </div>
       </div>
@@ -309,7 +303,7 @@
   </div>
   
   <div class="tab-pane fade" id="paper" role="tabpanel" aria-labelledby="paper-tab">
-    <embed src="https://www.anlp.jp/proceedings/annual_meeting/2025/pdf_dir/P7-20.pdf" type="application/pdf" width="100%" height="850px">
+    <embed src="https://www.anlp.jp/proceedings/annual_meeting/2026/pdf_dir/P7-20.pdf" type="application/pdf" width="100%" height="850px">
   </div>
   
   
@@ -352,7 +346,7 @@
         <p class="float-left">
           <img src="None" height="45px"
             width="auto" align="center">
-          <span class="lead">NLP2025</span>
+          <span class="lead">NLP2026</span>
         </p>
         <p class="float-right"><a href="#" class="text-dark">Back to Top</a></p>
         <p class="text-center">The title and abstract of the paper are licensed by the author(s) under CC BY 4.0<br>

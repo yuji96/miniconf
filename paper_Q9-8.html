@@ -64,20 +64,22 @@
   <script src="https://cdn.jsdelivr.net/npm/pdfjs-dist@2.3.200/build/pdf.min.js"></script>
   <script src="static/js/pdf_render.js"></script>
 
-  <title>NLP2025: 大規模言語モデルを用いたカタカナ語の意味分類における出力傾向分析</title>
+  <title>NLP2026: LLMを用いた入院患者カルテからの血液悪性腫瘍早期兆候検出</title>
   
-<meta name="citation_title" content="大規模言語モデルを用いたカタカナ語の意味分類における出力傾向分析" />
+<meta name="citation_title" content="LLMを用いた入院患者カルテからの血液悪性腫瘍早期兆候検出" />
 
-<meta name="citation_author" content="小滝主紀" />
+<meta name="citation_author" content="川本章太" />
 
-<meta name="citation_author" content="佐々木稔" />
+<meta name="citation_author" content="宮本太郎" />
+
+<meta name="citation_author" content="園部真也" />
 
 <meta name="citation_publication_date" content="None" />
 <meta name="citation_conference_title" content="None" />
 <meta name="citation_inbook_title" content="None" />
-<meta name="citation_abstract" content="大規模言語モデル(LLM)を用いた外来語の意味推論において、和製英語の存在など元来の英単語の意味との違いがモデルの精度に影響を与える可能性がある。外来語の意味を正確に捉えるために、本研究では BCCWJ から抽出したデータで LLM をFine-tuning し、現状のカタカナ語の意味推論の精度及び出力傾向を分析、精度向上への方策を探る。複数の実験の結果、Zero-shot learning では Fine-tuningの有効性が確認できなかったが、対照的に Few-shotlearning では約 10 ％の精度の向上が見られた。出力傾向分析によってモデルの苦手な語義や単語の傾向を得られたため、今後の研究への寄与を期待する。" />
+<meta name="citation_abstract" content="血液悪性腫瘍は発熱や倦怠感といった非特異的症状から始まるため、骨髄像検査に至るまでの遅延が問題となる。本研究では、骨髄像検査を予定する入院患者 92 例（陽性 46/陰性 46）について、検査 30〜4 日前のカルテテキストを整備し、大規模言語モデル（LLM）による早期兆候検出の実現可能性を評価した。Local/Global/Temporal という Context 管理と Rule-based/Zero-shot/Reﬂection というプロンプト設計を組み合わせた 7 条件を比較し、侵襲的検査の意思決定を模した評価設定を構築した。ReﬂectionLocal 条件では感度 67%、特異度 72%を達成し、検査 2 週間前（Day -14）の時点で陽性患者の 50%を捕捉できた。" />
 
-<meta name="citation_keywords" content="Q9:ポスター" />
+<meta name="citation_keywords" content="Q9:その他の応用" />
 
 <meta name="citation_pdf_url" content="" />
 
@@ -211,23 +213,27 @@
 <div class="card m-3" style="">
   <div class="card-header">
     <h2 class="card-title main-title text-center" style="color: black">
-      大規模言語モデルを用いたカタカナ語の意味分類における出力傾向分析
+      LLMを用いた入院患者カルテからの血液悪性腫瘍早期兆候検出
     </h2>
     <h3 class="card-subtitle mb-2 text-muted text-center">
       
-      <a href="papers.html?filter=authors&search=小滝主紀&program=all" class="text-primary"
-        >小滝主紀</a
+      <a href="papers.html?filter=authors&search=川本章太&program=all" class="text-primary"
+        >川本章太</a
       >,
       
-      <a href="papers.html?filter=authors&search=佐々木稔&program=all" class="text-primary"
-        >佐々木稔</a
+      <a href="papers.html?filter=authors&search=宮本太郎&program=all" class="text-primary"
+        >宮本太郎</a
+      >,
+      
+      <a href="papers.html?filter=authors&search=園部真也&program=all" class="text-primary"
+        >園部真也</a
       >
       
     </h3>
 
     <p class="card-text text-center h5">
       
-      <a href="papers.html?filter=keywords&search=Q9:ポスター" class ="badge badge-pill badge-primary">Q9:ポスター</a>
+      <a href="papers.html?filter=keywords&search=Q9:その他の応用" class ="badge badge-pill badge-primary">Q9:その他の応用</a>
       
 
       
@@ -235,7 +241,7 @@
    
     <div class="text-center p-3">
       
-      <a class="card-link link-info" target="_blank" href="https://www.anlp.jp/proceedings/annual_meeting/2025/pdf_dir/Q9-8.pdf">
+      <a class="card-link link-info" target="_blank" href="https://www.anlp.jp/proceedings/annual_meeting/2026/pdf_dir/Q9-8.pdf">
         📝 Paper 
       </a>
       
@@ -289,7 +295,7 @@
         <div class="card-text">
           <div id="abstractExample">
             <span class="font-weight-bold">Abstract:</span>
-            大規模言語モデル(LLM)を用いた外来語の意味推論において、和製英語の存在など元来の英単語の意味との違いがモデルの精度に影響を与える可能性がある。外来語の意味を正確に捉えるために、本研究では BCCWJ から抽出したデータで LLM をFine-tuning し、現状のカタカナ語の意味推論の精度及び出力傾向を分析、精度向上への方策を探る。複数の実験の結果、Zero-shot learning では Fine-tuningの有効性が確認できなかったが、対照的に Few-shotlearning では約 10 ％の精度の向上が見られた。出力傾向分析によってモデルの苦手な語義や単語の傾向を得られたため、今後の研究への寄与を期待する。
+            血液悪性腫瘍は発熱や倦怠感といった非特異的症状から始まるため、骨髄像検査に至るまでの遅延が問題となる。本研究では、骨髄像検査を予定する入院患者 92 例（陽性 46/陰性 46）について、検査 30〜4 日前のカルテテキストを整備し、大規模言語モデル（LLM）による早期兆候検出の実現可能性を評価した。Local/Global/Temporal という Context 管理と Rule-based/Zero-shot/Reﬂection というプロンプト設計を組み合わせた 7 条件を比較し、侵襲的検査の意思決定を模した評価設定を構築した。ReﬂectionLocal 条件では感度 67%、特異度 72%を達成し、検査 2 週間前（Day -14）の時点で陽性患者の 50%を捕捉できた。
           </div>
         </div>
       </div>
@@ -297,7 +303,7 @@
   </div>
   
   <div class="tab-pane fade" id="paper" role="tabpanel" aria-labelledby="paper-tab">
-    <embed src="https://www.anlp.jp/proceedings/annual_meeting/2025/pdf_dir/Q9-8.pdf" type="application/pdf" width="100%" height="850px">
+    <embed src="https://www.anlp.jp/proceedings/annual_meeting/2026/pdf_dir/Q9-8.pdf" type="application/pdf" width="100%" height="850px">
   </div>
   
   
@@ -340,7 +346,7 @@
         <p class="float-left">
           <img src="None" height="45px"
             width="auto" align="center">
-          <span class="lead">NLP2025</span>
+          <span class="lead">NLP2026</span>
         </p>
         <p class="float-right"><a href="#" class="text-dark">Back to Top</a></p>
         <p class="text-center">The title and abstract of the paper are licensed by the author(s) under CC BY 4.0<br>

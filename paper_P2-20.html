@@ -64,24 +64,22 @@
   <script src="https://cdn.jsdelivr.net/npm/pdfjs-dist@2.3.200/build/pdf.min.js"></script>
   <script src="static/js/pdf_render.js"></script>
 
-  <title>NLP2025: 言語モデルの内部表現における文法情報の局所性について</title>
+  <title>NLP2026: Graph RAGにおけるGNN検索器の埋め込み次元スケーリングの検討</title>
   
-<meta name="citation_title" content="言語モデルの内部表現における文法情報の局所性について" />
+<meta name="citation_title" content="Graph RAGにおけるGNN検索器の埋め込み次元スケーリングの検討" />
 
-<meta name="citation_author" content="佐藤宏亮" />
+<meta name="citation_author" content="清恵人" />
 
-<meta name="citation_author" content="鴨田豪" />
+<meta name="citation_author" content="SunilKumarMaurya" />
 
-<meta name="citation_author" content="BenjaminHeinzerling" />
-
-<meta name="citation_author" content="坂口慶祐" />
+<meta name="citation_author" content="小橋洋平" />
 
 <meta name="citation_publication_date" content="None" />
 <meta name="citation_conference_title" content="None" />
 <meta name="citation_inbook_title" content="None" />
-<meta name="citation_abstract" content="言語モデルにおいて，注目する知識をエンコードするニューロンの特定は，モデルの解釈性向上や少数のニューロンの操作による出力の制御の実現に貢献し得る．本研究では，スパースプローブを用いて，隠れ状態における文法情報の局在性を調査した．結果，大部分の層において，隠れ状態の特定の1 ％のニューロンはその補集合からランダムにサンプリングされた 6 倍以上の数のニューロンに匹敵する文法情報を有することが明らかになり，各文法情報が隠れ状態に局在的にエンコードされることが示された．また，一部の文法では，学習したプローブが他の文法に汎化することが明らかになった．" />
+<meta name="citation_abstract" content="RAG reduces LLM hallucinations by grounding answersin external knowledge, and Graph RAG enables multi-hopreasoning via knowledge graphs. GNN-based retrievers(GNN-RAG) oﬀer accurate, low-cost retrieval, but perfor-mance drops on complex long-hop questions and scalingrules are unclear. We analyze how scaling the GNN re-triever aﬀects retrieval in Graph RAG. Scaling only thelinear-layer width often saturates or degrades under limitedsupervision, while increasing the eﬀective training signalstabilizes scaling. These results indicate that robust scal-ing requires jointly increasing model capacity and trainingdata for multi-hop KGQA." />
 
-<meta name="citation_keywords" content="P2:ポスター" />
+<meta name="citation_keywords" content="P2:情報検索・テキストマイニング / 評判・感情分析・スタイル分析" />
 
 <meta name="citation_pdf_url" content="" />
 
@@ -215,31 +213,27 @@
 <div class="card m-3" style="">
   <div class="card-header">
     <h2 class="card-title main-title text-center" style="color: black">
-      言語モデルの内部表現における文法情報の局所性について
+      Graph RAGにおけるGNN検索器の埋め込み次元スケーリングの検討
     </h2>
     <h3 class="card-subtitle mb-2 text-muted text-center">
       
-      <a href="papers.html?filter=authors&search=佐藤宏亮&program=all" class="text-primary"
-        >佐藤宏亮</a
+      <a href="papers.html?filter=authors&search=清恵人&program=all" class="text-primary"
+        >清恵人</a
       >,
       
-      <a href="papers.html?filter=authors&search=鴨田豪&program=all" class="text-primary"
-        >鴨田豪</a
+      <a href="papers.html?filter=authors&search=SunilKumarMaurya&program=all" class="text-primary"
+        >SunilKumarMaurya</a
       >,
       
-      <a href="papers.html?filter=authors&search=BenjaminHeinzerling&program=all" class="text-primary"
-        >BenjaminHeinzerling</a
-      >,
-      
-      <a href="papers.html?filter=authors&search=坂口慶祐&program=all" class="text-primary"
-        >坂口慶祐</a
+      <a href="papers.html?filter=authors&search=小橋洋平&program=all" class="text-primary"
+        >小橋洋平</a
       >
       
     </h3>
 
     <p class="card-text text-center h5">
       
-      <a href="papers.html?filter=keywords&search=P2:ポスター" class ="badge badge-pill badge-primary">P2:ポスター</a>
+      <a href="papers.html?filter=keywords&search=P2:情報検索・テキストマイニング / 評判・感情分析・スタイル分析" class ="badge badge-pill badge-primary">P2:情報検索・テキストマイニング / 評判・感情分析・スタイル分析</a>
       
 
       
@@ -247,7 +241,7 @@
    
     <div class="text-center p-3">
       
-      <a class="card-link link-info" target="_blank" href="https://www.anlp.jp/proceedings/annual_meeting/2025/pdf_dir/P2-20.pdf">
+      <a class="card-link link-info" target="_blank" href="https://www.anlp.jp/proceedings/annual_meeting/2026/pdf_dir/P2-20.pdf">
         📝 Paper 
       </a>
       
@@ -301,7 +295,7 @@
         <div class="card-text">
           <div id="abstractExample">
             <span class="font-weight-bold">Abstract:</span>
-            言語モデルにおいて，注目する知識をエンコードするニューロンの特定は，モデルの解釈性向上や少数のニューロンの操作による出力の制御の実現に貢献し得る．本研究では，スパースプローブを用いて，隠れ状態における文法情報の局在性を調査した．結果，大部分の層において，隠れ状態の特定の1 ％のニューロンはその補集合からランダムにサンプリングされた 6 倍以上の数のニューロンに匹敵する文法情報を有することが明らかになり，各文法情報が隠れ状態に局在的にエンコードされることが示された．また，一部の文法では，学習したプローブが他の文法に汎化することが明らかになった．
+            RAG reduces LLM hallucinations by grounding answersin external knowledge, and Graph RAG enables multi-hopreasoning via knowledge graphs. GNN-based retrievers(GNN-RAG) oﬀer accurate, low-cost retrieval, but perfor-mance drops on complex long-hop questions and scalingrules are unclear. We analyze how scaling the GNN re-triever aﬀects retrieval in Graph RAG. Scaling only thelinear-layer width often saturates or degrades under limitedsupervision, while increasing the eﬀective training signalstabilizes scaling. These results indicate that robust scal-ing requires jointly increasing model capacity and trainingdata for multi-hop KGQA.
           </div>
         </div>
       </div>
@@ -309,7 +303,7 @@
   </div>
   
   <div class="tab-pane fade" id="paper" role="tabpanel" aria-labelledby="paper-tab">
-    <embed src="https://www.anlp.jp/proceedings/annual_meeting/2025/pdf_dir/P2-20.pdf" type="application/pdf" width="100%" height="850px">
+    <embed src="https://www.anlp.jp/proceedings/annual_meeting/2026/pdf_dir/P2-20.pdf" type="application/pdf" width="100%" height="850px">
   </div>
   
   
@@ -352,7 +346,7 @@
         <p class="float-left">
           <img src="None" height="45px"
             width="auto" align="center">
-          <span class="lead">NLP2025</span>
+          <span class="lead">NLP2026</span>
         </p>
         <p class="float-right"><a href="#" class="text-dark">Back to Top</a></p>
         <p class="text-center">The title and abstract of the paper are licensed by the author(s) under CC BY 4.0<br>

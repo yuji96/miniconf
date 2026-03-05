@@ -64,24 +64,22 @@
   <script src="https://cdn.jsdelivr.net/npm/pdfjs-dist@2.3.200/build/pdf.min.js"></script>
   <script src="static/js/pdf_render.js"></script>
 
-  <title>NLP2025: LLM間と問題間の類似度制約を加えたLLMの性能推定</title>
+  <title>NLP2026: LLMの日本語指示追従性向上のための人工データセットの構築</title>
   
-<meta name="citation_title" content="LLM間と問題間の類似度制約を加えたLLMの性能推定" />
+<meta name="citation_title" content="LLMの日本語指示追従性向上のための人工データセットの構築" />
 
-<meta name="citation_author" content="田村拓也" />
+<meta name="citation_author" content="守山慧" />
 
-<meta name="citation_author" content="矢野太郎" />
+<meta name="citation_author" content="児玉貴志" />
 
-<meta name="citation_author" content="榎本昌文" />
-
-<meta name="citation_author" content="小山田昌史" />
+<meta name="citation_author" content="中山功太" />
 
 <meta name="citation_publication_date" content="None" />
 <meta name="citation_conference_title" content="None" />
 <meta name="citation_inbook_title" content="None" />
-<meta name="citation_abstract" content="本研究では、LLM が与えられた問題を適切に解けるかを推定するタスクにおいて、推定モデルの学習に含まれない新規の LLM や問題に対しても高精度に推定する手法を提案する。提案手法では、従来の行列分解に基づくアプローチに加えて、問題文の埋め込みやモデルの来歴などの補助情報から得られる類似度を考慮した類似度制約項を損失関数に導入する。その結果、提案手法では学習時に利用した既知の LLM による新規問題の平均的な解決性能の推定において 20.2%、新規 LLM の既知の問題に対する平均的な性能の推定において 15.6%の誤差軽減を達成した。" />
+<meta name="citation_abstract" content="大規模言語モデル(LLM)が、人間の指示に沿った応答を生成する能力を評価する指標の一つに、指示追従性がある。本研究では、LLM の指示追従性の向上を目的とした人工データ生成手法を提案する。生成対象のデータは、指示データと選好データである。指示データについては、人手で作成された小規模なデータを LLM を用いて拡張する。選好データについては、正例として指示データの応答を用い、負例を LLM で生成する。生成されたデータの質を確保するために、ROUGE-L と LLM-as-a-Judge によるフィルタリングを適用した。実験により、提案手法により生成されたデータを用いて LLM を学習することで、指示追従性の向上が確認できた。" />
 
-<meta name="citation_keywords" content="Q4:ポスター" />
+<meta name="citation_keywords" content="Q4:言語資源・アノテーションと評価" />
 
 <meta name="citation_pdf_url" content="" />
 
@@ -215,31 +213,27 @@
 <div class="card m-3" style="">
   <div class="card-header">
     <h2 class="card-title main-title text-center" style="color: black">
-      LLM間と問題間の類似度制約を加えたLLMの性能推定
+      LLMの日本語指示追従性向上のための人工データセットの構築
     </h2>
     <h3 class="card-subtitle mb-2 text-muted text-center">
       
-      <a href="papers.html?filter=authors&search=田村拓也&program=all" class="text-primary"
-        >田村拓也</a
+      <a href="papers.html?filter=authors&search=守山慧&program=all" class="text-primary"
+        >守山慧</a
       >,
       
-      <a href="papers.html?filter=authors&search=矢野太郎&program=all" class="text-primary"
-        >矢野太郎</a
+      <a href="papers.html?filter=authors&search=児玉貴志&program=all" class="text-primary"
+        >児玉貴志</a
       >,
       
-      <a href="papers.html?filter=authors&search=榎本昌文&program=all" class="text-primary"
-        >榎本昌文</a
-      >,
-      
-      <a href="papers.html?filter=authors&search=小山田昌史&program=all" class="text-primary"
-        >小山田昌史</a
+      <a href="papers.html?filter=authors&search=中山功太&program=all" class="text-primary"
+        >中山功太</a
       >
       
     </h3>
 
     <p class="card-text text-center h5">
       
-      <a href="papers.html?filter=keywords&search=Q4:ポスター" class ="badge badge-pill badge-primary">Q4:ポスター</a>
+      <a href="papers.html?filter=keywords&search=Q4:言語資源・アノテーションと評価" class ="badge badge-pill badge-primary">Q4:言語資源・アノテーションと評価</a>
       
 
       
@@ -247,7 +241,7 @@
    
     <div class="text-center p-3">
       
-      <a class="card-link link-info" target="_blank" href="https://www.anlp.jp/proceedings/annual_meeting/2025/pdf_dir/Q4-14.pdf">
+      <a class="card-link link-info" target="_blank" href="https://www.anlp.jp/proceedings/annual_meeting/2026/pdf_dir/Q4-14.pdf">
         📝 Paper 
       </a>
       
@@ -301,7 +295,7 @@
         <div class="card-text">
           <div id="abstractExample">
             <span class="font-weight-bold">Abstract:</span>
-            本研究では、LLM が与えられた問題を適切に解けるかを推定するタスクにおいて、推定モデルの学習に含まれない新規の LLM や問題に対しても高精度に推定する手法を提案する。提案手法では、従来の行列分解に基づくアプローチに加えて、問題文の埋め込みやモデルの来歴などの補助情報から得られる類似度を考慮した類似度制約項を損失関数に導入する。その結果、提案手法では学習時に利用した既知の LLM による新規問題の平均的な解決性能の推定において 20.2%、新規 LLM の既知の問題に対する平均的な性能の推定において 15.6%の誤差軽減を達成した。
+            大規模言語モデル(LLM)が、人間の指示に沿った応答を生成する能力を評価する指標の一つに、指示追従性がある。本研究では、LLM の指示追従性の向上を目的とした人工データ生成手法を提案する。生成対象のデータは、指示データと選好データである。指示データについては、人手で作成された小規模なデータを LLM を用いて拡張する。選好データについては、正例として指示データの応答を用い、負例を LLM で生成する。生成されたデータの質を確保するために、ROUGE-L と LLM-as-a-Judge によるフィルタリングを適用した。実験により、提案手法により生成されたデータを用いて LLM を学習することで、指示追従性の向上が確認できた。
           </div>
         </div>
       </div>
@@ -309,7 +303,7 @@
   </div>
   
   <div class="tab-pane fade" id="paper" role="tabpanel" aria-labelledby="paper-tab">
-    <embed src="https://www.anlp.jp/proceedings/annual_meeting/2025/pdf_dir/Q4-14.pdf" type="application/pdf" width="100%" height="850px">
+    <embed src="https://www.anlp.jp/proceedings/annual_meeting/2026/pdf_dir/Q4-14.pdf" type="application/pdf" width="100%" height="850px">
   </div>
   
   
@@ -352,7 +346,7 @@
         <p class="float-left">
           <img src="None" height="45px"
             width="auto" align="center">
-          <span class="lead">NLP2025</span>
+          <span class="lead">NLP2026</span>
         </p>
         <p class="float-right"><a href="#" class="text-dark">Back to Top</a></p>
         <p class="text-center">The title and abstract of the paper are licensed by the author(s) under CC BY 4.0<br>

@@ -64,34 +64,24 @@
   <script src="https://cdn.jsdelivr.net/npm/pdfjs-dist@2.3.200/build/pdf.min.js"></script>
   <script src="static/js/pdf_render.js"></script>
 
-  <title>NLP2025: 医学生物学文献からのオントロジー構築のためのメンション非依存型情報抽出</title>
+  <title>NLP2026: 二値化スパースオートエンコーダ</title>
   
-<meta name="citation_title" content="医学生物学文献からのオントロジー構築のためのメンション非依存型情報抽出" />
+<meta name="citation_title" content="二値化スパースオートエンコーダ" />
 
-<meta name="citation_author" content="西田典起" />
+<meta name="citation_author" content="趙羽風" />
 
-<meta name="citation_author" content="OumaimaElKhettari" />
+<meta name="citation_author" content="楊昊霖" />
 
-<meta name="citation_author" content="ShanshanLiu" />
+<meta name="citation_author" content="BrianM.Kurkoski" />
 
-<meta name="citation_author" content="RumanaFerdousMunne" />
-
-<meta name="citation_author" content="山縣友紀" />
-
-<meta name="citation_author" content="古崎晃司" />
-
-<meta name="citation_author" content="SolenQuiniou" />
-
-<meta name="citation_author" content="SamuelChaffron" />
-
-<meta name="citation_author" content="松本裕治" />
+<meta name="citation_author" content="井之上直也" />
 
 <meta name="citation_publication_date" content="None" />
 <meta name="citation_conference_title" content="None" />
 <meta name="citation_inbook_title" content="None" />
-<meta name="citation_abstract" content="生物学的プロセスなどのエンティティは、医学生物学文献内で常に明示的に言及されているとは限らず、しばしば専門知識の共有を仮定して暗黙的に言及される。本研究では、医学生物学文献からのオントロジー自動構築を目指し、プロセス抽出と文書レベル関係抽出の二段階からなるメンション非依存型情報抽出システムを提案する。提案システムでは、一貫してメンション表現に依存せず、入力文書に対して対象オントロジーに紐づいたプロセスエンティティ集合の抽出とエンティティ間関係の同定を可能にする。新たなベンチマークデータセットを構築し、BERT ベースまたは LLM ベースのメンション非依存型アプローチを提案し、評価と比較を行う。" />
+<meta name="citation_abstract" content="LLM の内部状態から原子的特徴を抽出しその動作原理を解釈する試みが数多く行われてきたが，従来法は単一サンプルに対して正則化を課したオートエンコーダに依存し，サンプル間での全体的スパース性を保証できない.その結果，不活性・高頻度特徴が生成され，スパース性が損なわれる.本研究では，特徴のスパース性を高めるため，隠れ活性のミニバッチ単位でエントロピーを最小化する新しい自己符号化器を提案する.効率化のため，活性をステップ関数で 1 ビットに離散化し，勾配推定によって逆伝播を実現する.この手法を二値化スパースオートエンコーダ（BAE）と呼び，特徴集合のエントロピー削減とスパース分解への有効性を示す1）．" />
 
-<meta name="citation_keywords" content="B6:知識獲得・情報抽出(1)" />
+<meta name="citation_keywords" content="B6:NLPモデルの解釈可能性・分析" />
 
 <meta name="citation_pdf_url" content="" />
 
@@ -225,51 +215,31 @@
 <div class="card m-3" style="">
   <div class="card-header">
     <h2 class="card-title main-title text-center" style="color: black">
-      医学生物学文献からのオントロジー構築のためのメンション非依存型情報抽出
+      二値化スパースオートエンコーダ
     </h2>
     <h3 class="card-subtitle mb-2 text-muted text-center">
       
-      <a href="papers.html?filter=authors&search=西田典起&program=all" class="text-primary"
-        >西田典起</a
+      <a href="papers.html?filter=authors&search=趙羽風&program=all" class="text-primary"
+        >趙羽風</a
       >,
       
-      <a href="papers.html?filter=authors&search=OumaimaElKhettari&program=all" class="text-primary"
-        >OumaimaElKhettari</a
+      <a href="papers.html?filter=authors&search=楊昊霖&program=all" class="text-primary"
+        >楊昊霖</a
       >,
       
-      <a href="papers.html?filter=authors&search=ShanshanLiu&program=all" class="text-primary"
-        >ShanshanLiu</a
+      <a href="papers.html?filter=authors&search=BrianM.Kurkoski&program=all" class="text-primary"
+        >BrianM.Kurkoski</a
       >,
       
-      <a href="papers.html?filter=authors&search=RumanaFerdousMunne&program=all" class="text-primary"
-        >RumanaFerdousMunne</a
-      >,
-      
-      <a href="papers.html?filter=authors&search=山縣友紀&program=all" class="text-primary"
-        >山縣友紀</a
-      >,
-      
-      <a href="papers.html?filter=authors&search=古崎晃司&program=all" class="text-primary"
-        >古崎晃司</a
-      >,
-      
-      <a href="papers.html?filter=authors&search=SolenQuiniou&program=all" class="text-primary"
-        >SolenQuiniou</a
-      >,
-      
-      <a href="papers.html?filter=authors&search=SamuelChaffron&program=all" class="text-primary"
-        >SamuelChaffron</a
-      >,
-      
-      <a href="papers.html?filter=authors&search=松本裕治&program=all" class="text-primary"
-        >松本裕治</a
+      <a href="papers.html?filter=authors&search=井之上直也&program=all" class="text-primary"
+        >井之上直也</a
       >
       
     </h3>
 
     <p class="card-text text-center h5">
       
-      <a href="papers.html?filter=keywords&search=B6:知識獲得・情報抽出(1)" class ="badge badge-pill badge-primary">B6:知識獲得・情報抽出(1)</a>
+      <a href="papers.html?filter=keywords&search=B6:NLPモデルの解釈可能性・分析" class ="badge badge-pill badge-primary">B6:NLPモデルの解釈可能性・分析</a>
       
 
       
@@ -277,7 +247,7 @@
    
     <div class="text-center p-3">
       
-      <a class="card-link link-info" target="_blank" href="https://www.anlp.jp/proceedings/annual_meeting/2025/pdf_dir/B6-1.pdf">
+      <a class="card-link link-info" target="_blank" href="https://www.anlp.jp/proceedings/annual_meeting/2026/pdf_dir/B6-1.pdf">
         📝 Paper 
       </a>
       
@@ -331,7 +301,7 @@
         <div class="card-text">
           <div id="abstractExample">
             <span class="font-weight-bold">Abstract:</span>
-            生物学的プロセスなどのエンティティは、医学生物学文献内で常に明示的に言及されているとは限らず、しばしば専門知識の共有を仮定して暗黙的に言及される。本研究では、医学生物学文献からのオントロジー自動構築を目指し、プロセス抽出と文書レベル関係抽出の二段階からなるメンション非依存型情報抽出システムを提案する。提案システムでは、一貫してメンション表現に依存せず、入力文書に対して対象オントロジーに紐づいたプロセスエンティティ集合の抽出とエンティティ間関係の同定を可能にする。新たなベンチマークデータセットを構築し、BERT ベースまたは LLM ベースのメンション非依存型アプローチを提案し、評価と比較を行う。
+            LLM の内部状態から原子的特徴を抽出しその動作原理を解釈する試みが数多く行われてきたが，従来法は単一サンプルに対して正則化を課したオートエンコーダに依存し，サンプル間での全体的スパース性を保証できない.その結果，不活性・高頻度特徴が生成され，スパース性が損なわれる.本研究では，特徴のスパース性を高めるため，隠れ活性のミニバッチ単位でエントロピーを最小化する新しい自己符号化器を提案する.効率化のため，活性をステップ関数で 1 ビットに離散化し，勾配推定によって逆伝播を実現する.この手法を二値化スパースオートエンコーダ（BAE）と呼び，特徴集合のエントロピー削減とスパース分解への有効性を示す1）．
           </div>
         </div>
       </div>
@@ -339,7 +309,7 @@
   </div>
   
   <div class="tab-pane fade" id="paper" role="tabpanel" aria-labelledby="paper-tab">
-    <embed src="https://www.anlp.jp/proceedings/annual_meeting/2025/pdf_dir/B6-1.pdf" type="application/pdf" width="100%" height="850px">
+    <embed src="https://www.anlp.jp/proceedings/annual_meeting/2026/pdf_dir/B6-1.pdf" type="application/pdf" width="100%" height="850px">
   </div>
   
   
@@ -382,7 +352,7 @@
         <p class="float-left">
           <img src="None" height="45px"
             width="auto" align="center">
-          <span class="lead">NLP2025</span>
+          <span class="lead">NLP2026</span>
         </p>
         <p class="float-right"><a href="#" class="text-dark">Back to Top</a></p>
         <p class="text-center">The title and abstract of the paper are licensed by the author(s) under CC BY 4.0<br>

@@ -64,22 +64,36 @@
   <script src="https://cdn.jsdelivr.net/npm/pdfjs-dist@2.3.200/build/pdf.min.js"></script>
   <script src="static/js/pdf_render.js"></script>
 
-  <title>NLP2025: 読みにくい日本語文に対する係り受け解析・語順整序・読点挿入の同時実行とその評価</title>
+  <title>NLP2026: DAGRI Subtask 3: 栽培暦を対象としたFigures and Tables Question Answering (FiT-QA)の提案</title>
   
-<meta name="citation_title" content="読みにくい日本語文に対する係り受け解析・語順整序・読点挿入の同時実行とその評価" />
+<meta name="citation_title" content="DAGRI Subtask 3: 栽培暦を対象としたFigures and Tables Question Answering (FiT-QA)の提案" />
 
-<meta name="citation_author" content="荒木駿介" />
+<meta name="citation_author" content="中川菫" />
 
-<meta name="citation_author" content="大野誠寛" />
+<meta name="citation_author" content="木村泰知" />
 
-<meta name="citation_author" content="松原茂樹" />
+<meta name="citation_author" content="會田勇斗" />
+
+<meta name="citation_author" content="高橋洸丞" />
+
+<meta name="citation_author" content="門脇一真" />
+
+<meta name="citation_author" content="小林暁雄" />
+
+<meta name="citation_author" content="大友将宏" />
+
+<meta name="citation_author" content="石原潤一" />
+
+<meta name="citation_author" content="馬場研太" />
+
+<meta name="citation_author" content="桂樹哲雄" />
 
 <meta name="citation_publication_date" content="None" />
 <meta name="citation_conference_title" content="None" />
 <meta name="citation_inbook_title" content="None" />
-<meta name="citation_abstract" content="日本語において，語順や読点の使用法は比較的自由に書き手に任されるが，実際には選好が存在しているため，意味は伝わるものの読みにくい文が作成されることがある．本稿では，推敲支援のための要素技術として，Shift-Reduce アルゴリズムを拡張した，日本語文に対する係り受け解析・語順整序・読点挿入の同時実行手法を提案する．提案手法では，従来手法にビームサーチを組み込み，深層学習モデルとして RoBERTa を使用することにより，精度向上を試みる．また，逐次実行手法との比較を行い，同時実行することの有効性を検証する．" />
+<meta name="citation_abstract" content="農業分野において使用される作物ごとの作業時期や栽培管理の指針を体系的に示した「栽培暦」は,写真・図・グラフ・表といった視覚情報に加えて，テキストが混在した複雑な文書である.本研究では,複数の表現形式（図,表,グラフ,テキスト）を含む栽培暦を対象としてマルチモーダル質問応答タスクを提案する.また，既存のマルチモーダル LLM をベースラインとして精度評価を行い，本タスクの難易度を明らかにするとともに，研究課題を整理する．" />
 
-<meta name="citation_keywords" content="P5:ポスター" />
+<meta name="citation_keywords" content="P5:対話 / 質問応答" />
 
 <meta name="citation_pdf_url" content="" />
 
@@ -213,27 +227,55 @@
 <div class="card m-3" style="">
   <div class="card-header">
     <h2 class="card-title main-title text-center" style="color: black">
-      読みにくい日本語文に対する係り受け解析・語順整序・読点挿入の同時実行とその評価
+      DAGRI Subtask 3: 栽培暦を対象としたFigures and Tables Question Answering (FiT-QA)の提案
     </h2>
     <h3 class="card-subtitle mb-2 text-muted text-center">
       
-      <a href="papers.html?filter=authors&search=荒木駿介&program=all" class="text-primary"
-        >荒木駿介</a
+      <a href="papers.html?filter=authors&search=中川菫&program=all" class="text-primary"
+        >中川菫</a
       >,
       
-      <a href="papers.html?filter=authors&search=大野誠寛&program=all" class="text-primary"
-        >大野誠寛</a
+      <a href="papers.html?filter=authors&search=木村泰知&program=all" class="text-primary"
+        >木村泰知</a
       >,
       
-      <a href="papers.html?filter=authors&search=松原茂樹&program=all" class="text-primary"
-        >松原茂樹</a
+      <a href="papers.html?filter=authors&search=會田勇斗&program=all" class="text-primary"
+        >會田勇斗</a
+      >,
+      
+      <a href="papers.html?filter=authors&search=高橋洸丞&program=all" class="text-primary"
+        >高橋洸丞</a
+      >,
+      
+      <a href="papers.html?filter=authors&search=門脇一真&program=all" class="text-primary"
+        >門脇一真</a
+      >,
+      
+      <a href="papers.html?filter=authors&search=小林暁雄&program=all" class="text-primary"
+        >小林暁雄</a
+      >,
+      
+      <a href="papers.html?filter=authors&search=大友将宏&program=all" class="text-primary"
+        >大友将宏</a
+      >,
+      
+      <a href="papers.html?filter=authors&search=石原潤一&program=all" class="text-primary"
+        >石原潤一</a
+      >,
+      
+      <a href="papers.html?filter=authors&search=馬場研太&program=all" class="text-primary"
+        >馬場研太</a
+      >,
+      
+      <a href="papers.html?filter=authors&search=桂樹哲雄&program=all" class="text-primary"
+        >桂樹哲雄</a
       >
       
     </h3>
 
     <p class="card-text text-center h5">
       
-      <a href="papers.html?filter=keywords&search=P5:ポスター" class ="badge badge-pill badge-primary">P5:ポスター</a>
+      <a href="papers.html?filter=keywords&search=P5:対話 / 質問応答" class ="badge badge-pill badge-primary">P5:対話 / 質問応答</a>
       
 
       
@@ -241,7 +283,7 @@
    
     <div class="text-center p-3">
       
-      <a class="card-link link-info" target="_blank" href="https://www.anlp.jp/proceedings/annual_meeting/2025/pdf_dir/P5-1.pdf">
+      <a class="card-link link-info" target="_blank" href="https://www.anlp.jp/proceedings/annual_meeting/2026/pdf_dir/P5-1.pdf">
         📝 Paper 
       </a>
       
@@ -295,7 +337,7 @@
         <div class="card-text">
           <div id="abstractExample">
             <span class="font-weight-bold">Abstract:</span>
-            日本語において，語順や読点の使用法は比較的自由に書き手に任されるが，実際には選好が存在しているため，意味は伝わるものの読みにくい文が作成されることがある．本稿では，推敲支援のための要素技術として，Shift-Reduce アルゴリズムを拡張した，日本語文に対する係り受け解析・語順整序・読点挿入の同時実行手法を提案する．提案手法では，従来手法にビームサーチを組み込み，深層学習モデルとして RoBERTa を使用することにより，精度向上を試みる．また，逐次実行手法との比較を行い，同時実行することの有効性を検証する．
+            農業分野において使用される作物ごとの作業時期や栽培管理の指針を体系的に示した「栽培暦」は,写真・図・グラフ・表といった視覚情報に加えて，テキストが混在した複雑な文書である.本研究では,複数の表現形式（図,表,グラフ,テキスト）を含む栽培暦を対象としてマルチモーダル質問応答タスクを提案する.また，既存のマルチモーダル LLM をベースラインとして精度評価を行い，本タスクの難易度を明らかにするとともに，研究課題を整理する．
           </div>
         </div>
       </div>
@@ -303,7 +345,7 @@
   </div>
   
   <div class="tab-pane fade" id="paper" role="tabpanel" aria-labelledby="paper-tab">
-    <embed src="https://www.anlp.jp/proceedings/annual_meeting/2025/pdf_dir/P5-1.pdf" type="application/pdf" width="100%" height="850px">
+    <embed src="https://www.anlp.jp/proceedings/annual_meeting/2026/pdf_dir/P5-1.pdf" type="application/pdf" width="100%" height="850px">
   </div>
   
   
@@ -346,7 +388,7 @@
         <p class="float-left">
           <img src="None" height="45px"
             width="auto" align="center">
-          <span class="lead">NLP2025</span>
+          <span class="lead">NLP2026</span>
         </p>
         <p class="float-right"><a href="#" class="text-dark">Back to Top</a></p>
         <p class="text-center">The title and abstract of the paper are licensed by the author(s) under CC BY 4.0<br>

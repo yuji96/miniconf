@@ -64,22 +64,24 @@
   <script src="https://cdn.jsdelivr.net/npm/pdfjs-dist@2.3.200/build/pdf.min.js"></script>
   <script src="static/js/pdf_render.js"></script>
 
-  <title>NLP2025: 日本語推論システムlightblueの開発環境構築に向けて</title>
+  <title>NLP2026: 機械文としての検出されやすさと文章の品質は両立する</title>
   
-<meta name="citation_title" content="日本語推論システムlightblueの開発環境構築に向けて" />
+<meta name="citation_title" content="機械文としての検出されやすさと文章の品質は両立する" />
 
-<meta name="citation_author" content="佐伯小遥" />
+<meta name="citation_author" content="齋藤幸史郎" />
 
-<meta name="citation_author" content="富田朝" />
+<meta name="citation_author" content="小池隆斗" />
 
-<meta name="citation_author" content="戸次大介" />
+<meta name="citation_author" content="金子正弘" />
+
+<meta name="citation_author" content="岡崎直観" />
 
 <meta name="citation_publication_date" content="None" />
 <meta name="citation_conference_title" content="None" />
 <meta name="citation_inbook_title" content="None" />
-<meta name="citation_abstract" content="本論文では，Haskell の Web アプリケーションフレームワーク Yesod を用いて，日本語推論システムlightblue による文の解析結果や推論結果を可視化する文法開発環境 express の改良を行った．特に，型検査証明図や推論証明図を可視化し，解析結果や推論結果の構造を直感的に理解可能とした．また，ユーザが証明図を操作できる機能を実装し，解析プロセスを詳細に検討できるようにした．加えて，証明が失敗した場合には，その情報をユーザに明示することで，エラーの特定とデバッグ作業を効率化した．本論文では，express のシステム概要と実装についての詳細や，実使用に向けた今後の課題を示す．" />
+<meta name="citation_abstract" content="大規模言語モデル(LLM)の生成文に透かしトークンを埋め込む Watermark は，LLM によって生成された文を高い精度で検出できる．しかし，LLM が計算するトークンの予測確率分布を操作するため，検出性能とタスク性能とのトレードオフが問題視されてきた．本研究では，LLM の被検出性能とタスク性能を同時に最適化する学習フレームワーク D-PUPPETを提案する．評価実験の結果，D-PUPPET を適用した LLM は Long-Form QA，要約，エッセイ生成において被検出性能とタスク性能が共に向上し，その向上はタスクを超えて汎化しうることを確認した．本結果は，被検出性能とタスク性能のトレードオフが十分な最適化によって緩和できることを示唆する．さらに，トレードオフが報告されていた既存のWatermark 手法についても適切な設定下においてはタスク性能を維持可能であることがわかった．" />
 
-<meta name="citation_keywords" content="B2:計算・形式言語学(2)" />
+<meta name="citation_keywords" content="B2:NLPモデルの評価・安全性・信頼性" />
 
 <meta name="citation_pdf_url" content="" />
 
@@ -213,27 +215,31 @@
 <div class="card m-3" style="">
   <div class="card-header">
     <h2 class="card-title main-title text-center" style="color: black">
-      日本語推論システムlightblueの開発環境構築に向けて
+      機械文としての検出されやすさと文章の品質は両立する
     </h2>
     <h3 class="card-subtitle mb-2 text-muted text-center">
       
-      <a href="papers.html?filter=authors&search=佐伯小遥&program=all" class="text-primary"
-        >佐伯小遥</a
+      <a href="papers.html?filter=authors&search=齋藤幸史郎&program=all" class="text-primary"
+        >齋藤幸史郎</a
       >,
       
-      <a href="papers.html?filter=authors&search=富田朝&program=all" class="text-primary"
-        >富田朝</a
+      <a href="papers.html?filter=authors&search=小池隆斗&program=all" class="text-primary"
+        >小池隆斗</a
       >,
       
-      <a href="papers.html?filter=authors&search=戸次大介&program=all" class="text-primary"
-        >戸次大介</a
+      <a href="papers.html?filter=authors&search=金子正弘&program=all" class="text-primary"
+        >金子正弘</a
+      >,
+      
+      <a href="papers.html?filter=authors&search=岡崎直観&program=all" class="text-primary"
+        >岡崎直観</a
       >
       
     </h3>
 
     <p class="card-text text-center h5">
       
-      <a href="papers.html?filter=keywords&search=B2:計算・形式言語学(2)" class ="badge badge-pill badge-primary">B2:計算・形式言語学(2)</a>
+      <a href="papers.html?filter=keywords&search=B2:NLPモデルの評価・安全性・信頼性" class ="badge badge-pill badge-primary">B2:NLPモデルの評価・安全性・信頼性</a>
       
 
       
@@ -241,7 +247,7 @@
    
     <div class="text-center p-3">
       
-      <a class="card-link link-info" target="_blank" href="https://www.anlp.jp/proceedings/annual_meeting/2025/pdf_dir/B2-3.pdf">
+      <a class="card-link link-info" target="_blank" href="https://www.anlp.jp/proceedings/annual_meeting/2026/pdf_dir/B2-3.pdf">
         📝 Paper 
       </a>
       
@@ -295,7 +301,7 @@
         <div class="card-text">
           <div id="abstractExample">
             <span class="font-weight-bold">Abstract:</span>
-            本論文では，Haskell の Web アプリケーションフレームワーク Yesod を用いて，日本語推論システムlightblue による文の解析結果や推論結果を可視化する文法開発環境 express の改良を行った．特に，型検査証明図や推論証明図を可視化し，解析結果や推論結果の構造を直感的に理解可能とした．また，ユーザが証明図を操作できる機能を実装し，解析プロセスを詳細に検討できるようにした．加えて，証明が失敗した場合には，その情報をユーザに明示することで，エラーの特定とデバッグ作業を効率化した．本論文では，express のシステム概要と実装についての詳細や，実使用に向けた今後の課題を示す．
+            大規模言語モデル(LLM)の生成文に透かしトークンを埋め込む Watermark は，LLM によって生成された文を高い精度で検出できる．しかし，LLM が計算するトークンの予測確率分布を操作するため，検出性能とタスク性能とのトレードオフが問題視されてきた．本研究では，LLM の被検出性能とタスク性能を同時に最適化する学習フレームワーク D-PUPPETを提案する．評価実験の結果，D-PUPPET を適用した LLM は Long-Form QA，要約，エッセイ生成において被検出性能とタスク性能が共に向上し，その向上はタスクを超えて汎化しうることを確認した．本結果は，被検出性能とタスク性能のトレードオフが十分な最適化によって緩和できることを示唆する．さらに，トレードオフが報告されていた既存のWatermark 手法についても適切な設定下においてはタスク性能を維持可能であることがわかった．
           </div>
         </div>
       </div>
@@ -303,7 +309,7 @@
   </div>
   
   <div class="tab-pane fade" id="paper" role="tabpanel" aria-labelledby="paper-tab">
-    <embed src="https://www.anlp.jp/proceedings/annual_meeting/2025/pdf_dir/B2-3.pdf" type="application/pdf" width="100%" height="850px">
+    <embed src="https://www.anlp.jp/proceedings/annual_meeting/2026/pdf_dir/B2-3.pdf" type="application/pdf" width="100%" height="850px">
   </div>
   
   
@@ -346,7 +352,7 @@
         <p class="float-left">
           <img src="None" height="45px"
             width="auto" align="center">
-          <span class="lead">NLP2025</span>
+          <span class="lead">NLP2026</span>
         </p>
         <p class="float-right"><a href="#" class="text-dark">Back to Top</a></p>
         <p class="text-center">The title and abstract of the paper are licensed by the author(s) under CC BY 4.0<br>

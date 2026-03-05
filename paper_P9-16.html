@@ -64,24 +64,20 @@
   <script src="https://cdn.jsdelivr.net/npm/pdfjs-dist@2.3.200/build/pdf.min.js"></script>
   <script src="static/js/pdf_render.js"></script>
 
-  <title>NLP2025: 大規模言語モデルによる日本語スタイル変換の性能評価</title>
+  <title>NLP2026: Long Contextへの対応に向けたマルチスケール状態空間モデル</title>
   
-<meta name="citation_title" content="大規模言語モデルによる日本語スタイル変換の性能評価" />
+<meta name="citation_title" content="Long Contextへの対応に向けたマルチスケール状態空間モデル" />
 
-<meta name="citation_author" content="花房健太郎" />
+<meta name="citation_author" content="吉山大護" />
 
-<meta name="citation_author" content="柳本大輝" />
-
-<meta name="citation_author" content="梶原智之" />
-
-<meta name="citation_author" content="二宮崇" />
+<meta name="citation_author" content="佐々木裕" />
 
 <meta name="citation_publication_date" content="None" />
 <meta name="citation_conference_title" content="None" />
 <meta name="citation_inbook_title" content="None" />
-<meta name="citation_abstract" content="本研究では，日本語における大規模言語モデルのスタイル変換性能を広く調査する．まず，英語において研究されてきた 11 種類のスタイル変換を対象に，それぞれ 120 件の日本語文対を人手で作成し，日本語スタイル変換の評価用データセットを構築した．そして，12 種類の日本語大規模言語モデルを対象に，0-shot および 20-shot の文脈内学習によるスタイル変換の性能を評価した．評価実験の結果，指示チューニング済みのモデルは指示チューニング前のモデルよりもスタイル変換の性能が大幅に改善されること，パラメータ数の多いモデルの方が few-shot文脈内学習によって性能がより改善されること，factual → romance および oﬀensive → non-oﬀensive のスタイル変換が難しいことが明らかになった．" />
+<meta name="citation_abstract" content="現在の大規模言語モデルの多くに使用されている注意機構は入力の長さに対して 2 乗に比例する計算量を持つ．これを改善するための有望なアプローチの一つとして，状態空間モデルを基にした Mambaがある．しかしながら，Mamba をはじめとする状態空間モデルを基にしたアーキテクチャには，計算量の優位性を発揮できる長大な文脈に対する性能低下が著しいという欠点がある．それを補うための手法として圧縮と統合を伴うマルチスケール処理を行う TreeMamba を提案する．長大な文脈を特徴とする LongBench-E ベンチマークにおける 13 個のタスクのうち，いくつかのタスクにおいて TreeMamba による性能向上が確認できた．" />
 
-<meta name="citation_keywords" content="P9:ポスター" />
+<meta name="citation_keywords" content="P9:テキスト生成" />
 
 <meta name="citation_pdf_url" content="" />
 
@@ -215,31 +211,23 @@
 <div class="card m-3" style="">
   <div class="card-header">
     <h2 class="card-title main-title text-center" style="color: black">
-      大規模言語モデルによる日本語スタイル変換の性能評価
+      Long Contextへの対応に向けたマルチスケール状態空間モデル
     </h2>
     <h3 class="card-subtitle mb-2 text-muted text-center">
       
-      <a href="papers.html?filter=authors&search=花房健太郎&program=all" class="text-primary"
-        >花房健太郎</a
+      <a href="papers.html?filter=authors&search=吉山大護&program=all" class="text-primary"
+        >吉山大護</a
       >,
       
-      <a href="papers.html?filter=authors&search=柳本大輝&program=all" class="text-primary"
-        >柳本大輝</a
-      >,
-      
-      <a href="papers.html?filter=authors&search=梶原智之&program=all" class="text-primary"
-        >梶原智之</a
-      >,
-      
-      <a href="papers.html?filter=authors&search=二宮崇&program=all" class="text-primary"
-        >二宮崇</a
+      <a href="papers.html?filter=authors&search=佐々木裕&program=all" class="text-primary"
+        >佐々木裕</a
       >
       
     </h3>
 
     <p class="card-text text-center h5">
       
-      <a href="papers.html?filter=keywords&search=P9:ポスター" class ="badge badge-pill badge-primary">P9:ポスター</a>
+      <a href="papers.html?filter=keywords&search=P9:テキスト生成" class ="badge badge-pill badge-primary">P9:テキスト生成</a>
       
 
       
@@ -247,7 +235,7 @@
    
     <div class="text-center p-3">
       
-      <a class="card-link link-info" target="_blank" href="https://www.anlp.jp/proceedings/annual_meeting/2025/pdf_dir/P9-16.pdf">
+      <a class="card-link link-info" target="_blank" href="https://www.anlp.jp/proceedings/annual_meeting/2026/pdf_dir/P9-16.pdf">
         📝 Paper 
       </a>
       
@@ -301,7 +289,7 @@
         <div class="card-text">
           <div id="abstractExample">
             <span class="font-weight-bold">Abstract:</span>
-            本研究では，日本語における大規模言語モデルのスタイル変換性能を広く調査する．まず，英語において研究されてきた 11 種類のスタイル変換を対象に，それぞれ 120 件の日本語文対を人手で作成し，日本語スタイル変換の評価用データセットを構築した．そして，12 種類の日本語大規模言語モデルを対象に，0-shot および 20-shot の文脈内学習によるスタイル変換の性能を評価した．評価実験の結果，指示チューニング済みのモデルは指示チューニング前のモデルよりもスタイル変換の性能が大幅に改善されること，パラメータ数の多いモデルの方が few-shot文脈内学習によって性能がより改善されること，factual → romance および oﬀensive → non-oﬀensive のスタイル変換が難しいことが明らかになった．
+            現在の大規模言語モデルの多くに使用されている注意機構は入力の長さに対して 2 乗に比例する計算量を持つ．これを改善するための有望なアプローチの一つとして，状態空間モデルを基にした Mambaがある．しかしながら，Mamba をはじめとする状態空間モデルを基にしたアーキテクチャには，計算量の優位性を発揮できる長大な文脈に対する性能低下が著しいという欠点がある．それを補うための手法として圧縮と統合を伴うマルチスケール処理を行う TreeMamba を提案する．長大な文脈を特徴とする LongBench-E ベンチマークにおける 13 個のタスクのうち，いくつかのタスクにおいて TreeMamba による性能向上が確認できた．
           </div>
         </div>
       </div>
@@ -309,7 +297,7 @@
   </div>
   
   <div class="tab-pane fade" id="paper" role="tabpanel" aria-labelledby="paper-tab">
-    <embed src="https://www.anlp.jp/proceedings/annual_meeting/2025/pdf_dir/P9-16.pdf" type="application/pdf" width="100%" height="850px">
+    <embed src="https://www.anlp.jp/proceedings/annual_meeting/2026/pdf_dir/P9-16.pdf" type="application/pdf" width="100%" height="850px">
   </div>
   
   
@@ -352,7 +340,7 @@
         <p class="float-left">
           <img src="None" height="45px"
             width="auto" align="center">
-          <span class="lead">NLP2025</span>
+          <span class="lead">NLP2026</span>
         </p>
         <p class="float-right"><a href="#" class="text-dark">Back to Top</a></p>
         <p class="text-center">The title and abstract of the paper are licensed by the author(s) under CC BY 4.0<br>

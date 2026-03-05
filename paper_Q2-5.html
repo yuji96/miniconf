@@ -64,20 +64,24 @@
   <script src="https://cdn.jsdelivr.net/npm/pdfjs-dist@2.3.200/build/pdf.min.js"></script>
   <script src="static/js/pdf_render.js"></script>
 
-  <title>NLP2025: アドオン型のLLMアライメント</title>
+  <title>NLP2026: BCCWJ2 構築に向けた漢字カタカナ文抽出ツールの開発</title>
   
-<meta name="citation_title" content="アドオン型のLLMアライメント" />
+<meta name="citation_title" content="BCCWJ2 構築に向けた漢字カタカナ文抽出ツールの開発" />
 
-<meta name="citation_author" content="宮岡佑弥" />
+<meta name="citation_author" content="平林照雄" />
 
-<meta name="citation_author" content="井上正樹" />
+<meta name="citation_author" content="呉寧真" />
+
+<meta name="citation_author" content="山崎誠" />
+
+<meta name="citation_author" content="小木曽智信" />
 
 <meta name="citation_publication_date" content="None" />
 <meta name="citation_conference_title" content="None" />
 <meta name="citation_inbook_title" content="None" />
-<meta name="citation_abstract" content="本稿では，大規模言語モデル（Large LanguageModel，LLM）の生成テキストを人の倫理観や価値観に沿うものにするアライメントに取り組む．本稿のアプローチでは，アライメントの対象となる LLM内部のパラメータを更新するのではなく，テキスト生成過程におけるトークンの確率分布に介入する．トークンの確率分布への介入は外付けの“制御フィルタ”によって行われる．この手法では，アライメントが外部の機構によって行われるが故に，高い柔軟性と透明性を提供するものである．実験では，Llama 3 8b に対するアライメントを行い，提案手法の有効性を示している．" />
+<meta name="citation_abstract" content="2024 年度より、「現代日本語書き言葉均衡コーパス」（BCCWJ）の拡張として BCCWJ2 の構築が進められている。BCCWJ2 は現代日本語を中心とする一方、英文や、古文・漢文資料からの引用、擬古文、方言表現など、現代日本語辞書での形態素解析で誤りが生じやすい文を含む。漢字・カタカナおよび記号のみからなる文（漢字カタカナ文）もその一つである。本論文では、漢字カタカナ文を対象にタグ付与を支援する抽出ツールを提案し、抽出性能と実運用での有効性を示す。" />
 
-<meta name="citation_keywords" content="Q2:ポスター" />
+<meta name="citation_keywords" content="Q2:言語資源・アノテーションと評価 / 語彙資源・辞書" />
 
 <meta name="citation_pdf_url" content="" />
 
@@ -211,23 +215,31 @@
 <div class="card m-3" style="">
   <div class="card-header">
     <h2 class="card-title main-title text-center" style="color: black">
-      アドオン型のLLMアライメント
+      BCCWJ2 構築に向けた漢字カタカナ文抽出ツールの開発
     </h2>
     <h3 class="card-subtitle mb-2 text-muted text-center">
       
-      <a href="papers.html?filter=authors&search=宮岡佑弥&program=all" class="text-primary"
-        >宮岡佑弥</a
+      <a href="papers.html?filter=authors&search=平林照雄&program=all" class="text-primary"
+        >平林照雄</a
       >,
       
-      <a href="papers.html?filter=authors&search=井上正樹&program=all" class="text-primary"
-        >井上正樹</a
+      <a href="papers.html?filter=authors&search=呉寧真&program=all" class="text-primary"
+        >呉寧真</a
+      >,
+      
+      <a href="papers.html?filter=authors&search=山崎誠&program=all" class="text-primary"
+        >山崎誠</a
+      >,
+      
+      <a href="papers.html?filter=authors&search=小木曽智信&program=all" class="text-primary"
+        >小木曽智信</a
       >
       
     </h3>
 
     <p class="card-text text-center h5">
       
-      <a href="papers.html?filter=keywords&search=Q2:ポスター" class ="badge badge-pill badge-primary">Q2:ポスター</a>
+      <a href="papers.html?filter=keywords&search=Q2:言語資源・アノテーションと評価 / 語彙資源・辞書" class ="badge badge-pill badge-primary">Q2:言語資源・アノテーションと評価 / 語彙資源・辞書</a>
       
 
       
@@ -235,7 +247,7 @@
    
     <div class="text-center p-3">
       
-      <a class="card-link link-info" target="_blank" href="https://www.anlp.jp/proceedings/annual_meeting/2025/pdf_dir/Q2-5.pdf">
+      <a class="card-link link-info" target="_blank" href="https://www.anlp.jp/proceedings/annual_meeting/2026/pdf_dir/Q2-5.pdf">
         📝 Paper 
       </a>
       
@@ -289,7 +301,7 @@
         <div class="card-text">
           <div id="abstractExample">
             <span class="font-weight-bold">Abstract:</span>
-            本稿では，大規模言語モデル（Large LanguageModel，LLM）の生成テキストを人の倫理観や価値観に沿うものにするアライメントに取り組む．本稿のアプローチでは，アライメントの対象となる LLM内部のパラメータを更新するのではなく，テキスト生成過程におけるトークンの確率分布に介入する．トークンの確率分布への介入は外付けの“制御フィルタ”によって行われる．この手法では，アライメントが外部の機構によって行われるが故に，高い柔軟性と透明性を提供するものである．実験では，Llama 3 8b に対するアライメントを行い，提案手法の有効性を示している．
+            2024 年度より、「現代日本語書き言葉均衡コーパス」（BCCWJ）の拡張として BCCWJ2 の構築が進められている。BCCWJ2 は現代日本語を中心とする一方、英文や、古文・漢文資料からの引用、擬古文、方言表現など、現代日本語辞書での形態素解析で誤りが生じやすい文を含む。漢字・カタカナおよび記号のみからなる文（漢字カタカナ文）もその一つである。本論文では、漢字カタカナ文を対象にタグ付与を支援する抽出ツールを提案し、抽出性能と実運用での有効性を示す。
           </div>
         </div>
       </div>
@@ -297,7 +309,7 @@
   </div>
   
   <div class="tab-pane fade" id="paper" role="tabpanel" aria-labelledby="paper-tab">
-    <embed src="https://www.anlp.jp/proceedings/annual_meeting/2025/pdf_dir/Q2-5.pdf" type="application/pdf" width="100%" height="850px">
+    <embed src="https://www.anlp.jp/proceedings/annual_meeting/2026/pdf_dir/Q2-5.pdf" type="application/pdf" width="100%" height="850px">
   </div>
   
   
@@ -340,7 +352,7 @@
         <p class="float-left">
           <img src="None" height="45px"
             width="auto" align="center">
-          <span class="lead">NLP2025</span>
+          <span class="lead">NLP2026</span>
         </p>
         <p class="float-right"><a href="#" class="text-dark">Back to Top</a></p>
         <p class="text-center">The title and abstract of the paper are licensed by the author(s) under CC BY 4.0<br>

@@ -64,22 +64,24 @@
   <script src="https://cdn.jsdelivr.net/npm/pdfjs-dist@2.3.200/build/pdf.min.js"></script>
   <script src="static/js/pdf_render.js"></script>
 
-  <title>NLP2025: Representational Analysis of Binding in Language Models</title>
+  <title>NLP2026: 文埋め込みに対するグラフベースクラスタリング：適応的局所スケーリングと共有近傍の統合</title>
   
-<meta name="citation_title" content="Representational Analysis of Binding in Language Models" />
+<meta name="citation_title" content="文埋め込みに対するグラフベースクラスタリング：適応的局所スケーリングと共有近傍の統合" />
 
-<meta name="citation_author" content="代勤" />
+<meta name="citation_author" content="新妻巧朗" />
 
-<meta name="citation_author" content="BenjaminHeinzerling" />
+<meta name="citation_author" content="中分遥" />
 
-<meta name="citation_author" content="乾健太郎" />
+<meta name="citation_author" content="田森秀明" />
+
+<meta name="citation_author" content="吉田光男" />
 
 <meta name="citation_publication_date" content="None" />
 <meta name="citation_conference_title" content="None" />
 <meta name="citation_inbook_title" content="None" />
-<meta name="citation_abstract" content="Entity tracking is essential for complex reasoning. To per-form in-context entity tracking, language models (LMs)must bind an entity to its attribute (e.g., bind a container toits content) to recall attribute for a given entity. For exam-ple, given a context mentioning “The coﬀee is in Box Z,the stone is in Box M, the map is in Box H”, to infer “BoxZ contains the coﬀee” from the context, LMs must bind“Box Z” to “coﬀee”. To explain the binding behaviour ofLMs, Feng and Steinhardt (2023) introduce a Binding IDmechanism and state that LMs use a abstract concept calledBinding ID (BI) to internally mark entity-attribute pairs.However, they have not captured Ordering ID (OI), namelyordering index of entity, from entity activations that directlydetermines the binding behaviour. In this work, we pro-vide a novel view of the BI mechanism by localizing OI andproving the causality between OI and binding behaviour.Speciﬁcally, we discover the OI subspace and reveal causaleﬀect of OI on binding that when editing activations alongthe OI encoding direction, LMs tend to bind a given entityto other attributes (e.g.,“stone” for “Box Z”) accordingly.The code and datasets used in this paper are available athttps://github.com/cl-tohoku/OI-Subspace." />
+<meta name="citation_abstract" content="文埋め込みのクラスタリングでは，高次元空間におけるハブ現象や文脈の連続性が構造抽出の課題となる．本研究では，バイオインフォマティクスに着想を得て，適応的局所スケーリングと共有近傍（SNN）を統合したグラフベース手法を提案する．本手法は，近似近傍探索と GPU 実装により，数千万件規模のデータに対してもスケーラブルに動作する．実験の結果，既存の密度ベース手法や MiniBatch K-means と比較して，連続的な意味構造を持ちうるデータセットにおいて高い品質を達成し，大規模実務データにおいても有効性を実証した．" />
 
-<meta name="citation_keywords" content="P2:ポスター" />
+<meta name="citation_keywords" content="P2:情報検索・テキストマイニング / 評判・感情分析・スタイル分析" />
 
 <meta name="citation_pdf_url" content="" />
 
@@ -213,27 +215,31 @@
 <div class="card m-3" style="">
   <div class="card-header">
     <h2 class="card-title main-title text-center" style="color: black">
-      Representational Analysis of Binding in Language Models
+      文埋め込みに対するグラフベースクラスタリング：適応的局所スケーリングと共有近傍の統合
     </h2>
     <h3 class="card-subtitle mb-2 text-muted text-center">
       
-      <a href="papers.html?filter=authors&search=代勤&program=all" class="text-primary"
-        >代勤</a
+      <a href="papers.html?filter=authors&search=新妻巧朗&program=all" class="text-primary"
+        >新妻巧朗</a
       >,
       
-      <a href="papers.html?filter=authors&search=BenjaminHeinzerling&program=all" class="text-primary"
-        >BenjaminHeinzerling</a
+      <a href="papers.html?filter=authors&search=中分遥&program=all" class="text-primary"
+        >中分遥</a
       >,
       
-      <a href="papers.html?filter=authors&search=乾健太郎&program=all" class="text-primary"
-        >乾健太郎</a
+      <a href="papers.html?filter=authors&search=田森秀明&program=all" class="text-primary"
+        >田森秀明</a
+      >,
+      
+      <a href="papers.html?filter=authors&search=吉田光男&program=all" class="text-primary"
+        >吉田光男</a
       >
       
     </h3>
 
     <p class="card-text text-center h5">
       
-      <a href="papers.html?filter=keywords&search=P2:ポスター" class ="badge badge-pill badge-primary">P2:ポスター</a>
+      <a href="papers.html?filter=keywords&search=P2:情報検索・テキストマイニング / 評判・感情分析・スタイル分析" class ="badge badge-pill badge-primary">P2:情報検索・テキストマイニング / 評判・感情分析・スタイル分析</a>
       
 
       
@@ -241,7 +247,7 @@
    
     <div class="text-center p-3">
       
-      <a class="card-link link-info" target="_blank" href="https://www.anlp.jp/proceedings/annual_meeting/2025/pdf_dir/P2-2.pdf">
+      <a class="card-link link-info" target="_blank" href="https://www.anlp.jp/proceedings/annual_meeting/2026/pdf_dir/P2-2.pdf">
         📝 Paper 
       </a>
       
@@ -295,7 +301,7 @@
         <div class="card-text">
           <div id="abstractExample">
             <span class="font-weight-bold">Abstract:</span>
-            Entity tracking is essential for complex reasoning. To per-form in-context entity tracking, language models (LMs)must bind an entity to its attribute (e.g., bind a container toits content) to recall attribute for a given entity. For exam-ple, given a context mentioning “The coﬀee is in Box Z,the stone is in Box M, the map is in Box H”, to infer “BoxZ contains the coﬀee” from the context, LMs must bind“Box Z” to “coﬀee”. To explain the binding behaviour ofLMs, Feng and Steinhardt (2023) introduce a Binding IDmechanism and state that LMs use a abstract concept calledBinding ID (BI) to internally mark entity-attribute pairs.However, they have not captured Ordering ID (OI), namelyordering index of entity, from entity activations that directlydetermines the binding behaviour. In this work, we pro-vide a novel view of the BI mechanism by localizing OI andproving the causality between OI and binding behaviour.Speciﬁcally, we discover the OI subspace and reveal causaleﬀect of OI on binding that when editing activations alongthe OI encoding direction, LMs tend to bind a given entityto other attributes (e.g.,“stone” for “Box Z”) accordingly.The code and datasets used in this paper are available athttps://github.com/cl-tohoku/OI-Subspace.
+            文埋め込みのクラスタリングでは，高次元空間におけるハブ現象や文脈の連続性が構造抽出の課題となる．本研究では，バイオインフォマティクスに着想を得て，適応的局所スケーリングと共有近傍（SNN）を統合したグラフベース手法を提案する．本手法は，近似近傍探索と GPU 実装により，数千万件規模のデータに対してもスケーラブルに動作する．実験の結果，既存の密度ベース手法や MiniBatch K-means と比較して，連続的な意味構造を持ちうるデータセットにおいて高い品質を達成し，大規模実務データにおいても有効性を実証した．
           </div>
         </div>
       </div>
@@ -303,7 +309,7 @@
   </div>
   
   <div class="tab-pane fade" id="paper" role="tabpanel" aria-labelledby="paper-tab">
-    <embed src="https://www.anlp.jp/proceedings/annual_meeting/2025/pdf_dir/P2-2.pdf" type="application/pdf" width="100%" height="850px">
+    <embed src="https://www.anlp.jp/proceedings/annual_meeting/2026/pdf_dir/P2-2.pdf" type="application/pdf" width="100%" height="850px">
   </div>
   
   
@@ -346,7 +352,7 @@
         <p class="float-left">
           <img src="None" height="45px"
             width="auto" align="center">
-          <span class="lead">NLP2025</span>
+          <span class="lead">NLP2026</span>
         </p>
         <p class="float-right"><a href="#" class="text-dark">Back to Top</a></p>
         <p class="text-center">The title and abstract of the paper are licensed by the author(s) under CC BY 4.0<br>

@@ -64,28 +64,32 @@
   <script src="https://cdn.jsdelivr.net/npm/pdfjs-dist@2.3.200/build/pdf.min.js"></script>
   <script src="static/js/pdf_render.js"></script>
 
-  <title>NLP2025: chakoshi: カテゴリのカスタマイズが可能な日本語に強いLLM向けガードレール</title>
+  <title>NLP2026: 国語記述式答案に対するLLMを用いたOCR誤り訂正と自動採点への影響</title>
   
-<meta name="citation_title" content="chakoshi: カテゴリのカスタマイズが可能な日本語に強いLLM向けガードレール" />
+<meta name="citation_title" content="国語記述式答案に対するLLMを用いたOCR誤り訂正と自動採点への影響" />
 
-<meta name="citation_author" content="新井一博" />
+<meta name="citation_author" content="鈴木里菜" />
 
-<meta name="citation_author" content="松井遼太" />
+<meta name="citation_author" content="齊藤隆浩" />
 
-<meta name="citation_author" content="深山健司" />
+<meta name="citation_author" content="臼井久生" />
 
-<meta name="citation_author" content="山本雄大" />
+<meta name="citation_author" content="尾崎太亮" />
 
-<meta name="citation_author" content="杉本海人" />
+<meta name="citation_author" content="グエントゥアンフーン" />
 
-<meta name="citation_author" content="岩瀬義昌" />
+<meta name="citation_author" content="古宮嘉那子" />
+
+<meta name="citation_author" content="石岡恒憲" />
+
+<meta name="citation_author" content="中川正樹" />
 
 <meta name="citation_publication_date" content="None" />
 <meta name="citation_conference_title" content="None" />
 <meta name="citation_inbook_title" content="None" />
-<meta name="citation_abstract" content="本研究では，日本語特有のニュアンスに対応したLLM 向けのガードレールモデルである「chakoshi」を開発し，その有効性を検証した．chakoshi は，複数のオープンデータセットを再編成し，独自の学習データセットでファインチューニングした，軽量なLLM である．gemma-2-9b-it をベースとした chakoshiモデルは，複数のテストデータセットにおける F1スコアで平均 0.92 以上を達成し，既存のモデルと比較して高い性能を示した．さらに，防ぎたい話題を自然言語でカスタマイズできる機能を実装し，実験によってその有効性を確認した．" />
+<meta name="citation_abstract" content="本研究では，国語科記述式問題の手書き答案を対象とし，OCR 誤り訂正モデルの性能と自動採点への影響を評価する．T5 及び GPT 系モデルに対して，対象文章全体を入力として訂正する 1 段階訂正と，誤りの可能性がある箇所に&lt;error&gt;タグを付与し訂正の手掛かりとして利用する 2 段階訂正を適用し，訂正精度と採点精度を比較した．既存研究では，T5による 1 段階訂正と 2 段階訂正の双方が OCR 出力そのままと比較して文字起こし精度の向上を示しており，特に 2 段階訂正がより大きな改善を示すことが報告されていたが，自動採点への影響は検討されていなかった．本研究では，中学生 185 名の手書き答案を用いて各手法を評価した結果，2 段階訂正はいずれのモデルでも OCR 訂正精度を向上させた一方で，採点精度は 1 段階訂正と大きな差は見られなかった．このことから，訂正性能の比較的小さな改善は採点性能に直結しないことが分かった．" />
 
-<meta name="citation_keywords" content="P7:ポスター" />
+<meta name="citation_keywords" content="P7:質問応答 / 教育応用 / その他の応用" />
 
 <meta name="citation_pdf_url" content="" />
 
@@ -219,39 +223,47 @@
 <div class="card m-3" style="">
   <div class="card-header">
     <h2 class="card-title main-title text-center" style="color: black">
-      chakoshi: カテゴリのカスタマイズが可能な日本語に強いLLM向けガードレール
+      国語記述式答案に対するLLMを用いたOCR誤り訂正と自動採点への影響
     </h2>
     <h3 class="card-subtitle mb-2 text-muted text-center">
       
-      <a href="papers.html?filter=authors&search=新井一博&program=all" class="text-primary"
-        >新井一博</a
+      <a href="papers.html?filter=authors&search=鈴木里菜&program=all" class="text-primary"
+        >鈴木里菜</a
       >,
       
-      <a href="papers.html?filter=authors&search=松井遼太&program=all" class="text-primary"
-        >松井遼太</a
+      <a href="papers.html?filter=authors&search=齊藤隆浩&program=all" class="text-primary"
+        >齊藤隆浩</a
       >,
       
-      <a href="papers.html?filter=authors&search=深山健司&program=all" class="text-primary"
-        >深山健司</a
+      <a href="papers.html?filter=authors&search=臼井久生&program=all" class="text-primary"
+        >臼井久生</a
       >,
       
-      <a href="papers.html?filter=authors&search=山本雄大&program=all" class="text-primary"
-        >山本雄大</a
+      <a href="papers.html?filter=authors&search=尾崎太亮&program=all" class="text-primary"
+        >尾崎太亮</a
       >,
       
-      <a href="papers.html?filter=authors&search=杉本海人&program=all" class="text-primary"
-        >杉本海人</a
+      <a href="papers.html?filter=authors&search=グエントゥアンフーン&program=all" class="text-primary"
+        >グエントゥアンフーン</a
       >,
       
-      <a href="papers.html?filter=authors&search=岩瀬義昌&program=all" class="text-primary"
-        >岩瀬義昌</a
+      <a href="papers.html?filter=authors&search=古宮嘉那子&program=all" class="text-primary"
+        >古宮嘉那子</a
+      >,
+      
+      <a href="papers.html?filter=authors&search=石岡恒憲&program=all" class="text-primary"
+        >石岡恒憲</a
+      >,
+      
+      <a href="papers.html?filter=authors&search=中川正樹&program=all" class="text-primary"
+        >中川正樹</a
       >
       
     </h3>
 
     <p class="card-text text-center h5">
       
-      <a href="papers.html?filter=keywords&search=P7:ポスター" class ="badge badge-pill badge-primary">P7:ポスター</a>
+      <a href="papers.html?filter=keywords&search=P7:質問応答 / 教育応用 / その他の応用" class ="badge badge-pill badge-primary">P7:質問応答 / 教育応用 / その他の応用</a>
       
 
       
@@ -259,7 +271,7 @@
    
     <div class="text-center p-3">
       
-      <a class="card-link link-info" target="_blank" href="https://www.anlp.jp/proceedings/annual_meeting/2025/pdf_dir/P7-7.pdf">
+      <a class="card-link link-info" target="_blank" href="https://www.anlp.jp/proceedings/annual_meeting/2026/pdf_dir/P7-7.pdf">
         📝 Paper 
       </a>
       
@@ -313,7 +325,7 @@
         <div class="card-text">
           <div id="abstractExample">
             <span class="font-weight-bold">Abstract:</span>
-            本研究では，日本語特有のニュアンスに対応したLLM 向けのガードレールモデルである「chakoshi」を開発し，その有効性を検証した．chakoshi は，複数のオープンデータセットを再編成し，独自の学習データセットでファインチューニングした，軽量なLLM である．gemma-2-9b-it をベースとした chakoshiモデルは，複数のテストデータセットにおける F1スコアで平均 0.92 以上を達成し，既存のモデルと比較して高い性能を示した．さらに，防ぎたい話題を自然言語でカスタマイズできる機能を実装し，実験によってその有効性を確認した．
+            本研究では，国語科記述式問題の手書き答案を対象とし，OCR 誤り訂正モデルの性能と自動採点への影響を評価する．T5 及び GPT 系モデルに対して，対象文章全体を入力として訂正する 1 段階訂正と，誤りの可能性がある箇所に&lt;error&gt;タグを付与し訂正の手掛かりとして利用する 2 段階訂正を適用し，訂正精度と採点精度を比較した．既存研究では，T5による 1 段階訂正と 2 段階訂正の双方が OCR 出力そのままと比較して文字起こし精度の向上を示しており，特に 2 段階訂正がより大きな改善を示すことが報告されていたが，自動採点への影響は検討されていなかった．本研究では，中学生 185 名の手書き答案を用いて各手法を評価した結果，2 段階訂正はいずれのモデルでも OCR 訂正精度を向上させた一方で，採点精度は 1 段階訂正と大きな差は見られなかった．このことから，訂正性能の比較的小さな改善は採点性能に直結しないことが分かった．
           </div>
         </div>
       </div>
@@ -321,7 +333,7 @@
   </div>
   
   <div class="tab-pane fade" id="paper" role="tabpanel" aria-labelledby="paper-tab">
-    <embed src="https://www.anlp.jp/proceedings/annual_meeting/2025/pdf_dir/P7-7.pdf" type="application/pdf" width="100%" height="850px">
+    <embed src="https://www.anlp.jp/proceedings/annual_meeting/2026/pdf_dir/P7-7.pdf" type="application/pdf" width="100%" height="850px">
   </div>
   
   
@@ -364,7 +376,7 @@
         <p class="float-left">
           <img src="None" height="45px"
             width="auto" align="center">
-          <span class="lead">NLP2025</span>
+          <span class="lead">NLP2026</span>
         </p>
         <p class="float-right"><a href="#" class="text-dark">Back to Top</a></p>
         <p class="text-center">The title and abstract of the paper are licensed by the author(s) under CC BY 4.0<br>

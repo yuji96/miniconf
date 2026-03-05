@@ -64,24 +64,20 @@
   <script src="https://cdn.jsdelivr.net/npm/pdfjs-dist@2.3.200/build/pdf.min.js"></script>
   <script src="static/js/pdf_render.js"></script>
 
-  <title>NLP2025: PUPPET：タスク性能を維持しながらLLMとして検出されやすくする学習フレームワーク</title>
+  <title>NLP2026: ChatGPTを用いた教育的ノベルゲームの評価実験の拡張</title>
   
-<meta name="citation_title" content="PUPPET：タスク性能を維持しながらLLMとして検出されやすくする学習フレームワーク" />
+<meta name="citation_title" content="ChatGPTを用いた教育的ノベルゲームの評価実験の拡張" />
 
-<meta name="citation_author" content="齋藤幸史郎" />
+<meta name="citation_author" content="赤田直弥" />
 
-<meta name="citation_author" content="小池隆斗" />
-
-<meta name="citation_author" content="金子正弘" />
-
-<meta name="citation_author" content="岡崎直観" />
+<meta name="citation_author" content="村田真樹" />
 
 <meta name="citation_publication_date" content="None" />
 <meta name="citation_conference_title" content="None" />
 <meta name="citation_inbook_title" content="None" />
-<meta name="citation_abstract" content="昨今，大規模言語モデル（Large Language Models;LLM）が生成する文を検出する需要が高まっており，代表的な手法の一つに透かし（Watermark）がある．生成文に埋め込まれた透かしトークンを調べることで高性能な検出が可能な一方で，そのトークンはランダムに選択されるため，その生成文の品質やタスク性能に課題がある．そこで，本研究ではLLM のタスク性能を維持したまま，その LLM の生成文を検出しやすくするフレームワーク PUPPET を提案する．具体的には，生成文に対して検出器とタスク評価器の二つから報酬関数を設計し，LLM の強化学習を行う．評価実験の結果，我々のフレームワークで学習した LLM は文書要約タスクにおいてタスク性能を維持したまま，その検出が容易（再現率 6pt 向上）となったことを確認した．" />
+<meta name="citation_abstract" content="我々の先行研究[1]では，村田による ChatGPTを用いた教育的小説の生成[2]や，宮本らによるChatGPT によるノベルゲーム自動生成システム[3]を参考にして，教育的ノベルゲームを作成した．作成したノベルゲームの教育効果を小テストによって評価した結果，事前テストに対する事後テストの正解数が向上し，教育効果の可能性が見られたが，被験者数が少なく，評価のばらつきやノベルゲームのもつ課題について十分に分析できなかったという問題があった．そこで，本研究では，被験者数を増やし，2 つの教育的なノベルゲームに対して各 6 人ずつの計 12 人による評価実験を行い，小テストによる教育効果の確認や，アンケートによる物語の質の評価を行った．実験の結果，いずれのノベルゲームにおいてもすべての被験者において事後テストの正解数が事前テスト以上となっており，全体平均では事前 6.3 問から事後 8.6 問に向上した．そのため，評価者数を増やした場合においても，本研究で作成したノベルゲームには教育効果があることが確認された．一方で，教育的内容と物語的内容のバランスに課題があり，教育的内容がノベルゲーム内で十分に提示されない場合や，物語の内容が薄くなってしまう問題があった．そこで，本研究では学問要素と物語要素を段階的に追加する添加形式でのノベルゲームの生成を検討した．" />
 
-<meta name="citation_keywords" content="P7:ポスター" />
+<meta name="citation_keywords" content="P7:質問応答 / 教育応用 / その他の応用" />
 
 <meta name="citation_pdf_url" content="" />
 
@@ -215,31 +211,23 @@
 <div class="card m-3" style="">
   <div class="card-header">
     <h2 class="card-title main-title text-center" style="color: black">
-      PUPPET：タスク性能を維持しながらLLMとして検出されやすくする学習フレームワーク
+      ChatGPTを用いた教育的ノベルゲームの評価実験の拡張
     </h2>
     <h3 class="card-subtitle mb-2 text-muted text-center">
       
-      <a href="papers.html?filter=authors&search=齋藤幸史郎&program=all" class="text-primary"
-        >齋藤幸史郎</a
+      <a href="papers.html?filter=authors&search=赤田直弥&program=all" class="text-primary"
+        >赤田直弥</a
       >,
       
-      <a href="papers.html?filter=authors&search=小池隆斗&program=all" class="text-primary"
-        >小池隆斗</a
-      >,
-      
-      <a href="papers.html?filter=authors&search=金子正弘&program=all" class="text-primary"
-        >金子正弘</a
-      >,
-      
-      <a href="papers.html?filter=authors&search=岡崎直観&program=all" class="text-primary"
-        >岡崎直観</a
+      <a href="papers.html?filter=authors&search=村田真樹&program=all" class="text-primary"
+        >村田真樹</a
       >
       
     </h3>
 
     <p class="card-text text-center h5">
       
-      <a href="papers.html?filter=keywords&search=P7:ポスター" class ="badge badge-pill badge-primary">P7:ポスター</a>
+      <a href="papers.html?filter=keywords&search=P7:質問応答 / 教育応用 / その他の応用" class ="badge badge-pill badge-primary">P7:質問応答 / 教育応用 / その他の応用</a>
       
 
       
@@ -247,7 +235,7 @@
    
     <div class="text-center p-3">
       
-      <a class="card-link link-info" target="_blank" href="https://www.anlp.jp/proceedings/annual_meeting/2025/pdf_dir/P7-5.pdf">
+      <a class="card-link link-info" target="_blank" href="https://www.anlp.jp/proceedings/annual_meeting/2026/pdf_dir/P7-5.pdf">
         📝 Paper 
       </a>
       
@@ -301,7 +289,7 @@
         <div class="card-text">
           <div id="abstractExample">
             <span class="font-weight-bold">Abstract:</span>
-            昨今，大規模言語モデル（Large Language Models;LLM）が生成する文を検出する需要が高まっており，代表的な手法の一つに透かし（Watermark）がある．生成文に埋め込まれた透かしトークンを調べることで高性能な検出が可能な一方で，そのトークンはランダムに選択されるため，その生成文の品質やタスク性能に課題がある．そこで，本研究ではLLM のタスク性能を維持したまま，その LLM の生成文を検出しやすくするフレームワーク PUPPET を提案する．具体的には，生成文に対して検出器とタスク評価器の二つから報酬関数を設計し，LLM の強化学習を行う．評価実験の結果，我々のフレームワークで学習した LLM は文書要約タスクにおいてタスク性能を維持したまま，その検出が容易（再現率 6pt 向上）となったことを確認した．
+            我々の先行研究[1]では，村田による ChatGPTを用いた教育的小説の生成[2]や，宮本らによるChatGPT によるノベルゲーム自動生成システム[3]を参考にして，教育的ノベルゲームを作成した．作成したノベルゲームの教育効果を小テストによって評価した結果，事前テストに対する事後テストの正解数が向上し，教育効果の可能性が見られたが，被験者数が少なく，評価のばらつきやノベルゲームのもつ課題について十分に分析できなかったという問題があった．そこで，本研究では，被験者数を増やし，2 つの教育的なノベルゲームに対して各 6 人ずつの計 12 人による評価実験を行い，小テストによる教育効果の確認や，アンケートによる物語の質の評価を行った．実験の結果，いずれのノベルゲームにおいてもすべての被験者において事後テストの正解数が事前テスト以上となっており，全体平均では事前 6.3 問から事後 8.6 問に向上した．そのため，評価者数を増やした場合においても，本研究で作成したノベルゲームには教育効果があることが確認された．一方で，教育的内容と物語的内容のバランスに課題があり，教育的内容がノベルゲーム内で十分に提示されない場合や，物語の内容が薄くなってしまう問題があった．そこで，本研究では学問要素と物語要素を段階的に追加する添加形式でのノベルゲームの生成を検討した．
           </div>
         </div>
       </div>
@@ -309,7 +297,7 @@
   </div>
   
   <div class="tab-pane fade" id="paper" role="tabpanel" aria-labelledby="paper-tab">
-    <embed src="https://www.anlp.jp/proceedings/annual_meeting/2025/pdf_dir/P7-5.pdf" type="application/pdf" width="100%" height="850px">
+    <embed src="https://www.anlp.jp/proceedings/annual_meeting/2026/pdf_dir/P7-5.pdf" type="application/pdf" width="100%" height="850px">
   </div>
   
   
@@ -352,7 +340,7 @@
         <p class="float-left">
           <img src="None" height="45px"
             width="auto" align="center">
-          <span class="lead">NLP2025</span>
+          <span class="lead">NLP2026</span>
         </p>
         <p class="float-right"><a href="#" class="text-dark">Back to Top</a></p>
         <p class="text-center">The title and abstract of the paper are licensed by the author(s) under CC BY 4.0<br>

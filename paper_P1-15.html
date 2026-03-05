@@ -64,24 +64,24 @@
   <script src="https://cdn.jsdelivr.net/npm/pdfjs-dist@2.3.200/build/pdf.min.js"></script>
   <script src="static/js/pdf_render.js"></script>
 
-  <title>NLP2025: フィールドワークデータによるジンポー語機械翻訳</title>
+  <title>NLP2026: 長大な数値系列を扱うためのLLMの外部メモリ機構</title>
   
-<meta name="citation_title" content="フィールドワークデータによるジンポー語機械翻訳" />
+<meta name="citation_title" content="長大な数値系列を扱うためのLLMの外部メモリ機構" />
 
-<meta name="citation_author" content="田口智大" />
+<meta name="citation_author" content="浅野輝" />
 
-<meta name="citation_author" content="倉部慶太" />
+<meta name="citation_author" content="大内啓樹" />
 
-<meta name="citation_author" content="坂井優介" />
+<meta name="citation_author" content="春日瑛" />
 
-<meta name="citation_author" content="RitaSengMaiNbanpa" />
+<meta name="citation_author" content="米谷竜" />
 
 <meta name="citation_publication_date" content="None" />
 <meta name="citation_conference_title" content="None" />
 <meta name="citation_inbook_title" content="None" />
-<meta name="citation_abstract" content="本研究では，フィールドワークによって収集されたデータを用いたジンポー語の機械翻訳システムを開発する．ジンポー語は主にミャンマー北東部のカチン州でカチン人によって話される言語であり，言語資源が極めて限られているため，機械翻訳などの言語処理タスクの応用が未だに進んでいない．そこで，本論文では，言語学者がカチン州でのフィールドワークで収集した民話と，母語話者によるその翻訳を対訳データとして用いて，英語・ジンポー語の機械翻訳システムを開発する．実験の結果，フィールドワークに基づく対訳データは少量ながら，ジンポー語から英語への機械翻訳では，民話ドメインにて最大約 10.7 ポイント，会話ドメインにて最大約7.9 ポイントの BLEU スコア上昇が確認された．この結果は，低資源機械翻訳におけるフィールドワークデータの活用の可能性と重要性を示している．" />
+<meta name="citation_abstract" content="大規模言語モデル（LLM）に長大な数値時系列をそのまま入力すると、計算コストの増大に加えて推論品質の低下が生じやすい。本研究では、数値時系列に対して省トークンかつ説明可能な参照・推論を可能にする外部メモリ機構を提案する。提案手法は二段階からなり、第一に Bayesian Online ChangepointDetection（BOCPD）により時系列をオンラインにセグメント化し、各セグメントに統計量と自然言語要約を付与して逐次格納する。第二に、クエリに応じて関連セグメントを抽出し、それらを束ねるメタセグメントをツール駆動で動的に構築することで、必要な粒度の情報提示と段階的推論を実現する。人工的な日次売上データを用いた実験では、年度別トレンド分析においてLLMが適切にツールを使用し、根拠となる統計量を参照しながら最終回答を生成できることを示した。" />
 
-<meta name="citation_keywords" content="P1:ポスター" />
+<meta name="citation_keywords" content="P1:情報検索・テキストマイニング / 機械翻訳" />
 
 <meta name="citation_pdf_url" content="" />
 
@@ -215,31 +215,31 @@
 <div class="card m-3" style="">
   <div class="card-header">
     <h2 class="card-title main-title text-center" style="color: black">
-      フィールドワークデータによるジンポー語機械翻訳
+      長大な数値系列を扱うためのLLMの外部メモリ機構
     </h2>
     <h3 class="card-subtitle mb-2 text-muted text-center">
       
-      <a href="papers.html?filter=authors&search=田口智大&program=all" class="text-primary"
-        >田口智大</a
+      <a href="papers.html?filter=authors&search=浅野輝&program=all" class="text-primary"
+        >浅野輝</a
       >,
       
-      <a href="papers.html?filter=authors&search=倉部慶太&program=all" class="text-primary"
-        >倉部慶太</a
+      <a href="papers.html?filter=authors&search=大内啓樹&program=all" class="text-primary"
+        >大内啓樹</a
       >,
       
-      <a href="papers.html?filter=authors&search=坂井優介&program=all" class="text-primary"
-        >坂井優介</a
+      <a href="papers.html?filter=authors&search=春日瑛&program=all" class="text-primary"
+        >春日瑛</a
       >,
       
-      <a href="papers.html?filter=authors&search=RitaSengMaiNbanpa&program=all" class="text-primary"
-        >RitaSengMaiNbanpa</a
+      <a href="papers.html?filter=authors&search=米谷竜&program=all" class="text-primary"
+        >米谷竜</a
       >
       
     </h3>
 
     <p class="card-text text-center h5">
       
-      <a href="papers.html?filter=keywords&search=P1:ポスター" class ="badge badge-pill badge-primary">P1:ポスター</a>
+      <a href="papers.html?filter=keywords&search=P1:情報検索・テキストマイニング / 機械翻訳" class ="badge badge-pill badge-primary">P1:情報検索・テキストマイニング / 機械翻訳</a>
       
 
       
@@ -247,7 +247,7 @@
    
     <div class="text-center p-3">
       
-      <a class="card-link link-info" target="_blank" href="https://www.anlp.jp/proceedings/annual_meeting/2025/pdf_dir/P1-15.pdf">
+      <a class="card-link link-info" target="_blank" href="https://www.anlp.jp/proceedings/annual_meeting/2026/pdf_dir/P1-15.pdf">
         📝 Paper 
       </a>
       
@@ -301,7 +301,7 @@
         <div class="card-text">
           <div id="abstractExample">
             <span class="font-weight-bold">Abstract:</span>
-            本研究では，フィールドワークによって収集されたデータを用いたジンポー語の機械翻訳システムを開発する．ジンポー語は主にミャンマー北東部のカチン州でカチン人によって話される言語であり，言語資源が極めて限られているため，機械翻訳などの言語処理タスクの応用が未だに進んでいない．そこで，本論文では，言語学者がカチン州でのフィールドワークで収集した民話と，母語話者によるその翻訳を対訳データとして用いて，英語・ジンポー語の機械翻訳システムを開発する．実験の結果，フィールドワークに基づく対訳データは少量ながら，ジンポー語から英語への機械翻訳では，民話ドメインにて最大約 10.7 ポイント，会話ドメインにて最大約7.9 ポイントの BLEU スコア上昇が確認された．この結果は，低資源機械翻訳におけるフィールドワークデータの活用の可能性と重要性を示している．
+            大規模言語モデル（LLM）に長大な数値時系列をそのまま入力すると、計算コストの増大に加えて推論品質の低下が生じやすい。本研究では、数値時系列に対して省トークンかつ説明可能な参照・推論を可能にする外部メモリ機構を提案する。提案手法は二段階からなり、第一に Bayesian Online ChangepointDetection（BOCPD）により時系列をオンラインにセグメント化し、各セグメントに統計量と自然言語要約を付与して逐次格納する。第二に、クエリに応じて関連セグメントを抽出し、それらを束ねるメタセグメントをツール駆動で動的に構築することで、必要な粒度の情報提示と段階的推論を実現する。人工的な日次売上データを用いた実験では、年度別トレンド分析においてLLMが適切にツールを使用し、根拠となる統計量を参照しながら最終回答を生成できることを示した。
           </div>
         </div>
       </div>
@@ -309,7 +309,7 @@
   </div>
   
   <div class="tab-pane fade" id="paper" role="tabpanel" aria-labelledby="paper-tab">
-    <embed src="https://www.anlp.jp/proceedings/annual_meeting/2025/pdf_dir/P1-15.pdf" type="application/pdf" width="100%" height="850px">
+    <embed src="https://www.anlp.jp/proceedings/annual_meeting/2026/pdf_dir/P1-15.pdf" type="application/pdf" width="100%" height="850px">
   </div>
   
   
@@ -352,7 +352,7 @@
         <p class="float-left">
           <img src="None" height="45px"
             width="auto" align="center">
-          <span class="lead">NLP2025</span>
+          <span class="lead">NLP2026</span>
         </p>
         <p class="float-right"><a href="#" class="text-dark">Back to Top</a></p>
         <p class="text-center">The title and abstract of the paper are licensed by the author(s) under CC BY 4.0<br>

@@ -64,28 +64,24 @@
   <script src="https://cdn.jsdelivr.net/npm/pdfjs-dist@2.3.200/build/pdf.min.js"></script>
   <script src="static/js/pdf_render.js"></script>
 
-  <title>NLP2025: LLM-jp-3 VILA: 日本語マルチモーダルデータセット及び強力な日本語マルチモーダルモデルの構築</title>
+  <title>NLP2026: LLM による日本語複単語表現の字義的用例生成</title>
   
-<meta name="citation_title" content="LLM-jp-3 VILA: 日本語マルチモーダルデータセット及び強力な日本語マルチモーダルモデルの構築" />
+<meta name="citation_title" content="LLM による日本語複単語表現の字義的用例生成" />
 
-<meta name="citation_author" content="笹川慶人" />
+<meta name="citation_author" content="大橋美緒" />
 
-<meta name="citation_author" content="前田航希" />
+<meta name="citation_author" content="木山朔" />
 
-<meta name="citation_author" content="杉浦一瑳" />
+<meta name="citation_author" content="凌志棟" />
 
-<meta name="citation_author" content="栗田修平" />
-
-<meta name="citation_author" content="岡崎直観" />
-
-<meta name="citation_author" content="河原大輔" />
+<meta name="citation_author" content="小町守" />
 
 <meta name="citation_publication_date" content="None" />
 <meta name="citation_conference_title" content="None" />
 <meta name="citation_inbook_title" content="None" />
-<meta name="citation_abstract" content="強力な視覚言語モデル(VLM)を構築するためには、画像・テキスト対データや交互配置(interleaved)データ、指示データなどのマルチモーダルデータが必要である。しかし、英語のデータは豊富にあるが、日本語のデータは限られている。この問題に対処するため、我々はゼロから日本語のマルチモーダルデータセットを構築する。我々はウェブ上の画像・テキスト対データと interleaved データを構築し、さらに既存の大規模言語モデル(LLM)や VLM を利用して日本語のマルチモーダル指示データを構築する。これらのデータセットを利用して学習したモデルは、先行研究の機械翻訳を用いて構築したデータによるモデルよりも高い性能を示した。" />
+<meta name="citation_abstract" content="コーパスでは出現頻度が低い逐語的解釈をもつ日本語の複単語表現（Multiword Expressions: MWEs）について、大規模言語モデルが字義通りの用法の例文を生成できるかを検証する。JMWEL 辞書とJParaCrawl コーパスの両方に出現する MWE を対象とし、辞書に基づく語義記述や非字義的用例の提示有無を変えた複数の制御条件のもとで、GPT-5 にプロンプトを与え、字義的用例を生成させる。その結果、対照的な非字義的情報を与えることで字義的用法の生成が安定し、字義的情報のみを与えた場合や、手がかりを与えない場合と比べて、例文の品質が向上することが明らかになった。" />
 
-<meta name="citation_keywords" content="Q3:ポスター" />
+<meta name="citation_keywords" content="Q3:言語資源・アノテーションと評価 / その他の応用" />
 
 <meta name="citation_pdf_url" content="" />
 
@@ -219,39 +215,31 @@
 <div class="card m-3" style="">
   <div class="card-header">
     <h2 class="card-title main-title text-center" style="color: black">
-      LLM-jp-3 VILA: 日本語マルチモーダルデータセット及び強力な日本語マルチモーダルモデルの構築
+      LLM による日本語複単語表現の字義的用例生成
     </h2>
     <h3 class="card-subtitle mb-2 text-muted text-center">
       
-      <a href="papers.html?filter=authors&search=笹川慶人&program=all" class="text-primary"
-        >笹川慶人</a
+      <a href="papers.html?filter=authors&search=大橋美緒&program=all" class="text-primary"
+        >大橋美緒</a
       >,
       
-      <a href="papers.html?filter=authors&search=前田航希&program=all" class="text-primary"
-        >前田航希</a
+      <a href="papers.html?filter=authors&search=木山朔&program=all" class="text-primary"
+        >木山朔</a
       >,
       
-      <a href="papers.html?filter=authors&search=杉浦一瑳&program=all" class="text-primary"
-        >杉浦一瑳</a
+      <a href="papers.html?filter=authors&search=凌志棟&program=all" class="text-primary"
+        >凌志棟</a
       >,
       
-      <a href="papers.html?filter=authors&search=栗田修平&program=all" class="text-primary"
-        >栗田修平</a
-      >,
-      
-      <a href="papers.html?filter=authors&search=岡崎直観&program=all" class="text-primary"
-        >岡崎直観</a
-      >,
-      
-      <a href="papers.html?filter=authors&search=河原大輔&program=all" class="text-primary"
-        >河原大輔</a
+      <a href="papers.html?filter=authors&search=小町守&program=all" class="text-primary"
+        >小町守</a
       >
       
     </h3>
 
     <p class="card-text text-center h5">
       
-      <a href="papers.html?filter=keywords&search=Q3:ポスター" class ="badge badge-pill badge-primary">Q3:ポスター</a>
+      <a href="papers.html?filter=keywords&search=Q3:言語資源・アノテーションと評価 / その他の応用" class ="badge badge-pill badge-primary">Q3:言語資源・アノテーションと評価 / その他の応用</a>
       
 
       
@@ -259,7 +247,7 @@
    
     <div class="text-center p-3">
       
-      <a class="card-link link-info" target="_blank" href="https://www.anlp.jp/proceedings/annual_meeting/2025/pdf_dir/Q3-2.pdf">
+      <a class="card-link link-info" target="_blank" href="https://www.anlp.jp/proceedings/annual_meeting/2026/pdf_dir/Q3-2.pdf">
         📝 Paper 
       </a>
       
@@ -313,7 +301,7 @@
         <div class="card-text">
           <div id="abstractExample">
             <span class="font-weight-bold">Abstract:</span>
-            強力な視覚言語モデル(VLM)を構築するためには、画像・テキスト対データや交互配置(interleaved)データ、指示データなどのマルチモーダルデータが必要である。しかし、英語のデータは豊富にあるが、日本語のデータは限られている。この問題に対処するため、我々はゼロから日本語のマルチモーダルデータセットを構築する。我々はウェブ上の画像・テキスト対データと interleaved データを構築し、さらに既存の大規模言語モデル(LLM)や VLM を利用して日本語のマルチモーダル指示データを構築する。これらのデータセットを利用して学習したモデルは、先行研究の機械翻訳を用いて構築したデータによるモデルよりも高い性能を示した。
+            コーパスでは出現頻度が低い逐語的解釈をもつ日本語の複単語表現（Multiword Expressions: MWEs）について、大規模言語モデルが字義通りの用法の例文を生成できるかを検証する。JMWEL 辞書とJParaCrawl コーパスの両方に出現する MWE を対象とし、辞書に基づく語義記述や非字義的用例の提示有無を変えた複数の制御条件のもとで、GPT-5 にプロンプトを与え、字義的用例を生成させる。その結果、対照的な非字義的情報を与えることで字義的用法の生成が安定し、字義的情報のみを与えた場合や、手がかりを与えない場合と比べて、例文の品質が向上することが明らかになった。
           </div>
         </div>
       </div>
@@ -321,7 +309,7 @@
   </div>
   
   <div class="tab-pane fade" id="paper" role="tabpanel" aria-labelledby="paper-tab">
-    <embed src="https://www.anlp.jp/proceedings/annual_meeting/2025/pdf_dir/Q3-2.pdf" type="application/pdf" width="100%" height="850px">
+    <embed src="https://www.anlp.jp/proceedings/annual_meeting/2026/pdf_dir/Q3-2.pdf" type="application/pdf" width="100%" height="850px">
   </div>
   
   
@@ -364,7 +352,7 @@
         <p class="float-left">
           <img src="None" height="45px"
             width="auto" align="center">
-          <span class="lead">NLP2025</span>
+          <span class="lead">NLP2026</span>
         </p>
         <p class="float-right"><a href="#" class="text-dark">Back to Top</a></p>
         <p class="text-center">The title and abstract of the paper are licensed by the author(s) under CC BY 4.0<br>

@@ -64,22 +64,20 @@
   <script src="https://cdn.jsdelivr.net/npm/pdfjs-dist@2.3.200/build/pdf.min.js"></script>
   <script src="static/js/pdf_render.js"></script>
 
-  <title>NLP2025: 芸能人への感想を表すX上のポスト集約およびウェブ検索・RAGによるその理由の集約</title>
+  <title>NLP2026: LLMによって生成した語義定義文を用いた単語語義のクラスタリング</title>
   
-<meta name="citation_title" content="芸能人への感想を表すX上のポスト集約およびウェブ検索・RAGによるその理由の集約" />
+<meta name="citation_title" content="LLMによって生成した語義定義文を用いた単語語義のクラスタリング" />
 
-<meta name="citation_author" content="横山響" />
+<meta name="citation_author" content="𠮷川昭汰" />
 
-<meta name="citation_author" content="土田陸斗" />
-
-<meta name="citation_author" content="宇津呂武仁" />
+<meta name="citation_author" content="佐々木稔" />
 
 <meta name="citation_publication_date" content="None" />
 <meta name="citation_conference_title" content="None" />
 <meta name="citation_inbook_title" content="None" />
-<meta name="citation_abstract" content="本研究は，芸能人のファンが，芸能人に関連する事柄についての情報探索を行いやすくすることを目的とする．X から特定の芸能人に関するポストを収集し，大規模言語モデル(LLM)である ChatGPT を活用して，芸能人の評価対象とそれに関連する感想のペアを抽出する．これらをキーワードとして使用し，上位 30 件のウェブページから感想の背景にある理由を探る．この理由の収集・集約では，ChatGPTに検索拡張生成(RAG)の枠組みを適用し，収集したウェブページの内容を参照情報として活用する．人手で作成した評価対象と感想のペア，および理由のデータを参照として評価を行った結果，提案手法が高い精度を達成することが明らかになった．" />
+<meta name="citation_abstract" content="本研究では，大規模言語モデル（LLM）を用いて語義の定義文を生成し，それに基づいてクラスタ割当を再分類する語義誘導（WSI）の枠組みを提案する．本手法は，分布的類似性に基づく従来のクラスタリングに意味的情報を統合することで，クラスタ構造の保持とインスタンスレベルの対応の両立を図る．SemEval-2010 および SemEval-2013 における実験の結果，提案手法は従来のクラスタリング手法および既存の WSI 手法を，構造指標（NMI，V-M）およびインスタンス対応指標（F-B³，Fuzzy-F-B³）の両面で上回った．特に，支配的語義バイアスを緩和し，少数語義の回復を改善できることが確認された．また，モデル間比較および入力情報のアブレーションにより，分布的情報と判別的情報の両方が語義誘導に重要であることが示された．以上より，LLM による明示的な意味表現を統合することは，WSI における重要な課題に対する有効なアプローチであると結論づけられる．" />
 
-<meta name="citation_keywords" content="P8:ポスター" />
+<meta name="citation_keywords" content="P8:形態素・構文解析 / 意味論・意味解析 / 文脈解析" />
 
 <meta name="citation_pdf_url" content="" />
 
@@ -213,27 +211,23 @@
 <div class="card m-3" style="">
   <div class="card-header">
     <h2 class="card-title main-title text-center" style="color: black">
-      芸能人への感想を表すX上のポスト集約およびウェブ検索・RAGによるその理由の集約
+      LLMによって生成した語義定義文を用いた単語語義のクラスタリング
     </h2>
     <h3 class="card-subtitle mb-2 text-muted text-center">
       
-      <a href="papers.html?filter=authors&search=横山響&program=all" class="text-primary"
-        >横山響</a
+      <a href="papers.html?filter=authors&search=𠮷川昭汰&program=all" class="text-primary"
+        >𠮷川昭汰</a
       >,
       
-      <a href="papers.html?filter=authors&search=土田陸斗&program=all" class="text-primary"
-        >土田陸斗</a
-      >,
-      
-      <a href="papers.html?filter=authors&search=宇津呂武仁&program=all" class="text-primary"
-        >宇津呂武仁</a
+      <a href="papers.html?filter=authors&search=佐々木稔&program=all" class="text-primary"
+        >佐々木稔</a
       >
       
     </h3>
 
     <p class="card-text text-center h5">
       
-      <a href="papers.html?filter=keywords&search=P8:ポスター" class ="badge badge-pill badge-primary">P8:ポスター</a>
+      <a href="papers.html?filter=keywords&search=P8:形態素・構文解析 / 意味論・意味解析 / 文脈解析" class ="badge badge-pill badge-primary">P8:形態素・構文解析 / 意味論・意味解析 / 文脈解析</a>
       
 
       
@@ -241,7 +235,7 @@
    
     <div class="text-center p-3">
       
-      <a class="card-link link-info" target="_blank" href="https://www.anlp.jp/proceedings/annual_meeting/2025/pdf_dir/P8-16.pdf">
+      <a class="card-link link-info" target="_blank" href="https://www.anlp.jp/proceedings/annual_meeting/2026/pdf_dir/P8-16.pdf">
         📝 Paper 
       </a>
       
@@ -295,7 +289,7 @@
         <div class="card-text">
           <div id="abstractExample">
             <span class="font-weight-bold">Abstract:</span>
-            本研究は，芸能人のファンが，芸能人に関連する事柄についての情報探索を行いやすくすることを目的とする．X から特定の芸能人に関するポストを収集し，大規模言語モデル(LLM)である ChatGPT を活用して，芸能人の評価対象とそれに関連する感想のペアを抽出する．これらをキーワードとして使用し，上位 30 件のウェブページから感想の背景にある理由を探る．この理由の収集・集約では，ChatGPTに検索拡張生成(RAG)の枠組みを適用し，収集したウェブページの内容を参照情報として活用する．人手で作成した評価対象と感想のペア，および理由のデータを参照として評価を行った結果，提案手法が高い精度を達成することが明らかになった．
+            本研究では，大規模言語モデル（LLM）を用いて語義の定義文を生成し，それに基づいてクラスタ割当を再分類する語義誘導（WSI）の枠組みを提案する．本手法は，分布的類似性に基づく従来のクラスタリングに意味的情報を統合することで，クラスタ構造の保持とインスタンスレベルの対応の両立を図る．SemEval-2010 および SemEval-2013 における実験の結果，提案手法は従来のクラスタリング手法および既存の WSI 手法を，構造指標（NMI，V-M）およびインスタンス対応指標（F-B³，Fuzzy-F-B³）の両面で上回った．特に，支配的語義バイアスを緩和し，少数語義の回復を改善できることが確認された．また，モデル間比較および入力情報のアブレーションにより，分布的情報と判別的情報の両方が語義誘導に重要であることが示された．以上より，LLM による明示的な意味表現を統合することは，WSI における重要な課題に対する有効なアプローチであると結論づけられる．
           </div>
         </div>
       </div>
@@ -303,7 +297,7 @@
   </div>
   
   <div class="tab-pane fade" id="paper" role="tabpanel" aria-labelledby="paper-tab">
-    <embed src="https://www.anlp.jp/proceedings/annual_meeting/2025/pdf_dir/P8-16.pdf" type="application/pdf" width="100%" height="850px">
+    <embed src="https://www.anlp.jp/proceedings/annual_meeting/2026/pdf_dir/P8-16.pdf" type="application/pdf" width="100%" height="850px">
   </div>
   
   
@@ -346,7 +340,7 @@
         <p class="float-left">
           <img src="None" height="45px"
             width="auto" align="center">
-          <span class="lead">NLP2025</span>
+          <span class="lead">NLP2026</span>
         </p>
         <p class="float-right"><a href="#" class="text-dark">Back to Top</a></p>
         <p class="text-center">The title and abstract of the paper are licensed by the author(s) under CC BY 4.0<br>

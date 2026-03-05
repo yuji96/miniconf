@@ -64,22 +64,28 @@
   <script src="https://cdn.jsdelivr.net/npm/pdfjs-dist@2.3.200/build/pdf.min.js"></script>
   <script src="static/js/pdf_render.js"></script>
 
-  <title>NLP2025: Modal DTSによる様相従属化の分析</title>
+  <title>NLP2026: chakoshi Fine: 多層防御に基づくLLM向けガードレールの設計と実装および評価</title>
   
-<meta name="citation_title" content="Modal DTSによる様相従属化の分析" />
+<meta name="citation_title" content="chakoshi Fine: 多層防御に基づくLLM向けガードレールの設計と実装および評価" />
 
-<meta name="citation_author" content="飯村葵" />
+<meta name="citation_author" content="新井一博" />
 
-<meta name="citation_author" content="水野輝之" />
+<meta name="citation_author" content="松井遼太" />
 
-<meta name="citation_author" content="戸次大介" />
+<meta name="citation_author" content="深山健司" />
+
+<meta name="citation_author" content="山本雄大" />
+
+<meta name="citation_author" content="柴宮怜" />
+
+<meta name="citation_author" content="岩瀬義昌" />
 
 <meta name="citation_publication_date" content="None" />
 <meta name="citation_conference_title" content="None" />
 <meta name="citation_inbook_title" content="None" />
-<meta name="citation_abstract" content="本研究は，依存型理論に基づく自然言語の意味の理論である依存型意味論を通して，様相表現(modalexpressions)の分析を試みる．依存型意味論は，照応や前提が絡む複雑な言語表現に対応可能であることが示されてきたが，物事の可能性(possibility)や必然性(necessity)に関わる様相表現への分析の拡張は依然開拓の余地がある．そこで本論文は，依存型意味論を様相型で拡張した Modal DTS を提案する．これにより，照応とモダリティが相互作用する様相従属化(modal subordination)をはじめ，前提を伴う様相従属化についても分析を与えるなど，依存型意味論が対象とする言語現象を拡大した．" />
+<meta name="citation_abstract" content="本研究では，生成 AI の入出力向けガードレールである「chakoshi Fine」を提案する．従来のガードレールは，単一の LLM モデルで複数リスクを同時に対処する構成が多く，リスクごとの検知精度が伸びにくいことや，過剰検知が業務に与える影響が課題となりやすい．chakoshi Fine では，複数のリスクに対応する独立の防御機構(ポリシ)を設計し，必要に応じて段階的・選択的に適用できる構成とした．これにより，各ポリシの専門性を高めつつ，取りこぼしたリスクを別のポリシで補完できる．評価実験の結果，既存の商用ガードレールサービスと比較して，最高の検知精度を達成した．また，擬似業務のタスク実施による有用性評価実験では，提案群と比較群において，業務タスクの正答率に統計的な差分が認められず，検知精度と有用性の両立を示した．" />
 
-<meta name="citation_keywords" content="B2:計算・形式言語学(2)" />
+<meta name="citation_keywords" content="B2:NLPモデルの評価・安全性・信頼性" />
 
 <meta name="citation_pdf_url" content="" />
 
@@ -213,27 +219,39 @@
 <div class="card m-3" style="">
   <div class="card-header">
     <h2 class="card-title main-title text-center" style="color: black">
-      Modal DTSによる様相従属化の分析
+      chakoshi Fine: 多層防御に基づくLLM向けガードレールの設計と実装および評価
     </h2>
     <h3 class="card-subtitle mb-2 text-muted text-center">
       
-      <a href="papers.html?filter=authors&search=飯村葵&program=all" class="text-primary"
-        >飯村葵</a
+      <a href="papers.html?filter=authors&search=新井一博&program=all" class="text-primary"
+        >新井一博</a
       >,
       
-      <a href="papers.html?filter=authors&search=水野輝之&program=all" class="text-primary"
-        >水野輝之</a
+      <a href="papers.html?filter=authors&search=松井遼太&program=all" class="text-primary"
+        >松井遼太</a
       >,
       
-      <a href="papers.html?filter=authors&search=戸次大介&program=all" class="text-primary"
-        >戸次大介</a
+      <a href="papers.html?filter=authors&search=深山健司&program=all" class="text-primary"
+        >深山健司</a
+      >,
+      
+      <a href="papers.html?filter=authors&search=山本雄大&program=all" class="text-primary"
+        >山本雄大</a
+      >,
+      
+      <a href="papers.html?filter=authors&search=柴宮怜&program=all" class="text-primary"
+        >柴宮怜</a
+      >,
+      
+      <a href="papers.html?filter=authors&search=岩瀬義昌&program=all" class="text-primary"
+        >岩瀬義昌</a
       >
       
     </h3>
 
     <p class="card-text text-center h5">
       
-      <a href="papers.html?filter=keywords&search=B2:計算・形式言語学(2)" class ="badge badge-pill badge-primary">B2:計算・形式言語学(2)</a>
+      <a href="papers.html?filter=keywords&search=B2:NLPモデルの評価・安全性・信頼性" class ="badge badge-pill badge-primary">B2:NLPモデルの評価・安全性・信頼性</a>
       
 
       
@@ -241,7 +259,7 @@
    
     <div class="text-center p-3">
       
-      <a class="card-link link-info" target="_blank" href="https://www.anlp.jp/proceedings/annual_meeting/2025/pdf_dir/B2-1.pdf">
+      <a class="card-link link-info" target="_blank" href="https://www.anlp.jp/proceedings/annual_meeting/2026/pdf_dir/B2-1.pdf">
         📝 Paper 
       </a>
       
@@ -295,7 +313,7 @@
         <div class="card-text">
           <div id="abstractExample">
             <span class="font-weight-bold">Abstract:</span>
-            本研究は，依存型理論に基づく自然言語の意味の理論である依存型意味論を通して，様相表現(modalexpressions)の分析を試みる．依存型意味論は，照応や前提が絡む複雑な言語表現に対応可能であることが示されてきたが，物事の可能性(possibility)や必然性(necessity)に関わる様相表現への分析の拡張は依然開拓の余地がある．そこで本論文は，依存型意味論を様相型で拡張した Modal DTS を提案する．これにより，照応とモダリティが相互作用する様相従属化(modal subordination)をはじめ，前提を伴う様相従属化についても分析を与えるなど，依存型意味論が対象とする言語現象を拡大した．
+            本研究では，生成 AI の入出力向けガードレールである「chakoshi Fine」を提案する．従来のガードレールは，単一の LLM モデルで複数リスクを同時に対処する構成が多く，リスクごとの検知精度が伸びにくいことや，過剰検知が業務に与える影響が課題となりやすい．chakoshi Fine では，複数のリスクに対応する独立の防御機構(ポリシ)を設計し，必要に応じて段階的・選択的に適用できる構成とした．これにより，各ポリシの専門性を高めつつ，取りこぼしたリスクを別のポリシで補完できる．評価実験の結果，既存の商用ガードレールサービスと比較して，最高の検知精度を達成した．また，擬似業務のタスク実施による有用性評価実験では，提案群と比較群において，業務タスクの正答率に統計的な差分が認められず，検知精度と有用性の両立を示した．
           </div>
         </div>
       </div>
@@ -303,7 +321,7 @@
   </div>
   
   <div class="tab-pane fade" id="paper" role="tabpanel" aria-labelledby="paper-tab">
-    <embed src="https://www.anlp.jp/proceedings/annual_meeting/2025/pdf_dir/B2-1.pdf" type="application/pdf" width="100%" height="850px">
+    <embed src="https://www.anlp.jp/proceedings/annual_meeting/2026/pdf_dir/B2-1.pdf" type="application/pdf" width="100%" height="850px">
   </div>
   
   
@@ -346,7 +364,7 @@
         <p class="float-left">
           <img src="None" height="45px"
             width="auto" align="center">
-          <span class="lead">NLP2025</span>
+          <span class="lead">NLP2026</span>
         </p>
         <p class="float-right"><a href="#" class="text-dark">Back to Top</a></p>
         <p class="text-center">The title and abstract of the paper are licensed by the author(s) under CC BY 4.0<br>

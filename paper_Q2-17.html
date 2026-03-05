@@ -64,26 +64,18 @@
   <script src="https://cdn.jsdelivr.net/npm/pdfjs-dist@2.3.200/build/pdf.min.js"></script>
   <script src="static/js/pdf_render.js"></script>
 
-  <title>NLP2025: JHARS: RAG設定における日本語Hallucination評価ベンチマークの構築と分析</title>
+  <title>NLP2026: 談話行為タグ付きウズベク語談話コーパスの設計と予備的観察</title>
   
-<meta name="citation_title" content="JHARS: RAG設定における日本語Hallucination評価ベンチマークの構築と分析" />
+<meta name="citation_title" content="談話行為タグ付きウズベク語談話コーパスの設計と予備的観察" />
 
-<meta name="citation_author" content="亀井遼平" />
-
-<meta name="citation_author" content="坂田将樹" />
-
-<meta name="citation_author" content="邊土名朝飛" />
-
-<meta name="citation_author" content="栗原健太郎" />
-
-<meta name="citation_author" content="乾健太郎" />
+<meta name="citation_author" content="日髙晋介" />
 
 <meta name="citation_publication_date" content="None" />
 <meta name="citation_conference_title" content="None" />
 <meta name="citation_inbook_title" content="None" />
-<meta name="citation_abstract" content="大規模言語モデルの hallucination（与えられた情報源に存在しない内容を生成する現象）は，実応用上での重要な課題となっている．本研究では，日本語における hallucination 評価のための包括的なベンチマーク JHARS （Japanese Hallucination Assessmentin RAG Settings）を構築し，最新の GPT-4o を含む3 つのモデルを対象に分析を行った．その結果，hallucination 発生率は低い一方，事実確認が必要な重大な hallucination が検出された．また，自動検出における高い適合率と再現率の両立は困難であるものの，重大な hallucination に関しては高い再現率で検出可能であることが示された．これは，LLM 自身による出力の検証が，ユーザへの事実確認支援として機能する可能性を示唆している．" />
+<meta name="citation_abstract" content="本稿では、ウズベク語談話コーパスの基本設計と、試行注釈に基づく予備的観察を報告する。本コーパスは自由会話 4 本(合計 80 分 46 秒，9857 語)からなり、ELAN 上で発話を「長い発話単位」に区切ったうえで、転記テキスト、日本語訳、英訳、グロス、談話行為タグを付与する。談話行為の注釈には ISO 24617-2 (2020)を参照する。予備的観察では、肯定的反応表現 aha と xo‘p に着目し、同じく肯定を表す形式でも発話連鎖上の位置によって他者フィードバックあるいは自己フィードバックの機能が分化し得ることを示す。" />
 
-<meta name="citation_keywords" content="Q2:ポスター" />
+<meta name="citation_keywords" content="Q2:言語資源・アノテーションと評価 / 語彙資源・辞書" />
 
 <meta name="citation_pdf_url" content="" />
 
@@ -217,35 +209,19 @@
 <div class="card m-3" style="">
   <div class="card-header">
     <h2 class="card-title main-title text-center" style="color: black">
-      JHARS: RAG設定における日本語Hallucination評価ベンチマークの構築と分析
+      談話行為タグ付きウズベク語談話コーパスの設計と予備的観察
     </h2>
     <h3 class="card-subtitle mb-2 text-muted text-center">
       
-      <a href="papers.html?filter=authors&search=亀井遼平&program=all" class="text-primary"
-        >亀井遼平</a
-      >,
-      
-      <a href="papers.html?filter=authors&search=坂田将樹&program=all" class="text-primary"
-        >坂田将樹</a
-      >,
-      
-      <a href="papers.html?filter=authors&search=邊土名朝飛&program=all" class="text-primary"
-        >邊土名朝飛</a
-      >,
-      
-      <a href="papers.html?filter=authors&search=栗原健太郎&program=all" class="text-primary"
-        >栗原健太郎</a
-      >,
-      
-      <a href="papers.html?filter=authors&search=乾健太郎&program=all" class="text-primary"
-        >乾健太郎</a
+      <a href="papers.html?filter=authors&search=日髙晋介&program=all" class="text-primary"
+        >日髙晋介</a
       >
       
     </h3>
 
     <p class="card-text text-center h5">
       
-      <a href="papers.html?filter=keywords&search=Q2:ポスター" class ="badge badge-pill badge-primary">Q2:ポスター</a>
+      <a href="papers.html?filter=keywords&search=Q2:言語資源・アノテーションと評価 / 語彙資源・辞書" class ="badge badge-pill badge-primary">Q2:言語資源・アノテーションと評価 / 語彙資源・辞書</a>
       
 
       
@@ -253,7 +229,7 @@
    
     <div class="text-center p-3">
       
-      <a class="card-link link-info" target="_blank" href="https://www.anlp.jp/proceedings/annual_meeting/2025/pdf_dir/Q2-17.pdf">
+      <a class="card-link link-info" target="_blank" href="https://www.anlp.jp/proceedings/annual_meeting/2026/pdf_dir/Q2-17.pdf">
         📝 Paper 
       </a>
       
@@ -307,7 +283,7 @@
         <div class="card-text">
           <div id="abstractExample">
             <span class="font-weight-bold">Abstract:</span>
-            大規模言語モデルの hallucination（与えられた情報源に存在しない内容を生成する現象）は，実応用上での重要な課題となっている．本研究では，日本語における hallucination 評価のための包括的なベンチマーク JHARS （Japanese Hallucination Assessmentin RAG Settings）を構築し，最新の GPT-4o を含む3 つのモデルを対象に分析を行った．その結果，hallucination 発生率は低い一方，事実確認が必要な重大な hallucination が検出された．また，自動検出における高い適合率と再現率の両立は困難であるものの，重大な hallucination に関しては高い再現率で検出可能であることが示された．これは，LLM 自身による出力の検証が，ユーザへの事実確認支援として機能する可能性を示唆している．
+            本稿では、ウズベク語談話コーパスの基本設計と、試行注釈に基づく予備的観察を報告する。本コーパスは自由会話 4 本(合計 80 分 46 秒，9857 語)からなり、ELAN 上で発話を「長い発話単位」に区切ったうえで、転記テキスト、日本語訳、英訳、グロス、談話行為タグを付与する。談話行為の注釈には ISO 24617-2 (2020)を参照する。予備的観察では、肯定的反応表現 aha と xo‘p に着目し、同じく肯定を表す形式でも発話連鎖上の位置によって他者フィードバックあるいは自己フィードバックの機能が分化し得ることを示す。
           </div>
         </div>
       </div>
@@ -315,7 +291,7 @@
   </div>
   
   <div class="tab-pane fade" id="paper" role="tabpanel" aria-labelledby="paper-tab">
-    <embed src="https://www.anlp.jp/proceedings/annual_meeting/2025/pdf_dir/Q2-17.pdf" type="application/pdf" width="100%" height="850px">
+    <embed src="https://www.anlp.jp/proceedings/annual_meeting/2026/pdf_dir/Q2-17.pdf" type="application/pdf" width="100%" height="850px">
   </div>
   
   
@@ -358,7 +334,7 @@
         <p class="float-left">
           <img src="None" height="45px"
             width="auto" align="center">
-          <span class="lead">NLP2025</span>
+          <span class="lead">NLP2026</span>
         </p>
         <p class="float-right"><a href="#" class="text-dark">Back to Top</a></p>
         <p class="text-center">The title and abstract of the paper are licensed by the author(s) under CC BY 4.0<br>

@@ -64,34 +64,26 @@
   <script src="https://cdn.jsdelivr.net/npm/pdfjs-dist@2.3.200/build/pdf.min.js"></script>
   <script src="static/js/pdf_render.js"></script>
 
-  <title>NLP2025: 大規模言語モデルの分布予測における常識に基づいた割合予測能力の評価</title>
+  <title>NLP2026: MedNormJ：日本語医療テキストにおける病名正規化のための文脈付きデータセットの構築</title>
   
-<meta name="citation_title" content="大規模言語モデルの分布予測における常識に基づいた割合予測能力の評価" />
+<meta name="citation_title" content="MedNormJ：日本語医療テキストにおける病名正規化のための文脈付きデータセットの構築" />
 
-<meta name="citation_author" content="鈴木刀磨" />
+<meta name="citation_author" content="田代勇希" />
 
-<meta name="citation_author" content="片山歩希" />
+<meta name="citation_author" content="清水聖司" />
 
-<meta name="citation_author" content="郷原聖士" />
+<meta name="citation_author" content="西山智弘" />
 
-<meta name="citation_author" content="辻本陵" />
+<meta name="citation_author" content="若宮翔子" />
 
-<meta name="citation_author" content="中谷響" />
-
-<meta name="citation_author" content="林和樹" />
-
-<meta name="citation_author" content="坂井優介" />
-
-<meta name="citation_author" content="上垣外英剛" />
-
-<meta name="citation_author" content="渡辺太郎" />
+<meta name="citation_author" content="荒牧英治" />
 
 <meta name="citation_publication_date" content="None" />
 <meta name="citation_conference_title" content="None" />
 <meta name="citation_inbook_title" content="None" />
-<meta name="citation_abstract" content="近年，大規模言語モデル（LLM）を用いた回答分布予測が注目されているが，割合に関する数値的予測に合理性があるかは明らかではない．本研究では，実際のアンケートデータの分布割合を入れ替えた「常識的には不自然な擬似分布」を用いて，LLMがその説明を受けても合理的な分布推定を行えるかを検証した．その結果，説明に単に追従する能力と，常識に基づいて割合を予測する能力が異なることが明らかとなった．また，分布の性質を十分に理解していない予測における不合理性も確認された．この結果は，LLM の分布予測能力を評価する際に，常識的な推論能力だけでなく，与えられた指示への追従性能も考慮すべきであることを示唆している．" />
+<meta name="citation_abstract" content="医療テキスト中における病名正規化は，臨床データの二次利用において重要な基盤技術である．しかし，医療ドメインの高度な専門性とアノテーションの複雑さ等が障壁となり，日本語における標準的な評価データセットは未だ整備されていない．そこで本研究では，病名正規化を目的とした初の日本語データセット MedNormJ を構築し，公開する．本データセットは，症例報告と放射線読影レポートの計 96 件から抽出された 397 件の医療用語とその正規形のペアで構成されている．また，構築したデータセットを用いて既存の正規化手法の比較実験を行い，日本語医療テキストにおける医療用語の正規化の現状と課題を明らかにする．" />
 
-<meta name="citation_keywords" content="Q2:ポスター" />
+<meta name="citation_keywords" content="Q2:言語資源・アノテーションと評価 / 語彙資源・辞書" />
 
 <meta name="citation_pdf_url" content="" />
 
@@ -225,51 +217,35 @@
 <div class="card m-3" style="">
   <div class="card-header">
     <h2 class="card-title main-title text-center" style="color: black">
-      大規模言語モデルの分布予測における常識に基づいた割合予測能力の評価
+      MedNormJ：日本語医療テキストにおける病名正規化のための文脈付きデータセットの構築
     </h2>
     <h3 class="card-subtitle mb-2 text-muted text-center">
       
-      <a href="papers.html?filter=authors&search=鈴木刀磨&program=all" class="text-primary"
-        >鈴木刀磨</a
+      <a href="papers.html?filter=authors&search=田代勇希&program=all" class="text-primary"
+        >田代勇希</a
       >,
       
-      <a href="papers.html?filter=authors&search=片山歩希&program=all" class="text-primary"
-        >片山歩希</a
+      <a href="papers.html?filter=authors&search=清水聖司&program=all" class="text-primary"
+        >清水聖司</a
       >,
       
-      <a href="papers.html?filter=authors&search=郷原聖士&program=all" class="text-primary"
-        >郷原聖士</a
+      <a href="papers.html?filter=authors&search=西山智弘&program=all" class="text-primary"
+        >西山智弘</a
       >,
       
-      <a href="papers.html?filter=authors&search=辻本陵&program=all" class="text-primary"
-        >辻本陵</a
+      <a href="papers.html?filter=authors&search=若宮翔子&program=all" class="text-primary"
+        >若宮翔子</a
       >,
       
-      <a href="papers.html?filter=authors&search=中谷響&program=all" class="text-primary"
-        >中谷響</a
-      >,
-      
-      <a href="papers.html?filter=authors&search=林和樹&program=all" class="text-primary"
-        >林和樹</a
-      >,
-      
-      <a href="papers.html?filter=authors&search=坂井優介&program=all" class="text-primary"
-        >坂井優介</a
-      >,
-      
-      <a href="papers.html?filter=authors&search=上垣外英剛&program=all" class="text-primary"
-        >上垣外英剛</a
-      >,
-      
-      <a href="papers.html?filter=authors&search=渡辺太郎&program=all" class="text-primary"
-        >渡辺太郎</a
+      <a href="papers.html?filter=authors&search=荒牧英治&program=all" class="text-primary"
+        >荒牧英治</a
       >
       
     </h3>
 
     <p class="card-text text-center h5">
       
-      <a href="papers.html?filter=keywords&search=Q2:ポスター" class ="badge badge-pill badge-primary">Q2:ポスター</a>
+      <a href="papers.html?filter=keywords&search=Q2:言語資源・アノテーションと評価 / 語彙資源・辞書" class ="badge badge-pill badge-primary">Q2:言語資源・アノテーションと評価 / 語彙資源・辞書</a>
       
 
       
@@ -277,7 +253,7 @@
    
     <div class="text-center p-3">
       
-      <a class="card-link link-info" target="_blank" href="https://www.anlp.jp/proceedings/annual_meeting/2025/pdf_dir/Q2-12.pdf">
+      <a class="card-link link-info" target="_blank" href="https://www.anlp.jp/proceedings/annual_meeting/2026/pdf_dir/Q2-12.pdf">
         📝 Paper 
       </a>
       
@@ -331,7 +307,7 @@
         <div class="card-text">
           <div id="abstractExample">
             <span class="font-weight-bold">Abstract:</span>
-            近年，大規模言語モデル（LLM）を用いた回答分布予測が注目されているが，割合に関する数値的予測に合理性があるかは明らかではない．本研究では，実際のアンケートデータの分布割合を入れ替えた「常識的には不自然な擬似分布」を用いて，LLMがその説明を受けても合理的な分布推定を行えるかを検証した．その結果，説明に単に追従する能力と，常識に基づいて割合を予測する能力が異なることが明らかとなった．また，分布の性質を十分に理解していない予測における不合理性も確認された．この結果は，LLM の分布予測能力を評価する際に，常識的な推論能力だけでなく，与えられた指示への追従性能も考慮すべきであることを示唆している．
+            医療テキスト中における病名正規化は，臨床データの二次利用において重要な基盤技術である．しかし，医療ドメインの高度な専門性とアノテーションの複雑さ等が障壁となり，日本語における標準的な評価データセットは未だ整備されていない．そこで本研究では，病名正規化を目的とした初の日本語データセット MedNormJ を構築し，公開する．本データセットは，症例報告と放射線読影レポートの計 96 件から抽出された 397 件の医療用語とその正規形のペアで構成されている．また，構築したデータセットを用いて既存の正規化手法の比較実験を行い，日本語医療テキストにおける医療用語の正規化の現状と課題を明らかにする．
           </div>
         </div>
       </div>
@@ -339,7 +315,7 @@
   </div>
   
   <div class="tab-pane fade" id="paper" role="tabpanel" aria-labelledby="paper-tab">
-    <embed src="https://www.anlp.jp/proceedings/annual_meeting/2025/pdf_dir/Q2-12.pdf" type="application/pdf" width="100%" height="850px">
+    <embed src="https://www.anlp.jp/proceedings/annual_meeting/2026/pdf_dir/Q2-12.pdf" type="application/pdf" width="100%" height="850px">
   </div>
   
   
@@ -382,7 +358,7 @@
         <p class="float-left">
           <img src="None" height="45px"
             width="auto" align="center">
-          <span class="lead">NLP2025</span>
+          <span class="lead">NLP2026</span>
         </p>
         <p class="float-right"><a href="#" class="text-dark">Back to Top</a></p>
         <p class="text-center">The title and abstract of the paper are licensed by the author(s) under CC BY 4.0<br>

@@ -64,20 +64,24 @@
   <script src="https://cdn.jsdelivr.net/npm/pdfjs-dist@2.3.200/build/pdf.min.js"></script>
   <script src="static/js/pdf_render.js"></script>
 
-  <title>NLP2025: 日付入りLLM文書翻訳評価用データセット</title>
+  <title>NLP2026: 法令改正・政策立案プロセスの把握と政策動向の理解支援に向けた RAG 要約システムの構築</title>
   
-<meta name="citation_title" content="日付入りLLM文書翻訳評価用データセット" />
+<meta name="citation_title" content="法令改正・政策立案プロセスの把握と政策動向の理解支援に向けた RAG 要約システムの構築" />
 
-<meta name="citation_author" content="岩月憲一" />
+<meta name="citation_author" content="水島陵太" />
 
-<meta name="citation_author" content="根石将人" />
+<meta name="citation_author" content="林田歴" />
+
+<meta name="citation_author" content="水越尚子" />
+
+<meta name="citation_author" content="乙武北斗" />
 
 <meta name="citation_publication_date" content="None" />
 <meta name="citation_conference_title" content="None" />
 <meta name="citation_inbook_title" content="None" />
-<meta name="citation_abstract" content="大規模言語モデル（LLM）による翻訳の評価に際し，評価に用いるデータが LLM の事前学習データに含まれている場合，適切な評価ができない。本研究では，この問題を回避するために，頻繁に更新されるニュース系のリソースを利用して，英日の文書翻訳評価用データセットを構築した。本データセットは公開されており，不定期に更新される予定である。また，利用者が自ら更新できるよう，データ構築に用いたソースコードも合わせて公開する。" />
+<meta name="citation_abstract" content="政府会議資料から法令改正・政策立案過程や政策動向を把握したい需要が高まるが，資料は回ごとに追加・更新され論点が分散し継続理解が難しい．そこで本研究では政府会議資料を OCR し，出典付き要約を生成する RAG システムを構築した．本システムは複数回にまたがる論点を根拠箇所とともに参照でき，理解支援と資料探索負担の軽減が期待できる．検索傾向の分析で，OCR では情報量の少ない短いチャンクが上位に現れやすいという課題が確認されたため，本稿では OCR での前処理や今後の改良方針について議論する．" />
 
-<meta name="citation_keywords" content="P7:ポスター" />
+<meta name="citation_keywords" content="P7:質問応答 / 教育応用 / その他の応用" />
 
 <meta name="citation_pdf_url" content="" />
 
@@ -211,23 +215,31 @@
 <div class="card m-3" style="">
   <div class="card-header">
     <h2 class="card-title main-title text-center" style="color: black">
-      日付入りLLM文書翻訳評価用データセット
+      法令改正・政策立案プロセスの把握と政策動向の理解支援に向けた RAG 要約システムの構築
     </h2>
     <h3 class="card-subtitle mb-2 text-muted text-center">
       
-      <a href="papers.html?filter=authors&search=岩月憲一&program=all" class="text-primary"
-        >岩月憲一</a
+      <a href="papers.html?filter=authors&search=水島陵太&program=all" class="text-primary"
+        >水島陵太</a
       >,
       
-      <a href="papers.html?filter=authors&search=根石将人&program=all" class="text-primary"
-        >根石将人</a
+      <a href="papers.html?filter=authors&search=林田歴&program=all" class="text-primary"
+        >林田歴</a
+      >,
+      
+      <a href="papers.html?filter=authors&search=水越尚子&program=all" class="text-primary"
+        >水越尚子</a
+      >,
+      
+      <a href="papers.html?filter=authors&search=乙武北斗&program=all" class="text-primary"
+        >乙武北斗</a
       >
       
     </h3>
 
     <p class="card-text text-center h5">
       
-      <a href="papers.html?filter=keywords&search=P7:ポスター" class ="badge badge-pill badge-primary">P7:ポスター</a>
+      <a href="papers.html?filter=keywords&search=P7:質問応答 / 教育応用 / その他の応用" class ="badge badge-pill badge-primary">P7:質問応答 / 教育応用 / その他の応用</a>
       
 
       
@@ -235,7 +247,7 @@
    
     <div class="text-center p-3">
       
-      <a class="card-link link-info" target="_blank" href="https://www.anlp.jp/proceedings/annual_meeting/2025/pdf_dir/P7-16.pdf">
+      <a class="card-link link-info" target="_blank" href="https://www.anlp.jp/proceedings/annual_meeting/2026/pdf_dir/P7-16.pdf">
         📝 Paper 
       </a>
       
@@ -289,7 +301,7 @@
         <div class="card-text">
           <div id="abstractExample">
             <span class="font-weight-bold">Abstract:</span>
-            大規模言語モデル（LLM）による翻訳の評価に際し，評価に用いるデータが LLM の事前学習データに含まれている場合，適切な評価ができない。本研究では，この問題を回避するために，頻繁に更新されるニュース系のリソースを利用して，英日の文書翻訳評価用データセットを構築した。本データセットは公開されており，不定期に更新される予定である。また，利用者が自ら更新できるよう，データ構築に用いたソースコードも合わせて公開する。
+            政府会議資料から法令改正・政策立案過程や政策動向を把握したい需要が高まるが，資料は回ごとに追加・更新され論点が分散し継続理解が難しい．そこで本研究では政府会議資料を OCR し，出典付き要約を生成する RAG システムを構築した．本システムは複数回にまたがる論点を根拠箇所とともに参照でき，理解支援と資料探索負担の軽減が期待できる．検索傾向の分析で，OCR では情報量の少ない短いチャンクが上位に現れやすいという課題が確認されたため，本稿では OCR での前処理や今後の改良方針について議論する．
           </div>
         </div>
       </div>
@@ -297,7 +309,7 @@
   </div>
   
   <div class="tab-pane fade" id="paper" role="tabpanel" aria-labelledby="paper-tab">
-    <embed src="https://www.anlp.jp/proceedings/annual_meeting/2025/pdf_dir/P7-16.pdf" type="application/pdf" width="100%" height="850px">
+    <embed src="https://www.anlp.jp/proceedings/annual_meeting/2026/pdf_dir/P7-16.pdf" type="application/pdf" width="100%" height="850px">
   </div>
   
   
@@ -340,7 +352,7 @@
         <p class="float-left">
           <img src="None" height="45px"
             width="auto" align="center">
-          <span class="lead">NLP2025</span>
+          <span class="lead">NLP2026</span>
         </p>
         <p class="float-right"><a href="#" class="text-dark">Back to Top</a></p>
         <p class="text-center">The title and abstract of the paper are licensed by the author(s) under CC BY 4.0<br>

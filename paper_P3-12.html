@@ -64,18 +64,22 @@
   <script src="https://cdn.jsdelivr.net/npm/pdfjs-dist@2.3.200/build/pdf.min.js"></script>
   <script src="static/js/pdf_render.js"></script>
 
-  <title>NLP2025: LLM を用いた複数レシピに対する調理計画手法の検討</title>
+  <title>NLP2026: 交渉LLMにおけるZOPA中間点での合意形成のためのプロンプト・エンジニアリング</title>
   
-<meta name="citation_title" content="LLM を用いた複数レシピに対する調理計画手法の検討" />
+<meta name="citation_title" content="交渉LLMにおけるZOPA中間点での合意形成のためのプロンプト・エンジニアリング" />
 
-<meta name="citation_author" content="山口泰弘" />
+<meta name="citation_author" content="園田哲也" />
+
+<meta name="citation_author" content="宇津呂武仁" />
+
+<meta name="citation_author" content="鈴木良弥" />
 
 <meta name="citation_publication_date" content="None" />
 <meta name="citation_conference_title" content="None" />
 <meta name="citation_inbook_title" content="None" />
-<meta name="citation_abstract" content="複数の料理を同時かつ効率的に調理するには，利用可能な調理器具の制約と調理・物理現象に対する常識的な理解が不可欠である．自然言語で書かれたレシピから自動的に効率的な調理計画を組み立てるには大規模言語モデル(LLM)がもつ推論能力は非常に有用と考えられる．本研究では LLM を活用して同時調理の工程を計画する手法を検討し，解くべきタスクと課題の考察を行った．" />
+<meta name="citation_abstract" content="大規模言語モデル(LLM)による交渉では，交渉可能領域(ZOPA)を十分に考慮できず，自身の限界価格に極端に固着してしまう傾向が指摘されている．本論文では，例示により双方の譲歩によって ZOPA中間点での合意形成を促すプロンプト・エンジニアリング手法の有効性を検証した．実際の人間の交渉を例示する few-shot 手法では，同一価格帯では有効だが，異なる価格帯では効果が限定的であった．例示から傾向を抽出し記述させることで，状況に合わせて目標合意価格を導出させる Chain-of-Thought(CoT)手法を導入した結果，価格帯や ZOPA が異なる設定においても，ZOPA 中間点での合意形成能力が向上することを確認した．" />
 
-<meta name="citation_keywords" content="P3:ポスター" />
+<meta name="citation_keywords" content="P3:評判・感情分析・スタイル分析 / 対話" />
 
 <meta name="citation_pdf_url" content="" />
 
@@ -209,19 +213,27 @@
 <div class="card m-3" style="">
   <div class="card-header">
     <h2 class="card-title main-title text-center" style="color: black">
-      LLM を用いた複数レシピに対する調理計画手法の検討
+      交渉LLMにおけるZOPA中間点での合意形成のためのプロンプト・エンジニアリング
     </h2>
     <h3 class="card-subtitle mb-2 text-muted text-center">
       
-      <a href="papers.html?filter=authors&search=山口泰弘&program=all" class="text-primary"
-        >山口泰弘</a
+      <a href="papers.html?filter=authors&search=園田哲也&program=all" class="text-primary"
+        >園田哲也</a
+      >,
+      
+      <a href="papers.html?filter=authors&search=宇津呂武仁&program=all" class="text-primary"
+        >宇津呂武仁</a
+      >,
+      
+      <a href="papers.html?filter=authors&search=鈴木良弥&program=all" class="text-primary"
+        >鈴木良弥</a
       >
       
     </h3>
 
     <p class="card-text text-center h5">
       
-      <a href="papers.html?filter=keywords&search=P3:ポスター" class ="badge badge-pill badge-primary">P3:ポスター</a>
+      <a href="papers.html?filter=keywords&search=P3:評判・感情分析・スタイル分析 / 対話" class ="badge badge-pill badge-primary">P3:評判・感情分析・スタイル分析 / 対話</a>
       
 
       
@@ -229,7 +241,7 @@
    
     <div class="text-center p-3">
       
-      <a class="card-link link-info" target="_blank" href="https://www.anlp.jp/proceedings/annual_meeting/2025/pdf_dir/P3-12.pdf">
+      <a class="card-link link-info" target="_blank" href="https://www.anlp.jp/proceedings/annual_meeting/2026/pdf_dir/P3-12.pdf">
         📝 Paper 
       </a>
       
@@ -283,7 +295,7 @@
         <div class="card-text">
           <div id="abstractExample">
             <span class="font-weight-bold">Abstract:</span>
-            複数の料理を同時かつ効率的に調理するには，利用可能な調理器具の制約と調理・物理現象に対する常識的な理解が不可欠である．自然言語で書かれたレシピから自動的に効率的な調理計画を組み立てるには大規模言語モデル(LLM)がもつ推論能力は非常に有用と考えられる．本研究では LLM を活用して同時調理の工程を計画する手法を検討し，解くべきタスクと課題の考察を行った．
+            大規模言語モデル(LLM)による交渉では，交渉可能領域(ZOPA)を十分に考慮できず，自身の限界価格に極端に固着してしまう傾向が指摘されている．本論文では，例示により双方の譲歩によって ZOPA中間点での合意形成を促すプロンプト・エンジニアリング手法の有効性を検証した．実際の人間の交渉を例示する few-shot 手法では，同一価格帯では有効だが，異なる価格帯では効果が限定的であった．例示から傾向を抽出し記述させることで，状況に合わせて目標合意価格を導出させる Chain-of-Thought(CoT)手法を導入した結果，価格帯や ZOPA が異なる設定においても，ZOPA 中間点での合意形成能力が向上することを確認した．
           </div>
         </div>
       </div>
@@ -291,7 +303,7 @@
   </div>
   
   <div class="tab-pane fade" id="paper" role="tabpanel" aria-labelledby="paper-tab">
-    <embed src="https://www.anlp.jp/proceedings/annual_meeting/2025/pdf_dir/P3-12.pdf" type="application/pdf" width="100%" height="850px">
+    <embed src="https://www.anlp.jp/proceedings/annual_meeting/2026/pdf_dir/P3-12.pdf" type="application/pdf" width="100%" height="850px">
   </div>
   
   
@@ -334,7 +346,7 @@
         <p class="float-left">
           <img src="None" height="45px"
             width="auto" align="center">
-          <span class="lead">NLP2025</span>
+          <span class="lead">NLP2026</span>
         </p>
         <p class="float-right"><a href="#" class="text-dark">Back to Top</a></p>
         <p class="text-center">The title and abstract of the paper are licensed by the author(s) under CC BY 4.0<br>

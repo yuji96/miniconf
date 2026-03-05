@@ -64,24 +64,36 @@
   <script src="https://cdn.jsdelivr.net/npm/pdfjs-dist@2.3.200/build/pdf.min.js"></script>
   <script src="static/js/pdf_render.js"></script>
 
-  <title>NLP2025: タスクベクトル演算を用いた感情表現テキスト生成モデル合成手法</title>
+  <title>NLP2026: 家族日常対話における計画情報抽出</title>
   
-<meta name="citation_title" content="タスクベクトル演算を用いた感情表現テキスト生成モデル合成手法" />
+<meta name="citation_title" content="家族日常対話における計画情報抽出" />
 
-<meta name="citation_author" content="天野椋太" />
+<meta name="citation_author" content="沼屋征海" />
 
-<meta name="citation_author" content="目良和也" />
+<meta name="citation_author" content="佐藤魁" />
 
-<meta name="citation_author" content="黒澤義明" />
+<meta name="citation_author" content="吉田倖" />
 
-<meta name="citation_author" content="竹澤寿幸" />
+<meta name="citation_author" content="亀井遼平" />
+
+<meta name="citation_author" content="所年雄" />
+
+<meta name="citation_author" content="滑川登" />
+
+<meta name="citation_author" content="濱口泰時" />
+
+<meta name="citation_author" content="上村崇" />
+
+<meta name="citation_author" content="乾健太郎" />
+
+<meta name="citation_author" content="坂口慶祐" />
 
 <meta name="citation_publication_date" content="None" />
 <meta name="citation_conference_title" content="None" />
 <meta name="citation_inbook_title" content="None" />
-<meta name="citation_abstract" content="近年の大規模言語モデル（LLM）を活用した対話システムの飛躍的な発展に伴い，対話システムのパーソナライズへの関心も高まってきている．しかし新たな性格のテキスト生成モデルを表現するには，表現したい感情の強さや混ざり具合に応じたモデルを個別に作らなければならない．本研究では，個別の感情を表現することに特化したモデルを感情ごとに作成し，タスクベクトル演算を用いてモデルを合成することで，感情の強弱や複合感情を表現する手法を提案する．LLM を用いたテキスト評価実験の結果，対象感情の強弱と感情の複合いずれについても生成テキストで表現できていることが確認された．" />
+<meta name="citation_abstract" content="本研究では，家庭内の日常対話に現れる計画情報を対象とした新たな計画情報抽出タスクを提案し，それに対応する「Tohoku-Transcosmos 家庭内会話計画コーパス」を構築・公開する1）．提案タスクは，対話の進行に伴う計画情報の追加・更新を発話単位で逐次的に扱う点を特徴とする．コーパス構築では，子どもを含む家庭内対話を音声収録・文字起こしし，計画情報リストの操作を人手で注釈付けした．大規模言語モデルを用いた予備実験では一定の性能が確認されたが，行動の粒度や子どもによる曖昧表現の解釈に関する課題が明らかになった．" />
 
-<meta name="citation_keywords" content="Q5:ポスター" />
+<meta name="citation_keywords" content="Q5:言語資源・アノテーションと評価" />
 
 <meta name="citation_pdf_url" content="" />
 
@@ -215,31 +227,55 @@
 <div class="card m-3" style="">
   <div class="card-header">
     <h2 class="card-title main-title text-center" style="color: black">
-      タスクベクトル演算を用いた感情表現テキスト生成モデル合成手法
+      家族日常対話における計画情報抽出
     </h2>
     <h3 class="card-subtitle mb-2 text-muted text-center">
       
-      <a href="papers.html?filter=authors&search=天野椋太&program=all" class="text-primary"
-        >天野椋太</a
+      <a href="papers.html?filter=authors&search=沼屋征海&program=all" class="text-primary"
+        >沼屋征海</a
       >,
       
-      <a href="papers.html?filter=authors&search=目良和也&program=all" class="text-primary"
-        >目良和也</a
+      <a href="papers.html?filter=authors&search=佐藤魁&program=all" class="text-primary"
+        >佐藤魁</a
       >,
       
-      <a href="papers.html?filter=authors&search=黒澤義明&program=all" class="text-primary"
-        >黒澤義明</a
+      <a href="papers.html?filter=authors&search=吉田倖&program=all" class="text-primary"
+        >吉田倖</a
       >,
       
-      <a href="papers.html?filter=authors&search=竹澤寿幸&program=all" class="text-primary"
-        >竹澤寿幸</a
+      <a href="papers.html?filter=authors&search=亀井遼平&program=all" class="text-primary"
+        >亀井遼平</a
+      >,
+      
+      <a href="papers.html?filter=authors&search=所年雄&program=all" class="text-primary"
+        >所年雄</a
+      >,
+      
+      <a href="papers.html?filter=authors&search=滑川登&program=all" class="text-primary"
+        >滑川登</a
+      >,
+      
+      <a href="papers.html?filter=authors&search=濱口泰時&program=all" class="text-primary"
+        >濱口泰時</a
+      >,
+      
+      <a href="papers.html?filter=authors&search=上村崇&program=all" class="text-primary"
+        >上村崇</a
+      >,
+      
+      <a href="papers.html?filter=authors&search=乾健太郎&program=all" class="text-primary"
+        >乾健太郎</a
+      >,
+      
+      <a href="papers.html?filter=authors&search=坂口慶祐&program=all" class="text-primary"
+        >坂口慶祐</a
       >
       
     </h3>
 
     <p class="card-text text-center h5">
       
-      <a href="papers.html?filter=keywords&search=Q5:ポスター" class ="badge badge-pill badge-primary">Q5:ポスター</a>
+      <a href="papers.html?filter=keywords&search=Q5:言語資源・アノテーションと評価" class ="badge badge-pill badge-primary">Q5:言語資源・アノテーションと評価</a>
       
 
       
@@ -247,7 +283,7 @@
    
     <div class="text-center p-3">
       
-      <a class="card-link link-info" target="_blank" href="https://www.anlp.jp/proceedings/annual_meeting/2025/pdf_dir/Q5-7.pdf">
+      <a class="card-link link-info" target="_blank" href="https://www.anlp.jp/proceedings/annual_meeting/2026/pdf_dir/Q5-7.pdf">
         📝 Paper 
       </a>
       
@@ -301,7 +337,7 @@
         <div class="card-text">
           <div id="abstractExample">
             <span class="font-weight-bold">Abstract:</span>
-            近年の大規模言語モデル（LLM）を活用した対話システムの飛躍的な発展に伴い，対話システムのパーソナライズへの関心も高まってきている．しかし新たな性格のテキスト生成モデルを表現するには，表現したい感情の強さや混ざり具合に応じたモデルを個別に作らなければならない．本研究では，個別の感情を表現することに特化したモデルを感情ごとに作成し，タスクベクトル演算を用いてモデルを合成することで，感情の強弱や複合感情を表現する手法を提案する．LLM を用いたテキスト評価実験の結果，対象感情の強弱と感情の複合いずれについても生成テキストで表現できていることが確認された．
+            本研究では，家庭内の日常対話に現れる計画情報を対象とした新たな計画情報抽出タスクを提案し，それに対応する「Tohoku-Transcosmos 家庭内会話計画コーパス」を構築・公開する1）．提案タスクは，対話の進行に伴う計画情報の追加・更新を発話単位で逐次的に扱う点を特徴とする．コーパス構築では，子どもを含む家庭内対話を音声収録・文字起こしし，計画情報リストの操作を人手で注釈付けした．大規模言語モデルを用いた予備実験では一定の性能が確認されたが，行動の粒度や子どもによる曖昧表現の解釈に関する課題が明らかになった．
           </div>
         </div>
       </div>
@@ -309,7 +345,7 @@
   </div>
   
   <div class="tab-pane fade" id="paper" role="tabpanel" aria-labelledby="paper-tab">
-    <embed src="https://www.anlp.jp/proceedings/annual_meeting/2025/pdf_dir/Q5-7.pdf" type="application/pdf" width="100%" height="850px">
+    <embed src="https://www.anlp.jp/proceedings/annual_meeting/2026/pdf_dir/Q5-7.pdf" type="application/pdf" width="100%" height="850px">
   </div>
   
   
@@ -352,7 +388,7 @@
         <p class="float-left">
           <img src="None" height="45px"
             width="auto" align="center">
-          <span class="lead">NLP2025</span>
+          <span class="lead">NLP2026</span>
         </p>
         <p class="float-right"><a href="#" class="text-dark">Back to Top</a></p>
         <p class="text-center">The title and abstract of the paper are licensed by the author(s) under CC BY 4.0<br>

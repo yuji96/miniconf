@@ -64,24 +64,22 @@
   <script src="https://cdn.jsdelivr.net/npm/pdfjs-dist@2.3.200/build/pdf.min.js"></script>
   <script src="static/js/pdf_render.js"></script>
 
-  <title>NLP2025: 生成系タスクの自動評価においてチェックリストの使用は有効なのか？</title>
+  <title>NLP2026: 双方向推論とデータ拡張を両立する 空白文字順序復元型 LLM 学習フレームワーク</title>
   
-<meta name="citation_title" content="生成系タスクの自動評価においてチェックリストの使用は有効なのか？" />
+<meta name="citation_title" content="双方向推論とデータ拡張を両立する 空白文字順序復元型 LLM 学習フレームワーク" />
 
-<meta name="citation_author" content="古橋萌々香" />
+<meta name="citation_author" content="高鵬挙" />
 
-<meta name="citation_author" content="中山功太" />
+<meta name="citation_author" content="山崎智弘" />
 
-<meta name="citation_author" content="児玉貴志" />
-
-<meta name="citation_author" content="菅原朔" />
+<meta name="citation_author" content="岩田憲治" />
 
 <meta name="citation_publication_date" content="None" />
 <meta name="citation_conference_title" content="None" />
 <meta name="citation_inbook_title" content="None" />
-<meta name="citation_abstract" content="生成系タスクにおける大規模言語モデルを用いた自動評価では，評価基準の曖昧さが課題とされている．これに対し，チェックリストにより評価基準を細分化する方法が注目されているが，作成方法の検討はまだ十分でない．本研究では 6 つの生成手法でチェックリストを作成し，それに基づいて回答を評価，その有効性を 3 種の評価モデルで検証した．その結果，チェックリスト未使用時と比較して一致率が向上したケースは 22.6%に留まり，チェックリストの有効性は限定的であった．一方，項目数制限や付加情報の活用が有効であり，小規模評価モデルでも適切なチェックリストを用いることで大規模モデルと同等の評価を行える可能性が示唆された．" />
+<meta name="citation_abstract" content="本研究は、自己回帰型 LLM の「未来文脈を活用できない」という構造的制約と、専門ドメインにおけるデータ不足問題を同時に解決するため、新しい学習フレームワークを提案する。過去と未来の文脈を同時に参照する必要がある、並べ替えた文字を復元するタスクを自動生成し、対象範囲を動的に変えることで大量の学習データを生成する。さらに、文字順序復元タスクと、文の前半を与えて後半を生成させる文章継続タスクを混合し、混合比率𝑚 を変えたときの性能変化を定量化した。金融・医療ベンチマークにおいて、zero-shot で平均+1.0 ポイント、two-shot 医療で+3.2 ポイントの改善を達成した。" />
 
-<meta name="citation_keywords" content="P5:ポスター" />
+<meta name="citation_keywords" content="P5:対話 / 質問応答" />
 
 <meta name="citation_pdf_url" content="" />
 
@@ -215,31 +213,27 @@
 <div class="card m-3" style="">
   <div class="card-header">
     <h2 class="card-title main-title text-center" style="color: black">
-      生成系タスクの自動評価においてチェックリストの使用は有効なのか？
+      双方向推論とデータ拡張を両立する 空白文字順序復元型 LLM 学習フレームワーク
     </h2>
     <h3 class="card-subtitle mb-2 text-muted text-center">
       
-      <a href="papers.html?filter=authors&search=古橋萌々香&program=all" class="text-primary"
-        >古橋萌々香</a
+      <a href="papers.html?filter=authors&search=高鵬挙&program=all" class="text-primary"
+        >高鵬挙</a
       >,
       
-      <a href="papers.html?filter=authors&search=中山功太&program=all" class="text-primary"
-        >中山功太</a
+      <a href="papers.html?filter=authors&search=山崎智弘&program=all" class="text-primary"
+        >山崎智弘</a
       >,
       
-      <a href="papers.html?filter=authors&search=児玉貴志&program=all" class="text-primary"
-        >児玉貴志</a
-      >,
-      
-      <a href="papers.html?filter=authors&search=菅原朔&program=all" class="text-primary"
-        >菅原朔</a
+      <a href="papers.html?filter=authors&search=岩田憲治&program=all" class="text-primary"
+        >岩田憲治</a
       >
       
     </h3>
 
     <p class="card-text text-center h5">
       
-      <a href="papers.html?filter=keywords&search=P5:ポスター" class ="badge badge-pill badge-primary">P5:ポスター</a>
+      <a href="papers.html?filter=keywords&search=P5:対話 / 質問応答" class ="badge badge-pill badge-primary">P5:対話 / 質問応答</a>
       
 
       
@@ -247,7 +241,7 @@
    
     <div class="text-center p-3">
       
-      <a class="card-link link-info" target="_blank" href="https://www.anlp.jp/proceedings/annual_meeting/2025/pdf_dir/P5-9.pdf">
+      <a class="card-link link-info" target="_blank" href="https://www.anlp.jp/proceedings/annual_meeting/2026/pdf_dir/P5-9.pdf">
         📝 Paper 
       </a>
       
@@ -301,7 +295,7 @@
         <div class="card-text">
           <div id="abstractExample">
             <span class="font-weight-bold">Abstract:</span>
-            生成系タスクにおける大規模言語モデルを用いた自動評価では，評価基準の曖昧さが課題とされている．これに対し，チェックリストにより評価基準を細分化する方法が注目されているが，作成方法の検討はまだ十分でない．本研究では 6 つの生成手法でチェックリストを作成し，それに基づいて回答を評価，その有効性を 3 種の評価モデルで検証した．その結果，チェックリスト未使用時と比較して一致率が向上したケースは 22.6%に留まり，チェックリストの有効性は限定的であった．一方，項目数制限や付加情報の活用が有効であり，小規模評価モデルでも適切なチェックリストを用いることで大規模モデルと同等の評価を行える可能性が示唆された．
+            本研究は、自己回帰型 LLM の「未来文脈を活用できない」という構造的制約と、専門ドメインにおけるデータ不足問題を同時に解決するため、新しい学習フレームワークを提案する。過去と未来の文脈を同時に参照する必要がある、並べ替えた文字を復元するタスクを自動生成し、対象範囲を動的に変えることで大量の学習データを生成する。さらに、文字順序復元タスクと、文の前半を与えて後半を生成させる文章継続タスクを混合し、混合比率𝑚 を変えたときの性能変化を定量化した。金融・医療ベンチマークにおいて、zero-shot で平均+1.0 ポイント、two-shot 医療で+3.2 ポイントの改善を達成した。
           </div>
         </div>
       </div>
@@ -309,7 +303,7 @@
   </div>
   
   <div class="tab-pane fade" id="paper" role="tabpanel" aria-labelledby="paper-tab">
-    <embed src="https://www.anlp.jp/proceedings/annual_meeting/2025/pdf_dir/P5-9.pdf" type="application/pdf" width="100%" height="850px">
+    <embed src="https://www.anlp.jp/proceedings/annual_meeting/2026/pdf_dir/P5-9.pdf" type="application/pdf" width="100%" height="850px">
   </div>
   
   
@@ -352,7 +346,7 @@
         <p class="float-left">
           <img src="None" height="45px"
             width="auto" align="center">
-          <span class="lead">NLP2025</span>
+          <span class="lead">NLP2026</span>
         </p>
         <p class="float-right"><a href="#" class="text-dark">Back to Top</a></p>
         <p class="text-center">The title and abstract of the paper are licensed by the author(s) under CC BY 4.0<br>

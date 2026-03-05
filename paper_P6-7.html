@@ -64,22 +64,28 @@
   <script src="https://cdn.jsdelivr.net/npm/pdfjs-dist@2.3.200/build/pdf.min.js"></script>
   <script src="static/js/pdf_render.js"></script>
 
-  <title>NLP2025: Zero-shot Entity Recognition for Polymer Biodegradability Information: GPT-4o on PolyBD</title>
+  <title>NLP2026: 日本語学習者辞書語釈の自動生成</title>
   
-<meta name="citation_title" content="Zero-shot Entity Recognition for Polymer Biodegradability Information: GPT-4o on PolyBD" />
+<meta name="citation_title" content="日本語学習者辞書語釈の自動生成" />
 
-<meta name="citation_author" content="ShanshanLiu" />
+<meta name="citation_author" content="井手佑翼" />
 
-<meta name="citation_author" content="MasashiIshii" />
+<meta name="citation_author" content="AdamNohejl" />
 
-<meta name="citation_author" content="YujiMatsumoto" />
+<meta name="citation_author" content="JoshuaTanner" />
+
+<meta name="citation_author" content="谷中瞳" />
+
+<meta name="citation_author" content="ChristopherLindsay" />
+
+<meta name="citation_author" content="渡辺太郎" />
 
 <meta name="citation_publication_date" content="None" />
 <meta name="citation_conference_title" content="None" />
 <meta name="citation_inbook_title" content="None" />
-<meta name="citation_abstract" content="To investigate polymer biodeg radability information ex-traction, we constructed PolyBD, a manually annotateddataset containing entity annotations of 100 journal ar-ticles. We evaluated the performance of GPT-4o insentence-level entity recognition under a zero-shot settingon PolyBD. While GPT-4o achieved strong overall results,its performance diﬀered markedly between nested entities(those contained within other entities) and non-nested enti-ties (all others). Speciﬁcally, it achieved a recall of 78% fornested entities but only 56% for non-nested entities. Theseresults underscore both the capabilities and limitations ofadvanced large language models in addressing real-worldextraction tasks." />
+<meta name="citation_abstract" content="学習者辞書は、見出し語の意味を平易な単語のみで記述した辞書であり、言語学習等に有用な資源である。しかし、日本語については、高品質な学習者辞書はいまだ制作されていない。そこで、本研究は、日本語学習者辞書の自動編纂に向けて語釈の生成に取り組む。我々は、Few-shot プロンプティングと反復的平易化を組み合わせた、シンプルな語釈生成手法を提案する。実験結果から、提案手法は、辞書語釈としての高い品質と語彙的平易性を同時に実現できることを示す。" />
 
-<meta name="citation_keywords" content="P6:ポスター" />
+<meta name="citation_keywords" content="P6:実世界接地と言語処理 / 教育応用" />
 
 <meta name="citation_pdf_url" content="" />
 
@@ -213,27 +219,39 @@
 <div class="card m-3" style="">
   <div class="card-header">
     <h2 class="card-title main-title text-center" style="color: black">
-      Zero-shot Entity Recognition for Polymer Biodegradability Information: GPT-4o on PolyBD
+      日本語学習者辞書語釈の自動生成
     </h2>
     <h3 class="card-subtitle mb-2 text-muted text-center">
       
-      <a href="papers.html?filter=authors&search=ShanshanLiu&program=all" class="text-primary"
-        >ShanshanLiu</a
+      <a href="papers.html?filter=authors&search=井手佑翼&program=all" class="text-primary"
+        >井手佑翼</a
       >,
       
-      <a href="papers.html?filter=authors&search=MasashiIshii&program=all" class="text-primary"
-        >MasashiIshii</a
+      <a href="papers.html?filter=authors&search=AdamNohejl&program=all" class="text-primary"
+        >AdamNohejl</a
       >,
       
-      <a href="papers.html?filter=authors&search=YujiMatsumoto&program=all" class="text-primary"
-        >YujiMatsumoto</a
+      <a href="papers.html?filter=authors&search=JoshuaTanner&program=all" class="text-primary"
+        >JoshuaTanner</a
+      >,
+      
+      <a href="papers.html?filter=authors&search=谷中瞳&program=all" class="text-primary"
+        >谷中瞳</a
+      >,
+      
+      <a href="papers.html?filter=authors&search=ChristopherLindsay&program=all" class="text-primary"
+        >ChristopherLindsay</a
+      >,
+      
+      <a href="papers.html?filter=authors&search=渡辺太郎&program=all" class="text-primary"
+        >渡辺太郎</a
       >
       
     </h3>
 
     <p class="card-text text-center h5">
       
-      <a href="papers.html?filter=keywords&search=P6:ポスター" class ="badge badge-pill badge-primary">P6:ポスター</a>
+      <a href="papers.html?filter=keywords&search=P6:実世界接地と言語処理 / 教育応用" class ="badge badge-pill badge-primary">P6:実世界接地と言語処理 / 教育応用</a>
       
 
       
@@ -241,7 +259,7 @@
    
     <div class="text-center p-3">
       
-      <a class="card-link link-info" target="_blank" href="https://www.anlp.jp/proceedings/annual_meeting/2025/pdf_dir/P6-7.pdf">
+      <a class="card-link link-info" target="_blank" href="https://www.anlp.jp/proceedings/annual_meeting/2026/pdf_dir/P6-7.pdf">
         📝 Paper 
       </a>
       
@@ -295,7 +313,7 @@
         <div class="card-text">
           <div id="abstractExample">
             <span class="font-weight-bold">Abstract:</span>
-            To investigate polymer biodeg radability information ex-traction, we constructed PolyBD, a manually annotateddataset containing entity annotations of 100 journal ar-ticles. We evaluated the performance of GPT-4o insentence-level entity recognition under a zero-shot settingon PolyBD. While GPT-4o achieved strong overall results,its performance diﬀered markedly between nested entities(those contained within other entities) and non-nested enti-ties (all others). Speciﬁcally, it achieved a recall of 78% fornested entities but only 56% for non-nested entities. Theseresults underscore both the capabilities and limitations ofadvanced large language models in addressing real-worldextraction tasks.
+            学習者辞書は、見出し語の意味を平易な単語のみで記述した辞書であり、言語学習等に有用な資源である。しかし、日本語については、高品質な学習者辞書はいまだ制作されていない。そこで、本研究は、日本語学習者辞書の自動編纂に向けて語釈の生成に取り組む。我々は、Few-shot プロンプティングと反復的平易化を組み合わせた、シンプルな語釈生成手法を提案する。実験結果から、提案手法は、辞書語釈としての高い品質と語彙的平易性を同時に実現できることを示す。
           </div>
         </div>
       </div>
@@ -303,7 +321,7 @@
   </div>
   
   <div class="tab-pane fade" id="paper" role="tabpanel" aria-labelledby="paper-tab">
-    <embed src="https://www.anlp.jp/proceedings/annual_meeting/2025/pdf_dir/P6-7.pdf" type="application/pdf" width="100%" height="850px">
+    <embed src="https://www.anlp.jp/proceedings/annual_meeting/2026/pdf_dir/P6-7.pdf" type="application/pdf" width="100%" height="850px">
   </div>
   
   
@@ -346,7 +364,7 @@
         <p class="float-left">
           <img src="None" height="45px"
             width="auto" align="center">
-          <span class="lead">NLP2025</span>
+          <span class="lead">NLP2026</span>
         </p>
         <p class="float-right"><a href="#" class="text-dark">Back to Top</a></p>
         <p class="text-center">The title and abstract of the paper are licensed by the author(s) under CC BY 4.0<br>

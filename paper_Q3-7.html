@@ -64,20 +64,34 @@
   <script src="https://cdn.jsdelivr.net/npm/pdfjs-dist@2.3.200/build/pdf.min.js"></script>
   <script src="static/js/pdf_render.js"></script>
 
-  <title>NLP2025: 大規模言語モデルによるセリフを含む物語の可視化手法</title>
+  <title>NLP2026: LLMの生成テキストの真偽検証のための日本語言説分解データセットの構築と評価</title>
   
-<meta name="citation_title" content="大規模言語モデルによるセリフを含む物語の可視化手法" />
+<meta name="citation_title" content="LLMの生成テキストの真偽検証のための日本語言説分解データセットの構築と評価" />
 
-<meta name="citation_author" content="瀧本隼矢" />
+<meta name="citation_author" content="政野美和" />
 
-<meta name="citation_author" content="竹内孔一" />
+<meta name="citation_author" content="欅リベカ" />
+
+<meta name="citation_author" content="欅惇志" />
+
+<meta name="citation_author" content="清丸寛一" />
+
+<meta name="citation_author" content="中山功太" />
+
+<meta name="citation_author" content="堀尾海斗" />
+
+<meta name="citation_author" content="源怜維" />
+
+<meta name="citation_author" content="橘秀幸" />
+
+<meta name="citation_author" content="河原大輔" />
 
 <meta name="citation_publication_date" content="None" />
 <meta name="citation_conference_title" content="None" />
 <meta name="citation_inbook_title" content="None" />
-<meta name="citation_abstract" content="近年，大規模言語モデル（LLM: Large LanguageModel）を活用した物語の視覚的表現が注目されているが，物語のセリフや感情，キャラクターの行動といった本質的要素を取り入れる試みは十分に行われていない．本研究では，LLM を用いて Chain ofThought（CoT）Prompting により物語を解析・分割し，画像生成プロンプトを構築する新たな手法を提案する．本手法の特徴は，物語中のセリフを含めた可視化に焦点を当てる点にある．CLIP Score による評価実験では，提案手法が物語本文からそのまま画像生成する手法に比べ，セリフの有無に関わらず視覚的情報が画像に正確に反映されることを示す．" />
+<meta name="citation_abstract" content="LLM の生成テキストは誤情報を含むことがあるため，情報の真偽を検証するシステムの開発は喫緊の課題である．言説単位の真偽検証システムでは，生成テキストを独立した最小粒度の情報である言説(claim)に分解して，言説ごとに情報の真偽を判定する．言説単位での真偽検証を行うことで，真偽検証結果に対する説明性が向上する．高性能な言説分解手法の開発・評価のため，本研究では日本語言説分解データセットの構築に取り組んだ．" />
 
-<meta name="citation_keywords" content="Q3:ポスター" />
+<meta name="citation_keywords" content="Q3:言語資源・アノテーションと評価 / その他の応用" />
 
 <meta name="citation_pdf_url" content="" />
 
@@ -211,23 +225,51 @@
 <div class="card m-3" style="">
   <div class="card-header">
     <h2 class="card-title main-title text-center" style="color: black">
-      大規模言語モデルによるセリフを含む物語の可視化手法
+      LLMの生成テキストの真偽検証のための日本語言説分解データセットの構築と評価
     </h2>
     <h3 class="card-subtitle mb-2 text-muted text-center">
       
-      <a href="papers.html?filter=authors&search=瀧本隼矢&program=all" class="text-primary"
-        >瀧本隼矢</a
+      <a href="papers.html?filter=authors&search=政野美和&program=all" class="text-primary"
+        >政野美和</a
       >,
       
-      <a href="papers.html?filter=authors&search=竹内孔一&program=all" class="text-primary"
-        >竹内孔一</a
+      <a href="papers.html?filter=authors&search=欅リベカ&program=all" class="text-primary"
+        >欅リベカ</a
+      >,
+      
+      <a href="papers.html?filter=authors&search=欅惇志&program=all" class="text-primary"
+        >欅惇志</a
+      >,
+      
+      <a href="papers.html?filter=authors&search=清丸寛一&program=all" class="text-primary"
+        >清丸寛一</a
+      >,
+      
+      <a href="papers.html?filter=authors&search=中山功太&program=all" class="text-primary"
+        >中山功太</a
+      >,
+      
+      <a href="papers.html?filter=authors&search=堀尾海斗&program=all" class="text-primary"
+        >堀尾海斗</a
+      >,
+      
+      <a href="papers.html?filter=authors&search=源怜維&program=all" class="text-primary"
+        >源怜維</a
+      >,
+      
+      <a href="papers.html?filter=authors&search=橘秀幸&program=all" class="text-primary"
+        >橘秀幸</a
+      >,
+      
+      <a href="papers.html?filter=authors&search=河原大輔&program=all" class="text-primary"
+        >河原大輔</a
       >
       
     </h3>
 
     <p class="card-text text-center h5">
       
-      <a href="papers.html?filter=keywords&search=Q3:ポスター" class ="badge badge-pill badge-primary">Q3:ポスター</a>
+      <a href="papers.html?filter=keywords&search=Q3:言語資源・アノテーションと評価 / その他の応用" class ="badge badge-pill badge-primary">Q3:言語資源・アノテーションと評価 / その他の応用</a>
       
 
       
@@ -235,7 +277,7 @@
    
     <div class="text-center p-3">
       
-      <a class="card-link link-info" target="_blank" href="https://www.anlp.jp/proceedings/annual_meeting/2025/pdf_dir/Q3-7.pdf">
+      <a class="card-link link-info" target="_blank" href="https://www.anlp.jp/proceedings/annual_meeting/2026/pdf_dir/Q3-7.pdf">
         📝 Paper 
       </a>
       
@@ -289,7 +331,7 @@
         <div class="card-text">
           <div id="abstractExample">
             <span class="font-weight-bold">Abstract:</span>
-            近年，大規模言語モデル（LLM: Large LanguageModel）を活用した物語の視覚的表現が注目されているが，物語のセリフや感情，キャラクターの行動といった本質的要素を取り入れる試みは十分に行われていない．本研究では，LLM を用いて Chain ofThought（CoT）Prompting により物語を解析・分割し，画像生成プロンプトを構築する新たな手法を提案する．本手法の特徴は，物語中のセリフを含めた可視化に焦点を当てる点にある．CLIP Score による評価実験では，提案手法が物語本文からそのまま画像生成する手法に比べ，セリフの有無に関わらず視覚的情報が画像に正確に反映されることを示す．
+            LLM の生成テキストは誤情報を含むことがあるため，情報の真偽を検証するシステムの開発は喫緊の課題である．言説単位の真偽検証システムでは，生成テキストを独立した最小粒度の情報である言説(claim)に分解して，言説ごとに情報の真偽を判定する．言説単位での真偽検証を行うことで，真偽検証結果に対する説明性が向上する．高性能な言説分解手法の開発・評価のため，本研究では日本語言説分解データセットの構築に取り組んだ．
           </div>
         </div>
       </div>
@@ -297,7 +339,7 @@
   </div>
   
   <div class="tab-pane fade" id="paper" role="tabpanel" aria-labelledby="paper-tab">
-    <embed src="https://www.anlp.jp/proceedings/annual_meeting/2025/pdf_dir/Q3-7.pdf" type="application/pdf" width="100%" height="850px">
+    <embed src="https://www.anlp.jp/proceedings/annual_meeting/2026/pdf_dir/Q3-7.pdf" type="application/pdf" width="100%" height="850px">
   </div>
   
   
@@ -340,7 +382,7 @@
         <p class="float-left">
           <img src="None" height="45px"
             width="auto" align="center">
-          <span class="lead">NLP2025</span>
+          <span class="lead">NLP2026</span>
         </p>
         <p class="float-right"><a href="#" class="text-dark">Back to Top</a></p>
         <p class="text-center">The title and abstract of the paper are licensed by the author(s) under CC BY 4.0<br>

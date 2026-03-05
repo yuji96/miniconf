@@ -64,18 +64,28 @@
   <script src="https://cdn.jsdelivr.net/npm/pdfjs-dist@2.3.200/build/pdf.min.js"></script>
   <script src="static/js/pdf_render.js"></script>
 
-  <title>NLP2025: Bi-encoder と 𝑘NN の組み合わせによる職務記述書に書かれた文のスキルマッピング</title>
+  <title>NLP2026: 一階述語論理を用いたRAG におけるハルシネーション判定手法の検討</title>
   
-<meta name="citation_title" content="Bi-encoder と 𝑘NN の組み合わせによる職務記述書に書かれた文のスキルマッピング" />
+<meta name="citation_title" content="一階述語論理を用いたRAG におけるハルシネーション判定手法の検討" />
 
-<meta name="citation_author" content="牧野拓哉" />
+<meta name="citation_author" content="白木佑弥" />
+
+<meta name="citation_author" content="西田隼輔" />
+
+<meta name="citation_author" content="小林優佳" />
+
+<meta name="citation_author" content="永江尚義" />
+
+<meta name="citation_author" content="岩田憲治" />
+
+<meta name="citation_author" content="吉田尚水" />
 
 <meta name="citation_publication_date" content="None" />
 <meta name="citation_conference_title" content="None" />
 <meta name="citation_inbook_title" content="None" />
-<meta name="citation_abstract" content="スキルマッピングは職務記述書や履歴書中の文で言及されるオントロジーで定義されたスキルを特定する作業であり労働市場の分析に不可欠である．詳細な分析に必要な細分化されたスキルが付与された学習データを人手で構築するのは高いコストなため既存研究は Large Language Model (LLM)が生成した合成データが bi-encoder の学習に用いる．合成データを活用したさらなる精度改善のため，提案手法(𝑘NNBE)は推論時に学習に利用したラベル付き合成文を𝑘-nearest neighbor (𝑘NN)によって取得し入力文との類似度を bi-encoder のスコアに加える．実験により𝑘NNBE は bi-encoder の精度改善，さらに既存の最高精度を示す LLM でスキルをリランキングする手法と比較して高いスループットを維持しながら精度改善を確認した．" />
+<meta name="citation_abstract" content="近年,大規模言語モデル（Large Language Model:LLM）は様々なタスクで高い性能を示している一方で,事実と異なる情報を生成する「ハルシネーション」が課題となっている. RAG (Retrieval-AugmentedGeneration)においても, LLM が検索文書に基づかない回答をしてしまうことがある.本研究では, RAGの回答が検索文書に基づくかを一階述語論理で検証する手法を提案する.検索文書や回答をそのまま扱うだけでは,正確にハルシネーション判定できないことが多いため,一文一義となるように文を分割し,分割後の文を意味や関係性に基づいてグループ化する.実験の結果,従来手法と比較してハルシネーションの検知率(再現率)が 64.5%改善することを確認した." />
 
-<meta name="citation_keywords" content="P8:ポスター" />
+<meta name="citation_keywords" content="P8:形態素・構文解析 / 意味論・意味解析 / 文脈解析" />
 
 <meta name="citation_pdf_url" content="" />
 
@@ -209,19 +219,39 @@
 <div class="card m-3" style="">
   <div class="card-header">
     <h2 class="card-title main-title text-center" style="color: black">
-      Bi-encoder と 𝑘NN の組み合わせによる職務記述書に書かれた文のスキルマッピング
+      一階述語論理を用いたRAG におけるハルシネーション判定手法の検討
     </h2>
     <h3 class="card-subtitle mb-2 text-muted text-center">
       
-      <a href="papers.html?filter=authors&search=牧野拓哉&program=all" class="text-primary"
-        >牧野拓哉</a
+      <a href="papers.html?filter=authors&search=白木佑弥&program=all" class="text-primary"
+        >白木佑弥</a
+      >,
+      
+      <a href="papers.html?filter=authors&search=西田隼輔&program=all" class="text-primary"
+        >西田隼輔</a
+      >,
+      
+      <a href="papers.html?filter=authors&search=小林優佳&program=all" class="text-primary"
+        >小林優佳</a
+      >,
+      
+      <a href="papers.html?filter=authors&search=永江尚義&program=all" class="text-primary"
+        >永江尚義</a
+      >,
+      
+      <a href="papers.html?filter=authors&search=岩田憲治&program=all" class="text-primary"
+        >岩田憲治</a
+      >,
+      
+      <a href="papers.html?filter=authors&search=吉田尚水&program=all" class="text-primary"
+        >吉田尚水</a
       >
       
     </h3>
 
     <p class="card-text text-center h5">
       
-      <a href="papers.html?filter=keywords&search=P8:ポスター" class ="badge badge-pill badge-primary">P8:ポスター</a>
+      <a href="papers.html?filter=keywords&search=P8:形態素・構文解析 / 意味論・意味解析 / 文脈解析" class ="badge badge-pill badge-primary">P8:形態素・構文解析 / 意味論・意味解析 / 文脈解析</a>
       
 
       
@@ -229,7 +259,7 @@
    
     <div class="text-center p-3">
       
-      <a class="card-link link-info" target="_blank" href="https://www.anlp.jp/proceedings/annual_meeting/2025/pdf_dir/P8-21.pdf">
+      <a class="card-link link-info" target="_blank" href="https://www.anlp.jp/proceedings/annual_meeting/2026/pdf_dir/P8-21.pdf">
         📝 Paper 
       </a>
       
@@ -283,7 +313,7 @@
         <div class="card-text">
           <div id="abstractExample">
             <span class="font-weight-bold">Abstract:</span>
-            スキルマッピングは職務記述書や履歴書中の文で言及されるオントロジーで定義されたスキルを特定する作業であり労働市場の分析に不可欠である．詳細な分析に必要な細分化されたスキルが付与された学習データを人手で構築するのは高いコストなため既存研究は Large Language Model (LLM)が生成した合成データが bi-encoder の学習に用いる．合成データを活用したさらなる精度改善のため，提案手法(𝑘NNBE)は推論時に学習に利用したラベル付き合成文を𝑘-nearest neighbor (𝑘NN)によって取得し入力文との類似度を bi-encoder のスコアに加える．実験により𝑘NNBE は bi-encoder の精度改善，さらに既存の最高精度を示す LLM でスキルをリランキングする手法と比較して高いスループットを維持しながら精度改善を確認した．
+            近年,大規模言語モデル（Large Language Model:LLM）は様々なタスクで高い性能を示している一方で,事実と異なる情報を生成する「ハルシネーション」が課題となっている. RAG (Retrieval-AugmentedGeneration)においても, LLM が検索文書に基づかない回答をしてしまうことがある.本研究では, RAGの回答が検索文書に基づくかを一階述語論理で検証する手法を提案する.検索文書や回答をそのまま扱うだけでは,正確にハルシネーション判定できないことが多いため,一文一義となるように文を分割し,分割後の文を意味や関係性に基づいてグループ化する.実験の結果,従来手法と比較してハルシネーションの検知率(再現率)が 64.5%改善することを確認した.
           </div>
         </div>
       </div>
@@ -291,7 +321,7 @@
   </div>
   
   <div class="tab-pane fade" id="paper" role="tabpanel" aria-labelledby="paper-tab">
-    <embed src="https://www.anlp.jp/proceedings/annual_meeting/2025/pdf_dir/P8-21.pdf" type="application/pdf" width="100%" height="850px">
+    <embed src="https://www.anlp.jp/proceedings/annual_meeting/2026/pdf_dir/P8-21.pdf" type="application/pdf" width="100%" height="850px">
   </div>
   
   
@@ -334,7 +364,7 @@
         <p class="float-left">
           <img src="None" height="45px"
             width="auto" align="center">
-          <span class="lead">NLP2025</span>
+          <span class="lead">NLP2026</span>
         </p>
         <p class="float-right"><a href="#" class="text-dark">Back to Top</a></p>
         <p class="text-center">The title and abstract of the paper are licensed by the author(s) under CC BY 4.0<br>

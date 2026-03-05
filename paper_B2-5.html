@@ -64,20 +64,22 @@
   <script src="https://cdn.jsdelivr.net/npm/pdfjs-dist@2.3.200/build/pdf.min.js"></script>
   <script src="static/js/pdf_render.js"></script>
 
-  <title>NLP2025: 自然言語推論システムNeural DTSの学習アルゴリズムの実装</title>
+  <title>NLP2026: 大規模言語モデルの自己修正における「盲点」の定量化とタスク特性に応じた介入手法の分析</title>
   
-<meta name="citation_title" content="自然言語推論システムNeural DTSの学習アルゴリズムの実装" />
+<meta name="citation_title" content="大規模言語モデルの自己修正における「盲点」の定量化とタスク特性に応じた介入手法の分析" />
 
-<meta name="citation_author" content="飯沼瑞稀" />
+<meta name="citation_author" content="住友優真" />
 
-<meta name="citation_author" content="戸次大介" />
+<meta name="citation_author" content="吉田稔" />
+
+<meta name="citation_author" content="松本和幸" />
 
 <meta name="citation_publication_date" content="None" />
 <meta name="citation_conference_title" content="None" />
 <meta name="citation_inbook_title" content="None" />
-<meta name="citation_abstract" content="本研究では，依存型意味論(Dependent Type Seman-tics, DTS)を基盤とした自然言語推論システム NeuralDTS の学習アルゴリズムを実装し，その挙動を検証した．DTS は文の意味を型理論に基づいて厳密に表現する一方，曖昧な述語を表現したり，言語表現同士の類似度を計算したりすることはできない．この課題に対処するため，Bekki らにより提案されたNeural DTS の枠組みを基に，その学習アルゴリズムを実装した．また，自然言語文データセットで分類器の学習を行い，DTS の述語と名前を埋め込むことによって構築したニューラル判定器の性能を検証した．" />
+<meta name="citation_abstract" content="大規模言語モデル（LLM）は推論能力を向上させているが,一度生成した誤りに固執する傾向や,ユーザーの誤った前提に同調する脆弱性が指摘されている.本研究では,モデルが他者の誤りは指摘できるが自身の誤りは修正できない現象を「AI の盲点」と定義し,内部エラーと外部エラーの修正成功率の比を用いてこれを定量化する.論理推論（GSM8K）と常識推論（PIQA）を用いた評価の結果,自己修正を促す介入プロンプトの効果はタスクの性質によって逆転することを発見した.具体的には,論理タスクでは「再考命令」が有効であるのに対し,常識タスクでは「一時停止」が有効であり,疑問提示型は論理タスクにおいて逆効果となる.本研究は,単一の介入手法の限界を示し,タスク特性に応じた動的な介入戦略の必要性を実証的に明らかにするものである." />
 
-<meta name="citation_keywords" content="B2:計算・形式言語学(2)" />
+<meta name="citation_keywords" content="B2:NLPモデルの評価・安全性・信頼性" />
 
 <meta name="citation_pdf_url" content="" />
 
@@ -211,23 +213,27 @@
 <div class="card m-3" style="">
   <div class="card-header">
     <h2 class="card-title main-title text-center" style="color: black">
-      自然言語推論システムNeural DTSの学習アルゴリズムの実装
+      大規模言語モデルの自己修正における「盲点」の定量化とタスク特性に応じた介入手法の分析
     </h2>
     <h3 class="card-subtitle mb-2 text-muted text-center">
       
-      <a href="papers.html?filter=authors&search=飯沼瑞稀&program=all" class="text-primary"
-        >飯沼瑞稀</a
+      <a href="papers.html?filter=authors&search=住友優真&program=all" class="text-primary"
+        >住友優真</a
       >,
       
-      <a href="papers.html?filter=authors&search=戸次大介&program=all" class="text-primary"
-        >戸次大介</a
+      <a href="papers.html?filter=authors&search=吉田稔&program=all" class="text-primary"
+        >吉田稔</a
+      >,
+      
+      <a href="papers.html?filter=authors&search=松本和幸&program=all" class="text-primary"
+        >松本和幸</a
       >
       
     </h3>
 
     <p class="card-text text-center h5">
       
-      <a href="papers.html?filter=keywords&search=B2:計算・形式言語学(2)" class ="badge badge-pill badge-primary">B2:計算・形式言語学(2)</a>
+      <a href="papers.html?filter=keywords&search=B2:NLPモデルの評価・安全性・信頼性" class ="badge badge-pill badge-primary">B2:NLPモデルの評価・安全性・信頼性</a>
       
 
       
@@ -235,7 +241,7 @@
    
     <div class="text-center p-3">
       
-      <a class="card-link link-info" target="_blank" href="https://www.anlp.jp/proceedings/annual_meeting/2025/pdf_dir/B2-5.pdf">
+      <a class="card-link link-info" target="_blank" href="https://www.anlp.jp/proceedings/annual_meeting/2026/pdf_dir/B2-5.pdf">
         📝 Paper 
       </a>
       
@@ -289,7 +295,7 @@
         <div class="card-text">
           <div id="abstractExample">
             <span class="font-weight-bold">Abstract:</span>
-            本研究では，依存型意味論(Dependent Type Seman-tics, DTS)を基盤とした自然言語推論システム NeuralDTS の学習アルゴリズムを実装し，その挙動を検証した．DTS は文の意味を型理論に基づいて厳密に表現する一方，曖昧な述語を表現したり，言語表現同士の類似度を計算したりすることはできない．この課題に対処するため，Bekki らにより提案されたNeural DTS の枠組みを基に，その学習アルゴリズムを実装した．また，自然言語文データセットで分類器の学習を行い，DTS の述語と名前を埋め込むことによって構築したニューラル判定器の性能を検証した．
+            大規模言語モデル（LLM）は推論能力を向上させているが,一度生成した誤りに固執する傾向や,ユーザーの誤った前提に同調する脆弱性が指摘されている.本研究では,モデルが他者の誤りは指摘できるが自身の誤りは修正できない現象を「AI の盲点」と定義し,内部エラーと外部エラーの修正成功率の比を用いてこれを定量化する.論理推論（GSM8K）と常識推論（PIQA）を用いた評価の結果,自己修正を促す介入プロンプトの効果はタスクの性質によって逆転することを発見した.具体的には,論理タスクでは「再考命令」が有効であるのに対し,常識タスクでは「一時停止」が有効であり,疑問提示型は論理タスクにおいて逆効果となる.本研究は,単一の介入手法の限界を示し,タスク特性に応じた動的な介入戦略の必要性を実証的に明らかにするものである.
           </div>
         </div>
       </div>
@@ -297,7 +303,7 @@
   </div>
   
   <div class="tab-pane fade" id="paper" role="tabpanel" aria-labelledby="paper-tab">
-    <embed src="https://www.anlp.jp/proceedings/annual_meeting/2025/pdf_dir/B2-5.pdf" type="application/pdf" width="100%" height="850px">
+    <embed src="https://www.anlp.jp/proceedings/annual_meeting/2026/pdf_dir/B2-5.pdf" type="application/pdf" width="100%" height="850px">
   </div>
   
   
@@ -340,7 +346,7 @@
         <p class="float-left">
           <img src="None" height="45px"
             width="auto" align="center">
-          <span class="lead">NLP2025</span>
+          <span class="lead">NLP2026</span>
         </p>
         <p class="float-right"><a href="#" class="text-dark">Back to Top</a></p>
         <p class="text-center">The title and abstract of the paper are licensed by the author(s) under CC BY 4.0<br>

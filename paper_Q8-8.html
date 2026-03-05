@@ -64,20 +64,20 @@
   <script src="https://cdn.jsdelivr.net/npm/pdfjs-dist@2.3.200/build/pdf.min.js"></script>
   <script src="static/js/pdf_render.js"></script>
 
-  <title>NLP2025: 法令文解析に適した事前学習モデルの構築</title>
+  <title>NLP2026: 語彙・語尾マーカーに基づく関西方言の地域推定</title>
   
-<meta name="citation_title" content="法令文解析に適した事前学習モデルの構築" />
+<meta name="citation_title" content="語彙・語尾マーカーに基づく関西方言の地域推定" />
 
-<meta name="citation_author" content="渋谷太朗" />
+<meta name="citation_author" content="藤田フェリペ" />
 
-<meta name="citation_author" content="中村誠" />
+<meta name="citation_author" content="高田秀志" />
 
 <meta name="citation_publication_date" content="None" />
 <meta name="citation_conference_title" content="None" />
 <meta name="citation_inbook_title" content="None" />
-<meta name="citation_abstract" content="比較法学研究を推進するために日本法と外国法の類似条項を対応付ける研究が行われている．その手法の一つに汎用言語モデルである BERT が使われている[1]．これにより，事前学習と fine-tuning の組み合わせで End-to-end 学習を可能とする．法令分野の事前学習モデルは既にいくつかある[2，7]が，判例など法令以外の文書もコーパスに含まれており，法令のみをコーパスとした BERT モデルは存在せず，高精度な法令解析を行うには，法令のみをコーパスとした BERT モデルが必要となる．したがって，本研究の目的は，日本の法令文解析に適した事前学習モデルを構築することである．法令のみをコーパスとした事前学習モデルを二通り作成し，各モデルの言語理解能力，外国法対応付け能力をテストした．結果として，F1 値で東北大学が発表した，日本語汎用事前学習モデル（以降，東北大 BERTi）を上回る性能を示した．" />
+<meta name="citation_abstract" content="関西方言は一般に「関西弁」として一括りにされがちであるが，実際には話者の出身地域に応じて，語彙・語尾・言い回しといった言語特徴が隣接地域間で徐々に変化することがある．本研究では，このような地域差を捉えることを目的として，関西圏の短単位話者テキストから言語的特徴量を設計し，4つの地域ラベルに対する地域推定手法を構築する．分類の結果，正解率 0.783（F1 値 0.706）を達成し，終助詞や「ねん」「やん」などの語尾マーカーが識別に大きく寄与することを確認した．" />
 
-<meta name="citation_keywords" content="Q8:ポスター" />
+<meta name="citation_keywords" content="Q8:計算・形式言語学 / 心理言語学・認知モデリング / 発達言語学・言語教育学 / 社会・フィールド言語学 / その他の言語学" />
 
 <meta name="citation_pdf_url" content="" />
 
@@ -211,23 +211,23 @@
 <div class="card m-3" style="">
   <div class="card-header">
     <h2 class="card-title main-title text-center" style="color: black">
-      法令文解析に適した事前学習モデルの構築
+      語彙・語尾マーカーに基づく関西方言の地域推定
     </h2>
     <h3 class="card-subtitle mb-2 text-muted text-center">
       
-      <a href="papers.html?filter=authors&search=渋谷太朗&program=all" class="text-primary"
-        >渋谷太朗</a
+      <a href="papers.html?filter=authors&search=藤田フェリペ&program=all" class="text-primary"
+        >藤田フェリペ</a
       >,
       
-      <a href="papers.html?filter=authors&search=中村誠&program=all" class="text-primary"
-        >中村誠</a
+      <a href="papers.html?filter=authors&search=高田秀志&program=all" class="text-primary"
+        >高田秀志</a
       >
       
     </h3>
 
     <p class="card-text text-center h5">
       
-      <a href="papers.html?filter=keywords&search=Q8:ポスター" class ="badge badge-pill badge-primary">Q8:ポスター</a>
+      <a href="papers.html?filter=keywords&search=Q8:計算・形式言語学 / 心理言語学・認知モデリング / 発達言語学・言語教育学 / 社会・フィールド言語学 / その他の言語学" class ="badge badge-pill badge-primary">Q8:計算・形式言語学 / 心理言語学・認知モデリング / 発達言語学・言語教育学 / 社会・フィールド言語学 / その他の言語学</a>
       
 
       
@@ -235,7 +235,7 @@
    
     <div class="text-center p-3">
       
-      <a class="card-link link-info" target="_blank" href="https://www.anlp.jp/proceedings/annual_meeting/2025/pdf_dir/Q8-8.pdf">
+      <a class="card-link link-info" target="_blank" href="https://www.anlp.jp/proceedings/annual_meeting/2026/pdf_dir/Q8-8.pdf">
         📝 Paper 
       </a>
       
@@ -289,7 +289,7 @@
         <div class="card-text">
           <div id="abstractExample">
             <span class="font-weight-bold">Abstract:</span>
-            比較法学研究を推進するために日本法と外国法の類似条項を対応付ける研究が行われている．その手法の一つに汎用言語モデルである BERT が使われている[1]．これにより，事前学習と fine-tuning の組み合わせで End-to-end 学習を可能とする．法令分野の事前学習モデルは既にいくつかある[2，7]が，判例など法令以外の文書もコーパスに含まれており，法令のみをコーパスとした BERT モデルは存在せず，高精度な法令解析を行うには，法令のみをコーパスとした BERT モデルが必要となる．したがって，本研究の目的は，日本の法令文解析に適した事前学習モデルを構築することである．法令のみをコーパスとした事前学習モデルを二通り作成し，各モデルの言語理解能力，外国法対応付け能力をテストした．結果として，F1 値で東北大学が発表した，日本語汎用事前学習モデル（以降，東北大 BERTi）を上回る性能を示した．
+            関西方言は一般に「関西弁」として一括りにされがちであるが，実際には話者の出身地域に応じて，語彙・語尾・言い回しといった言語特徴が隣接地域間で徐々に変化することがある．本研究では，このような地域差を捉えることを目的として，関西圏の短単位話者テキストから言語的特徴量を設計し，4つの地域ラベルに対する地域推定手法を構築する．分類の結果，正解率 0.783（F1 値 0.706）を達成し，終助詞や「ねん」「やん」などの語尾マーカーが識別に大きく寄与することを確認した．
           </div>
         </div>
       </div>
@@ -297,7 +297,7 @@
   </div>
   
   <div class="tab-pane fade" id="paper" role="tabpanel" aria-labelledby="paper-tab">
-    <embed src="https://www.anlp.jp/proceedings/annual_meeting/2025/pdf_dir/Q8-8.pdf" type="application/pdf" width="100%" height="850px">
+    <embed src="https://www.anlp.jp/proceedings/annual_meeting/2026/pdf_dir/Q8-8.pdf" type="application/pdf" width="100%" height="850px">
   </div>
   
   
@@ -340,7 +340,7 @@
         <p class="float-left">
           <img src="None" height="45px"
             width="auto" align="center">
-          <span class="lead">NLP2025</span>
+          <span class="lead">NLP2026</span>
         </p>
         <p class="float-right"><a href="#" class="text-dark">Back to Top</a></p>
         <p class="text-center">The title and abstract of the paper are licensed by the author(s) under CC BY 4.0<br>

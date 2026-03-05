@@ -64,20 +64,28 @@
   <script src="https://cdn.jsdelivr.net/npm/pdfjs-dist@2.3.200/build/pdf.min.js"></script>
   <script src="static/js/pdf_render.js"></script>
 
-  <title>NLP2025: 法令文の可読性向上のための定義規定・略称規定における文型定義及びパターンベースの正式名称・略称抽出手法</title>
+  <title>NLP2026: 疎な言語固有の次元の同定およびそれを用いた大規模言語モデルの多言語生成制御</title>
   
-<meta name="citation_title" content="法令文の可読性向上のための定義規定・略称規定における文型定義及びパターンベースの正式名称・略称抽出手法" />
+<meta name="citation_title" content="疎な言語固有の次元の同定およびそれを用いた大規模言語モデルの多言語生成制御" />
 
-<meta name="citation_author" content="北野尚樹" />
+<meta name="citation_author" content="◊鐘承志" />
 
-<meta name="citation_author" content="西山大輝" />
+<meta name="citation_author" content="程飛" />
+
+<meta name="citation_author" content="劉倩瑩" />
+
+<meta name="citation_author" content="村脇有吾" />
+
+<meta name="citation_author" content="ChenhuiChu" />
+
+<meta name="citation_author" content="黒橋禎夫" />
 
 <meta name="citation_publication_date" content="None" />
 <meta name="citation_conference_title" content="None" />
 <meta name="citation_inbook_title" content="None" />
-<meta name="citation_abstract" content="法令文では定義規定・略称規定が頻繁に使用されている（例：新型インフルエンザ等対策の推進を図るため、内閣に、新型インフルエンザ等対策推進会議（以下「会議」という。）を置く。）．これらの規定文は複雑になりやすく，読者の混乱や負担を生じさせうる．そこで本研究では，既存法では不十分であった定義規定・略称規定に関する文型を導入し，これに基づき正式名称と略称のペアを抽出するパターンベースの手法を提案する．結果，提案法は複雑な構造や文型に対応し，既存の手法や大規模言語モデルとの比較で高い精度を達成した．また，今後の法令解析研究の促進のために，実験で使用した正式名称と略称のペアのデータセットを公開する．" />
+<meta name="citation_abstract" content="英語中心に事前学習された大規模言語モデルは，限られた非英語データにもかかわらず高い多言語能力を示す.先行研究では，Transformer の中間層で英語の表現が形成され，最終層で目的言語へ投影される段階的な表現遷移が報告されている.本研究では，この言語間遷移が少数かつ疎な言語固有の次元によって制御されるという仮説を立てる.この仮説に基づき，わずか 50 文の単言語または対訳文のみを用いて言語固有の次元を同定し，推論時にそれらの次元のみを操作して言語を制御する学習不要な手法を提案する.多言語生成制御タスクにおける実験により，提案手法は意味を保ったまま出力言語を切り替え，既存のニューロン操作手法による言語生成制御を一貫して上回る性能を示すことを確認した." />
 
-<meta name="citation_keywords" content="B6:知識獲得・情報抽出(1)" />
+<meta name="citation_keywords" content="B6:NLPモデルの解釈可能性・分析" />
 
 <meta name="citation_pdf_url" content="" />
 
@@ -211,23 +219,39 @@
 <div class="card m-3" style="">
   <div class="card-header">
     <h2 class="card-title main-title text-center" style="color: black">
-      法令文の可読性向上のための定義規定・略称規定における文型定義及びパターンベースの正式名称・略称抽出手法
+      疎な言語固有の次元の同定およびそれを用いた大規模言語モデルの多言語生成制御
     </h2>
     <h3 class="card-subtitle mb-2 text-muted text-center">
       
-      <a href="papers.html?filter=authors&search=北野尚樹&program=all" class="text-primary"
-        >北野尚樹</a
+      <a href="papers.html?filter=authors&search=◊鐘承志&program=all" class="text-primary"
+        >◊鐘承志</a
       >,
       
-      <a href="papers.html?filter=authors&search=西山大輝&program=all" class="text-primary"
-        >西山大輝</a
+      <a href="papers.html?filter=authors&search=程飛&program=all" class="text-primary"
+        >程飛</a
+      >,
+      
+      <a href="papers.html?filter=authors&search=劉倩瑩&program=all" class="text-primary"
+        >劉倩瑩</a
+      >,
+      
+      <a href="papers.html?filter=authors&search=村脇有吾&program=all" class="text-primary"
+        >村脇有吾</a
+      >,
+      
+      <a href="papers.html?filter=authors&search=ChenhuiChu&program=all" class="text-primary"
+        >ChenhuiChu</a
+      >,
+      
+      <a href="papers.html?filter=authors&search=黒橋禎夫&program=all" class="text-primary"
+        >黒橋禎夫</a
       >
       
     </h3>
 
     <p class="card-text text-center h5">
       
-      <a href="papers.html?filter=keywords&search=B6:知識獲得・情報抽出(1)" class ="badge badge-pill badge-primary">B6:知識獲得・情報抽出(1)</a>
+      <a href="papers.html?filter=keywords&search=B6:NLPモデルの解釈可能性・分析" class ="badge badge-pill badge-primary">B6:NLPモデルの解釈可能性・分析</a>
       
 
       
@@ -235,7 +259,7 @@
    
     <div class="text-center p-3">
       
-      <a class="card-link link-info" target="_blank" href="https://www.anlp.jp/proceedings/annual_meeting/2025/pdf_dir/B6-5.pdf">
+      <a class="card-link link-info" target="_blank" href="https://www.anlp.jp/proceedings/annual_meeting/2026/pdf_dir/B6-5.pdf">
         📝 Paper 
       </a>
       
@@ -289,7 +313,7 @@
         <div class="card-text">
           <div id="abstractExample">
             <span class="font-weight-bold">Abstract:</span>
-            法令文では定義規定・略称規定が頻繁に使用されている（例：新型インフルエンザ等対策の推進を図るため、内閣に、新型インフルエンザ等対策推進会議（以下「会議」という。）を置く。）．これらの規定文は複雑になりやすく，読者の混乱や負担を生じさせうる．そこで本研究では，既存法では不十分であった定義規定・略称規定に関する文型を導入し，これに基づき正式名称と略称のペアを抽出するパターンベースの手法を提案する．結果，提案法は複雑な構造や文型に対応し，既存の手法や大規模言語モデルとの比較で高い精度を達成した．また，今後の法令解析研究の促進のために，実験で使用した正式名称と略称のペアのデータセットを公開する．
+            英語中心に事前学習された大規模言語モデルは，限られた非英語データにもかかわらず高い多言語能力を示す.先行研究では，Transformer の中間層で英語の表現が形成され，最終層で目的言語へ投影される段階的な表現遷移が報告されている.本研究では，この言語間遷移が少数かつ疎な言語固有の次元によって制御されるという仮説を立てる.この仮説に基づき，わずか 50 文の単言語または対訳文のみを用いて言語固有の次元を同定し，推論時にそれらの次元のみを操作して言語を制御する学習不要な手法を提案する.多言語生成制御タスクにおける実験により，提案手法は意味を保ったまま出力言語を切り替え，既存のニューロン操作手法による言語生成制御を一貫して上回る性能を示すことを確認した.
           </div>
         </div>
       </div>
@@ -297,7 +321,7 @@
   </div>
   
   <div class="tab-pane fade" id="paper" role="tabpanel" aria-labelledby="paper-tab">
-    <embed src="https://www.anlp.jp/proceedings/annual_meeting/2025/pdf_dir/B6-5.pdf" type="application/pdf" width="100%" height="850px">
+    <embed src="https://www.anlp.jp/proceedings/annual_meeting/2026/pdf_dir/B6-5.pdf" type="application/pdf" width="100%" height="850px">
   </div>
   
   
@@ -340,7 +364,7 @@
         <p class="float-left">
           <img src="None" height="45px"
             width="auto" align="center">
-          <span class="lead">NLP2025</span>
+          <span class="lead">NLP2026</span>
         </p>
         <p class="float-right"><a href="#" class="text-dark">Back to Top</a></p>
         <p class="text-center">The title and abstract of the paper are licensed by the author(s) under CC BY 4.0<br>

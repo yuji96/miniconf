@@ -64,24 +64,22 @@
   <script src="https://cdn.jsdelivr.net/npm/pdfjs-dist@2.3.200/build/pdf.min.js"></script>
   <script src="static/js/pdf_render.js"></script>
 
-  <title>NLP2025: 量子計算を用いたダイレクトモデル</title>
+  <title>NLP2026: 人材領域特化のLLM教師付き長文BERT埋め込みモデルの構築</title>
   
-<meta name="citation_title" content="量子計算を用いたダイレクトモデル" />
+<meta name="citation_title" content="人材領域特化のLLM教師付き長文BERT埋め込みモデルの構築" />
 
-<meta name="citation_author" content="三輪拓真" />
+<meta name="citation_author" content="原龍昊" />
 
-<meta name="citation_author" content="小田悠介" />
+<meta name="citation_author" content="長谷川崇" />
 
-<meta name="citation_author" content="河野誠也" />
-
-<meta name="citation_author" content="吉野幸一郎" />
+<meta name="citation_author" content="DatNguyen" />
 
 <meta name="citation_publication_date" content="None" />
 <meta name="citation_conference_title" content="None" />
 <meta name="citation_inbook_title" content="None" />
-<meta name="citation_abstract" content="複数のモジュールでの処理を順次通過するようなタスクでの一般的な実装として，カスケードモデルと End-to-End モデルが存在する．カスケードモデルは汎用性が高く，学習データも豊富に存在する一方で，中間出力において情報が一部欠損してしまう．End-to-End モデルは入力から最終出力まで一貫して計算を行うため中間出力における情報欠損が少ないが，既存の訓練データが少なく，学習コストが高い．本研究では両者の課題にアプローチするため，量子計算の性質に着目した．量子計算を用いた量子機械学習モデルをそれぞれ独立に訓練し，推論時のみ回路を結合させることで，量子状態の観測を行わずに中間出力の受け渡しを行う．古典コンピュータに比べて豊富な表現力を持つ量子ビットを中間出力に用いることで，モデル間の情報欠損を抑制する．本研究では対話状態追跡タスクを用いて提案法の検証を行い，今後の課題について考察を示した．" />
+<meta name="citation_abstract" content="大規模言語モデル（LLM）は高精度なテキスト理解を実現する一方，大量の文書処理では推論コストと応答速度が課題となり，外部 API 利用時にはデータ送信に伴うセキュリティ懸念も生じる．本研究では，LLM を教師とした知識蒸留（Knowl-edge Distillation）により，求人マッチングの機会創出に特化した高性能かつ軽量な BERT 埋め込みモデルを構築する手法を提案する．提案手法では，企業内で蓄積された求人文書のテキストペアに対してLLM を用い意味的類似度スコアを付与し，生成された大規模ソフトラベルデータセットで長文処理に特化した BERT モデルを訓練する．評価実験の結果，提案モデルは総合性能で最高値を達成し，OSS埋め込みモデルを大幅に上回り，OpenAI EmbeddingAPI とも同等以上の性能を示すことを確認した．" />
 
-<meta name="citation_keywords" content="C7:音声言語処理" />
+<meta name="citation_keywords" content="C7:知識獲得・情報抽出 / 機械学習 / LLM構築" />
 
 <meta name="citation_pdf_url" content="" />
 
@@ -215,31 +213,27 @@
 <div class="card m-3" style="">
   <div class="card-header">
     <h2 class="card-title main-title text-center" style="color: black">
-      量子計算を用いたダイレクトモデル
+      人材領域特化のLLM教師付き長文BERT埋め込みモデルの構築
     </h2>
     <h3 class="card-subtitle mb-2 text-muted text-center">
       
-      <a href="papers.html?filter=authors&search=三輪拓真&program=all" class="text-primary"
-        >三輪拓真</a
+      <a href="papers.html?filter=authors&search=原龍昊&program=all" class="text-primary"
+        >原龍昊</a
       >,
       
-      <a href="papers.html?filter=authors&search=小田悠介&program=all" class="text-primary"
-        >小田悠介</a
+      <a href="papers.html?filter=authors&search=長谷川崇&program=all" class="text-primary"
+        >長谷川崇</a
       >,
       
-      <a href="papers.html?filter=authors&search=河野誠也&program=all" class="text-primary"
-        >河野誠也</a
-      >,
-      
-      <a href="papers.html?filter=authors&search=吉野幸一郎&program=all" class="text-primary"
-        >吉野幸一郎</a
+      <a href="papers.html?filter=authors&search=DatNguyen&program=all" class="text-primary"
+        >DatNguyen</a
       >
       
     </h3>
 
     <p class="card-text text-center h5">
       
-      <a href="papers.html?filter=keywords&search=C7:音声言語処理" class ="badge badge-pill badge-primary">C7:音声言語処理</a>
+      <a href="papers.html?filter=keywords&search=C7:知識獲得・情報抽出 / 機械学習 / LLM構築" class ="badge badge-pill badge-primary">C7:知識獲得・情報抽出 / 機械学習 / LLM構築</a>
       
 
       
@@ -247,7 +241,7 @@
    
     <div class="text-center p-3">
       
-      <a class="card-link link-info" target="_blank" href="https://www.anlp.jp/proceedings/annual_meeting/2025/pdf_dir/C7-6.pdf">
+      <a class="card-link link-info" target="_blank" href="https://www.anlp.jp/proceedings/annual_meeting/2026/pdf_dir/C7-6.pdf">
         📝 Paper 
       </a>
       
@@ -301,7 +295,7 @@
         <div class="card-text">
           <div id="abstractExample">
             <span class="font-weight-bold">Abstract:</span>
-            複数のモジュールでの処理を順次通過するようなタスクでの一般的な実装として，カスケードモデルと End-to-End モデルが存在する．カスケードモデルは汎用性が高く，学習データも豊富に存在する一方で，中間出力において情報が一部欠損してしまう．End-to-End モデルは入力から最終出力まで一貫して計算を行うため中間出力における情報欠損が少ないが，既存の訓練データが少なく，学習コストが高い．本研究では両者の課題にアプローチするため，量子計算の性質に着目した．量子計算を用いた量子機械学習モデルをそれぞれ独立に訓練し，推論時のみ回路を結合させることで，量子状態の観測を行わずに中間出力の受け渡しを行う．古典コンピュータに比べて豊富な表現力を持つ量子ビットを中間出力に用いることで，モデル間の情報欠損を抑制する．本研究では対話状態追跡タスクを用いて提案法の検証を行い，今後の課題について考察を示した．
+            大規模言語モデル（LLM）は高精度なテキスト理解を実現する一方，大量の文書処理では推論コストと応答速度が課題となり，外部 API 利用時にはデータ送信に伴うセキュリティ懸念も生じる．本研究では，LLM を教師とした知識蒸留（Knowl-edge Distillation）により，求人マッチングの機会創出に特化した高性能かつ軽量な BERT 埋め込みモデルを構築する手法を提案する．提案手法では，企業内で蓄積された求人文書のテキストペアに対してLLM を用い意味的類似度スコアを付与し，生成された大規模ソフトラベルデータセットで長文処理に特化した BERT モデルを訓練する．評価実験の結果，提案モデルは総合性能で最高値を達成し，OSS埋め込みモデルを大幅に上回り，OpenAI EmbeddingAPI とも同等以上の性能を示すことを確認した．
           </div>
         </div>
       </div>
@@ -309,7 +303,7 @@
   </div>
   
   <div class="tab-pane fade" id="paper" role="tabpanel" aria-labelledby="paper-tab">
-    <embed src="https://www.anlp.jp/proceedings/annual_meeting/2025/pdf_dir/C7-6.pdf" type="application/pdf" width="100%" height="850px">
+    <embed src="https://www.anlp.jp/proceedings/annual_meeting/2026/pdf_dir/C7-6.pdf" type="application/pdf" width="100%" height="850px">
   </div>
   
   
@@ -352,7 +346,7 @@
         <p class="float-left">
           <img src="None" height="45px"
             width="auto" align="center">
-          <span class="lead">NLP2025</span>
+          <span class="lead">NLP2026</span>
         </p>
         <p class="float-right"><a href="#" class="text-dark">Back to Top</a></p>
         <p class="text-center">The title and abstract of the paper are licensed by the author(s) under CC BY 4.0<br>

@@ -64,32 +64,20 @@
   <script src="https://cdn.jsdelivr.net/npm/pdfjs-dist@2.3.200/build/pdf.min.js"></script>
   <script src="static/js/pdf_render.js"></script>
 
-  <title>NLP2025: リザバー計算に触発された軽量型Transformer の提案：パラメタ共有を用いた計算の効率化と性能評価</title>
+  <title>NLP2026: 高精度翻訳モデルのための自動評価手法の検討</title>
   
-<meta name="citation_title" content="リザバー計算に触発された軽量型Transformer の提案：パラメタ共有を用いた計算の効率化と性能評価" />
+<meta name="citation_title" content="高精度翻訳モデルのための自動評価手法の検討" />
 
-<meta name="citation_author" content="中村仁" />
+<meta name="citation_author" content="今城健太郎" />
 
-<meta name="citation_author" content="加藤万理子" />
-
-<meta name="citation_author" content="黒岩蒼太郎" />
-
-<meta name="citation_author" content="崎野也真人" />
-
-<meta name="citation_author" content="田中剛平" />
-
-<meta name="citation_author" content="山下洋史" />
-
-<meta name="citation_author" content="鈴木秀幸" />
-
-<meta name="citation_author" content="白坂将" />
+<meta name="citation_author" content="平野正徳" />
 
 <meta name="citation_publication_date" content="None" />
 <meta name="citation_conference_title" content="None" />
 <meta name="citation_inbook_title" content="None" />
-<meta name="citation_abstract" content="近年，Transformer は多様な NLP タスクで卓越した性能を示す一方，大規模化による計算資源コストの増大が深刻な課題となっている．本研究では，リザバー計算の仕組みに着想し，Transformer の Encoderをなす Encoder ブロックの大部分を固定層（リザバー層），残余ブロックを学習層とすると同時に，固定層・学習層それぞれにおける層間完全パラメタ共有を組み合わせた軽量アーキテクチャを提案する．提案手法により，学習パラメタと更新コストを大幅に削減した．独英翻訳タスクでは，15%超のパラメタ削減にもかかわらず BLEU スコアを約 28 に維持し，学習収束レートをを考慮した性能指標においても従来手法を上回る性能を示した．さらに，本アーキテクチャは離散力学系として解釈でき，高次元非線形変換の再帰的適用によって翻訳に有効な特徴が獲得される可能性を示唆する．本成果は，NLP と非線形ダイナミクスの結節点として新たな視点を提供するものであり，言語モデルにおける情報表現の理解や省メモリ設計に寄与することが期待される．" />
+<meta name="citation_abstract" content="機械翻訳システムの品質向上に伴い、高精度なモデルにおいて、モデル間の性能差を識別することが難しくなっている。そこで、本研究では、高精度なモデルに対しても十分な分解能を持ち、再現性と計算効率に優れる表層マッチング型評価手法を検討する。まず、英和・和英それぞれ約 150 語程度の原文 50 件に対し、評価対象のモデルによって生成された翻訳文群を作成した。このデータセットを評価軸として、新たな表層マッチング指標について検討した。提案指標は、言語非依存性のため文字𝑛-gram特徴量を用い、言い換えの多様性を吸収するため多数の参照訳を活用する。最大 1,000 件の生成参照訳を用いた評価では、参照訳の数の増加に伴い提案指標は一貫して性能向上を示し、BLEU および chrF を上回った。また、LLM を活用しつつ人手で作成した高品質参照訳を用いた実験では、提案指標を含む表層マッチング指標が、WMT24 で上位の指標である MetricX-24 より高い順位相関を示した。これらの結果から、表層マッチングに基づく軽量かつ安定した自動評価が可能であることが示唆された。" />
 
-<meta name="citation_keywords" content="C8:NLPのための効率的/低リソース手法" />
+<meta name="citation_keywords" content="C8:LLM構築 / 機械翻訳" />
 
 <meta name="citation_pdf_url" content="" />
 
@@ -223,47 +211,23 @@
 <div class="card m-3" style="">
   <div class="card-header">
     <h2 class="card-title main-title text-center" style="color: black">
-      リザバー計算に触発された軽量型Transformer の提案：パラメタ共有を用いた計算の効率化と性能評価
+      高精度翻訳モデルのための自動評価手法の検討
     </h2>
     <h3 class="card-subtitle mb-2 text-muted text-center">
       
-      <a href="papers.html?filter=authors&search=中村仁&program=all" class="text-primary"
-        >中村仁</a
+      <a href="papers.html?filter=authors&search=今城健太郎&program=all" class="text-primary"
+        >今城健太郎</a
       >,
       
-      <a href="papers.html?filter=authors&search=加藤万理子&program=all" class="text-primary"
-        >加藤万理子</a
-      >,
-      
-      <a href="papers.html?filter=authors&search=黒岩蒼太郎&program=all" class="text-primary"
-        >黒岩蒼太郎</a
-      >,
-      
-      <a href="papers.html?filter=authors&search=崎野也真人&program=all" class="text-primary"
-        >崎野也真人</a
-      >,
-      
-      <a href="papers.html?filter=authors&search=田中剛平&program=all" class="text-primary"
-        >田中剛平</a
-      >,
-      
-      <a href="papers.html?filter=authors&search=山下洋史&program=all" class="text-primary"
-        >山下洋史</a
-      >,
-      
-      <a href="papers.html?filter=authors&search=鈴木秀幸&program=all" class="text-primary"
-        >鈴木秀幸</a
-      >,
-      
-      <a href="papers.html?filter=authors&search=白坂将&program=all" class="text-primary"
-        >白坂将</a
+      <a href="papers.html?filter=authors&search=平野正徳&program=all" class="text-primary"
+        >平野正徳</a
       >
       
     </h3>
 
     <p class="card-text text-center h5">
       
-      <a href="papers.html?filter=keywords&search=C8:NLPのための効率的/低リソース手法" class ="badge badge-pill badge-primary">C8:NLPのための効率的/低リソース手法</a>
+      <a href="papers.html?filter=keywords&search=C8:LLM構築 / 機械翻訳" class ="badge badge-pill badge-primary">C8:LLM構築 / 機械翻訳</a>
       
 
       
@@ -271,7 +235,7 @@
    
     <div class="text-center p-3">
       
-      <a class="card-link link-info" target="_blank" href="https://www.anlp.jp/proceedings/annual_meeting/2025/pdf_dir/C8-1.pdf">
+      <a class="card-link link-info" target="_blank" href="https://www.anlp.jp/proceedings/annual_meeting/2026/pdf_dir/C8-1.pdf">
         📝 Paper 
       </a>
       
@@ -325,7 +289,7 @@
         <div class="card-text">
           <div id="abstractExample">
             <span class="font-weight-bold">Abstract:</span>
-            近年，Transformer は多様な NLP タスクで卓越した性能を示す一方，大規模化による計算資源コストの増大が深刻な課題となっている．本研究では，リザバー計算の仕組みに着想し，Transformer の Encoderをなす Encoder ブロックの大部分を固定層（リザバー層），残余ブロックを学習層とすると同時に，固定層・学習層それぞれにおける層間完全パラメタ共有を組み合わせた軽量アーキテクチャを提案する．提案手法により，学習パラメタと更新コストを大幅に削減した．独英翻訳タスクでは，15%超のパラメタ削減にもかかわらず BLEU スコアを約 28 に維持し，学習収束レートをを考慮した性能指標においても従来手法を上回る性能を示した．さらに，本アーキテクチャは離散力学系として解釈でき，高次元非線形変換の再帰的適用によって翻訳に有効な特徴が獲得される可能性を示唆する．本成果は，NLP と非線形ダイナミクスの結節点として新たな視点を提供するものであり，言語モデルにおける情報表現の理解や省メモリ設計に寄与することが期待される．
+            機械翻訳システムの品質向上に伴い、高精度なモデルにおいて、モデル間の性能差を識別することが難しくなっている。そこで、本研究では、高精度なモデルに対しても十分な分解能を持ち、再現性と計算効率に優れる表層マッチング型評価手法を検討する。まず、英和・和英それぞれ約 150 語程度の原文 50 件に対し、評価対象のモデルによって生成された翻訳文群を作成した。このデータセットを評価軸として、新たな表層マッチング指標について検討した。提案指標は、言語非依存性のため文字𝑛-gram特徴量を用い、言い換えの多様性を吸収するため多数の参照訳を活用する。最大 1,000 件の生成参照訳を用いた評価では、参照訳の数の増加に伴い提案指標は一貫して性能向上を示し、BLEU および chrF を上回った。また、LLM を活用しつつ人手で作成した高品質参照訳を用いた実験では、提案指標を含む表層マッチング指標が、WMT24 で上位の指標である MetricX-24 より高い順位相関を示した。これらの結果から、表層マッチングに基づく軽量かつ安定した自動評価が可能であることが示唆された。
           </div>
         </div>
       </div>
@@ -333,7 +297,7 @@
   </div>
   
   <div class="tab-pane fade" id="paper" role="tabpanel" aria-labelledby="paper-tab">
-    <embed src="https://www.anlp.jp/proceedings/annual_meeting/2025/pdf_dir/C8-1.pdf" type="application/pdf" width="100%" height="850px">
+    <embed src="https://www.anlp.jp/proceedings/annual_meeting/2026/pdf_dir/C8-1.pdf" type="application/pdf" width="100%" height="850px">
   </div>
   
   
@@ -376,7 +340,7 @@
         <p class="float-left">
           <img src="None" height="45px"
             width="auto" align="center">
-          <span class="lead">NLP2025</span>
+          <span class="lead">NLP2026</span>
         </p>
         <p class="float-right"><a href="#" class="text-dark">Back to Top</a></p>
         <p class="text-center">The title and abstract of the paper are licensed by the author(s) under CC BY 4.0<br>

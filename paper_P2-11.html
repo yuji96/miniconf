@@ -64,26 +64,24 @@
   <script src="https://cdn.jsdelivr.net/npm/pdfjs-dist@2.3.200/build/pdf.min.js"></script>
   <script src="static/js/pdf_render.js"></script>
 
-  <title>NLP2025: 誤字に対するTransformerベースLLMのニューロンおよびヘッドの役割調査</title>
+  <title>NLP2026: 大規模言語モデルを用いた索引語の自動付与</title>
   
-<meta name="citation_title" content="誤字に対するTransformerベースLLMのニューロンおよびヘッドの役割調査" />
+<meta name="citation_title" content="大規模言語モデルを用いた索引語の自動付与" />
 
-<meta name="citation_author" content="辻航平" />
+<meta name="citation_author" content="菊井玄一郎" />
 
-<meta name="citation_author" content="平岡達也" />
+<meta name="citation_author" content="鈴木慶二" />
 
-<meta name="citation_author" content="鄭育昌" />
+<meta name="citation_author" content="関根基樹" />
 
-<meta name="citation_author" content="荒牧英治" />
-
-<meta name="citation_author" content="岩倉友哉" />
+<meta name="citation_author" content="水田寿雄" />
 
 <meta name="citation_publication_date" content="None" />
 <meta name="citation_conference_title" content="None" />
 <meta name="citation_inbook_title" content="None" />
-<meta name="citation_abstract" content="本論文では，FFN 層のニューロンや，アテンション層のアテンションヘッドが誤字を認識・修復しているという仮説を立て，誤字を含む文が入力されたときに活発に働く，誤字ニューロンおよび誤字ヘッドを特定する．我々の実験結果から以下のことが判明した．1)初期層と中間層前半に誤字の認識と修復を行うニューロンが存在し，中間層前半にあるニューロンが誤字の修復の中核である．2)広く文脈情報を捉えるヘッドが誤字の修復に貢献している．3)誤字ヘッドの中には，単語の意味的な繋がりを認識するヘッドが存在した．" />
+<meta name="citation_abstract" content="本稿では大規模言語モデル(LLM)を利用した、科学技術文献に対する索引語の自動付与方法について報告する。本稿で対象とする索引語は全文献に付与される「主索引語」と医薬系文献において主索引語に付加される 26 語の「副索引語」である。前者については、過去の人手索引データで微調整（fine-tuning）した LLM で索引語の候補を生成し、辞書を用いて同義語集約、フィルタリング等を行う。後者についてはエンコーダ型言語モデルの微調整による教師あり二値分類を基本として、正例の少ない一部の索引語については LLM による生成的手法を適用した。評価実験の結果、主索引については人手と遜色がなく、副索引は人手と比較して概ね 8 割以上の性能を達成した。" />
 
-<meta name="citation_keywords" content="P2:ポスター" />
+<meta name="citation_keywords" content="P2:情報検索・テキストマイニング / 評判・感情分析・スタイル分析" />
 
 <meta name="citation_pdf_url" content="" />
 
@@ -217,35 +215,31 @@
 <div class="card m-3" style="">
   <div class="card-header">
     <h2 class="card-title main-title text-center" style="color: black">
-      誤字に対するTransformerベースLLMのニューロンおよびヘッドの役割調査
+      大規模言語モデルを用いた索引語の自動付与
     </h2>
     <h3 class="card-subtitle mb-2 text-muted text-center">
       
-      <a href="papers.html?filter=authors&search=辻航平&program=all" class="text-primary"
-        >辻航平</a
+      <a href="papers.html?filter=authors&search=菊井玄一郎&program=all" class="text-primary"
+        >菊井玄一郎</a
       >,
       
-      <a href="papers.html?filter=authors&search=平岡達也&program=all" class="text-primary"
-        >平岡達也</a
+      <a href="papers.html?filter=authors&search=鈴木慶二&program=all" class="text-primary"
+        >鈴木慶二</a
       >,
       
-      <a href="papers.html?filter=authors&search=鄭育昌&program=all" class="text-primary"
-        >鄭育昌</a
+      <a href="papers.html?filter=authors&search=関根基樹&program=all" class="text-primary"
+        >関根基樹</a
       >,
       
-      <a href="papers.html?filter=authors&search=荒牧英治&program=all" class="text-primary"
-        >荒牧英治</a
-      >,
-      
-      <a href="papers.html?filter=authors&search=岩倉友哉&program=all" class="text-primary"
-        >岩倉友哉</a
+      <a href="papers.html?filter=authors&search=水田寿雄&program=all" class="text-primary"
+        >水田寿雄</a
       >
       
     </h3>
 
     <p class="card-text text-center h5">
       
-      <a href="papers.html?filter=keywords&search=P2:ポスター" class ="badge badge-pill badge-primary">P2:ポスター</a>
+      <a href="papers.html?filter=keywords&search=P2:情報検索・テキストマイニング / 評判・感情分析・スタイル分析" class ="badge badge-pill badge-primary">P2:情報検索・テキストマイニング / 評判・感情分析・スタイル分析</a>
       
 
       
@@ -253,7 +247,7 @@
    
     <div class="text-center p-3">
       
-      <a class="card-link link-info" target="_blank" href="https://www.anlp.jp/proceedings/annual_meeting/2025/pdf_dir/P2-11.pdf">
+      <a class="card-link link-info" target="_blank" href="https://www.anlp.jp/proceedings/annual_meeting/2026/pdf_dir/P2-11.pdf">
         📝 Paper 
       </a>
       
@@ -307,7 +301,7 @@
         <div class="card-text">
           <div id="abstractExample">
             <span class="font-weight-bold">Abstract:</span>
-            本論文では，FFN 層のニューロンや，アテンション層のアテンションヘッドが誤字を認識・修復しているという仮説を立て，誤字を含む文が入力されたときに活発に働く，誤字ニューロンおよび誤字ヘッドを特定する．我々の実験結果から以下のことが判明した．1)初期層と中間層前半に誤字の認識と修復を行うニューロンが存在し，中間層前半にあるニューロンが誤字の修復の中核である．2)広く文脈情報を捉えるヘッドが誤字の修復に貢献している．3)誤字ヘッドの中には，単語の意味的な繋がりを認識するヘッドが存在した．
+            本稿では大規模言語モデル(LLM)を利用した、科学技術文献に対する索引語の自動付与方法について報告する。本稿で対象とする索引語は全文献に付与される「主索引語」と医薬系文献において主索引語に付加される 26 語の「副索引語」である。前者については、過去の人手索引データで微調整（fine-tuning）した LLM で索引語の候補を生成し、辞書を用いて同義語集約、フィルタリング等を行う。後者についてはエンコーダ型言語モデルの微調整による教師あり二値分類を基本として、正例の少ない一部の索引語については LLM による生成的手法を適用した。評価実験の結果、主索引については人手と遜色がなく、副索引は人手と比較して概ね 8 割以上の性能を達成した。
           </div>
         </div>
       </div>
@@ -315,7 +309,7 @@
   </div>
   
   <div class="tab-pane fade" id="paper" role="tabpanel" aria-labelledby="paper-tab">
-    <embed src="https://www.anlp.jp/proceedings/annual_meeting/2025/pdf_dir/P2-11.pdf" type="application/pdf" width="100%" height="850px">
+    <embed src="https://www.anlp.jp/proceedings/annual_meeting/2026/pdf_dir/P2-11.pdf" type="application/pdf" width="100%" height="850px">
   </div>
   
   
@@ -358,7 +352,7 @@
         <p class="float-left">
           <img src="None" height="45px"
             width="auto" align="center">
-          <span class="lead">NLP2025</span>
+          <span class="lead">NLP2026</span>
         </p>
         <p class="float-right"><a href="#" class="text-dark">Back to Top</a></p>
         <p class="text-center">The title and abstract of the paper are licensed by the author(s) under CC BY 4.0<br>

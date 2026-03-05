@@ -64,24 +64,30 @@
   <script src="https://cdn.jsdelivr.net/npm/pdfjs-dist@2.3.200/build/pdf.min.js"></script>
   <script src="static/js/pdf_render.js"></script>
 
-  <title>NLP2025: 組織を超えたLLM学習データの目的外利用を防げるか？</title>
+  <title>NLP2026: 反論生成におけるLLMの論理構造準拠の向上を目的とした段階的生成手法の提案</title>
   
-<meta name="citation_title" content="組織を超えたLLM学習データの目的外利用を防げるか？" />
+<meta name="citation_title" content="反論生成におけるLLMの論理構造準拠の向上を目的とした段階的生成手法の提案" />
 
-<meta name="citation_author" content="相馬菜生" />
+<meta name="citation_author" content="天野祥太朗" />
 
-<meta name="citation_author" content="小林美結" />
+<meta name="citation_author" content="尾崎大晟" />
 
-<meta name="citation_author" content="宮田侑佳" />
+<meta name="citation_author" content="内藤昭一" />
 
-<meta name="citation_author" content="倉光君郎" />
+<meta name="citation_author" content="井之上直也" />
+
+<meta name="citation_author" content="山口健史" />
+
+<meta name="citation_author" content="中川智皓" />
+
+<meta name="citation_author" content="新谷篤彦" />
 
 <meta name="citation_publication_date" content="None" />
 <meta name="citation_conference_title" content="None" />
 <meta name="citation_inbook_title" content="None" />
-<meta name="citation_abstract" content="高性能な大規模言語モデル（Large Language Model,LLM）の開発には，高品質な学習データの収集が不可欠である．しかし，データ収集には多くの課題が伴い，データ提供者とモデル開発者が異なるケースでは，組織間でのデータ共有が避けられない場合がある．この共有プロセスにおいて，データの不適切な利用や漏洩リスクは重大な課題となる．そのため，データに適切な保護処理を施し，LLM の学習以外での利用を防ぐことが必要不可欠となる．同時に，保護されたデータを用いて構築した LLM において，モデル性能が大幅に低下しないことも求められる．本研究では，保護処理を施したデータを学習データとして使用した場合における LLM への影響を，特にコード生成能力を指標として評価する．" />
+<meta name="citation_abstract" content="大規模言語モデル（LLM）は高品質な反論を生成可能であり，教育応用への高いポテンシャルを持つことが報告されている．ディベート教育を想定した場合，LLM には指定された論理構造に沿った反論を生成する能力が重要である．しかし，論理構造のテンプレートを提示する単純なプロンプト手法では，構造への準拠度が低い，あるいは準拠しても反論の品質が劣化するという課題があった．そこで本研究では，論理構造に基づく反論生成プロセスを複数のステップに明示的に分解し，LLM に段階的な指示を与える手法を提案する．本手法は，生成過程における制御性の向上を目的とする．評価実験の結果，提案手法は従来の一括生成アプローチと比較して，論理構造への準拠度を向上させつつ，品質の劣化を抑制できることが確認された．" />
 
-<meta name="citation_keywords" content="P7:ポスター" />
+<meta name="citation_keywords" content="P7:質問応答 / 教育応用 / その他の応用" />
 
 <meta name="citation_pdf_url" content="" />
 
@@ -215,31 +221,43 @@
 <div class="card m-3" style="">
   <div class="card-header">
     <h2 class="card-title main-title text-center" style="color: black">
-      組織を超えたLLM学習データの目的外利用を防げるか？
+      反論生成におけるLLMの論理構造準拠の向上を目的とした段階的生成手法の提案
     </h2>
     <h3 class="card-subtitle mb-2 text-muted text-center">
       
-      <a href="papers.html?filter=authors&search=相馬菜生&program=all" class="text-primary"
-        >相馬菜生</a
+      <a href="papers.html?filter=authors&search=天野祥太朗&program=all" class="text-primary"
+        >天野祥太朗</a
       >,
       
-      <a href="papers.html?filter=authors&search=小林美結&program=all" class="text-primary"
-        >小林美結</a
+      <a href="papers.html?filter=authors&search=尾崎大晟&program=all" class="text-primary"
+        >尾崎大晟</a
       >,
       
-      <a href="papers.html?filter=authors&search=宮田侑佳&program=all" class="text-primary"
-        >宮田侑佳</a
+      <a href="papers.html?filter=authors&search=内藤昭一&program=all" class="text-primary"
+        >内藤昭一</a
       >,
       
-      <a href="papers.html?filter=authors&search=倉光君郎&program=all" class="text-primary"
-        >倉光君郎</a
+      <a href="papers.html?filter=authors&search=井之上直也&program=all" class="text-primary"
+        >井之上直也</a
+      >,
+      
+      <a href="papers.html?filter=authors&search=山口健史&program=all" class="text-primary"
+        >山口健史</a
+      >,
+      
+      <a href="papers.html?filter=authors&search=中川智皓&program=all" class="text-primary"
+        >中川智皓</a
+      >,
+      
+      <a href="papers.html?filter=authors&search=新谷篤彦&program=all" class="text-primary"
+        >新谷篤彦</a
       >
       
     </h3>
 
     <p class="card-text text-center h5">
       
-      <a href="papers.html?filter=keywords&search=P7:ポスター" class ="badge badge-pill badge-primary">P7:ポスター</a>
+      <a href="papers.html?filter=keywords&search=P7:質問応答 / 教育応用 / その他の応用" class ="badge badge-pill badge-primary">P7:質問応答 / 教育応用 / その他の応用</a>
       
 
       
@@ -247,7 +265,7 @@
    
     <div class="text-center p-3">
       
-      <a class="card-link link-info" target="_blank" href="https://www.anlp.jp/proceedings/annual_meeting/2025/pdf_dir/P7-22.pdf">
+      <a class="card-link link-info" target="_blank" href="https://www.anlp.jp/proceedings/annual_meeting/2026/pdf_dir/P7-22.pdf">
         📝 Paper 
       </a>
       
@@ -301,7 +319,7 @@
         <div class="card-text">
           <div id="abstractExample">
             <span class="font-weight-bold">Abstract:</span>
-            高性能な大規模言語モデル（Large Language Model,LLM）の開発には，高品質な学習データの収集が不可欠である．しかし，データ収集には多くの課題が伴い，データ提供者とモデル開発者が異なるケースでは，組織間でのデータ共有が避けられない場合がある．この共有プロセスにおいて，データの不適切な利用や漏洩リスクは重大な課題となる．そのため，データに適切な保護処理を施し，LLM の学習以外での利用を防ぐことが必要不可欠となる．同時に，保護されたデータを用いて構築した LLM において，モデル性能が大幅に低下しないことも求められる．本研究では，保護処理を施したデータを学習データとして使用した場合における LLM への影響を，特にコード生成能力を指標として評価する．
+            大規模言語モデル（LLM）は高品質な反論を生成可能であり，教育応用への高いポテンシャルを持つことが報告されている．ディベート教育を想定した場合，LLM には指定された論理構造に沿った反論を生成する能力が重要である．しかし，論理構造のテンプレートを提示する単純なプロンプト手法では，構造への準拠度が低い，あるいは準拠しても反論の品質が劣化するという課題があった．そこで本研究では，論理構造に基づく反論生成プロセスを複数のステップに明示的に分解し，LLM に段階的な指示を与える手法を提案する．本手法は，生成過程における制御性の向上を目的とする．評価実験の結果，提案手法は従来の一括生成アプローチと比較して，論理構造への準拠度を向上させつつ，品質の劣化を抑制できることが確認された．
           </div>
         </div>
       </div>
@@ -309,7 +327,7 @@
   </div>
   
   <div class="tab-pane fade" id="paper" role="tabpanel" aria-labelledby="paper-tab">
-    <embed src="https://www.anlp.jp/proceedings/annual_meeting/2025/pdf_dir/P7-22.pdf" type="application/pdf" width="100%" height="850px">
+    <embed src="https://www.anlp.jp/proceedings/annual_meeting/2026/pdf_dir/P7-22.pdf" type="application/pdf" width="100%" height="850px">
   </div>
   
   
@@ -352,7 +370,7 @@
         <p class="float-left">
           <img src="None" height="45px"
             width="auto" align="center">
-          <span class="lead">NLP2025</span>
+          <span class="lead">NLP2026</span>
         </p>
         <p class="float-right"><a href="#" class="text-dark">Back to Top</a></p>
         <p class="text-center">The title and abstract of the paper are licensed by the author(s) under CC BY 4.0<br>

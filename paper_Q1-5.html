@@ -64,22 +64,30 @@
   <script src="https://cdn.jsdelivr.net/npm/pdfjs-dist@2.3.200/build/pdf.min.js"></script>
   <script src="static/js/pdf_render.js"></script>
 
-  <title>NLP2025: 改正後法令文翻訳のための疑似三つ組コーパスの構築</title>
+  <title>NLP2026: SoftMatcha 2: 1兆語規模コーパスの超高速かつ柔らかい検索</title>
   
-<meta name="citation_title" content="改正後法令文翻訳のための疑似三つ組コーパスの構築" />
+<meta name="citation_title" content="SoftMatcha 2: 1兆語規模コーパスの超高速かつ柔らかい検索" />
 
-<meta name="citation_author" content="山腰貴大" />
+<meta name="citation_author" content="米田優峻" />
 
-<meta name="citation_author" content="小川泰弘" />
+<meta name="citation_author" content="鴨田豪" />
 
-<meta name="citation_author" content="外山勝彦" />
+<meta name="citation_author" content="松下祐介" />
+
+<meta name="citation_author" content="末永幸平" />
+
+<meta name="citation_author" content="秋葉拓哉" />
+
+<meta name="citation_author" content="和賀正樹" />
+
+<meta name="citation_author" content="横井祥" />
 
 <meta name="citation_publication_date" content="None" />
 <meta name="citation_conference_title" content="None" />
 <meta name="citation_inbook_title" content="None" />
-<meta name="citation_abstract" content="法令の改正に伴い，その訳文を修正する際には，改正箇所のみを差分的に翻訳し直す必要がある．改正前の訳文（旧訳文）の表現をコピーして訳文を生成できる 2 入力 NMT は，差分的な翻訳を可能とするが，2 入力 NMT の訓練には原文，旧訳文，訳文の三つ組が必要であり，言語資源の調達コストが大きい．そこで，本研究では，法令文の対訳コーパスから疑似的な三つ組を構築する．対訳コーパスの訳文に対してフレーズをランダムに削除又は置換した文を旧訳文とみなし，元の原文，訳文と合わせて三つ組とする．構築した三つ組コーパスを 2 入力 NMTの訓練に使用したところ，三つ組の生成元である対訳コーパスにより訓練した NMT の性能を上回った．" />
+<meta name="citation_abstract" content="超大 規模 コー パス を，超高 速に，かつ 意味 や表記の揺れに柔らかく対応できる検索システムSoftMatcha 2 を提案・提供する．提案法は，言語モデルの学習コーパスの検索を目指す既存法の持つ特徴群，つまり，クエリの語順の保持，意味的類似性に基づいた置換，1 兆語規模コーパスに対する 0.1 秒単位の即時検索のすべてを満たし，さらにクエリへの単語の挿入や削除も考慮できる．特に，クエリに「似た」パターンの種類数の組合せ爆発という困難を，逐次的検索による枝刈りをおこなう新しいアルゴリズムで解決する．1.4 兆語のコーパス FineWeb-Edu [1]を用いた実験では，完全一致の場合も柔らかい検索の場合も，既存手法群（inﬁni-gram [2], SoftMatcha [3]）と比べた大幅な高速化を確認した．さらに FineWeb-Edu [1]1）およびLLM-jp-corpus-v3 [4]2）をウェブブラウザ上で高速検索できるオンラインツールを提供する．3）" />
 
-<meta name="citation_keywords" content="Q1:ポスター" />
+<meta name="citation_keywords" content="Q1:語彙資源・辞書 / 言語資源・アノテーションと評価" />
 
 <meta name="citation_pdf_url" content="" />
 
@@ -213,27 +221,43 @@
 <div class="card m-3" style="">
   <div class="card-header">
     <h2 class="card-title main-title text-center" style="color: black">
-      改正後法令文翻訳のための疑似三つ組コーパスの構築
+      SoftMatcha 2: 1兆語規模コーパスの超高速かつ柔らかい検索
     </h2>
     <h3 class="card-subtitle mb-2 text-muted text-center">
       
-      <a href="papers.html?filter=authors&search=山腰貴大&program=all" class="text-primary"
-        >山腰貴大</a
+      <a href="papers.html?filter=authors&search=米田優峻&program=all" class="text-primary"
+        >米田優峻</a
       >,
       
-      <a href="papers.html?filter=authors&search=小川泰弘&program=all" class="text-primary"
-        >小川泰弘</a
+      <a href="papers.html?filter=authors&search=鴨田豪&program=all" class="text-primary"
+        >鴨田豪</a
       >,
       
-      <a href="papers.html?filter=authors&search=外山勝彦&program=all" class="text-primary"
-        >外山勝彦</a
+      <a href="papers.html?filter=authors&search=松下祐介&program=all" class="text-primary"
+        >松下祐介</a
+      >,
+      
+      <a href="papers.html?filter=authors&search=末永幸平&program=all" class="text-primary"
+        >末永幸平</a
+      >,
+      
+      <a href="papers.html?filter=authors&search=秋葉拓哉&program=all" class="text-primary"
+        >秋葉拓哉</a
+      >,
+      
+      <a href="papers.html?filter=authors&search=和賀正樹&program=all" class="text-primary"
+        >和賀正樹</a
+      >,
+      
+      <a href="papers.html?filter=authors&search=横井祥&program=all" class="text-primary"
+        >横井祥</a
       >
       
     </h3>
 
     <p class="card-text text-center h5">
       
-      <a href="papers.html?filter=keywords&search=Q1:ポスター" class ="badge badge-pill badge-primary">Q1:ポスター</a>
+      <a href="papers.html?filter=keywords&search=Q1:語彙資源・辞書 / 言語資源・アノテーションと評価" class ="badge badge-pill badge-primary">Q1:語彙資源・辞書 / 言語資源・アノテーションと評価</a>
       
 
       
@@ -241,7 +265,7 @@
    
     <div class="text-center p-3">
       
-      <a class="card-link link-info" target="_blank" href="https://www.anlp.jp/proceedings/annual_meeting/2025/pdf_dir/Q1-5.pdf">
+      <a class="card-link link-info" target="_blank" href="https://www.anlp.jp/proceedings/annual_meeting/2026/pdf_dir/Q1-5.pdf">
         📝 Paper 
       </a>
       
@@ -295,7 +319,7 @@
         <div class="card-text">
           <div id="abstractExample">
             <span class="font-weight-bold">Abstract:</span>
-            法令の改正に伴い，その訳文を修正する際には，改正箇所のみを差分的に翻訳し直す必要がある．改正前の訳文（旧訳文）の表現をコピーして訳文を生成できる 2 入力 NMT は，差分的な翻訳を可能とするが，2 入力 NMT の訓練には原文，旧訳文，訳文の三つ組が必要であり，言語資源の調達コストが大きい．そこで，本研究では，法令文の対訳コーパスから疑似的な三つ組を構築する．対訳コーパスの訳文に対してフレーズをランダムに削除又は置換した文を旧訳文とみなし，元の原文，訳文と合わせて三つ組とする．構築した三つ組コーパスを 2 入力 NMTの訓練に使用したところ，三つ組の生成元である対訳コーパスにより訓練した NMT の性能を上回った．
+            超大 規模 コー パス を，超高 速に，かつ 意味 や表記の揺れに柔らかく対応できる検索システムSoftMatcha 2 を提案・提供する．提案法は，言語モデルの学習コーパスの検索を目指す既存法の持つ特徴群，つまり，クエリの語順の保持，意味的類似性に基づいた置換，1 兆語規模コーパスに対する 0.1 秒単位の即時検索のすべてを満たし，さらにクエリへの単語の挿入や削除も考慮できる．特に，クエリに「似た」パターンの種類数の組合せ爆発という困難を，逐次的検索による枝刈りをおこなう新しいアルゴリズムで解決する．1.4 兆語のコーパス FineWeb-Edu [1]を用いた実験では，完全一致の場合も柔らかい検索の場合も，既存手法群（inﬁni-gram [2], SoftMatcha [3]）と比べた大幅な高速化を確認した．さらに FineWeb-Edu [1]1）およびLLM-jp-corpus-v3 [4]2）をウェブブラウザ上で高速検索できるオンラインツールを提供する．3）
           </div>
         </div>
       </div>
@@ -303,7 +327,7 @@
   </div>
   
   <div class="tab-pane fade" id="paper" role="tabpanel" aria-labelledby="paper-tab">
-    <embed src="https://www.anlp.jp/proceedings/annual_meeting/2025/pdf_dir/Q1-5.pdf" type="application/pdf" width="100%" height="850px">
+    <embed src="https://www.anlp.jp/proceedings/annual_meeting/2026/pdf_dir/Q1-5.pdf" type="application/pdf" width="100%" height="850px">
   </div>
   
   
@@ -346,7 +370,7 @@
         <p class="float-left">
           <img src="None" height="45px"
             width="auto" align="center">
-          <span class="lead">NLP2025</span>
+          <span class="lead">NLP2026</span>
         </p>
         <p class="float-right"><a href="#" class="text-dark">Back to Top</a></p>
         <p class="text-center">The title and abstract of the paper are licensed by the author(s) under CC BY 4.0<br>

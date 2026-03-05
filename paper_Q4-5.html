@@ -64,22 +64,26 @@
   <script src="https://cdn.jsdelivr.net/npm/pdfjs-dist@2.3.200/build/pdf.min.js"></script>
   <script src="static/js/pdf_render.js"></script>
 
-  <title>NLP2025: 疎なパラメータを用いて大規模言語モデルを効率よくFine-Tuneする手法の提案</title>
+  <title>NLP2026: SASBスタンダードに準拠したコンプライアンスチェックのためのESG日本語データセット構築</title>
   
-<meta name="citation_title" content="疎なパラメータを用いて大規模言語モデルを効率よくFine-Tuneする手法の提案" />
+<meta name="citation_title" content="SASBスタンダードに準拠したコンプライアンスチェックのためのESG日本語データセット構築" />
 
-<meta name="citation_author" content="原田慎太朗" />
+<meta name="citation_author" content="解良智紀" />
 
-<meta name="citation_author" content="山崎智弘" />
+<meta name="citation_author" content="関洋平" />
 
-<meta name="citation_author" content="吉田尚水" />
+<meta name="citation_author" content="中尾悠利子" />
+
+<meta name="citation_author" content="高村大也" />
+
+<meta name="citation_author" content="欅惇志" />
 
 <meta name="citation_publication_date" content="None" />
 <meta name="citation_conference_title" content="None" />
 <meta name="citation_inbook_title" content="None" />
-<meta name="citation_abstract" content="本稿では、疎なパラメータを用いて大規模言語モデルの部分的更新を行なうことで効率よく Fine-Tuneする手法を提案する。大規模なコーパスで学習された事前学習済みの言語モデルを特定のタスクやドメインに対して Fine-Tune するには、事前学習済みモデルのパラメータを固定し、少量の追加パラメータのみを学習する手法(Parameter-Eﬃcient Fine-Tuning,PEFT)が主流である。しかし、通常の PEFT は学習時の計算リソースを抑える一方でパラメータをすべて更新するため、知識保持および編集が重要なタスクやドメインの性能が劣化したりモデル解釈性が失われたりする問題がある。そこで本稿では、疎なパラメータを用いることで計算リソースを抑えつつ、新たにモデル解釈性も備えた新しい PEFT を提案する。事前学習済みモデルとして RoBERTa とLlama3-8B に適用することで、言語理解と算術推論ベンチマークで性能が向上すること、およびモデル解釈が可能であることを示す。" />
+<meta name="citation_abstract" content="本研 究で は，企業 の ESG (Environment·Social·Governance)情 報が ESG 情報 開示 フレ ーム ワークに準拠しているかを評価するためのデータセットを構築した．本データセットは，日本語のサステナビリティレポートを対象としている．また，人手での作業効率化を目的として，大規模言語モデル（LLM）を用いた事前アノテーションを行った．その結果，データセット構築に要する工数の削減に一定の効果が確認された一方，自動的な情報抽出における性能が低いことが明らかとなった．" />
 
-<meta name="citation_keywords" content="Q4:ポスター" />
+<meta name="citation_keywords" content="Q4:言語資源・アノテーションと評価" />
 
 <meta name="citation_pdf_url" content="" />
 
@@ -213,27 +217,35 @@
 <div class="card m-3" style="">
   <div class="card-header">
     <h2 class="card-title main-title text-center" style="color: black">
-      疎なパラメータを用いて大規模言語モデルを効率よくFine-Tuneする手法の提案
+      SASBスタンダードに準拠したコンプライアンスチェックのためのESG日本語データセット構築
     </h2>
     <h3 class="card-subtitle mb-2 text-muted text-center">
       
-      <a href="papers.html?filter=authors&search=原田慎太朗&program=all" class="text-primary"
-        >原田慎太朗</a
+      <a href="papers.html?filter=authors&search=解良智紀&program=all" class="text-primary"
+        >解良智紀</a
       >,
       
-      <a href="papers.html?filter=authors&search=山崎智弘&program=all" class="text-primary"
-        >山崎智弘</a
+      <a href="papers.html?filter=authors&search=関洋平&program=all" class="text-primary"
+        >関洋平</a
       >,
       
-      <a href="papers.html?filter=authors&search=吉田尚水&program=all" class="text-primary"
-        >吉田尚水</a
+      <a href="papers.html?filter=authors&search=中尾悠利子&program=all" class="text-primary"
+        >中尾悠利子</a
+      >,
+      
+      <a href="papers.html?filter=authors&search=高村大也&program=all" class="text-primary"
+        >高村大也</a
+      >,
+      
+      <a href="papers.html?filter=authors&search=欅惇志&program=all" class="text-primary"
+        >欅惇志</a
       >
       
     </h3>
 
     <p class="card-text text-center h5">
       
-      <a href="papers.html?filter=keywords&search=Q4:ポスター" class ="badge badge-pill badge-primary">Q4:ポスター</a>
+      <a href="papers.html?filter=keywords&search=Q4:言語資源・アノテーションと評価" class ="badge badge-pill badge-primary">Q4:言語資源・アノテーションと評価</a>
       
 
       
@@ -241,7 +253,7 @@
    
     <div class="text-center p-3">
       
-      <a class="card-link link-info" target="_blank" href="https://www.anlp.jp/proceedings/annual_meeting/2025/pdf_dir/Q4-5.pdf">
+      <a class="card-link link-info" target="_blank" href="https://www.anlp.jp/proceedings/annual_meeting/2026/pdf_dir/Q4-5.pdf">
         📝 Paper 
       </a>
       
@@ -295,7 +307,7 @@
         <div class="card-text">
           <div id="abstractExample">
             <span class="font-weight-bold">Abstract:</span>
-            本稿では、疎なパラメータを用いて大規模言語モデルの部分的更新を行なうことで効率よく Fine-Tuneする手法を提案する。大規模なコーパスで学習された事前学習済みの言語モデルを特定のタスクやドメインに対して Fine-Tune するには、事前学習済みモデルのパラメータを固定し、少量の追加パラメータのみを学習する手法(Parameter-Eﬃcient Fine-Tuning,PEFT)が主流である。しかし、通常の PEFT は学習時の計算リソースを抑える一方でパラメータをすべて更新するため、知識保持および編集が重要なタスクやドメインの性能が劣化したりモデル解釈性が失われたりする問題がある。そこで本稿では、疎なパラメータを用いることで計算リソースを抑えつつ、新たにモデル解釈性も備えた新しい PEFT を提案する。事前学習済みモデルとして RoBERTa とLlama3-8B に適用することで、言語理解と算術推論ベンチマークで性能が向上すること、およびモデル解釈が可能であることを示す。
+            本研 究で は，企業 の ESG (Environment·Social·Governance)情 報が ESG 情報 開示 フレ ーム ワークに準拠しているかを評価するためのデータセットを構築した．本データセットは，日本語のサステナビリティレポートを対象としている．また，人手での作業効率化を目的として，大規模言語モデル（LLM）を用いた事前アノテーションを行った．その結果，データセット構築に要する工数の削減に一定の効果が確認された一方，自動的な情報抽出における性能が低いことが明らかとなった．
           </div>
         </div>
       </div>
@@ -303,7 +315,7 @@
   </div>
   
   <div class="tab-pane fade" id="paper" role="tabpanel" aria-labelledby="paper-tab">
-    <embed src="https://www.anlp.jp/proceedings/annual_meeting/2025/pdf_dir/Q4-5.pdf" type="application/pdf" width="100%" height="850px">
+    <embed src="https://www.anlp.jp/proceedings/annual_meeting/2026/pdf_dir/Q4-5.pdf" type="application/pdf" width="100%" height="850px">
   </div>
   
   
@@ -346,7 +358,7 @@
         <p class="float-left">
           <img src="None" height="45px"
             width="auto" align="center">
-          <span class="lead">NLP2025</span>
+          <span class="lead">NLP2026</span>
         </p>
         <p class="float-right"><a href="#" class="text-dark">Back to Top</a></p>
         <p class="text-center">The title and abstract of the paper are licensed by the author(s) under CC BY 4.0<br>

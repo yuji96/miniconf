@@ -64,28 +64,20 @@
   <script src="https://cdn.jsdelivr.net/npm/pdfjs-dist@2.3.200/build/pdf.min.js"></script>
   <script src="static/js/pdf_render.js"></script>
 
-  <title>NLP2025: Transformer LLMにおける層単位のFFN層の重要度検証</title>
+  <title>NLP2026: 日本語RAG検索における省略由来の曖昧クエリ検知</title>
   
-<meta name="citation_title" content="Transformer LLMにおける層単位のFFN層の重要度検証" />
+<meta name="citation_title" content="日本語RAG検索における省略由来の曖昧クエリ検知" />
 
-<meta name="citation_author" content="池田航" />
+<meta name="citation_author" content="佐々木峻" />
 
-<meta name="citation_author" content="矢野一樹" />
-
-<meta name="citation_author" content="高橋良允" />
-
-<meta name="citation_author" content="李宰成" />
-
-<meta name="citation_author" content="柴田圭悟" />
-
-<meta name="citation_author" content="鈴木潤" />
+<meta name="citation_author" content="山本大輝" />
 
 <meta name="citation_publication_date" content="None" />
 <meta name="citation_conference_title" content="None" />
 <meta name="citation_inbook_title" content="None" />
-<meta name="citation_abstract" content="Transformer に基づく大規模言語モデル(LLM)の構成要素の一つであるフィードフォワードネットワーク(FFN)に着目し，モデル内の配置場所に依存した重要度を検証する．具体的には，モデル全体のパラメータ数を維持したまま，一部の連続する層でFFN の中間次元を拡大し，残りの層から FFN を除去したモデル構成を用いて標準的なタスク性能を比較する．複数のモデルサイズで評価を行った結果，全層数の 70 – 90%の連続した中間から後方の層に FFNを集中配置することで，複数の下流タスクでベースラインの性能を上回った．この結果から FNN は入力に近い層より中間から後方の層で特に重要であると示唆される結果が得られた．" />
+<meta name="citation_abstract" content="RAG（Retrieval-Augmented Generation）では，生成以前に関連文書を正しく検索できることが精度を左右する．しかし実運用では，省略や指示語により複数解釈が成立する曖昧な質問が入力されやすく，特に日本語では格要素の省略が頻繁に生じる．本稿では「文書コーパス内に回答根拠が存在する」前提のもと，質問形式クエリに対する曖昧性検知を，(i)曖昧化による検索性能低下の定量化と，(ii)検索出力（スコア分布・検索結果の意味的分布）に基づく検知可能性の検証を通して議論する．JDocQAの一部 106 問を用いた実験で，省略による曖昧化は Recall@1 を 53.8%から 34.0%へ低下させた．さらに，上位検索結果のスコア分散および埋め込みの一貫性指標（平均類似度と分散を組み合わせた Clarity指標）が，曖昧化の有無で系統的な差を示すことを確認した．" />
 
-<meta name="citation_keywords" content="P2:ポスター" />
+<meta name="citation_keywords" content="P2:情報検索・テキストマイニング / 評判・感情分析・スタイル分析" />
 
 <meta name="citation_pdf_url" content="" />
 
@@ -219,39 +211,23 @@
 <div class="card m-3" style="">
   <div class="card-header">
     <h2 class="card-title main-title text-center" style="color: black">
-      Transformer LLMにおける層単位のFFN層の重要度検証
+      日本語RAG検索における省略由来の曖昧クエリ検知
     </h2>
     <h3 class="card-subtitle mb-2 text-muted text-center">
       
-      <a href="papers.html?filter=authors&search=池田航&program=all" class="text-primary"
-        >池田航</a
+      <a href="papers.html?filter=authors&search=佐々木峻&program=all" class="text-primary"
+        >佐々木峻</a
       >,
       
-      <a href="papers.html?filter=authors&search=矢野一樹&program=all" class="text-primary"
-        >矢野一樹</a
-      >,
-      
-      <a href="papers.html?filter=authors&search=高橋良允&program=all" class="text-primary"
-        >高橋良允</a
-      >,
-      
-      <a href="papers.html?filter=authors&search=李宰成&program=all" class="text-primary"
-        >李宰成</a
-      >,
-      
-      <a href="papers.html?filter=authors&search=柴田圭悟&program=all" class="text-primary"
-        >柴田圭悟</a
-      >,
-      
-      <a href="papers.html?filter=authors&search=鈴木潤&program=all" class="text-primary"
-        >鈴木潤</a
+      <a href="papers.html?filter=authors&search=山本大輝&program=all" class="text-primary"
+        >山本大輝</a
       >
       
     </h3>
 
     <p class="card-text text-center h5">
       
-      <a href="papers.html?filter=keywords&search=P2:ポスター" class ="badge badge-pill badge-primary">P2:ポスター</a>
+      <a href="papers.html?filter=keywords&search=P2:情報検索・テキストマイニング / 評判・感情分析・スタイル分析" class ="badge badge-pill badge-primary">P2:情報検索・テキストマイニング / 評判・感情分析・スタイル分析</a>
       
 
       
@@ -259,7 +235,7 @@
    
     <div class="text-center p-3">
       
-      <a class="card-link link-info" target="_blank" href="https://www.anlp.jp/proceedings/annual_meeting/2025/pdf_dir/P2-8.pdf">
+      <a class="card-link link-info" target="_blank" href="https://www.anlp.jp/proceedings/annual_meeting/2026/pdf_dir/P2-8.pdf">
         📝 Paper 
       </a>
       
@@ -313,7 +289,7 @@
         <div class="card-text">
           <div id="abstractExample">
             <span class="font-weight-bold">Abstract:</span>
-            Transformer に基づく大規模言語モデル(LLM)の構成要素の一つであるフィードフォワードネットワーク(FFN)に着目し，モデル内の配置場所に依存した重要度を検証する．具体的には，モデル全体のパラメータ数を維持したまま，一部の連続する層でFFN の中間次元を拡大し，残りの層から FFN を除去したモデル構成を用いて標準的なタスク性能を比較する．複数のモデルサイズで評価を行った結果，全層数の 70 – 90%の連続した中間から後方の層に FFNを集中配置することで，複数の下流タスクでベースラインの性能を上回った．この結果から FNN は入力に近い層より中間から後方の層で特に重要であると示唆される結果が得られた．
+            RAG（Retrieval-Augmented Generation）では，生成以前に関連文書を正しく検索できることが精度を左右する．しかし実運用では，省略や指示語により複数解釈が成立する曖昧な質問が入力されやすく，特に日本語では格要素の省略が頻繁に生じる．本稿では「文書コーパス内に回答根拠が存在する」前提のもと，質問形式クエリに対する曖昧性検知を，(i)曖昧化による検索性能低下の定量化と，(ii)検索出力（スコア分布・検索結果の意味的分布）に基づく検知可能性の検証を通して議論する．JDocQAの一部 106 問を用いた実験で，省略による曖昧化は Recall@1 を 53.8%から 34.0%へ低下させた．さらに，上位検索結果のスコア分散および埋め込みの一貫性指標（平均類似度と分散を組み合わせた Clarity指標）が，曖昧化の有無で系統的な差を示すことを確認した．
           </div>
         </div>
       </div>
@@ -321,7 +297,7 @@
   </div>
   
   <div class="tab-pane fade" id="paper" role="tabpanel" aria-labelledby="paper-tab">
-    <embed src="https://www.anlp.jp/proceedings/annual_meeting/2025/pdf_dir/P2-8.pdf" type="application/pdf" width="100%" height="850px">
+    <embed src="https://www.anlp.jp/proceedings/annual_meeting/2026/pdf_dir/P2-8.pdf" type="application/pdf" width="100%" height="850px">
   </div>
   
   
@@ -364,7 +340,7 @@
         <p class="float-left">
           <img src="None" height="45px"
             width="auto" align="center">
-          <span class="lead">NLP2025</span>
+          <span class="lead">NLP2026</span>
         </p>
         <p class="float-right"><a href="#" class="text-dark">Back to Top</a></p>
         <p class="text-center">The title and abstract of the paper are licensed by the author(s) under CC BY 4.0<br>

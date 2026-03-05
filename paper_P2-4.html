@@ -64,24 +64,30 @@
   <script src="https://cdn.jsdelivr.net/npm/pdfjs-dist@2.3.200/build/pdf.min.js"></script>
   <script src="static/js/pdf_render.js"></script>
 
-  <title>NLP2025: ウェーブレット位置符号化</title>
+  <title>NLP2026: LLMによる動的属性タグ生成に基づくヘルプデスク情報の構造化検索</title>
   
-<meta name="citation_title" content="ウェーブレット位置符号化" />
+<meta name="citation_title" content="LLMによる動的属性タグ生成に基づくヘルプデスク情報の構造化検索" />
 
-<meta name="citation_author" content="岡佑依" />
+<meta name="citation_author" content="和田拓也" />
 
-<meta name="citation_author" content="長谷川拓" />
+<meta name="citation_author" content="赤羽陵太" />
 
-<meta name="citation_author" content="西田京介" />
+<meta name="citation_author" content="堀浩史" />
 
-<meta name="citation_author" content="齋藤邦子" />
+<meta name="citation_author" content="山口格" />
+
+<meta name="citation_author" content="傍示健太" />
+
+<meta name="citation_author" content="笹原康介" />
+
+<meta name="citation_author" content="植木一也" />
 
 <meta name="citation_publication_date" content="None" />
 <meta name="citation_conference_title" content="None" />
 <meta name="citation_inbook_title" content="None" />
-<meta name="citation_abstract" content="本研究では，回転行列による位置符号化 RoPE がウェーブレット変換（WT）の一種として解釈できることを示す．しかし，RoPE は WT の利点を十分に活用できていない．そこで本研究では，正弦波のみに集中していた位置符号化の理論的基盤を拡張し，WT の特性を活かした理論的基盤と新しい位置符号化手法を提案する．提案手法は，従来の手法では難しかった最大系列長を超えた符号化を可能にすることを示す．" />
+<meta name="citation_abstract" content="コールセンターやヘルプデスク業務における情報検索では，顧客の状況やデバイス環境など，文脈に依存した多岐にわたる属性情報を正確に考慮する必要がある．しかし，Retrieval-Augmented Generation（RAG）において，こうしたドメイン固有の厳密な属性を含む検索は，従来のベクトル類似度のみでは精度確保が困難である．本研究では，LLM を用いてテキストを動的に構造化し，属性タグに基づく検索を行う手法を提案する．また，本手法の評価基盤として，複雑な属性情報を含む擬似的なコールセンターログデータセットを構築した．本手法は，クエリから抽出した属性タグをデータベース側の構造化タグと照合することで，高精度なドキュメント特定を実現する．実験の結果，提案手法は Hit@1 においてベースラインを大幅に上回る精度を達成し，その有効性を示した．" />
 
-<meta name="citation_keywords" content="P2:ポスター" />
+<meta name="citation_keywords" content="P2:情報検索・テキストマイニング / 評判・感情分析・スタイル分析" />
 
 <meta name="citation_pdf_url" content="" />
 
@@ -215,31 +221,43 @@
 <div class="card m-3" style="">
   <div class="card-header">
     <h2 class="card-title main-title text-center" style="color: black">
-      ウェーブレット位置符号化
+      LLMによる動的属性タグ生成に基づくヘルプデスク情報の構造化検索
     </h2>
     <h3 class="card-subtitle mb-2 text-muted text-center">
       
-      <a href="papers.html?filter=authors&search=岡佑依&program=all" class="text-primary"
-        >岡佑依</a
+      <a href="papers.html?filter=authors&search=和田拓也&program=all" class="text-primary"
+        >和田拓也</a
       >,
       
-      <a href="papers.html?filter=authors&search=長谷川拓&program=all" class="text-primary"
-        >長谷川拓</a
+      <a href="papers.html?filter=authors&search=赤羽陵太&program=all" class="text-primary"
+        >赤羽陵太</a
       >,
       
-      <a href="papers.html?filter=authors&search=西田京介&program=all" class="text-primary"
-        >西田京介</a
+      <a href="papers.html?filter=authors&search=堀浩史&program=all" class="text-primary"
+        >堀浩史</a
       >,
       
-      <a href="papers.html?filter=authors&search=齋藤邦子&program=all" class="text-primary"
-        >齋藤邦子</a
+      <a href="papers.html?filter=authors&search=山口格&program=all" class="text-primary"
+        >山口格</a
+      >,
+      
+      <a href="papers.html?filter=authors&search=傍示健太&program=all" class="text-primary"
+        >傍示健太</a
+      >,
+      
+      <a href="papers.html?filter=authors&search=笹原康介&program=all" class="text-primary"
+        >笹原康介</a
+      >,
+      
+      <a href="papers.html?filter=authors&search=植木一也&program=all" class="text-primary"
+        >植木一也</a
       >
       
     </h3>
 
     <p class="card-text text-center h5">
       
-      <a href="papers.html?filter=keywords&search=P2:ポスター" class ="badge badge-pill badge-primary">P2:ポスター</a>
+      <a href="papers.html?filter=keywords&search=P2:情報検索・テキストマイニング / 評判・感情分析・スタイル分析" class ="badge badge-pill badge-primary">P2:情報検索・テキストマイニング / 評判・感情分析・スタイル分析</a>
       
 
       
@@ -247,7 +265,7 @@
    
     <div class="text-center p-3">
       
-      <a class="card-link link-info" target="_blank" href="https://www.anlp.jp/proceedings/annual_meeting/2025/pdf_dir/P2-4.pdf">
+      <a class="card-link link-info" target="_blank" href="https://www.anlp.jp/proceedings/annual_meeting/2026/pdf_dir/P2-4.pdf">
         📝 Paper 
       </a>
       
@@ -301,7 +319,7 @@
         <div class="card-text">
           <div id="abstractExample">
             <span class="font-weight-bold">Abstract:</span>
-            本研究では，回転行列による位置符号化 RoPE がウェーブレット変換（WT）の一種として解釈できることを示す．しかし，RoPE は WT の利点を十分に活用できていない．そこで本研究では，正弦波のみに集中していた位置符号化の理論的基盤を拡張し，WT の特性を活かした理論的基盤と新しい位置符号化手法を提案する．提案手法は，従来の手法では難しかった最大系列長を超えた符号化を可能にすることを示す．
+            コールセンターやヘルプデスク業務における情報検索では，顧客の状況やデバイス環境など，文脈に依存した多岐にわたる属性情報を正確に考慮する必要がある．しかし，Retrieval-Augmented Generation（RAG）において，こうしたドメイン固有の厳密な属性を含む検索は，従来のベクトル類似度のみでは精度確保が困難である．本研究では，LLM を用いてテキストを動的に構造化し，属性タグに基づく検索を行う手法を提案する．また，本手法の評価基盤として，複雑な属性情報を含む擬似的なコールセンターログデータセットを構築した．本手法は，クエリから抽出した属性タグをデータベース側の構造化タグと照合することで，高精度なドキュメント特定を実現する．実験の結果，提案手法は Hit@1 においてベースラインを大幅に上回る精度を達成し，その有効性を示した．
           </div>
         </div>
       </div>
@@ -309,7 +327,7 @@
   </div>
   
   <div class="tab-pane fade" id="paper" role="tabpanel" aria-labelledby="paper-tab">
-    <embed src="https://www.anlp.jp/proceedings/annual_meeting/2025/pdf_dir/P2-4.pdf" type="application/pdf" width="100%" height="850px">
+    <embed src="https://www.anlp.jp/proceedings/annual_meeting/2026/pdf_dir/P2-4.pdf" type="application/pdf" width="100%" height="850px">
   </div>
   
   
@@ -352,7 +370,7 @@
         <p class="float-left">
           <img src="None" height="45px"
             width="auto" align="center">
-          <span class="lead">NLP2025</span>
+          <span class="lead">NLP2026</span>
         </p>
         <p class="float-right"><a href="#" class="text-dark">Back to Top</a></p>
         <p class="text-center">The title and abstract of the paper are licensed by the author(s) under CC BY 4.0<br>
