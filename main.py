@@ -39,7 +39,7 @@ def inject_cache_buster():
     def versioned_url(filepath):
         static_file = os.path.join(app.static_folder, filepath)
         file_hash = get_file_hash(static_file)
-        return url_for("static", filename=filepath) + f"?v={file_hash}"
+        return url_for("static", filename=filepath, v=file_hash)
 
     return dict(versioned_url=versioned_url)
 
