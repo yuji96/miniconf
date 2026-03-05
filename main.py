@@ -6,7 +6,7 @@ from typing import Dict
 from urllib.parse import quote_plus
 
 import hydra
-from flask import Flask, jsonify, redirect, render_template, send_from_directory, url_for
+from flask import Blueprint, Flask, jsonify, redirect, render_template, send_from_directory, url_for
 from flask_frozen import Freezer
 from flaskext.markdown import Markdown
 from omegaconf import DictConfig
@@ -22,6 +22,11 @@ by_uid: ByUid = None
 
 app = Flask(__name__)
 app.config.from_object(__name__)
+prefix = "nlp2026"
+app.config["APPLICATION_ROOT"] = "/" + prefix
+
+# Create Blueprint with url_prefix
+bp = Blueprint("main", __name__, url_prefix=f"/{prefix}")
 
 
 def get_file_hash(filepath):
@@ -46,6 +51,7 @@ def inject_cache_buster():
 app.config["SEND_FILE_MAX_AGE_DEFAULT"] = 0
 app.config["TEMPLATES_AUTO_RELOAD"] = True
 app.config["FREEZER_IGNORE_404_NOT_FOUND"] = True
+# app.config["FREEZER_BASE_URL"] = f"http://localhost/{prefix}/"
 
 freezer = Freezer(app)
 markdown = Markdown(app)
@@ -68,20 +74,20 @@ def _data():
 
 @app.route("/")
 def index():
-    return redirect("/index.html")
+    return redirect(f"/{prefix}/index.html")
 
 
 # TOP LEVEL PAGES
 
 
-@app.route("/index.html")
+@bp.route("/index.html")
 def home():
     data = _data()
     data["ack_text"] = site_data.pages["acknowledgement.md"]
     return render_template("index.html", **data)
 
 
-@app.route("/papers.html")
+@bp.route("/papers.html")
 def papers():
     data = _data()
     # The data will be loaded from `papers.json`.
@@ -91,7 +97,7 @@ def papers():
     return render_template("papers.html", **data)
 
 
-@app.route("/papers_vis.html")
+@bp.route("/papers_vis.html")
 def papers_vis():
     data = _data()
     # The data will be loaded from `papers.json`.
@@ -100,7 +106,7 @@ def papers_vis():
     return render_template("papers_vis.html", **data)
 
 
-@app.route("/papers_keyword_vis.html")
+@bp.route("/papers_keyword_vis.html")
 def papers_keyword_vis():
     data = _data()
     # The data will be loaded from `papers.json`.
@@ -109,7 +115,7 @@ def papers_keyword_vis():
     return render_template("papers_keyword_vis.html", **data)
 
 
-@app.route("/schedule.html")
+@bp.route("/schedule.html")
 def schedule():
     data = _data()
     data["calendar"] = [e.dict() for e in site_data.calendar]
@@ -117,13 +123,13 @@ def schedule():
     return render_template("schedule.html", **data)
 
 
-@app.route("/livestream.html")
+@bp.route("/livestream.html")
 def livestream():
     data = _data()
     return render_template("livestream.html", **data)
 
 
-@app.route("/plenary_sessions.html")
+@bp.route("/plenary_sessions.html")
 def plenary_sessions():
     data = _data()
     session_data, session_day_data = reformat_plenary_data(site_data.plenaries)
@@ -132,7 +138,7 @@ def plenary_sessions():
     return render_template("plenary_sessions.html", **data)
 
 
-@app.route("/sessions.html")
+@bp.route("/sessions.html")
 def sessions():
     data = _data()
     data["session_days"] = site_data.session_days
@@ -150,21 +156,21 @@ def sessions():
     return render_template("sessions.html", **data)
 
 
-@app.route("/tutorials.html")
+@bp.route("/tutorials.html")
 def tutorials():
     data = _data()
     data["tutorials"] = site_data.tutorials
     return render_template("tutorials.html", **data)
 
 
-@app.route("/workshops.html")
+@bp.route("/workshops.html")
 def workshops():
     data = _data()
     data["workshops"] = site_data.workshops
     return render_template("workshops.html", **data)
 
 
-@app.route("/socials.html")
+@bp.route("/socials.html")
 def socials():
     data = _data()
     data["socials"] = site_data.socials
@@ -172,7 +178,7 @@ def socials():
 
 
 # ITEM PAGES
-@app.route("/paper_<uid>.html")
+@bp.route("/paper_<uid>.html")
 def paper(uid):
     data = _data()
 
@@ -189,21 +195,21 @@ def paper(uid):
     return render_template("paper.html", **data)
 
 
-@app.route("/plenary_session_<uid>.html")
+@bp.route("/plenary_session_<uid>.html")
 def plenary_session(uid):
     data = _data()
     data["plenary_session"] = by_uid.plenaries[uid]
     return render_template("plenary_session.html", **data)
 
 
-@app.route("/tutorial_<uid>.html")
+@bp.route("/tutorial_<uid>.html")
 def tutorial(uid):
     data = _data()
     data["tutorial"] = by_uid.tutorials[uid]
     return render_template("tutorial.html", **data)
 
 
-@app.route("/workshop_<uid>.html")
+@bp.route("/workshop_<uid>.html")
 def workshop(uid):
     data = _data()
     workshop = by_uid.workshops[uid]
@@ -217,30 +223,30 @@ def workshop(uid):
     return render_template("workshop.html", **data)
 
 
-@app.route("/chat.html")
+@bp.route("/chat.html")
 def chat():
     data = _data()
     return render_template("chat.html", **data)
 
 
-@app.route("/map.html")
+@bp.route("/map.html")
 def venue_map():
     data = _data()
     return render_template("map.html", **data)
 
 
 # FRONT END SERVING
-@app.route("/schedule.json")
+@bp.route("/schedule.json")
 def schedule_json():
     return jsonify([e.dict() for e in site_data.calendar])
 
 
-@app.route("/papers.json")
+@bp.route("/papers.json")
 def papers_json():
     return jsonify([p.dict() for p in site_data.papers])
 
 
-@app.route("/papers_<program>.json")
+@bp.route("/papers_<program>.json")
 def papers_program(program: str):
     if program == "workshop":
         papers_for_program = []
@@ -251,7 +257,7 @@ def papers_program(program: str):
     return jsonify(papers_for_program)
 
 
-@app.route("/track_<program_name>_<track_name>.json")
+@bp.route("/track_<program_name>_<track_name>.json")
 def track_json(program_name, track_name):
     print(program_name, track_name)
     if program_name == WORKSHOP:
@@ -267,18 +273,21 @@ def track_json(program_name, track_name):
     return jsonify(papers_for_track)
 
 
-@app.route("/static/<path:path>")
+@bp.route("/static/<path:path>")
 def send_static(path):
     return send_from_directory("static", path)
 
 
-@app.route("/serve_<path>.json")
+@bp.route("/serve_<path>.json")
 def serve(path):
     return jsonify(getattr(site_data, path, {}))
 
 
 # --------------- DRIVER CODE -------------------------->
 # Code to turn it all static
+
+# Register Blueprint after all routes are defined
+app.register_blueprint(bp)
 
 
 @freezer.register_generator
