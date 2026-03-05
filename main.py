@@ -1,11 +1,12 @@
 # pylint: disable=global-statement,redefined-outer-name
+import hashlib
 import os
 from pathlib import Path
 from typing import Dict
 from urllib.parse import quote_plus
 
 import hydra
-from flask import Flask, jsonify, redirect, render_template, send_from_directory
+from flask import Flask, jsonify, redirect, render_template, send_from_directory, url_for
 from flask_frozen import Freezer
 from flaskext.markdown import Markdown
 from omegaconf import DictConfig
@@ -21,6 +22,28 @@ by_uid: ByUid = None
 
 app = Flask(__name__)
 app.config.from_object(__name__)
+
+
+def get_file_hash(filepath):
+    """ファイルのハッシュ値を取得"""
+    if os.path.exists(filepath):
+        with open(filepath, "rb") as f:
+            return hashlib.md5(f.read()).hexdigest()[:8]
+    return ""
+
+
+@app.context_processor
+def inject_cache_buster():
+    """テンプレートでキャッシュバスターを使えるようにする"""
+
+    def versioned_url(filepath):
+        static_file = os.path.join(app.static_folder, filepath)
+        file_hash = get_file_hash(static_file)
+        return url_for("static", filename=filepath) + f"?v={file_hash}"
+
+    return dict(versioned_url=versioned_url)
+
+
 app.config["SEND_FILE_MAX_AGE_DEFAULT"] = 0
 app.config["TEMPLATES_AUTO_RELOAD"] = True
 app.config["FREEZER_IGNORE_404_NOT_FOUND"] = True
@@ -158,14 +181,8 @@ def paper(uid):
     data["id"] = uid
     data["openreview"] = v
     data["paper"] = v
-    data["events"] = [
-        conference.events[e_id] for e_id in v.event_ids if e_id in conference.events
-    ]
-    data["workshop_events"] = [
-        conference.workshops[e_id]
-        for e_id in v.event_ids
-        if e_id in conference.workshops
-    ]
+    data["events"] = [conference.events[e_id] for e_id in v.event_ids if e_id in conference.events]
+    data["workshop_events"] = [conference.workshops[e_id] for e_id in v.event_ids if e_id in conference.workshops]
     data["paper_recs"] = [by_uid.papers[i] for i in v.similar_paper_ids[1:]]
     # TODO: Fix
     data["zone"] = site_data.local_timezone
@@ -231,9 +248,7 @@ def papers_program(program: str):
         for wsh in site_data.workshops:
             papers_for_program.extend(wsh.papers)
     else:
-        papers_for_program = [
-            paper.dict() for paper in site_data.papers if paper.program == program
-        ]
+        papers_for_program = [paper.dict() for paper in site_data.papers if paper.program == program]
     return jsonify(papers_for_program)
 
 
@@ -248,9 +263,7 @@ def track_json(program_name, track_name):
                 break
     else:
         papers_for_track = [
-            paper.dict()
-            for paper in site_data.papers
-            if paper.track == track_name and paper.program == program_name
+            paper.dict() for paper in site_data.papers if paper.track == track_name and paper.program == program_name
         ]
     return jsonify(papers_for_track)
 
