@@ -1,5 +1,5 @@
 build: false
-data_dir: data/nlp_2025
+data_dir: data/nlp_2026
 port: 7777
 debug: true
 host: '0.0.0.0'

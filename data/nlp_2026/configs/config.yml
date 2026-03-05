@@ -1,0 +1,45 @@
+name: NLP2026
+display_name: NLP2026
+tagline: 
+date: 
+proceedings_title: 
+citation_date: 
+analytics: 
+site_url: TBD
+logo:
+  image: 
+  height: 45px
+site_title: NLP2026
+page_title:
+  prefix: 'NLP2026'
+  separator: ': '
+background_image: 
+organization: 
+social_tag: 
+
+# Path to the folder of paper images.
+paper_images_path: 
+
+default_presentation_id: 
+
+# Remove or change to your chat server.
+enable_chat: false
+chat_server: 
+channels_stats_server: 
+
+gather_town: 
+connected_papers_conference_name: 
+
+calendar:
+  start: '2026-03-10'
+  end: '2026-03-13'
+  start_time: "09:30:00"
+  end_time: "18:30:00"
+
+navigation_bar:
+  order:
+    - Schedule
+  links:
+    Schedule: schedule.html
+    Papers: papers.html
+ 
